@@ -51,8 +51,19 @@ class ProcessorAgent(BaseAgent):
         if not items:
             return AgentResult(success=True, data=[], items_processed=0)
 
-        # 每个 pipeline 只处理前 2 条，控制 API 调用次数在 Gemini 免费额度内
-        items = items[:2]
+        # 先按 pipeline 过滤，再限制条数
+        if pipeline_name == "github_tools":
+            # GitHub 工具推荐：先过滤出 GitHub Trending，再取前 8 条
+            filtered = [x for x in items if x.get("source") == "github_trending"]
+            items = filtered[:8]
+        elif pipeline_name == "reddit_digest":
+            # Reddit 摘要：先过滤出 Reddit 来源
+            filtered = [x for x in items if "reddit" in x.get("source", "")]
+            items = filtered[:15]
+        else:
+            # 其他 pipeline：只处理前 2 条，控制 API 调用次数
+            items = items[:2]
+
         processed = []
         for item in items:
             try:
@@ -69,17 +80,6 @@ class ProcessorAgent(BaseAgent):
         if pipeline_name == "scored_briefing":
             processed.sort(key=lambda x: x.get("score", 0), reverse=True)
             processed = processed[:10]  # 只保留 top 10
-
-        # Reddit digest：只保留 Reddit 来源，按点赞排序
-        if pipeline_name == "reddit_digest":
-            processed = [x for x in processed if "reddit" in x.get("source", "")]
-            processed.sort(key=lambda x: x.get("score", 0) if isinstance(x.get("score", 0), (int, float)) else 0, reverse=True)
-            processed = processed[:15]
-
-        # GitHub 工具推荐：只保留 GitHub Trending 来源
-        if pipeline_name == "github_tools":
-            processed = [x for x in processed if x.get("source") == "github_trending"]
-            processed = processed[:8]
 
         # 免费 AI 工具汇总：只保留 AI/工具类内容
         if pipeline_name == "free_ai_tools":

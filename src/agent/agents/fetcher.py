@@ -179,21 +179,27 @@ class FetcherAgent(BaseAgent):
             resp = requests.get(self.GH_TRENDING_URL, timeout=15, headers=self.HEADERS)
             html = resp.text
 
-            # 用正则提取仓库名和描述
-            repo_pattern = r'<h2 class="h3 lh-condensed">\s*<a href="/([^"]+)"'
-            repos = re.findall(repo_pattern, html)
+            # 提取仓库链接：/owner/repo 格式
+            repo_pattern = r'href="/([a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)"'
+            all_repos = re.findall(repo_pattern, html)
 
-            desc_pattern = r'<p class="col-9 color-fg-muted my-1 pr-4">\s*(.*?)\s*</p>'
-            descs = re.findall(desc_pattern, html, re.DOTALL)
+            # 过滤掉非 repo 的链接
+            exclude = {"trending", "login", "signup", "features", "enterprise", "pricing",
+                       "sponsors", "topics", "collections", "events", "apps", "settings"}
+            repos = []
+            for r in all_repos:
+                parts = r.split("/")
+                if len(parts) == 2 and parts[0] not in exclude and not parts[0].startswith("_"):
+                    if r not in repos:
+                        repos.append(r)
 
             items = []
-            for i, repo in enumerate(repos[:limit]):
-                desc = descs[i].strip() if i < len(descs) else ""
+            for repo in repos[:limit]:
                 items.append({
                     "source": "github_trending",
                     "title": repo,
                     "url": f"https://github.com/{repo}",
-                    "summary": desc,
+                    "summary": "",
                     "published": "",
                 })
             return items
