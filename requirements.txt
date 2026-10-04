@@ -1,0 +1,10 @@
+# 核心依赖
+requests>=2.31.0
+feedparser>=6.0.10
+
+# AI（可选，不配 key 也能跑降级模式）
+openai>=1.0.0
+
+# 后续扩展
+# crawl4ai>=0.3.0
+# beautifulsoup4>=4.12.0

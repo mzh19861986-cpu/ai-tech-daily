@@ -1,0 +1,46 @@
+name: AI Daily Reports
+
+on:
+  schedule:
+    # 每天 UTC 0:00（北京时间 8:00）跑一次
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 支持手动触发
+
+concurrency:
+  group: ai-daily
+  cancel-in-progress: false
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run All Pipelines
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DB_PATH: data/agent.db
+        run: python -m src.agent.main --all
+
+      - name: Commit generated reports
+        run: |
+          git config user.name "ai-agent-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add output/ data/ || true
+          git diff --staged --quiet || git commit -m "chore: daily AI reports $(date -u +%Y-%m-%d)"
+          git push

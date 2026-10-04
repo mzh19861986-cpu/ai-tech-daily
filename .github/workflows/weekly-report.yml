@@ -1,0 +1,25 @@
+name: Weekly Summary
+
+on:
+  schedule:
+    # 每周一 UTC 1:00 跑一次周报
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+jobs:
+  weekly-summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+
+      - name: Generate Weekly Summary
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          echo "周报生成逻辑待实现"
+          # TODO: 统计本周抓取数、发布数、收入数，生成周报
