@@ -43,6 +43,11 @@ class ProcessorAgent(BaseAgent):
         if pipeline_name == "ai_deepdive":
             processed = self._select_top_for_deepdive(processed)
 
+        # 打分简报：按分数从高到低排序
+        if pipeline_name == "scored_briefing":
+            processed.sort(key=lambda x: x.get("score", 0), reverse=True)
+            processed = processed[:10]  # 只保留 top 10
+
         return AgentResult(
             success=True,
             data=processed,
@@ -80,6 +85,10 @@ class ProcessorAgent(BaseAgent):
         # 深度分析 pipeline：生成更长的分析
         if pipeline_name == "ai_deepdive":
             result["deep_analysis"] = self._deep_analyze(title, summary)
+
+        # 打分简报 pipeline：AI 给每条打分
+        if pipeline_name == "scored_briefing":
+            result["score"] = self._score_item(title, summary)
 
         return result
 
@@ -153,6 +162,28 @@ class ProcessorAgent(BaseAgent):
         except Exception as e:
             self.logger.warning(f"深度分析失败: {e}")
             return context[:300]
+
+    def _score_item(self, title: str, context: str) -> float:
+        """AI 给内容打 0-10 分（降级：无 key 时按来源权重给默认分）"""
+        if not config.openai_api_key:
+            return 5.0
+        try:
+            self._rate_limit()
+            from openai import OpenAI
+            client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
+            resp = client.chat.completions.create(
+                model=config.openai_model,
+                messages=[
+                    {"role": "system", "content": "你是技术内容编辑。给下面这条技术新闻打个热度分 0-10 分（10 分是重大突破/爆款）。只回复一个数字。"},
+                    {"role": "user", "content": f"标题: {title}\n内容: {context[:500]}"},
+                ],
+                max_tokens=10,
+            )
+            score_text = resp.choices[0].message.content.strip()
+            return float(score_text.split()[0])
+        except Exception as e:
+            self.logger.warning(f"打分失败: {e}")
+            return 5.0
 
     def _categorize(self, text: str) -> str:
         """关键词分类"""

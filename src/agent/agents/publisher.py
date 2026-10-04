@@ -34,6 +34,10 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_chinese_report(items, pipeline_name)
         elif pipeline_name == "ai_deepdive":
             markdown = self._build_deepdive_report(items, pipeline_name)
+        elif pipeline_name == "scored_briefing":
+            markdown = self._build_scored_report(items, pipeline_name)
+        elif pipeline_name == "weekly_digest":
+            markdown = self._build_weekly_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -100,6 +104,50 @@ class PublisherAgent(BaseAgent):
             lines.append("")
         lines.append("---")
         lines.append("*深度分析由 AI 生成，仅供参考。*")
+        return "\n".join(lines)
+
+    def _build_scored_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """AI 打分热门简报"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 🏆 AI 热度排行榜 Top 10 - {date_str}",
+            "",
+            f"> 由 AI 自动打分排序 | 共 {len(items)} 条入选",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            score = item.get("score", 5.0)
+            medal = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else f"{i}."
+            lines.append(f"## {medal} {item.get('title', '无标题')}  (⭐ {score}/10)")
+            lines.append(f"🔗 [{item.get('source', '')}]({item.get('url', '')})")
+            lines.append("")
+            lines.append(f"{item.get('summary', '')}")
+            lines.append("")
+        lines.append("---")
+        lines.append("*热度分由 AI 模型评估，仅供参考。*")
+        return "\n".join(lines)
+
+    def _build_weekly_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """每周精选周报（汇总版）"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 📊 每周技术精选周报 - {date_str}",
+            "",
+            f"> 由 AI Agent 自动汇总整理 | 共 {len(items)} 条精选",
+            "",
+            "## 🎯 本周概览",
+            "",
+            f"- 精选内容：{len(items)} 条",
+            f"- 数据来源：Hacker News / Lobsters / ArXiv / GitHub Trending",
+            f"- 生成时间：{date_str}",
+            "",
+            "## 📝 精选内容",
+            "",
+        ]
+        lines.extend(self._group_by_category(items, use_chinese=False))
+        lines.append("")
+        lines.append("---")
+        lines.append("*本周报由 AI 自动汇总生成，精选自公开技术社区。*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:
