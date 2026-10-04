@@ -18,6 +18,11 @@ class Config:
     openai_base_url: Optional[str] = field(default_factory=lambda: os.getenv("OPENAI_BASE_URL"))
     openai_model: str = field(default_factory=lambda: os.getenv("OPENAI_MODEL", "gpt-4o-mini"))
 
+    # === 备用 LLM（DeepSeek）===
+    deepseek_api_key: Optional[str] = field(default_factory=lambda: os.getenv("DEEPSEEK_API_KEY"))
+    deepseek_base_url: str = field(default_factory=lambda: os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1"))
+    deepseek_model: str = field(default_factory=lambda: os.getenv("DEEPSEEK_MODEL", "deepseek-chat"))
+
     # === Cloudflare（D1/KV/Workers）===
     cloudflare_account_id: Optional[str] = field(default_factory=lambda: os.getenv("CLOUDFLARE_ACCOUNT_ID"))
     cloudflare_api_token: Optional[str] = field(default_factory=lambda: os.getenv("CLOUDFLARE_API_TOKEN"))

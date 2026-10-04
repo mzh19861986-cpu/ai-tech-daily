@@ -110,88 +110,92 @@ class ProcessorAgent(BaseAgent):
         )
         return sorted_items[:3]
 
+    def _call_llm(self, system_prompt: str, user_prompt: str, max_tokens: int = 200) -> str:
+        """统一调用 LLM：先试 Gemini，失败自动切 DeepSeek fallback"""
+        from openai import OpenAI
+
+        # 主模型：Gemini
+        if config.openai_api_key:
+            try:
+                self._rate_limit()
+                client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
+                resp = client.chat.completions.create(
+                    model=config.openai_model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    max_tokens=max_tokens,
+                )
+                return resp.choices[0].message.content.strip()
+            except Exception as e:
+                self.logger.warning(f"主模型(Gemini)失败: {e}")
+
+        # 备用模型：DeepSeek
+        if config.deepseek_api_key:
+            try:
+                self._rate_limit()
+                client = OpenAI(api_key=config.deepseek_api_key, base_url=config.deepseek_base_url)
+                resp = client.chat.completions.create(
+                    model=config.deepseek_model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    max_tokens=max_tokens,
+                )
+                return resp.choices[0].message.content.strip()
+            except Exception as e:
+                self.logger.warning(f"备用模型(DeepSeek)失败: {e}")
+
+        return ""
+
     def _ai_summarize(self, title: str, context: str) -> str:
         """调用 LLM 生成摘要"""
-        try:
-            self._rate_limit()
-            from openai import OpenAI
-            client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
-            resp = client.chat.completions.create(
-                model=config.openai_model,
-                messages=[
-                    {"role": "system", "content": "你是技术内容编辑，用 2 句话总结这条新闻的核心价值。"},
-                    {"role": "user", "content": f"标题: {title}\n内容: {context[:1000]}"},
-                ],
-                max_tokens=150,
-            )
-            return resp.choices[0].message.content.strip()
-        except Exception as e:
-            self.logger.warning(f"AI 摘要失败: {e}")
-            return context[:200]
+        result = self._call_llm(
+            system_prompt="你是技术内容编辑，用 2 句话总结这条新闻的核心价值。",
+            user_prompt=f"标题: {title}\n内容: {context[:1000]}",
+            max_tokens=150,
+        )
+        if result:
+            return result
+        return context[:200]
 
     def _translate(self, text: str) -> str:
         """翻译成中文（降级：无 key 时返回原文）"""
-        if not config.openai_api_key:
-            return f"[待翻译] {text[:50]}"
-        try:
-            self._rate_limit()
-            from openai import OpenAI
-            client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
-            resp = client.chat.completions.create(
-                model=config.openai_model,
-                messages=[
-                    {"role": "system", "content": "把下面的内容翻译成简体中文，保持技术准确性，简洁自然。"},
-                    {"role": "user", "content": text[:800]},
-                ],
-                max_tokens=300,
-            )
-            return resp.choices[0].message.content.strip()
-        except Exception as e:
-            self.logger.warning(f"翻译失败: {e}")
-            return f"[翻译失败] {text[:50]}"
+        result = self._call_llm(
+            system_prompt="把下面的内容翻译成简体中文，保持技术准确性，简洁自然。",
+            user_prompt=text[:800],
+            max_tokens=300,
+        )
+        if result:
+            return result
+        return f"[待翻译] {text[:50]}"
 
     def _deep_analyze(self, title: str, context: str) -> str:
         """深度分析（降级：无 key 时返回原文）"""
-        if not config.openai_api_key:
-            return f"[深度分析待启用] {context[:300]}"
-        try:
-            self._rate_limit()
-            from openai import OpenAI
-            client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
-            resp = client.chat.completions.create(
-                model=config.openai_model,
-                messages=[
-                    {"role": "system", "content": "你是资深技术分析师。对下面这条内容做深度分析：1) 它是什么 2) 为什么重要 3) 对行业/开发者的影响。用 3-4 句话。"},
-                    {"role": "user", "content": f"标题: {title}\n内容: {context[:1500]}"},
-                ],
-                max_tokens=400,
-            )
-            return resp.choices[0].message.content.strip()
-        except Exception as e:
-            self.logger.warning(f"深度分析失败: {e}")
-            return context[:300]
+        result = self._call_llm(
+            system_prompt="你是资深技术分析师。对下面这条内容做深度分析：1) 它是什么 2) 为什么重要 3) 对行业/开发者的影响。用 3-4 句话。",
+            user_prompt=f"标题: {title}\n内容: {context[:1500]}",
+            max_tokens=400,
+        )
+        if result:
+            return result
+        return f"[深度分析待启用] {context[:300]}"
 
     def _score_item(self, title: str, context: str) -> float:
-        """AI 给内容打 0-10 分（降级：无 key 时按来源权重给默认分）"""
-        if not config.openai_api_key:
-            return 5.0
-        try:
-            self._rate_limit()
-            from openai import OpenAI
-            client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
-            resp = client.chat.completions.create(
-                model=config.openai_model,
-                messages=[
-                    {"role": "system", "content": "你是技术内容编辑。给下面这条技术新闻打个热度分 0-10 分（10 分是重大突破/爆款）。只回复一个数字。"},
-                    {"role": "user", "content": f"标题: {title}\n内容: {context[:500]}"},
-                ],
-                max_tokens=10,
-            )
-            score_text = resp.choices[0].message.content.strip()
-            return float(score_text.split()[0])
-        except Exception as e:
-            self.logger.warning(f"打分失败: {e}")
-            return 5.0
+        """AI 给内容打 0-10 分（降级：无 key 时给默认分）"""
+        result = self._call_llm(
+            system_prompt="你是技术内容编辑。给下面这条技术新闻打个热度分 0-10 分（10 分是重大突破/爆款）。只回复一个数字。",
+            user_prompt=f"标题: {title}\n内容: {context[:500]}",
+            max_tokens=10,
+        )
+        if result:
+            try:
+                return float(result.strip().split()[0])
+            except:
+                pass
+        return 5.0
 
     def _categorize(self, text: str) -> str:
         """关键词分类"""
