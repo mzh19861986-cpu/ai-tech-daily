@@ -73,6 +73,30 @@ def build_index(posts: list[dict]) -> str:
     return TEMPLATE.format(title="Home", content=content)
 
 
+def build_rss(posts: list[dict]) -> str:
+    """生成 RSS feed"""
+    base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
+    items_xml = "\n".join([
+        f"""<item>
+            <title>{p['title']}</title>
+            <link>{base_url}/{p['slug']}.html</link>
+            <pubDate>{p['date']}</pubDate>
+            <guid>{base_url}/{p['slug']}.html</guid>
+        </item>"""
+        for p in sorted(posts, key=lambda x: x["date"], reverse=True)[:20]
+    ])
+    return f"""<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>AI Tech Daily</title>
+    <link>{base_url}</link>
+    <description>AI 自动生成的技术日报，每日更新</description>
+    <language>zh-CN</language>
+    {items_xml}
+</channel>
+</rss>"""
+
+
 def main():
     SITE_DIR.mkdir(exist_ok=True)
     posts = []
@@ -95,6 +119,11 @@ def main():
     index_html = build_index(posts)
     (SITE_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print(f"Generated index.html with {len(posts)} posts")
+
+    # 生成 RSS feed
+    rss_xml = build_rss(posts)
+    (SITE_DIR / "feed.xml").write_text(rss_xml, encoding="utf-8")
+    print("Generated feed.xml")
 
 
 if __name__ == "__main__":
