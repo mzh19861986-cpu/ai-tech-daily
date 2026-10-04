@@ -36,6 +36,8 @@ TEMPLATE = """<!DOCTYPE html>
     <nav class="nav">
         <a href="/">🏠 Home</a>
         <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a>
+        <a href="/feed.xml">📡 RSS</a>
+        <a href="https://github.com/sponsors/mzh19861986-cpu">❤️ Sponsor</a>
     </nav>
     {content}
     <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e1e4e8; color: #6a737d; font-size: 0.85rem;">
