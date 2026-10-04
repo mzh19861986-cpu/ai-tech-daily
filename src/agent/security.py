@@ -28,25 +28,21 @@ class SecurityGuard:
 
     def check_content(self, title: str, body: str) -> SecurityCheckResult:
         reasons = []
+        warnings = []
         text = f"{title}\n{body}"
 
-        # 1. 违禁词检查
+        # 1. 违禁词检查（真拦截）
         for pattern in self.BLOCKED_PATTERNS:
             if re.search(pattern, text):
                 reasons.append(f"命中违禁模式: {pattern}")
 
-        # 2. 长度检查（太短的内容质量存疑，只记录不拦截）
+        # 2. 长度检查（只警告，不拦截）
         if len(body.strip()) < 10:
-            reasons.append(f"内容过短 ({len(body)} chars)")
-
-        # 3. 声明：AI 生成内容必须标注
-        if "AI" not in title and "generated" not in body.lower()[:200]:
-            # 不强制，但提示
-            pass
+            warnings.append(f"内容过短 ({len(body)} chars)")
 
         return SecurityCheckResult(
             passed=len(reasons) == 0,
-            reasons=reasons,
+            reasons=reasons + warnings,
         )
 
     def check_fetch(self, url: str, requests_per_minute: int) -> SecurityCheckResult:
