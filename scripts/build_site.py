@@ -18,18 +18,27 @@ TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - AI Tech Daily</title>
+    <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势">
     <style>
-        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.7; color: #333; }}
+        * {{ box-sizing: border-box; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.7; color: #24292e; background: #fafbfc; }}
         h1 {{ border-bottom: 2px solid #e1e4e8; padding-bottom: 0.5rem; }}
         h2 {{ margin-top: 2rem; color: #24292e; }}
         a {{ color: #0366d6; text-decoration: none; }}
         a:hover {{ text-decoration: underline; }}
         .meta {{ color: #6a737d; font-size: 0.9rem; margin-bottom: 2rem; }}
-        .nav {{ margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #e1e4e8; }}
+        .nav {{ margin-bottom: 2rem; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
         .nav a {{ margin-right: 1rem; }}
         .post-list {{ list-style: none; padding: 0; }}
-        .post-list li {{ padding: 0.8rem 0; border-bottom: 1px solid #f1f3f5; }}
-        .post-list .date {{ color: #6a737d; font-size: 0.9rem; margin-right: 1rem; }}
+        .post-list li {{ padding: 1rem; margin-bottom: 0.8rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: transform 0.2s; }}
+        .post-list li:hover {{ transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }}
+        .post-list .date {{ color: #6a737d; font-size: 0.85rem; margin-right: 1rem; }}
+        .newsletter-box {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }}
+        .newsletter-box h3 {{ margin-top: 0; }}
+        .newsletter-box input {{ width: 100%; padding: 0.6rem; border: none; border-radius: 4px; margin: 0.5rem 0; }}
+        .newsletter-box button {{ background: white; color: #667eea; border: none; padding: 0.6rem 1.5rem; border-radius: 4px; font-weight: bold; cursor: pointer; }}
+        .sponsor-box {{ background: #fff3cd; border: 1px solid #ffeaa7; padding: 1rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; }}
+        .content {{ background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
     </style>
 </head>
 <body>
@@ -39,8 +48,22 @@ TEMPLATE = """<!DOCTYPE html>
         <a href="/feed.xml">📡 RSS</a>
         <a href="https://github.com/sponsors/mzh19861986-cpu">❤️ Sponsor</a>
     </nav>
+    <div class="content">
     {content}
-    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e1e4e8; color: #6a737d; font-size: 0.85rem;">
+    </div>
+    <div class="newsletter-box">
+        <h3>📬 订阅每日 Newsletter</h3>
+        <p>每天早上收到最新的 AI 技术日报，直接发到你的邮箱。</p>
+        <form action="https://buttondown.email/api/emails/embed-subscribe/ai-tech-daily" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/ai-tech-daily', 'popupwindow')">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <button type="submit">免费订阅</button>
+        </form>
+    </div>
+    <div class="sponsor-box">
+        <p>☕ 觉得有用？请我喝杯咖啡支持一下！</p>
+        <a href="https://github.com/sponsors/mzh19861986-cpu" style="color: #d63031; font-weight: bold;">GitHub Sponsors →</a>
+    </div>
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e1e4e8; color: #6a737d; font-size: 0.85rem; text-align: center;">
         <p>由 AI Agent 自动生成 | 每日更新 | <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">Star on GitHub</a></p>
     </footer>
 </body>
