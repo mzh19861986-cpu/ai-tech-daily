@@ -10,12 +10,15 @@ concurrency:
   group: ai-daily
   cancel-in-progress: false
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   run-agent:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout
@@ -49,3 +52,27 @@ jobs:
           git add output/ data/ || true
           git diff --staged --quiet || git commit -m "chore: daily AI reports $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Build static site
+        run: |
+          pip install markdown pygments
+          python scripts/build_site.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    needs: run-agent
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
