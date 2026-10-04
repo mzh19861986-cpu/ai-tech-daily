@@ -60,6 +60,16 @@ TEMPLATE = """<!DOCTYPE html>
             <button type="submit">免费订阅</button>
         </form>
     </div>
+
+    <div style="background: #f0f7ff; border: 1px solid #cce5ff; padding: 1rem; border-radius: 8px; margin: 1.5rem 0;">
+        <h4 style="margin-top: 0;">🛠️ 你可能也喜欢</h4>
+        <ul style="text-align: left; margin: 0.5rem 0; padding-left: 1.2rem;">
+            <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek API</a> - 高性价比大模型，开发者必备</li>
+            <li>📝 <a href="https://www.notion.so/" target="_blank">Notion</a> - 笔记+项目管理神器</li>
+            <li>☁️ <a href="https://vercel.com/" target="_blank">Vercel</a> - 前端一键部署</li>
+        </ul>
+    </div>
+
     <div class="sponsor-box">
         <p>☕ 觉得有用？请我喝杯咖啡支持一下！</p>
         <a href="https://github.com/sponsors/mzh19861986-cpu" style="color: #d63031; font-weight: bold;">GitHub Sponsors →</a>
