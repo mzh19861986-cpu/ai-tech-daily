@@ -15,7 +15,7 @@ class ProcessorAgent(BaseAgent):
     description = "用 AI 把原始数据处理成结构化内容"
 
     # 限流：Gemini 免费 tier 每分钟 5 次，两次调用间隔至少 13 秒
-    MIN_INTERVAL_SEC = 13
+    MIN_INTERVAL_SEC = 10
     _last_call_time: float = 0
 
     def _rate_limit(self):
@@ -31,6 +31,8 @@ class ProcessorAgent(BaseAgent):
         if not items:
             return AgentResult(success=True, data=[], items_processed=0)
 
+        # 每个 pipeline 只处理前 5 条，控制 API 调用次数和运行时间
+        items = items[:5]
         processed = []
         for item in items:
             try:
