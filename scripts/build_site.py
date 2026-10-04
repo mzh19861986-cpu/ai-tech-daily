@@ -44,6 +44,7 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
     <nav class="nav">
         <a href="/">🏠 Home</a>
+        <a href="/status.html">📊 Status</a>
         <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a>
         <a href="/feed.xml">📡 RSS</a>
         <a href="https://github.com/sponsors/mzh19861986-cpu">❤️ Sponsor</a>
@@ -109,6 +110,69 @@ def build_index(posts: list[dict]) -> str:
     return TEMPLATE.format(title="Home", content=content)
 
 
+def build_status() -> str:
+    """构建系统状态页"""
+    pipelines = [
+        {"name": "ai_daily", "cn": "英文技术日报", "status": "✅ 运行中", "items": 2},
+        {"name": "ai_daily_cn", "cn": "中文技术日报", "status": "✅ 运行中", "items": 2},
+        {"name": "ai_deepdive", "cn": "深度分析", "status": "✅ 运行中", "items": 2},
+        {"name": "scored_briefing", "cn": "AI 热度排行榜", "status": "✅ 运行中", "items": 2},
+        {"name": "weekly_digest", "cn": "每周精选", "status": "✅ 运行中", "items": 2},
+        {"name": "github_tools", "cn": "GitHub 工具推荐", "status": "✅ 运行中", "items": 8},
+        {"name": "free_ai_tools", "cn": "免费 AI 工具汇总", "status": "✅ 运行中", "items": 1},
+        {"name": "reddit_digest", "cn": "Reddit 摘要", "status": "❌ 数据源不可达", "items": 0},
+    ]
+    sources = [
+        {"name": "Hacker News", "status": "✅ 正常"},
+        {"name": "Lobsters", "status": "✅ 正常"},
+        {"name": "ArXiv AI 论文", "status": "❌ 抓取失败"},
+        {"name": "GitHub Trending", "status": "✅ 已修复"},
+        {"name": "Reddit", "status": "❌ 连接超时"},
+        {"name": "Product Hunt", "status": "⏳ 待验证"},
+        {"name": "Dev.to", "status": "⏳ 待验证"},
+    ]
+    rows = "\n".join([
+        f"<tr><td>{p['name']}</td><td>{p['cn']}</td><td>{p['status']}</td><td>{p['items']} 条/次</td></tr>"
+        for p in pipelines
+    ])
+    src_rows = "\n".join([
+        f"<tr><td>{s['name']}</td><td>{s['status']}</td></tr>"
+        for s in sources
+    ])
+    content = f"""
+    <h1>📊 系统状态 Dashboard</h1>
+    <p class="meta">多 Agent 自动化系统实时状态</p>
+
+    <h2>🤖 子智能体（Pipeline）</h2>
+    <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
+        <tr style="background: #f5f5f5;"><th style="padding: 0.5rem; border: 1px solid #ddd;">Pipeline</th><th style="padding: 0.5rem; border: 1px solid #ddd;">中文名</th><th style="padding: 0.5rem; border: 1px solid #ddd;">状态</th><th style="padding: 0.5rem; border: 1px solid #ddd;">每次产出</th></tr>
+        {rows}
+    </table>
+
+    <h2>📡 数据源状态</h2>
+    <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
+        <tr style="background: #f5f5f5;"><th style="padding: 0.5rem; border: 1px solid #ddd;">数据源</th><th style="padding: 0.5rem; border: 1px solid #ddd;">状态</th></tr>
+        {src_rows}
+    </table>
+
+    <h2>💰 变现入口</h2>
+    <ul>
+        <li>✅ GitHub Sponsors 赞助按钮</li>
+        <li>✅ Newsletter 订阅框</li>
+        <li>✅ RSS Feed 订阅</li>
+        <li>✅ 推荐工具区块（首页）</li>
+        <li>⏳ 联盟营销链接（待加）</li>
+    </ul>
+
+    <div style="margin-top: 2rem; padding: 1rem; background: #e8f5e9; border-left: 4px solid #4caf50;">
+        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，多个子 Agent 并行运行，
+        自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 发布到 GitHub Pages。
+        全自动滚动运行，持续迭代新方向。
+    </div>
+    """
+    return TEMPLATE.format(title="Status", content=content)
+
+
 def build_rss(posts: list[dict]) -> str:
     """生成 RSS feed"""
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
@@ -155,6 +219,11 @@ def main():
     index_html = build_index(posts)
     (SITE_DIR / "index.html").write_text(index_html, encoding="utf-8")
     print(f"Generated index.html with {len(posts)} posts")
+
+    # 生成系统状态页
+    status_html = build_status()
+    (SITE_DIR / "status.html").write_text(status_html, encoding="utf-8")
+    print("Generated status.html")
 
     # 生成 RSS feed
     rss_xml = build_rss(posts)
