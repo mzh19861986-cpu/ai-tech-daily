@@ -7,23 +7,23 @@
 
 
 
-## 🥈 Glashütte Trash Clock – A 30-minute pendulum clock made from trash  (⭐ 5.0/10)
+## 🥈 Car is a smartphone on wheels. Here's who's listening  (⭐ 5.0/10)
+🔗 [hackernews](https://automatictransmission.khoury.northeastern.edu/)
+
+
+
+## 🥉 Glashütte Trash Clock – A 30-minute pendulum clock made from trash  (⭐ 5.0/10)
 🔗 [hackernews](https://niklasroy.com/gtc/)
 
 
 
-## 🥉 Tell HN: Bob Cringely has died  (⭐ 5.0/10)
+## 4. Tell HN: Bob Cringely has died  (⭐ 5.0/10)
 🔗 [hackernews](https://news.ycombinator.com/item?id=49949438)
 
 
 
-## 4. Show HN: AI search for every photo and every frame of video on macOS  (⭐ 5.0/10)
+## 5. Show HN: AI search for every photo and every frame of video on macOS  (⭐ 5.0/10)
 🔗 [hackernews](https://github.com/allenv0/SCM)
-
-
-
-## 5. Why don't more developers “use the platform”?  (⭐ 5.0/10)
-🔗 [hackernews](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
 
 
 

@@ -10,16 +10,16 @@
 **深度分析：**
 [深度分析待启用] 
 
-## 2. Glashütte Trash Clock – A 30-minute pendulum clock made from trash
-🔗 [https://niklasroy.com/gtc/](https://niklasroy.com/gtc/)
+## 2. Car is a smartphone on wheels. Here's who's listening
+🔗 [https://automatictransmission.khoury.northeastern.edu/](https://automatictransmission.khoury.northeastern.edu/)
 
 **摘要：** 
 
 **深度分析：**
 [深度分析待启用] 
 
-## 3. Tell HN: Bob Cringely has died
-🔗 [https://news.ycombinator.com/item?id=49949438](https://news.ycombinator.com/item?id=49949438)
+## 3. Glashütte Trash Clock – A 30-minute pendulum clock made from trash
+🔗 [https://niklasroy.com/gtc/](https://niklasroy.com/gtc/)
 
 **摘要：** 
 

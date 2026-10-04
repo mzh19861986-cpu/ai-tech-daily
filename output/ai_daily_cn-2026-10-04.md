@@ -8,15 +8,15 @@
 *hackernews*
 [待翻译] 
 
-### 2. [[待翻译] Glashütte Trash Clock – A 30-minute pendulum clock](https://niklasroy.com/gtc/)
+### 2. [[待翻译] Car is a smartphone on wheels. Here's who's listen](https://automatictransmission.khoury.northeastern.edu/)
 *hackernews*
 [待翻译] 
 
-### 3. [Tell HN：Bob Cringely](https://news.ycombinator.com/item?id=49949438)
+### 3. [[待翻译] Glashütte Trash Clock – A 30-minute pendulum clock](https://niklasroy.com/gtc/)
 *hackernews*
 [待翻译] 
 
-### 4. [[待翻译] Why don't more developers “use the platform”?](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
+### 4. [[待翻译] Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
 *hackernews*
 [待翻译] 
 

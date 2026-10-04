@@ -16,15 +16,15 @@
 *hackernews*
 
 
-### 2. [Glashütte Trash Clock – A 30-minute pendulum clock made from trash](https://niklasroy.com/gtc/)
+### 2. [Car is a smartphone on wheels. Here's who's listening](https://automatictransmission.khoury.northeastern.edu/)
 *hackernews*
 
 
-### 3. [Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
+### 3. [Glashütte Trash Clock – A 30-minute pendulum clock made from trash](https://niklasroy.com/gtc/)
 *hackernews*
 
 
-### 4. [Why don't more developers “use the platform”?](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
+### 4. [Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
 *hackernews*
 
 
