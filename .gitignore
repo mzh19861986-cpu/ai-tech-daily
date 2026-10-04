@@ -16,6 +16,7 @@ venv/
 
 # 生成产物（output 要 commit 到仓库）
 data/
+site/
 
 # IDE
 .vscode/
