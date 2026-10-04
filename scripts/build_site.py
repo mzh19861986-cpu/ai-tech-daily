@@ -21,24 +21,68 @@ TEMPLATE = """<!DOCTYPE html>
     <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势">
     <style>
         * {{ box-sizing: border-box; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.7; color: #24292e; background: #fafbfc; }}
-        h1 {{ border-bottom: 2px solid #e1e4e8; padding-bottom: 0.5rem; }}
-        h2 {{ margin-top: 2rem; color: #24292e; }}
-        a {{ color: #0366d6; text-decoration: none; }}
-        a:hover {{ text-decoration: underline; }}
-        .meta {{ color: #6a737d; font-size: 0.9rem; margin-bottom: 2rem; }}
-        .nav {{ margin-bottom: 2rem; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
-        .nav a {{ margin-right: 1rem; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
+            max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8;
+            color: #1a1a2e;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+        }}
+        h1 {{
+            border-bottom: none; padding-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }}
+        h2 {{ margin-top: 2.5rem; color: #2d3436; font-weight: 600; }}
+        a {{ color: #6c5ce7; text-decoration: none; transition: all 0.2s; }}
+        a:hover {{ color: #a29bfe; text-decoration: none; transform: translateX(2px); }}
+        .meta {{ color: #636e72; font-size: 0.9rem; margin-bottom: 2rem; }}
+        .nav {{
+            margin-bottom: 2rem; padding: 1rem 1.5rem;
+            background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);
+            border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }}
+        .nav a {{ margin-right: 1.5rem; font-weight: 500; }}
         .post-list {{ list-style: none; padding: 0; }}
-        .post-list li {{ padding: 1rem; margin-bottom: 0.8rem; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: transform 0.2s; }}
-        .post-list li:hover {{ transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }}
-        .post-list .date {{ color: #6a737d; font-size: 0.85rem; margin-right: 1rem; }}
-        .newsletter-box {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }}
-        .newsletter-box h3 {{ margin-top: 0; }}
-        .newsletter-box input {{ width: 100%; padding: 0.6rem; border: none; border-radius: 4px; margin: 0.5rem 0; }}
-        .newsletter-box button {{ background: white; color: #667eea; border: none; padding: 0.6rem 1.5rem; border-radius: 4px; font-weight: bold; cursor: pointer; }}
-        .sponsor-box {{ background: #fff3cd; border: 1px solid #ffeaa7; padding: 1rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; }}
-        .content {{ background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+        .post-list li {{
+            padding: 1.2rem 1.5rem; margin-bottom: 1rem;
+            background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+            border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.8);
+        }}
+        .post-list li:hover {{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(108,92,231,0.15);
+            border-color: #a29bfe;
+        }}
+        .post-list .date {{ color: #b2bec3; font-size: 0.85rem; margin-right: 1rem; font-weight: 500; }}
+        .newsletter-box {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; padding: 2rem; border-radius: 16px; margin: 2.5rem 0;
+            box-shadow: 0 10px 40px rgba(102,126,234,0.3);
+        }}
+        .newsletter-box h3 {{ margin-top: 0; font-size: 1.3rem; }}
+        .newsletter-box input {{
+            width: 100%; padding: 0.8rem 1rem; border: none; border-radius: 8px;
+            margin: 0.8rem 0; font-size: 1rem;
+        }}
+        .newsletter-box button {{
+            background: white; color: #667eea; border: none;
+            padding: 0.8rem 2rem; border-radius: 8px; font-weight: 600;
+            cursor: pointer; font-size: 1rem; transition: transform 0.2s;
+        }}
+        .newsletter-box button:hover {{ transform: scale(1.05); }}
+        .sponsor-box {{
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border: none; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;
+            text-align: center; box-shadow: 0 4px 15px rgba(253,203,110,0.3);
+        }}
+        .content {{
+            background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+            padding: 2.5rem; border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+            border: 1px solid rgba(255,255,255,0.8);
+        }}
     </style>
 </head>
 <body>
