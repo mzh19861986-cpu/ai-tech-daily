@@ -60,6 +60,11 @@ class ProcessorAgent(BaseAgent):
             # Reddit 摘要：先过滤出 Reddit 来源
             filtered = [x for x in items if "reddit" in x.get("source", "")]
             items = filtered[:15]
+        elif pipeline_name == "ai_prompts":
+            # AI Prompt 汇总：只保留 AI 相关内容（按标题关键词过滤）
+            ai_keywords = ["ai", "llm", "gpt", "agent", "model", "prompt", "gemini", "claude"]
+            filtered = [x for x in items if any(k in x.get("title", "").lower() for k in ai_keywords)]
+            items = filtered[:5]
         else:
             # 其他 pipeline：只处理前 2 条，控制 API 调用次数
             items = items[:2]
@@ -136,6 +141,10 @@ class ProcessorAgent(BaseAgent):
         if pipeline_name == "free_ai_tools":
             result["who_for"] = self._explain_audience(title, summary)
             result["how_to_start"] = self._explain_how_to_start(title, summary)
+
+        # AI Prompt 汇总：提炼好用的 Prompt 技巧
+        if pipeline_name == "ai_prompts":
+            result["prompt_tip"] = self._extract_prompt_tip(title, summary)
 
         return result
 
@@ -280,6 +289,17 @@ class ProcessorAgent(BaseAgent):
         if result:
             return result
         return "打开链接看看官方文档就知道了。"
+
+    def _extract_prompt_tip(self, title: str, context: str) -> str:
+        """从内容里提炼一个好用的 Prompt 技巧"""
+        result = self._call_llm(
+            system_prompt="你是 Prompt 工程专家。从下面这篇文章/讨论里，提炼出一个可以直接用的 AI Prompt 技巧或最佳实践，用 1-2 句话说明。如果没有明显的 Prompt 内容，就总结这篇文章里关于如何更好使用 AI 的建议。",
+            user_prompt=f"标题: {title}\n内容: {context[:800]}",
+            max_tokens=120,
+        )
+        if result:
+            return result
+        return "多用具体例子和上下文，AI 输出质量会明显提升。"
 
     def _categorize(self, text: str) -> str:
         """关键词分类"""

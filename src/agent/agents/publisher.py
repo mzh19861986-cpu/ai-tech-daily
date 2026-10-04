@@ -44,6 +44,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_tools_report(items, pipeline_name)
         elif pipeline_name == "free_ai_tools":
             markdown = self._build_free_tools_report(items, pipeline_name)
+        elif pipeline_name == "ai_prompts":
+            markdown = self._build_prompts_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -227,6 +229,28 @@ class PublisherAgent(BaseAgent):
                 lines.append("")
         lines.append("---")
         lines.append("*收藏起来，慢慢试！觉得有用记得分享给朋友~*")
+        return "\n".join(lines)
+
+    def _build_prompts_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """每日 AI Prompt 技巧汇总"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# ✨ 每日 AI Prompt 技巧 - {date_str}",
+            "",
+            f"> 从今天的 AI 圈热点里提炼出来的实用 Prompt 技巧 | 共 {len(items)} 条",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            lines.append(f"## {i}. 💡 技巧 {i}")
+            lines.append("")
+            tip = item.get("prompt_tip", "")
+            if tip:
+                lines.append(f"**{tip}**")
+                lines.append("")
+            lines.append(f"📎 来源：[{item.get('title', '')}]({item.get('url', '')})")
+            lines.append("")
+        lines.append("---")
+        lines.append("*试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:
