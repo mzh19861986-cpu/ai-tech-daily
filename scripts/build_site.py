@@ -18,7 +18,13 @@ TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - AI Tech Daily</title>
-    <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势">
+    <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势。包含 AI 新闻、GitHub 热门项目、Product Hunt 新品、开发技巧。">
+    <meta name="keywords" content="AI, 人工智能, 技术日报, GitHub, 开源工具, Product Hunt, 开发技巧, LLM, AI Agent">
+    <meta name="author" content="AI Tech Daily">
+    <meta property="og:title" content="{title} - AI Tech Daily">
+    <meta property="og:description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
     <style>
         * {{ box-sizing: border-box; }}
         body {{
