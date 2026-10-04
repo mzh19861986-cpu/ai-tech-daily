@@ -14,8 +14,8 @@ class ProcessorAgent(BaseAgent):
     name = "processor"
     description = "用 AI 把原始数据处理成结构化内容"
 
-    # 限流：DeepSeek 没那么严，2 秒足够
-    MIN_INTERVAL_SEC = 2
+    # 限流：Gemini 免费 tier 每分钟 5 次，间隔 6 秒
+    MIN_INTERVAL_SEC = 6
     _last_call_time: float = 0
 
     # DeepSeek 多 key 轮询
@@ -51,8 +51,8 @@ class ProcessorAgent(BaseAgent):
         if not items:
             return AgentResult(success=True, data=[], items_processed=0)
 
-        # 每个 pipeline 只处理前 5 条，控制 API 调用次数和运行时间
-        items = items[:5]
+        # 每个 pipeline 只处理前 2 条，控制 API 调用次数在 Gemini 免费额度内
+        items = items[:2]
         processed = []
         for item in items:
             try:
