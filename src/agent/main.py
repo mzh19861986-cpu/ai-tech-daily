@@ -8,6 +8,16 @@ import argparse
 import json
 import logging
 import sys
+from pathlib import Path
+
+# 自动加载 .env 文件
+try:
+    from dotenv import load_dotenv
+    env_path = Path(__file__).parent.parent.parent / ".env"
+    if env_path.exists():
+        load_dotenv(env_path)
+except ImportError:
+    pass
 
 from .config import config
 from .db import init_db
