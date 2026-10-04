@@ -12,11 +12,11 @@
 *hackernews*
 [待翻译] 
 
-### 3. [[待翻译] Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
+### 3. [Tell HN：Bob Cringely](https://news.ycombinator.com/item?id=49949438)
 *hackernews*
 [待翻译] 
 
-### 4. [[待翻译] VGHF Digital Archive passes 5000 magazines. Here's](https://gamehistory.org/5k-magazines/)
+### 4. [[待翻译] Why don't more developers “use the platform”?](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
 *hackernews*
 [待翻译] 
 
