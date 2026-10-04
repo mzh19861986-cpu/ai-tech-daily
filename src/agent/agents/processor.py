@@ -53,8 +53,13 @@ class ProcessorAgent(BaseAgent):
         # Reddit digest：只保留 Reddit 来源，按点赞排序
         if pipeline_name == "reddit_digest":
             processed = [x for x in processed if "reddit" in x.get("source", "")]
-            processed.sort(key=lambda x: x.get("score", 0) if isinstance(x.get("score"), (int, float)) else 0, reverse=True)
+            processed.sort(key=lambda x: x.get("score", 0) if isinstance(x.get("score", 0), (int, float)) else 0, reverse=True)
             processed = processed[:15]
+
+        # GitHub 工具推荐：只保留 GitHub Trending 来源
+        if pipeline_name == "github_tools":
+            processed = [x for x in processed if x.get("source") == "github_trending"]
+            processed = processed[:8]
 
         return AgentResult(
             success=True,
@@ -98,6 +103,10 @@ class ProcessorAgent(BaseAgent):
         if pipeline_name == "scored_briefing":
             result["score"] = self._score_item(title, summary)
 
+        # GitHub 工具推荐：生成"为什么你需要它"
+        if pipeline_name == "github_tools":
+            result["why_useful"] = self._explain_utility(title, summary)
+
         return result
 
     def _select_top_for_deepdive(self, items: List[Dict]) -> List[Dict]:
@@ -111,27 +120,10 @@ class ProcessorAgent(BaseAgent):
         return sorted_items[:3]
 
     def _call_llm(self, system_prompt: str, user_prompt: str, max_tokens: int = 200) -> str:
-        """统一调用 LLM：先试 Gemini，失败自动切 DeepSeek fallback"""
+        """统一调用 LLM：优先 DeepSeek，失败 fallback 到 Gemini"""
         from openai import OpenAI
 
-        # 主模型：Gemini
-        if config.openai_api_key:
-            try:
-                self._rate_limit()
-                client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
-                resp = client.chat.completions.create(
-                    model=config.openai_model,
-                    messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": user_prompt},
-                    ],
-                    max_tokens=max_tokens,
-                )
-                return resp.choices[0].message.content.strip()
-            except Exception as e:
-                self.logger.warning(f"主模型(Gemini)失败: {e}")
-
-        # 备用模型：DeepSeek
+        # 主模型：DeepSeek（额度充足）
         if config.deepseek_api_key:
             try:
                 self._rate_limit()
@@ -146,7 +138,24 @@ class ProcessorAgent(BaseAgent):
                 )
                 return resp.choices[0].message.content.strip()
             except Exception as e:
-                self.logger.warning(f"备用模型(DeepSeek)失败: {e}")
+                self.logger.warning(f"主模型(DeepSeek)失败: {e}")
+
+        # 备用模型：Gemini（免费额度少）
+        if config.openai_api_key:
+            try:
+                self._rate_limit()
+                client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
+                resp = client.chat.completions.create(
+                    model=config.openai_model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt},
+                    ],
+                    max_tokens=max_tokens,
+                )
+                return resp.choices[0].message.content.strip()
+            except Exception as e:
+                self.logger.warning(f"备用模型(Gemini)失败: {e}")
 
         return ""
 
@@ -196,6 +205,17 @@ class ProcessorAgent(BaseAgent):
             except:
                 pass
         return 5.0
+
+    def _explain_utility(self, title: str, context: str) -> str:
+        """解释这个工具/项目对开发者有什么用"""
+        result = self._call_llm(
+            system_prompt="你是技术博主。用 1-2 句话告诉读者，这个开源项目能帮他解决什么具体问题，为什么值得试试。语气要实用、不夸张。",
+            user_prompt=f"项目名: {title}\n描述: {context[:800]}",
+            max_tokens=120,
+        )
+        if result:
+            return result
+        return "一个有趣的开源项目，可以看看它是怎么实现的。"
 
     def _categorize(self, text: str) -> str:
         """关键词分类"""

@@ -40,6 +40,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_weekly_report(items, pipeline_name)
         elif pipeline_name == "reddit_digest":
             markdown = self._build_reddit_report(items, pipeline_name)
+        elif pipeline_name == "github_tools":
+            markdown = self._build_tools_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -173,6 +175,29 @@ class PublisherAgent(BaseAgent):
                 lines.append("")
         lines.append("---")
         lines.append("*内容来自 Reddit 公开社区，由 AI 自动摘要生成。*")
+        return "\n".join(lines)
+
+    def _build_tools_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """GitHub 实用工具推荐"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 🛠️ 今日值得试的开源工具 - {date_str}",
+            "",
+            f"> 精选自 GitHub Trending | AI 帮你筛掉水项目，只留实用的 | 共 {len(items)} 个",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            lines.append(f"## {i}. [{item.get('title', '')}]({item.get('url', '')})")
+            lines.append("")
+            why = item.get("why_useful", "")
+            if why:
+                lines.append(f"**💡 为什么值得试：** {why}")
+                lines.append("")
+            if item.get("summary"):
+                lines.append(f"*项目描述：* {item.get('summary', '')[:200]}...")
+                lines.append("")
+        lines.append("---")
+        lines.append("*觉得有用？点个 ⭐ Star 支持一下原作者。*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:
