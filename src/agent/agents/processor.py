@@ -69,6 +69,10 @@ class ProcessorAgent(BaseAgent):
             # Product Hunt 每日新品：只保留 Product Hunt 来源
             filtered = [x for x in items if x.get("source") == "producthunt"]
             items = filtered[:8]
+        elif pipeline_name == "devto_daily":
+            # Dev.to 热门技术文章：只保留 Dev.to 来源
+            filtered = [x for x in items if x.get("source") == "devto"]
+            items = filtered[:5]
         else:
             # 其他 pipeline：只处理前 2 条，控制 API 调用次数
             items = items[:2]

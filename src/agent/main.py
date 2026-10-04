@@ -24,7 +24,7 @@ from .db import init_db
 from .orchestrator import Orchestrator
 
 
-ALL_PIPELINES = ["ai_daily", "ai_daily_cn", "ai_deepdive", "scored_briefing", "weekly_digest", "reddit_digest", "github_tools", "free_ai_tools", "ai_prompts", "product_hunt_daily"]
+ALL_PIPELINES = ["ai_daily", "ai_daily_cn", "ai_deepdive", "scored_briefing", "weekly_digest", "reddit_digest", "github_tools", "free_ai_tools", "ai_prompts", "product_hunt_daily", "devto_daily"]
 
 
 def setup_logging():
