@@ -12,11 +12,11 @@
 
 ## 📌 综合
 
-### 1. [Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s](https://github.com/Niko1221/Strata)
+### 1. [Car is a smartphone on wheels. Here's who's listening](https://automatictransmission.khoury.northeastern.edu/)
 *hackernews*
 
 
-### 2. [Car is a smartphone on wheels. Here's who's listening](https://automatictransmission.khoury.northeastern.edu/)
+### 2. [Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s](https://github.com/Niko1221/Strata)
 *hackernews*
 
 
@@ -24,13 +24,11 @@
 *hackernews*
 
 
-### 4. [Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
+### 4. [A Map of Every Lighthouse on the Planet](https://mapped.earth/lighthouses/world)
 *hackernews*
 
 
-## 🤖 AI / 大模型
-
-### 1. [Show HN: AI search for every photo and every frame of video on macOS](https://github.com/allenv0/SCM)
+### 5. [Tell HN: Bob Cringely has died](https://news.ycombinator.com/item?id=49949438)
 *hackernews*
 
 
