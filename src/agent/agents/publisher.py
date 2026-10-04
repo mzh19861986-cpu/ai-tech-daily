@@ -42,6 +42,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_reddit_report(items, pipeline_name)
         elif pipeline_name == "github_tools":
             markdown = self._build_tools_report(items, pipeline_name)
+        elif pipeline_name == "free_ai_tools":
+            markdown = self._build_free_tools_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -198,6 +200,33 @@ class PublisherAgent(BaseAgent):
                 lines.append("")
         lines.append("---")
         lines.append("*觉得有用？点个 ⭐ Star 支持一下原作者。*")
+        return "\n".join(lines)
+
+    def _build_free_tools_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """免费 AI 工具汇总"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 🆓 今日免费 AI 工具汇总 - {date_str}",
+            "",
+            f"> 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 {len(items)} 个",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            lines.append(f"## {i}. [{item.get('title', '')}]({item.get('url', '')})")
+            lines.append("")
+            who = item.get("who_for", "")
+            if who:
+                lines.append(f"**👥 适合谁：** {who}")
+                lines.append("")
+            how = item.get("how_to_start", "")
+            if how:
+                lines.append(f"**🚀 怎么开始：** {how}")
+                lines.append("")
+            if item.get("summary"):
+                lines.append(f"**📝 简介：** {item.get('summary', '')}")
+                lines.append("")
+        lines.append("---")
+        lines.append("*收藏起来，慢慢试！觉得有用记得分享给朋友~*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:

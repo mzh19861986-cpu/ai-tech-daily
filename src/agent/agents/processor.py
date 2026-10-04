@@ -81,6 +81,11 @@ class ProcessorAgent(BaseAgent):
             processed = [x for x in processed if x.get("source") == "github_trending"]
             processed = processed[:8]
 
+        # 免费 AI 工具汇总：只保留 AI/工具类内容
+        if pipeline_name == "free_ai_tools":
+            processed = [x for x in processed if x.get("category") in ["ai_ml", "devtools"]]
+            processed = processed[:6]
+
         return AgentResult(
             success=True,
             data=processed,
@@ -126,6 +131,11 @@ class ProcessorAgent(BaseAgent):
         # GitHub 工具推荐：生成"为什么你需要它"
         if pipeline_name == "github_tools":
             result["why_useful"] = self._explain_utility(title, summary)
+
+        # 免费 AI 工具汇总：生成"适合谁 + 怎么开始用"
+        if pipeline_name == "free_ai_tools":
+            result["who_for"] = self._explain_audience(title, summary)
+            result["how_to_start"] = self._explain_how_to_start(title, summary)
 
         return result
 
@@ -248,6 +258,28 @@ class ProcessorAgent(BaseAgent):
         if result:
             return result
         return "一个有趣的开源项目，可以看看它是怎么实现的。"
+
+    def _explain_audience(self, title: str, context: str) -> str:
+        """解释这个工具适合谁用"""
+        result = self._call_llm(
+            system_prompt="你是工具测评博主。用一句话说明这个 AI 工具最适合哪类人用（比如：独立开发者、内容创作者、学生、企业团队）。",
+            user_prompt=f"工具名: {title}\n描述: {context[:600]}",
+            max_tokens=60,
+        )
+        if result:
+            return result
+        return "适合对 AI 感兴趣的开发者。"
+
+    def _explain_how_to_start(self, title: str, context: str) -> str:
+        """解释怎么开始用这个工具"""
+        result = self._call_llm(
+            system_prompt="你是工具教程博主。用 1-2 句话告诉读者，怎么快速开始用这个工具（比如：直接打开网页就能用、需要 API key、需要本地部署）。",
+            user_prompt=f"工具名: {title}\n描述: {context[:600]}",
+            max_tokens=80,
+        )
+        if result:
+            return result
+        return "打开链接看看官方文档就知道了。"
 
     def _categorize(self, text: str) -> str:
         """关键词分类"""
