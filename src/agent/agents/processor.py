@@ -48,6 +48,12 @@ class ProcessorAgent(BaseAgent):
             processed.sort(key=lambda x: x.get("score", 0), reverse=True)
             processed = processed[:10]  # 只保留 top 10
 
+        # Reddit digest：只保留 Reddit 来源，按点赞排序
+        if pipeline_name == "reddit_digest":
+            processed = [x for x in processed if "reddit" in x.get("source", "")]
+            processed.sort(key=lambda x: x.get("score", 0) if isinstance(x.get("score"), (int, float)) else 0, reverse=True)
+            processed = processed[:15]
+
         return AgentResult(
             success=True,
             data=processed,

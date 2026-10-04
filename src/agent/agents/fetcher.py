@@ -57,6 +57,11 @@ class FetcherAgent(BaseAgent):
         items.extend(gh_items)
         self.logger.info(f"GitHub Trending: {len(gh_items)} 条")
 
+        # 5. Reddit 热门技术帖
+        reddit_items = self._fetch_reddit()
+        items.extend(reddit_items)
+        self.logger.info(f"Reddit: {len(reddit_items)} 条")
+
         return AgentResult(
             success=True,
             data=items,
@@ -147,3 +152,27 @@ class FetcherAgent(BaseAgent):
         except Exception as e:
             self.logger.error(f"GitHub Trending 抓取失败: {e}")
             return []
+
+    def _fetch_reddit(self, limit: int = 15) -> List[Dict]:
+        """抓取 Reddit 热门技术 subreddit 帖子（用 RSS）"""
+        subreddits = ["MachineLearning", "programming", "LocalLLaMA"]
+        items = []
+        headers = {**self.HEADERS, "User-Agent": "ai-tech-daily/1.0"}
+        per_sub = max(limit // len(subreddits), 3)
+        for sub in subreddits:
+            try:
+                url = f"https://www.reddit.com/r/{sub}/hot/.rss?limit={per_sub}"
+                resp = requests.get(url, timeout=15, headers=headers)
+                feed = feedparser.parse(resp.content)
+                for entry in feed.entries[:per_sub]:
+                    items.append({
+                        "source": f"reddit/r/{sub}",
+                        "title": entry.get("title", ""),
+                        "url": entry.get("link", ""),
+                        "summary": _strip_html(entry.get("summary", ""))[:400],
+                        "published": entry.get("published", ""),
+                        "score": 0,
+                    })
+            except Exception as e:
+                self.logger.warning(f"Reddit r/{sub} 抓取失败: {e}")
+        return items

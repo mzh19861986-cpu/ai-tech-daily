@@ -38,6 +38,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_scored_report(items, pipeline_name)
         elif pipeline_name == "weekly_digest":
             markdown = self._build_weekly_report(items, pipeline_name)
+        elif pipeline_name == "reddit_digest":
+            markdown = self._build_reddit_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -148,6 +150,29 @@ class PublisherAgent(BaseAgent):
         lines.append("")
         lines.append("---")
         lines.append("*本周报由 AI 自动汇总生成，精选自公开技术社区。*")
+        return "\n".join(lines)
+
+    def _build_reddit_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """Reddit 技术社区热门 digest"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 💬 Reddit 技术社区热门帖 - {date_str}",
+            "",
+            f"> 由 AI Agent 自动抓取并摘要 | 共 {len(items)} 条热门",
+            "",
+            "## 🔥 本周热议",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            source = item.get("source", "")
+            lines.append(f"### {i}. [{item.get('title', '')}]({item.get('url', '')})")
+            lines.append(f"*{source}*")
+            lines.append("")
+            if item.get("summary"):
+                lines.append(item.get("summary", ""))
+                lines.append("")
+        lines.append("---")
+        lines.append("*内容来自 Reddit 公开社区，由 AI 自动摘要生成。*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:
