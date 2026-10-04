@@ -140,32 +140,43 @@ class ProcessorAgent(BaseAgent):
         return sorted_items[:3]
 
     def _call_llm(self, system_prompt: str, user_prompt: str, max_tokens: int = 200) -> str:
-        """统一调用 LLM：DeepSeek 多 key 轮询，失败 fallback 到 Gemini"""
+        """统一调用 LLM：DeepSeek 多 key 轮询 + 重试，失败 fallback 到 Gemini"""
         from openai import OpenAI
 
-        # 主模型：DeepSeek 多 key 轮询
+        # 主模型：DeepSeek 多 key 轮询，带重试
         deepseek_key = self._get_next_deepseek_key()
         if deepseek_key:
-            try:
-                self._rate_limit()
-                client = OpenAI(api_key=deepseek_key, base_url=config.deepseek_base_url)
-                resp = client.chat.completions.create(
-                    model=config.deepseek_model,
-                    messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": user_prompt},
-                    ],
-                    max_tokens=max_tokens,
-                )
-                return resp.choices[0].message.content.strip()
-            except Exception as e:
-                self.logger.warning(f"主模型(DeepSeek)失败: {e}")
+            for attempt in range(3):  # 重试 3 次
+                try:
+                    self._rate_limit()
+                    client = OpenAI(
+                        api_key=deepseek_key,
+                        base_url=config.deepseek_base_url,
+                        timeout=30.0,  # 30 秒超时
+                        max_retries=2,
+                    )
+                    resp = client.chat.completions.create(
+                        model=config.deepseek_model,
+                        messages=[
+                            {"role": "system", "content": system_prompt},
+                            {"role": "user", "content": user_prompt},
+                        ],
+                        max_tokens=max_tokens,
+                    )
+                    return resp.choices[0].message.content.strip()
+                except Exception as e:
+                    self.logger.warning(f"主模型(DeepSeek)第{attempt+1}次失败: {str(e)[:100]}")
+                    time.sleep(2 * (attempt + 1))  # 指数退避
 
         # 备用模型：Gemini
         if config.openai_api_key:
             try:
                 self._rate_limit()
-                client = OpenAI(api_key=config.openai_api_key, base_url=config.openai_base_url)
+                client = OpenAI(
+                    api_key=config.openai_api_key,
+                    base_url=config.openai_base_url,
+                    timeout=30.0,
+                )
                 resp = client.chat.completions.create(
                     model=config.openai_model,
                     messages=[
@@ -176,7 +187,7 @@ class ProcessorAgent(BaseAgent):
                 )
                 return resp.choices[0].message.content.strip()
             except Exception as e:
-                self.logger.warning(f"备用模型(Gemini)失败: {e}")
+                self.logger.warning(f"备用模型(Gemini)失败: {str(e)[:100]}")
 
         return ""
 
