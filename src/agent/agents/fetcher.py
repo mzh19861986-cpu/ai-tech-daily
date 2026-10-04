@@ -62,11 +62,59 @@ class FetcherAgent(BaseAgent):
         items.extend(reddit_items)
         self.logger.info(f"Reddit: {len(reddit_items)} 条")
 
+        # 6. Product Hunt 每日热门
+        ph_items = self._fetch_product_hunt()
+        items.extend(ph_items)
+        self.logger.info(f"Product Hunt: {len(ph_items)} 条")
+
+        # 7. Dev.to 热门技术文章
+        devto_items = self._fetch_devto()
+        items.extend(devto_items)
+        self.logger.info(f"Dev.to: {len(devto_items)} 条")
+
         return AgentResult(
             success=True,
             data=items,
             items_processed=len(items),
         )
+
+    def _fetch_product_hunt(self, limit: int = 10) -> List[Dict]:
+        """Product Hunt 每日热门产品（RSS）"""
+        try:
+            resp = requests.get("https://www.producthunt.com/feed", timeout=15, headers=self.HEADERS)
+            feed = feedparser.parse(resp.content)
+            items = []
+            for entry in feed.entries[:limit]:
+                items.append({
+                    "source": "producthunt",
+                    "title": entry.get("title", ""),
+                    "url": entry.get("link", ""),
+                    "summary": _strip_html(entry.get("summary", ""))[:400],
+                    "published": entry.get("published", ""),
+                })
+            return items
+        except Exception as e:
+            self.logger.warning(f"Product Hunt 抓取失败: {e}")
+            return []
+
+    def _fetch_devto(self, limit: int = 10) -> List[Dict]:
+        """Dev.to 热门技术文章（RSS）"""
+        try:
+            resp = requests.get("https://dev.to/feed", timeout=15, headers=self.HEADERS)
+            feed = feedparser.parse(resp.content)
+            items = []
+            for entry in feed.entries[:limit]:
+                items.append({
+                    "source": "devto",
+                    "title": entry.get("title", ""),
+                    "url": entry.get("link", ""),
+                    "summary": _strip_html(entry.get("summary", ""))[:400],
+                    "published": entry.get("published", ""),
+                })
+            return items
+        except Exception as e:
+            self.logger.warning(f"Dev.to 抓取失败: {e}")
+            return []
 
     def _fetch_hn(self, limit: int = 15) -> List[Dict]:
         """抓取 Hacker News 头条"""
