@@ -14,9 +14,29 @@ class ProcessorAgent(BaseAgent):
     name = "processor"
     description = "用 AI 把原始数据处理成结构化内容"
 
-    # 限流：Gemini 免费 tier 每分钟 5 次，两次调用间隔至少 13 秒
-    MIN_INTERVAL_SEC = 10
+    # 限流：DeepSeek 没那么严，2 秒足够
+    MIN_INTERVAL_SEC = 2
     _last_call_time: float = 0
+
+    # DeepSeek 多 key 轮询
+    _deepseek_key_index: int = 0
+
+    def _get_next_deepseek_key(self) -> str:
+        """轮询 DeepSeek 多 key，分散额度"""
+        keys = []
+        if config.deepseek_api_key:
+            keys.append(config.deepseek_api_key)
+        # 额外的 key 从环境变量读
+        import os
+        for i in range(2, 10):
+            k = os.getenv(f"DEEPSEEK_API_KEY_{i}")
+            if k:
+                keys.append(k)
+        if not keys:
+            return None
+        idx = self._deepseek_key_index % len(keys)
+        self._deepseek_key_index += 1
+        return keys[idx]
 
     def _rate_limit(self):
         """简单的固定窗口限流"""
@@ -120,14 +140,15 @@ class ProcessorAgent(BaseAgent):
         return sorted_items[:3]
 
     def _call_llm(self, system_prompt: str, user_prompt: str, max_tokens: int = 200) -> str:
-        """统一调用 LLM：优先 DeepSeek，失败 fallback 到 Gemini"""
+        """统一调用 LLM：DeepSeek 多 key 轮询，失败 fallback 到 Gemini"""
         from openai import OpenAI
 
-        # 主模型：DeepSeek（额度充足）
-        if config.deepseek_api_key:
+        # 主模型：DeepSeek 多 key 轮询
+        deepseek_key = self._get_next_deepseek_key()
+        if deepseek_key:
             try:
                 self._rate_limit()
-                client = OpenAI(api_key=config.deepseek_api_key, base_url=config.deepseek_base_url)
+                client = OpenAI(api_key=deepseek_key, base_url=config.deepseek_base_url)
                 resp = client.chat.completions.create(
                     model=config.deepseek_model,
                     messages=[
@@ -140,7 +161,7 @@ class ProcessorAgent(BaseAgent):
             except Exception as e:
                 self.logger.warning(f"主模型(DeepSeek)失败: {e}")
 
-        # 备用模型：Gemini（免费额度少）
+        # 备用模型：Gemini
         if config.openai_api_key:
             try:
                 self._rate_limit()
