@@ -90,6 +90,17 @@ def build_index(posts: list[dict]) -> str:
     content = f"""
     <h1>🤖 AI Tech Daily</h1>
     <p class="meta">AI 自动抓取、AI 摘要、每日更新 | 共 {len(posts)} 篇</p>
+
+    <div class="sponsor-box" style="background: #e3f2fd; border-color: #90caf9;">
+        <h3 style="margin-top:0;">🛠️ 开发者推荐工具</h3>
+        <p style="margin-bottom: 0.5rem;">这些是我们每天都在用的效率工具，推荐给你：</p>
+        <ul style="text-align: left; display: inline-block; margin: 0.5rem 0;">
+            <li>🔧 <a href="https://github.com/sponsors" target="_blank">GitHub Sponsors</a> - 支持开源项目</li>
+            <li>☁️ <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> - 免费托管静态网站</li>
+            <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek</a> - 高性价比 AI 大模型</li>
+        </ul>
+    </div>
+
     <h2>最新日报</h2>
     <ul class="post-list">
         {posts_html}
