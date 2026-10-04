@@ -46,6 +46,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_free_tools_report(items, pipeline_name)
         elif pipeline_name == "ai_prompts":
             markdown = self._build_prompts_report(items, pipeline_name)
+        elif pipeline_name == "product_hunt_daily":
+            markdown = self._build_ph_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -251,6 +253,26 @@ class PublisherAgent(BaseAgent):
             lines.append("")
         lines.append("---")
         lines.append("*试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*")
+        return "\n".join(lines)
+
+    def _build_ph_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """Product Hunt 每日新品推荐"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# 🚀 今日 Product Hunt 新品 - {date_str}",
+            "",
+            f"> 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 {len(items)} 个",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            lines.append(f"## {i}. [{item.get('title', '')}]({item.get('url', '')})")
+            lines.append("")
+            what = item.get("what_is_it", "")
+            if what:
+                lines.append(f"**💡 是什么 + 为什么值得试：** {what}")
+                lines.append("")
+            lines.append("---")
+        lines.append("*想发现更多新奇产品，记得每天来看看~*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:

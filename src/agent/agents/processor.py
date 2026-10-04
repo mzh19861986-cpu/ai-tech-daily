@@ -65,6 +65,10 @@ class ProcessorAgent(BaseAgent):
             ai_keywords = ["ai", "llm", "gpt", "agent", "model", "prompt", "gemini", "claude"]
             filtered = [x for x in items if any(k in x.get("title", "").lower() for k in ai_keywords)]
             items = filtered[:5]
+        elif pipeline_name == "product_hunt_daily":
+            # Product Hunt 每日新品：只保留 Product Hunt 来源
+            filtered = [x for x in items if x.get("source") == "producthunt"]
+            items = filtered[:8]
         else:
             # 其他 pipeline：只处理前 2 条，控制 API 调用次数
             items = items[:2]
@@ -145,6 +149,10 @@ class ProcessorAgent(BaseAgent):
         # AI Prompt 汇总：提炼好用的 Prompt 技巧
         if pipeline_name == "ai_prompts":
             result["prompt_tip"] = self._extract_prompt_tip(title, summary)
+
+        # Product Hunt 新品：生成"这个产品是干什么的 + 为什么值得试"
+        if pipeline_name == "product_hunt_daily":
+            result["what_is_it"] = self._explain_utility(title, summary)
 
         return result
 
