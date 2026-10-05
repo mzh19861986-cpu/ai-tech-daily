@@ -526,6 +526,16 @@ def build_tools_ranking() -> str:
         {"rank": 8, "name": "Docker", "desc": "容器化部署，开发者必备", "url": "https://www.docker.com/"},
         {"rank": 9, "name": "Postman", "desc": "API 测试与调试工具", "url": "https://www.postman.com/"},
         {"rank": 10, "name": "Figma", "desc": "设计协作工具", "url": "https://www.figma.com/"},
+        {"rank": 11, "name": "Midjourney", "desc": "AI 绘画，设计必备", "url": "https://www.midjourney.com/"},
+        {"rank": 12, "name": "ElevenLabs", "desc": "AI 语音生成，超逼真", "url": "https://elevenlabs.io/"},
+        {"rank": 13, "name": "Jasper", "desc": "AI 写作助手，营销文案神器", "url": "https://www.jasper.ai/"},
+        {"rank": 14, "name": "Copy.ai", "desc": "AI 文案生成，转化率高", "url": "https://www.copy.ai/"},
+        {"rank": 15, "name": "Surfer SEO", "desc": "AI SEO 优化工具", "url": "https://surferseo.com/"},
+        {"rank": 16, "name": "Writesonic", "desc": "AI 博客写作，快速生成", "url": "https://writesonic.com/"},
+        {"rank": 17, "name": "Synthesia", "desc": "AI 数字人视频生成", "url": "https://www.synthesia.io/"},
+        {"rank": 18, "name": "Pictory", "desc": "AI 视频制作，图文转视频", "url": "https://pictory.ai/"},
+        {"rank": 19, "name": "Merlin AI", "desc": "浏览器 AI 助手，全网可用", "url": "https://www.getmerlin.in/"},
+        {"rank": 20, "name": "Systeme.io", "desc": "AI 营销自动化平台", "url": "https://systeme.io/"},
     ]
     tools_html = "\n".join([
         f'''
