@@ -53,17 +53,16 @@ TEMPLATE = """<!DOCTYPE html>
         .nav a {{ margin-right: 1.5rem; font-weight: 500; }}
         .post-list {{ list-style: none; padding: 0; }}
         .post-list li {{
-            padding: 1.2rem 1.5rem; margin-bottom: 1rem;
-            background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
-            border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.8);
+            padding: 1.5rem 0; margin-bottom: 0;
+            border-bottom: 1px solid #e1e4e8;
+            transition: all 0.2s ease;
         }}
         .post-list li:hover {{
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(108,92,231,0.15);
-            border-color: #a29bfe;
+            padding-left: 0.5rem;
         }}
-        .post-list .date {{ color: #b2bec3; font-size: 0.85rem; margin-right: 1rem; font-weight: 500; }}
+        .post-list li:last-child {{ border-bottom: none; }}
+        .post-list a {{ font-size: 1.1rem; font-weight: 500; color: #24292e; }}
+        .post-list .date {{ color: #95a5a6; font-size: 0.85rem; margin-right: 1rem; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
         .newsletter-box {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white; padding: 2rem; border-radius: 16px; margin: 2.5rem 0;
@@ -86,10 +85,20 @@ TEMPLATE = """<!DOCTYPE html>
             text-align: center; box-shadow: 0 4px 15px rgba(253,203,110,0.3);
         }}
         .content {{
-            background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
-            padding: 2.5rem; border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
-            border: 1px solid rgba(255,255,255,0.8);
+            background: transparent;
+            padding: 1rem 0;
+        }}
+        .content h2 {{
+            margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #e1e4e8;
+        }}
+        .content p {{ margin: 1.2rem 0; }}
+        .content blockquote {{
+            border-left: 3px solid #6c5ce7; padding-left: 1rem;
+            margin-left: 0; color: #636e72; font-style: italic;
+        }}
+        .content code {{
+            background: #f1f3f5; padding: 0.2rem 0.4rem; border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace; font-size: 0.9rem;
         }}
     </style>
 </head>
