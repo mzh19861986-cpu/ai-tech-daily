@@ -24,14 +24,14 @@ class ProcessorAgent(BaseAgent):
     def _get_next_deepseek_key(self) -> str:
         """轮询 DeepSeek 多 key，分散额度"""
         keys = []
-        if config.deepseek_api_key:
-            keys.append(config.deepseek_api_key)
-        # 额外的 key 从环境变量读
+        # 先读逗号分隔的多 key
         import os
-        for i in range(2, 10):
-            k = os.getenv(f"DEEPSEEK_API_KEY_{i}")
-            if k:
-                keys.append(k)
+        keys_str = os.getenv("DEEPSEEK_API_KEYS", "")
+        if keys_str:
+            keys = [k.strip() for k in keys_str.split(",") if k.strip()]
+        # 再读单数的
+        if config.deepseek_api_key and config.deepseek_api_key not in keys:
+            keys.append(config.deepseek_api_key)
         if not keys:
             return None
         idx = self._deepseek_key_index % len(keys)
