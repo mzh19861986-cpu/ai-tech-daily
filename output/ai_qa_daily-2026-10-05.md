@@ -2,37 +2,37 @@
 
 > 关于 AI 你可能想问的问题 | 每天一个问题，搞懂一个概念
 
-## Q1: Anthropic wants your thoughts on AI？
+## Q1: Claude Says？
 
-**A:** Anthropic 正在公开征集公众对 AI 发展的看法和担忧，试图在 AI 治理和伦理规范上引入更多外部声音。这事值得关注，因为头部 AI 公司主动向用户和公众要反馈，正在成为行业争夺「负责任 AI」话语权的新动作。
-
-📎 更多阅读：[Anthropic wants your thoughts on AI](https://www.anthropic.com/research/your-thoughts-on-ai)
-
-## Q2: Spending on AI Is Becoming Almost Impossible for Businesses to Budget？
-
-**A:** 企业给AI花钱这件事，正在从“项目预算”变成“填不满的坑”——训练成本、推理调用费、数据治理开销层层叠加，连CFO都很难预测下季度要烧多少。值得关注的是，这暴露了一个结构性矛盾：AI的投入产出节奏和传统IT预算周期根本不匹配，企业要么被迫转向按用量付费的灵活模式，要么就得接受预算永远追不上账单。
-
-📎 更多阅读：[Spending on AI Is Becoming Almost Impossible for Businesses to Budget](https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a)
-
-## Q3: Claude Says？
-
-**A:** 这条讨论围绕 Anthropic 的 Claude 模型在输出中出现的某种特定行为或表述展开，社区成员就它的可信度、边界和潜在影响交换了看法。之所以值得留意，是因为它触及一个更普遍的问题：当模型开始「自信地」说出某些内容时，我们该如何判断它是真实理解还是模式匹配。如果你在用 Claude 或评估 LLM 的可靠性，这类一线观察比官方宣传更有参考价值。
+**A:** 这个链接指向 lobste.rs 上关于「Claude Says」的讨论帖，具体内容我无法直接读取（链接只给了评论区入口，没有正文）。如果你能把原文或截图发过来，我可以帮你提炼成两三句有信息量的总结。
 
 📎 更多阅读：[Claude Says](https://ohhfishal.net/Posts/claude)
 
-## Q4: Reverse Engineering Comanche Terrain Maps？
+## Q2: MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching？
 
-**A:** 有人把 1992 年经典直升机模拟游戏《Comanche: Maximum Overkill》的地形数据逆向出来了——这套地形系统当年靠体素渲染实现了远超同期游戏的地貌细节。值得关注是因为它揭示了 NovaLogic 那套体素引擎的内部数据格式，对复古游戏保存和引擎考古都挺有参考价值。
-
-📎 更多阅读：[Reverse Engineering Comanche Terrain Maps](https://pikuma.com/blog/comanche-maps-reverse-engineering)
-
-## Q5: MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching？
-
-**A:** **一句话总结**：这篇论文提出 MintFlow，一种对 flow matching 生成轨迹做最小干预的约束采样方法——只在该动手的地方动手，而不是把整条生成路径推倒重来。
-
-**为什么值得关注**：现有的约束采样器有个老毛病，为了满足观测数据或物理定律这类硬约束，往往会把样本推离预训练时学到的数据分布，生成结果既不符合约束也不像真实数据。MintFlow 的思路是只在轨迹上做「最小必要修改」，理论上能更好地兼顾约束满足和分布保真度。对做科学计算、逆问题、物理仿真生成这类需要「既要合规又要真实」的应用，是个值得跟进的方向。
+**A:** Flow matching 模型生成能力很强，但下游任务常要求样本满足观测值、物理定律等硬约束，现有约束采样器一加强约束就会把样本推离预训练分布，生成质量跟着掉。这篇 MintFlow 的做法是只对生成轨迹做「最小干预」，用最小的改动让样本满足约束，从而在约束达标和保持原始分布之间少做取舍。对做科学计算、逆问题或任何需要「带约束生成」的人来说，这是直接冲着痛点去的思路。
 
 📎 更多阅读：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
+
+## Q3: Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses？
+
+**A:** 这篇论文给「小模型替代大模型做 Agent 决策」这个热门思路泼了盆冷水。作者系统评估了 System-1 决策模型（单次前向传播输出类别概率）在 Agent 框架各类小决策上的表现，发现速度优势明显，但证据质量跟不上——配对实验和自我审计揭示了性能与可靠性之间的落差。值得关注是因为它直接质疑了「用小快模型省钱省延迟」的工程直觉，给正在搭 Agent 系统的人提了个醒：别只看 benchmark 分数，审计要跟上。
+
+📎 更多阅读：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
+
+## Q4: The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?？
+
+**A:** 这篇论文问了一个很实际的问题：企业年报里关于AI的披露，能不能被用来衡量社会面对AI冲击的韧性？作者用一套可复现的两阶段LLM分类流程，处理了9,821份年报，试图把散落在财报里的AI表态变成可量化、可比较的信号。
+
+值得关注的点在于方法本身——它展示了一条规模化挖掘企业文本的路径，把原本无人细读的年报变成政策研究和社会韧性分析的原料。对做AI治理、ESG或公司信息披露研究的人来说，这可能是新数据源的起点。
+
+📎 更多阅读：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
+
+## Q5: Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents？
+
+**A:** 这篇论文给长周期工具调用智能体提出了一种“先比较再行动”的价值估计方法，解决的是LLM在多步工具调用中「最终奖励难以归因到具体步骤」的老问题。通过对候选动作做相对价值比较而非绝对打分，它能在不依赖密集人工标注的情况下实现更精准的步级信用分配——这对构建真正能稳定完成复杂多步任务的Agent是个关键拼图。
+
+📎 更多阅读：[Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents](https://arxiv.org/abs/2610.02330)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

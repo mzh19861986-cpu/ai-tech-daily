@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Marv](https://www.producthunt.com/products/marv-3)
+## 1. [Reactive Resume v6](https://www.producthunt.com/products/reactive-resume)
 
-**💡 是什么 + 为什么值得试：** Marv 能在你操作软件时实时提示下一步该点哪里，省去在菜单里瞎找或翻教程的时间。如果你常被复杂界面卡住，这个开源工具值得装上试试。
-
----
-## 2. [Unscary AI](https://www.producthunt.com/products/unscary-ai)
-
-**💡 是什么 + 为什么值得试：** Unscary AI 把 AI 知识拆成短小课程，专治那种"别人都在用 AI 了，我还一脸懵"的落后焦虑。如果你想低成本快速补上基础认知，又不想啃长篇大论，这个适合试试。
+**💡 是什么 + 为什么值得试：** Reactive Resume 能帮你在浏览器里快速做出专业简历，支持实时预览和多种模板切换，数据存在本地不用注册账号。如果你不想在 Word 里反复调格式、又介意在线简历工具收费或收集隐私，这个开源项目值得一试。
 
 ---
-## 3. [Bentomux](https://www.producthunt.com/products/bentomux)
+## 2. [Invofox Self Serve](https://www.producthunt.com/products/invofox)
 
-**💡 是什么 + 为什么值得试：** Bentomux 把你的终端工作区切成可保存的"便当格"，一个命令就能恢复整套面板布局和会话，省去每次重开终端都要手动分屏重连的麻烦。如果你经常在多个项目间切换、受够了每次从零搭 tmux 环境，值得一试。
-
----
-## 4. [Web Search API](https://www.producthunt.com/products/cloudflare)
-
-**💡 是什么 + 为什么值得试：** 给 AI Agent 接上实时互联网数据，不用自己爬网页、维护搜索基础设施，调用 API 就能拿到当前信息。如果你在做需要联网检索的 AI 应用，这个可以直接省掉一大块后端工作。
+**💡 是什么 + 为什么值得试：** Invofox Self Serve 能帮你把发票、收据等财务文档自动提取成结构化数据，准确率标称 99% 且带 SLA 保障，省去手动录入的麻烦。如果你受够了 OCR 识别完还要逐条核对修正，可以试试这个对准确率有承诺的开源方案。
 
 ---
-## 5. [Reason](https://www.producthunt.com/products/dereference-the-100x-ide)
+## 3. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
 
-**💡 是什么 + 为什么值得试：** Reason 把代码上下文、插件和可复用技能整合进一个工作区，让你少在工具间来回切换、少重复粘贴背景信息。如果你常觉得 AI 助手“不知道项目里发生了啥”，可以试试用它把上下文固定下来。
-
----
-## 6. [devpit](https://www.producthunt.com/products/devpit)
-
-**💡 是什么 + 为什么值得试：** devpit 给你一个原生控制台，集中查看和管理所有 Claude Code agent 的运行状态，不用在多个终端窗口之间来回切。如果你同时跑几个 agent 干活，又总搞不清哪个卡住了，值得试试。
+**💡 是什么 + 为什么值得试：** FastRouter.ai 让你用一个统一的接口，按成本、延迟或质量自动把请求路由到最合适的 LLM，省去自己写多模型调度和 fallback 逻辑的麻烦。如果你在多模型间做取舍或想省钱又不想牺牲效果，值得试。
 
 ---
-## 7. [crosswalk](https://www.producthunt.com/products/crosswalk)
+## 4. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
 
-**💡 是什么 + 为什么值得试：** Crosswalk 想解决的是你和你的 AI agent 之间“消息散落各处、没有统一入口”的问题——它从 inbox 入手，给人和 agent 提供一个共同的第三个空间来收发、整理消息。如果你经常在多个工具间切换跟 agent 打交道，可以试试它的 inbox 方案。
+**💡 是什么 + 为什么值得试：** DailyHelm 把网站分析数据直接翻译成每天可执行的优化动作，省去你盯着 GA 报表猜该改哪儿的时间。如果你有流量但转化上不去，它值得一试——因为它解决的是「看了数据但不知道下一步做什么」这个具体痛点。
 
 ---
-## 8. [HyperFrames Studio (Desktop)](https://www.producthunt.com/products/heygen)
+## 5. [crosswalk](https://www.producthunt.com/products/crosswalk)
 
-**💡 是什么 + 为什么值得试：** 如果你在让 AI Agent 自动剪辑视频时，总卡在“生成时间线容易、真正导出成片难”这一步，HyperFrames Studio 就是冲着这个缺口来的：它把剪辑工程做成 Agent 能直接读写和渲染的桌面工具，省掉你在脚本、FFmpeg、时间线格式之间来回拼装。
+**💡 是什么 + 为什么值得试：** Crosswalk 想给你的收件箱加一个「第三空间」——让人和各自的 AI agent 在同一个界面里协同处理邮件，而不是你在邮箱、agent 聊天窗口之间来回切换。如果你已经在用 agent 自动处理邮件，但苦于没有统一的地方查看和接管，这个项目值得一看。
+
+---
+## 6. [Oogwai Beacon](https://www.producthunt.com/products/oogwai-beacon)
+
+**💡 是什么 + 为什么值得试：** Oogwai Beacon 能自动审计你的网站内容在 AI 搜索引擎（如 Perplexity、ChatGPT 搜索）里的可见度，告诉你哪些页面不会被引用、该怎么改。如果你在意内容在 AI 回答中的曝光，这个工具值得跑一遍看看。
+
+---
+## 7. [devpit](https://www.producthunt.com/products/devpit)
+
+**💡 是什么 + 为什么值得试：** devpit 把你的 Claude Code agent 从终端黑盒变成可视化控制台，让你实时看到每个 agent 在干什么、卡在哪一步。如果你同时跑多个 agent 又不想靠日志猜状态，这个值得试试。
+
+---
+## 8. [Opengeni](https://www.producthunt.com/products/opengeni)
+
+**💡 是什么 + 为什么值得试：** Opengeni 帮你省掉从零搭建 agent 运行环境的那堆脏活——部署、状态管理、工具调用编排这些基础设施它都替你包了，你只管写 agent 逻辑。如果你正在被"demo 跑得通、上线就翻车"卡住，值得花几分钟试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
