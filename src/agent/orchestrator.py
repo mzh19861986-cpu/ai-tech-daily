@@ -31,6 +31,11 @@ from .agents.evolution import EvolutionAgent
 from .agents.seo import SeoAgent
 from .agents.analytics import AnalyticsAgent
 from .agents.community import CommunityAgent
+from .agents.database import DatabaseAgent
+from .agents.tool_manager import ToolManagerAgent
+from .agents.content_optimizer import ContentOptimizerAgent
+from .agents.security import SecurityAgent
+from .agents.config import ConfigAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -61,6 +66,12 @@ class Orchestrator:
         self.analytics = AnalyticsAgent()
         # 社区运营
         self.community = CommunityAgent()
+        # 基础设施层
+        self.database = DatabaseAgent()
+        self.tool_manager = ToolManagerAgent()
+        self.content_optimizer = ContentOptimizerAgent()
+        self.security = SecurityAgent()
+        self.config = ConfigAgent()
         # 自动循环调度
         self.autoloop = AutoLoopAgent()
 
