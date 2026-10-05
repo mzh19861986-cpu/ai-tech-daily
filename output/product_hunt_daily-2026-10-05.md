@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Chain Exchange](https://www.producthunt.com/products/chain-exchange)
+## 1. [Reviu](https://www.producthunt.com/products/reviu)
 
-**💡 是什么 + 为什么值得试：** Chain Exchange 让你在一个界面里完成稳定币的交易、跨链桥接和转移，省去在多个 DApp 之间来回切换的麻烦。如果你经常在 Arc 上搬运 USDC 这类资产，它值得一试。
-
----
-## 2. [HyperFrames Studio (Desktop)](https://www.producthunt.com/products/heygen)
-
-**💡 是什么 + 为什么值得试：** HyperFrames Studio 是专为 AI Agent 设计的桌面视频编辑器，能让 Agent 直接编程式地生成和剪辑视频，而不用你手动操作时间线。如果你在搭建自动化内容生产流程，它值得一试。
+**💡 是什么 + 为什么值得试：** Reviu 是一个专门审查 AI agent 所写代码的 review 工具，帮你快速发现 AI 生成代码里的问题，而不是盲目提交。如果你在用 Claude Code、Cursor 这类工具写代码，它能补上"写完就信"这块短板。
 
 ---
-## 3. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
+## 2. [Pilot5 Legal](https://www.producthunt.com/products/pilot5-ai)
 
-**💡 是什么 + 为什么值得试：** FastRouter.ai 帮你在多个 LLM 之间自动路由请求，按成本、延迟或质量选最合适的模型，不用自己写一套调度逻辑。如果你的应用同时在用几家模型、想省钱又不想牺牲效果，值得试试。
-
----
-## 4. [devpit](https://www.producthunt.com/products/devpit)
-
-**💡 是什么 + 为什么值得试：** devpit 把你的多个 Claude Code agent 收进一个原生控制台里统一查看和调度，省得开一堆终端窗口来回切。如果你已经在并行跑几个 agent，它能让状态一目了然。
+**💡 是什么 + 为什么值得试：** Pilot5 Legal 让五个AI模型同时对同一个法律问题作答并相互校验，帮你快速发现单一模型可能漏掉的风险点或错误引用。如果你需要初步的法律信息筛查又不想只信一个AI的“一面之词”，这个项目值得试试。
 
 ---
-## 5. [crosswalk](https://www.producthunt.com/products/crosswalk)
+## 3. [Bentomux](https://www.producthunt.com/products/bentomux)
 
-**💡 是什么 + 为什么值得试：** crosswalk 把人和各自的 agent 放进同一个收件箱里，让你不用在多个对话窗口之间来回切换就能统一处理来自不同 agent 的消息。如果你已经在用多个 AI 助手、又嫌管理起来太散，可以把它当成一个起点试试。
-
----
-## 6. [Xtracticle](https://www.producthunt.com/products/xtracticle)
-
-**💡 是什么 + 为什么值得试：** Xtracticle 能把 X（Twitter）上的长文章和整个 thread 一键存成 PDF、Markdown 或 EPUB，方便你离线阅读、归档或导入笔记软件。如果你经常需要保存优质推文内容却受限于复制粘贴的麻烦，它值得一试。
+**💡 是什么 + 为什么值得试：** Bentomux 把终端工作区切成可保存、可一键恢复的布局，省得你每次重开终端都要手动摆 pane、重跑命令。如果你经常在 tmux 里搭多窗口开发环境，它能让这套流程变成一条命令的事。
 
 ---
-## 7. [Unscary AI](https://www.producthunt.com/products/unscary-ai)
+## 4. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
 
-**💡 是什么 + 为什么值得试：** Unscary AI 用短课把 AI 拆成能立刻上手的零碎知识，专治“感觉别人都在用 AI，自己却不知道从哪开始”的焦虑。如果你一直想学但被各种术语和长教程劝退，它的轻量节奏值得试试。
+**💡 是什么 + 为什么值得试：** FastRouter.ai 帮你把请求自动分发到最合适的 LLM——按成本、延迟或质量做权衡，省去手动切换和反复比价的麻烦。如果你在多个模型间纠结该用哪个，它能直接用路由策略替你决定。
 
 ---
-## 8. [Netra](https://www.producthunt.com/products/netra)
+## 5. [Web Search API](https://www.producthunt.com/products/cloudflare)
 
-**💡 是什么 + 为什么值得试：** Netra 把 MacBook 的刘海变成一个常驻小面板，塞进了番茄钟、待办和媒体控制，让你不用切窗口就能盯住当前任务。如果你经常在“专注工作”和“随手摸鱼”之间反复横跳，它把该用的工具都放在了你视线扫过的地方。
+**💡 是什么 + 为什么值得试：** Web Search API 让你的 AI Agent 能实时搜索互联网，不再只依赖训练数据里过时的信息。如果你在搭需要查最新资料、验证事实或抓取实时内容的 Agent，这个开箱即用的搜索接口能省掉自己爬虫和接搜索 API 的麻烦。
+
+---
+## 6. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
+
+**💡 是什么 + 为什么值得试：** DailyHelm 把网站分析数据直接翻译成每天可执行的优化动作，帮你从“看报表”跳到“改页面赚钱”。如果你受够了只堆指标却不知道先修哪里，它值得一试。
+
+---
+## 7. [Reason](https://www.producthunt.com/products/dereference-the-100x-ide)
+
+**💡 是什么 + 为什么值得试：** 别再把代码助手当成一次性对话框了——Reason 把上下文、插件和可复用技能打包成一个持续的工作空间，让你不用每次重复交代项目背景和操作流程。如果你受够了在 IDE 和聊天窗口之间来回粘贴，它值得一试。
+
+---
+## 8. [Oogwai Beacon](https://www.producthunt.com/products/oogwai-beacon)
+
+**💡 是什么 + 为什么值得试：** 如果你在做内容站或产品页，想知道自己在 ChatGPT、Perplexity 这类答案引擎里为什么没被引用，Oogwai Beacon 能帮你做一次 AEO 审计，定位抓取和结构上的问题。它把“答案引擎优化”这件模糊的事拆成可检查的项，适合想认真做 AI 搜索流量的人先跑一遍看差距。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

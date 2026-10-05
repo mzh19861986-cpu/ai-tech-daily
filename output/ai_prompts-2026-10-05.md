@@ -4,43 +4,48 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供具体内容，因此无法提炼出可用的 AI Prompt 技巧或最佳实践。请提供完整的文章正文，我再帮你总结。**
+**这篇文章没有提供实质内容（标题和正文均为空），因此无法提炼 Prompt 技巧或 AI 使用建议。
 
-📎 来源：[Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/)
+如果你能补充以下任一信息，我可以立即为你提炼成可用的 Prompt 技巧：
+
+1. **文章正文/讨论内容**（哪怕是几段摘录）
+2. **核心观点**（例如：Jev 决策模型与 LLM-as-a-judge、传统分类器的对比结论）
+3. **你想要的应用场景**（如：模型评估、分类任务、LLM 评审等）
+
+补充后我会按你要求的格式输出：**1-**
+
+📎 来源：[Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers](https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails)
 
 ## 2. 💡 技巧 2
 
-**这篇文章标题为“Claude Says”，内容仅包含一个指向 Lobste.rs 讨论帖的链接，没有提供实质性的正文或 Prompt 相关内容。
+**这篇文章没有提供具体内容（正文为空），因此无法提炼出 Prompt 技巧或 AI 使用建议。如果你能贴出完整文章内容，我可以帮你总结其中的 AI/软件相关启示。**
 
-由于无法获取讨论的具体内容，我无法从中提炼出 Prompt 技巧或使用 AI 的建议。如果你能提供该讨论帖中的具体文字内容，我可以帮你进行分析和总结。**
-
-📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
+📎 来源：[Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有涉及 Prompt 技巧，其内容是关于流匹配模型的约束采样方法。若要从使用 AI 的角度总结，可提炼为：**在需要生成结果满足特定约束时，应优先选择对生成过程做“最小干预”的方法，以在满足约束的同时尽量保持模型原有分布，避免过度偏离预训练知识。****
+**这篇文章内容过于简略（仅有一个指向 Lobste.rs 评论区的链接），无法提炼出具体的 Prompt 技巧或使用建议。如果你能提供完整的文章正文或讨论内容，我可以帮你提炼出可复用的 Prompt 最佳实践。**
 
-📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
+📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
 
 ## 4. 💡 技巧 4
 
-**从这篇文章中可以提炼的 AI 使用建议：
+**这篇文章是关于约束流匹配（constrained flow matching）的学术论文，核心是用**极小的轨迹干预**让生成样本既满足约束又贴近预训练分布。它不涉及 Prompt 撰写技巧，因此我从「如何更好使用 AI」的角度提炼一条可迁移的启发：
 
-**用「配对评估 + 自我审计」的方式评测轻量决策模型**——在把 System-1 小模型（单次前向传播输出类别概率）用于模型选择、工具调用、相关性判断、注入检测等高频小决策前，务必与 LLM 调用做配对对比评测，并加入自我审计机制，确认其质量损失可接受后再替换，以真正兑现成本与延迟收益。
+**用最小干预校正 AI 输出，而非推倒重来。**  
+当你需要 AI 生成的内容满足额外约束（格式、事实、风格等）时，优先在原输出基础上做**局部、最小的修正**，而不是让它完全重新生成——这样能最大程度保留模型原本的高**
 
-简言之：**让快速小模型接管高频决策，但先用配对评测和自我审计证明它够可靠**
-
-📎 来源：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
+📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有直接讲 Prompt 技巧，但它的方法可以提炼成一个实用原则：
+****技巧：给“快思考”型小模型加一层“慢证据”自审计。**
 
-**用"两阶段分类流水线"处理大规模文本**——先让 LLM 做粗筛/分流，再针对性地做精细分类，而不是一步到位。这种分而治之的方式能显著提升准确率和可复现性，尤其适合处理成千上万份文档。
+在让轻量/单次前向的分类模型（System-1）替代 LLM 做路由、相关性判断等子决策时，不要只信它输出的类别概率；应搭配“成对评估（paired evaluation）+ 自我审计”机制，用第二个判断或对照样本来核验高风险决策（如是否含注入、文本是否相关），再决定是否升级到更慢的 LLM 复核。
 
-应用建议：面对海量文本任务时，把 Prompt 拆成"先过滤、后深判"两步，比让模型一次性完成所有判断更可靠。**
+（注：原文摘要被截断，以上基于可见**
 
-📎 来源：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
+📎 来源：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*

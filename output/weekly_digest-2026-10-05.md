@@ -12,25 +12,25 @@
 
 ## 📌 综合
 
-### 1. [Replacement of petroleum based products with plant-based materials (2025)](https://onlinelibrary.wiley.com/doi/10.1002/eng2.70108)
+### 1. [Denmark Data Breach Exposes 8.8M People's Personal Data](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
 *hackernews*
-植物基材料替代石油基产品的进程在2025年明显提速，从包装、纺织到化妆品原料都在出现可规模化落地的方案。值得关注的原因是：它不再只是环保概念，而是成本、性能和供应链三重压力下，企业主动选择的替代路径。
+丹麦这次数据泄露波及880万人——要知道丹麦全国人口才不到600万，这意味着大量欧盟其他国家公民的数据也躺枪了。泄露的信息包括个人身份和联系方式等敏感数据，具体源头还在调查中，但这事儿再次说明：欧洲的GDPR罚则再狠，也架不住系统性安全漏洞。如果你有丹麦相关的账户或服务，建议赶紧去查一下有没有被波及。
 
-### 2. [Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s](https://github.com/Niko1221/Strata)
+### 2. [Huawei and Qualcomm Announce Broad Patent License Agreement](https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement)
 *hackernews*
-有人在单张 RTX 4090（24GB 显存）上跑起了 125B 参数的 Qwen 3.8 Flash Next，速度达到 100 tokens/s，关键手段是极端的量化压缩加显存优化调度。这事值得关注的点在于：它进一步打破了「大模型必须上多卡 A100/H100 集群」的固有印象，让消费级显卡也能跑百亿级以上的旗舰模型。如果你手上有 4090，这套方案基本意味着可以本地跑一个接近云端体验的大模型。
+华为和高通宣布达成新的长期专利授权协议，覆盖双方在移动通信领域的多项核心专利。这意味着两家此前的专利纠纷告一段落，华为可以继续使用高通的技术，而高通也将获得相应的授权收入。
 
-### 3. [In the wake of closure, a digital archive of animated materials appears online](https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/)
+### 3. [Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s](https://github.com/Niko1221/Strata)
 *hackernews*
-日本动画公司GAINAX（《新世纪福音战士》制作方）2018年破产后，一批原属该公司的动画制作素材近日以数字档案形式在互联网上流出，涵盖分镜、原画、设定稿等原始资料。值得关注的是，这些本可能随公司清算永久消失的一线创作痕迹，如今以未经官方授权的方式重见天日——对研究者是珍贵史料，对版权方则是灰色地带，也再次提醒业界：日本动画的工业档案保存长期依赖民间自发，系统性缺失严重。
+有人把 Qwen 3.8 Flash Next 这个 125B 参数的大模型，成功塞进了单张 RTX 4090（24GB 显存）里跑，速度还能到 100 tokens/秒。关键不在于模型变小了，而在于用了一种新的量化+推理优化方案，让消费级显卡也能扛住百亿级模型的实时对话。如果你手头有 4090 又想本地跑大模型，这基本是目前最值得试的一条路。
 
-### 4. [We ported the original Doom to SQL](https://cedardb.com/blog/sqldoom/)
+### 4. [In the wake of Tippett Studios’ closure, a digital archive appears online](https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/)
 *hackernews*
-有人把 1993 年的原版《Doom》移植进了 SQL 数据库——不是模拟器套壳，而是用 SQL 查询来驱动游戏逻辑和渲染，让数据库引擎直接跑起这款经典射击游戏。值得关注的是它把「SQL 到底能干什么」这个问题推到了荒诞又硬核的边界：原本用于增删改查的语言被拿来处理实时游戏循环，既是对数据库计算能力的极限测试，也是一次相当好玩的工程恶作剧。
+蒂比特工作室（Tippett Studios）关闭后，有人把它的数字资产整理成在线档案放了出来。这家曾参与《侏罗纪公园》等里程碑特效的公司，其模型、材质和制作资料就此公开可查——对做CG和视效的人来说，这是一份难得能直接翻看的行业史料。
 
-### 5. [A 40ms Go garbage collector pause caused by swap](https://frn.sh/go-gc/)
+### 5. [A browser-native classic Visual Basic VB6 IDE](https://wieslawsoltes.github.io/VB6/)
 *hackernews*
-Go 的 GC 暂停被拉长到 40 毫秒，罪魁祸首竟是 swap——当进程内存被换出到磁盘，GC 需要重新触碰这些页时就会触发缺页中断，把本该微秒级的暂停拖慢了几个数量级。值得关注的是，这提醒我们在容器内存限制紧张、或宿主机内存吃紧的环境里，光调 GC 参数没用，得先关掉 swap 或给足内存。
+有人在浏览器里复刻了 VB6 的完整开发环境，能直接写代码、拖控件、跑窗体程序，无需安装任何东西。它勾起的是一代人对"编程入门"的集体记忆——那个把按钮拖到窗体上就能跑起来的年代，也是理解 GUI 编程最直观的入口。
 
 
 ---

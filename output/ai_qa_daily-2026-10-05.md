@@ -2,31 +2,33 @@
 
 > 关于 AI 你可能想问的问题 | 每天一个问题，搞懂一个概念
 
-## Q1: Powerless F1 drivers frustrated by Bahrain F1 software glitch？
+## Q1: Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers？
 
-**A:** 巴林站的F1赛车方向盘软件出了故障，车手们在比赛中一度失去对方向盘上关键功能的控制，比如能量回收和刹车平衡调节。这类软件问题在F1越来越依赖电子系统的今天尤为敏感——车手在时速300公里下失去对赛车的部分控制权，不只是比赛公平问题，更是安全问题。
+**A:** Jev 这类决策模型，在评估任务上并没有跑赢两套更成熟的方案：LLM-as-a-judge 和传统分类器。如果你正打算为评估环节引入新模型，这项对比结果提醒你先别急着换，现有方案可能已经够用。
 
-📎 更多阅读：[Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/)
+📎 更多阅读：[Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers](https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails)
 
-## Q2: MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching？
+## Q2: Claude Says？
 
-**A:** Flow matching 模型生成能力强，但要让输出满足特定约束（比如物理定律或观测数据），现有方法要么牺牲生成质量，要么偏离原始数据分布。这篇论文提出 MintFlow，用极小的轨迹干预来施加约束，试图在「守规矩」和「保质量」之间找到更优解。对需要可控生成的研究者来说，这篇值得翻翻。
+**A:** 这个链接指向的是 Lobsters 上关于「Claude Says」的讨论帖——具体内容需要打开原帖才能确认，但标题本身让人联想到 Claude 可能推出了某种新功能或新玩法（比如语音、指令响应等方向的更新）。Lobsters 的讨论质量普遍偏高，评论区往往比官方公告更有料，适合想快速了解社区真实反馈的人去翻一翻。
+
+📎 更多阅读：[Claude Says](https://ohhfishal.net/Posts/claude)
+
+## Q3: MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching？
+
+**A:** 一种叫 MintFlow 的新方法，能在几乎不改变预训练流匹配模型生成分布的前提下，让输出样本满足指定约束（比如观测数据、物理定律）。它的核心是只对生成轨迹做极小的干预，而不是像现有约束采样器那样为了满足约束把样本推离原有数据分布。值得关注的点在于，它试图打破「满足约束」和「保持生成质量」之间的两难——这对科学计算、逆问题求解这类既要物理正确又要数据合理的场景很关键。
 
 📎 更多阅读：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
-## Q3: Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses？
+## Q4: Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses？
 
-**A:** 这篇论文给LLM Agent里的"快思考"决策模型泼了盆冷水：作者设计了一套配对+自审计的评测方法，专门检验那些用单次前向传播替代LLM调用的轻量分类器（比如判断该调哪个模型、该用哪个工具、检索内容是否相关）。
-
-**值得关注的原因**：Agent框架里这类小决策又多又碎，如果真能用便宜的小模型替掉LLM调用，成本和延迟能大幅下降——但现有评测往往只报速度优势，忽略了决策错误在长链条里会累积放大。这篇的核心价值在于用更严格的对照方法量化"快"和"准"之间的真实权衡，对正在搭Agent harness的人有直接的选型参考意义。
+**A:** 这篇论文给LLM智能体框架里的"快思考"决策模型泼了盆冷水：作者用配对实验评估了那些单次前向传播就输出分类概率的小模型（用于选模型、选工具、判断相关性、检测注入等），发现它们在真实场景下的可靠性远不如预期。值得关注的是，这类小模型正是当前智能体降本增效的热门方案，论文的"自审计"方法揭示了快速响应和决策质量之间被忽视的权衡——如果你的智能体流水线里塞了这类组件，这个结论值得认真对待。
 
 📎 更多阅读：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
 
-## Q4: The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?？
+## Q5: The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?？
 
-**A:** 这项研究用LLM批量分析了9,821份企业年报，测试能否从中提取出公司如何披露应对AI风险的有效信号，并据此搭建了一个「AI风险观测站」。简单说，就是把年报当成一种可规模化的数据源，看企业在AI议题上的表态能否反映社会韧性。
-
-值得关注的是，它打开了一个新思路：与其等企业主动做AI风险披露，不如用LLM把现有年报里零散的表述系统化地挖出来。如果这套两阶段分类流程可复现，监管者和研究者就能以极低成本长期追踪企业AI应对的真实态度，而不必依赖专门问卷或白皮书。
+**A:** 这篇论文做了件挺实用的事：用大语言模型批量分析9821份公司年报，看企业到底怎么披露自己应对AI风险的动作。跟以往靠问卷或零散报告的研究不同，它想验证年报这种现成、标准化、覆盖广的文本能不能成为一个可规模化的AI风险信号源，从而帮社会韧性研究拿到真正可操作的数据。
 
 📎 更多阅读：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
 

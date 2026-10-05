@@ -7,22 +7,22 @@
 ### 1. [[D] Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1wvi1j8/d_selfpromotion_thread/)
 *reddit/r/MachineLearning*
 
-这是一个开发者社区的自我推广帖，允许大家发布个人项目、创业产品、合作需求或博客，但要求标明付费和定价信息，禁止短链接和聚合网站。值得关注的是，它把分散的“求关注”内容集中到一个帖子里，避免刷屏，同时明确规则来维持信任。如果你有东西想推，这就是那个合规的入口。
+这是 Reddit 上常见的「自我推广集中帖」——把个人项目、创业产品、合作需求、博客等统一发在一个帖子里，避免刷屏。对创作者来说，这类帖子是低成本曝光的入口，但发之前最好直接写清收费方式和定价，不然容易石沉大海。
 
 ### 2. [Distilling Stockfish on a Billion Positions, Full 3.9B Dataset Available [P]](https://www.reddit.com/r/MachineLearning/comments/1wxz5qq/distilling_stockfish_on_a_billion_positions_full/)
 *reddit/r/MachineLearning*
 
-有人把顶级国际象棋引擎 Stockfish 的估值函数蒸馏进了一个 ResNet/ViT 神经网络，训练数据是来自 37 个月 Lichess 对局的 10 亿个棋局位置；完整 3.9B 数据集已在 Hugging Face 开源。值得关注的是它背后的思路——有限深度搜索下的估值函数其实是在逼近它下面那棵搜索树的结果，这意味着神经网络有机会用一次前向传播学到原本需要大量搜索才能得到的判断，对做棋类 AI 或搜索加速的人很有参考价值。
+有人用 10 亿个国际象棋局面，把 Stockfish 的估值函数蒸馏进了一个 ResNet/ViT 模型——本质上是在教神经网络模仿传统引擎对象面局面的判断。更值得关注的是，完整 3.9B 局面数据集已在 Hugging Face 开源，全部来自 37 个月的 Lichess 真实对局，这对做棋类 AI 或搜索-学习结合研究的人来说是个现成的大规模训练资源。
 
-### 3. [Top ARC-ΑGI-3 scores on Kaggle just went from 7% to 56% [N]](https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arcαgi3_scores_on_kaggle_just_went_from_7_to/)
+### 3. [Withdrawing an accepted paper before camera-ready due to zero funding? (ACML 2026 / OpenReview) [D]](https://www.reddit.com/r/MachineLearning/comments/1wy2irf/withdrawing_an_accepted_paper_before_cameraready/)
 *reddit/r/MachineLearning*
 
-ARC-AGI-3的Kaggle基准测试分数在30天内从7%飙升到56%，而参赛者只能使用小型本地模型。这意味着在专门为"人类更强"而设计的测试上，小模型加外挂框架已经反超了普通人。如果这个曲线不是过拟合或刷榜，那它比大多数大厂发布会更值得关注——因为这是在受限条件下发生的真实跃升。
+一位研究者因完全没有经费支付ACML 2026的注册费和差旅费，不得不在camera-ready截止前撤稿，正在OpenReview上求助该如何操作、是否常见。值得关注的是，这暴露了学术会议"录用后仍需自费参会"这一隐性门槛——对无经费支持的研究者，录用通知可能反而变成负担。
 
-### 4. [the official ICLR template .bib has had Bengio listed twice since 2019 [D]](https://www.reddit.com/r/MachineLearning/comments/1wxe9qx/the_official_iclr_template_bib_has_had_bengio/)
+### 4. [Top ARC-ΑGI-3 scores on Kaggle just went from 7% to 56% [N]](https://www.reddit.com/r/MachineLearning/comments/1wxcd4k/top_arcαgi3_scores_on_kaggle_just_went_from_7_to/)
 *reddit/r/MachineLearning*
 
-ICLR 官方 LaTeX 模板里自带的示例 .bib 文件，从 2019 年起就把《Deep Learning》这本书的作者写成「Goodfellow, Bengio, Courville, Bengio」——Bengio 出现两次，还多出一个不存在的 volume 1。这纯粹是无害的笔误，但考虑到 ICLR 刚经历过作者用 LLM 编造参考文献的风波，官方模板自己抄错五年，实在有点讽刺。
+ARC-AGI-3的Kaggle最高分在30天内从7%飙到56%，而参赛者只能用能在本地跑的中小模型。关键在于：这个基准原本是专门设计来证明「人类比AI强」的，现在这些模型加上一套测试框架，已经在上面超过普通人平均水平了。
 
 ---
 *内容来自 Reddit 公开社区，由 AI 自动摘要生成。*
