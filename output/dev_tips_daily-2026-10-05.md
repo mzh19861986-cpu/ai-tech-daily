@@ -1,22 +1,33 @@
 # 💡 每日开发技巧 - 2026-10-05
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 2 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 3 条
 
 ## 技巧 1
 
-**Quiz Master: AI Quiz Learning Companion**
+**The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?**
 
-✨ Quiz Master 是一款 AI 驱动的互动测验应用，通过答题练习帮助用户以更有趣的方式巩固知识。该项目源于帮助朋友便捷学习的实际需求，体现了 AI 技术在教育场景中的轻量化应用价值。
+✨ arXiv:2610.02281v1 Announce Type: new 
+Abstract: Societal resilience research relies on access to useful and actionable data, which motivates our main research question: Can annual reports, processed ...
 
-📎 [阅读原文](https://dev.to/divya_ghodke/quiz-master-ai-quiz-learning-companion-38d9)
+📎 [阅读原文](https://arxiv.org/abs/2610.02281)
 
 ## 技巧 2
 
-**Running 100B+ MoE Models on a Single RTX 4090: A Practical Guide to Expert Offloading with llama.cpp**
+**Five Classifiers, One Dataset: What I Learned About Model Choice**
 
-✨ 通过MoE架构的专家卸载技术，让125B参数大模型在仅24GB显存的RTX 4090单卡上流畅运行，突破了大模型部署的硬件瓶颈，使消费级显卡也能承担百亿级MoE模型的推理任务。
+✨ If you hand five different classifiers the exact same data, how different do the results really look? That was the question behind my Admissions Predictions project, and the answer was more interestin...
 
-📎 [阅读原文](https://dev.to/eme_gug_0821b41b948be6516/running-100b-moe-models-on-a-single-rtx-4090-a-practical-guide-to-expert-offloading-with-llamacpp-543g)
+📎 [阅读原文](https://dev.to/ayush_pangaonkar/five-classifiers-one-dataset-what-i-learned-about-model-choice-53cf)
+
+## 技巧 3
+
+**title: How to split a large JSON file in the browser (without uploading it anywhere) published: false**
+
+✨ ometimes you get a huge JSON array, a few thousand records in one file, and you need it in smaller pieces. Maybe an API only accepts 500 items at a time, or your editor chokes on the file.
+
+The easy w...
+
+📎 [阅读原文](https://dev.to/kb7822836hash/title-how-to-split-a-large-json-file-in-the-browser-without-uploading-it-anywhere-published-39jk)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

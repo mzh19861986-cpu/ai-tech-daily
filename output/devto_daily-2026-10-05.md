@@ -2,27 +2,37 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Node Cron Background Job Failure Alerts: Deadline Ledgers for Logistics](https://dev.to/wilhelmknight8435/node-cron-background-job-failure-alerts-deadline-ledgers-for-logistics-205h)
+## 1. [Tools Are Not the Same Thing as Know-How](https://dev.to/salesruns/tools-are-not-the-same-thing-as-know-how-1ilg)
 
-**✨ 精华总结：** 给 Node 定时任务做失败告警，最省事又靠谱的办法不是盯着报错，而是单独维护一份"心跳台账"：每个任务跑完都要在规定时限内落一笔终态记录，超时没等到就直接告警。这抓住的是最坑的物流场景——任务悄悄没跑完、结果压根没回来，而不是抛了个异常让你看见。台账记得写小一点，带上幂等键，原始数据要不要留另说、得单独定策略。
+**✨ 精华总结：** Hand an agent a full sales stack. It can search contacts, send email, create a sequence, update the CRM, pull campaign stats. Every action works.
 
-## 2. [Choosing Cron Triggers, Queues, or Workflows by where recovery should resume](https://dev.to/hirodeath/choosing-cron-triggers-queues-or-workflows-by-where-recovery-should-resume-2616)
+Now ask it to run a campaign in a market it has never...
 
-**✨ 精华总结：** 选 Cron、Queue 还是 Workflow，关键不在于任务本身长什么样，而在于**失败后你想从哪里恢复**。Cron 只管按时触发、Queue 保证消息送达、Workflow 则保存流程的中间状态，各自的恢复粒度不同。换句话说，别把日报、API 调用和审批流程塞进同一套机制，否则一旦出错，你根本分不清该重跑哪一段。
+## 2. [Five Classifiers, One Dataset: What I Learned About Model Choice](https://dev.to/ayush_pangaonkar/five-classifiers-one-dataset-what-i-learned-about-model-choice-53cf)
 
-## 3. [Data Structure Mate cutey](https://dev.to/ankit_thakur_d54323e1ae70/data-structure-mate-cutey-3f2b)
+**✨ 精华总结：** If you hand five different classifiers the exact same data, how different do the results really look? That was the question behind my Admissions Predictions project, and the answer was more interestin...
 
-**✨ 精华总结：** 这个叫 AI Mate 的工具想解决一个很实际的问题：很多人学数据结构与算法时卡住，不是题目太难，而是没人讲清楚「为什么这个解法成立」。它最实用的功能是「暴力解到最优解」——你把最笨的做法丢进去，它会一步步带你优化到最优版本，把中间那层原本靠悟性的思考过程讲明白。对自学 DSA 的人来说，这种「陪你推导而非直接给答案」的模式，比看题解有用得多。
+## 3. [Why Automating Shopify Admin is a Nightmare (And How We Solved It)](https://dev.to/cloudqa/why-automating-shopify-admin-is-a-nightmare-and-how-we-solved-it-1hmo)
 
-## 4. [Ollama skips your JSON schema when a thinking model answers without thinking](https://dev.to/homelabpm/ollama-skips-your-json-schema-when-a-thinking-model-answers-without-thinking-2916)
+**✨ 精华总结：** Shopify is one of the harder platforms to automate reliably, and not for the reasons most teams expect.
 
-**✨ 精华总结：** Ollama 从 0.34.4 版本起，对思考型模型应用格式 schema 时用了单条语法规则：先匹配思考块，闭合后再套 schema。问题在于这条语法允许模型在闭合标签出现前就结束输出，而它又把闭合前的一切都当作思考内容——所以当 Gemma 4 这类模型决定跳过思考直接回答时，答案会被当成"思考前的文本"吞掉，JSON schema 根本没生效。
+Creating a product or syncing a feed isn't complex logic. The hard part is everything around it...
 
-值得关注是因为这属于静默失败：你设了结构化输出，程序却可能拿到空结果或被截断的输出，而且没有任何报错提示。
+## 4. [9 คำสั่ง kubectl ที่ควรอยู่ใน muscle memory ก่อนโดนปลุกตอนตี 2](https://dev.to/icelimited/9-khamsang-kubectl-thiikhwryuuain-muscle-memory-knodnpluktntii-2-7e0)
 
-## 5. [Diseño e implementación de una arquitectura web para una red social universitaria](https://dev.to/gabrielacohailaalvaradoe/diseno-e-implementacion-de-una-arquitectura-web-para-una-red-social-universitaria-2e6g)
+**✨ 精华总结：** เมื่อคืนไม่ได้โดนปลุกนะ แต่ลองนึกย้อนดูว่าครั้งล่าสุดที่โดน ใช้เวลาไปกับอะไรมากที่สุด คำตอบมันน่าอายนิดนึง ไม่ใช่การแก้ปัญหา แต่เป็นการนั่งนึกว่า "jsonpath ของ lastState มันเขียนยังไงวะ" แล้วก็เปิด Go...
 
-**✨ 精华总结：** 这是一篇关于大学社交网络平台 CampusConecta 的技术论文，作者设计并实现了一个连接学生、教师和校内员工的Web应用。技术栈选型挺务实：前端用 React + TypeScript，后端是 ASP.NET Core Web API，数据库用 PostgreSQL——这套组合在类型安全和开发效率上都有保障。对做校园信息化或想参考全栈项目架构的人来说，这个案例的工程实践值得一看。
+## 5. [I asked an AI agent to test my framework. It found the bugs I couldn't see, then built me a debugger.](https://dev.to/nekutuzov/i-asked-an-ai-agent-to-test-my-framework-it-found-the-bugs-i-couldnt-see-then-built-me-a-2c2d)
+
+**✨ 精华总结：** This is part 3.  is about converting vibe-coded MVPs.  is the origin story.
+
+
+  
+  
+  My first TypeScript project was a mess
+
+
+UECA-React was my first real TypeScript work. A year or so after the firs...
 
 ---
 *读完有收获？点个赞支持一下原作者~*
