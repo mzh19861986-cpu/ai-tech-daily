@@ -383,7 +383,7 @@ def build_status() -> str:
     ])
     content = f"""
     <h1>📊 智能体集群监控面板</h1>
-    <p class="meta">母体 Orchestrator 管控 7 个子智能体 | 全自动闭环运行</p>
+    <p class="meta">母体 Orchestrator 管控 31 个子智能体 | 全自动闭环运行</p>
 
     <h2>🧠 母体 Orchestrator</h2>
     <div style="background: #1a1a1a; color: white; padding: 1.5rem; border-radius: 12px; margin: 1rem 0;">
@@ -391,57 +391,100 @@ def build_status() -> str:
         <p style="margin-bottom: 0;">统一调度所有子智能体，任务拆解、派发、监控、安防兜底</p>
     </div>
 
-    <h2>🤖 子智能体列表</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
-        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">🔍 FetcherAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">抓取 7 个数据源</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+    <h2>🤖 子智能体列表（31个）</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin: 1rem 0; font-size: 0.9rem;">
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🔍 FetcherAgent</strong><br><span style="color:#666;">抓取 7 个数据源</span><br><span style="color:#4caf50;">✅ 运行中</span>
         </div>
-        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">⚙️ ProcessorAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">DeepSeek AI 处理 + 翻译</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>⚙️ ProcessorAgent</strong><br><span style="color:#666;">DeepSeek AI 处理</span><br><span style="color:#4caf50;">✅ 运行中</span>
         </div>
-        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">📝 PublisherAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">生成静态 HTML 并部署</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📝 PublisherAgent</strong><br><span style="color:#666;">生成静态 HTML</span><br><span style="color:#4caf50;">✅ 运行中</span>
         </div>
-        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">📈 MonitorAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">监控运行状态和收益</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📈 MonitorAgent</strong><br><span style="color:#666;">监控运行状态</span><br><span style="color:#4caf50;">✅ 运行中</span>
         </div>
-        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">📣 PromoterAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">生成推广文案、目录站提交</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        <div style="padding: 0.75rem; background: #e8f5e9; border: 1px solid #4caf50; border-radius: 8px;">
+            <strong>📣 PromoterAgent</strong><br><span style="color:#666;">推广文案生成</span><br><span style="color:#4caf50;">✅ 已集成</span>
         </div>
-        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">💰 MonetizerAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">分析变现机会、优化变现入口</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        <div style="padding: 0.75rem; background: #e8f5e9; border: 1px solid #4caf50; border-radius: 8px;">
+            <strong>💰 MonetizerAgent</strong><br><span style="color:#666;">变现机会分析</span><br><span style="color:#4caf50;">✅ 已集成</span>
         </div>
-        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">🔄 IterationAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">分析数据、发现问题、提出优化</p>
-            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        <div style="padding: 0.75rem; background: #e8f5e9; border: 1px solid #4caf50; border-radius: 8px;">
+            <strong>🔄 IterationAgent</strong><br><span style="color:#666;">数据分析与优化</span><br><span style="color:#4caf50;">✅ 已集成</span>
         </div>
-        <div style="padding: 1rem; background: #fff3e0; border: 2px solid #ff9800; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">🔭 OpportunityScoutAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">全网抓资源、抓机会、抓热点</p>
-            <p style="margin: 0.5rem 0 0 0; color: #ff9800; font-weight: 500;">✅ 最新上线</p>
+        <div style="padding: 0.75rem; background: #fff3e0; border: 1px solid #ff9800; border-radius: 8px;">
+            <strong>🔭 OpportunityScout</strong><br><span style="color:#666;">全网抓机会热点</span><br><span style="color:#ff9800;">✅ 侦察中</span>
         </div>
-        <div style="padding: 1rem; background: #ffebee; border: 2px solid #f44336; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">✅ QualityControlAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">内容审查、工具验证、质量筛选</p>
-            <p style="margin: 0.5rem 0 0 0; color: #f44336; font-weight: 500;">✅ 质量把关</p>
+        <div style="padding: 0.75rem; background: #ffebee; border: 1px solid #f44336; border-radius: 8px;">
+            <strong>✅ QualityControl</strong><br><span style="color:#666;">内容质量审查</span><br><span style="color:#f44336;">✅ 质量把关</span>
         </div>
-        <div style="padding: 1rem; background: #f3e5f5; border: 2px solid #9c27b0; border-radius: 10px;">
-            <h4 style="margin: 0 0 0.5rem 0;">🧬 EvolutionAgent</h4>
-            <p style="margin: 0; color: #666; font-size: 0.9rem;">集群进化、自动分裂新智能体</p>
-            <p style="margin: 0.5rem 0 0 0; color: #9c27b0; font-weight: 500;">🧬 自主进化</p>
+        <div style="padding: 0.75rem; background: #f3e5f5; border: 1px solid #9c27b0; border-radius: 8px;">
+            <strong>🧬 EvolutionAgent</strong><br><span style="color:#666;">集群自主进化</span><br><span style="color:#9c27b0;">🧬 进化中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🗺️ SeoAgent</strong><br><span style="color:#666;">SEO 自动优化</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📊 AnalyticsAgent</strong><br><span style="color:#666;">流量数据分析</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>👥 CommunityAgent</strong><br><span style="color:#666;">社区运营推广</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>💾 DatabaseAgent</strong><br><span style="color:#666;">数据库管理</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🛠️ ToolManager</strong><br><span style="color:#666;">工具库管理</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>✍️ ContentOptimizer</strong><br><span style="color:#666;">内容优化</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🔒 SecurityAgent</strong><br><span style="color:#666;">安全防护</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>⚙️ ConfigAgent</strong><br><span style="color:#666;">配置管理</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🚀 DeployAgent</strong><br><span style="color:#666;">自动部署</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>💽 BackupAgent</strong><br><span style="color:#666;">自动备份</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📝 LoggerAgent</strong><br><span style="color:#666;">日志收集</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🔔 NotifierAgent</strong><br><span style="color:#666;">事件通知</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🧪 TesterAgent</strong><br><span style="color:#666;">自动测试</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>💬 CustomerService</strong><br><span style="color:#666;">客服与反馈</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🎬 VideoPromotion</strong><br><span style="color:#666;">视频推广脚本</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📧 EmailMarketing</strong><br><span style="color:#666;">邮件营销</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🤝 AffiliateAgent</strong><br><span style="color:#666;">联盟营销管理</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>📅 ContentCalendar</strong><br><span style="color:#666;">内容日历规划</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🧪 ABTestAgent</strong><br><span style="color:#666;">A/B 测试</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
+            <strong>🏆 CompetitorAgent</strong><br><span style="color:#666;">竞品分析</span><br><span style="color:#4caf50;">✅ 运行中</span>
+        </div>
+        <div style="padding: 0.75rem; background: #e3f2fd; border: 1px solid #2196f3; border-radius: 8px;">
+            <strong>🔁 AutoLoopAgent</strong><br><span style="color:#666;">自动循环任务队列</span><br><span style="color:#2196f3;">🔄 自动循环</span>
         </div>
     </div>
 
@@ -449,15 +492,23 @@ def build_status() -> str:
     <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; font-family: monospace; font-size: 0.9rem;">
         <p style="margin: 0 0 0.5rem 0;">
             <strong>内容生产链：</strong>
-            Fetcher → Processor → Publisher → Monitor
+            Fetcher → QualityFilter → Processor → Publisher
+        </p>
+        <p style="margin: 0 0 0.5rem 0;">
+            <strong>质量与安全：</strong>
+            QualityControl → SecurityAgent → TesterAgent
         </p>
         <p style="margin: 0 0 0.5rem 0;">
             <strong>增长变现链：</strong>
-            Promoter → Monetizer → Iteration
+            Promoter → Community → SeoAgent → Monetizer → Affiliate
+        </p>
+        <p style="margin: 0 0 0.5rem 0;">
+            <strong>运维进化链：</strong>
+            Analytics → Iteration → Evolution → AutoLoop → Deploy
         </p>
         <p style="margin: 0;">
             <strong>完整闭环：</strong>
-            内容 → 推广 → 变现 → 迭代 → 优化内容 🔁
+            抓取 → 处理 → 质检 → 发布 → 推广 → SEO → 变现 → 数据 → 迭代 → 进化 → 🔁
         </p>
     </div>
 
@@ -478,9 +529,9 @@ def build_status() -> str:
     </ul>
 
     <div style="margin-top: 2rem; padding: 1rem; background: #e8f5e9; border-left: 4px solid #4caf50;">
-        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，7 个子智能体并行运行，
-        自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 发布 → 推广 → 变现 → 迭代优化。
-        全自动滚动运行，持续进化。
+        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，31 个子智能体并行运行，
+        自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 质量审核 → 发布 → 推广 → SEO优化 → 变现 → 数据分析 → 迭代进化。
+        全自动滚动运行，持续自我进化。
     </div>
     """
     return TEMPLATE.format(title="Status", description="AI Tech Daily 系统运行状态 - 查看所有 pipeline 运行情况和数据源状态。", content=content)
