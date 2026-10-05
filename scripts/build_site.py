@@ -458,6 +458,48 @@ def build_about() -> str:
     return TEMPLATE.format(title="About", content=content)
 
 
+def build_tools_ranking() -> str:
+    """构建最佳 AI 工具榜单页面"""
+    tools = [
+        {"rank": 1, "name": "DeepSeek API", "desc": "高性价比大模型 API，开发者必备", "url": "https://deepseek.com/"},
+        {"rank": 2, "name": "ChatGPT Plus", "desc": "最流行的 AI 助手，通用能力强", "url": "https://chat.openai.com/"},
+        {"rank": 3, "name": "Claude", "desc": "Anthropic 出品，长文本处理强", "url": "https://claude.ai/"},
+        {"rank": 4, "name": "Cursor", "desc": "AI 代码编辑器，程序员效率神器", "url": "https://cursor.sh/"},
+        {"rank": 5, "name": "Notion", "desc": "笔记+项目管理+AI 写作", "url": "https://www.notion.so/"},
+        {"rank": 6, "name": "Vercel", "desc": "前端一键部署，开发者友好", "url": "https://vercel.com/"},
+        {"rank": 7, "name": "GitHub", "desc": "代码托管与协作平台", "url": "https://github.com/"},
+        {"rank": 8, "name": "Docker", "desc": "容器化部署，开发者必备", "url": "https://www.docker.com/"},
+        {"rank": 9, "name": "Postman", "desc": "API 测试与调试工具", "url": "https://www.postman.com/"},
+        {"rank": 10, "name": "Figma", "desc": "设计协作工具", "url": "https://www.figma.com/"},
+    ]
+    tools_html = "\n".join([
+        f'''
+        <div style="display: flex; align-items: center; padding: 1.5rem; margin: 1rem 0; background: white; border-radius: 12px; border: 1px solid #e1e4e8;">
+            <div style="font-size: 2rem; font-weight: bold; color: #6c5ce7; margin-right: 1rem; min-width: 40px;">{t["rank"]}</div>
+            <div style="flex: 1;">
+                <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2rem;">{t["name"]}</h3>
+                <p style="margin: 0; color: #636e72;">{t["desc"]}</p>
+            </div>
+            <a href="{t["url"]}" target="_blank" style="padding: 0.5rem 1rem; background: #6c5ce7; color: white; border-radius: 8px; text-decoration: none;">访问 →</a>
+        </div>
+        '''
+        for t in tools
+    ])
+    content = f"""
+    <h1>🏆 最佳 AI 工具榜单</h1>
+    <p class="meta">我们每天都在用的效率工具，按推荐度排序 | 2026 年 10 月更新</p>
+
+    <p>这些是我们团队每天都在使用的 AI 工具和开发者工具，经过实际使用验证，推荐给你：</p>
+
+    {tools_html}
+
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #e8f5e9; border-radius: 8px;">
+        <p style="margin: 0;"><strong>💡 说明：</strong>我们可能会通过链接获得推荐佣金，但不影响我们的推荐。我们只推荐自己真正在用的工具。</p>
+    </div>
+    """
+    return TEMPLATE.format(title="AI Tools Ranking", content=content)
+
+
 def build_rss(posts: list[dict]) -> str:
     """生成 RSS feed"""
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
@@ -520,6 +562,11 @@ def main():
     (SITE_DIR / "about.html").write_text(about_html, encoding="utf-8")
     print("Generated about.html")
 
+    # 生成工具榜单页面
+    tools_html = build_tools_ranking()
+    (SITE_DIR / "tools.html").write_text(tools_html, encoding="utf-8")
+    print("Generated tools.html")
+
     # 生成 RSS feed
     rss_xml = build_rss(posts)
     (SITE_DIR / "feed.xml").write_text(rss_xml, encoding="utf-8")
@@ -527,7 +574,7 @@ def main():
 
     # 生成 sitemap.xml
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
-    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html"]
+    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html"]
     for p in posts:
         sitemap_urls.append(f"{base_url}/{p['slug']}.html")
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
