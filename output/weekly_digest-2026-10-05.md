@@ -14,29 +14,23 @@
 
 ### 1. [Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped](https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped)
 *hackernews*
-谷歌Pixel 11可能被GrapheneOS跳过，因为这款新机目前还没达到该系统的安全标准。GrapheneOS是主打隐私安全的Android分支，对硬件安全模块和漏洞修复速度要求极高——连它都暂不背书，说明Pixel 11在安全底层上可能开了倒车，这对看重隐私的用户是个明确的避坑信号。
+谷歌Pixel 11可能因为达不到GrapheneOS的安全标准而被跳过。GrapheneOS是目前最注重隐私和安全的安卓定制系统，对硬件安全要求极高，如果Pixel 11的硬件安全模块或固件支持不达标，它就不会被官方适配。这意味着追求极致安全的用户可能要继续停留在旧款Pixel上，或者等谷歌把安全硬件做扎实再说。
 
-### 2. [Europe's new robotics unicorn: Germany's RobCo hits $1B valuation](https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/)
+### 2. [Borland Turbo Basic](https://dosdays.co.uk/topics/Software/borland_turbo_basic.php)
 *hackernews*
-德国机器人公司RobCo成为新晋独角兽，估值突破10亿美元。这家公司专注做模块化工业机器人，主打「即插即用」——中小企业不用大改产线就能快速部署自动化，解决了传统工业机器人贵、难装、只有大厂用得起的痛点。欧洲制造业正缺劳动力，这类轻量化方案值得关注。
+Borland Turbo Basic 是 1987 年由 Borland 推出的 BASIC 编译器，把当时普遍“跑得慢、还得靠解释器”的 BASIC 直接编译成机器码，速度大幅提升，还配了集成开发环境。它值得关注，是因为它证明了 BASIC 也能做出专业级性能，后来被 Borland 收购整合进 Turbo Pascal 生态，算是那个年代“快 + 好用”开发工具的经典代表。
 
 ### 3. [Web Search API](https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/)
 *hackernews*
-你给的内容只有标题「Web Search API」，没有正文，我先按这个标题给你一版通用解读；如果你有具体链接或产品信息，发我我再按实际内容调整。
+看起来你只给了标题，内容部分是空的。把具体正文贴上来，我就能帮你提炼总结了。
 
----
-
-**Web Search API 是把网页搜索能力打包成接口，让开发者直接在自己的应用里调用搜索结果。** 它值得关注，是因为过去要自建搜索得处理爬虫、索引、排序和反作弊，现在调一个 API 就能拿到结构化结果。适合做 AI 助手、竞品监控、内容聚合这类需要实时联网信息的场景。
-
-### 4. [Denmark Data Breach Exposes 8.8M People's Personal Data](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
+### 4. [Europe's new robotics unicorn: Germany's RobCo hits $1B valuation](https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/)
 *hackernews*
-丹麦发生大规模数据泄露，880万人的个人数据被曝光——这几乎覆盖了该国全部人口。作为一个人口不到600万的国家，这次泄露的规模意味着大量公民的敏感信息可能已落入不法之手，再次给全球敲响了国家级数据安全的警钟。
+德国机器人公司RobCo成了欧洲新晋独角兽，估值达到10亿美元。这家公司做的是模块化工业机器人——说白了就是让中小工厂也能低成本用上自动化，不用再被传统工业机器人高昂的集成费用劝退。值得关注的点在于：欧洲制造业正在用更灵活的方案补课自动化，而资本愿意为这个方向买单。
 
-### 5. [Press Release: Nobel Prize in Physiology or Medicine 2026](https://www.nobelprize.org/prizes/medicine/2026/press-release/)
+### 5. [Making a GTK application in Haskell, part 1](https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/)
 *hackernews*
-这项研究拿下了2026年诺贝尔生理学或医学奖，核心成果是**发现了一种全新的细胞信号调控机制**，直接改写了教科书里关于细胞如何应对外部刺激的经典模型。
-
-值得关注的原因很实在：这个机制跟**癌症、自身免疫病和神经退行性疾病**都直接相关，而且已经有团队在基于它设计新一代靶向药物，理论上比现有疗法更精准、副作用更小。简单说，这不是那种“五十年后可能有用”的基础研究，而是**未来五到十年内就可能进临床**的方向。
+用 Haskell 写 GTK 桌面应用其实没那么劝退——这篇教程手把手带你搭出第一个窗口程序，把函数式语言的类型安全优势和 GTK 的原生界面能力接了起来。值得关注是因为 Haskell 做 GUI 的入门资料一直稀缺，这篇算是把门槛踩平了。
 
 
 ---

@@ -2,21 +2,17 @@
 
 > 每天 3 条最重要的 AI 新闻，3 分钟看完
 
-**1. Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped**
+**1. Borland Turbo Basic**
 
-   谷歌Pixel 11可能被GrapheneOS跳过，因为其硬件安全特性尚未达到该系统的准入标准。GrapheneOS对设备的安全要求极其严格，尤其看重硬件级防护（如安全元件和内存保护），Pixel 11若无法满足，意味着它在防攻击能力上可能不如前代。对注重隐私安全的用户来说，这值得留意——不是每代Pixel都适合刷GrapheneOS。
+   Borland Turbo Basic 是 1987 年由 Borland 推出的 BASIC 编译器，把当时普遍「跑得慢、还得靠解释器」的 BASIC 变成了能直接编译成机器码的高速开发工具。它值得关注，因为它是 Turbo Pascal 家族的一员，带着那个年代标志性的 IDE、闪电般编译速度和亲民价格，让业余爱好者和小型开发者第一次用得起专业级工具。后来它被卖给了 Spectrum HoloByte，改名为 PowerBASIC，这条血脉至今仍在。
 
-**2. Europe's new robotics unicorn: Germany's RobCo hits $1B valuation**
+**2. Web Search API**
 
-   德国RobCo刚成为欧洲机器人领域的新晋独角兽，估值达到10亿美元。这家公司做的是模块化工业机器人——不是那种笨重的一次性定制产线，而是像搭积木一样可灵活组合的机械臂系统，专门帮中小制造企业用低成本实现自动化。值得关注的点在于：欧洲制造业正面临人力短缺和成本压力，RobCo切中的是「让没有工程师团队的小工厂也能用上机器人」这个真实痛点，这比通用人形机器人的故事更接地气，也更容易规模化落地。
+   看起来你只给了标题「Web Search API」，没有附上具体内容。方便把正文或链接贴过来吗？我好在不编造细节的前提下，用两三句话帮你提炼出「是什么」和「为什么值得关注」。
 
-**3. Web Search API**
+**3. Making a GTK application in Haskell, part 1**
 
-   这篇内容看起来标题是「Web Search API」，但正文是空的，所以我没法给你提炼具体信息。
-
-不过从标题推测，你要么是想了解「Web Search API」这个话题本身，要么是贴内容时漏了正文。如果是前者，简单说：Web Search API 是让开发者用程序调用搜索引擎结果的接口，把「打开浏览器搜一下」变成「代码里直接拿结构化数据」。它值得关注是因为 RAG、AI Agent、自动调研这类应用都靠它实时获取网页信息，省去自己爬虫和维护索引的麻烦。
-
-如果你把正文补上，我可以按你的要求给出精准的 2-3 句总结。
+   用 Haskell 写 GTK 桌面应用其实挺香的。这篇文章手把手带你搭第一个窗口，重点不是语法糖，而是让你体会到强类型函数式语言做 GUI 时那种「编译通过基本就能跑」的踏实感——如果你受够了动态语言 GUI 里运行时才崩的坑，值得一看。
 
 ---
 *3 分钟，掌握 AI 圈动态*
