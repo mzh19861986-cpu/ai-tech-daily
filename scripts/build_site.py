@@ -128,6 +128,8 @@ TEMPLATE = """<!DOCTYPE html>
             <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek API</a> - 高性价比大模型，开发者必备</li>
             <li>📝 <a href="https://www.notion.so/" target="_blank">Notion</a> - 笔记+项目管理神器</li>
             <li>☁️ <a href="https://vercel.com/" target="_blank">Vercel</a> - 前端一键部署</li>
+            <li>🐳 <a href="https://www.docker.com/" target="_blank">Docker</a> - 容器化部署</li>
+            <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
         </ul>
     </div>
 
@@ -177,6 +179,9 @@ def build_index(posts: list[dict]) -> str:
             <li>📝 <a href="https://www.notion.so/" target="_blank">Notion</a> - 笔记+项目管理神器</li>
             <li>☁️ <a href="https://vercel.com/" target="_blank">Vercel</a> - 前端一键部署</li>
             <li>💻 <a href="https://github.com/" target="_blank">GitHub</a> - 代码托管与协作</li>
+            <li>🐳 <a href="https://www.docker.com/" target="_blank">Docker</a> - 容器化部署，开发者必备</li>
+            <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
+            <li>🔍 <a href="https://www.figma.com/" target="_blank">Figma</a> - 设计协作工具</li>
         </ul>
     </div>
 
