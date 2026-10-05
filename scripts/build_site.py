@@ -433,6 +433,11 @@ def build_status() -> str:
             <p style="margin: 0; color: #666; font-size: 0.9rem;">全网抓资源、抓机会、抓热点</p>
             <p style="margin: 0.5rem 0 0 0; color: #ff9800; font-weight: 500;">✅ 最新上线</p>
         </div>
+        <div style="padding: 1rem; background: #ffebee; border: 2px solid #f44336; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">✅ QualityControlAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">内容审查、工具验证、质量筛选</p>
+            <p style="margin: 0.5rem 0 0 0; color: #f44336; font-weight: 500;">✅ 质量把关</p>
+        </div>
     </div>
 
     <h2>🔄 完整闭环流程</h2>
