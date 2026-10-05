@@ -32,7 +32,15 @@ TEMPLATE = """<!DOCTYPE html>
             max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.9;
             color: #24292e;
             background: #faf8f5;
+            transition: background 0.3s, color 0.3s;
         }}
+        body.dark {{
+            color: #e6edf3;
+            background: #0d1117;
+        }}
+        body.dark h2 {{ color: #e6edf3; border-top-color: #30363d; }}
+        body.dark a {{ color: #58a6ff; }}
+        body.dark .meta {{ color: #8b949e; }}
         h1, h2, h3 {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
             line-height: 1.3;
@@ -109,6 +117,7 @@ TEMPLATE = """<!DOCTYPE html>
         <a href="/status.html">📊 Status</a>
         <a href="/sponsor.html">💛 Sponsor</a>
         <a href="/feed.xml">📡 RSS</a>
+        <button onclick="document.body.classList.toggle('dark')" style="float: right; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.9rem;">🌙 暗色</button>
     </nav>
     <div class="content">
     {content}
@@ -183,6 +192,15 @@ def build_index(posts: list[dict]) -> str:
             <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
             <li>🔍 <a href="https://www.figma.com/" target="_blank">Figma</a> - 设计协作工具</li>
         </ul>
+    </div>
+
+    <h2>📂 内容分类</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 2rem 0;">
+        <span style="background: #6c5ce7; color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">📰 每日日报</span>
+        <span style="background: #00b894; color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">🛠️ 开源工具</span>
+        <span style="background: #fdcb6e; color: #2d3436; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">🚀 新品发布</span>
+        <span style="background: #74b9ff; color: #2d3436; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">✨ Prompt 技巧</span>
+        <span style="background: #e17055; color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">📚 深度分析</span>
     </div>
 
     <h2>📰 最新日报</h2>
