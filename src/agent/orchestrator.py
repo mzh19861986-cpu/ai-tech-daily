@@ -41,6 +41,7 @@ from .agents.backup import BackupAgent
 from .agents.logger import LoggerAgent
 from .agents.notifier import NotifierAgent
 from .agents.tester import TesterAgent
+from .agents.customer_service import CustomerServiceAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -83,6 +84,8 @@ class Orchestrator:
         self.logger_agent = LoggerAgent()
         self.notifier = NotifierAgent()
         self.tester = TesterAgent()
+        # 用户服务层
+        self.customer_service = CustomerServiceAgent()
         # 自动循环调度
         self.autoloop = AutoLoopAgent()
 
