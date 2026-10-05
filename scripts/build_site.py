@@ -536,6 +536,16 @@ def build_tools_ranking() -> str:
         {"rank": 18, "name": "Pictory", "desc": "AI 视频制作，图文转视频", "url": "https://pictory.ai/", "category": "AI视频"},
         {"rank": 19, "name": "Merlin AI", "desc": "浏览器 AI 助手，全网可用", "url": "https://www.getmerlin.in/", "category": "AI助手"},
         {"rank": 20, "name": "Systeme.io", "desc": "AI 营销自动化平台", "url": "https://systeme.io/", "category": "营销工具"},
+        {"rank": 21, "name": "Perplexity", "desc": "AI 搜索引擎，答案精准", "url": "https://www.perplexity.ai/", "category": "AI助手"},
+        {"rank": 22, "name": "Gemma", "desc": "Google 开源大模型，本地可跑", "url": "https://ai.google.dev/gemma", "category": "AI大模型"},
+        {"rank": 23, "name": "Llama 3", "desc": "Meta 开源大模型，性能强", "url": "https://llama.meta.com/", "category": "AI大模型"},
+        {"rank": 24, "name": "Hugging Face", "desc": "AI 模型社区，开源模型大全", "url": "https://huggingface.co/", "category": "AI大模型"},
+        {"rank": 25, "name": "Replicate", "desc": "一键运行开源 AI 模型", "url": "https://replicate.com/", "category": "AI大模型"},
+        {"rank": 26, "name": "LangChain", "desc": "AI Agent 开发框架", "url": "https://www.langchain.com/", "category": "开发工具"},
+        {"rank": 27, "name": "LlamaIndex", "desc": "RAG 数据框架，知识库必备", "url": "https://www.llamaindex.ai/", "category": "开发工具"},
+        {"rank": 28, "name": "Midjourney", "desc": "AI 绘画，设计必备", "url": "https://www.midjourney.com/", "category": "AI设计"},
+        {"rank": 29, "name": "DALL-E 3", "desc": "OpenAI 文生图模型", "url": "https://openai.com/dall-e-3/", "category": "AI设计"},
+        {"rank": 30, "name": "Stable Diffusion", "desc": "开源 AI 绘画模型", "url": "https://stability.ai/", "category": "AI设计"},
     ]
     tools_html = "\n".join([
         f'''
