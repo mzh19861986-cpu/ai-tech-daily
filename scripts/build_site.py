@@ -28,21 +28,23 @@ TEMPLATE = """<!DOCTYPE html>
     <style>
         * {{ box-sizing: border-box; }}
         body {{
+            font-family: Georgia, 'Noto Serif SC', 'Times New Roman', serif;
+            max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.9;
+            color: #24292e;
+            background: #faf8f5;
+        }}
+        h1, h2, h3 {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
-            max-width: 760px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8;
-            color: #1a1a2e;
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            line-height: 1.3;
         }}
         h1 {{
             border-bottom: none; padding-bottom: 0.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-weight: 700; font-size: 2rem;
         }}
-        h2 {{ margin-top: 2.5rem; color: #2d3436; font-weight: 600; }}
-        a {{ color: #6c5ce7; text-decoration: none; transition: all 0.2s; }}
-        a:hover {{ color: #a29bfe; text-decoration: none; transform: translateX(2px); }}
-        .meta {{ color: #636e72; font-size: 0.9rem; margin-bottom: 2rem; }}
+        h2 {{ margin-top: 2.5rem; color: #24292e; font-weight: 600; font-size: 1.4rem; }}
+        a {{ color: #0366d6; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .meta {{ color: #6a737d; font-size: 0.9rem; margin-bottom: 2rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
         .nav {{
             margin-bottom: 2rem; padding: 1rem 1.5rem;
             background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);
@@ -94,9 +96,9 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
     <nav class="nav">
         <a href="/">🏠 Home</a>
+        <a href="/about.html">ℹ️ About</a>
         <a href="/status.html">📊 Status</a>
         <a href="/sponsor.html">💛 Sponsor</a>
-        <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a>
         <a href="/feed.xml">📡 RSS</a>
     </nav>
     <div class="content">
@@ -289,6 +291,51 @@ def build_sponsor() -> str:
     return TEMPLATE.format(title="Sponsor", content=content)
 
 
+def build_about() -> str:
+    """构建 About 页面"""
+    content = """
+    <h1>ℹ️ About</h1>
+    <p class="meta">关于 AI Tech Daily</p>
+
+    <h2>这是什么？</h2>
+    <p>
+        <strong>AI Tech Daily</strong> 是一个完全由 AI Agent 自动运行的技术日报系统。
+        它每天自动从 7 个数据源抓取最新内容，用 DeepSeek AI 进行分析、总结、分类，
+        然后生成多份不同角度的日报，发布到这个网站。
+    </p>
+
+    <h2>它是怎么工作的？</h2>
+    <p>整个系统由一个"母体" Orchestrator 管控，多个"子智能体"并行工作：</p>
+    <ul>
+        <li>🔍 <strong>Fetcher Agent</strong>：从 Hacker News、Lobsters、GitHub Trending、Product Hunt、Dev.to 等数据源抓取内容</li>
+        <li>🧠 <strong>Processor Agent</strong>：用 DeepSeek AI 生成摘要、翻译、深度分析、打分</li>
+        <li>📝 <strong>Publisher Agent</strong>：把内容整理成不同格式的日报</li>
+        <li>🛡️ <strong>Security Agent</strong>：检查内容合规性</li>
+        <li>📊 <strong>Monitor Agent</strong>：监控运行状态</li>
+    </ul>
+
+    <h2>为什么做这个？</h2>
+    <p>
+        信息太多了，每天要看好几个网站才能知道 AI 圈发生了什么。
+        这个项目就是想帮大家节省时间——每天花 5 分钟看我们的日报，就能了解最重要的事。
+    </p>
+
+    <h2>谁在运营？</h2>
+    <p>
+        一个喜欢折腾自动化的开发者，用 AI Agent 搭了这套系统，让它自己跑。
+        所有代码都在 <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a> 上，欢迎 Star 和提 Issue。
+    </p>
+
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #f6f8fa; border-radius: 8px; text-align: center;">
+        <p style="margin: 0; color: #6a737d;">有问题或建议？</p>
+        <p style="margin: 0.5rem 0 0 0;">
+            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily/issues">在 GitHub 提 Issue</a>
+        </p>
+    </div>
+    """
+    return TEMPLATE.format(title="About", content=content)
+
+
 def build_rss(posts: list[dict]) -> str:
     """生成 RSS feed"""
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
@@ -345,6 +392,11 @@ def main():
     sponsor_html = build_sponsor()
     (SITE_DIR / "sponsor.html").write_text(sponsor_html, encoding="utf-8")
     print("Generated sponsor.html")
+
+    # 生成 About 页面
+    about_html = build_about()
+    (SITE_DIR / "about.html").write_text(about_html, encoding="utf-8")
+    print("Generated about.html")
 
     # 生成 RSS feed
     rss_xml = build_rss(posts)
