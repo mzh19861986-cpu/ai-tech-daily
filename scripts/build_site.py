@@ -593,6 +593,15 @@ def main():
     (SITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print("Generated sitemap.xml")
 
+    # 生成 robots.txt
+    robots_txt = f"""User-agent: *
+Allow: /
+
+Sitemap: {base_url}/sitemap.xml
+"""
+    (SITE_DIR / "robots.txt").write_text(robots_txt, encoding="utf-8")
+    print("Generated robots.txt")
+
 
 if __name__ == "__main__":
     main()
