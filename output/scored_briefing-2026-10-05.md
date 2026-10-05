@@ -5,12 +5,12 @@
 ## 🥇 ncdu: NCurses Disk Usage (an updated fork)  (⭐ 5.0/10)
 🔗 [lobsters](https://github.com/rcalixte/ncdu)
 
-ncdu 是一个基于 NCurses 的磁盘占用分析工具，此次发布的是其更新后的分支版本。它为终端用户提供直观的交互界面，用于快速排查磁盘空间使用情况。
+ncdu 是一个用 C 语言写的磁盘占用分析工具，跑在终端里，靠 ncurses 画出可交互的界面，让你能按目录逐层浏览、一眼看出谁在吃硬盘。最近这个版本是社区维护的更新分支（原版一度停更），修复了老版本的兼容性和性能问题——如果你经常 SSH 到服务器上查「到底什么把磁盘塞满了」，它比 du 好用太多。
 
-## 🥈 Rust's derive often implies inline  (⭐ 5.0/10)
+## 🥈 Rust's derive often implies inline  (⭐ 4.0/10)
 🔗 [lobsters](https://yossarian.net/til/post/rust-s-derive-often-implies-inline/)
 
-Rust 的 `derive` 宏在生成实现时通常会为相关方法附加 `inline` 属性，从而影响编译器的优化决策。这一行为对性能调优有实际意义，开发者需了解其作用以避免意外的内联开销或代码膨胀。
+Rust 里用 `#[derive(...)]` 自动生成的 trait 实现（比如 Clone、Debug）其实经常会被编译器隐性标记为 `#[inline]`——这点在官方文档里没明说，但实际代码生成中确实如此。值得关注是因为它解释了为什么某些看似该有函数调用开销的地方，性能却意外地好；但这也意味着如果你手动写这些 impl，得自己补上 `#[inline]` 才能对等。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
