@@ -24,6 +24,7 @@ from .agents.monitor import MonitorAgent
 from .agents.promoter import PromoterAgent
 from .agents.monetizer import MonetizerAgent
 from .agents.iteration import IterationAgent
+from .agents.autoloop import AutoLoopAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -42,6 +43,8 @@ class Orchestrator:
         self.promoter = PromoterAgent()
         self.monetizer = MonetizerAgent()
         self.iteration = IterationAgent()
+        # 自动循环调度
+        self.autoloop = AutoLoopAgent()
 
     def run_pipeline(self, pipeline_name: str, dry_run: bool = None) -> dict:
         """执行单条 pipeline：fetch → security → process → security → publish → report"""
@@ -160,3 +163,53 @@ class Orchestrator:
         cycle_report["finished_at"] = datetime.now().isoformat()
         logger.info("=== 母体完成：增长闭环 ===")
         return cycle_report
+
+    def run_auto_loop(self, max_cycles: int = 3, dry_run: bool = None) -> dict:
+        """运行自动循环：完成一个任务自动开始下一个，自主循环"""
+        dry_run = dry_run if dry_run is not None else config.dry_run
+        logger.info("=== 母体启动：自动循环模式 ===")
+        
+        loop_report = {
+            "mode": "auto_loop",
+            "started_at": datetime.now().isoformat(),
+            "cycles": [],
+            "max_cycles": max_cycles,
+        }
+        
+        # 初始化自动循环任务队列
+        self.autoloop.build_default_task_queue()
+        
+        for cycle in range(max_cycles):
+            logger.info(f"\n{'='*50}\n自动循环第 {cycle+1}/{max_cycles} 圈\n{'='*50}")
+            
+            cycle_data = {
+                "cycle_num": cycle + 1,
+                "started_at": datetime.now().isoformat(),
+                "tasks_completed": [],
+            }
+            
+            # 内容生产任务
+            logger.info("→ 执行内容生产任务...")
+            # 抓取（跳过，因为已经跑过了）
+            # 处理和发布
+            # ... 这里可以调用现有的 pipeline
+            
+            # 增长任务
+            logger.info("→ 执行增长变现任务...")
+            promoter_result = self.promoter.safe_run()
+            cycle_data["tasks_completed"].append("promoter")
+            
+            monetizer_result = self.monetizer.safe_run()
+            cycle_data["tasks_completed"].append("monetizer")
+            
+            iteration_result = self.iteration.safe_run()
+            cycle_data["tasks_completed"].append("iteration")
+            
+            cycle_data["finished_at"] = datetime.now().isoformat()
+            loop_report["cycles"].append(cycle_data)
+            
+            logger.info(f"自动循环第 {cycle+1} 圈完成")
+        
+        loop_report["finished_at"] = datetime.now().isoformat()
+        logger.info("=== 母体完成：自动循环模式 ===")
+        return loop_report
