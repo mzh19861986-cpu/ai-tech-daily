@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [AI python Helper for my Little Brother](https://dev.to/sarvesh_linux_c84e4d78125/ai-python-helper-for-my-little-brother-b7e)
+## 1. [Node Cron Background Job Failure Alerts: Deadline Ledgers for Logistics](https://dev.to/wilhelmknight8435/node-cron-background-job-failure-alerts-deadline-ledgers-for-logistics-205h)
 
-**✨ 精华总结：** 这款AI Python助手专为编程初学者设计，通过引导式教学而非直接给出答案，帮助用户（如其弟弟）在完成Python课程的实践旅程中真正掌握编程思维。项目基于Ollama构建，体现了AI辅助教育中“授人以渔”的核心价值。
+**✨ 精华总结：** 给 Node 定时任务做失败告警，最省事又靠谱的办法不是盯着报错，而是单独维护一份"心跳台账"：每个任务跑完都要在规定时限内落一笔终态记录，超时没等到就直接告警。这抓住的是最坑的物流场景——任务悄悄没跑完、结果压根没回来，而不是抛了个异常让你看见。台账记得写小一点，带上幂等键，原始数据要不要留另说、得单独定策略。
 
-## 2. [Multilingual Ghost CMS Blog: 7. Adding hreflang](https://dev.to/sanghunkang/multilingual-ghost-cms-blog-7-adding-hreflang-2dl9)
+## 2. [Choosing Cron Triggers, Queues, or Workflows by where recovery should resume](https://dev.to/hirodeath/choosing-cron-triggers-queues-or-workflows-by-where-recovery-should-resume-2616)
 
-**✨ 精华总结：** 为多语言 Ghost CMS 博客添加 hreflang 标签，可向搜索引擎明确标示不同语言版本页面之间的对应关系，避免内容被误判为重复或语言归属错误。此步骤与面向用户的语言切换器相互独立，是提升多语言站点 SEO 表现的关键技术配置。
+**✨ 精华总结：** 选 Cron、Queue 还是 Workflow，关键不在于任务本身长什么样，而在于**失败后你想从哪里恢复**。Cron 只管按时触发、Queue 保证消息送达、Workflow 则保存流程的中间状态，各自的恢复粒度不同。换句话说，别把日报、API 调用和审批流程塞进同一套机制，否则一旦出错，你根本分不清该重跑哪一段。
 
-## 3. [Estrategias de respaldo de bases de datos con PostgreSQL, Django y despliegue automatizado en la nube](https://dev.to/ana_ceciliaestebanramos/estrategias-de-respaldo-de-bases-de-datos-con-postgresql-django-y-despliegue-automatizado-en-la-57id)
+## 3. [Data Structure Mate cutey](https://dev.to/ankit_thakur_d54323e1ae70/data-structure-mate-cutey-3f2b)
 
-**✨ 精华总结：** 这项内容阐述了为PostgreSQL数据库制定备份策略的重要性，强调数据一旦丢失可能无法恢复，因此仅有存储是不够的。其核心价值在于指导如何结合Django与云端自动化部署，构建可靠的数据库备份方案以防范数据丢失风险。
+**✨ 精华总结：** 这个叫 AI Mate 的工具想解决一个很实际的问题：很多人学数据结构与算法时卡住，不是题目太难，而是没人讲清楚「为什么这个解法成立」。它最实用的功能是「暴力解到最优解」——你把最笨的做法丢进去，它会一步步带你优化到最优版本，把中间那层原本靠悟性的思考过程讲明白。对自学 DSA 的人来说，这种「陪你推导而非直接给答案」的模式，比看题解有用得多。
 
-## 4. [Beyond FAANG and Major Hubs: Exploring Diverse Tech Career Opportunities Nationwide](https://dev.to/svetlix/beyond-faang-and-major-hubs-exploring-diverse-tech-career-opportunities-nationwide-2n64)
+## 4. [Ollama skips your JSON schema when a thinking model answers without thinking](https://dev.to/homelabpm/ollama-skips-your-json-schema-when-a-thinking-model-answers-without-thinking-2916)
 
-**✨ 精华总结：** 科技行业的机会远不止FAANG和硅谷等大厂与核心枢纽，媒体和教育的窄化叙事制造了"认知漏斗"，限制了人们对全国各地多元技术岗位的了解。打破这一认知局限，有助于求职者发现更广阔的职业路径和被忽视的区域性机会。
+**✨ 精华总结：** Ollama 从 0.34.4 版本起，对思考型模型应用格式 schema 时用了单条语法规则：先匹配思考块，闭合后再套 schema。问题在于这条语法允许模型在闭合标签出现前就结束输出，而它又把闭合前的一切都当作思考内容——所以当 Gemma 4 这类模型决定跳过思考直接回答时，答案会被当成"思考前的文本"吞掉，JSON schema 根本没生效。
 
-## 5. ["Your Ai coach"](https://dev.to/helohim04/your-ai-coach-4pkh)
+值得关注是因为这属于静默失败：你设了结构化输出，程序却可能拿到空结果或被截断的输出，而且没有任何报错提示。
 
-**✨ 精华总结：** 这款“Your AI Coach”是一款AI驱动的教练应用，旨在为用户提供个性化指导与支持。它的核心价值在于通过创新方式降低专业教练服务的门槛，让更多人能够便捷地获得成长辅导。
+## 5. [Diseño e implementación de una arquitectura web para una red social universitaria](https://dev.to/gabrielacohailaalvaradoe/diseno-e-implementacion-de-una-arquitectura-web-para-una-red-social-universitaria-2e6g)
+
+**✨ 精华总结：** 这是一篇关于大学社交网络平台 CampusConecta 的技术论文，作者设计并实现了一个连接学生、教师和校内员工的Web应用。技术栈选型挺务实：前端用 React + TypeScript，后端是 ASP.NET Core Web API，数据库用 PostgreSQL——这套组合在类型安全和开发效率上都有保障。对做校园信息化或想参考全栈项目架构的人来说，这个案例的工程实践值得一看。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
