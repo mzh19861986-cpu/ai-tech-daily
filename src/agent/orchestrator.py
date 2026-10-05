@@ -36,6 +36,11 @@ from .agents.tool_manager import ToolManagerAgent
 from .agents.content_optimizer import ContentOptimizerAgent
 from .agents.security import SecurityAgent
 from .agents.config import ConfigAgent
+from .agents.deploy import DeployAgent
+from .agents.backup import BackupAgent
+from .agents.logger import LoggerAgent
+from .agents.notifier import NotifierAgent
+from .agents.tester import TesterAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -72,6 +77,12 @@ class Orchestrator:
         self.content_optimizer = ContentOptimizerAgent()
         self.security = SecurityAgent()
         self.config = ConfigAgent()
+        # 运维保障层
+        self.deploy = DeployAgent()
+        self.backup = BackupAgent()
+        self.logger_agent = LoggerAgent()
+        self.notifier = NotifierAgent()
+        self.tester = TesterAgent()
         # 自动循环调度
         self.autoloop = AutoLoopAgent()
 
