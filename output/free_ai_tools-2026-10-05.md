@@ -4,11 +4,11 @@
 
 ## 1. [Rust's derive often implies inline](https://yossarian.net/til/post/rust-s-derive-often-implies-inline/)
 
-**👥 适合谁：** Rust 的 `derive` 宏常常隐含 `#[inline]` 特性——最适合**深入 Rust 性能调优的中高级开发者**，尤其是关注宏展开后内联行为与优化边界的人群。
+**👥 适合谁：** Rust 的 `derive` 宏往往隐含 `inline` 属性，这个工具最适合 **Rust 开发者** 用来深入理解宏展开与内联优化机制，从而写出性能更优的代码。
 
-**🚀 怎么开始：** 这不是一个可直接使用的工具，而是一篇讨论 Rust `derive` 宏常隐含 `#[inline]` 行为的技术文章（来自 lobste.rs 链接分享）。直接打开网页即可阅读，无需 API key 或本地部署。
+**🚀 怎么开始：** 直接打开网页阅读文章即可，无需 API key 或本地部署——这是篇讨论 Rust `#[derive]` 常隐含 `#[inline]` 的技术博客。
 
-**📝 简介：** Rust 的 derive 宏在展开 trait 实现时，往往会自动为生成的代码添加 `#[inline]` 属性，这一行为并不直观却影响性能优化。该文章揭示了这一隐含机制，帮助开发者理解 derive 对编译优化和内联决策的实际影响。
+**📝 简介：** Rust 的 `derive` 宏在自动生成的代码中往往隐式包含了 `inline` 属性，从而影响编译器的内联优化决策。这一发现提醒开发者注意 `derive` 对性能的潜在影响，避免在不必要处引入过度内联。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*
