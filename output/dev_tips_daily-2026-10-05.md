@@ -1,12 +1,12 @@
 # 💡 每日开发技巧 - 2026-10-05
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 4 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 5 条
 
 ## 技巧 1
 
 **In the wake of Tippett Studios’ closure, a digital archive appears online**
 
-✨ 拥有《星河战队》《侏罗纪公园3》等特效遗产的蒂皮特工作室（Tippett Studio）关闭后，其数字档案近日在互联网上公开。这份档案收录了大量幕后制作素材，对视觉特效从业者和影迷来说，是研究定格动画与CG融合演进的珍贵一手资料。
+✨ 蒂皮特工作室（Tippett Studios）关闭后，一个收录其数字资产的在线档案出现在网络上，保存了这家以《星舰战将》《侏罗纪公园》等影片特效闻名的视效公司的作品遗产。值得关注的是，这类由粉丝或前员工自发建立的档案，正在成为特效行业技术史料的重要留存方式——在工作室倒闭往往意味着资产散失的行业现实下，它让外界得以一窥定格动画与CG过渡时期的具体工艺。
 
 📎 [阅读原文](https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/)
 
@@ -14,27 +14,33 @@
 
 **The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?**
 
-✨ **一句话核心：** 研究者用LLM批量分析了9821份公司年报，想看看企业到底怎么披露自己应对AI风险——结果发现年报这个被忽视的文本库，可能成为监测社会AI韧性的新数据源。
-
-**值得关注的原因：** 以往研究AI社会影响主要靠新闻、政策文件和调查报告，但企业年报是受法律约束的正式披露，信息密度高、可比性强、每年更新。如果LLM能可靠提取其中的AI风险应对信号，就相当于给监管者和研究者装了一个「企业AI态度雷达」——谁在认真布局，谁在敷衍了事，一目了然。
+✨ 用LLM批量分析9821份年报，看企业怎么披露自己应对AI风险，由此搭建了一个「AI风险观测站」。值得关注的是：年报这种被迫合规的公开文件，可能成为监测社会AI韧性的一手数据源——不用等企业主动坦白，从它们不得不写的内容里就能读出态度。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.02281)
 
 ## 技巧 3
 
-**Claude Code Mods: A Salesforce Developer's Guide to the Moddable Agent**
+**Free Quotation: How to Make One (and What to Put In It)**
 
-✨ Claude Code 刚更新到 v2.1.287，加了个叫 Mods 的功能：你可以写一小段 JS/TS 函数塞进插件里，直接挂到 Claude Code 的内部事件上——比如它发提示词、调工具、请求权限、渲染界面这些节点，都能拦截和改写。对 Salesforce 开发者来说值得关注的原因是，这相当于把 Claude Code 从一个"用起来挺顺手的工具"变成了"能按你团队流程定制的平台"，权限校验、代码规范检查、特定 API 调用这类事不用再绕着走了。
+✨ 这是一篇教你怎么写报价单（quotation）的实用指南。核心提醒是：所谓"免费报价"里的"免费"，通常指的是你用的模板或工具不花钱，而不是说你的劳动不值钱——别被这个词绕进去。如果你今天就急着要发一份报价出去，文章的建议是至少写清四件事：工作范围、价格、包含和不包含的项目、以及报价有效期。对自由职业者和小生意人来说，这几点写不写，直接决定了后面会不会扯皮。
 
-📎 [阅读原文](https://dev.to/rohanmehta/claude-code-mods-a-salesforce-developers-guide-to-the-moddable-agent-mng)
+📎 [阅读原文](https://dev.to/d3bd863b497b/free-quotation-how-to-make-one-and-what-to-put-in-it-38hf)
 
 ## 技巧 4
 
-**Building a Profit Analytics SaaS for Turkish Marketplace Sellers: Lessons Learned**
+**How to Get an Invoice Paid: What Actually Moves the Money**
 
-✨ 一位土耳其创业者做了款给电商卖家算真实利润的SaaS工具，因为很多在Trendyol上卖货的人其实是在亏钱而不自知。它把每笔订单拆成12项扣费明细，目前只打通了Trendyol，Hepsiburada和N11还在路上。值得关注的点在于：新兴市场的中小卖家普遍缺乏精细核算能力，这类工具切的正是“以为赚钱其实没赚”的认知盲区。
+✨ 绝大多数发票收不到钱，不是因为对方拒付，而是被“稍后处理”埋进了邮件堆里。这篇文章的核心观点是：催款的关键不在说服，而在于让对方“点头很容易、装死很尴尬”——具体靠三件事：信息准确、条款清晰、跟进及时。
 
-📎 [阅读原文](https://dev.to/netaliz/building-a-profit-analytics-saas-for-turkish-marketplace-sellers-lessons-learned-28ef)
+📎 [阅读原文](https://dev.to/d3bd863b497b/how-to-get-an-invoice-paid-what-actually-moves-the-money-15eg)
+
+## 技巧 5
+
+**I Built More Than 100 Free Trading Calculators for South Africa and Here Is What I Learned**
+
+✨ 一位开发者花了大量时间，为南非交易者建了100多个免费的交易计算器，覆盖外汇、CFD、点差成本、杠杆和风险等核心场景。他发现市面上的信息要么太复杂、要么太笼统，普通人根本用不上——这恰恰说明，把专业知识做成「拿来就能算」的工具，比写一堆教程更有价值。如果你在交易中经常算不清真实成本和风险敞口，这类工具值得一试。
+
+📎 [阅读原文](https://dev.to/guy_lavy_1a9b115a48a460eb/i-built-more-than-100-free-trading-calculators-for-south-africa-and-here-is-what-i-learned-3511)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

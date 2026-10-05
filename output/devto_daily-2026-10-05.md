@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [I found a text editor written in pure assembly, and I couldn't leave without contributing](https://dev.to/akashpattnaik/i-found-a-text-editor-written-in-pure-assembly-and-i-couldnt-leave-without-contributing-3ac9)
+## 1. [Iam 12 .I Accidentally Built a Secure JS Sandbox While Patching a Bug. Here is How KODA Runs AI Code.](https://dev.to/koda2026/iam-12-i-accidentally-built-a-secure-js-sandbox-while-patching-a-bug-here-is-how-koda-runs-ai-45aj)
 
-**✨ 精华总结：** 有人用纯 x86-64 汇编写了个代码编辑器，不依赖 libc、GUI 工具包或 Electron，直接对接 Wayland/X11 协议、自己往像素缓冲区里画控件，整个二进制比多数 favicon 还小。它值得关注，是因为在“软件越堆越厚”的当下，这种从底层自己实现的方案把启动速度、体积和依赖都压到了极限——作者原本只是逛 GitHub 偶然发现，最后没忍住提交了代码。
+**✨ 精华总结：** 一个12岁开发者在修KODA v29的bug时，顺手做出了一个安全的JS沙箱运行环境。解决的核心问题是：现有AI写代码工具只负责生成代码片段，如果AI写出死循环或恶意脚本，风险全由用户机器承担——KODA的做法是在隔离环境里执行AI生成的代码，而不是直接在你的机器上跑。
 
-## 2. [Claude Code Mods: A Salesforce Developer's Guide to the Moddable Agent](https://dev.to/rohanmehta/claude-code-mods-a-salesforce-developers-guide-to-the-moddable-agent-mng)
+值得关注的点在于：这不是又一个AI代码补全工具，而是把「执行」这一环也纳入了安全边界。对于想让AI真正跑代码而不是只吐文本的场景来说，这个思路比模型本身的能力更关键。
 
-**✨ 精华总结：** Anthropic 在 Claude Code v2.1.287 里推出了 Mods 功能，允许开发者用 JavaScript/TypeScript 写小函数，直接挂载到 Claude Code 的内部事件上——比如提示词、工具调用、权限请求和界面渲染这些环节，相当于给这个编码 Agent 开了个插件系统。对 Salesforce 开发者来说值得关注，因为它意味着你可以定制 Claude Code 的行为逻辑，把它改造成贴合自己开发流程的专属工具，而不只是被动接受官方默认的那套交互方式。
+## 2. [Introducing APKsZoo - A Curated Hub for Android Applications & Utilities](https://dev.to/ahad_ali_d14e897f02ea89ce/introducing-apkszoo-a-curated-hub-for-android-applications-utilities-1md)
 
-## 3. [Building a Profit Analytics SaaS for Turkish Marketplace Sellers: Lessons Learned](https://dev.to/netaliz/building-a-profit-analytics-saas-for-turkish-marketplace-sellers-lessons-learned-28ef)
+**✨ 精华总结：** APKsZoo 是一个专门收录 Android 应用 APK 的整理平台，主要面向需要特定版本 APK 的开发者与高级用户，比如用于测试、调试或回滚版本。它值得关注的点在于「策展 + 安全可靠 + 版本更新」——如果它真能做到这几步，就能省掉你在各种野路子 APK 站里反复踩坑的时间。
 
-**✨ 精华总结：** 一位土耳其创业者做了款给电商卖家算利润的SaaS工具，核心洞察很扎心：大多数卖家以为自己赚钱，其实在亏。产品把Trendyol上每笔订单拆成12项成本逐笔核算，目前已上线Trendyol集成，Hepsiburada和N11在路上。值得关注的点在于——当平台把费用结构搞得足够复杂时，「看清自己到底赚不赚钱」本身就成了一门生意。
+## 3. [Free Quotation: How to Make One (and What to Put In It)](https://dev.to/d3bd863b497b/free-quotation-how-to-make-one-and-what-to-put-in-it-38hf)
 
-## 4. [# I Built a Bilingual Invoice-to-JSON API (Here Is the Whole Stack)](https://dev.to/tuyentn23dot/-i-built-a-bilingual-invoice-to-json-api-here-is-the-whole-stack-1p73)
+**✨ 精华总结：** 这是一篇教你怎么写报价单（quotation）的实用指南。核心观点很直白：所谓"免费报价"里的"免费"，指的是你用来生成报价单的工具或模板不要钱，而不是你的劳动本身不用计价——这点提醒很关键，很多自由职业者和小商家容易搞混。如果你今天就要给客户发一份，文章给了个快速框架：写清工作范围、价格、包含什么、不包含什么，以及报价有效期。
 
-**✨ 精华总结：** 有人用一套自建栈做了个双语言发票转 JSON 的 REST API：上传 PDF 或扫描件，直接返回结构化的字段（厂商、金额等），而不是一堆需要二次解析的文本。它的价值在于瞄准了一个很具体的痛点——市面 OCR 要么贵、要么只支持英文、要么只吐原始文本，而记账团队真正要的是能直接进表格的结构化数据。
+## 4. [Postgres 16 18: Why You Can't Just Swap the Image](https://dev.to/dwoitzik/postgres-16-18-why-you-cant-just-swap-the-image-1j4j)
 
-## 5. [Progressive Delivery with Argo Rollouts: Canary, Blue-Green, and AnalysisTemplates That Actually Gate](https://dev.to/aloknecessary/progressive-delivery-with-argo-rollouts-canary-blue-green-and-analysistemplates-that-actually-560c)
+**✨ 精华总结：** PostgreSQL 大版本升级不是改个镜像 tag 就能搞定的事——`postgres:16` 直接换成 `postgres:18`，容器会拒绝启动，因为数据目录的内部格式在 major 版本之间不兼容。值得关注的点在于：这戳破了很多人对容器化数据库的一个常见误解，以为数据库和其他无状态服务一样可以随意滚动升级，实际上你仍然得走 `pg_upgrade` 或 dump/restore 那套流程。
 
-**✨ 精华总结：** Argo Rollouts 用自定义的 Rollout 资源替换标准 Kubernetes Deployment，为发布流程补上了原生滚动更新缺失的关键一环：真正基于指标判断的渐进式发布。它支持金丝雀和蓝绿两种策略，并通过 AnalysisTemplates 在每一步自动查询 Prometheus 等监控数据，只有指标达标才继续推进，不达标就自动回滚——而不是像原生 Deployment 那样按固定节奏替换 Pod，等用户先发现问题。对于不想让「部署完成」等于「故障上线」的团队，这是把发布风险控制从人工盯盘变成自动化门禁的实用方案。
+## 5. [How to Get an Invoice Paid: What Actually Moves the Money](https://dev.to/d3bd863b497b/how-to-get-an-invoice-paid-what-actually-moves-the-money-15eg)
+
+**✨ 精华总结：** 这篇文章讲的是发票催款的实际技巧——核心观点是，大多数未付发票并非被拒绝，而是被收件人“稍后处理”后遗忘。真正让钱到账的关键不是说服，而是让付款变得容易说“是”、让拖延变得尴尬，具体靠三点：信息准确、条款清晰、跟进到位。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
