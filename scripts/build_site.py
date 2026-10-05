@@ -516,33 +516,33 @@ def build_about() -> str:
 def build_tools_ranking() -> str:
     """构建最佳 AI 工具榜单页面"""
     tools = [
-        {"rank": 1, "name": "DeepSeek API", "desc": "高性价比大模型 API，开发者必备", "url": "https://deepseek.com/"},
-        {"rank": 2, "name": "ChatGPT Plus", "desc": "最流行的 AI 助手，通用能力强", "url": "https://chat.openai.com/"},
-        {"rank": 3, "name": "Claude", "desc": "Anthropic 出品，长文本处理强", "url": "https://claude.ai/"},
-        {"rank": 4, "name": "Cursor", "desc": "AI 代码编辑器，程序员效率神器", "url": "https://cursor.sh/"},
-        {"rank": 5, "name": "Notion", "desc": "笔记+项目管理+AI 写作", "url": "https://www.notion.so/"},
-        {"rank": 6, "name": "Vercel", "desc": "前端一键部署，开发者友好", "url": "https://vercel.com/"},
-        {"rank": 7, "name": "GitHub", "desc": "代码托管与协作平台", "url": "https://github.com/"},
-        {"rank": 8, "name": "Docker", "desc": "容器化部署，开发者必备", "url": "https://www.docker.com/"},
-        {"rank": 9, "name": "Postman", "desc": "API 测试与调试工具", "url": "https://www.postman.com/"},
-        {"rank": 10, "name": "Figma", "desc": "设计协作工具", "url": "https://www.figma.com/"},
-        {"rank": 11, "name": "Midjourney", "desc": "AI 绘画，设计必备", "url": "https://www.midjourney.com/"},
-        {"rank": 12, "name": "ElevenLabs", "desc": "AI 语音生成，超逼真", "url": "https://elevenlabs.io/"},
-        {"rank": 13, "name": "Jasper", "desc": "AI 写作助手，营销文案神器", "url": "https://www.jasper.ai/"},
-        {"rank": 14, "name": "Copy.ai", "desc": "AI 文案生成，转化率高", "url": "https://www.copy.ai/"},
-        {"rank": 15, "name": "Surfer SEO", "desc": "AI SEO 优化工具", "url": "https://surferseo.com/"},
-        {"rank": 16, "name": "Writesonic", "desc": "AI 博客写作，快速生成", "url": "https://writesonic.com/"},
-        {"rank": 17, "name": "Synthesia", "desc": "AI 数字人视频生成", "url": "https://www.synthesia.io/"},
-        {"rank": 18, "name": "Pictory", "desc": "AI 视频制作，图文转视频", "url": "https://pictory.ai/"},
-        {"rank": 19, "name": "Merlin AI", "desc": "浏览器 AI 助手，全网可用", "url": "https://www.getmerlin.in/"},
-        {"rank": 20, "name": "Systeme.io", "desc": "AI 营销自动化平台", "url": "https://systeme.io/"},
+        {"rank": 1, "name": "DeepSeek API", "desc": "高性价比大模型 API，开发者必备", "url": "https://deepseek.com/", "category": "AI大模型"},
+        {"rank": 2, "name": "ChatGPT Plus", "desc": "最流行的 AI 助手，通用能力强", "url": "https://chat.openai.com/", "category": "AI助手"},
+        {"rank": 3, "name": "Claude", "desc": "Anthropic 出品，长文本处理强", "url": "https://claude.ai/", "category": "AI助手"},
+        {"rank": 4, "name": "Cursor", "desc": "AI 代码编辑器，程序员效率神器", "url": "https://cursor.sh/", "category": "开发工具"},
+        {"rank": 5, "name": "Notion", "desc": "笔记+项目管理+AI 写作", "url": "https://www.notion.so/", "category": "效率工具"},
+        {"rank": 6, "name": "Vercel", "desc": "前端一键部署，开发者友好", "url": "https://vercel.com/", "category": "开发工具"},
+        {"rank": 7, "name": "GitHub", "desc": "代码托管与协作平台", "url": "https://github.com/", "category": "开发工具"},
+        {"rank": 8, "name": "Docker", "desc": "容器化部署，开发者必备", "url": "https://www.docker.com/", "category": "开发工具"},
+        {"rank": 9, "name": "Postman", "desc": "API 测试与调试工具", "url": "https://www.postman.com/", "category": "开发工具"},
+        {"rank": 10, "name": "Figma", "desc": "设计协作工具", "url": "https://www.figma.com/", "category": "设计工具"},
+        {"rank": 11, "name": "Midjourney", "desc": "AI 绘画，设计必备", "url": "https://www.midjourney.com/", "category": "AI设计"},
+        {"rank": 12, "name": "ElevenLabs", "desc": "AI 语音生成，超逼真", "url": "https://elevenlabs.io/", "category": "AI音频"},
+        {"rank": 13, "name": "Jasper", "desc": "AI 写作助手，营销文案神器", "url": "https://www.jasper.ai/", "category": "AI写作"},
+        {"rank": 14, "name": "Copy.ai", "desc": "AI 文案生成，转化率高", "url": "https://www.copy.ai/", "category": "AI写作"},
+        {"rank": 15, "name": "Surfer SEO", "desc": "AI SEO 优化工具", "url": "https://surferseo.com/", "category": "营销工具"},
+        {"rank": 16, "name": "Writesonic", "desc": "AI 博客写作，快速生成", "url": "https://writesonic.com/", "category": "AI写作"},
+        {"rank": 17, "name": "Synthesia", "desc": "AI 数字人视频生成", "url": "https://www.synthesia.io/", "category": "AI视频"},
+        {"rank": 18, "name": "Pictory", "desc": "AI 视频制作，图文转视频", "url": "https://pictory.ai/", "category": "AI视频"},
+        {"rank": 19, "name": "Merlin AI", "desc": "浏览器 AI 助手，全网可用", "url": "https://www.getmerlin.in/", "category": "AI助手"},
+        {"rank": 20, "name": "Systeme.io", "desc": "AI 营销自动化平台", "url": "https://systeme.io/", "category": "营销工具"},
     ]
     tools_html = "\n".join([
         f'''
-        <div style="display: flex; align-items: center; padding: 1.25rem; margin: 0.75rem 0; background: #fafafa; border-radius: 10px; border: 1px solid #eaeaea; transition: all 0.2s;">
+        <div class="tool-card" data-category="{t["category"]}" style="display: flex; align-items: center; padding: 1.25rem; margin: 0.75rem 0; background: #fafafa; border-radius: 10px; border: 1px solid #eaeaea; transition: all 0.2s;">
             <div style="font-size: 1.5rem; font-weight: 700; color: #999; margin-right: 1rem; min-width: 36px;">{t["rank"]}</div>
             <div style="flex: 1;">
-                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 600;">{t["name"]}</h3>
+                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 600;">{t["name"]} <span style="font-size: 0.75rem; font-weight: 500; color: #666; background: #eaeaea; padding: 0.15rem 0.5rem; border-radius: 12px; margin-left: 0.5rem;">{t["category"]}</span></h3>
                 <p style="margin: 0; color: #666; font-size: 0.9rem;">{t["desc"]}</p>
             </div>
             <a href="{t["url"]}" target="_blank" style="padding: 0.5rem 1rem; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">访问 →</a>
@@ -550,11 +550,66 @@ def build_tools_ranking() -> str:
         '''
         for t in tools
     ])
+    
+    # 获取所有分类
+    categories = list(set([t["category"] for t in tools]))
+    categories.sort()
+    category_buttons = '<button class="cat-btn active" data-cat="all" style="padding: 0.5rem 1rem; margin: 0.25rem; background: #1a1a1a; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 0.9rem;">全部</button>'
+    for cat in categories:
+        category_buttons += f'<button class="cat-btn" data-cat="{cat}" style="padding: 0.5rem 1rem; margin: 0.25rem; background: #f0f0f0; color: #333; border: none; border-radius: 8px; cursor: pointer; font-size: 0.9rem;">{cat}</button>'
+    
+    search_and_filter = f'''
+    <div style="margin: 1.5rem 0;">
+        <input type="text" id="toolSearch" placeholder="搜索工具名称..." style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #eaeaea; border-radius: 10px; font-size: 1rem; margin-bottom: 1rem; box-sizing: border-box;">
+        <div style="display: flex; flex-wrap: wrap; gap: 0.25rem;">
+            {category_buttons}
+        </div>
+    </div>
+    <script>
+    // 搜索功能
+    document.getElementById('toolSearch').addEventListener('input', function(e) {{
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('.tool-card').forEach(card => {{
+            const name = card.querySelector('h3').textContent.toLowerCase();
+            const desc = card.querySelectorAll('p')[0].textContent.toLowerCase();
+            if (name.includes(query) || desc.includes(query)) {{
+                card.style.display = 'flex';
+            }} else {{
+                card.style.display = 'none';
+            }}
+        }});
+    }});
+    // 分类筛选
+    document.querySelectorAll('.cat-btn').forEach(btn => {{
+        btn.addEventListener('click', function() {{
+            document.querySelectorAll('.cat-btn').forEach(b => {{
+                b.classList.remove('active');
+                b.style.background = '#f0f0f0';
+                b.style.color = '#333';
+            }});
+            this.classList.add('active');
+            this.style.background = '#1a1a1a';
+            this.style.color = 'white';
+            const cat = this.dataset.cat;
+            document.querySelectorAll('.tool-card').forEach(card => {{
+                if (cat === 'all' || card.dataset.category === cat) {{
+                    card.style.display = 'flex';
+                }} else {{
+                    card.style.display = 'none';
+                }}
+            }});
+        }});
+    }});
+    </script>
+    '''
+    
     content = f"""
     <h1>🏆 最佳 AI 工具榜单</h1>
     <p class="meta">我们每天都在用的效率工具，按推荐度排序 | 2026 年 10 月更新</p>
 
     <p>这些是我们团队每天都在使用的 AI 工具和开发者工具，经过实际使用验证，推荐给你：</p>
+
+    {search_and_filter}
 
     {tools_html}
 
