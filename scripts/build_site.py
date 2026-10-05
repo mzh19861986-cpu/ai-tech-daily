@@ -25,6 +25,15 @@ TEMPLATE = """<!DOCTYPE html>
     <meta property="og:description" content="{description}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AI Tech Daily",
+      "description": "每天 5 分钟，了解 AI 圈最重要的事。由 AI Agent 自动抓取、分析、生成。",
+      "url": "https://mzh19861986-cpu.github.io/ai-tech-daily/"
+    }}
+    </script>
     <style>
         * {{ box-sizing: border-box; }}
         body {{
