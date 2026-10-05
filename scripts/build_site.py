@@ -665,6 +665,25 @@ def build_monetization() -> str:
         <li>收费：$500-$2000/项目 + $200-$500/月维护</li>
     </ul>
 
+    <h3>5. AI 数字产品</h3>
+    <p>做一次，卖无数次：</p>
+    <ul>
+        <li>AI 提示词合集（Prompt Pack）</li>
+        <li>Notion / Obsidian 模板</li>
+        <li>AI 工具使用课程 / 电子书</li>
+        <li>数字产品商店：Gumroad / Lemon Squeezy</li>
+        <li>定价：$9 - $49，一次制作持续卖</li>
+    </ul>
+
+    <h3>6. 短视频 / 内容创作</h3>
+    <p>用 AI 批量做内容：</p>
+    <ul>
+        <li>YouTube Shorts / TikTok / 小红书</li>
+        <li>AI 生成文案 + AI 配音 + AI 剪辑</li>
+        <li>每天发 3-5 条，起号后接广告</li>
+        <li>中视频计划 / 创作者基金</li>
+    </ul>
+
     <h2>📊 收入预期</h2>
     <div style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
         <p style="margin: 0 0 0.5rem 0;"><strong>新手期（1-3 个月）：</strong>$100 - $500/月</p>
