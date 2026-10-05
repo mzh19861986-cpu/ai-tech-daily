@@ -129,7 +129,8 @@ TEMPLATE = """<!DOCTYPE html>
         <a href="/status.html">📊 Status</a>
         <a href="/sponsor.html">💛 Sponsor</a>
         <a href="/feed.xml">📡 RSS</a>
-        <button onclick="document.body.classList.toggle('dark')" style="float: right; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.9rem;">🌙 暗色</button>
+        <input type="search" id="searchInput" placeholder="🔍 搜索文章..." style="float: right; padding: 0.3rem 0.8rem; border: 1px solid #ddd; border-radius: 20px; font-size: 0.9rem; width: 150px;">
+        <button onclick="document.body.classList.toggle('dark')" style="float: right; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.9rem; margin-right: 0.5rem;">🌙 暗色</button>
     </nav>
     <div class="content">
     {content}
@@ -161,6 +162,18 @@ TEMPLATE = """<!DOCTYPE html>
     <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e1e4e8; color: #6a737d; font-size: 0.85rem; text-align: center;">
         <p>由 AI Agent 自动生成 | 每日更新 | <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">Star on GitHub</a></p>
     </footer>
+
+    <script>
+    // 简单的前端搜索
+    document.getElementById('searchInput')?.addEventListener('input', function(e) {{
+        const query = e.target.value.toLowerCase();
+        const items = document.querySelectorAll('.post-list li');
+        items.forEach(item => {{
+            const text = item.textContent.toLowerCase();
+            item.style.display = text.includes(query) ? '' : 'none';
+        }});
+    }});
+    </script>
 </body>
 </html>
 """
