@@ -593,13 +593,6 @@ def main():
     (SITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print("Generated sitemap.xml")
 
-<<<<<<< HEAD
-    # 生成 Google Search Console 验证文件
-    google_verify_file = "google7301fce51f92c8d0.html"
-    google_verify_content = "google-site-verification: google7301fce51f92c8d0.html"
-    (SITE_DIR / google_verify_file).write_text(google_verify_content, encoding="utf-8")
-    print(f"Generated {google_verify_file}")
-=======
     # 生成 robots.txt
     robots_txt = f"""User-agent: *
 Allow: /
@@ -608,7 +601,12 @@ Sitemap: {base_url}/sitemap.xml
 """
     (SITE_DIR / "robots.txt").write_text(robots_txt, encoding="utf-8")
     print("Generated robots.txt")
->>>>>>> 5a274ee1258279d4ebc9bd7268df8d97440d1ab9
+
+    # 生成 Google Search Console 验证文件
+    google_verify_file = "google7301fce51f92c8d0.html"
+    google_verify_content = "google-site-verification: google7301fce51f92c8d0.html"
+    (SITE_DIR / google_verify_file).write_text(google_verify_content, encoding="utf-8")
+    print(f"Generated {google_verify_file}")
 
 
 if __name__ == "__main__":
