@@ -2,25 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Screenshot APIs all send your page content to their servers — built a self-hosted one, looking for feedback](https://dev.to/manish_gudimetla_6d37f97a/screenshot-apis-all-send-your-page-content-to-their-servers-built-a-self-hosted-one-looking-for-5371)
+## 1. [AI python Helper for my Little Brother](https://dev.to/sarvesh_linux_c84e4d78125/ai-python-helper-for-my-little-brother-b7e)
 
-**✨ 精华总结：** 现有截图API均为SaaS服务，会将用户截取的网页内容发送至第三方服务器处理，对涉及登录信息和真实数据的页面构成隐私泄露风险。开发者因此构建了可自托管（self-hosted）的替代方案，让网页截图与内容处理完全在本地完成，避免敏感数据外流。
+**✨ 精华总结：** 这款AI Python助手专为编程初学者设计，通过引导式教学而非直接给出答案，帮助用户（如其弟弟）在完成Python课程的实践旅程中真正掌握编程思维。项目基于Ollama构建，体现了AI辅助教育中“授人以渔”的核心价值。
 
-## 2. [How to Decode Base64 in JavaScript (and a Free Tool That Does It Instantly)](https://dev.to/zahriontech/how-to-decode-base64-in-javascript-and-a-free-tool-that-does-it-instantly-8o5)
+## 2. [Multilingual Ghost CMS Blog: 7. Adding hreflang](https://dev.to/sanghunkang/multilingual-ghost-cms-blog-7-adding-hreflang-2dl9)
 
-**✨ 精华总结：** JavaScript内置的`atob()`和`btoa()`可快速完成Base64编解码，但存在一个经典陷阱（如不支持Unicode字符），容易让新手和老手都栽跟头。本文不仅讲清正确用法，还提供了一个免费的在线工具，帮你即时解码Base64。
+**✨ 精华总结：** 为多语言 Ghost CMS 博客添加 hreflang 标签，可向搜索引擎明确标示不同语言版本页面之间的对应关系，避免内容被误判为重复或语言归属错误。此步骤与面向用户的语言切换器相互独立，是提升多语言站点 SEO 表现的关键技术配置。
 
-## 3. [How to Build a Production RAG System Step by Step (Python, pgvector, Hybrid Search, Reranking)](https://dev.to/techsimplus_learnings/how-to-build-a-production-rag-system-step-by-step-python-pgvector-hybrid-search-reranking-3h9e)
+## 3. [Estrategias de respaldo de bases de datos con PostgreSQL, Django y despliegue automatizado en la nube](https://dev.to/ana_ceciliaestebanramos/estrategias-de-respaldo-de-bases-de-datos-con-postgresql-django-y-despliegue-automatizado-en-la-57id)
 
-**✨ 精华总结：** 这篇教程提供了构建生产级RAG系统检索核心的完整分步指南，涵盖租户隔离向量搜索、混合检索、重排序和基于事实的答案生成等关键环节。技术栈采用Python、Postgres+pgvector、OpenAI嵌入、rank_bm25和sentence-transformers，可直接落地而非仅作演示。
+**✨ 精华总结：** 这项内容阐述了为PostgreSQL数据库制定备份策略的重要性，强调数据一旦丢失可能无法恢复，因此仅有存储是不够的。其核心价值在于指导如何结合Django与云端自动化部署，构建可靠的数据库备份方案以防范数据丢失风险。
 
-## 4. [Backends 101: Choosing the Right Measurement Surface](https://dev.to/aabhinavg/backends-101-choosing-the-right-measurement-surface-2cd7)
+## 4. [Beyond FAANG and Major Hubs: Exploring Diverse Tech Career Opportunities Nationwide](https://dev.to/svetlix/beyond-faang-and-major-hubs-exploring-diverse-tech-career-opportunities-nationwide-2n64)
 
-**✨ 精华总结：** 本文指出，GPU 程序性能测量的关键在于选择正确的后端，直接依赖 CPU 测量是常见错误，可能浪费数天调试时间。文章演示了如何用 csperf 发现并使用合适的 GPU 后端进行性能分析。
+**✨ 精华总结：** 科技行业的机会远不止FAANG和硅谷等大厂与核心枢纽，媒体和教育的窄化叙事制造了"认知漏斗"，限制了人们对全国各地多元技术岗位的了解。打破这一认知局限，有助于求职者发现更广阔的职业路径和被忽视的区域性机会。
 
-## 5. [What breaks after you ship a vibe-coded app (and what we're doing about it)](https://dev.to/_abbb33b6096b291b3ee84/what-breaks-after-you-ship-a-vibe-coded-app-and-what-were-doing-about-it-389k)
+## 5. ["Your Ai coach"](https://dev.to/helohim04/your-ai-coach-4pkh)
 
-**✨ 精华总结：** 这条新闻的核心价值在于揭示了一个被忽视的问题：vibe coding让产品开发变得极快，但真正的挑战出现在上线之后，而非构建阶段。团队通过采访已发布此类产品的开发者发现，人们关注的焦点并非提示词或工具，而是发布后暴露出的各种问题。
+**✨ 精华总结：** 这款“Your AI Coach”是一款AI驱动的教练应用，旨在为用户提供个性化指导与支持。它的核心价值在于通过创新方式降低专业教练服务的门槛，让更多人能够便捷地获得成长辅导。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
