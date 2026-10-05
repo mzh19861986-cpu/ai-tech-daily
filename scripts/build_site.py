@@ -79,21 +79,20 @@ TEMPLATE = """<!DOCTYPE html>
         .post-list a {{ font-size: 1.05rem; font-weight: 600; color: #1a1a1a; }}
         .post-list .date {{ color: #999; font-size: 0.8rem; margin-right: 0.75rem; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
         .newsletter-box {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white; padding: 2rem; border-radius: 16px; margin: 2.5rem 0;
-            box-shadow: 0 10px 40px rgba(102,126,234,0.3);
+            background: #1a1a1a;
+            color: white; padding: 2rem; border-radius: 12px; margin: 2.5rem 0;
         }}
-        .newsletter-box h3 {{ margin-top: 0; font-size: 1.3rem; }}
+        .newsletter-box h3 {{ margin-top: 0; font-size: 1.25rem; font-weight: 600; }}
         .newsletter-box input {{
-            width: 100%; padding: 0.8rem 1rem; border: none; border-radius: 8px;
-            margin: 0.8rem 0; font-size: 1rem;
+            width: 100%; padding: 0.75rem 1rem; border: none; border-radius: 8px;
+            margin: 0.75rem 0; font-size: 0.95rem;
         }}
         .newsletter-box button {{
-            background: white; color: #667eea; border: none;
-            padding: 0.8rem 2rem; border-radius: 8px; font-weight: 600;
-            cursor: pointer; font-size: 1rem; transition: transform 0.2s;
+            background: white; color: #1a1a1a; border: none;
+            padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600;
+            cursor: pointer; font-size: 0.95rem; transition: all 0.2s;
         }}
-        .newsletter-box button:hover {{ transform: scale(1.05); }}
+        .newsletter-box button:hover {{ opacity: 0.9; }}
         .sponsor-box {{
             background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
             border: none; padding: 1.5rem; border-radius: 12px; margin: 1.5rem 0;
