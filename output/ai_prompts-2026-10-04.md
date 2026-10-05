@@ -4,40 +4,39 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章内容非常简短（只有标题和一个链接），没有实质性正文可提炼。仅从标题看：
+**这篇文章没有提供实质内容（只有一个 Lobste.rs 评论链接），无法提炼出 Prompt 技巧或 AI 使用建议。
 
-**建议**：如果你希望 AI 模型具备"主权可控"（数据不外出、可自托管、开源权重），优先选择 open-weight（开放权重）模型并自行部署。
-
-如果这不是你想要的文章，欢迎把完整正文贴过来，我再帮你提炼 Prompt 技巧。**
+如果你能提供文章正文，我可以立刻帮你总结出可复用的 Prompt 最佳实践。**
 
 📎 来源：[Kolibri: A Sovereign Open-Weight Model](https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/)
 
 ## 2. 💡 技巧 2
 
-**该内容标题“coreyhaines31/marketingskills”下无正文，无法提炼具体的 Prompt 技巧或 AI 使用建议。若需生成，请提供文章/讨论正文内容。**
+**该内容仅为标题，没有提供可提炼的正文信息。请补充 `coreyhaines31/marketingskills` 的实际内容（如 README、提示词列表或讨论文本），我才能为你提炼 AI Prompt 技巧或最佳实践。**
 
 📎 来源：[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ## 3. 💡 技巧 3
 
-**这篇文章内容为空，无法提炼 Prompt 技巧或 AI 使用建议。请提供具体正文内容，我再帮你总结。**
+**这篇文章/讨论没有提供实质内容（标题仅为一个仓库名 `DietrichGebert/ponytail`，正文为空），因此无法提炼出具体的 Prompt 技巧或 AI 使用建议。
+
+如果你能补充原文内容（文章正文、讨论帖文本或链接摘要），我可以帮你提炼出 1-2 句可直接使用的 Prompt 最佳实践。**
 
 📎 来源：[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
 
 ## 4. 💡 技巧 4
 
-**这篇文章/讨论的内容为空（只有标题 `Panniantong/Agent-Reach`，没有正文），因此无法从中提炼 Prompt 技巧或 AI 使用建议。
+**这篇文章（讨论）里没有明显的 Prompt 内容，因为它更像是一个关于 Agent-Reach 项目的标题或链接，缺乏可供提炼的实际文本。
 
-如果你能提供正文内容，我可以帮你提炼成一条可直接使用的 Prompt 最佳实践。**
+如果目标是总结「如何更好使用 AI」的建议，目前信息不足，无法可靠提炼。建议补充 Agent-Reach 的正文、README 或讨论内容，我才能给出具体的 Prompt 技巧或最佳实践。**
 
 📎 来源：[Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有实质的 Prompt 技巧内容，仅有标题和一句简短描述（“Answer Claude Code from your wrist”，指向一款可在手腕设备上响应 Claude Code 的产品）。
+**这篇文章内容过短，没有实质性的 Prompt 技巧或 AI 使用建议可提炼（仅是一条产品标题：“从手腕上回应 Claude Code”，指向一款手表端控制 Claude Code 的产品/功能）。
 
-**关于更好使用 AI 的相关建议（基于标题推断）：**
-让 AI 编程助手（如 Claude Code）的交互更贴近日常、低摩擦的入口，能提升你随手调用、快速确认或下达指令的频率，从而减少切换上下文的成本。**
+如果你能提供更完整的文章正文或讨论内容，我可以帮你提炼出可复用的 Prompt 技巧或最佳实践。**
 
 📎 来源：[Clair](https://www.producthunt.com/products/clair-3)
 

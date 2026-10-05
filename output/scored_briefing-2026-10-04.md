@@ -5,12 +5,12 @@
 ## 🥇 Rust's derive often implies inline  (⭐ 5.0/10)
 🔗 [lobsters](https://yossarian.net/til/post/rust-s-derive-often-implies-inline/)
 
-Rust 的 `derive` 宏在展开时通常会同时生成 `#[inline]` 属性，这使得编译器更倾向于将派生出的 trait 方法内联到调用处。这一特性对性能优化有实际意义，但也可能导致代码膨胀，需要开发者在热点路径上加以权衡。
+Rust 的 `derive` 宏在生成代码时经常隐式地为派生方法添加 `#[inline]` 属性，这有助于跨 crate 优化但可能增加编译时间与代码体积。理解这一行为有助于开发者更精准地控制内联策略，避免性能与编译成本上的意外取舍。
 
-## 🥈 Why don’t more developers "use the platform"?  (⭐ 5.0/10)
-🔗 [lobsters](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/)
+## 🥈 ncdu: NCurses Disk Usage (an updated fork)  (⭐ 3.0/10)
+🔗 [lobsters](https://github.com/rcalixte/ncdu)
 
-这篇讨论探究了为何开发者倾向于使用框架和抽象层，而非直接采用Web平台原生能力（如原生HTML、CSS和JavaScript API）。其核心价值在于引发对开发效率、跨浏览器兼容性与平台能力之间权衡的思考，帮助团队更理性地评估技术选型。
+ncdu 是一个基于 NCurses 的磁盘占用分析工具，此次更新版本是该项目的维护性分支（fork），延续了原工具的功能并加以更新。它为终端用户提供了一种直观、交互式的方式来快速定位和清理占用大量磁盘空间的文件与目录。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
