@@ -55,9 +55,24 @@ TEMPLATE = """<!DOCTYPE html>
             border-bottom: none; padding-bottom: 0.5rem;
             font-weight: 700; font-size: 2rem;
         }}
-        h2 {{ margin-top: 2.5rem; color: #24292e; font-weight: 600; font-size: 1.4rem; }}
-        a {{ color: #0366d6; text-decoration: none; }}
-        a:hover {{ text-decoration: underline; }}
+        h2 {{ margin-top: 2.5rem; color: #1a1a1a; font-weight: 600; font-size: 1.35rem; }}
+        h3 {{ margin-top: 2rem; color: #1a1a1a; font-weight: 600; font-size: 1.15rem; }}
+        p {{ margin: 1rem 0; }}
+        code {{
+            background: #f4f4f4; padding: 0.2em 0.4em; border-radius: 4px;
+            font-size: 0.9em; font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+        }}
+        pre {{
+            background: #1a1a1a; color: #e6e6e6; padding: 1.25rem; border-radius: 10px;
+            overflow-x: auto; margin: 1.5rem 0;
+        }}
+        pre code {{ background: none; padding: 0; }}
+        blockquote {{
+            border-left: 3px solid #eaeaea; margin: 1.5rem 0; padding: 0.5rem 1rem;
+            color: #666;
+        }}
+        a {{ color: #1a1a1a; text-decoration: none; font-weight: 500; }}
+        a:hover {{ opacity: 0.7; }}
         .meta {{ color: #6a737d; font-size: 0.9rem; margin-bottom: 2rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
         .nav {{
             margin-bottom: 2rem; padding: 0.75rem 1rem;
@@ -220,10 +235,10 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
     # 加文章元信息和分享按钮
     html_body = f'<p class="article-meta">📅 {date_str} | 🤖 AI 自动生成</p>\n' + html_body
     html_body += '''
-    <div class="share-buttons">
-        <strong>觉得有用？</strong>
-        <a href="https://twitter.com/intent/tweet?text=Check%20this%20out&url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="background: #1da1f2; color: white;" target="_blank">🐦 分享到 Twitter</a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="background: #0077b5; color: white;" target="_blank">💼 分享到 LinkedIn</a>
+    <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eaeaea;">
+        <strong style="font-weight: 600;">觉得有用？</strong>
+        <a href="https://twitter.com/intent/tweet?text=Check%20this%20out&url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="display: inline-block; margin-left: 1rem; padding: 0.5rem 1rem; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 500;" target="_blank">🐦 分享到 Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="display: inline-block; margin-left: 0.5rem; padding: 0.5rem 1rem; background: #fafafa; color: #1a1a1a; border: 1px solid #eaeaea; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 500;" target="_blank">💼 分享到 LinkedIn</a>
     </div>
     '''
 
