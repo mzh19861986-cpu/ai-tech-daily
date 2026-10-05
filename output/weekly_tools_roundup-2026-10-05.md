@@ -6,13 +6,17 @@
 
 ### 1. [ncdu: NCurses Disk Usage (an updated fork)](https://github.com/rcalixte/ncdu)
 *lobsters*
-ncdu 是一个基于 NCurses 的磁盘占用分析工具，其社区维护的分支版本带来了功能更新与改进。该工具让用户能在终端中以交互方式快速排查磁盘空间占用情况。
+**ncdu 又活了，而且这次是个更靠谱的分支。**
+
+经典的 ncdu（NCurses 磁盘占用分析工具）有了更新版分支。这玩意儿是终端里查磁盘空间的神器——哪個目录吃掉了你的硬盘，一目了然，比 `du` 顺手一万倍。
+
+值得关注的是原版维护一度停滞，这个 fork 接手后持续修复和更新，终于让老用户不用再纠结「用着舒服但没人管」了。
 
 ## 🛠️ 开发工具
 
 ### 1. [Rust's derive often implies inline](https://yossarian.net/til/post/rust-s-derive-often-implies-inline/)
 *lobsters*
-Rust 的 `derive` 宏在生成代码时常常隐式地为派生方法添加 `#[inline]` 属性，这一行为虽未在文档中明确说明，却对性能敏感场景下的内联优化有实际影响。理解这一点有助于开发者更准确地推断派生 trait 方法的编译与优化行为，避免因假设偏差而做出错误的性能决策。
+Rust 的 `#[derive]` 自动生成的 trait 实现（如 `Clone`、`PartialEq`、`Debug`）默认会带上 `#[inline]` 属性，这会直接影响编译器的内联决策和最终生成代码的性能。这一点容易被忽视：你在手写这些实现时没加 `inline`，但派生出来的版本却加了，导致两者的优化行为并不等价。如果你在意热点路径上的内联和二进制体积，值得留意这个隐含差异。
 
 ---
 *Auto-generated from public sources. For reference only.*
