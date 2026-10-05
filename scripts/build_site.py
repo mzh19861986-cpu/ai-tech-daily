@@ -432,6 +432,19 @@ def build_about() -> str:
         所有代码都在 <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a> 上，欢迎 Star 和提 Issue。
     </p>
 
+    <h2>❓ 常见问题</h2>
+    <h3>Q: 这个网站是人工写的吗？</h3>
+    <p>A: 不是。所有内容都是 AI Agent 自动抓取、自动生成的，每天自动更新。</p>
+
+    <h3>Q: 每天什么时候更新？</h3>
+    <p>A: 每天自动更新，一般早上就能看到新的日报。</p>
+
+    <h3>Q: 可以订阅吗？</h3>
+    <p>A: 可以！用 RSS Feed 订阅，或者留下邮箱订阅 Newsletter。</p>
+
+    <h3>Q: 内容准确吗？</h3>
+    <p>A: 内容由 AI 生成，仅供参考。重要信息请自行核实。</p>
+
     <div style="margin-top: 2rem; padding: 1.5rem; background: #f6f8fa; border-radius: 8px; text-align: center;">
         <p style="margin: 0; color: #6a737d;">有问题或建议？</p>
         <p style="margin: 0.5rem 0 0 0;">
