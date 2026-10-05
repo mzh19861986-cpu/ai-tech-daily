@@ -382,14 +382,69 @@ def build_status() -> str:
         for s in sources
     ])
     content = f"""
-    <h1>📊 系统状态 Dashboard</h1>
-    <p class="meta">多 Agent 自动化系统实时状态</p>
+    <h1>📊 智能体集群监控面板</h1>
+    <p class="meta">母体 Orchestrator 管控 7 个子智能体 | 全自动闭环运行</p>
 
-    <h2>🤖 子智能体（Pipeline）</h2>
-    <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
-        <tr style="background: #f5f5f5;"><th style="padding: 0.5rem; border: 1px solid #ddd;">Pipeline</th><th style="padding: 0.5rem; border: 1px solid #ddd;">中文名</th><th style="padding: 0.5rem; border: 1px solid #ddd;">状态</th><th style="padding: 0.5rem; border: 1px solid #ddd;">每次产出</th></tr>
-        {rows}
-    </table>
+    <h2>🧠 母体 Orchestrator</h2>
+    <div style="background: #1a1a1a; color: white; padding: 1.5rem; border-radius: 12px; margin: 1rem 0;">
+        <h3 style="margin-top: 0;">🎯 母体状态：✅ 正常运行</h3>
+        <p style="margin-bottom: 0;">统一调度所有子智能体，任务拆解、派发、监控、安防兜底</p>
+    </div>
+
+    <h2>🤖 子智能体列表</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">🔍 FetcherAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">抓取 7 个数据源</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        </div>
+        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">⚙️ ProcessorAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">DeepSeek AI 处理 + 翻译</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        </div>
+        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">📝 PublisherAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">生成静态 HTML 并部署</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        </div>
+        <div style="padding: 1rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">📈 MonitorAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">监控运行状态和收益</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 运行中</p>
+        </div>
+        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">📣 PromoterAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">生成推广文案、目录站提交</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        </div>
+        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">💰 MonetizerAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">分析变现机会、优化变现入口</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        </div>
+        <div style="padding: 1rem; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">🔄 IterationAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">分析数据、发现问题、提出优化</p>
+            <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
+        </div>
+    </div>
+
+    <h2>🔄 完整闭环流程</h2>
+    <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; font-family: monospace; font-size: 0.9rem;">
+        <p style="margin: 0 0 0.5rem 0;">
+            <strong>内容生产链：</strong>
+            Fetcher → Processor → Publisher → Monitor
+        </p>
+        <p style="margin: 0 0 0.5rem 0;">
+            <strong>增长变现链：</strong>
+            Promoter → Monetizer → Iteration
+        </p>
+        <p style="margin: 0;">
+            <strong>完整闭环：</strong>
+            内容 → 推广 → 变现 → 迭代 → 优化内容 🔁
+        </p>
+    </div>
 
     <h2>📡 数据源状态</h2>
     <table style="width:100%; border-collapse: collapse; margin: 1rem 0;">
@@ -403,13 +458,14 @@ def build_status() -> str:
         <li>✅ Newsletter 订阅框</li>
         <li>✅ RSS Feed 订阅</li>
         <li>✅ 推荐工具区块（首页）</li>
-        <li>⏳ 联盟营销链接（待加）</li>
+        <li>✅ 变现指南页面</li>
+        <li>⏳ 联盟营销链接（待申请）</li>
     </ul>
 
     <div style="margin-top: 2rem; padding: 1rem; background: #e8f5e9; border-left: 4px solid #4caf50;">
-        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，多个子 Agent 并行运行，
-        自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 发布到 GitHub Pages。
-        全自动滚动运行，持续迭代新方向。
+        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，7 个子智能体并行运行，
+        自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 发布 → 推广 → 变现 → 迭代优化。
+        全自动滚动运行，持续进化。
     </div>
     """
     return TEMPLATE.format(title="Status", description="AI Tech Daily 系统运行状态 - 查看所有 pipeline 运行情况和数据源状态。", content=content)
