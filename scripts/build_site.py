@@ -166,9 +166,10 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
 
 def build_index(posts: list[dict]) -> str:
     """构建首页"""
+    sorted_posts = sorted(posts, key=lambda x: x["date"], reverse=True)
     posts_html = "\n".join([
         f'<li><span class="date">{p["date"]}</span><a href="{p["slug"]}.html">{p["title"]}</a></li>'
-        for p in sorted(posts, key=lambda x: x["date"], reverse=True)
+        for p in sorted_posts
     ])
     content = f"""
     <div style="text-align: center; padding: 2rem 0;">
@@ -201,6 +202,15 @@ def build_index(posts: list[dict]) -> str:
         <span style="background: #fdcb6e; color: #2d3436; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">🚀 新品发布</span>
         <span style="background: #74b9ff; color: #2d3436; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">✨ Prompt 技巧</span>
         <span style="background: #e17055; color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem;">📚 深度分析</span>
+    </div>
+
+    <h2>⭐ 今日头条</h2>
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 16px; margin-bottom: 2rem;">
+        <p style="opacity: 0.9; font-size: 0.9rem; margin: 0 0 0.5rem 0;">{sorted_posts[0]['date']}</p>
+        <h3 style="font-size: 1.5rem; margin: 0 0 1rem 0;">
+            <a href="{sorted_posts[0]['slug']}.html" style="color: white;">{sorted_posts[0]['title']}</a>
+        </h3>
+        <p style="opacity: 0.9; margin: 0;">今天最重要的内容，先看这篇 →</p>
     </div>
 
     <h2>📰 最新日报</h2>
