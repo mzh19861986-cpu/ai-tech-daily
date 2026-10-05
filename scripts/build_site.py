@@ -36,13 +36,17 @@ TEMPLATE = """<!DOCTYPE html>
             -webkit-font-smoothing: antialiased;
         }}
         body.dark {{
-            color: #e6edf3;
-            background: #0d1117;
+            color: #e6e6e6;
+            background: #0a0a0a;
         }}
-        body.dark h2 {{ color: #e6edf3; border-top-color: #30363d; }}
-        body.dark a {{ color: #58a6ff; }}
-        body.dark .meta {{ color: #8b949e; }}
-        body.dark div[style*="background: white"] {{ background: #161b22 !important; border-color: #30363d !important; }}
+        body.dark h2 {{ color: #e6e6e6; border-top-color: #2a2a2a; }}
+        body.dark a {{ color: #60a5fa; }}
+        body.dark .meta {{ color: #888; }}
+        body.dark .nav {{ background: rgba(20,20,20,0.8); border-color: #2a2a2a; }}
+        body.dark .post-list li {{ background: #1a1a1a; border-color: #2a2a2a; }}
+        body.dark .post-list li:hover {{ background: #222; border-color: #333; }}
+        body.dark .post-list a {{ color: #e6e6e6; }}
+        body.dark div[style*="background: #fafafa"] {{ background: #1a1a1a !important; border-color: #2a2a2a !important; }}
         h1, h2, h3 {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
             line-height: 1.3;
@@ -165,8 +169,15 @@ TEMPLATE = """<!DOCTYPE html>
         <p>☕ 觉得有用？请我喝杯咖啡支持一下！</p>
         <a href="https://github.com/sponsors/mzh19861986-cpu" style="color: #d63031; font-weight: bold;">GitHub Sponsors →</a>
     </div>
-    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e1e4e8; color: #6a737d; font-size: 0.85rem; text-align: center;">
-        <p>由 AI Agent 自动生成 | 每日更新 | <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">Star on GitHub</a></p>
+    <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #eaeaea; color: #999; font-size: 0.85rem; text-align: center;">
+        <p style="margin: 0 0 0.5rem 0;">由 AI Agent 自动生成 | 每日更新</p>
+        <p style="margin: 0;">
+            <a href="/about.html" style="color: #666;">关于</a> · 
+            <a href="/tools.html" style="color: #666;">工具库</a> · 
+            <a href="/sponsor.html" style="color: #666;">赞助</a> · 
+            <a href="/feed.xml" style="color: #666;">RSS</a> · 
+            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily" style="color: #666;">GitHub</a>
+        </p>
     </footer>
 
     <script>
