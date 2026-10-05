@@ -4,47 +4,33 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供足够的实质内容来提炼 Prompt 技巧。它只有一个指向 Lobste.rs 讨论帖的链接（"Claude Says"），没有正文、评论或任何关于 AI 使用的建议。
+**这篇文章主要讨论企业 AI 支出难以预算的问题，没有明显的 Prompt 技巧。若从中提炼对使用 AI 的建议，可总结为：**在采用 AI 前先明确具体业务场景和预期 ROI，避免盲目投入导致成本失控。****
 
-如果你能提供该讨论帖的完整内容或核心观点，我可以帮你提炼出可用的 Prompt 技巧或最佳实践。**
-
-📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
+📎 来源：[Spending on AI Is Becoming Almost Impossible for Businesses to Budget](https://www.wsj.com/tech/personal-tech/ai-token-spending-businesses-431ee94a)
 
 ## 2. 💡 技巧 2
 
-**这篇文章没有涉及 Prompt 工程或 AI 使用技巧，内容是一篇关于 flow matching 约束采样的学术论文摘要。
+**这篇文章内容为空，没有可提炼的 Prompt 技巧或 AI 使用建议。如果你能提供具体正文，我可以帮你提炼成一个可直接使用的 Prompt 技巧。**
 
-如果你需要，我可以根据这篇论文的主题（生成模型在约束下采样），帮你写一个用于向 AI 解释或讨论该论文的 Prompt 模板。**
-
-📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
+📎 来源：[Anthropic wants your thoughts on AI](https://www.anthropic.com/research/your-thoughts-on-ai)
 
 ## 3. 💡 技巧 3
 
-**从这篇论文中可提炼的 AI 使用最佳实践：
+**这篇文章（讨论标题“Claude Says”）中没有可提炼的具体 Prompt 技巧或 AI 使用建议，内容仅为一个指向 Lobste.rs 评论页的链接，没有实质正文。因此无法总结出有效的 Prompt 最佳实践。**
 
-**为高频、类型固定的小决策（如选模型、选工具、判断相关性/注入）使用"单次前向传播 + 类别概率"的系统1式小模型，而非每次都调用完整 LLM；但对每个这类快速模型做配对且自审计的评估，以验证其在真实 harness 中的可靠性。**
-
-一句话即：让快模型处理快决策以省成本/延迟，同时用严格评估（配对比较 + 自审计）换取可验证的证据。**
-
-📎 来源：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
+📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
 
 ## 4. 💡 技巧 4
 
-**这篇文章本身并不是在讲 Prompt 技巧，但它展示了一个非常实用、可直接复用的技巧：**用“两阶段分类流水线”而不是让模型一步到位地做复杂判断**。
+**这篇文章讲的是逆向工程 Comanche 游戏地形地图的技术过程，没有涉及 AI Prompt 技巧或 AI 使用建议，因此无法提炼相关内容。**
 
-**技巧：先用 LLM 做粗筛/打标签，再对筛选出的内容做精细分类。**
-
-比如这个研究里处理近万份年报时，没有直接让模型一次性回答“这家公司如何披露 AI 风险与应对”，而是拆成两步——先（可能是关键词或模型）筛出与 AI 相关的段落/报告，再用 LLM 对这些内容做**
-
-📎 来源：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
+📎 来源：[Reverse Engineering Comanche Terrain Maps](https://pikuma.com/blog/comanche-maps-reverse-engineering)
 
 ## 5. 💡 技巧 5
 
-****技巧：让 AI 先“比较”再“行动”**
+**这篇文章没有可提炼的 Prompt 技巧或 AI 使用建议——它是一篇关于约束流匹配（constrained flow matching）采样的学术论文摘要，讨论的是生成模型采样时如何满足约束条件的算法问题，与 Prompt 工程无关。**
 
-在需要多步工具调用的长任务中，不要只让 AI 直接执行，而是让它先对候选的下一步动作进行对比评估（如比较不同选择的价值/预期效果），再决定执行哪一个。这样可以提供比只看最终结果更精准的逐步反馈，改善长链条任务的决策质量。**
-
-📎 来源：[Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents](https://arxiv.org/abs/2610.02330)
+📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*
