@@ -42,6 +42,7 @@ from .agents.logger import LoggerAgent
 from .agents.notifier import NotifierAgent
 from .agents.tester import TesterAgent
 from .agents.customer_service import CustomerServiceAgent
+from .agents.video_promotion import VideoPromotionAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -66,12 +67,11 @@ class Orchestrator:
         self.quality_control = QualityControlAgent()
         # 进化智能体
         self.evolution = EvolutionAgent()
-        # SEO 优化
+        # 流量推广层
         self.seo = SeoAgent()
-        # 数据分析
         self.analytics = AnalyticsAgent()
-        # 社区运营
         self.community = CommunityAgent()
+        self.video_promotion = VideoPromotionAgent()
         # 基础设施层
         self.database = DatabaseAgent()
         self.tool_manager = ToolManagerAgent()
