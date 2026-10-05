@@ -65,18 +65,19 @@ TEMPLATE = """<!DOCTYPE html>
         .post-list li {{
             padding: 1.25rem; margin-bottom: 0.75rem;
             border: 1px solid #eaeaea;
-            border-radius: 8px;
+            border-radius: 10px;
             transition: all 0.2s ease;
-            background: #fafafa;
+            background: #ffffff;
         }}
         .post-list li:hover {{
             border-color: #d0d0d0;
-            background: #f5f5f5;
+            background: #fafafa;
             transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }}
         .post-list li:last-child {{ border-bottom: none; }}
-        .post-list a {{ font-size: 1.1rem; font-weight: 500; color: #24292e; }}
-        .post-list .date {{ color: #95a5a6; font-size: 0.85rem; margin-right: 1rem; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
+        .post-list a {{ font-size: 1.05rem; font-weight: 600; color: #1a1a1a; }}
+        .post-list .date {{ color: #999; font-size: 0.8rem; margin-right: 0.75rem; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }}
         .newsletter-box {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white; padding: 2rem; border-radius: 16px; margin: 2.5rem 0;
