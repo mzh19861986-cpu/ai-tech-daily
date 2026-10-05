@@ -158,13 +158,13 @@ TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
     <nav class="nav">
-        <a href="/">🏠 Home</a>
-        <a href="/tools.html">🛠️ Tools</a>
-        <a href="/monetization.html">💰 Monetize</a>
-        <a href="/about.html">ℹ️ About</a>
-        <a href="/status.html">📊 Status</a>
-        <a href="/sponsor.html">💛 Sponsor</a>
-        <a href="/feed.xml">📡 RSS</a>
+        <a href="./">🏠 Home</a>
+        <a href="./tools.html">🛠️ Tools</a>
+        <a href="./monetization.html">💰 Monetize</a>
+        <a href="./about.html">ℹ️ About</a>
+        <a href="./status.html">📊 Status</a>
+        <a href="./sponsor.html">💛 Sponsor</a>
+        <a href="./feed.xml">📡 RSS</a>
         <input type="search" id="searchInput" placeholder="🔍 搜索文章..." style="float: right; padding: 0.3rem 0.8rem; border: 1px solid #ddd; border-radius: 20px; font-size: 0.9rem; width: 150px;">
         <button onclick="document.body.classList.toggle('dark')" style="float: right; background: none; border: 1px solid #ddd; border-radius: 20px; padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.9rem; margin-right: 0.5rem;">🌙 暗色</button>
     </nav>
@@ -198,10 +198,10 @@ TEMPLATE = """<!DOCTYPE html>
     <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #eaeaea; color: #999; font-size: 0.85rem; text-align: center;">
         <p style="margin: 0 0 0.5rem 0;">由 AI Agent 自动生成 | 每日更新</p>
         <p style="margin: 0;">
-            <a href="/about.html" style="color: #666;">关于</a> · 
-            <a href="/tools.html" style="color: #666;">工具库</a> · 
-            <a href="/sponsor.html" style="color: #666;">赞助</a> · 
-            <a href="/feed.xml" style="color: #666;">RSS</a> · 
+            <a href="./about.html" style="color: #666;">关于</a> · 
+            <a href="./tools.html" style="color: #666;">工具库</a> · 
+            <a href="./sponsor.html" style="color: #666;">赞助</a> · 
+            <a href="./feed.xml" style="color: #666;">RSS</a> · 
             <a href="https://github.com/mzh19861986-cpu/ai-tech-daily" style="color: #666;">GitHub</a>
         </p>
     </footer>
@@ -273,7 +273,7 @@ def build_index(posts: list[dict]) -> str:
         </p>
         <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem;">
             <a href="#latest" style="padding: 0.75rem 1.5rem; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; font-weight: 500;">开始阅读 →</a>
-            <a href="/tools.html" style="padding: 0.75rem 1.5rem; background: white; color: #1a1a1a; border: 1px solid #eaeaea; border-radius: 8px; text-decoration: none; font-weight: 500;">浏览工具库</a>
+            <a href="./tools.html" style="padding: 0.75rem 1.5rem; background: white; color: #1a1a1a; border: 1px solid #eaeaea; border-radius: 8px; text-decoration: none; font-weight: 500;">浏览工具库</a>
         </div>
     </div>
 
@@ -343,7 +343,7 @@ def build_index(posts: list[dict]) -> str:
     <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px;">
         <p style="margin: 0; color: #636e72;">觉得有用？</p>
         <p style="margin: 0.5rem 0 1rem 0;">
-            <a href="/sponsor.html" style="color: #d63031; font-weight: bold;">💛 赞助我们</a>
+            <a href="./sponsor.html" style="color: #d63031; font-weight: bold;">💛 赞助我们</a>
             &nbsp;·&nbsp;
             <a href="https://github.com/mzh19861986-cpu/ai-tech-daily" style="color: #0366d6;">⭐ Star on GitHub</a>
         </p>
