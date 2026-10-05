@@ -21,6 +21,9 @@ from .agents.fetcher import FetcherAgent
 from .agents.processor import ProcessorAgent
 from .agents.publisher import PublisherAgent
 from .agents.monitor import MonitorAgent
+from .agents.promoter import PromoterAgent
+from .agents.monetizer import MonetizerAgent
+from .agents.iteration import IterationAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -30,10 +33,15 @@ class Orchestrator:
     """母体：管控所有子 Agent"""
 
     def __init__(self):
+        # 内容生产链
         self.fetcher = FetcherAgent()
         self.processor = ProcessorAgent()
         self.publisher = PublisherAgent()
         self.monitor = MonitorAgent()
+        # 增长与变现链
+        self.promoter = PromoterAgent()
+        self.monetizer = MonetizerAgent()
+        self.iteration = IterationAgent()
 
     def run_pipeline(self, pipeline_name: str, dry_run: bool = None) -> dict:
         """执行单条 pipeline：fetch → security → process → security → publish → report"""
@@ -116,3 +124,39 @@ class Orchestrator:
             "finished_at": datetime.now().isoformat(),
         }
         return summary
+
+    def run_growth_cycle(self, dry_run: bool = None) -> dict:
+        """运行完整的增长闭环：内容 → 推广 → 变现 → 迭代"""
+        dry_run = dry_run if dry_run is not None else config.dry_run
+        logger.info("=== 母体启动：增长闭环 ===")
+        
+        cycle_report = {
+            "cycle": "growth",
+            "started_at": datetime.now().isoformat(),
+            "steps": {},
+        }
+        
+        # Step 1: 推广智能体 - 生成推广素材
+        promoter_result = self.promoter.safe_run()
+        cycle_report["steps"]["promoter"] = {
+            "success": promoter_result.success,
+            "items": promoter_result.items_processed,
+        }
+        
+        # Step 2: 变现智能体 - 分析变现机会
+        monetizer_result = self.monetizer.safe_run()
+        cycle_report["steps"]["monetizer"] = {
+            "success": monetizer_result.success,
+            "items": monetizer_result.items_processed,
+        }
+        
+        # Step 3: 迭代智能体 - 分析优化建议
+        iteration_result = self.iteration.safe_run()
+        cycle_report["steps"]["iteration"] = {
+            "success": iteration_result.success,
+            "items": iteration_result.items_processed,
+        }
+        
+        cycle_report["finished_at"] = datetime.now().isoformat()
+        logger.info("=== 母体完成：增长闭环 ===")
+        return cycle_report
