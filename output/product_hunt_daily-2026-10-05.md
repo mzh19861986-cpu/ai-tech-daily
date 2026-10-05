@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Reviu](https://www.producthunt.com/products/reviu)
+## 1. [Reactive Resume v6](https://www.producthunt.com/products/reactive-resume)
 
-**💡 是什么 + 为什么值得试：** Reviu 是一个专门审查 AI agent 所写代码的 review 工具，帮你快速发现 AI 生成代码里的问题，而不是盲目提交。如果你在用 Claude Code、Cursor 这类工具写代码，它能补上"写完就信"这块短板。
-
----
-## 2. [Pilot5 Legal](https://www.producthunt.com/products/pilot5-ai)
-
-**💡 是什么 + 为什么值得试：** Pilot5 Legal 让五个AI模型同时对同一个法律问题作答并相互校验，帮你快速发现单一模型可能漏掉的风险点或错误引用。如果你需要初步的法律信息筛查又不想只信一个AI的“一面之词”，这个项目值得试试。
+**💡 是什么 + 为什么值得试：** Reactive Resume v6 是一个免费开源的简历生成器，让你不用注册账号、不用付费，直接在浏览器里就能做出专业排版、随时可导出 PDF 的简历。如果你厌倦了 Word 排版总是错位或在线简历工具的收费墙，它值得一试。
 
 ---
-## 3. [Bentomux](https://www.producthunt.com/products/bentomux)
+## 2. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
 
-**💡 是什么 + 为什么值得试：** Bentomux 把终端工作区切成可保存、可一键恢复的布局，省得你每次重开终端都要手动摆 pane、重跑命令。如果你经常在 tmux 里搭多窗口开发环境，它能让这套流程变成一条命令的事。
-
----
-## 4. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
-
-**💡 是什么 + 为什么值得试：** FastRouter.ai 帮你把请求自动分发到最合适的 LLM——按成本、延迟或质量做权衡，省去手动切换和反复比价的麻烦。如果你在多个模型间纠结该用哪个，它能直接用路由策略替你决定。
+**💡 是什么 + 为什么值得试：** DailyHelm 帮你把网站分析数据变成每天可执行的小修复，而不是只给你一堆看不懂的图表。如果你厌倦了分析报告却不知道该改什么，它值得一试。
 
 ---
-## 5. [Web Search API](https://www.producthunt.com/products/cloudflare)
+## 3. [Siteprint](https://www.producthunt.com/products/siteprint)
 
-**💡 是什么 + 为什么值得试：** Web Search API 让你的 AI Agent 能实时搜索互联网，不再只依赖训练数据里过时的信息。如果你在搭需要查最新资料、验证事实或抓取实时内容的 Agent，这个开箱即用的搜索接口能省掉自己爬虫和接搜索 API 的麻烦。
-
----
-## 6. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
-
-**💡 是什么 + 为什么值得试：** DailyHelm 把网站分析数据直接翻译成每天可执行的优化动作，帮你从“看报表”跳到“改页面赚钱”。如果你受够了只堆指标却不知道先修哪里，它值得一试。
+**💡 是什么 + 为什么值得试：** Siteprint 能提取任意网站的设计规范（配色、字体、布局、间距等），直接导出给 AI 做参考——省去你手动截图、量尺寸、整理文档的麻烦。如果你想让 AI 生成风格一致的设计或做竞品复刻，这比口头描述靠谱得多。
 
 ---
-## 7. [Reason](https://www.producthunt.com/products/dereference-the-100x-ide)
+## 4. [crosswalk](https://www.producthunt.com/products/crosswalk)
 
-**💡 是什么 + 为什么值得试：** 别再把代码助手当成一次性对话框了——Reason 把上下文、插件和可复用技能打包成一个持续的工作空间，让你不用每次重复交代项目背景和操作流程。如果你受够了在 IDE 和聊天窗口之间来回粘贴，它值得一试。
+**💡 是什么 + 为什么值得试：** Crosswalk 想给你的 AI agent 一个专属收件箱，让人和 agent 之间的消息往来有个统一的落脚点，而不是散落在各种对话窗口里。如果你正在折腾 agent 工作流，又苦于没有合适的地方接收和跟进它们的输出，可以试试这个。
 
 ---
-## 8. [Oogwai Beacon](https://www.producthunt.com/products/oogwai-beacon)
+## 5. [Opengeni](https://www.producthunt.com/products/opengeni)
 
-**💡 是什么 + 为什么值得试：** 如果你在做内容站或产品页，想知道自己在 ChatGPT、Perplexity 这类答案引擎里为什么没被引用，Oogwai Beacon 能帮你做一次 AEO 审计，定位抓取和结构上的问题。它把“答案引擎优化”这件模糊的事拆成可检查的项，适合想认真做 AI 搜索流量的人先跑一遍看差距。
+**💡 是什么 + 为什么值得试：** Opengeni 帮你跳过搭建 Agent 运行环境、工具调用和任务编排这些重复劳动，几分钟内直接跑起可用的 AI Agent。如果你不想在基础设施上耗时间、只想快点验证 Agent 想法，它值得一试。
+
+---
+## 6. [Spira Maxima](https://www.producthunt.com/products/spira-ai)
+
+**💡 是什么 + 为什么值得试：** Spira Maxima 能把你的脚本文本直接变成适合发在社交媒体上的短视频，省去剪辑和找素材的麻烦。如果你经常需要批量产出短视频内容，可以拿它试试能不能减少手工环节。
+
+---
+## 7. [Bentomux](https://www.producthunt.com/products/bentomux)
+
+**💡 是什么 + 为什么值得试：** Bentomux 帮你把终端里散落的会话、面板和命令整理成一个可保存、可恢复的“便当盒”，省去每次重开工作区都要手动重建布局的麻烦。如果你经常同时跑多个服务或调试任务，它值得一试——本质上是给你的工作流加了个一键即食的封装。
+
+---
+## 8. [Dots UI](https://www.producthunt.com/products/dots-ui)
+
+**💡 是什么 + 为什么值得试：** 想给界面加点粒子效果又不想手写动画逻辑的话，Dots UI 用 React 组件就能做出可变形、可过渡的粒子界面，省去从零搭建渲染管线的麻烦，适合做加载态、背景氛围或数据可视化的动效。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

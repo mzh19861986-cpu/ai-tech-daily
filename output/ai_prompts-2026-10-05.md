@@ -4,48 +4,43 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供实质内容（标题和正文均为空），因此无法提炼 Prompt 技巧或 AI 使用建议。
-
-如果你能补充以下任一信息，我可以立即为你提炼成可用的 Prompt 技巧：
-
-1. **文章正文/讨论内容**（哪怕是几段摘录）
-2. **核心观点**（例如：Jev 决策模型与 LLM-as-a-judge、传统分类器的对比结论）
-3. **你想要的应用场景**（如：模型评估、分类任务、LLM 评审等）
-
-补充后我会按你要求的格式输出：**1-**
-
-📎 来源：[Decision models like Jev don't beat LLM-as-a-judge or traditional classifiers](https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails)
-
-## 2. 💡 技巧 2
-
-**这篇文章没有提供具体内容（正文为空），因此无法提炼出 Prompt 技巧或 AI 使用建议。如果你能贴出完整文章内容，我可以帮你总结其中的 AI/软件相关启示。**
-
-📎 来源：[Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/)
-
-## 3. 💡 技巧 3
-
-**这篇文章内容过于简略（仅有一个指向 Lobste.rs 评论区的链接），无法提炼出具体的 Prompt 技巧或使用建议。如果你能提供完整的文章正文或讨论内容，我可以帮你提炼出可复用的 Prompt 最佳实践。**
+**这篇文章没有提供足够的正文内容，只有一个指向 Lobste.rs 讨论帖的链接。因此无法从中提炼出具体的 Prompt 技巧或 AI 使用建议。如果你能提供该讨论帖的具体内容，我可以帮你总结。**
 
 📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
 
-## 4. 💡 技巧 4
+## 2. 💡 技巧 2
 
-**这篇文章是关于约束流匹配（constrained flow matching）的学术论文，核心是用**极小的轨迹干预**让生成样本既满足约束又贴近预训练分布。它不涉及 Prompt 撰写技巧，因此我从「如何更好使用 AI」的角度提炼一条可迁移的启发：
+**这篇文章没有可直接提取的 Prompt 技巧，因为它是一篇关于 flow matching 约束采样（constrained sampling）的学术论文，与 Prompt 工程无关。
 
-**用最小干预校正 AI 输出，而非推倒重来。**  
-当你需要 AI 生成的内容满足额外约束（格式、事实、风格等）时，优先在原输出基础上做**局部、最小的修正**，而不是让它完全重新生成——这样能最大程度保留模型原本的高**
+如果硬要从"更好使用 AI"的角度总结：当预训练生成模型需要满足外部约束（如观测数据、物理规律）时，与其强行改写生成过程导致样本偏离原分布，不如采用"最小轨迹干预"的思路——只做必要的最小修正，以在满足约束的同时尽量保留模型原有能力。这一原则也可类比到 AI 使用中：对模型输出做最小必要的约束调整，比大**
 
 📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
-## 5. 💡 技巧 5
+## 3. 💡 技巧 3
 
-****技巧：给“快思考”型小模型加一层“慢证据”自审计。**
+**从这项研究中可提炼的 Prompt 技巧：**让 AI 执行具体的"系统1"单次判断任务（如"这段文字是否相关""是否包含注入"）时，要求它直接输出类别概率或单一结论，而不要附加解释或推理步骤。**
 
-在让轻量/单次前向的分类模型（System-1）替代 LLM 做路由、相关性判断等子决策时，不要只信它输出的类别概率；应搭配“成对评估（paired evaluation）+ 自我审计”机制，用第二个判断或对照样本来核验高风险决策（如是否含注入、文本是否相关），再决定是否升级到更慢的 LLM 复核。
-
-（注：原文摘要被截断，以上基于可见**
+这样能让轻量模型以单次前向传播完成决策，大幅降低成本和延迟，同时把复杂推理留给更强的模型处理。**
 
 📎 来源：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
+
+## 4. 💡 技巧 4
+
+****Prompt 技巧：**  
+把“分析对象 + 输出标签体系 + 两阶段流程”明确写进 Prompt，并先让模型做粗分类、再做细分类，可显著提高大规模文本分类的一致性与可复现性。
+
+**最佳实践：**  
+在企业披露/长文档分析中，不要指望一次 Prompt 完成所有判断；应设计可复现的“两阶段分类流水线”（先粗筛、后细判），并把标签定义和步骤写死在提示词里。**
+
+📎 来源：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
+
+## 5. 💡 技巧 5
+
+****技巧：长流程工具调用任务中，让 AI 在每一步“先比较再行动”。**
+
+具体做法：在 Agent 的每个决策步骤，不只让模型直接选下一个工具，而是要求它先对候选动作做**相对价值估计**（比较几个可选动作的预期收益），再据此选择——这样能提供比只看最终结果更精准的步级信号，缓解长链路中信用分配困难的问题。**
+
+📎 来源：[Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents](https://arxiv.org/abs/2610.02330)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*
