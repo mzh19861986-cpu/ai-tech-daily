@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Clair](https://www.producthunt.com/products/clair-3)
+## 1. [opensend.cc](https://www.producthunt.com/products/opensend-cc)
 
-**💡 是什么 + 为什么值得试：** Clair 让你从手表上直接回复 Claude Code，不用回到电脑前就能确认或响应它。如果你经常离开工位但又不想漏掉 Claude Code 的提问，值得试试。
-
----
-## 2. [Sellio](https://www.producthunt.com/products/sellio-2)
-
-**💡 是什么 + 为什么值得试：** Sellio 把邮件、聊天等渠道的客户咨询汇到一个共享收件箱，让 AI 客服代理先自动应答常见问题，人工只需接管复杂对话。如果你的小团队被重复咨询淹没、又请不起专职客服，可以试试它。
+**💡 是什么 + 为什么值得试：** 想自己掌控邮件发送、又不想被第三方 SaaS 锁定和计费？opensend.cc 让你把开源邮件平台直接部署在自己的服务器上，收发和 API 都归你管，适合需要数据自主、成本可控的场景。
 
 ---
-## 3. [Quven](https://www.producthunt.com/products/quven)
+## 2. [LaunchReel](https://www.producthunt.com/products/launchreel-2)
 
-**💡 是什么 + 为什么值得试：** Quven 是一个自托管的媒体服务器，主打原生播放——直接调用你设备自带的播放器来放视频，省去转码和浏览器播放的折腾。如果你受够了 Jellyfin、Plex 在客户端上的兼容性问题，想让本地播放流畅无卡顿，可以试试它。
-
----
-## 4. [Thinking Orbs](https://www.producthunt.com/products/thinking-orbs)
-
-**💡 是什么 + 为什么值得试：** Thinking Orbs 提供一组现成的 React 动画组件，用来直观显示 AI 的思考、加载或响应状态，省去自己设计动画的麻烦。如果你的应用有 AI 交互环节，想快速加上一个不寒碜的状态指示器，这个库开箱即用，值得一试。
+**💡 是什么 + 为什么值得试：** LaunchReel 把 Claude 那种「对话式设计」的思路搬到了视频剪辑上，让你用自然语言快速完成专业级的剪辑操作，省下大量手动拖拉时间线的时间。如果你经常剪视频又嫌传统软件太繁琐，值得试一下它的工作流。
 
 ---
-## 5. [Calnio](https://www.producthunt.com/products/calnio)
+## 3. [CoreSpeed](https://www.producthunt.com/products/corespeed)
 
-**💡 是什么 + 为什么值得试：** 如果你用 Notion 管理日程、却还得手动往 Apple 日历里复制一遍，Calnio 能让你两边的日程自动双向同步，改哪边都不会漏。
-
----
-## 6. [LaunchReel](https://www.producthunt.com/products/launchreel-2)
-
-**💡 是什么 + 为什么值得试：** LaunchReel 让你用对话的方式剪辑专业视频，把"逐帧手动操作"变成"说一句话就改好"，适合需要频繁出片的创作者和团队。如果你觉得传统剪辑软件的学习曲线拖慢了效率，它值得一试。
+**💡 是什么 + 为什么值得试：** CoreSpeed 用一个 MCP 接口把 agent 需要的应用、记忆和工具都统一接进来，省掉你分别对接多个服务的胶水代码。如果你正在搭 agent 又不想自己维护一堆集成，值得试试。
 
 ---
-## 7. [Art4](https://www.producthunt.com/products/art4)
+## 4. [Capybara Court](https://www.producthunt.com/products/capybara-court)
 
-**💡 是什么 + 为什么值得试：** Art4 能把你的 Mac 变成一个迷你的艺术博物馆，让你在桌面或屏幕上随时欣赏精选画作，不用打开浏览器或专门找图。如果你喜欢在电脑前留一点视觉调剂，又不想被复杂功能打扰，它足够轻量、开箱即用。
+**💡 是什么 + 为什么值得试：** Capybara Court 用一只水豚法官来"审判"你们之间的小纠纷（比如谁该洗碗、哪家外卖更好吃），把争执变成一段轻松有趣的对话。它适合朋友群里用来化解日常抬杠，而不是真的当真做裁决。
 
 ---
-## 8. [Snapset](https://www.producthunt.com/products/snapset)
+## 5. [Sellio](https://www.producthunt.com/products/sellio-2)
 
-**💡 是什么 + 为什么值得试：** Snapset 能把你当前打开的所有 App、窗口和标签页一键存成快照，换项目或重启后一键还原，不用再手动重开一堆东西。如果你经常在几套工作环境间切换，或者讨厌 Mac 重启后重新铺工作区，值得试试。
+**💡 是什么 + 为什么值得试：** Sellio 把 AI 客服代理直接塞进一个共享收件箱，让团队不用在多个工具间切换就能集中处理客户咨询。如果你正被重复问题淹没、又不想上重型客服系统，它值得一试。
+
+---
+## 6. [Octri.dev](https://www.producthunt.com/products/octri)
+
+**💡 是什么 + 为什么值得试：** 如果你在维护 API 或开源项目，Octri.dev 能从同一份接口定义自动生成文档、多语言 SDK、MCP server 和监控，省掉一堆手动同步的麻烦——接口一改，下游全跟着更新，值得试试。
+
+---
+## 7. [Quven](https://www.producthunt.com/products/quven)
+
+**💡 是什么 + 为什么值得试：** Quven 是一个自托管的媒体服务器，重点解决「浏览器播放不给力」的问题——它优先走原生播放，让你在本地设备上直接流畅播放自己的影音库，而不用忍受转码卡顿或画质损失。如果你受够了 Plex/Jellyfin 在高码率视频上的转码折腾，值得一试。
+
+---
+## 8. [Blume 2.0](https://www.producthunt.com/products/blume-3)
+
+**💡 是什么 + 为什么值得试：** Blume 2.0 是一个开源文档框架，能帮你快速搭建对人和 AI agent 都友好的文档站点。如果你需要维护技术文档、API 说明或知识库，又不想被笨重的工具拖慢，它值得一试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
