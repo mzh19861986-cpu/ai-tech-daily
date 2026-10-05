@@ -108,6 +108,18 @@ TEMPLATE = """<!DOCTYPE html>
             background: #f1f3f5; padding: 0.2rem 0.4rem; border-radius: 4px;
             font-family: 'SF Mono', Monaco, monospace; font-size: 0.9rem;
         }}
+        .article-meta {{
+            color: #95a5a6; font-size: 0.9rem; margin-bottom: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }}
+        .share-buttons {{
+            margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e1e4e8;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }}
+        .share-buttons a {{
+            display: inline-block; margin-right: 1rem; padding: 0.5rem 1rem;
+            border-radius: 8px; font-size: 0.9rem;
+        }}
     </style>
 </head>
 <body>
@@ -161,6 +173,21 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
     title = title_match.group(1) if title_match else md_path.stem
 
     html_body = md.markdown(text, extensions=["fenced_code", "tables"])
+
+    # 从文件名提取日期
+    date_match = re.search(r"(\d{4}-\d{2}-\d{2})", md_path.stem)
+    date_str = date_match.group(1) if date_match else ""
+
+    # 加文章元信息和分享按钮
+    html_body = f'<p class="article-meta">📅 {date_str} | 🤖 AI 自动生成</p>\n' + html_body
+    html_body += '''
+    <div class="share-buttons">
+        <strong>觉得有用？</strong>
+        <a href="https://twitter.com/intent/tweet?text=Check%20this%20out&url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="background: #1da1f2; color: white;" target="_blank">🐦 分享到 Twitter</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mzh19861986-cpu.github.io/ai-tech-daily/" style="background: #0077b5; color: white;" target="_blank">💼 分享到 LinkedIn</a>
+    </div>
+    '''
+
     return title, html_body
 
 
