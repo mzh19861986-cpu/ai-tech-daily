@@ -28,6 +28,9 @@ from .agents.autoloop import AutoLoopAgent
 from .agents.opportunity_scout import OpportunityScoutAgent
 from .agents.quality_control import QualityControlAgent
 from .agents.evolution import EvolutionAgent
+from .agents.seo import SeoAgent
+from .agents.analytics import AnalyticsAgent
+from .agents.community import CommunityAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -52,6 +55,12 @@ class Orchestrator:
         self.quality_control = QualityControlAgent()
         # 进化智能体
         self.evolution = EvolutionAgent()
+        # SEO 优化
+        self.seo = SeoAgent()
+        # 数据分析
+        self.analytics = AnalyticsAgent()
+        # 社区运营
+        self.community = CommunityAgent()
         # 自动循环调度
         self.autoloop = AutoLoopAgent()
 
