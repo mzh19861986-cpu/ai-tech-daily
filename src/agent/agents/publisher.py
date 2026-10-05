@@ -52,6 +52,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_devto_report(items, pipeline_name)
         elif pipeline_name == "dev_tips_daily":
             markdown = self._build_tips_report(items, pipeline_name)
+        elif pipeline_name == "ai_qa_daily":
+            markdown = self._build_qa_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -319,6 +321,27 @@ class PublisherAgent(BaseAgent):
             lines.append("")
         lines.append("---")
         lines.append("*每天一个小技巧，一年就是 365 个进步~*")
+        return "\n".join(lines)
+
+    def _build_qa_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """每日 AI 问答"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# ❓ 每日 AI 问答 - {date_str}",
+            "",
+            f"> 关于 AI 你可能想问的问题 | 每天一个问题，搞懂一个概念",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            title = item.get("title", "")
+            lines.append(f"## Q{i}: {title}？")
+            lines.append("")
+            lines.append(f"**A:** {item.get('summary', '')}")
+            lines.append("")
+            lines.append(f"📎 更多阅读：[{title}]({item.get('url', '')})")
+            lines.append("")
+        lines.append("---")
+        lines.append("*有问题想问？欢迎在 GitHub 提 Issue~*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:

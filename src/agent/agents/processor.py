@@ -78,6 +78,11 @@ class ProcessorAgent(BaseAgent):
             tips_keywords = ["tip", "trick", "guide", "how to", "tutorial", "learn", "best practice"]
             filtered = [x for x in items if any(k in x.get("title", "").lower() for k in tips_keywords)]
             items = filtered[:3]
+        elif pipeline_name == "ai_qa_daily":
+            # 每日 AI 问答：选 AI 相关的内容，做成 Q&A
+            ai_keywords = ["ai", "llm", "gpt", "agent", "model", "gemini", "claude"]
+            filtered = [x for x in items if any(k in x.get("title", "").lower() for k in ai_keywords)]
+            items = filtered[:3]
         else:
             # 其他 pipeline：只处理前 2 条，控制 API 调用次数
             items = items[:2]
