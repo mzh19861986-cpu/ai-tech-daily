@@ -438,6 +438,11 @@ def build_status() -> str:
             <p style="margin: 0; color: #666; font-size: 0.9rem;">内容审查、工具验证、质量筛选</p>
             <p style="margin: 0.5rem 0 0 0; color: #f44336; font-weight: 500;">✅ 质量把关</p>
         </div>
+        <div style="padding: 1rem; background: #f3e5f5; border: 2px solid #9c27b0; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">🧬 EvolutionAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">集群进化、自动分裂新智能体</p>
+            <p style="margin: 0.5rem 0 0 0; color: #9c27b0; font-weight: 500;">🧬 自主进化</p>
+        </div>
     </div>
 
     <h2>🔄 完整闭环流程</h2>
