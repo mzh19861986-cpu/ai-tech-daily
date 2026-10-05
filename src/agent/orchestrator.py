@@ -25,6 +25,7 @@ from .agents.promoter import PromoterAgent
 from .agents.monetizer import MonetizerAgent
 from .agents.iteration import IterationAgent
 from .agents.autoloop import AutoLoopAgent
+from .agents.opportunity_scout import OpportunityScoutAgent
 
 logger = logging.getLogger("orchestrator")
 logger.setLevel(config.log_level)
@@ -43,6 +44,8 @@ class Orchestrator:
         self.promoter = PromoterAgent()
         self.monetizer = MonetizerAgent()
         self.iteration = IterationAgent()
+        # 机会侦察
+        self.opportunity_scout = OpportunityScoutAgent()
         # 自动循环调度
         self.autoloop = AutoLoopAgent()
 

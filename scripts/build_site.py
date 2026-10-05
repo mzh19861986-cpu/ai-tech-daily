@@ -428,6 +428,11 @@ def build_status() -> str:
             <p style="margin: 0; color: #666; font-size: 0.9rem;">分析数据、发现问题、提出优化</p>
             <p style="margin: 0.5rem 0 0 0; color: #4caf50; font-weight: 500;">✅ 新上线</p>
         </div>
+        <div style="padding: 1rem; background: #fff3e0; border: 2px solid #ff9800; border-radius: 10px;">
+            <h4 style="margin: 0 0 0.5rem 0;">🔭 OpportunityScoutAgent</h4>
+            <p style="margin: 0; color: #666; font-size: 0.9rem;">全网抓资源、抓机会、抓热点</p>
+            <p style="margin: 0.5rem 0 0 0; color: #ff9800; font-weight: 500;">✅ 最新上线</p>
+        </div>
     </div>
 
     <h2>🔄 完整闭环流程</h2>
