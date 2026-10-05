@@ -150,6 +150,8 @@ TEMPLATE = """<!DOCTYPE html>
 <body>
     <nav class="nav">
         <a href="/">🏠 Home</a>
+        <a href="/tools.html">🛠️ Tools</a>
+        <a href="/monetization.html">💰 Monetize</a>
         <a href="/about.html">ℹ️ About</a>
         <a href="/status.html">📊 Status</a>
         <a href="/sponsor.html">💛 Sponsor</a>
@@ -544,6 +546,75 @@ def build_tools_ranking() -> str:
     return TEMPLATE.format(title="AI Tools Ranking", description="最佳 AI 工具榜单 - 我们每天都在用的效率工具，按推荐度排序。包含 DeepSeek、Cursor、ChatGPT、Claude 等热门 AI 工具。", content=content)
 
 
+def build_monetization() -> str:
+    """构建 AI 变现指南页面"""
+    content = """
+    <h1>💰 AI 变现指南</h1>
+    <p class="meta">全网筛选的高价值 AI 变现项目和方法 | 2026 年 10 月更新</p>
+
+    <h2>🚀 被动收入方向</h2>
+    <p>这些是目前最值得尝试的 AI 被动收入方向：</p>
+
+    <h3>1. AI 工具联盟营销</h3>
+    <p>推荐好用的 AI 工具，获得 recurring 佣金（20-50%）：</p>
+    <ul>
+        <li><strong>Jasper AI</strong>：25-30% recurring，12 个月</li>
+        <li><strong>ElevenLabs</strong>：20% recurring，12 个月</li>
+        <li><strong>Copy.ai</strong>：45% 首月佣金</li>
+        <li><strong>Surfer SEO</strong>：25% recurring</li>
+        <li><strong>Writesonic</strong>：30% recurring</li>
+    </ul>
+
+    <h3>2. 自动化内容站</h3>
+    <p>用 AI Agent 自动生成内容，通过广告和联盟营销变现：</p>
+    <ul>
+        <li>✅ 就像这个网站一样！自动生成 AI 日报</li>
+        <li>✅ 垂直领域内容站（SEO 工具、编程、设计）</li>
+        <li>✅ 对比评测站（AI 工具对比）</li>
+    </ul>
+
+    <h3>3. 小而美的 AI 工具</h3>
+    <p>不要做微信，做解决一个极小痛点的工具：</p>
+    <ul>
+        <li>电商卖家批量生成白底图</li>
+        <li>小红书博主一键转卡片</li>
+        <li>简历优化 / 面试模拟工具</li>
+        <li>按月订阅 19-49 元，日活 100 人就能月入几千</li>
+    </ul>
+
+    <h3>4. AI 自动化服务</h3>
+    <p>帮本地小企业做 AI 自动化：</p>
+    <ul>
+        <li>聊天机器人接入</li>
+        <li>社交媒体自动发帖</li>
+        <li>邮件营销自动化</li>
+        <li>收费：$500-$2000/项目 + $200-$500/月维护</li>
+    </ul>
+
+    <h2>📊 收入预期</h2>
+    <div style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+        <p style="margin: 0 0 0.5rem 0;"><strong>新手期（1-3 个月）：</strong>$100 - $500/月</p>
+        <p style="margin: 0 0 0.5rem 0;"><strong>成长期（3-6 个月）：</strong>$500 - $2000/月</p>
+        <p style="margin: 0;"><strong>成熟期（6-12 个月）：</strong>$2000 - $5000+/月</p>
+    </div>
+
+    <h2>🎯 我们的变现方式</h2>
+    <p>这个网站目前的变现方式：</p>
+    <ul>
+        <li>💛 GitHub Sponsors 赞助</li>
+        <li>📧 Newsletter 订阅（未来加广告）</li>
+        <li>🛠️ 推荐工具联盟链接（待申请）</li>
+        <li>📊 AI 咨询服务（未来开放）</li>
+    </ul>
+
+    <div style="margin-top: 2rem; padding: 1.75rem; background: #1a1a1a; color: white; border-radius: 12px; text-align: center;">
+        <p style="margin: 0 0 1rem 0; font-weight: 600;">想一起交流 AI 变现？</p>
+        <a href="https://github.com/mzh19861986-cpu/ai-tech-daily/issues" style="display: inline-block; background: white; color: #1a1a1a; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600;">在 GitHub 讨论 →</a>
+    </div>
+    """
+    return TEMPLATE.format(title="AI Monetization Guide", description="AI 变现指南 - 全网筛选的高价值 AI 变现项目和方法，包含联盟营销、自动化内容站、小工具、自动化服务等方向。", content=content)
+
+
 def build_rss(posts: list[dict]) -> str:
     """生成 RSS feed"""
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
@@ -611,6 +682,11 @@ def main():
     (SITE_DIR / "tools.html").write_text(tools_html, encoding="utf-8")
     print("Generated tools.html")
 
+    # 生成 AI 变现指南页面
+    monetization_html = build_monetization()
+    (SITE_DIR / "monetization.html").write_text(monetization_html, encoding="utf-8")
+    print("Generated monetization.html")
+
     # 生成 RSS feed
     rss_xml = build_rss(posts)
     (SITE_DIR / "feed.xml").write_text(rss_xml, encoding="utf-8")
@@ -618,7 +694,7 @@ def main():
 
     # 生成 sitemap.xml
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
-    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html"]
+    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html", f"{base_url}/monetization.html"]
     for p in posts:
         sitemap_urls.append(f"{base_url}/{p['slug']}.html")
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
