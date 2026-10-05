@@ -410,10 +410,10 @@ def build_sponsor() -> str:
         <li>📈 优化网站体验，加更多有用功能</li>
     </ul>
 
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 16px; text-align: center; margin: 2rem 0;">
-        <h3 style="margin-top: 0;">☕ 请我喝杯咖啡</h3>
-        <p>哪怕一杯咖啡的钱，也是对我们的巨大支持</p>
-        <a href="https://github.com/sponsors/mzh19861986-cpu" style="display: inline-block; background: white; color: #667eea; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem;">
+    <div style="background: #1a1a1a; color: white; padding: 2rem; border-radius: 12px; text-align: center; margin: 2rem 0;">
+        <h3 style="margin-top: 0; font-weight: 600;">☕ 请我喝杯咖啡</h3>
+        <p style="opacity: 0.8;">哪怕一杯咖啡的钱，也是对我们的巨大支持</p>
+        <a href="https://github.com/sponsors/mzh19861986-cpu" style="display: inline-block; background: white; color: #1a1a1a; padding: 0.75rem 1.75rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 1rem;">
             通过 GitHub Sponsors 赞助 →
         </a>
     </div>
@@ -477,10 +477,10 @@ def build_about() -> str:
     <h3>Q: 内容准确吗？</h3>
     <p>A: 内容由 AI 生成，仅供参考。重要信息请自行核实。</p>
 
-    <div style="margin-top: 2rem; padding: 1.5rem; background: #f6f8fa; border-radius: 8px; text-align: center;">
-        <p style="margin: 0; color: #6a737d;">有问题或建议？</p>
-        <p style="margin: 0.5rem 0 0 0;">
-            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily/issues">在 GitHub 提 Issue</a>
+    <div style="margin-top: 2.5rem; padding: 1.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px; text-align: center;">
+        <p style="margin: 0 0 0.5rem 0; font-weight: 600; color: #1a1a1a;">有问题或建议？</p>
+        <p style="margin: 0; color: #666;">
+            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily/issues" style="color: #1a1a1a; font-weight: 500;">在 GitHub 提 Issue →</a>
         </p>
     </div>
     """
