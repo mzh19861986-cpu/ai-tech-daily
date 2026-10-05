@@ -41,6 +41,7 @@ TEMPLATE = """<!DOCTYPE html>
         body.dark h2 {{ color: #e6edf3; border-top-color: #30363d; }}
         body.dark a {{ color: #58a6ff; }}
         body.dark .meta {{ color: #8b949e; }}
+        body.dark div[style*="background: white"] {{ background: #161b22 !important; border-color: #30363d !important; }}
         h1, h2, h3 {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
             line-height: 1.3;
