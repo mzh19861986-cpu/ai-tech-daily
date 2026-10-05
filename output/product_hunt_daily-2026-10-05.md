@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Spira Maxima](https://www.producthunt.com/products/spira-ai)
+## 1. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
 
-**💡 是什么 + 为什么值得试：** Spira Maxima 能把你的文字脚本直接变成适合发在社交媒体上的视频，省去剪辑和找素材的麻烦。如果你做短视频但不想花时间在后期上，它可以帮你快速出片试试效果。
-
----
-## 2. [Jarq](https://www.producthunt.com/products/jarq)
-
-**💡 是什么 + 为什么值得试：** Jarq 让你在光标附近直接翻译、缩写、纠错或改写任意文本，省去切换窗口和复制粘贴的麻烦。如果你经常在写作或跨语言沟通中反复调整措辞，它能显著减少中断编辑流程的摩擦。
+**💡 是什么 + 为什么值得试：** DailyHelm 帮你把网站分析数据转成每天可执行的增收改动，省去盯着报表却不知道从哪下手的烦恼。如果你有流量却愁转化，它能直接告诉你今天该改哪里试试。
 
 ---
-## 3. [Opengeni](https://www.producthunt.com/products/opengeni)
+## 2. [Dots UI](https://www.producthunt.com/products/dots-ui)
 
-**💡 是什么 + 为什么值得试：** Opengeni 帮你跳过搭建 agent 基础设施的繁琐环节，几分钟内就能把 AI agent 部署上线。如果你正被调度、状态管理和工具调用这些底层工程拖慢进度，它值得一试。
-
----
-## 4. [Unscary AI](https://www.producthunt.com/products/unscary-ai)
-
-**💡 是什么 + 为什么值得试：** 如果你总觉得 AI 进展太快、不知道从哪补起，Unscary AI 用短课把大概念拆成能立刻消化的小块。适合想快速建立基本认知、又不想啃长文档的人。
+**💡 是什么 + 为什么值得试：** Dots UI 用 React 帮你快速做出粒子变形动画界面，不用自己从零写 canvas 或 WebGL 渲染逻辑。如果你要加一些有质感的动态效果又不想引入重量级 3D 库，它是个轻量的选择。
 
 ---
-## 5. [Dots UI](https://www.producthunt.com/products/dots-ui)
+## 3. [Reviu](https://www.producthunt.com/products/reviu)
 
-**💡 是什么 + 为什么值得试：** 用 React 就能把零散的粒子动画做成可变形、可切换的界面效果，省去自己写 canvas/WebGL 的麻烦。如果你需要科技感强、能随状态变形的视觉元素，这个库能直接接进现有 React 项目里试。
-
----
-## 6. [Invofox Self Serve](https://www.producthunt.com/products/invofox)
-
-**💡 是什么 + 为什么值得试：** Invofox Self Serve 能帮你把发票、收据这类文档自动提取成结构化数据，省掉手动录入的麻烦。如果你的业务需要稳定、高准确率的文档解析，又不想自己搭模型和调优，它的 SLA 保证值得一试。
+**💡 是什么 + 为什么值得试：** Reviu 是一个专门用来审查 AI 编码助手（如 Copilot、Cursor）生成的代码的 review 工具，帮你把 agent 写的东西过一遍再合并。如果你的工作流里已经让 agent 大量产出代码，它能让 code review 这一步不再靠肉眼硬扛。
 
 ---
-## 7. [Xtracticle](https://www.producthunt.com/products/xtracticle)
+## 4. [Invofox Self Serve](https://www.producthunt.com/products/invofox)
 
-**💡 是什么 + 为什么值得试：** Xtracticle 能把 X（Twitter）上的长文章和推文串一键导出成 PDF、Markdown 或 EPUB，省去手动复制粘贴、排版和截图存档的麻烦。如果你经常需要保存或整理 X 上的内容作离线阅读、笔记归档或二次引用，这个工具能直接省下大量时间。
+**💡 是什么 + 为什么值得试：** Invofox Self Serve 能帮你把发票、收据这类文档自动提取成结构化数据，准确率标称 99% 并带 SLA 保障。如果你正被手动录入或通用 OCR 识别率不稳的问题卡住，可以拿它试试实际效果。
 
 ---
-## 8. [SpeechShield](https://www.producthunt.com/products/speechshield)
+## 5. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
 
-**💡 是什么 + 为什么值得试：** 面试或开会时最怕忘掉简历里的细节或漏记关键信息，SpeechShield 能在 Mac 上实时给你提示并整理要点。它从你的简历出发做个性化辅助，适合经常需要临场应对的人试试。
+**💡 是什么 + 为什么值得试：** FastRouter.ai 帮你把每次 LLM 请求自动路由到最合适的模型，在成本、延迟和回答质量之间做权衡，不用自己写一堆 if-else 去切换。如果你同时接多家模型又在意账单和响应速度，值得试一下。
+
+---
+## 6. [Spira Maxima](https://www.producthunt.com/products/spira-ai)
+
+**💡 是什么 + 为什么值得试：** 如果你经常需要把文字脚本快速变成适合抖音、TikTok 这类平台的短视频，Spira Maxima 能帮你省去手动剪辑和配画面的时间，直接由文本生成成片。它适合想低成本批量试内容、验证脚本节奏的创作者，值得试试。
+
+---
+## 7. [devpit](https://www.producthunt.com/products/devpit)
+
+**💡 是什么 + 为什么值得试：** devpit 把 Claude Code 多个 agent 的运行状态收进一个原生控制台，让你不用在终端里来回切换就能盯住每个任务的进度和输出。如果你经常并行跑几个 Claude Code 会话、又懒得手动整理日志，它省下的就是这部分折腾。
+
+---
+## 8. [Marv](https://www.producthunt.com/products/marv-3)
+
+**💡 是什么 + 为什么值得试：** Marv 在屏幕上实时标出你该点的位置，专门解决那些“我到底该点哪儿”的软件操作盲区。如果你经常被复杂界面或陌生工具卡住，它能省下反复找菜单的时间。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
