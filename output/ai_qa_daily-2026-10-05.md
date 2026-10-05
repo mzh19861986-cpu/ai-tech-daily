@@ -4,19 +4,19 @@
 
 ## Q1: Kolibri: A Sovereign Open-Weight Model？
 
-**A:** Kolibri 是一个主打“主权”概念的开权重模型，强调用户对模型的自主掌控，而非依赖外部闭源服务。其核心价值在于为需要数据主权和自主部署的场景，提供一个可自由使用与审查的开放替代方案。
+**A:** Kolibri 发布了一个主权开放权重模型，旨在让用户完全掌控模型的使用与部署。其核心价值在于推动 AI 模型的开放与自主权，降低对专有服务的依赖。
 
 📎 更多阅读：[Kolibri: A Sovereign Open-Weight Model](https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/)
 
 ## Q2: coreyhaines31/marketingskills？
 
-**A:** 该内容为技术内容编辑任务，但未提供可供总结的新闻正文，无法提炼核心价值。
+**A:** 由于您提供的内容为空，我无法总结这条新闻的核心价值。请提供具体的新闻内容，以便我为您撰写两句话的总结。
 
 📎 更多阅读：[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ## Q3: DietrichGebert/ponytail？
 
-**A:** 该新闻标题指向一个名为“DietrichGebert/ponytail”的仓库，其核心价值在于以极简命名方式集中呈现一个特定项目。由于缺乏描述、代码或上下文，其实际技术意义无法从现有信息中判断。
+**A:** 该新闻介绍了一个名为 DietrichGebert/ponytail 的技术项目，但其具体功能与价值需结合项目内容进一步确认。目前信息不足以提炼出明确的核心价值，建议提供更多项目细节。
 
 📎 更多阅读：[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
 

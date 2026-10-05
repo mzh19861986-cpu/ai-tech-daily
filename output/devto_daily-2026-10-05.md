@@ -2,25 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Backend Metrics Dashboard Signal Triage for Cron Jobs and API Failures](https://dev.to/kendrickberg5327/backend-metrics-dashboard-signal-triage-for-cron-jobs-and-api-failures-3lj2)
+## 1. [Screenshot APIs all send your page content to their servers — built a self-hosted one, looking for feedback](https://dev.to/manish_gudimetla_6d37f97a/screenshot-apis-all-send-your-page-content-to-their-servers-built-a-self-hosted-one-looking-for-5371)
 
-**✨ 精华总结：** 后端指标仪表盘适合追踪定时任务的成败、时长等可计数信号，但无法发现根本没启动的任务；因此所有夜间流水线还需搭配独立的心跳监控来兜底。
+**✨ 精华总结：** 现有截图API均为SaaS服务，会将用户截取的网页内容发送至第三方服务器处理，对涉及登录信息和真实数据的页面构成隐私泄露风险。开发者因此构建了可自托管（self-hosted）的替代方案，让网页截图与内容处理完全在本地完成，避免敏感数据外流。
 
-## 2. [HandNotes: teaching an open model to read my friend's handwriting, on his own laptop](https://dev.to/jemankalita/handnotes-teaching-an-open-model-to-read-my-friends-handwriting-on-his-own-laptop-3ce3)
+## 2. [How to Decode Base64 in JavaScript (and a Free Tool That Does It Instantly)](https://dev.to/zahriontech/how-to-decode-base64-in-javascript-and-a-free-tool-that-does-it-instantly-8o5)
 
-**✨ 精华总结：** 这位开发者构建了一个开源模型，能在朋友的笔记本电脑上本地运行、识别其潦草手写笔记，解决了他考前拍照上传AI却因字迹无法辨认而得不到有用总结的痛点。该方案的核心价值在于展示了消费级硬件上运行定制化手写识别模型的可行性，为个性化笔记数字化提供了低成本、隐私友好的开源路径。
+**✨ 精华总结：** JavaScript内置的`atob()`和`btoa()`可快速完成Base64编解码，但存在一个经典陷阱（如不支持Unicode字符），容易让新手和老手都栽跟头。本文不仅讲清正确用法，还提供了一个免费的在线工具，帮你即时解码Base64。
 
-## 3. [“Beta, Is This News Real?” — So I Built My Grandparents VerifAI](https://dev.to/tanishh-13/beta-is-this-news-real-so-i-built-my-grandparents-verifai-2ml9)
+## 3. [How to Build a Production RAG System Step by Step (Python, pgvector, Hybrid Search, Reranking)](https://dev.to/techsimplus_learnings/how-to-build-a-production-rag-system-step-by-step-python-pgvector-hybrid-search-reranking-3h9e)
 
-**✨ 精华总结：** 这款名为VerifAI的工具旨在帮助不擅长辨别网络信息的老年人快速验证家人转发的新闻真伪，解决他们频繁求证“这是真的吗”的痛点。它针对印度家庭场景，用技术手段应对虚假信息在亲友群中反复传播的现实问题。
+**✨ 精华总结：** 这篇教程提供了构建生产级RAG系统检索核心的完整分步指南，涵盖租户隔离向量搜索、混合检索、重排序和基于事实的答案生成等关键环节。技术栈采用Python、Postgres+pgvector、OpenAI嵌入、rank_bm25和sentence-transformers，可直接落地而非仅作演示。
 
-## 4. [How well do player projections predict team wins? I froze MLB 2026 first, then checked](https://dev.to/yasumorishima/how-well-do-player-projections-predict-team-wins-i-froze-mlb-2026-first-then-checked-3ih1)
+## 4. [Backends 101: Choosing the Right Measurement Surface](https://dev.to/aabhinavg/backends-101-choosing-the-right-measurement-surface-2cd7)
 
-**✨ 精华总结：** 将球员个人预测汇总为球队胜场数的做法看似直观，但其实际预测准确度长期缺乏验证，作者通过预注册方式冻结了2026赛季MLB的预测结果，提供了首个可检验的实证评估。这项工作的核心价值在于揭示自下而上式球队预测的真实误差水平，为评估和改进现有预测模型提供了基准参照。
+**✨ 精华总结：** 本文指出，GPU 程序性能测量的关键在于选择正确的后端，直接依赖 CPU 测量是常见错误，可能浪费数天调试时间。文章演示了如何用 csperf 发现并使用合适的 GPU 后端进行性能分析。
 
-## 5. [Explainable Causal Reinforcement Learning for satellite anomaly response operations with zero-trust governance guarantees](https://dev.to/rikinptl/explainable-causal-reinforcement-learning-for-satellite-anomaly-response-operations-with-zero-trust-1g24)
+## 5. [What breaks after you ship a vibe-coded app (and what we're doing about it)](https://dev.to/_abbb33b6096b291b3ee84/what-breaks-after-you-ship-a-vibe-coded-app-and-what-were-doing-about-it-389k)
 
-**✨ 精华总结：** 该研究提出了一种可解释因果强化学习方法，用于卫星异常响应操作，在实现自主决策的同时提供因果层面的可解释性，解决了传统RL“黑箱”决策难以被信任和审计的痛点。其核心价值在于通过零信任治理保证机制，确保卫星这种高安全需求场景下的自主系统每一步决策都可追溯、可验证，为自主航天操作的安全合规部署提供了关键技术路径。
+**✨ 精华总结：** 这条新闻的核心价值在于揭示了一个被忽视的问题：vibe coding让产品开发变得极快，但真正的挑战出现在上线之后，而非构建阶段。团队通过采访已发布此类产品的开发者发现，人们关注的焦点并非提示词或工具，而是发布后暴露出的各种问题。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
