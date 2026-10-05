@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [qarunbook](https://www.producthunt.com/products/qarunbook)
+## 1. [Chain Exchange](https://www.producthunt.com/products/chain-exchange)
 
-**💡 是什么 + 为什么值得试：** 如果你的团队用AI帮忙写测试、跑测试，但AI总是“看不见”完整的测试计划，qarunbook就是那份能同时给人读、给AI执行的共享测试计划，省去来回对齐上下文的时间。
-
----
-## 2. [Control My Mac](https://www.producthunt.com/products/control-my-mac)
-
-**💡 是什么 + 为什么值得试：** Control My Mac 把 iPhone 或 iPad 变成 Mac 各应用的自定义快捷键面板，省去记一堆组合键或反复切窗口的麻烦。如果你常用某几个 Mac 软件、又想让手机顺手当遥控器，值得装来试试。
+**💡 是什么 + 为什么值得试：** Chain Exchange 让你在一个界面里完成稳定币的交易、跨链桥接和转移，省去在多个 DApp 之间来回切换的麻烦。如果你经常在 Arc 上搬运 USDC 这类资产，它值得一试。
 
 ---
-## 3. [Translate Like Me](https://www.producthunt.com/products/translate-like-me)
+## 2. [HyperFrames Studio (Desktop)](https://www.producthunt.com/products/heygen)
 
-**💡 是什么 + 为什么值得试：** 在 Mac 上选中任意文本就能翻译，还能按你平时的写作风格输出，不用再手动改写机器翻译腔。如果你经常跨语言写邮件或文档、又懒得每次调整语气，这个工具值得一试。
-
----
-## 4. [Eat Train Feel](https://www.producthunt.com/products/eat-train-feel)
-
-**💡 是什么 + 为什么值得试：** Eat Train Feel 把训练记录、饮食追踪和每日状态感受放在一个地方，帮你看出“练得怎么样、吃得对不对、身体感受如何”之间的关联，而不是在三个 App 之间来回切换。如果你厌倦了只记数字却看不到身体反馈的工具，这个开源项目值得试试。
+**💡 是什么 + 为什么值得试：** HyperFrames Studio 是专为 AI Agent 设计的桌面视频编辑器，能让 Agent 直接编程式地生成和剪辑视频，而不用你手动操作时间线。如果你在搭建自动化内容生产流程，它值得一试。
 
 ---
-## 5. [NotchMate](https://www.producthunt.com/products/notchmate)
+## 3. [FastRouter.ai](https://www.producthunt.com/products/fastrouter-ai)
 
-**💡 是什么 + 为什么值得试：** NotchMate 把 MacBook 屏幕上那块碍眼的刘海变成可交互小工具，能显示音乐播放、快捷操作等信息。如果你每天对着刘海觉得浪费空间，这个开源项目能让它顺手起来。
-
----
-## 6. [Sorcrr](https://www.producthunt.com/products/sorcrr)
-
-**💡 是什么 + 为什么值得试：** Sorcrr 把内推和悬赏结合起来，用 AI 帮你精准匹配候选人，让招人和 GTM 获客都能靠社区推荐拿结果。如果你在愁招聘效率或冷启动获客，可以试试用它把推荐变成可追踪、可激励的流程。
+**💡 是什么 + 为什么值得试：** FastRouter.ai 帮你在多个 LLM 之间自动路由请求，按成本、延迟或质量选最合适的模型，不用自己写一套调度逻辑。如果你的应用同时在用几家模型、想省钱又不想牺牲效果，值得试试。
 
 ---
-## 7. [Blenny](https://www.producthunt.com/products/blenny)
+## 4. [devpit](https://www.producthunt.com/products/devpit)
 
-**💡 是什么 + 为什么值得试：** 整理 macOS 菜单栏图标时，Blenny 让你不用移动鼠标就能重新排列，省去拖拽的麻烦。如果你菜单栏图标多、想快速理顺又不打断手头操作，值得一试。
+**💡 是什么 + 为什么值得试：** devpit 把你的多个 Claude Code agent 收进一个原生控制台里统一查看和调度，省得开一堆终端窗口来回切。如果你已经在并行跑几个 agent，它能让状态一目了然。
 
 ---
-## 8. [FlexChords](https://www.producthunt.com/products/flexchords)
+## 5. [crosswalk](https://www.producthunt.com/products/crosswalk)
 
-**💡 是什么 + 为什么值得试：** 如果你想把 YouTube 上的歌扒成吉他谱却懒得一个个和弦试，FlexChords 能直接从视频里提取出可弹奏的和弦，省掉反复听辨的麻烦。它开源、上手直接，适合想快速跟弹或验证自己扒谱的人试一把。
+**💡 是什么 + 为什么值得试：** crosswalk 把人和各自的 agent 放进同一个收件箱里，让你不用在多个对话窗口之间来回切换就能统一处理来自不同 agent 的消息。如果你已经在用多个 AI 助手、又嫌管理起来太散，可以把它当成一个起点试试。
+
+---
+## 6. [Xtracticle](https://www.producthunt.com/products/xtracticle)
+
+**💡 是什么 + 为什么值得试：** Xtracticle 能把 X（Twitter）上的长文章和整个 thread 一键存成 PDF、Markdown 或 EPUB，方便你离线阅读、归档或导入笔记软件。如果你经常需要保存优质推文内容却受限于复制粘贴的麻烦，它值得一试。
+
+---
+## 7. [Unscary AI](https://www.producthunt.com/products/unscary-ai)
+
+**💡 是什么 + 为什么值得试：** Unscary AI 用短课把 AI 拆成能立刻上手的零碎知识，专治“感觉别人都在用 AI，自己却不知道从哪开始”的焦虑。如果你一直想学但被各种术语和长教程劝退，它的轻量节奏值得试试。
+
+---
+## 8. [Netra](https://www.producthunt.com/products/netra)
+
+**💡 是什么 + 为什么值得试：** Netra 把 MacBook 的刘海变成一个常驻小面板，塞进了番茄钟、待办和媒体控制，让你不用切窗口就能盯住当前任务。如果你经常在“专注工作”和“随手摸鱼”之间反复横跳，它把该用的工具都放在了你视线扫过的地方。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

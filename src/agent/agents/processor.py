@@ -77,18 +77,18 @@ class ProcessorAgent(BaseAgent):
             # 每日开发技巧：从 Dev.to 和 Lobsters 里选实用技巧类文章
             tips_keywords = ["tip", "trick", "guide", "how to", "tutorial", "learn", "best practice"]
             filtered = [x for x in items if any(k in x.get("title", "").lower() for k in tips_keywords)]
-            items = filtered[:3]
+            items = filtered[:5]
         elif pipeline_name == "ai_qa_daily":
             # 每日 AI 问答：选 AI 相关的内容，做成 Q&A
             ai_keywords = ["ai", "llm", "gpt", "agent", "model", "gemini", "claude"]
             filtered = [x for x in items if any(k in x.get("title", "").lower() for k in ai_keywords)]
-            items = filtered[:3]
+            items = filtered[:5]
         elif pipeline_name == "ai_brief_3min":
             # 3 分钟快讯：选前 3 条最重要的新闻
             items = items[:3]
         else:
-            # 其他 pipeline：只处理前 2 条，控制 API 调用次数
-            items = items[:2]
+            # 其他 pipeline：处理前 5 条，内容更丰富
+            items = items[:5]
 
         processed = []
         for item in items:

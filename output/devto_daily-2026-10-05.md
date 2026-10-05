@@ -2,27 +2,37 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Work Order Management - From Telegram Messages to WoodShop Orders with Gemma on Digital Ocean](https://dev.to/alejandro_magnani_da07ed7/work-order-management-from-telegram-messages-to-woodshop-orders-with-gemma-on-digital-ocean-2465)
+## 1. [I made AI coding agents race each other, and the fast one wasn't the one I expected](https://dev.to/osmanahmadxai/i-made-ai-coding-agents-race-each-other-and-the-fast-one-wasnt-the-one-i-expected-bn8)
 
-**✨ 精华总结：** 一个用 Gemma 模型跑在 Digital Ocean 上的西语订单管理应用，专门解决家族木工作坊的痛点：客户在 Telegram 里发的消息往往包含客户名、尺寸、材料要求等散乱信息，人工整理成工单很费劲。这个项目直接把这些聊天消息自动转成结构化订单，算是 LLM 落地小生意的实用案例——重点不是技术炫技，而是把模型塞进真实业务流里。
+**✨ 精华总结：** 作者受够了「公认最强」的跑分结论，干脆做了个 Agent Derby：让多个 AI 编程 agent 同时跑同一个任务，直接肉眼看谁先做完。意外之处在于，最后胜出的不是平时口碑最好的那个——这说明跑分强 ≠ 在你的真实代码上快，实际场景值得自己测一遍。
 
-## 2. [We Gave AI Agents Real Tools — Then Realized “Just Ask Before Acting” Wasn’t Enough](https://dev.to/robertadam987_/we-gave-ai-agents-real-tools-then-realized-just-ask-before-acting-wasnt-enough-19e3)
+## 2. [Excited to Begin My Journey in Tech & Development](https://dev.to/anisha_verma/excited-to-begin-my-journey-in-tech-development-2nnn)
 
-**✨ 精华总结：** 给AI Agent接上真实工具（读文件、发消息、调API、改数据）后，它从聊天机器人变成了能真正改变现实状态的软件——风险也随之升级。原以为一条“动手前先问用户”的规则就够了，但实践下来发现这远远不够，因为权限、上下文和判断时机的问题远比想象中复杂。
+**✨ 精华总结：** 看起来这是一篇社区新人的自我介绍帖，不是技术新闻，所以没法按“提炼新闻价值”的方式来总结。不过我可以帮你做两件事：
 
-## 3. [On Call Hero](https://dev.to/armansiddiqui9/on-call-hero-13il)
+**如果你是想让这段自我介绍更精炼/更有吸引力**，可以改成：
 
-**✨ 精华总结：** On-Call Hero 是一个用 AI 帮 SRE 调查和响应线上故障的智能体，核心卖点是「持久可靠」——当工人进程崩溃或服务器重启时，它能从中断的故障处理流程中继续推进，而不是一切归零。
+> 刚踏入技术和开发领域，目前主攻数据可视化（Power BI、Tableau、Matplotlib、Seaborn）和编程基础，想在这个社区里边学边做、持续成长。发第一帖，期待和大家一起进步。
 
-这个点值得关注，因为大多数 AI Agent 的演示都很好看，但真正上生产时「agent 跑一半挂了怎么办」几乎是所有团队绕不过去的坎。On-Call Hero 把「崩溃恢复」当成一等公民来设计，这比再多的对话能力都更接近 SRE 实际需要的东西。
+**如果你其实是想让我点评/改写这篇帖子**，告诉我具体目标（比如发在 LinkedIn、掘金、还是英文论坛），我可以按对应平台调性和字数再给你一版。
 
-## 4. [Why the Consumer Decides My DNS Record Type Contracts (for Storefronts)](https://dev.to/thalynrift3485/why-the-consumer-decides-my-dns-record-type-contracts-for-storefronts-5057)
+你是想要哪种？
 
-**✨ 精华总结：** 给客户自有的店铺域名配 DNS 时，作者把每一种记录类型都当成一份"由读取它的系统所选定的契约"来对待——SPF/DMARC 对应 TXT、CNAME 不能与其同名共存、MX 的优先级才有意义。做法是在每个调用点强制声明记录类型，把一个模糊的开通配置错误变成可审查的输入，而不是线上悄悄炸掉的隐患。如果你的产品要让商家自己绑定域名，这套思路值得借鉴。
+## 3. [What stateless MCP changes for gateways](https://dev.to/bengreenberg/what-stateless-mcp-changes-for-gateways-74h)
 
-## 5. [Atrium: a tour of the AI investigation platform I run beside my coding agent](https://dev.to/mkash25/atrium-a-tour-of-the-ai-investigation-platform-i-run-beside-my-coding-agent-351g)
+**✨ 精华总结：** MCP 协议在 7 月 28 日正式转为无状态，这意味着单个 MCP 服务器只需删掉 session 管理、加一个 `server/discover` 方法就行。但对网关来说影响要大得多——它要同时代理十几个 MCP 服务器并对外伪装成一个，原本靠会话维持的路由和状态逻辑得整体重做。值得关注的是 Envoy AI Gateway（现属 AAIF 项目）已经在跟进这套改动，如果你在跑 MCP 网关，这是个需要提前规划的信号。
 
-**✨ 精华总结：** 一位 Snowflake 工程师把自己日常的支持案例排查工作，做成了一个叫 Atrium 的 AI 调查平台，专门配合他的编码 Agent 使用。它的核心思路是：让 AI 不只是“会写代码”，而是能自己查数据、读日志、追线索，把一次性的调查过程沉淀成可复用的工作流——这对任何需要反复做故障排查和安全分析的团队都很有参考价值。
+## 4. [Helping My developer friend to get a Date:Fit-Check](https://dev.to/namanbanjara/helping-my-developer-friend-to-get-a-datefit-check-l0n)
+
+**✨ 精华总结：** # FitCheck：给程序员朋友的约会穿搭救星
+
+有人用 Google 的开源模型 Gemma 3 做了个叫 FitCheck 的小工具——上传一张穿搭照片，它就给你打个十分制评分，附一句点评、一个亮点和一个改进建议。对理工男来说，"格子衫到底行不行"这种问题，终于有了个不会翻白眼的裁判。
+
+**为什么值得关注**：它把多模态大模型用在了特别具体又特别痛的生活场景上——不是炫技，是解决真问题。更妙的是用的 Gemma 3 是开源权重模型，意味着你自己搭一套的成本和门槛都不高，这类"小而准"的应用可能会越来越多。
+
+## 5. [Choosing an Agent Memory Tool: A Trial Scorecard You Can Reuse](https://dev.to/plur9/choosing-an-agent-memory-tool-a-trial-scorecard-you-can-reuse-15h7)
+
+**✨ 精华总结：** 给AI agent选记忆工具，别只看厂商宣传的总分——PLUR的AI agent写了一份可复用的试用评分卡，核心思路是：试用前先定义好测试用例、要检查的证据，以及哪些失败直接一票否决。值得关注是因为记忆是agent落地的关键短板，而这份表格把「能不能用」拆成了可验证的具体项，而不是让一个笼统分数掩盖真实问题。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

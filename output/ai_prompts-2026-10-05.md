@@ -4,39 +4,41 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供具体内容（仅有标题），因此无法从中提炼 Prompt 技巧或 AI 使用建议。标题内容是关于 F1 巴林站软件故障导致车手受挫，与 Prompt 工程无关。如果你能提供文章正文，我可以帮你提炼可用的 Prompt 技巧或最佳实践。**
+**这篇文章没有提供具体内容，因此无法提炼出可用的 AI Prompt 技巧或最佳实践。请提供完整的文章正文，我再帮你总结。**
 
 📎 来源：[Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/)
 
 ## 2. 💡 技巧 2
 
-**这篇文章主要讨论 Homa 协议在 AI 集群中替代 TCP 的技术方案，未涉及 Prompt 工程或 AI 使用技巧，因此没有可提炼的 Prompt 相关内容。**
+**这篇文章标题为“Claude Says”，内容仅包含一个指向 Lobste.rs 讨论帖的链接，没有提供实质性的正文或 Prompt 相关内容。
 
-📎 来源：[Homa: The end of TCP for AI clusters [video]](https://www.youtube.com/watch?v=eZ8WWZzoaR0)
+由于无法获取讨论的具体内容，我无法从中提炼出 Prompt 技巧或使用 AI 的建议。如果你能提供该讨论帖中的具体文字内容，我可以帮你进行分析和总结。**
+
+📎 来源：[Claude Says](https://ohhfishal.net/Posts/claude)
 
 ## 3. 💡 技巧 3
 
-**这篇文章是关于约束流匹配（constrained flow matching）的学术论文，**没有涉及任何 Prompt 工程或 AI 使用技巧的内容**，因此无法从中提炼出可用的 Prompt 技巧或最佳实践。
-
-如果你有实际的 Prompt 相关文章、对话或案例，欢迎贴出来，我可以帮你提炼成可直接复用的技巧。**
+**这篇文章没有涉及 Prompt 技巧，其内容是关于流匹配模型的约束采样方法。若要从使用 AI 的角度总结，可提炼为：**在需要生成结果满足特定约束时，应优先选择对生成过程做“最小干预”的方法，以在满足约束的同时尽量保持模型原有分布，避免过度偏离预训练知识。****
 
 📎 来源：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
 ## 4. 💡 技巧 4
 
-**从这篇论文中，没有可提炼的“Prompt 技巧”。
+**从这篇文章中可以提炼的 AI 使用建议：
 
-它讨论的是 LLM Agent 框架中**决策模型**的评估问题：用单次前向传播的“System-1 决策模型”代替 LLM 调用来做小决策（选模型、选工具、判断相关性、检测注入），声称能大幅降低成本和延迟。论文强调的是这类快速模型的**证据/评估必须慢下来、配对且自审计**——即不要轻信快速决策模型的表现，要用配对实验和自审计来验证。
+**用「配对评估 + 自我审计」的方式评测轻量决策模型**——在把 System-1 小模型（单次前向传播输出类别概率）用于模型选择、工具调用、相关性判断、注入检测等高频小决策前，务必与 LLM 调用做配对对比评测，并加入自我审计机制，确认其质量损失可接受后再替换，以真正兑现成本与延迟收益。
 
-如果硬要映射成使用 AI**
+简言之：**让快速小模型接管高频决策，但先用配对评测和自我审计证明它够可靠**
 
 📎 来源：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有直接给出可操作的 Prompt 技巧，但它提供了一个关于**如何更好使用 AI（LLM）处理大规模真实数据**的实践建议：
+**这篇文章没有直接讲 Prompt 技巧，但它的方法可以提炼成一个实用原则：
 
-用「两阶段分类流水线（two-stage classification pipeline）」把复杂判断拆成多步、可复现的 LLM 流程，而不是让模型一次性完成全部任务——这样在近万份年报这种规模上，能获得更稳定、可规模化、可验证的信号。**
+**用"两阶段分类流水线"处理大规模文本**——先让 LLM 做粗筛/分流，再针对性地做精细分类，而不是一步到位。这种分而治之的方式能显著提升准确率和可复现性，尤其适合处理成千上万份文档。
+
+应用建议：面对海量文本任务时，把 Prompt 拆成"先过滤、后深判"两步，比让模型一次性完成所有判断更可靠。**
 
 📎 来源：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
 
