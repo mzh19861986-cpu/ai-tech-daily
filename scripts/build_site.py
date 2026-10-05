@@ -95,9 +95,9 @@ TEMPLATE = """<!DOCTYPE html>
     <nav class="nav">
         <a href="/">🏠 Home</a>
         <a href="/status.html">📊 Status</a>
+        <a href="/sponsor.html">💛 Sponsor</a>
         <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a>
         <a href="/feed.xml">📡 RSS</a>
-        <a href="https://github.com/sponsors/mzh19861986-cpu">❤️ Sponsor</a>
     </nav>
     <div class="content">
     {content}
@@ -149,23 +149,39 @@ def build_index(posts: list[dict]) -> str:
         for p in sorted(posts, key=lambda x: x["date"], reverse=True)
     ])
     content = f"""
-    <h1>🤖 AI Tech Daily</h1>
-    <p class="meta">AI 自动抓取、AI 摘要、每日更新 | 共 {len(posts)} 篇</p>
+    <div style="text-align: center; padding: 2rem 0;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤖 AI Tech Daily</h1>
+        <p style="font-size: 1.2rem; color: #636e72; margin-bottom: 1rem;">每天 5 分钟，了解 AI 圈最重要的事</p>
+        <p style="color: #636e72; max-width: 500px; margin: 0 auto 2rem auto;">
+            由 AI Agent 自动抓取、分析、生成。覆盖 AI 新闻、开源工具、新品发布、开发技巧。
+            全部免费，每日更新。
+        </p>
+    </div>
 
     <div class="sponsor-box" style="background: #e3f2fd; border-color: #90caf9;">
         <h3 style="margin-top:0;">🛠️ 开发者推荐工具</h3>
         <p style="margin-bottom: 0.5rem;">这些是我们每天都在用的效率工具，推荐给你：</p>
         <ul style="text-align: left; display: inline-block; margin: 0.5rem 0;">
-            <li>🔧 <a href="https://github.com/sponsors" target="_blank">GitHub Sponsors</a> - 支持开源项目</li>
-            <li>☁️ <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> - 免费托管静态网站</li>
-            <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek</a> - 高性价比 AI 大模型</li>
+            <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek API</a> - 高性价比大模型，开发者必备</li>
+            <li>📝 <a href="https://www.notion.so/" target="_blank">Notion</a> - 笔记+项目管理神器</li>
+            <li>☁️ <a href="https://vercel.com/" target="_blank">Vercel</a> - 前端一键部署</li>
+            <li>💻 <a href="https://github.com/" target="_blank">GitHub</a> - 代码托管与协作</li>
         </ul>
     </div>
 
-    <h2>最新日报</h2>
+    <h2>📰 最新日报</h2>
     <ul class="post-list">
         {posts_html}
     </ul>
+
+    <div style="text-align: center; margin-top: 3rem; padding: 1.5rem; background: #f8f9fa; border-radius: 12px;">
+        <p style="margin: 0; color: #636e72;">觉得有用？</p>
+        <p style="margin: 0.5rem 0 1rem 0;">
+            <a href="/sponsor.html" style="color: #d63031; font-weight: bold;">💛 赞助我们</a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily" style="color: #0366d6;">⭐ Star on GitHub</a>
+        </p>
+    </div>
     """
     return TEMPLATE.format(title="Home", content=content)
 
@@ -233,6 +249,46 @@ def build_status() -> str:
     return TEMPLATE.format(title="Status", content=content)
 
 
+def build_sponsor() -> str:
+    """构建赞助页面"""
+    content = """
+    <h1>💛 赞助我们</h1>
+    <p class="meta">支持这个项目持续运行，让更多开发者看到优质内容</p>
+
+    <h2>为什么赞助？</h2>
+    <p>AI Tech Daily 是一个完全由 AI Agent 自动运行的技术日报系统：</p>
+    <ul>
+        <li>🤖 10+ 个子智能体并行工作，每天自动抓取、分析、生成内容</li>
+        <li>📰 覆盖 AI 新闻、GitHub 热门项目、Product Hunt 新品、开发技巧</li>
+        <li>💸 全部免费，没有付费墙，所有人都能看</li>
+    </ul>
+
+    <h2>你的赞助会用来做什么？</h2>
+    <ul>
+        <li>☁️ 支付服务器和 API 费用（DeepSeek、Gemini 等）</li>
+        <li>🚀 开发更多自动化 pipeline，扩展内容覆盖</li>
+        <li>📈 优化网站体验，加更多有用功能</li>
+    </ul>
+
+    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 16px; text-align: center; margin: 2rem 0;">
+        <h3 style="margin-top: 0;">☕ 请我喝杯咖啡</h3>
+        <p>哪怕一杯咖啡的钱，也是对我们的巨大支持</p>
+        <a href="https://github.com/sponsors/mzh19861986-cpu" style="display: inline-block; background: white; color: #667eea; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 1rem;">
+            通过 GitHub Sponsors 赞助 →
+        </a>
+    </div>
+
+    <h2>品牌合作 / 广告</h2>
+    <p>我们也接受品牌赞助和产品推荐合作：</p>
+    <ul>
+        <li>📧 邮箱：待添加</li>
+        <li>💬 格式：在每日日报中推荐你的产品</li>
+        <li>📊 受众：开发者、AI 爱好者、技术决策者</li>
+    </ul>
+    """
+    return TEMPLATE.format(title="Sponsor", content=content)
+
+
 def build_rss(posts: list[dict]) -> str:
     """生成 RSS feed"""
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
@@ -284,6 +340,11 @@ def main():
     status_html = build_status()
     (SITE_DIR / "status.html").write_text(status_html, encoding="utf-8")
     print("Generated status.html")
+
+    # 生成赞助页面
+    sponsor_html = build_sponsor()
+    (SITE_DIR / "sponsor.html").write_text(sponsor_html, encoding="utf-8")
+    print("Generated sponsor.html")
 
     # 生成 RSS feed
     rss_xml = build_rss(posts)
