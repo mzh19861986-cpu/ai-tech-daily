@@ -6,7 +6,7 @@
 
 **In the wake of Tippett Studios’ closure, a digital archive appears online**
 
-✨ 蒂皮特工作室（Tippett Studios）关闭后，一个数字档案网站已上线，用于保存这家曾参与《侏罗纪公园》《星球大战》等影片的视觉特效公司的历史资料。值得关注的是，这类工作室往往在商业失败后迅速被遗忘，而该档案让公众得以追溯其技术遗产与行业贡献，对特效史研究者和影迷都是宝贵的资源。
+✨ 拥有《星河战队》《侏罗纪公园3》等特效遗产的蒂皮特工作室（Tippett Studio）关闭后，其数字档案近日在互联网上公开。这份档案收录了大量幕后制作素材，对视觉特效从业者和影迷来说，是研究定格动画与CG融合演进的珍贵一手资料。
 
 📎 [阅读原文](https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/)
 
@@ -14,31 +14,27 @@
 
 **The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?**
 
-✨ 这篇论文提出了一个叫「AI风险观测台」的思路：用大语言模型批量扫描企业年报，看它们怎么披露自己对AI的应对。作者拿9,821份年报做了两阶段分类测试，想验证年报能否成为衡量社会韧性（面对AI冲击的适应能力）的有效信号。
+✨ **一句话核心：** 研究者用LLM批量分析了9821份公司年报，想看看企业到底怎么披露自己应对AI风险——结果发现年报这个被忽视的文本库，可能成为监测社会AI韧性的新数据源。
 
-**为什么值得关注**：企业年报本来是给股东看的合规文件，但这里被当成了一种「社会情绪传感器」——通过分析公司如何谈论AI风险，可能比传统调研更快、更大规模地捕捉到整个经济体的真实焦虑和准备程度。如果这套方法站得住，监管者和研究者就多了一个低成本、可复现的观测工具。
+**值得关注的原因：** 以往研究AI社会影响主要靠新闻、政策文件和调查报告，但企业年报是受法律约束的正式披露，信息密度高、可比性强、每年更新。如果LLM能可靠提取其中的AI风险应对信号，就相当于给监管者和研究者装了一个「企业AI态度雷达」——谁在认真布局，谁在敷衍了事，一目了然。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.02281)
 
 ## 技巧 3
 
-**SaathiAI: An Open-Source AI Learning Companion I Built for a Friend**
+**Claude Code Mods: A Salesforce Developer's Guide to the Moddable Agent**
 
-✨ 有人做了个叫 SaathiAI 的开源 AI 学习助手，专门解决考前复习的痛点——笔记 PDF 一大堆，但时间有限、抓不住重点。它想做的就是把厚厚的资料变成更聚焦、更快的备考体验，思路和市面通用聊天机器人不同，是从学生真实场景倒推出来的。
+✨ Claude Code 刚更新到 v2.1.287，加了个叫 Mods 的功能：你可以写一小段 JS/TS 函数塞进插件里，直接挂到 Claude Code 的内部事件上——比如它发提示词、调工具、请求权限、渲染界面这些节点，都能拦截和改写。对 Salesforce 开发者来说值得关注的原因是，这相当于把 Claude Code 从一个"用起来挺顺手的工具"变成了"能按你团队流程定制的平台"，权限校验、代码规范检查、特定 API 调用这类事不用再绕着走了。
 
-📎 [阅读原文](https://dev.to/231542/saathiai-an-open-source-ai-learning-companion-i-built-for-a-friend-3cgc)
+📎 [阅读原文](https://dev.to/rohanmehta/claude-code-mods-a-salesforce-developers-guide-to-the-moddable-agent-mng)
 
 ## 技巧 4
 
-**You gave AI your documents. It's still wrong. Here's how to find out why.**
+**Building a Profit Analytics SaaS for Turkish Marketplace Sellers: Lessons Learned**
 
-✨ # 文档喂给 AI 还是答错？问题可能不在模型
+✨ 一位土耳其创业者做了款给电商卖家算真实利润的SaaS工具，因为很多在Trendyol上卖货的人其实是在亏钱而不自知。它把每笔订单拆成12项扣费明细，目前只打通了Trendyol，Hepsiburada和N11还在路上。值得关注的点在于：新兴市场的中小卖家普遍缺乏精细核算能力，这类工具切的正是“以为赚钱其实没赚”的认知盲区。
 
-**是什么**：很多人把公司手册、PDF 或笔记丢给 AI，问一个文档里明明有答案的问题，AI 却自信地答错。作者指出有一套方法能定位真正原因，而不是靠反复改问题、换模型碰运气。
-
-**为什么值得关注**：盲目换措辞或升级模型，即使偶尔对了也不知道为什么对——这意味着同样的错误会在别的场景里重演。搞清楚失败根源（检索没命中、切分丢上下文，还是模型没遵守约束），才能稳定修复，而不是每次靠猜。
-
-📎 [阅读原文](https://dev.to/manpreet171/you-gave-ai-your-documents-its-still-wrong-heres-how-to-find-out-why-44h1)
+📎 [阅读原文](https://dev.to/netaliz/building-a-profit-analytics-saas-for-turkish-marketplace-sellers-lessons-learned-28ef)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

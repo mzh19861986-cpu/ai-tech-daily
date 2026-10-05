@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [I built DrawDesign to make system architecture easier to explain](https://dev.to/gajjardarshithasmukhbhai/i-built-drawdesign-to-make-system-architecture-easier-to-explain-4846)
+## 1. [I found a text editor written in pure assembly, and I couldn't leave without contributing](https://dev.to/akashpattnaik/i-found-a-text-editor-written-in-pure-assembly-and-i-couldnt-leave-without-contributing-3ac9)
 
-**✨ 精华总结：** **是什么**：DrawDesign 是一款基于浏览器的系统架构图和流程图工具，解决的核心痛点是——传统架构图虽然框线齐全，但读者往往看不懂“请求从哪来、箭头代表什么、哪里需要讨论”。
+**✨ 精华总结：** 有人用纯 x86-64 汇编写了个代码编辑器，不依赖 libc、GUI 工具包或 Electron，直接对接 Wayland/X11 协议、自己往像素缓冲区里画控件，整个二进制比多数 favicon 还小。它值得关注，是因为在“软件越堆越厚”的当下，这种从底层自己实现的方案把启动速度、体积和依赖都压到了极限——作者原本只是逛 GitHub 偶然发现，最后没忍住提交了代码。
 
-**为什么值得关注**：它不只是画图，而是强制你把“流程叙事”可视化，作者还附了一个小练习帮你验证设计是否真的讲得清楚。对需要频繁做技术方案评审或系统设计文档的人来说，这个切入点比单纯堆功能更实用。
+## 2. [Claude Code Mods: A Salesforce Developer's Guide to the Moddable Agent](https://dev.to/rohanmehta/claude-code-mods-a-salesforce-developers-guide-to-the-moddable-agent-mng)
 
-## 2. [Migrating a Visual FoxPro system to .NET: an order of work that holds up](https://dev.to/theadnansaleem/migrating-a-visual-foxpro-system-to-net-an-order-of-work-that-holds-up-10l7)
+**✨ 精华总结：** Anthropic 在 Claude Code v2.1.287 里推出了 Mods 功能，允许开发者用 JavaScript/TypeScript 写小函数，直接挂载到 Claude Code 的内部事件上——比如提示词、工具调用、权限请求和界面渲染这些环节，相当于给这个编码 Agent 开了个插件系统。对 Salesforce 开发者来说值得关注，因为它意味着你可以定制 Claude Code 的行为逻辑，把它改造成贴合自己开发流程的专属工具，而不只是被动接受官方默认的那套交互方式。
 
-**✨ 精华总结：** 一位工程师花了两年半，独自把42条财务工作流从跑了20年的Visual FoxPro迁移到C#和.NET Core，全程没有书面规格文档，只能靠代码反推业务逻辑。值得关注的是它的落地路径：领域层用EF Core重建、保留42个T-SQL存储过程对接SQL Server、FoxPro报表整体替换——对任何面对"祖传系统"迁移的人，这是一份少见的、经过实战验证的工作顺序参考。
+## 3. [Building a Profit Analytics SaaS for Turkish Marketplace Sellers: Lessons Learned](https://dev.to/netaliz/building-a-profit-analytics-saas-for-turkish-marketplace-sellers-lessons-learned-28ef)
 
-## 3. [SaathiAI: An Open-Source AI Learning Companion I Built for a Friend](https://dev.to/231542/saathiai-an-open-source-ai-learning-companion-i-built-for-a-friend-3cgc)
+**✨ 精华总结：** 一位土耳其创业者做了款给电商卖家算利润的SaaS工具，核心洞察很扎心：大多数卖家以为自己赚钱，其实在亏。产品把Trendyol上每笔订单拆成12项成本逐笔核算，目前已上线Trendyol集成，Hepsiburada和N11在路上。值得关注的点在于——当平台把费用结构搞得足够复杂时，「看清自己到底赚不赚钱」本身就成了一门生意。
 
-**✨ 精华总结：** 有人做了个叫 SaathiAI 的开源 AI 学习助手，专门解决考前复习时「资料一大堆、时间不够用」的痛点——把手头的 PDF 笔记喂给它，就能快速提炼重点、聚焦复习。值得关注的点在于它瞄准的是真实场景里最高频的需求：学生党面对海量文档时的信息过载，而不是又一个泛泛的聊天套壳。
+## 4. [# I Built a Bilingual Invoice-to-JSON API (Here Is the Whole Stack)](https://dev.to/tuyentn23dot/-i-built-a-bilingual-invoice-to-json-api-here-is-the-whole-stack-1p73)
 
-## 4. [You gave AI your documents. It's still wrong. Here's how to find out why.](https://dev.to/manpreet171/you-gave-ai-your-documents-its-still-wrong-heres-how-to-find-out-why-44h1)
+**✨ 精华总结：** 有人用一套自建栈做了个双语言发票转 JSON 的 REST API：上传 PDF 或扫描件，直接返回结构化的字段（厂商、金额等），而不是一堆需要二次解析的文本。它的价值在于瞄准了一个很具体的痛点——市面 OCR 要么贵、要么只支持英文、要么只吐原始文本，而记账团队真正要的是能直接进表格的结构化数据。
 
-**✨ 精华总结：** RAG系统答错问题，大多数人只会反复改prompt或换模型，却从不知道根因在哪。这篇文章给出的排查方法大约只需二十分钟，核心是定位检索环节到底把哪些文档片段喂给了模型——答案错，往往是压根没检索到正确段落，而不是模型不够强。
+## 5. [Progressive Delivery with Argo Rollouts: Canary, Blue-Green, and AnalysisTemplates That Actually Gate](https://dev.to/aloknecessary/progressive-delivery-with-argo-rollouts-canary-blue-green-and-analysistemplates-that-actually-560c)
 
-## 5. [A Data-First Way to Understand Your Credit Report](https://dev.to/snehawani21/a-data-first-way-to-understand-your-credit-report-2hik)
-
-**✨ 精华总结：** 把信用报告当成一份结构化数据集来看，而不是只盯着最后那个分数——账户明细、余额、还款记录、查询记录这些字段，每一条都是可以单独分析的信号。之所以值得关注，是因为只看得分等于放弃了对数据本身的解释权，而按字段去拆解，你才能看出哪些行为在真正影响你的信用画像。
+**✨ 精华总结：** Argo Rollouts 用自定义的 Rollout 资源替换标准 Kubernetes Deployment，为发布流程补上了原生滚动更新缺失的关键一环：真正基于指标判断的渐进式发布。它支持金丝雀和蓝绿两种策略，并通过 AnalysisTemplates 在每一步自动查询 Prometheus 等监控数据，只有指标达标才继续推进，不达标就自动回滚——而不是像原生 Deployment 那样按固定节奏替换 Pod，等用户先发现问题。对于不想让「部署完成」等于「故障上线」的团队，这是把发布风险控制从人工盯盘变成自动化门禁的实用方案。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

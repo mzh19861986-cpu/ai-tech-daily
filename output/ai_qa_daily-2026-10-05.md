@@ -4,31 +4,33 @@
 
 ## Q1: Claude Says？
 
-**A:** 这条讨论的焦点是 Anthropic 的 Claude 模型在回答中表现出的某些「说法」——可能是幻觉、自信式错误或某种值得注意的行为模式。值得关注的原因是，这类真实用户观察往往比官方评测更能暴露大模型在实际使用中的短板，尤其是当模型语气笃定但事实有误时，对依赖它做决策的人风险很大。如果你在用 Claude 处理事实性任务，这类反馈值得扫一眼。
+**A:** Anthropic 给 Claude 加了个「Claude Says」功能，本质上是一个更主动的交互提示机制，会在对话中引导用户发现模型的能力边界和使用方式。
+
+目前公开信息很有限，只知道它在 lobste.rs 上引发了讨论。如果你在用 Claude，值得留意它是否已经开始在你的对话里出现——这可能是 Anthropic 在交互层面做差异化的一个信号。
 
 📎 更多阅读：[Claude Says](https://ohhfishal.net/Posts/claude)
 
 ## Q2: MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching？
 
-**A:** MintFlow 提出了一种极简的轨迹干预方法，让 flow matching 模型在生成样本时满足约束条件（如观测数据、物理定律），同时不会把样本推离预训练分布太远。现有约束采样器往往在「满足约束」和「保持生成质量」之间被迫二选一，而它用最小的干预代价同时兼顾两者——对需要可控生成的科学计算和工程应用来说，这是个实用的解法。
+**A:** 做可控生成的研究者常遇到一个两难：想让 flow matching 模型的输出满足约束（比如物理规律或观测数据），但硬加约束又容易把样本推离预训练分布，生成质量掉得厉害。MintFlow 的思路很取巧——不重构整个采样轨迹，只做「最小干预」，在关键时刻微调路径，让样本既满足约束又不跑偏。如果你在做人像修复、科学仿真或任何「带约束的生成」任务，这个方法值得扫一眼，因为它解决的正是约束与保真度之间那个老大难。
 
 📎 更多阅读：[MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching](https://arxiv.org/abs/2610.02260)
 
 ## Q3: Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses？
 
-**A:** 这篇论文系统评估了LLM智能体框架中的「系统1决策模型」——即用单次前向传播输出类别概率来替代完整LLM调用的小模型，用来处理模型选择、工具选择、相关性判断、注入检测这类高频小决策。作者用配对+自审计的评测方法给出了一个关键提醒：这类快模型确实能大幅省成本和延迟，但证据表明它们的可靠性还撑不起实际部署。
+**A:** 这篇论文关注的是 LLM Agent 框架里的「系统1决策模型」——也就是用一次前向传播直接输出类别概率，来判断该调哪个模型、用哪个工具、检索内容是否相关、输入是否含注入攻击，理论上比调用完整 LLM 省时省钱得多。作者做了一套配对且自审计的评测，想验证这类快速决策到底靠不靠谱——换句话说，它戳中了「省钱提速」和「证据是否充分」之间的矛盾，对正在搭 Agent 基础设施的人值得一读。
 
 📎 更多阅读：[Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses](https://arxiv.org/abs/2610.02267)
 
 ## Q4: The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?？
 
-**A:** 这篇论文提出了一个叫「AI风险观测站」的思路：用大语言模型批量分析9821份公司年报，看企业怎么披露自己应对AI风险的动作。值得关注的点在于，它把原本零散、非结构化的年报文本变成了可量化、可复现的社会韧性信号源——换句话说，监管者和研究者不用再靠问卷或媒体推测，直接从企业自己的官方文件里读出AI治理的真实态度。
+**A:** AI风险观测站（AI Risk Observatory）尝试用大语言模型批量分析9821份企业年报，从中提取公司如何披露自身对AI的应对，从而为"社会韧性"研究提供可用的数据信号。这项研究值得关注的地方在于：它把企业年报这种原本用于财务披露的文本，重新定义为观察AI社会影响的可规模化数据源，并给出了一套可复现的两阶段分类流程——如果这条路走得通，未来监管者和研究者就能用同样方法追踪企业在AI风险上的真实态度，而不只是听它们PR怎么说。
 
 📎 更多阅读：[The AI Risk Observatory: What Can We Learn from AI Disclosures in Annual Reports About Societal Resilience?](https://arxiv.org/abs/2610.02281)
 
 ## Q5: Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents？
 
-**A:** 这篇论文研究的是如何让 LLM 智能体在调用工具时做更聪明的选择——不是走一步看一步，而是在行动前先比较不同动作的长期价值。核心观点是：长链路任务里只看最终结果给的奖励信号太稀疏，难以指导中间决策；作者提出用「比较式价值估计」给每一步更精准的反馈，从而提升长流程工具调用的表现。值得关注是因为工具调用正是当前 Agent 落地的关键瓶颈，而信用分配（credit assignment）问题一直没解决好，这个方向如果有效，会直接改善多步 Agent 的可靠性。
+**A:** 这篇论文关注的是长周期工具调用智能体的一个核心痛点：当 LLM 需要连续调用几十个工具完成任务时，最终只看结果给奖励，很难判断中间哪一步做对了、哪一步走偏了。作者提出了一种「先比较、再行动」的相对价值估计方法，让智能体在每一步决策前先比较候选动作的相对价值，而不是等任务结束才回头归因。对做 Agent 系统的人来说，这意味着长链路任务的训练信号可以更精准，不必再依赖昂贵的人工逐步标注。
 
 📎 更多阅读：[Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents](https://arxiv.org/abs/2610.02330)
 

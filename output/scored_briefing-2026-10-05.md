@@ -2,25 +2,27 @@
 
 > 由 AI 自动打分排序 | 共 4 条入选
 
-## 🥇 Denmark Data Breach Exposes 8.8M People's Personal Data  (⭐ 7.0/10)
-🔗 [hackernews](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
-
-丹麦一起数据泄露事件暴露了880万人的个人数据——考虑到丹麦总人口约590万，这个数字说明被泄露的记录可能包含重复项或涉及已故/历史数据，实际影响范围可能覆盖了几乎所有丹麦公民。事件的具体泄露渠道和数据类型尚未在标题中说明，但如此大规模的人口数据外泄，意味着攻击者可能获得了可用于身份盗窃、钓鱼攻击或精准诈骗的完整信息库。
-
-## 🥈 Huawei and Qualcomm Announce Broad Patent License Agreement  (⭐ 6.0/10)
+## 🥇 Huawei and Qualcomm Announce Broad Patent License Agreement  (⭐ 7.0/10)
 🔗 [hackernews](https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement)
 
-华为和高通达成了一项广泛的专利许可协议，覆盖双方在移动通信领域的多项核心专利。这意味着两家长期在专利战场上交锋的巨头终于握手言和，对全球手机厂商和5G供应链来说，不确定性大大降低。
+华为和高通签了一份新的长期专利许可协议，覆盖双方的蜂窝通信标准必要专利。简单说，就是两家以后可以互相使用对方的通信专利，不用再打官司扯皮了。值得关注的是，这背后反映的是华为在5G专利上的话语权已经大到高通也不得不坐下来谈——这对整个通信行业的专利格局都有影响。
 
-## 🥉 In the wake of Tippett Studios’ closure, a digital archive appears online  (⭐ 4.0/10)
-🔗 [hackernews](https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/)
+## 🥈 Denmark Data Breach Exposes 8.8M People's Personal Data  (⭐ 6.0/10)
+🔗 [hackernews](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
 
-Tippett Studios 关门后，一个数字档案网站悄然上线，把这家传奇特效工作室的幕后素材——包括《侏罗纪公园》《星战》等经典项目的制作资料——重新放到了公众面前。值得关注的是，这类档案往往在工作室倒闭时最容易被当作废料清掉，这次能被抢救并公开，对研究视觉特效史和数字艺术 preservation 的人来说是个不小的胜利。
+丹麦一起数据泄露事件波及880万人，泄露信息包括个人敏感数据。值得注意的是，丹麦全国人口才约600万——这意味着泄露规模可能远超单一国家范围，涉及整个欧洲乃至更广地区的用户。这类事件再次提醒我们：数据集中化存储的风险正在持续放大，个人隐私保护的防线比想象中更脆弱。
 
-## 4. Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s  (⭐ 3.0/10)
-🔗 [hackernews](https://github.com/Niko1221/Strata)
+## 🥉 Europe's new robotics unicorn: Germany's RobCo hits $1B valuation  (⭐ 6.0/10)
+🔗 [hackernews](https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/)
 
-有人把 125B 参数的 Qwen 3.8 Flash Next 塞进了一张 RTX 4090，靠的是 4-bit 量化加推测解码，单卡跑出 100 tokens/秒。值得关注的是它打破了"百亿级模型必须上多卡或 A100"的惯性认知——一张消费级显卡加对的技术栈，已经能跑动这个量级的模型，推理成本的门槛比很多人想的低得多。
+德国慕尼黑的RobCo完成最新融资后估值冲到10亿美元，成为欧洲新的机器人独角兽。这家公司做的是模块化工业机器人——把机械臂、传感器和软件打包成可拼装的标准化套件，让中小工厂也能低成本快速部署自动化，而不用像传统方案那样花大价钱定制集成。值得关注的点在于，它瞄准的正是欧美制造业回流和劳动力短缺下最痛的那块市场：过去只有大厂玩得起的产线自动化，现在开始向中型企业下沉。
+
+## 4. Web Search API  (⭐ 3.0/10)
+🔗 [hackernews](https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/)
+
+这篇内容目前只有标题「Web Search API」，没有正文，暂时无法提炼有效信息。
+
+如果你把具体文章内容贴过来，我可以马上按你要的风格总结成 2-3 句，既说清楚它是什么，也点明为什么值得关注。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
