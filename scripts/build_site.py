@@ -503,13 +503,13 @@ def build_tools_ranking() -> str:
     ]
     tools_html = "\n".join([
         f'''
-        <div style="display: flex; align-items: center; padding: 1.5rem; margin: 1rem 0; background: white; border-radius: 12px; border: 1px solid #e1e4e8;">
-            <div style="font-size: 2rem; font-weight: bold; color: #6c5ce7; margin-right: 1rem; min-width: 40px;">{t["rank"]}</div>
+        <div style="display: flex; align-items: center; padding: 1.25rem; margin: 0.75rem 0; background: #fafafa; border-radius: 10px; border: 1px solid #eaeaea; transition: all 0.2s;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: #999; margin-right: 1rem; min-width: 36px;">{t["rank"]}</div>
             <div style="flex: 1;">
-                <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2rem;">{t["name"]}</h3>
-                <p style="margin: 0; color: #636e72;">{t["desc"]}</p>
+                <h3 style="margin: 0 0 0.25rem 0; font-size: 1.05rem; font-weight: 600;">{t["name"]}</h3>
+                <p style="margin: 0; color: #666; font-size: 0.9rem;">{t["desc"]}</p>
             </div>
-            <a href="{t["url"]}" target="_blank" style="padding: 0.5rem 1rem; background: #6c5ce7; color: white; border-radius: 8px; text-decoration: none;">访问 →</a>
+            <a href="{t["url"]}" target="_blank" style="padding: 0.5rem 1rem; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 500;">访问 →</a>
         </div>
         '''
         for t in tools
