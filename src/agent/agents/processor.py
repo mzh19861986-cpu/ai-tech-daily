@@ -73,6 +73,11 @@ class ProcessorAgent(BaseAgent):
             # Dev.to 热门技术文章：只保留 Dev.to 来源
             filtered = [x for x in items if x.get("source") == "devto"]
             items = filtered[:5]
+        elif pipeline_name == "dev_tips_daily":
+            # 每日开发技巧：从 Dev.to 和 Lobsters 里选实用技巧类文章
+            tips_keywords = ["tip", "trick", "guide", "how to", "tutorial", "learn", "best practice"]
+            filtered = [x for x in items if any(k in x.get("title", "").lower() for k in tips_keywords)]
+            items = filtered[:3]
         else:
             # 其他 pipeline：只处理前 2 条，控制 API 调用次数
             items = items[:2]
