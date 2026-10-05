@@ -2,30 +2,36 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Europe's new robotics unicorn: Germany's RobCo hits $1B valuation  (⭐ 6.0/10)
+## 🥇 Europe's new robotics unicorn: Germany's RobCo hits $1B valuation  (⭐ 7.0/10)
 🔗 [hackernews](https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/)
 
-德国慕尼黑的RobCo刚成为欧洲新晋机器人独角兽，估值突破10亿美元。这家公司专做模块化工业机器人——说白了就是把机械臂做成"乐高积木"，中小企业不用写代码也能快速拼装出适配自己产线的自动化方案。值得关注的是，它瞄准的恰恰是传统工业机器人巨头（如发那科、ABB）够不着的中小客户市场，这可能是欧洲制造业自动化补课的一个信号。
+德国慕尼黑机器人初创公司RobCo完成新一轮融资，估值突破10亿美元，成为欧洲最新一只机器人独角兽。它主打模块化、低成本的工业机械臂方案，让中小制造企业也能像搭积木一样组装自动化产线——这正是欧洲制造业回流和劳动力短缺背景下最缺的东西。值得关注的是，在AI+机器人赛道普遍由中美主导的格局里，欧洲正试图用「工业场景+本地供应链」打差异化。
 
-## 🥈 Denmark Data Breach Exposes 8.8M People's Personal Data  (⭐ 6.0/10)
-🔗 [hackernews](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
-
-丹麦一家为公共和私营部门管理数据的机构遭黑客攻击，约880万人的个人数据泄露——这个数字接近丹麦全国人口。值得关注的是，攻击者是通过入侵一家IT外包供应商间接得手的，再次暴露了供应链攻击的杀伤力：你自身防护再严，合作方的短板就是你的短板。
-
-## 🥉 Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped  (⭐ 5.0/10)
+## 🥈 Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped  (⭐ 6.0/10)
 🔗 [hackernews](https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped)
 
-谷歌新旗舰 Pixel 11 目前尚未满足 GrapheneOS 的安全准入标准，这个以极致安全著称的第三方安卓系统可能直接跳过对该机型的适配。原因是 GrapheneOS 对硬件安全模块、漏洞修复周期等要求极为苛刻，而 Pixel 11 暂时没达标。对重视隐私安全的用户来说，这意味着换机前最好先确认目标机型是否在 GrapheneOS 支持列表里，别买了才发现装不上。
+谷歌 Pixel 11 可能因未达到 GrapheneOS 的安全标准而被该项目跳过支持——GrapheneOS 是当前最注重隐私和安全的 Android 定制系统，对硬件安全要求极高。这意味着如果你是为了跑 GrapheneOS 才买 Pixel，这一代可能不值得等，也说明谷歌新机在安全硬件上未必年年进步。
 
-## 4. Press Release: Nobel Prize in Physiology or Medicine 2026  (⭐ 5.0/10)
+## 🥉 Denmark Data Breach Exposes 8.8M People's Personal Data  (⭐ 5.0/10)
+🔗 [hackernews](https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger)
+
+丹麦曝出重大数据泄露事件，880万人的个人数据遭暴露——这个数字几乎覆盖了全国所有成年人口。值得关注的是，泄露规模相当于把整个国家的选民信息、联系方式等敏感数据一次性摆在台面上，对于一个人口不到600万的国家来说，这意味着大量非丹麦籍欧盟公民的数据也未能幸免。
+
+## 4. Web Search API  (⭐ 3.0/10)
+🔗 [hackernews](https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/)
+
+目前没有看到具体的技术内容。你发的标题是"Web Search API"，但正文是空的——可能是内容没粘全，或者你想让我直接介绍这个主题？
+
+如果你是想了解 **Web Search API** 本身：它是一类让开发者能以编程方式调用搜索引擎结果的接口（比如 Brave Search API、Bing Web Search API、Tavily、Serper 等），把网页搜索能力直接嵌进自己的应用里。
+
+为什么值得关注：大模型本身不会实时联网，给它接一个搜索 API 就能补上"最新信息"这块短板，是当前做 RAG 和 AI Agent 最常用的一个组件。
+
+把正文贴上来，我给你提炼核心价值。
+
+## 5. Press Release: Nobel Prize in Physiology or Medicine 2026  (⭐ 0.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/medicine/2026/press-release/)
 
-这篇新闻稿的标题指向2026年诺贝尔生理学或医学奖，但内容为空，我无法基于实际信息做总结。如果你把正文贴出来，我可以帮你提炼成2-3句有信息量的推荐语。
-
-## 5. Mosquitoes Are a Choice  (⭐ 2.0/10)
-🔗 [hackernews](https://worksinprogress.co/issue/mosquitoes-are-a-choice/)
-
-这篇文章的核心观点是：蚊媒疾病（如疟疾、登革热）造成的死亡并非不可避免的自然灾害，而是人类主动选择不投入足够资源去解决的结果。作者指出，现有技术（如蚊帐、杀虫剂、基因驱动）已经足够有效，真正缺的是政治意愿和资金投入——就像我们消灭天花一样，蚊子传播的疾病同样可以被消除，只是我们选择了不作为。
+这条发布只有标题、没有正文，我无法提炼内容。请把新闻稿全文贴出来，我马上给你总结。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
