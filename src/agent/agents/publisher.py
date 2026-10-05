@@ -54,6 +54,8 @@ class PublisherAgent(BaseAgent):
             markdown = self._build_tips_report(items, pipeline_name)
         elif pipeline_name == "ai_qa_daily":
             markdown = self._build_qa_report(items, pipeline_name)
+        elif pipeline_name == "ai_brief_3min":
+            markdown = self._build_brief_report(items, pipeline_name)
         else:
             markdown = self._build_daily_report(items, pipeline_name)
 
@@ -342,6 +344,24 @@ class PublisherAgent(BaseAgent):
             lines.append("")
         lines.append("---")
         lines.append("*有问题想问？欢迎在 GitHub 提 Issue~*")
+        return "\n".join(lines)
+
+    def _build_brief_report(self, items: List[Dict], pipeline_name: str) -> str:
+        """3 分钟 AI 快讯"""
+        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        lines = [
+            f"# ⚡ 3 分钟 AI 快讯 - {date_str}",
+            "",
+            f"> 每天 3 条最重要的 AI 新闻，3 分钟看完",
+            "",
+        ]
+        for i, item in enumerate(items, 1):
+            lines.append(f"**{i}. {item.get('title', '')}**")
+            lines.append("")
+            lines.append(f"   {item.get('summary', '')[:150]}...")
+            lines.append("")
+        lines.append("---")
+        lines.append("*3 分钟，掌握 AI 圈动态*")
         return "\n".join(lines)
 
     def _group_by_category(self, items: List[Dict], use_chinese: bool = False) -> List[str]:
