@@ -4,19 +4,19 @@
 
 ## Q1: Kolibri: A Sovereign Open-Weight Model？
 
-**A:** Kolibri 是一个主打“主权”概念的开权重模型，强调用户对模型的自主掌控，而非依赖外部闭源服务。其核心价值在于为需要数据主权和自主部署的场景，提供一个可自由使用与审查的开放替代方案。
+**A:** Kolibri 是一个完全开源权重的模型，主打「主权 AI」概念——也就是让开发者或组织自己掌控模型的部署和运行，不依赖外部 API。值得关注的点在于，它把「开放权重 + 自主可控」这件事从口号变成了实际可用的模型，对于需要数据不出境、或者想摆脱大厂依赖的团队来说，是个值得试试的选项。
 
 📎 更多阅读：[Kolibri: A Sovereign Open-Weight Model](https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/)
 
 ## Q2: coreyhaines31/marketingskills？
 
-**A:** 该内容为技术内容编辑任务，但未提供可供总结的新闻正文，无法提炼核心价值。
+**A:** 这个仓库是 Corey Haines 整理的一套营销技能集合，把增长、文案、SEO、转化率优化等营销方法论拆解成可复用的技能模块。它值得关注是因为它把「营销」这件事从模糊的经验判断变成了有结构、可学习、可执行的清单——适合做产品增长或独立开发的人当工具箱用。
 
 📎 更多阅读：[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ## Q3: DietrichGebert/ponytail？
 
-**A:** 该新闻标题指向一个名为“DietrichGebert/ponytail”的仓库，其核心价值在于以极简命名方式集中呈现一个特定项目。由于缺乏描述、代码或上下文，其实际技术意义无法从现有信息中判断。
+**A:** 这个叫 ponytail 的项目，核心思路是让 AI 编程助手记住你的代码风格和项目习惯，不用每次开新对话都重新交代一遍背景。它值得关注是因为解决了 AI 编码工具的一个真实痛点——上下文丢失导致重复解释，对经常用 Claude Code、Cursor 这类工具的人来说能省不少事。
 
 📎 更多阅读：[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
 

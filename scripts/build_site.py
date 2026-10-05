@@ -18,11 +18,11 @@ TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - AI Tech Daily</title>
-    <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势。包含 AI 新闻、GitHub 热门项目、Product Hunt 新品、开发技巧。">
+    <meta name="description" content="{description}">
     <meta name="keywords" content="AI, 人工智能, 技术日报, GitHub, 开源工具, Product Hunt, 开发技巧, LLM, AI Agent">
     <meta name="author" content="AI Tech Daily">
     <meta property="og:title" content="{title} - AI Tech Daily">
-    <meta property="og:description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态">
+    <meta property="og:description" content="{description}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <style>
@@ -188,6 +188,15 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
 
     html_body = md.markdown(text, extensions=["fenced_code", "tables"])
 
+    # 从正文提取 description（第一段非标题文字）
+    lines = text.split('\n')
+    description = ""
+    for line in lines:
+        line = line.strip()
+        if line and not line.startswith('#') and not line.startswith('>') and not line.startswith('|') and len(line) > 20:
+            description = line[:120]
+            break
+
     # 从文件名提取日期
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", md_path.stem)
     date_str = date_match.group(1) if date_match else ""
@@ -202,7 +211,7 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
     </div>
     '''
 
-    return title, html_body
+    return title, html_body, description
 
 
 def build_index(posts: list[dict]) -> str:
@@ -256,6 +265,9 @@ def build_index(posts: list[dict]) -> str:
             <li>🐳 <a href="https://www.docker.com/" target="_blank">Docker</a> - 容器化部署，开发者必备</li>
             <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
             <li>🔍 <a href="https://www.figma.com/" target="_blank">Figma</a> - 设计协作工具</li>
+            <li>⌨️ <a href="https://cursor.sh/" target="_blank">Cursor</a> - AI 代码编辑器，程序员效率神器</li>
+            <li>🤖 <a href="https://chat.openai.com/" target="_blank">ChatGPT Plus</a> - 最流行的 AI 助手</li>
+            <li>🧠 <a href="https://claude.ai/" target="_blank">Claude</a> - Anthropic 的强 AI 助手</li>
         </ul>
     </div>
 
@@ -291,7 +303,7 @@ def build_index(posts: list[dict]) -> str:
         </p>
     </div>
     """
-    return TEMPLATE.format(title="Home", content=content)
+    return TEMPLATE.format(title="Home", description="AI Tech Daily - 每天 5 分钟了解 AI 圈最重要的事。AI 自动生成的技术日报，追踪 AI 新闻、开源工具、新品发布、开发技巧。", content=content)
 
 
 def build_status() -> str:
@@ -354,7 +366,7 @@ def build_status() -> str:
         全自动滚动运行，持续迭代新方向。
     </div>
     """
-    return TEMPLATE.format(title="Status", content=content)
+    return TEMPLATE.format(title="Status", description="AI Tech Daily 系统运行状态 - 查看所有 pipeline 运行情况和数据源状态。", content=content)
 
 
 def build_sponsor() -> str:
@@ -394,7 +406,7 @@ def build_sponsor() -> str:
         <li>📊 受众：开发者、AI 爱好者、技术决策者</li>
     </ul>
     """
-    return TEMPLATE.format(title="Sponsor", content=content)
+    return TEMPLATE.format(title="Sponsor", description="支持 AI Tech Daily 持续运行。赞助这个项目，让更多开发者看到优质 AI 内容。", content=content)
 
 
 def build_about() -> str:
@@ -452,7 +464,49 @@ def build_about() -> str:
         </p>
     </div>
     """
-    return TEMPLATE.format(title="About", content=content)
+    return TEMPLATE.format(title="About", description="关于 AI Tech Daily - 一个完全由 AI Agent 自动运行的技术日报系统，每天自动抓取、分析、生成 AI 相关内容。", content=content)
+
+
+def build_tools_ranking() -> str:
+    """构建最佳 AI 工具榜单页面"""
+    tools = [
+        {"rank": 1, "name": "DeepSeek API", "desc": "高性价比大模型 API，开发者必备", "url": "https://deepseek.com/"},
+        {"rank": 2, "name": "ChatGPT Plus", "desc": "最流行的 AI 助手，通用能力强", "url": "https://chat.openai.com/"},
+        {"rank": 3, "name": "Claude", "desc": "Anthropic 出品，长文本处理强", "url": "https://claude.ai/"},
+        {"rank": 4, "name": "Cursor", "desc": "AI 代码编辑器，程序员效率神器", "url": "https://cursor.sh/"},
+        {"rank": 5, "name": "Notion", "desc": "笔记+项目管理+AI 写作", "url": "https://www.notion.so/"},
+        {"rank": 6, "name": "Vercel", "desc": "前端一键部署，开发者友好", "url": "https://vercel.com/"},
+        {"rank": 7, "name": "GitHub", "desc": "代码托管与协作平台", "url": "https://github.com/"},
+        {"rank": 8, "name": "Docker", "desc": "容器化部署，开发者必备", "url": "https://www.docker.com/"},
+        {"rank": 9, "name": "Postman", "desc": "API 测试与调试工具", "url": "https://www.postman.com/"},
+        {"rank": 10, "name": "Figma", "desc": "设计协作工具", "url": "https://www.figma.com/"},
+    ]
+    tools_html = "\n".join([
+        f'''
+        <div style="display: flex; align-items: center; padding: 1.5rem; margin: 1rem 0; background: white; border-radius: 12px; border: 1px solid #e1e4e8;">
+            <div style="font-size: 2rem; font-weight: bold; color: #6c5ce7; margin-right: 1rem; min-width: 40px;">{t["rank"]}</div>
+            <div style="flex: 1;">
+                <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2rem;">{t["name"]}</h3>
+                <p style="margin: 0; color: #636e72;">{t["desc"]}</p>
+            </div>
+            <a href="{t["url"]}" target="_blank" style="padding: 0.5rem 1rem; background: #6c5ce7; color: white; border-radius: 8px; text-decoration: none;">访问 →</a>
+        </div>
+        '''
+        for t in tools
+    ])
+    content = f"""
+    <h1>🏆 最佳 AI 工具榜单</h1>
+    <p class="meta">我们每天都在用的效率工具，按推荐度排序 | 2026 年 10 月更新</p>
+
+    <p>这些是我们团队每天都在使用的 AI 工具和开发者工具，经过实际使用验证，推荐给你：</p>
+
+    {tools_html}
+
+    <div style="margin-top: 2rem; padding: 1.5rem; background: #e8f5e9; border-radius: 8px;">
+        <p style="margin: 0;"><strong>💡 说明：</strong>我们可能会通过链接获得推荐佣金，但不影响我们的推荐。我们只推荐自己真正在用的工具。</p>
+    </div>
+    """
+    return TEMPLATE.format(title="AI Tools Ranking", description="最佳 AI 工具榜单 - 我们每天都在用的效率工具，按推荐度排序。包含 DeepSeek、Cursor、ChatGPT、Claude 等热门 AI 工具。", content=content)
 
 
 def build_rss(posts: list[dict]) -> str:
@@ -488,12 +542,12 @@ def main():
         return
 
     for md_file in sorted(OUTPUT_DIR.glob("*.md")):
-        title, html_body = md_to_html(md_file)
+        title, html_body, description = md_to_html(md_file)
         slug = md_file.stem
         date_match = re.search(r"(\d{4}-\d{2}-\d{2})", slug)
         date = date_match.group(1) if date_match else ""
 
-        full_html = TEMPLATE.format(title=title, content=html_body)
+        full_html = TEMPLATE.format(title=title, description=description, content=html_body)
         (SITE_DIR / f"{slug}.html").write_text(full_html, encoding="utf-8")
         posts.append({"title": title, "slug": slug, "date": date})
         print(f"Generated: {slug}.html")
@@ -517,6 +571,11 @@ def main():
     (SITE_DIR / "about.html").write_text(about_html, encoding="utf-8")
     print("Generated about.html")
 
+    # 生成工具榜单页面
+    tools_html = build_tools_ranking()
+    (SITE_DIR / "tools.html").write_text(tools_html, encoding="utf-8")
+    print("Generated tools.html")
+
     # 生成 RSS feed
     rss_xml = build_rss(posts)
     (SITE_DIR / "feed.xml").write_text(rss_xml, encoding="utf-8")
@@ -524,7 +583,7 @@ def main():
 
     # 生成 sitemap.xml
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
-    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html"]
+    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html"]
     for p in posts:
         sitemap_urls.append(f"{base_url}/{p['slug']}.html")
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -534,11 +593,22 @@ def main():
     (SITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
     print("Generated sitemap.xml")
 
+<<<<<<< HEAD
     # 生成 Google Search Console 验证文件
     google_verify_file = "google7301fce51f92c8d0.html"
     google_verify_content = "google-site-verification: google7301fce51f92c8d0.html"
     (SITE_DIR / google_verify_file).write_text(google_verify_content, encoding="utf-8")
     print(f"Generated {google_verify_file}")
+=======
+    # 生成 robots.txt
+    robots_txt = f"""User-agent: *
+Allow: /
+
+Sitemap: {base_url}/sitemap.xml
+"""
+    (SITE_DIR / "robots.txt").write_text(robots_txt, encoding="utf-8")
+    print("Generated robots.txt")
+>>>>>>> 5a274ee1258279d4ebc9bd7268df8d97440d1ab9
 
 
 if __name__ == "__main__":

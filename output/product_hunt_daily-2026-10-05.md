@@ -4,42 +4,42 @@
 
 ## 1. [opensend.cc](https://www.producthunt.com/products/opensend-cc)
 
-**💡 是什么 + 为什么值得试：** 想自己掌控邮件发送、又不想被第三方 SaaS 锁定和计费？opensend.cc 让你把开源邮件平台直接部署在自己的服务器上，收发和 API 都归你管，适合需要数据自主、成本可控的场景。
+**💡 是什么 + 为什么值得试：** opensend.cc 让你在自己的服务器上跑完整的邮件营销平台，不用把用户数据交给第三方 SaaS。如果你在意数据主权、想省订阅费，又不想自己从零写发送和追踪逻辑，可以直接部署这个。
 
 ---
-## 2. [LaunchReel](https://www.producthunt.com/products/launchreel-2)
+## 2. [DocsAlot MCP Connector](https://www.producthunt.com/products/docsalot-2)
 
-**💡 是什么 + 为什么值得试：** LaunchReel 把 Claude 那种「对话式设计」的思路搬到了视频剪辑上，让你用自然语言快速完成专业级的剪辑操作，省下大量手动拖拉时间线的时间。如果你经常剪视频又嫌传统软件太繁琐，值得试一下它的工作流。
-
----
-## 3. [CoreSpeed](https://www.producthunt.com/products/corespeed)
-
-**💡 是什么 + 为什么值得试：** CoreSpeed 用一个 MCP 接口把 agent 需要的应用、记忆和工具都统一接进来，省掉你分别对接多个服务的胶水代码。如果你正在搭 agent 又不想自己维护一堆集成，值得试试。
+**💡 是什么 + 为什么值得试：** DocsAlot MCP Connector 让你直接在 Claude、Cursor 或 Codex 里用自然语言维护帮助中心，不用来回切换后台手动改文档。如果你的支持文档更新总是滞后于产品迭代，这个工具值得试一下。
 
 ---
-## 4. [Capybara Court](https://www.producthunt.com/products/capybara-court)
+## 3. [Rival Workshop](https://www.producthunt.com/products/rival-workshop)
 
-**💡 是什么 + 为什么值得试：** Capybara Court 用一只水豚法官来"审判"你们之间的小纠纷（比如谁该洗碗、哪家外卖更好吃），把争执变成一段轻松有趣的对话。它适合朋友群里用来化解日常抬杠，而不是真的当真做裁决。
-
----
-## 5. [Sellio](https://www.producthunt.com/products/sellio-2)
-
-**💡 是什么 + 为什么值得试：** Sellio 把 AI 客服代理直接塞进一个共享收件箱，让团队不用在多个工具间切换就能集中处理客户咨询。如果你正被重复问题淹没、又不想上重型客服系统，它值得一试。
+**💡 是什么 + 为什么值得试：** Rival Workshop 帮你把各个 AI agent 读的技能（skill）像书架上的书一样集中管理，再也不用担心技能散落各处、哪个 agent 用了哪版说不清。如果你同时在跑多个 agent、维护一堆 prompt 或工具配置，值得一试。
 
 ---
-## 6. [Octri.dev](https://www.producthunt.com/products/octri)
+## 4. [Control My Mac](https://www.producthunt.com/products/control-my-mac)
 
-**💡 是什么 + 为什么值得试：** 如果你在维护 API 或开源项目，Octri.dev 能从同一份接口定义自动生成文档、多语言 SDK、MCP server 和监控，省掉一堆手动同步的麻烦——接口一改，下游全跟着更新，值得试试。
-
----
-## 7. [Quven](https://www.producthunt.com/products/quven)
-
-**💡 是什么 + 为什么值得试：** Quven 是一个自托管的媒体服务器，重点解决「浏览器播放不给力」的问题——它优先走原生播放，让你在本地设备上直接流畅播放自己的影音库，而不用忍受转码卡顿或画质损失。如果你受够了 Plex/Jellyfin 在高码率视频上的转码折腾，值得一试。
+**💡 是什么 + 为什么值得试：** 用 iPhone 或 iPad 当 Mac 的快捷控制面板，为每个应用定制专属按键，省得记一堆快捷键或反复切窗口。
 
 ---
-## 8. [Blume 2.0](https://www.producthunt.com/products/blume-3)
+## 5. [CoreSpeed](https://www.producthunt.com/products/corespeed)
 
-**💡 是什么 + 为什么值得试：** Blume 2.0 是一个开源文档框架，能帮你快速搭建对人和 AI agent 都友好的文档站点。如果你需要维护技术文档、API 说明或知识库，又不想被笨重的工具拖慢，它值得一试。
+**💡 是什么 + 为什么值得试：** CoreSpeed 把 agent 要用的应用接入、记忆存储和工具调用统一到一个 MCP 接口里，省得你为每个能力单独对接和配置。如果你正在搭 agent 又嫌集成太碎，值得花十分钟跑一下看看。
+
+---
+## 6. [Eat Train Feel](https://www.producthunt.com/products/eat-train-feel)
+
+**💡 是什么 + 为什么值得试：** 如果你总在健身、饮食和状态之间来回切换却理不清头绪，Eat Train Feel 把训练、饮食和感受记录整合到一个地方，帮你看到三者之间的真实关联。适合想用数据-driven的方式调整习惯、但又不想装一堆App的人。
+
+---
+## 7. [Clair](https://www.producthunt.com/products/clair-3)
+
+**💡 是什么 + 为什么值得试：** Clair 让你在 Apple Watch 上直接回应 Claude Code 的提问，不用每次都掏手机或回到电脑前。如果你经常挂着 Claude Code 跑任务、又不想被绑在桌前，它能把审批和追问这一步挪到手腕上。
+
+---
+## 8. [ChatGPT Space](https://www.producthunt.com/products/chatgpt-space)
+
+**💡 是什么 + 为什么值得试：** 如果团队里每个人都在各自跟 AI 聊天、成果散落各处，ChatGPT Space 把对话、文件和协作放进同一个共享空间，让多人能围绕同一份上下文一起用 AI 干活。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

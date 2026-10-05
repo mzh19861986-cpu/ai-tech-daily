@@ -236,11 +236,16 @@ class ProcessorAgent(BaseAgent):
         return ""
 
     def _ai_summarize(self, title: str, context: str) -> str:
-        """调用 LLM 生成摘要"""
+        """调用 LLM 生成高质量摘要"""
         result = self._call_llm(
-            system_prompt="你是技术内容编辑，用 2 句话总结这条新闻的核心价值。",
+            system_prompt="""你是资深科技编辑，擅长用简洁的语言提炼技术新闻的核心价值。
+要求：
+1. 用 2-3 句话总结
+2. 说清楚「是什么」和「为什么值得关注」
+3. 语气专业但不生硬，像给朋友推荐好东西
+4. 不要套话，要有信息量""",
             user_prompt=f"标题: {title}\n内容: {context[:1000]}",
-            max_tokens=150,
+            max_tokens=200,
         )
         if result:
             return result
