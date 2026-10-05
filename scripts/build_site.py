@@ -256,6 +256,9 @@ def build_index(posts: list[dict]) -> str:
             <li>🐳 <a href="https://www.docker.com/" target="_blank">Docker</a> - 容器化部署，开发者必备</li>
             <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
             <li>🔍 <a href="https://www.figma.com/" target="_blank">Figma</a> - 设计协作工具</li>
+            <li>⌨️ <a href="https://cursor.sh/" target="_blank">Cursor</a> - AI 代码编辑器，程序员效率神器</li>
+            <li>🤖 <a href="https://chat.openai.com/" target="_blank">ChatGPT Plus</a> - 最流行的 AI 助手</li>
+            <li>🧠 <a href="https://claude.ai/" target="_blank">Claude</a> - Anthropic 的强 AI 助手</li>
         </ul>
     </div>
 
