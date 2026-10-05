@@ -227,35 +227,39 @@ def build_index(posts: list[dict]) -> str:
         for p in sorted_posts
     ])
     content = f"""
-    <div style="text-align: center; padding: 2rem 0;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🤖 AI Tech Daily</h1>
-        <p style="font-size: 1.2rem; color: #636e72; margin-bottom: 1rem;">每天 5 分钟，了解 AI 圈最重要的事</p>
-        <p style="color: #636e72; max-width: 500px; margin: 0 auto 2rem auto;">
+    <div style="text-align: center; padding: 3rem 0 2rem 0;">
+        <h1 style="font-size: 2.75rem; margin-bottom: 0.75rem; font-weight: 800; letter-spacing: -0.02em;">AI Tech Daily</h1>
+        <p style="font-size: 1.25rem; color: #666; margin-bottom: 1rem; font-weight: 500;">每天 5 分钟，了解 AI 圈最重要的事</p>
+        <p style="color: #888; max-width: 520px; margin: 0 auto 2rem auto; line-height: 1.6;">
             由 AI Agent 自动抓取、分析、生成。覆盖 AI 新闻、开源工具、新品发布、开发技巧。
             全部免费，每日更新。
         </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem;">
+            <a href="#latest" style="padding: 0.75rem 1.5rem; background: #1a1a1a; color: white; border-radius: 8px; text-decoration: none; font-weight: 500;">开始阅读 →</a>
+            <a href="/tools.html" style="padding: 0.75rem 1.5rem; background: white; color: #1a1a1a; border: 1px solid #eaeaea; border-radius: 8px; text-decoration: none; font-weight: 500;">浏览工具库</a>
+        </div>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
-        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📰</div>
-            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">每日新闻</h3>
-            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">追踪 AI 圈最新动态</p>
+        <div style="background: #fafafa; padding: 1.5rem; border-radius: 10px; border: 1px solid #eaeaea; text-align: center;">
+            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">📰</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; font-weight: 600;">每日新闻</h3>
+            <p style="color: #888; margin: 0; font-size: 0.875rem;">追踪 AI 圈最新动态</p>
         </div>
-        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛠️</div>
-            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">开源工具</h3>
-            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">发现好用的 AI 工具</p>
+        <div style="background: #fafafa; padding: 1.5rem; border-radius: 10px; border: 1px solid #eaeaea; text-align: center;">
+            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">🛠️</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; font-weight: 600;">开源工具</h3>
+            <p style="color: #888; margin: 0; font-size: 0.875rem;">发现好用的 AI 工具</p>
         </div>
-        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💡</div>
-            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">实用技巧</h3>
-            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">每天学一个 AI 技巧</p>
+        <div style="background: #fafafa; padding: 1.5rem; border-radius: 10px; border: 1px solid #eaeaea; text-align: center;">
+            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">💡</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; font-weight: 600;">实用技巧</h3>
+            <p style="color: #888; margin: 0; font-size: 0.875rem;">每天学一个 AI 技巧</p>
         </div>
-        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
-            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">3 分钟快讯</h3>
-            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">快速掌握核心动态</p>
+        <div style="background: #fafafa; padding: 1.5rem; border-radius: 10px; border: 1px solid #eaeaea; text-align: center;">
+            <div style="font-size: 1.75rem; margin-bottom: 0.5rem;">⚡</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.05rem; font-weight: 600;">3 分钟快讯</h3>
+            <p style="color: #888; margin: 0; font-size: 0.875rem;">快速掌握核心动态</p>
         </div>
     </div>
 
