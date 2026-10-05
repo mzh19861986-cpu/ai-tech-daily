@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [DocsAlot MCP Connector](https://www.producthunt.com/products/docsalot-2)
+## 1. [opensend.cc](https://www.producthunt.com/products/opensend-cc)
 
-**💡 是什么 + 为什么值得试：** 写 help-center 文档最烦的是切来切去改内容——这个 MCP connector 让你直接在 Claude、Cursor 或 Codex 里用对话维护文档，省掉开后台、找页面、点保存那套流程。如果你已经在用这几个 AI 工具写代码或写文档，接上它基本零成本，值得一试。
-
----
-## 2. [Control My Mac](https://www.producthunt.com/products/control-my-mac)
-
-**💡 是什么 + 为什么值得试：** 用 iPhone/iPad 当遥控器，给每个 Mac App 配一套快捷键面板，省得记快捷键或反复切窗口。如果你常用 Mac 但嫌键盘操作记不住、触控板又不顺手，值得试试。
+**💡 是什么 + 为什么值得试：** opensend.cc 让你在自己的服务器上跑完整的邮件营销平台，不用把用户数据交给第三方 SaaS。如果你在意数据主权、想省订阅费，又不想自己从零写发送和追踪逻辑，可以直接部署这个。
 
 ---
-## 3. [NotchMate](https://www.producthunt.com/products/notchmate)
+## 2. [DocsAlot MCP Connector](https://www.producthunt.com/products/docsalot-2)
 
-**💡 是什么 + 为什么值得试：** 如果你用带刘海的 MacBook，NotchMate 能把那块平时只能看不能碰的黑色区域变成可交互的快捷面板，省得你去菜单栏或 Dock 里翻找常用功能。
-
----
-## 4. [Calnio](https://www.producthunt.com/products/calnio)
-
-**💡 是什么 + 为什么值得试：** Calnio 能把 Notion 里的日期任务和 Apple Calendar 双向同步，让你在日历上直接查看和修改 Notion 里的待办，不用两边手动来回复制。如果你同时用 Notion 管任务、用 Apple Calendar 安排时间，这个工具能省掉不少切换和重复录入的麻烦。
+**💡 是什么 + 为什么值得试：** DocsAlot MCP Connector 让你直接在 Claude、Cursor 或 Codex 里用自然语言维护帮助中心，不用来回切换后台手动改文档。如果你的支持文档更新总是滞后于产品迭代，这个工具值得试一下。
 
 ---
-## 5. [Pixel Soup](https://www.producthunt.com/products/pixel-soup)
+## 3. [Rival Workshop](https://www.producthunt.com/products/rival-workshop)
 
-**💡 是什么 + 为什么值得试：** Pixel Soup 用抖动算法自动为你的 Mac 生成点阵风格动态壁纸，不用自己找图或调参数，它就能持续产出独特的复古像素画面。如果你喜欢这种低保真美学又懒得折腾素材，值得装上试试。
-
----
-## 6. [FlexChords](https://www.producthunt.com/products/flexchords)
-
-**💡 是什么 + 为什么值得试：** FlexChords 能把任意 YouTube 视频里的音乐自动转成可弹奏的吉他和弦，省去你扒谱的功夫。如果你常想弹视频里的歌却懒得一个个音去听，这个工具值得试试。
+**💡 是什么 + 为什么值得试：** Rival Workshop 帮你把各个 AI agent 读的技能（skill）像书架上的书一样集中管理，再也不用担心技能散落各处、哪个 agent 用了哪版说不清。如果你同时在跑多个 agent、维护一堆 prompt 或工具配置，值得一试。
 
 ---
-## 7. [Gemini 4 Argon](https://www.producthunt.com/products/gemini-4-argon)
+## 4. [Control My Mac](https://www.producthunt.com/products/control-my-mac)
 
-**💡 是什么 + 为什么值得试：** 如果你需要在本地或自建应用里调用 Gemini 的复杂推理能力，又不想被官方 SDK 的调用方式绑死，这个项目把接入流程简化了，值得试一下。
+**💡 是什么 + 为什么值得试：** 用 iPhone 或 iPad 当 Mac 的快捷控制面板，为每个应用定制专属按键，省得记一堆快捷键或反复切窗口。
 
 ---
-## 8. [CoreSpeed](https://www.producthunt.com/products/corespeed)
+## 5. [CoreSpeed](https://www.producthunt.com/products/corespeed)
 
-**💡 是什么 + 为什么值得试：** CoreSpeed 用一套 MCP 接口把 agent 需要的应用、记忆和工具统一管起来，省得你为每个能力单独接一遍。如果你在搭 agent 又烦于到处拼凑工具链，值得试试。
+**💡 是什么 + 为什么值得试：** CoreSpeed 把 agent 要用的应用接入、记忆存储和工具调用统一到一个 MCP 接口里，省得你为每个能力单独对接和配置。如果你正在搭 agent 又嫌集成太碎，值得花十分钟跑一下看看。
+
+---
+## 6. [Eat Train Feel](https://www.producthunt.com/products/eat-train-feel)
+
+**💡 是什么 + 为什么值得试：** 如果你总在健身、饮食和状态之间来回切换却理不清头绪，Eat Train Feel 把训练、饮食和感受记录整合到一个地方，帮你看到三者之间的真实关联。适合想用数据-driven的方式调整习惯、但又不想装一堆App的人。
+
+---
+## 7. [Clair](https://www.producthunt.com/products/clair-3)
+
+**💡 是什么 + 为什么值得试：** Clair 让你在 Apple Watch 上直接回应 Claude Code 的提问，不用每次都掏手机或回到电脑前。如果你经常挂着 Claude Code 跑任务、又不想被绑在桌前，它能把审批和追问这一步挪到手腕上。
+
+---
+## 8. [ChatGPT Space](https://www.producthunt.com/products/chatgpt-space)
+
+**💡 是什么 + 为什么值得试：** 如果团队里每个人都在各自跟 AI 聊天、成果散落各处，ChatGPT Space 把对话、文件和协作放进同一个共享空间，让多人能围绕同一份上下文一起用 AI 干活。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
