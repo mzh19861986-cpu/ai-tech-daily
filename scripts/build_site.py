@@ -445,6 +445,18 @@ def main():
     (SITE_DIR / "feed.xml").write_text(rss_xml, encoding="utf-8")
     print("Generated feed.xml")
 
+    # 生成 sitemap.xml
+    base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
+    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html"]
+    for p in posts:
+        sitemap_urls.append(f"{base_url}/{p['slug']}.html")
+    sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for url in sitemap_urls:
+        sitemap_xml += f"  <url><loc>{url}</loc></url>\n"
+    sitemap_xml += "</urlset>"
+    (SITE_DIR / "sitemap.xml").write_text(sitemap_xml, encoding="utf-8")
+    print("Generated sitemap.xml")
+
 
 if __name__ == "__main__":
     main()
