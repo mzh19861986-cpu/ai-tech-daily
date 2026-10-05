@@ -155,6 +155,8 @@ TEMPLATE = """<!DOCTYPE html>
             border-radius: 8px; font-size: 0.9rem;
         }}
     </style>
+    <!-- 隐私友好流量统计 - Cloudflare Web Analytics（只有你能看到数据） -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "your-token-here"}'></script>
 </head>
 <body>
     <nav class="nav">
@@ -383,7 +385,7 @@ def build_status() -> str:
     ])
     content = f"""
     <h1>📊 智能体集群监控面板</h1>
-    <p class="meta">母体 Orchestrator 管控 32 个子智能体 | 全自动闭环运行</p>
+    <p class="meta">母体 Orchestrator 管控 33 个子智能体 | 全自动闭环运行</p>
 
     <h2>🧠 母体 Orchestrator</h2>
     <div style="background: #1a1a1a; color: white; padding: 1.5rem; border-radius: 12px; margin: 1rem 0;">
@@ -391,7 +393,7 @@ def build_status() -> str:
         <p style="margin-bottom: 0;">统一调度所有子智能体，任务拆解、派发、监控、安防兜底</p>
     </div>
 
-    <h2>🤖 子智能体列表（32个）</h2>
+    <h2>🤖 子智能体列表（33个）</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin: 1rem 0; font-size: 0.9rem;">
         <div style="padding: 0.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px;">
             <strong>🔍 FetcherAgent</strong><br><span style="color:#666;">抓取 7 个数据源</span><br><span style="color:#4caf50;">✅ 运行中</span>
@@ -532,7 +534,7 @@ def build_status() -> str:
     </ul>
 
     <div style="margin-top: 2rem; padding: 1rem; background: #e8f5e9; border-left: 4px solid #4caf50;">
-        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，32 个子智能体并行运行，
+        <strong>💡 说明：</strong>本系统由母体 Orchestrator 管控，33 个子智能体并行运行，
         自动抓取数据 → DeepSeek AI 处理 → 生成内容 → 质量审核 → 发布 → 推广 → SEO优化 → 变现 → 数据分析 → 问题修复 → 迭代进化。
         全自动滚动运行，持续自我进化。
     </div>
