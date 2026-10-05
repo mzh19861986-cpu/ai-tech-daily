@@ -167,52 +167,73 @@ class Orchestrator:
         logger.info("=== 母体完成：增长闭环 ===")
         return cycle_report
 
-    def run_auto_loop(self, max_cycles: int = 3, dry_run: bool = None) -> dict:
-        """运行自动循环：完成一个任务自动开始下一个，自主循环"""
+    def run_cluster_cycle(self, dry_run: bool = None) -> dict:
+        """运行完整的集群循环：机会侦察 → 内容生产 → 发布 → 推广 → 变现 → 迭代"""
         dry_run = dry_run if dry_run is not None else config.dry_run
-        logger.info("=== 母体启动：自动循环模式 ===")
+        logger.info("=" * 60)
+        logger.info("🧠 母体启动：完整集群循环")
+        logger.info("=" * 60)
         
-        loop_report = {
-            "mode": "auto_loop",
+        cycle_report = {
+            "cycle": "cluster",
             "started_at": datetime.now().isoformat(),
-            "cycles": [],
-            "max_cycles": max_cycles,
+            "steps": [],
         }
         
-        # 初始化自动循环任务队列
-        self.autoloop.build_default_task_queue()
+        # ========== 阶段 1：机会侦察（输入新方向） ==========
+        logger.info("\n🔭 阶段 1/6：机会侦察 - 全网抓资源抓机会")
+        scout_result = self.opportunity_scout.safe_run()
+        cycle_report["steps"].append({
+            "name": "opportunity_scout",
+            "agent": "OpportunityScoutAgent",
+            "status": "✅" if scout_result.success else "❌",
+            "items": scout_result.items_processed,
+        })
         
-        for cycle in range(max_cycles):
-            logger.info(f"\n{'='*50}\n自动循环第 {cycle+1}/{max_cycles} 圈\n{'='*50}")
-            
-            cycle_data = {
-                "cycle_num": cycle + 1,
-                "started_at": datetime.now().isoformat(),
-                "tasks_completed": [],
-            }
-            
-            # 内容生产任务
-            logger.info("→ 执行内容生产任务...")
-            # 抓取（跳过，因为已经跑过了）
-            # 处理和发布
-            # ... 这里可以调用现有的 pipeline
-            
-            # 增长任务
-            logger.info("→ 执行增长变现任务...")
-            promoter_result = self.promoter.safe_run()
-            cycle_data["tasks_completed"].append("promoter")
-            
-            monetizer_result = self.monetizer.safe_run()
-            cycle_data["tasks_completed"].append("monetizer")
-            
-            iteration_result = self.iteration.safe_run()
-            cycle_data["tasks_completed"].append("iteration")
-            
-            cycle_data["finished_at"] = datetime.now().isoformat()
-            loop_report["cycles"].append(cycle_data)
-            
-            logger.info(f"自动循环第 {cycle+1} 圈完成")
+        # ========== 阶段 2：抓取数据（内容输入） ==========
+        logger.info("\n🔍 阶段 2/6：抓取数据")
+        # fetcher 已经在 pipeline 里跑过了，这里跳过
         
-        loop_report["finished_at"] = datetime.now().isoformat()
-        logger.info("=== 母体完成：自动循环模式 ===")
-        return loop_report
+        # ========== 阶段 3：AI 处理加工 ==========
+        logger.info("\n⚙️ 阶段 3/6：AI 处理加工")
+        # processor 已经在 pipeline 里跑过了，这里跳过
+        
+        # ========== 阶段 4：发布部署 ==========
+        logger.info("\n📝 阶段 4/6：发布部署")
+        # publisher 已经在 pipeline 里跑过了，这里跳过
+        
+        # ========== 阶段 5：推广 + 变现 ==========
+        logger.info("\n📣 阶段 5/6：推广 + 变现")
+        promoter_result = self.promoter.safe_run()
+        cycle_report["steps"].append({
+            "name": "promoter",
+            "agent": "PromoterAgent",
+            "status": "✅" if promoter_result.success else "❌",
+            "items": promoter_result.items_processed,
+        })
+        
+        monetizer_result = self.monetizer.safe_run()
+        cycle_report["steps"].append({
+            "name": "monetizer",
+            "agent": "MonetizerAgent",
+            "status": "✅" if monetizer_result.success else "❌",
+            "items": monetizer_result.items_processed,
+        })
+        
+        # ========== 阶段 6：迭代优化 ==========
+        logger.info("\n🔄 阶段 6/6：迭代优化")
+        iteration_result = self.iteration.safe_run()
+        cycle_report["steps"].append({
+            "name": "iteration",
+            "agent": "IterationAgent",
+            "status": "✅" if iteration_result.success else "❌",
+            "items": iteration_result.items_processed,
+        })
+        
+        cycle_report["finished_at"] = datetime.now().isoformat()
+        
+        logger.info("\n" + "=" * 60)
+        logger.info("🧠 母体完成：完整集群循环")
+        logger.info("=" * 60)
+        
+        return cycle_report
