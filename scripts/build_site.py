@@ -221,6 +221,29 @@ def build_index(posts: list[dict]) -> str:
         </p>
     </div>
 
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📰</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">每日新闻</h3>
+            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">追踪 AI 圈最新动态</p>
+        </div>
+        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛠️</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">开源工具</h3>
+            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">发现好用的 AI 工具</p>
+        </div>
+        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💡</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">实用技巧</h3>
+            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">每天学一个 AI 技巧</p>
+        </div>
+        <div style="background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e1e4e8; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+            <h3 style="margin: 0 0 0.5rem 0; font-size: 1.1rem;">3 分钟快讯</h3>
+            <p style="color: #636e72; margin: 0; font-size: 0.9rem;">快速掌握核心动态</p>
+        </div>
+    </div>
+
     <div class="sponsor-box" style="background: #e3f2fd; border-color: #90caf9;">
         <h3 style="margin-top:0;">🛠️ 开发者推荐工具</h3>
         <p style="margin-bottom: 0.5rem;">这些是我们每天都在用的效率工具，推荐给你：</p>
