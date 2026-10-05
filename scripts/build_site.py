@@ -28,11 +28,12 @@ TEMPLATE = """<!DOCTYPE html>
     <style>
         * {{ box-sizing: border-box; }}
         body {{
-            font-family: Georgia, 'Noto Serif SC', 'Times New Roman', serif;
-            max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.9;
-            color: #24292e;
-            background: #faf8f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', Roboto, sans-serif;
+            max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.7;
+            color: #1a1a1a;
+            background: #ffffff;
             transition: background 0.3s, color 0.3s;
+            -webkit-font-smoothing: antialiased;
         }}
         body.dark {{
             color: #e6edf3;
@@ -55,19 +56,23 @@ TEMPLATE = """<!DOCTYPE html>
         a:hover {{ text-decoration: underline; }}
         .meta {{ color: #6a737d; font-size: 0.9rem; margin-bottom: 2rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
         .nav {{
-            margin-bottom: 2rem; padding: 1rem 1.5rem;
+            margin-bottom: 2rem; padding: 0.75rem 1rem;
             background: rgba(255,255,255,0.8); backdrop-filter: blur(10px);
-            border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-radius: 8px; border: 1px solid #eaeaea;
         }}
         .nav a {{ margin-right: 1.5rem; font-weight: 500; }}
         .post-list {{ list-style: none; padding: 0; }}
         .post-list li {{
-            padding: 1.5rem 0; margin-bottom: 0;
-            border-bottom: 1px solid #e1e4e8;
+            padding: 1.25rem; margin-bottom: 0.75rem;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
             transition: all 0.2s ease;
+            background: #fafafa;
         }}
         .post-list li:hover {{
-            padding-left: 0.5rem;
+            border-color: #d0d0d0;
+            background: #f5f5f5;
+            transform: translateY(-1px);
         }}
         .post-list li:last-child {{ border-bottom: none; }}
         .post-list a {{ font-size: 1.1rem; font-weight: 500; color: #24292e; }}
