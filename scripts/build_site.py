@@ -263,21 +263,21 @@ def build_index(posts: list[dict]) -> str:
         </div>
     </div>
 
-    <div class="sponsor-box" style="background: #e3f2fd; border-color: #90caf9;">
-        <h3 style="margin-top:0;">🛠️ 开发者推荐工具</h3>
-        <p style="margin-bottom: 0.5rem;">这些是我们每天都在用的效率工具，推荐给你：</p>
-        <ul style="text-align: left; display: inline-block; margin: 0.5rem 0;">
-            <li>🤖 <a href="https://deepseek.com/" target="_blank">DeepSeek API</a> - 高性价比大模型，开发者必备</li>
-            <li>📝 <a href="https://www.notion.so/" target="_blank">Notion</a> - 笔记+项目管理神器</li>
-            <li>☁️ <a href="https://vercel.com/" target="_blank">Vercel</a> - 前端一键部署</li>
-            <li>💻 <a href="https://github.com/" target="_blank">GitHub</a> - 代码托管与协作</li>
-            <li>🐳 <a href="https://www.docker.com/" target="_blank">Docker</a> - 容器化部署，开发者必备</li>
-            <li>📊 <a href="https://www.postman.com/" target="_blank">Postman</a> - API 测试工具</li>
-            <li>🔍 <a href="https://www.figma.com/" target="_blank">Figma</a> - 设计协作工具</li>
-            <li>⌨️ <a href="https://cursor.sh/" target="_blank">Cursor</a> - AI 代码编辑器，程序员效率神器</li>
-            <li>🤖 <a href="https://chat.openai.com/" target="_blank">ChatGPT Plus</a> - 最流行的 AI 助手</li>
-            <li>🧠 <a href="https://claude.ai/" target="_blank">Claude</a> - Anthropic 的强 AI 助手</li>
-        </ul>
+    <div style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.5rem; border-radius: 10px; margin: 2rem 0;">
+        <h3 style="margin-top:0; font-weight: 600;">🛠️ 开发者推荐工具</h3>
+        <p style="margin-bottom: 1rem; color: #666; font-size: 0.9rem;">这些是我们每天都在用的效率工具，推荐给你：</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem;">
+            <div style="padding: 0.5rem 0;">🤖 <a href="https://deepseek.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">DeepSeek API</a></div>
+            <div style="padding: 0.5rem 0;">📝 <a href="https://www.notion.so/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Notion</a></div>
+            <div style="padding: 0.5rem 0;">☁️ <a href="https://vercel.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Vercel</a></div>
+            <div style="padding: 0.5rem 0;">💻 <a href="https://github.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">GitHub</a></div>
+            <div style="padding: 0.5rem 0;">🐳 <a href="https://www.docker.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Docker</a></div>
+            <div style="padding: 0.5rem 0;">📊 <a href="https://www.postman.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Postman</a></div>
+            <div style="padding: 0.5rem 0;">🔍 <a href="https://www.figma.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Figma</a></div>
+            <div style="padding: 0.5rem 0;">⌨️ <a href="https://cursor.sh/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Cursor</a></div>
+            <div style="padding: 0.5rem 0;">🤖 <a href="https://chat.openai.com/" target="_blank" style="color: #1a1a1a; font-weight: 500;">ChatGPT Plus</a></div>
+            <div style="padding: 0.5rem 0;">🧠 <a href="https://claude.ai/" target="_blank" style="color: #1a1a1a; font-weight: 500;">Claude</a></div>
+        </div>
     </div>
 
     <h2>📂 内容分类</h2>
@@ -290,12 +290,12 @@ def build_index(posts: list[dict]) -> str:
     </div>
 
     <h2>⭐ 今日头条</h2>
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 16px; margin-bottom: 2rem;">
-        <p style="opacity: 0.9; font-size: 0.9rem; margin: 0 0 0.5rem 0;">{sorted_posts[0]['date']}</p>
-        <h3 style="font-size: 1.5rem; margin: 0 0 1rem 0;">
+    <div style="background: #1a1a1a; color: white; padding: 1.75rem; border-radius: 12px; margin-bottom: 2rem;">
+        <p style="opacity: 0.7; font-size: 0.85rem; margin: 0 0 0.5rem 0;">{sorted_posts[0]['date']}</p>
+        <h3 style="font-size: 1.35rem; margin: 0 0 0.75rem 0; font-weight: 600;">
             <a href="{sorted_posts[0]['slug']}.html" style="color: white;">{sorted_posts[0]['title']}</a>
         </h3>
-        <p style="opacity: 0.9; margin: 0;">今天最重要的内容，先看这篇 →</p>
+        <p style="opacity: 0.7; margin: 0; font-size: 0.9rem;">今天最重要的内容，先看这篇 →</p>
     </div>
 
     <h2>📰 最新日报</h2>
