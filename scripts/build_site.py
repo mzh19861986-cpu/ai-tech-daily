@@ -18,11 +18,11 @@ TEMPLATE = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - AI Tech Daily</title>
-    <meta name="description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态、开源工具和技术趋势。包含 AI 新闻、GitHub 热门项目、Product Hunt 新品、开发技巧。">
+    <meta name="description" content="{description}">
     <meta name="keywords" content="AI, 人工智能, 技术日报, GitHub, 开源工具, Product Hunt, 开发技巧, LLM, AI Agent">
     <meta name="author" content="AI Tech Daily">
     <meta property="og:title" content="{title} - AI Tech Daily">
-    <meta property="og:description" content="AI 自动生成的技术日报，每日更新，追踪最新 AI 动态">
+    <meta property="og:description" content="{description}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <style>
@@ -188,6 +188,15 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
 
     html_body = md.markdown(text, extensions=["fenced_code", "tables"])
 
+    # 从正文提取 description（第一段非标题文字）
+    lines = text.split('\n')
+    description = ""
+    for line in lines:
+        line = line.strip()
+        if line and not line.startswith('#') and not line.startswith('>') and not line.startswith('|') and len(line) > 20:
+            description = line[:120]
+            break
+
     # 从文件名提取日期
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", md_path.stem)
     date_str = date_match.group(1) if date_match else ""
@@ -202,7 +211,7 @@ def md_to_html(md_path: Path) -> tuple[str, str]:
     </div>
     '''
 
-    return title, html_body
+    return title, html_body, description
 
 
 def build_index(posts: list[dict]) -> str:
@@ -294,7 +303,7 @@ def build_index(posts: list[dict]) -> str:
         </p>
     </div>
     """
-    return TEMPLATE.format(title="Home", content=content)
+    return TEMPLATE.format(title="Home", description="AI Tech Daily - 每天 5 分钟了解 AI 圈最重要的事。AI 自动生成的技术日报，追踪 AI 新闻、开源工具、新品发布、开发技巧。", content=content)
 
 
 def build_status() -> str:
@@ -357,7 +366,7 @@ def build_status() -> str:
         全自动滚动运行，持续迭代新方向。
     </div>
     """
-    return TEMPLATE.format(title="Status", content=content)
+    return TEMPLATE.format(title="Status", description="AI Tech Daily 系统运行状态 - 查看所有 pipeline 运行情况和数据源状态。", content=content)
 
 
 def build_sponsor() -> str:
@@ -397,7 +406,7 @@ def build_sponsor() -> str:
         <li>📊 受众：开发者、AI 爱好者、技术决策者</li>
     </ul>
     """
-    return TEMPLATE.format(title="Sponsor", content=content)
+    return TEMPLATE.format(title="Sponsor", description="支持 AI Tech Daily 持续运行。赞助这个项目，让更多开发者看到优质 AI 内容。", content=content)
 
 
 def build_about() -> str:
@@ -455,7 +464,7 @@ def build_about() -> str:
         </p>
     </div>
     """
-    return TEMPLATE.format(title="About", content=content)
+    return TEMPLATE.format(title="About", description="关于 AI Tech Daily - 一个完全由 AI Agent 自动运行的技术日报系统，每天自动抓取、分析、生成 AI 相关内容。", content=content)
 
 
 def build_tools_ranking() -> str:
@@ -497,7 +506,7 @@ def build_tools_ranking() -> str:
         <p style="margin: 0;"><strong>💡 说明：</strong>我们可能会通过链接获得推荐佣金，但不影响我们的推荐。我们只推荐自己真正在用的工具。</p>
     </div>
     """
-    return TEMPLATE.format(title="AI Tools Ranking", content=content)
+    return TEMPLATE.format(title="AI Tools Ranking", description="最佳 AI 工具榜单 - 我们每天都在用的效率工具，按推荐度排序。包含 DeepSeek、Cursor、ChatGPT、Claude 等热门 AI 工具。", content=content)
 
 
 def build_rss(posts: list[dict]) -> str:
@@ -533,12 +542,12 @@ def main():
         return
 
     for md_file in sorted(OUTPUT_DIR.glob("*.md")):
-        title, html_body = md_to_html(md_file)
+        title, html_body, description = md_to_html(md_file)
         slug = md_file.stem
         date_match = re.search(r"(\d{4}-\d{2}-\d{2})", slug)
         date = date_match.group(1) if date_match else ""
 
-        full_html = TEMPLATE.format(title=title, content=html_body)
+        full_html = TEMPLATE.format(title=title, description=description, content=html_body)
         (SITE_DIR / f"{slug}.html").write_text(full_html, encoding="utf-8")
         posts.append({"title": title, "slug": slug, "date": date})
         print(f"Generated: {slug}.html")
