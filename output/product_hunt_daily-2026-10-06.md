@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 1. [Scumble](https://www.producthunt.com/products/scumble)
 
-**💡 是什么 + 为什么值得试：** AUDR 让你按会话或任务追踪 AI agent 每次运行的实际成本，弥补了 token 用量和账单之间的空白。如果你跑多个 agent 却说不清钱花在哪一步，它提供了一套统一的记录格式，值得试试。
-
----
-## 2. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
-
-**💡 是什么 + 为什么值得试：** Willow Knowledge 让你的 AI 工具（比如 ChatGPT）也能访问你本地的笔记、文档和知识库，不用再把内容手动复制粘贴进对话。如果你受够了每次都靠“喂资料”才能让 AI 回答你的私人问题，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 图像修复（inpainting）编辑器，能帮你在图片上圈出需要修改的区域，再用 AI 自动填充或替换内容。如果你需要修掉照片里的杂物、水印，或补全缺失部分，它提供了一个免费、可自行部署的替代方案。
 
 ---
-## 3. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 2. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
 
-**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个自己的 Grok 风格机器人，数据不出本机，还支持多人同时使用——如果你在意隐私或不想为 API 付费，值得一试。
-
----
-## 4. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** 不想伸手碰键鼠的时候，Incredible 让你直接用语音操控电脑，适合解放双手或需要快速执行简单操作的场景，开源可自部署，值得一试。
+**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部跑在本地设备上，适合不想把会议记录、灵感草稿上传云端的人。如果你需要 AI 辅助整理笔记又在意隐私，可以直接试试这个开源项目。
 
 ---
-## 5. [Banger](https://www.producthunt.com/products/banger-mail)
+## 3. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Banger 让你的 AI 代理直接接管邮件自动化流程，从欢迎序列到挽回流失用户，不用再手动配规则或盯数据。如果你在做订阅制产品又懒得搭复杂营销工具，它值得一试。
-
----
-## 6. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
-
-**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在一个共享世界里自主互动、自己只做旁观者，这个项目正好省去了你搭建多智能体环境的功夫；它把“活着的 AI 世界”直接摆在眼前，适合用来观察涌现行为，或者单纯当个有趣的实验来看。
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，不用手就能完成打开应用、执行命令等操作。如果你想摆脱键鼠、试试更自然的交互方式，这个开源项目值得一看。
 
 ---
-## 7. [Doco](https://www.producthunt.com/products/doco-4)
+## 4. [Ghostifier](https://www.producthunt.com/products/ghostifier)
 
-**💡 是什么 + 为什么值得试：** Doco 能根据你的场景和心情自动匹配音乐，省去手动搜歌、切歌的麻烦，适合想要“打开就有对味背景音”的人。
+**💡 是什么 + 为什么值得试：** Ghostifier 能自动帮你向各家公司发送数据删除请求，省去逐个手动填写和跟进的麻烦。如果你在意隐私、想清理散落在各家服务里的个人数据，这个工具值得一试。
 
 ---
-## 8. [Floani](https://www.producthunt.com/products/floani)
+## 5. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** Floani 让你用 AI 生成图表后直接在浏览器里做动画演示，省去在多个工具间来回切换的麻烦。如果你经常需要做流程图、架构图又想让展示更直观，它值得一试。
+**💡 是什么 + 为什么值得试：** 想让 AI 自动操作 iPhone 上的 App，但很多应用根本没 API 可调？iphone-use 让 AI agent 直接控制真实 iPhone 的界面，绕过 API 限制完成点击、输入等操作，适合做自动化测试或流程自动化的人试试。
+
+---
+## 6. [Coddy](https://www.producthunt.com/products/coddy)
+
+**💡 是什么 + 为什么值得试：** Coddy 用短课把 20 多种编程语言拆成小步骤，适合通勤或碎片时间刷一刷，快速上手新语言的基本语法和写法。想换语言或复习基础时拿来当轻量练习工具，比看长文档轻松很多。
+
+---
+## 7. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+
+**💡 是什么 + 为什么值得试：** Willow Knowledge 能把你散落在各个 AI 对话里的知识（ChatGPT、Claude 等）集中到一个地方，让你随时检索和复用，不用再翻历史记录。如果你的 AI 使用已经积累了不少有价值的内容，这个工具值得一试。
+
+---
+## 8. [OpenBot](https://www.producthunt.com/products/openbot-3)
+
+**💡 是什么 + 为什么值得试：** 如果你想找个不用付费、数据不出本地的 Grok Bot 替代品，OpenBot 能让你在自己机器上跑起来，还支持多人同时使用。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
