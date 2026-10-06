@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Running a 180B-Parameter MoE Model on a Gaming Laptop: VIDRAFT's POCKET-Darwin-180B-GGUF](https://dev.to/ai_openfree_b23025ef075cf/running-a-180b-parameter-moe-model-on-a-gaming-laptop-vidrafts-pocket-darwin-180b-gguf-241)
+## 1. [A Commenter Redesigned My Presale Validation Before I Could Fail It the Same Way Twice](https://dev.to/mrlu/a-commenter-redesigned-my-presale-validation-before-i-could-fail-it-the-same-way-twice-b2i)
 
-**✨ 精华总结：** VIDRAFT 把自家 180B 参数的大模型压缩成 4-bit GGUF 格式，靠 MoE 稀疏激活（每次只调用约 3B 参数）加 llama.cpp 的 SSD 流式加载，让它在 8GB 显存 + 32GB 内存的游戏本上也能跑起来。值得关注的是，这基本打破了「大模型必须上服务器」的默认前提——虽然速度肯定快不了，但探索了消费级硬件跑超大规模模型的可行路径。
+**✨ 精华总结：** 一位开发者在 48 小时预售测试中收到评论者反馈，对方重新设计了他的验证逻辑——在他第二次犯同样错误之前。核心价值在于：这展示了公开构建（build in public）的意外收获，陌生人可能比你自己更早发现你的方法漏洞，而及时的第三方审视能避免重复踩坑。
 
-## 2. [Using SCP on a Custom Port (and Avoiding the -p vs -P Mix-Up)](https://dev.to/__3381495fd2b/using-scp-on-a-custom-port-and-avoiding-the-p-vs-p-mix-up-58hn)
+## 2. [Running a 180B-Parameter MoE Model on a Gaming Laptop: VIDRAFT's POCKET-Darwin-180B-GGUF](https://dev.to/ai_openfree_b23025ef075cf/running-a-180b-parameter-moe-model-on-a-gaming-laptop-vidrafts-pocket-darwin-180b-gguf-241)
 
-**✨ 精华总结：** 用 scp 传文件时，如果服务器 SSH 跑在非标准端口（比如 2222），你得用**大写 -P** 指定端口——注意不是小写 -p，后者在 scp 里是"保留文件时间戳"，而且敲错了它不会报错，只会悄悄连默认的 22 端口然后失败。这是个老手也容易踩的坑，因为 ssh 命令自己用的是小写 -p，凭肌肉记忆切到 scp 就翻车。
+**✨ 精华总结：** VIDRAFT 把他们的 180B 参数 MoE 大模型量化成 4-bit GGUF 格式，靠"稀疏激活 + SSD 流式加载"让 8GB 显存、32GB 内存的游戏本也能跑起来——关键在于每次推理只激活约 3B 参数，而不是硬扛全部 180B。值得关注的不是"笔记本跑大模型"这个噱头，而是它示范了一条路：MoE 架构天生适合低配设备，因为算力开销取决于激活的参数而非总量。如果你的机器显存不够但硬盘够快，这可能是目前本地跑大模型最现实的思路之一。
 
-## 3. [Contract-First Engineering in Distributed Core Banking](https://dev.to/mountek/contract-first-engineering-in-distributed-core-banking-jk)
+## 3. [Using SCP on a Custom Port (and Avoiding the -p vs -P Mix-Up)](https://dev.to/__3381495fd2b/using-scp-on-a-custom-port-and-avoiding-the-p-vs-p-mix-up-58hn)
 
-**✨ 精华总结：** 核心银行系统做微服务拆分时，最大的坑不是技术选型，而是**语义漂移**——中心域模型里定义成 ISO4217 货币字符串的字段，到了某个产品团队手里可能就变成了另一种实现，几十个团队各自为政，规范和落地悄悄对不上。
+**✨ 精华总结：** SCP 本身没有独立端口，它完全走 SSH 通道，所以当服务器 SSH 改到 2222 这类非标准端口时，SCP 也得跟着连同一个端口。最容易踩的坑是大小写：scp 指定端口用大写 `-P`，小写 `-p` 是保留文件时间戳的选项，两者功能完全不同，敲错就会静默失败或行为异常。经常连自定义端口服务器的话，建议直接写进 `~/.ssh/config`，省得每次纠结参数。
 
-**Contract-First（契约先行）** 就是解法：先把接口契约定死、当作唯一事实来源，再让各团队并行开发。值得关注是因为它把"架构规范"和"实际代码"之间的缝隙从**事后救火**变成了**事前约束**——在分布式核心银行这种动辄几十个团队协作的场景里，这类治理失效往往比性能瓶颈更致命。
+## 4. [Contract-First Engineering in Distributed Core Banking](https://dev.to/mountek/contract-first-engineering-in-distributed-core-banking-jk)
 
-## 4. [How to Build a Podcast Intro Generator](https://dev.to/voice_developer/how-to-build-a-podcast-intro-generator-4km1)
+**✨ 精华总结：** 核心银行系统拆成微服务后，最容易被忽视的不是性能或可用性，而是「语义漂移」——中心领域模型里定义成 ISO4217 货币字符串的字段，到了某个团队的实现里可能变成了别的东西。多个团队各自独立开发，规格和落地之间的偏差会悄悄累积，最终导致系统间对同一份数据的理解不一致。这篇文章讲的是用契约优先（Contract-First）的方式，在架构层面提前锁定接口语义，而不是等到集成时才发现对不上。
 
-**✨ 精华总结：** 这个教程教你搭一个播客片头生成器：输入节目名、主持人和一句简介，它会自动拼出一段开场白，再通过 ElevenLabs 的语音合成直接输出可用的成品音频。亮点在于把一个原本需要手动写稿、录音、剪辑的环节压缩成一条自动化流水线，特别适合想快速产出、又不想每次都手动折腾的播客制作者。
+## 5. [How to Build a Podcast Intro Generator](https://dev.to/voice_developer/how-to-build-a-podcast-intro-generator-4km1)
 
-## 5. [Create AI Voice Responses for Slack Bots](https://dev.to/voice_developer/create-ai-voice-responses-for-slack-bots-4el1)
-
-**✨ 精华总结：** 给 Slack 机器人加上语音回复，让原本枯燥的文字交互变得更有意思，也更方便无障碍使用。这篇文章手把手教你用 ElevenLabs 的 TTS 和语音克隆技术，搭建一个能"开口说话"的 Slack bot，适合做状态播报、告警提醒这类场景。
+**✨ 精华总结：** 这个教程教你用 ElevenLabs 的 TTS API 搭一个播客片头生成器：输入节目名、主播名和一句标语，它会自动拼成一段开场白脚本，直接合成可供剪辑使用的音频文件。对独立播客主来说，省掉了写开场词和录制的重复劳动，一次配置好就能反复批量生成。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

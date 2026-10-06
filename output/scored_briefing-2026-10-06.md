@@ -2,30 +2,36 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Sharing AI Progress in Mathematics  (⭐ 5.0/10)
-🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
-
-这篇内容目前只有标题“Sharing AI Progress in Mathematics”，没有正文可提炼。如果你把具体文章内容发过来，我可以帮你用2-3句话总结它讲了什么、为什么值得关注。
-
-## 🥈 EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 5.0/10)
-🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
-
-Google 发布了 EmbeddingGemma 2，一个约 3 亿参数的开源多模态嵌入模型，能把文本和图像映射到同一向量空间，用于检索、聚类、分类等下游任务。它的看点是「小到能跑在手机和笔记本上」还能同时处理图文——这在此前基本是大模型才做的事，意味着端侧语义搜索和跨模态应用的门槛被大幅拉低了。
-
-## 🥉 Mistral Large 4  (⭐ 4.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
-
-Mistral 发布了新一代旗舰大模型 Mistral Large 4，在推理、代码和多语言能力上都有明显提升。值得关注的点在于：它继续走开源+商业授权的混合路线，性能对标头部闭源模型但推理成本更低，对想自建 AI 能力的团队来说是个性价比不错的选项。
-
-## 4. Decisions API is in public beta  (⭐ 4.0/10)
-🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
-
-这 API 把「人做决定」这件事变成了可编程的接口，开发者能以结构化的方式触发、记录和查询决策流程。值得关注的点在于：它把原本散落在业务逻辑里的判断环节抽出来单独管理，适合需要审计追踪或多人协作审批的场景——比如风控、内容审核这类"谁在什么时候批了什么"必须说得清的地方。
-
-## 5. Nobel Prize in Physics 2026: Francis Halzen  (⭐ 4.0/10)
+## 🥇 Nobel Prize in Physics 2026: Francis Halzen  (⭐ 7.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-这条消息目前信息量很少——仅从标题看，2026年诺贝尔物理学奖授予了弗朗西斯·哈尔岑（Francis Halzen），但具体获奖理由尚未说明。哈尔岑是威斯康星大学麦迪逊分校的物理学家，也是冰立方中微子天文台（IceCube）的核心推动者，该台在南极冰层下探测高能中微子，开创了中微子天文学这一新领域。若他获奖，大概率与IceCube的成果相关——这将是天体物理与粒子物理交叉领域的里程碑。但建议先核实信源时效性，因为2026年诺奖要到10月才公布。
+这条标题如果是真的，2026年诺贝尔物理学奖颁给了弗朗西斯·哈尔岑——冰立方中微子天文台（IceCube）的创始人和首席科学家。他值得关注的原因是，他把一立方公里的南极冰层变成了人类最大的中微子探测器，首次捕捉到来自太阳系外的高能中微子，等于给天文学打开了一扇全新的观测窗口。简单说，以前我们看宇宙靠光，现在还能靠中微子"听"宇宙。
+
+## 🥈 EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 6.0/10)
+🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+
+Google 发布了 EmbeddingGemma 2，一个开源的多模态嵌入模型，能把文本和图像映射到同一个向量空间，且体量轻到可以在本地设备上跑。值得关注的点在于：多模态嵌入此前基本是闭源 API 的天下，开源可选方案极少，它让开发者能在不依赖云端的情况下做跨模态检索、聚类和 RAG。
+
+## 🥉 Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+目前没有可靠信息表明 Mistral 发布了 "Mistral Large 4" 这个模型。以下是基于已知情况的判断：
+
+**实际上：** Mistral AI 目前的旗舰模型线是 Mistral Large 2（2024年7月发布），后续更新以 Mistral Large 2.1 等形式迭代。"Large 4" 这个名字跳过了 3，命名上不太符合 Mistral 一贯的做法，很可能是误传或占位标题。
+
+**值得关注的点：** 如果 Mistral 真的推出新一代旗舰，核心看点会是——是否继续坚持开放权重 vs 纯 API 商业化的路线，以及在欧洲主权 AI 叙事下对标的性能水平（目前 Large 2 大致对标 GPT-4o / Llama 3.1 405B 这一档）。建议直接查 Mistral 官方 blog 或 Hugging Face 页面确认，避免被标题带偏。
+
+## 4. Decisions API is in public beta  (⭐ 5.0/10)
+🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
+
+Decisions API 进入公开测试阶段，这是一套让开发者能在应用内直接嵌入自动化决策逻辑的接口。它的价值在于把原本需要自建规则引擎的活儿变成了几行 API 调用，适合需要动态审批、风控或推荐场景的团队快速接入。
+
+## 5. Sharing AI Progress in Mathematics  (⭐ 4.0/10)
+🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+
+这条新闻信息量太少，目前只能看到标题「Sharing AI Progress in Mathematics」，没有正文内容、机构背景和具体成果，无法做准确总结。
+
+如果你想让我提炼，请把完整内容发给我。一般来说，这类标题可能指向：某团队公开了 AI 在数学推理/定理证明上的阶段性进展，值得关注的点在于它是「可验证的硬能力」——数学答案对错分明，比聊天类评测更能反映模型真实推理水平。但具体是哪个团队、做了什么、达到了什么程度，得看正文才能说清楚。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

@@ -4,42 +4,42 @@
 
 ## 1. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** OpenBot 是 Grok Bot 的免费本地替代方案，让你在本地跑机器人而不用依赖云端服务（也就无需 API 费用和数据外泄风险）。如果你想要一个能多人共用、可自己改代码的聊天机器人，它值得试试。
+**💡 是什么 + 为什么值得试：** OpenBot 是个免费、本地运行、开源的多人协作机器人方案，适合不想依赖云端 API 或付费服务、又想自己掌控数据的场景。如果你在找 Grok Bot 的替代品并看重隐私和可定制性，值得试试。
 
 ---
-## 2. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 2. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** Willow Knowledge 帮你把散落在各个 AI 对话里的个人信息、偏好和上下文汇总成一份可复用的知识库，这样你换用任何新 AI 工具时都不用从头交代一遍自己的背景。如果你经常在不同 AI 之间切换、每次都要重复自我介绍，这个项目值得试试。
-
----
-## 3. [Brnch](https://www.producthunt.com/products/brnch)
-
-**💡 是什么 + 为什么值得试：** Brnch 把代码托管重新设计成适合 AI agent 参与协作的形态，如果你现在用 GitHub 跑自动化 agent 时总觉得权限、分支和审查流程别扭，它值得一看。
+**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的重复性买家咨询（发货时间、退换货、定制问题）不用再一条条手打了，这个工具用 AI 帮你秒回，语气保持专业。如果你每天花大量时间在客服消息上，可以试试把它接进工作流。
 
 ---
-## 4. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 3. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器里，让你在浏览网页时随手就能调用 AI 帮你读页面、写代码或做总结，不用来回切换窗口。如果你经常一边查资料一边写代码或做研究，这个项目值得试试。
-
----
-## 5. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
-
-**💡 是什么 + 为什么值得试：** MCP 服务器一旦在你审批后偷偷改了工具或权限，mcpgawk 会帮你捕获这种变更，防止供应链式后门。如果你在用 MCP 且在意安全，值得一试。
+**💡 是什么 + 为什么值得试：** AUDR 为 Agent 运行成本提供了一套统一的追踪标准，让你能清楚知道每次任务调用花了多少钱、花在了哪里。如果你在跑 LLM Agent 又想控制预算，它省去了自己拼凑计费逻辑的麻烦。
 
 ---
-## 6. [Appto](https://www.producthunt.com/products/appto)
+## 4. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
 
-**💡 是什么 + 为什么值得试：** Appto 让你用自己的 AI 订阅（比如 ChatGPT Plus）批量生成 iOS 应用，省去从零写代码的功夫。如果你想要快速验证 App 想法又不想学 Swift，它值得一试。
-
----
-## 7. [ruOS](https://www.producthunt.com/products/ruos)
-
-**💡 是什么 + 为什么值得试：** ruOS 把云端桌面和 AI agent 结合起来，让 agent 直接在虚拟桌面里帮你操作软件、跑任务，省去你手动点来点去。如果你想试试让 AI 真正“动手干活”而不是只聊天，这个值得一看。
+**💡 是什么 + 为什么值得试：** 还在为每次开新对话都要把项目背景和你的偏好重讲一遍而烦吗？Willow Knowledge 给 AI 加了个持久化的个人知识库，让每次对话都自动带上你的上下文，不用再手动喂背景信息。
 
 ---
-## 8. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+## 5. [Ranktune](https://www.producthunt.com/products/ranktune)
 
-**💡 是什么 + 为什么值得试：** Ghostifier 能帮你自动向各家平台发数据删除请求，省去逐个翻隐私政策、手写申请邮件的麻烦。如果你在意自己的数据散落在哪些公司手里，想批量清理又不想折腾，可以试试。
+**💡 是什么 + 为什么值得试：** Ranktune 帮你追踪品牌和内容在 AI 回答（如 ChatGPT、Perplexity）里的曝光、引用来源和带来的引荐流量，让你知道 AI 到底有没有在推荐你。如果你在做 SEO 或内容营销，想搞清楚 AI 搜索这块新增流量从哪来，它值得一试。
+
+---
+## 6. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 把浏览器变成一个云端桌面，你可以在里面直接跑 AI agent 来处理任务，省去本地配环境和写胶水代码的麻烦。如果你的工作涉及重复性的网页操作或文件处理，值得试试看它能不能替你跑通流程。
+
+---
+## 7. [Incredible](https://www.producthunt.com/products/incredible)
+
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操作电脑，省去手动点击和切换窗口的麻烦。如果你经常边忙别的事边想快速查资料、开应用，这种“动嘴不动手”的方式值得一试。
+
+---
+## 8. [Scumble](https://www.producthunt.com/products/scumble)
+
+**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 局部重绘编辑器，让你不用 Photoshop 也能把图片里不想要的部分（路人、水印、瑕疵）涂抹后一键替换成合理内容。如果你常需要修图又不想依赖商业软件，它值得上手试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
