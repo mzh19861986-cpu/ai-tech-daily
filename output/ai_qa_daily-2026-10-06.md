@@ -2,39 +2,37 @@
 
 > 关于 AI 你可能想问的问题 | 每天一个问题，搞懂一个概念
 
-## Q1: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
+## Q1: Sharing AI Progress in Mathematics？
 
-**A:** EmbeddingGemma 2 是 Google 推出的开源轻量级多模态嵌入模型，能同时把文本和图像映射到同一个向量空间，让跨模态检索（比如用文字搜图）变得又快又省资源。它值得关注是因为：以往这类能力要么依赖闭源大模型、要么部署成本高，而它体积小、可本地跑，意味着中小团队甚至个人开发者都能轻松搭出自己的多模态搜索或推荐系统。
+**A:** 这条内容标题信息量太少，我无法判断具体指的是哪件事——可能是某团队用AI证明了新定理，也可能是AI辅助数学研究的阶段性报告。
 
-📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
-
-## Q2: Sharing AI Progress in Mathematics？
-
-**A:** 这条内容目前只有标题，没有正文，我先基于“Sharing AI Progress in Mathematics”这个主题给你一版解读，等原文来了再校准。
-
-**是什么**：这是一篇关于用 AI 推进数学研究的进展分享，可能涉及模型在定理证明、猜想发现或数学问题求解上的新能力。
-
-**为什么值得关注**：数学一直被视为最考验严格推理的领域，AI 如果能在这里拿出可验证的成果，意义不只是“会做题”，而是说明它的推理链条开始能被形式化检验——这比刷榜更能说明问题。
+建议你补充一下具体来源（比如是哪家机构、哪个模型、什么数学问题），我才能给你有价值的提炼。
 
 📎 更多阅读：[Sharing AI Progress in Mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-## Q3: OpenTPU – An open-source AI accelerator, developed by AI？
+## Q2: Mathematical manuscripts and supporting proof artifacts produced by OpenAI？
 
-**A:** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自己在没有人类干预的情况下设计完成。它值得关注的点在于：这是首个端到端由 AI 独立设计的硬件项目，意味着 AI 开始具备自主设计芯片的能力，而不只是辅助人类优化现有方案。
+**A:** OpenAI 公开了一批数学手稿和配套的证明工件，展示了 AI 在形式化数学推理上的实际产出，而不只是口头宣称。值得关注的是，这些可验证的证明文件让外界能直接检验 AI 的数学能力边界，也为「AI 能否做真正严谨的数学」提供了一个可复现的参照点。
+
+📎 更多阅读：[Mathematical manuscripts and supporting proof artifacts produced by OpenAI](https://github.com/openai/math)
+
+## Q3: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
+
+**A:** Google 推出了 EmbeddingGemma 2，一个开放权重的轻量级多模态嵌入模型，能同时把文本和图像映射到同一个向量空间，用于检索、聚类、分类等任务。它的看点是把多模态嵌入能力压缩到可以在本地或边缘设备上跑的体量，同时保持开源可商用——对想自建 RAG 或跨模态搜索、又不想依赖闭源 API 的团队来说，这是个实用的新选项。
+
+📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+
+## Q4: OpenTPU – An open-source AI accelerator, developed by AI？
+
+**A:** OpenTPU 是一个开源 AI 加速器项目，由 AI 自主设计完成，目标是提供可自由使用和修改的 TPU 级推理硬件方案。值得关注的点在于：它把加速器从芯片到工具链的设计过程交给 AI 来推进，对想研究或自建 AI 芯片的团队来说，等于多了一个开放、可复现的参考起点。
 
 📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
-## Q4: Claude Code’s suggested message feature: I think the real customer is the model？
+## Q5: Claude Code’s suggested message feature: I think the real customer is the model？
 
-**A:** Claude Code 现在会在你输入时主动建议下一条消息，表面上是在帮用户少打字，但这些建议真正的“消费者”其实是模型本身——它在引导你把任务拆成更小、更规范的步骤，从而让 Claude 更容易正确执行。这个设计透露出一个信号：AI 编程工具的交互正在从“人指挥模型”转向“模型反过来塑造人的行为”，值得留意的是，这种引导未必总是符合你的原始意图。
+**A:** Claude Code 新增了一个「建议消息」功能，会在你输入前主动推荐下一步该说什么。这看似是提升效率的交互优化，但更值得关注的是它的设计逻辑——模型不再只被动响应，而是开始引导对话走向，本质上是在为模型自己「投喂」更高质量的上下文。换句话说，你以为它在帮你，其实它在帮自己更好地完成任务。
 
 📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
-
-## Q5: Email Self Hosters - what are you using?？
-
-**A:** 有人问自建邮件服务器用什么方案，楼主自己用的是 maddy（一个轻量的 Go 语言邮件服务），跑多个域名的邮箱和 catch-all 收信，但吐槽 iOS 原生邮件客户端连他的服务器特别慢——这大概是自建邮件的人最头疼的兼容性问题之一。如果你也在折腾自建邮箱，这条讨论值得看看大家都在踩什么坑。
-
-📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*
