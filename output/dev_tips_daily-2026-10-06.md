@@ -4,49 +4,45 @@
 
 ## 技巧 1
 
-**Tufte's Razor: an interactive guide to the data-ink ratio**
-
-✨ 爱德华·塔夫特（Edward Tufte）提出的「数据墨水比」概念，主张图表中的每一个像素都应该服务于数据本身——多余的边框、网格线、渐变填充都是「噪声」。这个交互式指南用可视化演示帮你直观感受：同一组数据，去除冗余元素后信息传达反而更清晰。如果你经常做图表或报表，花五分钟玩一遍会比读十篇文章都管用。
-
-📎 [阅读原文](https://tuftesrazor.scienceux.org/)
-
-## 技巧 2
-
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这个工作把中国哲学智慧（比如中庸、变通这些思路）引入到自动驾驶决策中，用来指导大语言模型的推理过程。具体做法是用检索增强生成（RAG）给LLM提供哲学原则作为决策参考，让自动驾驶在面对复杂路况时不只是算数值最优解，还能兼顾社会规范和伦理权衡。值得关注的点在于：它代表了一种新趋势——不再纯靠数学优化做自动驾驶决策，而是尝试让AI参考人类文化中的价值判断框架，这对解决自动驾驶的「道德困境」问题（比如电车难题类场景）提供了工程化的新思路。
+✨ 这篇论文尝试把中国哲学智慧（比如中庸、无为而治这类思路）引入自动驾驶的决策系统，结合检索增强的大语言模型，让车辆在复杂交通场景中更好地平衡安全、效率和社会规范。值得关注的是，它跳出了纯数值优化和传统LLM决策的框架，第一次系统性地把哲学伦理维度纳入自动驾驶的决策逻辑——这可能是解决"电车难题"类伦理困境的一条新路径，而不只是靠堆算力硬算。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
-## 技巧 3
+## 技巧 2
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 TabPFN 那种"先用合成数据训练、再在推理时纯靠上下文学习"的思路，从表格数据搬到了自然语言上——模型只在一个合成的、非语言的先验上训练过，却能通过 in-context learning 学会一门真实语言。
+✨ 这篇论文把 TabPFN 那套「先验拟合网络」的思路搬到了自然语言上：模型先在一个纯合成、非语言的数据分布上训练，之后不用微调，直接靠上下文就能学会一门真实语言的任务。
 
-值得关注的点在于：它挑战了"要学语言就得先喂大量真实语料"的默认假设，说明语言习得能力本身可能可以从无关的合成结构中涌现出来，这对理解 in-context learning 的机制、以及低资源场景下的语言建模都挺有启发。
+值得关注的点在于，它验证了「元学习能力」可以跨模态迁移——在合成任务里学到的「如何从上下文里找规律」，能直接用于理解自然语言，这给少样本甚至零样本的语言适应提供了一条新路径。对关心 ICL 本质和低资源语言处理的人来说，这篇值得一读。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
+## 技巧 3
+
+**How to Start Selling Website Templates and UI Kits as a Beginner: A Complete Step-by-Step Guide for Designers, Developers, and Freelancers**
+
+✨ 卖网站模板和UI套件，说白了就是把你做过的界面设计打包成可复用的产品，放到Gumroad、UI8这类平台上反复卖——做一次，卖多次。对设计师和开发者来说，这是从“接一单赚一单”的打工模式转向被动收入的最现实路径，尤其适合已经有一定Figma或前端基础、但还没精力做SaaS产品的人。
+
+📎 [阅读原文](https://dev.to/amacaprislegacies/how-to-start-selling-website-templates-and-ui-kits-as-a-beginner-a-complete-step-by-step-guide-for-1ig1)
+
 ## 技巧 4
 
-**Decision records for AI agents: how to keep what the team decided from being forgotten**
+**Learning Go as a Ruby Developer #7: Finally Understanding Pointers**
 
-✨ 团队和 AI 编码助手达成的架构决策，往往止步于当次对话——新会话一开始，agent 就「失忆」了，周三可能就给你 v1 API 偷偷加回两个新端点，还贴心地附上测试。
+✨ 一位 Ruby 开发者分享了他学习 Go 指针的心路历程——从最初把指针当成 C++ 遗留的"可怕概念"，到最终理解其本质。核心价值在于：Go 把内存地址和引用传递显式暴露给开发者，这跟 Ruby 的隐式处理方式截然不同，对习惯了动态语言的程序员来说是一个需要刻意跨越的思维转变。
 
-这篇文章提出用「决策记录」来治这个病：把每次定下的规则（比如「v1 只修安全漏洞」）落成 agent 能读到的持久文档，而不是指望它跨会话记住。
-
-值得关注是因为，AI 写代码的能力早就够用了，真正拖后腿的是它不知道你们**当初为什么这么定**——而这个坑，每个用 agent 做长期项目的团队都会踩。
-
-📎 [阅读原文](https://dev.to/oaleviola/decision-records-for-ai-agents-how-to-keep-what-the-team-decided-from-being-forgotten-2li4)
+📎 [阅读原文](https://dev.to/shroukabozeid/learning-go-as-a-ruby-developer-7-finally-understanding-pointers-4lkk)
 
 ## 技巧 5
 
-**How to Vet a Developer to Fix Your Vibe-Coded App**
+**Ubuntu Cloud Images on a Mac: Why the Disk Is 3.5 GB, Why You Can't Log In, and How to Fix Both**
 
-✨ 招聘开发者修 vibe-coded 应用（用 AI 快速生成但结构混乱的 App），最大的坑不是找不到人，而是你无法从回复中判断谁靠谱——报价两天的、建议推倒重建的、要你直接给数据库权限的，三种回答都可能对，区别只在你看不出来的技术细节里。这条内容的真正价值是点破了这个信息不对称：vibe coding 让开发门槛降低，但让「评估修复方案」变得更难，因为它把判断力从写代码转移到了识人上。
+✨ Ubuntu 的 cloud image 在 Mac 上跑会遇到两个坑：磁盘只有 3.5 GB、而且没有可用账户登录。根本原因是这类镜像默认由云平台的初始化服务（cloud-init）来扩容和创建用户，本地虚拟机里没有这套东西，自然就卡住了。好消息是这两个问题都能手动解决，不需要换镜像。
 
-📎 [阅读原文](https://dev.to/manveer-banxal/how-to-vet-a-developer-to-fix-your-vibe-coded-app-1aji)
+📎 [阅读原文](https://dev.to/wango/ubuntu-cloud-images-on-a-mac-why-the-disk-is-35-gb-why-you-cant-log-in-and-how-to-fix-both-4fbc)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

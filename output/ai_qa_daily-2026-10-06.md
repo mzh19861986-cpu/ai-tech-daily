@@ -4,35 +4,33 @@
 
 ## Q1: JetBrains reported a net financial loss first time in its tracked history？
 
-**A:** JetBrains在2024年出现了有记录以来的首次净亏损。这家以IntelliJ IDEA、Kotlin和TeamCity闻名的开发工具公司，此前连续多年保持盈利和高增长。
-
-值得关注的原因有两个：一是它可能反映了开发工具市场增速放缓或竞争加剧（比如VS Code和AI编程工具的冲击）；二是JetBrains正在大力投入AI助手（如AI Assistant、Junie），短期亏损或许是为长期转型买单。对开发者来说，这不意味着工具会消失，但可能影响未来的定价策略和产品节奏。
+**A:** JetBrains 首次录得净亏损——这家靠 IDEA、Kotlin 和全家桶订阅吃饭的公司，过去十几年一直是闷声赚钱的典范。值得关注的点在于：这不是产品崩了，而是 AI 编程工具重塑了开发者的付费逻辑，当 Copilot、Cursor 这类工具开始抢占「写代码」这个核心场景，卖 IDE 的生意模式正面临结构性压力。
 
 📎 更多阅读：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
 ## Q2: Show HN: Jotbus – a shared encrypted scratchpad for coding agents？
 
-**A:** Jotbus 是一个给编码 AI agent 用的共享加密草稿本，多个 agent 可以在同一个临时空间里读写笔记和中间结果，数据全程加密。值得关注是因为多 agent 协作时最容易乱的就是状态同步，它提供了一个轻量的共享记忆层，不用自己搭一套通信机制。
+**A:** Jotbus 是一个给 coding agent 用的共享加密草稿本，让多个 agent 或人和 agent 之间能安全地交换临时上下文，而不用把敏感数据塞进 prompt 或日志里。它的价值在于解决了 agent 协作时"记忆共享"和"数据保密"这对矛盾——同一任务里的多方可以读写同一块加密便签，外部却看不到内容。
 
 📎 更多阅读：[Show HN: Jotbus – a shared encrypted scratchpad for coding agents](https://jotbus.com/)
 
 ## Q3: Beam: Reflection's 501B open-weight model？
 
-**A:** Beam是Reflection推出的501B参数开源权重模型，规模直接对标甚至超越了当前多数顶级闭源模型。它的核心看点是开源社区首次拿到如此量级的权重，意味着研究者和企业可以在本地部署、微调一个接近GPT-4级别的模型，而不用再完全依赖API。如果你关注大模型的能力边界或者想摆脱厂商锁定，这个值得认真看看。
+**A:** Beam 是 Reflection 发布的 501B 参数开源权重模型，规模在当前开放模型中属于第一梯队。值得关注的点在于：它把「超大规模 + 开放权重」这两件事同时做到了，让研究者和企业能在自己手里跑一个接近闭源顶级水平的模型，而不只是调用 API。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## Q4: Email Self Hosters - what are you using?？
 
-**A:** 有人用 **maddy** 这个开源邮件服务器自托管了好几个域名的邮箱，支持独立邮箱和全收（catch-all）模式。但用下来有几个小毛病——有些是配置问题，有些说不太清楚，最头疼的是 iPhone 原生邮件客户端连上去慢得要命，加载半天。
+**A:** 有人晒出自己用 **maddy** 自建邮件服务器的经历：跑多个域名，配邮箱和 catch-all 地址都行，但踩了几个坑——有些是自己的问题，有些原因不明。最烦的是 iOS 原生邮件客户端连上去要等半天。这条帖子本质上是在征集其他自托管玩家的方案，看看大家用什么替代 maddy。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
+## Q5: kahawai - an open source, modular media system？
 
-**A:** 北大团队提出ADSD框架，让AI智能体能自己诊断数值求解器哪里出了问题，并自动发现改进技巧。以往AI只能生成代码、跑出报错，但说不清「为什么慢、怎么改」；ADSD把执行反馈变成可解释的诊断和可复用的优化策略，朝「AI自己改进算法」而非仅「写代码」迈了一步。
+**A:** Kahawai 是一个开源、模块化的媒体系统，核心思路是把采集、编码、传输、播放等环节拆成可自由替换的组件，而不是像传统方案那样捆成一个黑盒。值得关注的点在于：它想让开发者能按需拼装自己的音视频管线，类似「媒体界的乐高」，对需要定制低延迟直播或私有化部署的团队来说，可能比买现成商业方案更灵活、更可控。
 
-📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+📎 更多阅读：[kahawai - an open source, modular media system](https://github.com/iksteen/kahawai)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*
