@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Banger](https://www.producthunt.com/products/banger-mail)
+## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** Banger 帮你把客户邮件自动化交给 AI 来跑，从触达到跟进都能自动完成，省得手动一封封写和盯流程。如果你在做客户运营、又不想被邮件拖住，可以试试它能不能替你省下这块时间。
-
----
-## 2. [Kishi Notch](https://www.producthunt.com/products/kishi-notch)
-
-**💡 是什么 + 为什么值得试：** 把 MacBook 的刘海变成能自定义的灵动岛，显示音乐播放、电量、通知等信息，不用再盯着那块空着的黑条。如果你喜欢折腾 macOS 的界面细节，这个开源项目值得花几分钟装来玩玩。
+**💡 是什么 + 为什么值得试：** AUDR 提供了一套统一的开放标准，让不同 LLM Agent 的运行成本（token、调用次数等）能被一致地记录和对比，省得你为每个工具单独写一套埋点。如果你在做 Agent 的成本监控或跨模型比价，值得一看。
 
 ---
-## 3. [Haptiker](https://www.producthunt.com/products/haptiker)
+## 2. [Doco](https://www.producthunt.com/products/doco-4)
 
-**💡 是什么 + 为什么值得试：** Haptiker 让你直接在触控板边缘滑动就能调节音量、亮度和键盘背光，省去每次去按功能键或点菜单栏的麻烦。如果你经常在 MacBook 上做这些调整，滑一下就完事，值得装来试试。
-
----
-## 4. [Extrovert](https://www.producthunt.com/products/extrovert)
-
-**💡 是什么 + 为什么值得试：** Extrovert 让你用 AI agent 自动跑 LinkedIn 外联流程，省去手动一个个发消息、跟进和记录的重复劳动。如果你在做销售或 BD，需要批量触达潜在客户但又不想被封号，这个开源项目值得试试。
+**💡 是什么 + 为什么值得试：** Doco 能根据你的场景和心情自动匹配适合的音乐，省去手动建歌单或反复切歌的麻烦。如果你常在工作、通勤或放松时不知道听什么，它值得一试。
 
 ---
-## 5. [Lecta](https://www.producthunt.com/products/lecta)
+## 3. [ruOS](https://www.producthunt.com/products/ruos)
 
-**💡 是什么 + 为什么值得试：** Lecta 能把你的课堂笔记自动变成和朋友的互动游戏，适合复习时觉得枯燥、又不想一个人死磕的人。如果你背笔记总坚持不下去，用它对战几轮，可能比干看效率高。
-
----
-## 6. [Notch Radio](https://www.producthunt.com/products/notch-radio)
-
-**💡 是什么 + 为什么值得试：** 如果你的 MacBook 刘海平时只是块碍眼的黑边，Notch Radio 能把它变成一个即点即用的网络电台控制台，切歌、换台不用再翻窗口找播放器。想在菜单栏之外找个更顺手的听电台方式，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** ruOS 把云桌面和 AI agent 结合起来，你在浏览器里打开一个虚拟桌面，就能让 agent 直接操作里面的应用帮你干活，不用自己配环境、装工具。如果你想让 AI 真正“动手”完成任务而不是只给建议，可以试试它。
 
 ---
-## 7. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
+## 4. [Ghostifier](https://www.producthunt.com/products/ghostifier)
 
-**💡 是什么 + 为什么值得试：** 虽然你只能旁观不能干预，但《The Sentient World》能让你观察到多个 AI 角色在一个持续运行的世界里自主互动、形成关系与冲突——适合用来研究涌现行为或单纯看 AI “演戏”解压。
+**💡 是什么 + 为什么值得试：** Ghostifier 帮你自动向各家平台发起数据删除请求，省去你逐一填表、发邮件的麻烦。如果你在意隐私、想清理散落在各服务商手里的个人数据，它值得一试。
 
 ---
-## 8. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** 如果你在搭 GTM 工具链时总要在七八个 SaaS 之间手动对接数据和触发逻辑，Fuse AI 用一个 SDK + 一个 MCP 把接入层统一了，省掉大部分胶水代码。适合想自己攒 GTM 栈但不想被单一平台锁死的团队试试。
+**💡 是什么 + 为什么值得试：** Rill Browser 让 Claude Code 和 Codex 直接在浏览器里和你并排工作，省去了在编辑器和终端之间来回切换的麻烦。如果你想让 AI 编程助手边看网页边帮你改代码、查资料或调试，这个项目值得一试。
+
+---
+## 6. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+
+**💡 是什么 + 为什么值得试：** 如果你需要在本地管理笔记，又不想把内容传到云端，NoteWorthy 把 AI 能力（比如总结、问答）直接跑在你的设备上，兼顾隐私和效率。适合注重数据安全、又想用 AI 辅助整理笔记的人试试。
+
+---
+## 7. [Incredible](https://www.producthunt.com/products/incredible)
+
+**💡 是什么 + 为什么值得试：** Incredible 能让你用语音直接操作电脑，省去找快捷键或点菜单的麻烦。如果你经常手忙脚乱或者想试试更自然的交互方式，它值得装来玩玩。
+
+---
+## 8. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+
+**💡 是什么 + 为什么值得试：** 如果你受够了每次换 AI 工具都要重新交代一遍自己的背景、偏好和项目上下文，Willow Knowledge 就是把这层"个人记忆"抽出来单独管理，让不同 AI 都能接上同一个你。适合同时用好几个 AI 助手、又不想反复自我介绍的开发者试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

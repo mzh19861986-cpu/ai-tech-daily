@@ -2,30 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 AI is now capable of developing its own inference hardware  (⭐ 7.0/10)
-🔗 [hackernews](https://github.com/FeSens/openTPU)
-
-AI现在能自己设计推理芯片了——不是辅助优化，而是从头生成硬件架构。这意味着AI开始参与自身运行效率的底层改造，未来模型迭代速度可能不再受人类芯片设计周期拖累。
-
-## 🥈 Mistral Large 4  (⭐ 6.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
-
-Mistral 发布了新一代旗舰模型 Mistral Large 4，在推理、代码和多语言能力上全面升级，直接对标 GPT-4o 和 Claude 3.5 Sonnet 级别的第一梯队。值得关注的是，Mistral 一直主打「开放权重 + 欧洲主权 AI」路线，这次升级意味着企业在非美国供应商里终于有了真正能打的高端选项。
-
-## 🥉 Release of Polars 2.0  (⭐ 6.0/10)
+## 🥇 Release of Polars 2.0  (⭐ 7.0/10)
 🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-Polars 2.0 正式发布了，这是这个用 Rust 写的超快 DataFrame 库的一次大版本更新。如果你平时用 Pandas 处理数据但嫌它慢，Polars 2.0 值得试试——它在多核并行和内存效率上有明显优势，API 也更成熟稳定了。
+Polars 2.0 正式发布了。Polars 是用 Rust 写的高性能 DataFrame 库，主打比 pandas 更快、更省内存，这次 2.0 是它第一个大版本更新，意味着 API 趋于稳定，可以放心用在生产环境了。如果你平时用 Python 处理数据、又嫌 pandas 在大数据集上慢，值得花时间试试它。
 
-## 4. Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
+## 🥈 Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+看起来你只给了标题，没有正文内容。把 Mistral Large 4 的具体信息（发布方公告、参数、benchmark、定价等）贴过来，我帮你提炼成 2-3 句的推荐式总结。
+
+## 🥉 Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-2025年诺贝尔物理学奖授予Francis Halzen，表彰他在冰立方中微子天文台（IceCube）中的核心贡献——在南极冰层下1.5公里处建造了全球最大的中微子探测器，首次捕捉到来自太阳系外的高能中微子。这项成果之所以值得关注，是因为它开辟了「中微子天文学」这个全新领域，让人类第一次能用中微子而非光子来观测宇宙极端事件（如超新星、黑洞喷流），相当于给天文学装上了一双能穿透任何屏障的「新眼睛」。
+2025年诺贝尔物理学奖授予Francis Halzen，表彰他在中微子天文学领域的奠基性贡献——他主导建造了南极冰立方（IceCube）探测器，利用南极冰层作为介质捕捉来自宇宙深处的高能中微子。这项工作的意义在于：中微子几乎不与物质作用，能穿越其他辐射无法穿透的极端环境，因此成为观测黑洞、超新星等宇宙极端事件的独特"信使"，冰立方的建成让人类第一次拥有了这类观测能力。
 
-## 5. The Early History of Smalltalk (1993)  (⭐ 3.0/10)
+## 4. The Early History of Smalltalk (1993)  (⭐ 4.0/10)
 🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
 
-Smalltalk 是最早的纯面向对象编程语言之一，由 Alan Kay 在施乐 PARC 主导设计，这篇 1993 年的回顾文章由他亲笔讲述了它从概念到成型的早期历程。值得一读的原因是：今天几乎所有主流语言都受它影响——GUI、集成开发环境、消息传递、甚至“面向对象”这个说法本身，都能追溯到这段历史。
+Alan Kay 在这篇回忆录里复盘了 Smalltalk 的诞生过程：从 Xerox PARC 的 Dynabook 构想出发，把「面向对象」和「图形界面」真正做成了可运行的系统。它值得关注，因为今天几乎你用的每一套 GUI、每一种 OOP 语言，都能追溯到这群人当年对「个人计算应该是什么样」的思考。
+
+## 5. AI is now capable of developing its own inference hardware  (⭐ 2.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
+
+AI现在能自己设计推理芯片了。这意味着算法可以针对特定任务自动优化硬件架构，不再完全依赖人类工程师反复试错。如果这条路走通，芯片迭代速度会从「年」缩短到「周」，对算力饥渴的行业来说是个真正的拐点。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

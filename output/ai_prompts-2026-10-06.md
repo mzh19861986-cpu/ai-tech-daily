@@ -4,38 +4,34 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章主要讨论 AI 已能自主设计推理硬件（如芯片架构、加速器）这一趋势，并未涉及具体的 Prompt 技巧或使用建议。因此没有可提炼的 Prompt 最佳实践。
-
-如果你手头有另一篇关于 Prompt 工程的文章或讨论，欢迎贴出来，我可以帮你提炼成可直接用的技巧。**
+**这篇文章没有提供可提炼的 Prompt 技巧或使用建议。**
 
 📎 来源：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
 ## 2. 💡 技巧 2
 
-**这篇文章没有提供具体内容，因此无法提炼 Prompt 技巧或 AI 使用建议。请把文章正文或讨论内容发给我，我再帮你总结。**
+**这篇文章没有提供具体的 Prompt 技巧，也没有可提炼的“如何更好使用 AI”的建议；内容只是报道 JetBrains 首次出现净财务亏损。  
+如果必须用 1-2 句话总结与 AI 使用相关的最佳实践，只能泛化为：**不要只依赖单一工具或厂商，持续评估成本、替代方案和迁移风险；在使用 AI 编程工具时，也要保留可替换的工作流与预算控制。****
 
 📎 来源：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有提供具体的 Prompt 技巧，也没有关于如何更好使用 AI 的建议。它讲的是犹他州允许 AI 在无人类监督下检查患者并开具处方的政策新闻，属于监管/伦理议题，不含可提炼的 Prompt 内容。**
+**这篇文章内容为空，没有可提炼的 Prompt 技巧或 AI 使用建议。请提供实际的文章正文。**
 
-📎 来源：[Utah to let AI examine patients and prescribe medication without human oversight](https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html)
+📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## 4. 💡 技巧 4
 
-**这篇文章没有涉及 Prompt 工程或 AI 使用技巧，内容是自建邮件服务器（self-hosting email）的讨论，与 Prompt/AI 主题无关，因此无法从中提炼 AI Prompt 技巧或最佳实践。**
+**这篇文章没有明显的 Prompt 技巧内容，主要讨论自托管邮件服务器（maddy）的经验。若总结其中关于更好使用 AI 的建议，文中并未涉及。**
 
 📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有提供具体的 Prompt 写法，而是提出了一种训练范式。总结其关于更好使用 AI 的建议：
+**这篇论文的核心 Prompt 思路是：**把「执行反馈」升级为「自动诊断 + 技能发现」两段式流程**——先让 AI 定位数值求解器性能不佳的根因（而不仅仅是报告结果），再让它自动提炼出可复用的改进技能去修复该根因。
 
-**核心建议：** 不要只让 AI"生成代码"，而要让 AI 先**诊断失败的根本原因**（而非仅看执行反馈），再**发现并积累可复用的技能模块**，从而真正提升算法能力，而不只是产出能跑的代码。
-
-**可直接用于 Prompt 的技巧：**
-> 当我让你优化某段代码/算法时，不要直接给新版本。请先分两步：①**自动诊断**——分析当前实现**
+**可用的 Prompt 技巧：** 在让 AI 迭代科学/数值代码时，不要只问「跑得如何」，而是要求它分两步回答：①先诊断出低性能的**根本原因**，②再提炼出一条可复用的****
 
 📎 来源：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 

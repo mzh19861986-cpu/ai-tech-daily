@@ -4,35 +4,41 @@
 
 ## Q1: AI is now capable of developing its own inference hardware？
 
-**A:** AI现在能自己设计推理芯片了——不是辅助优化，而是从头生成硬件架构。这意味着芯片设计不再完全依赖人类专家，迭代速度可能从几个月压缩到几天。值得关注的点在于：如果AI能自主设计更适合自己运行的硬件，那算力瓶颈的破解方式可能被彻底改写。
+**A:** AI现在能自己设计推理芯片了——不是辅助优化，而是从架构到电路层面自主完成设计。这意味着芯片迭代可以不再依赖人类工程师的经验和周期，AI硬件进化可能进入自我加速的循环。值得关注的是，这打破了“AI只是工具”的边界，它开始改造自己赖以运行的底层基础设施。
 
 📎 更多阅读：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
 ## Q2: JetBrains reported a net financial loss first time in its tracked history？
 
-**A:** JetBrains 首次录得净亏损，这家以 IntelliJ IDEA、Kotlin 和 WebStorm 闻名的开发工具公司，结束了长期盈利的记录。值得关注的是，它此前一直被视为“不靠融资、靠订阅活得很好”的独立软件公司样板，这次转亏可能反映 AI 编程工具冲击下传统 IDE 商业模式正面临压力。
+**A:** JetBrains 首次出现净亏损，打破了其有记录以来的持续盈利纪录。这家以 IntelliJ IDEA、Kotlin 和 WebStorm 闻名的开发工具公司，长期以来是自给自足、不靠风投的“小而美”典范，此次亏损主要受 AI 编码工具冲击与订阅增长放缓影响。对开发者来说，这值得关注——它可能预示着传统 IDE 商业模式正面临转折点。
 
 📎 更多阅读：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
-## Q3: Utah to let AI examine patients and prescribe medication without human oversight？
+## Q3: Email Self Hosters - what are you using?？
 
-**A:** 犹他州通过了一项新法律，允许AI系统独立为患者做诊断并开具处方，全程无需人类医生监督。这是全美首个赋予AI直接处方权的州级立法，意味着AI在医疗领域的角色从「辅助工具」正式跨入「独立决策者」。值得关注的是，它绕过了传统医疗执照体系的监管逻辑——如果AI开错药，责任归属、追责机制目前都还是空白。
+**A:** # 自建邮件服务器方案讨论
 
-📎 更多阅读：[Utah to let AI examine patients and prescribe medication without human oversight](https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html)
+**是什么**：一位开发者分享了自己用 maddy 自建邮件服务器的经历，为多个域名提供邮箱和 catch-all 转发，但吐槽 iOS 原生邮件客户端连接速度慢到让人抓狂。
 
-## Q4: Email Self Hosters - what are you using?？
-
-**A:** 有人在自建邮件服务器，用 **maddy** 管多个域名的邮箱和 catch-all 转发，整体能用但踩了坑——最大的痛点是 iOS 原生邮件客户端连上去慢得离谱。
-
-这类自托管方案适合想摆脱大厂邮箱、又愿意自己折腾的人参考；如果你也在找 maddy 的替代品，这个帖子值得蹲一下评论区。
+**为什么值得关注**：如果你也在考虑摆脱 Gmail/Outlook 自建邮件，maddy 是个轻量选择，但这条帖子暴露了真实痛点——客户端兼容性和连接性能往往比服务端配置更折磨人。评论区大概率藏着更省心的替代方案，值得蹲一个。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
+## Q4: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** AI智能体已经能写出能跑的科研代码了，但"能跑"和"跑得好"是两回事——对数值求解器来说，代码报错或性能差只能告诉你结果不行，却说不清为什么不行、该怎么改。这篇论文提出ADSD框架，让智能体自己诊断性能瓶颈并发现可复用的解题技巧，把"写代码"升级成"真正改进算法"，这是让AI从代码工人变成科研合作者的关键一步。
+**A:** 这篇论文提出了ADSD框架，目标是让AI智能体不仅能写科学计算代码，还能真正**改进数值算法的质量**——它通过自动诊断执行失败的根本原因，并从中发现可复用的技巧，形成一个自我提升的循环。
+
+值得关注的点在于：现有AI生成代码的工具大多只能告诉你"跑得慢"，但说不清"为什么慢、怎么改"，而这恰恰是数值求解器优化中最难的部分。ADSD试图把"事后报错"变成"主动学技能"，如果能跑通，意味着AI在科学计算领域的角色会从"代码工人"升级为"算法调优师"。
 
 📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+
+## Q5: Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities？
+
+**A:** 斯坦福团队提出一种用「代理模型」审计黑盒 LLM Agent 的新方法：既然 GPT-4 这类前沿 API 不返回 token 概率，那就让一个开源小模型对 Agent 的每个动作打分，用它的对数概率当作置信度信号，在错误动作真正执行前发出预警。
+
+值得关注的点在于，它绕开了两个现实障碍——闭源 API 不给你概率，而 Agent 自己嘴上说的「我很确定」在关键错误上几乎等于瞎猜（重采样也没用，因为前沿模型输出高度重复）。对任何在生产环境跑 Agent、担心它悄悄调错工具或写错代码的团队来说，这提供了一条不需要模型白盒权限的可行审计路径。
+
+📎 更多阅读：[Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities](https://arxiv.org/abs/2610.03894)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

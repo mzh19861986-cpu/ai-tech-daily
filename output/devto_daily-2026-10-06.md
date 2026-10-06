@@ -1,24 +1,28 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Comparaison Nano Banana 2.1 vs Nano Banana 2 vs Nano Banana Pro : Lequel choisir ?](https://dev.to/antoine_laurentt/comparaison-nano-banana-21-vs-nano-banana-2-vs-nano-banana-pro-lequel-choisir--bk6)
+## 1. [MLH second week challage](https://dev.to/sai2008/mlh-second-week-challage-43ni)
 
-**✨ 精华总结：** Google在Gemini API里塞了四款Nano Banana图像模型，最新上线的2.1版本直接把单张图片价格砍到上一代的一半，多数团队的默认选择可以换了。但别急着全量迁移——Pro版在复杂工作流上仍有不可替代性，选型得看你的具体负载类型。
+**✨ 精华总结：** 这周MLH挑战赛里有人做了个叫Trash to Treasure的离线AI工具，用手机或电脑摄像头拍下垃圾，本地AI直接识别分类，告诉你该怎么安全处理——全程不联网也能跑。核心循环设计得很顺：出门→发现垃圾→拍照→本地分类→安全捡起→记录成果→揣兜继续走，还专门做了"最小化屏幕"模式，鼓励你少看手机多走路。有趣的点在于它把环保行为和轻量级本地推理结合，既解决了户外网络差的现实问题，又把"捡垃圾"这件事做成了有反馈的游戏循环。
 
-## 2. [When the vendor's webhooks skip steps](https://dev.to/tomert16/when-the-vendors-webhooks-skip-steps-1398)
+## 2. [Meicut Engineering #1: Video Compression at Product Scale](https://dev.to/meicut/meicut-engineering-1-video-compression-at-product-scale-108k)
 
-**✨ 精华总结：** 供应商的 webhook 回调不保证事件顺序，可能直接跳过中间状态——比如处方预授权从「已提交」直接跳到「需要处理」甚至「已关闭」，中间的审批环节凭空消失。这类问题在依赖第三方状态推送的系统里很常见，值得关注是因为：如果你的业务逻辑假设状态是按序到达的，就必须自己补上状态机校验和兜底轮询，而不能把 webhook 当作可信的事实来源。
+**✨ 精华总结：** Meicut 团队分享了在浏览器端做视频压缩的工程实践：把 `ffmpeg -i in.mp4 -c:v libx264 -crf 23 out.mp4` 这条人人都会敲的命令，变成一个真正可用的产品——解决编码在哪跑、长任务怎么管、并发怎么限、输出怎么匹配用户目标这些"文档里不写"的问题。
 
-## 3. [Nano Banana 2.1 เปิดตัว: ราคาครึ่งเดียวของ Nano Banana 2, ข้อความใช้งานได้สมบูรณ์แล้ว](https://dev.to/thanawat_wonchai/nano-banana-21-epidtaw-raakhaakhruengediiywkhng-nano-banana-2-khkhwaamaichngaanaidsmbuurnaelw-545h)
+值得关注的是，这类"单条命令 → 产品级服务"的落差，恰恰是绝大多数 AI/媒体工具从 demo 走向可用时最容易翻车的地方，但公开讨论极少。
 
-**✨ 精华总结：** Google 在 2026 年 10 月 6 日悄然上线了 Nano Banana 2.1，没有发博客也没有跑分对比图，只在 Google Flow 的模型列表里悄悄出现了一天又短暂消失，第二天回归时仅配了一句简短声明：「在所有维度上都超越了前代模型」。
+## 3. [I Built a Free Threads Video Downloader — Here's What I Learned Shipping a Single-Purpose Tool](https://dev.to/muhammad_shakir_b1085c496/i-built-a-free-threads-video-downloader-heres-what-i-learned-shipping-a-single-purpose-tool-3ki9)
 
-对开发者来说最值得关注的是价格直接砍半，文本处理能力也终于完整可用——换句话说，同样的预算能跑两倍的量，而且之前被吐槽的文本短板补上了。
+**✨ 精华总结：** 有人做了个免费网页工具，专治Threads没下载按钮的毛病——粘贴链接就能存视频，不用装App、不索要奇怪权限。值得关注的点在于：它验证了「单点工具」的产品逻辑依然成立，与其忍受广告满天飞的臃肿应用，不如自己花几天造个干净轮子——这种「为自己解决问题」的思路，往往比追风口更容易做出真正好用的东西。
 
-## 4. [Nano Banana 2.1 vs Nano Banana 2 vs Nano Banana Pro: Mana yang Sebaiknya Anda Pilih?](https://dev.to/walse/nano-banana-21-vs-nano-banana-2-vs-nano-banana-pro-mana-yang-sebaiknya-anda-pilih-3708)
+## 4. [Where to Sell Website Templates and UI Kits: 20+ Best Platforms](https://dev.to/digitalreach/where-to-sell-website-templates-and-ui-kits-20-best-platforms-4n18)
 
-**✨ 精华总结：** Google 在 Gemini API 上架了四款 Nano Banana 图像模型，最新款 2.1 于 2026 年 10 月 6 日发布，单张图片价格只有它所取代那款的一半，因此成为多数新项目的默认首选——但并非所有场景都合适。值不值得关注取决于你的用量：价格腰斩意味着批量出图的成本结构直接变了，而 Pro 版仍为对质量或特定能力有硬要求的任务保留。选择逻辑基本是「先用 2.1，撞到能力天花板再往上加钱」。
+**✨ 精华总结：** 做了一套网站模板或 UI Kit，接下来最实际的问题就是去哪儿卖。这篇梳理了 20 多个平台，从 ThemesMotion 这类新兴市场到传统模板商城都有覆盖——关键价值在于它按「市场型 / 自建店铺型 / 曝光导向型」做了区分，帮你根据目标挑渠道，而不是盲目铺货。
+
+## 5. [Ouroboros: A Recursive Dev Loop Where AI Improves Code — Safely](https://dev.to/danielkrydynski/ouroboros-a-recursive-dev-loop-where-ai-improves-code-safely-34jd)
+
+**✨ 精华总结：** Krydynski 做了一个叫 Ouroboros 的开发工具，让 AI 代理能自动、持续地改进代码库，同时通过"安全护栏"避免改坏东西——它跑在 Nous Research 的 Hermes 代理框架上。这个方向值得关注，因为它把 AI 编程从"一问一答"推向"递归自改进循环"，而难点恰恰在于怎么让这种循环不失控。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
