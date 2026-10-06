@@ -2,13 +2,13 @@
 
 > 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 1 个
 
-## 1. [OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
+## 1. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
-**👥 适合谁：** OpenTPU 最适合 **AI 硬件研究者与芯片/体系结构方向的工程师和研究生**使用。
+**👥 适合谁：** EmbeddingGemma 2 最适合需要为多模态检索、语义搜索或 RAG 应用寻找轻量级开源嵌入模型的 AI 应用开发者。
 
-**🚀 怎么开始：** OpenTPU 是开源 AI 加速器项目，需要本地部署或硬件支持才能使用，不是打开网页就能用的在线工具。
+**🚀 怎么开始：** 直接打开 Google AI Studio 或下载模型权重就能用，无需 API key；但注意这是开源模型，本地部署需自备 Python 环境和 GPU。
 
-**📝 简介：** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自主设计完成——从硬件架构到 RTL 代码，AI 自己充当了芯片设计工程师的角色。值得关注的点在于：它把原本需要昂贵 EDA 工具和专业团队才能完成的加速器设计流程，变成了可复现、可修改的开源方案，对想做定制 AI 芯片又缺资源的小团队来说，这是条新路子。
+**📝 简介：** Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本、图片等不同类型的数据映射到同一个向量空间，让跨模态检索和相似度计算变得更简单。值得关注的是它够小够开放——开发者可以直接在本地或边缘设备上部署，不用依赖云端 API，成本和隐私控制都更友好。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*

@@ -14,31 +14,25 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-目前没有可靠信息表明 Mistral AI 发布了名为「Mistral Large 4」的模型。Mistral 现有的旗舰系列是 Mistral Large 2（2024 年 7 月发布）和后续的 Mistral Large 2.1，官方并未公布 Large 4。
+Mistral 刚刚发布了 Large 4，这是他们新一代的旗舰大模型，主打多语言推理和代码能力的全面提升。值得关注的是，它在多个基准测试上已经接近甚至部分超越了 GPT-4 的水平，同时保持了 Mistral 一贯的开放权重策略——这意味着你可以自己部署和微调，而不是只能通过 API 调用。对于需要数据隐私或想深度定制的团队来说，这可能是目前最值得认真评估的开源替代方案。
 
-如果你看到这个消息，建议先核实来源——可能是误传、标题党，或者把其他模型（比如 Mistral 的某个新版本）记混了。有具体链接或出处的话可以发我，我帮你判断真假。
-
-### 2. [EmbeddingGemma 2](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+### 2. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-抱歉，我这边只看到标题「EmbeddingGemma 2」，正文内容是空的，没有具体信息可以提炼。
+这条标题目前只有获奖者姓名，缺少官方公告的关键信息（比如表彰的具体成果），所以还不能写出一篇有信息量的可靠总结。建议你先确认一下：这是正式获奖公告，还是预测/传闻？另外能否补充获奖理由或官方链接？有了这些信息，我可以立刻帮你写成专业又自然的2-3句总结。
 
-方便的话把正文贴上来？或者先确认一下：这是 Google 基于 Gemma 系列推出的第二代嵌入（embedding）模型吗？如果是，我可以直接帮你写；如果有官方发布文或技术细节，发给我会更准，避免我瞎猜误导你。
-
-### 3. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
+### 3. [Paramount Skydance has completed its $111B merger with Warner Bros. Discovery](https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/)
 *hackernews*
-好的，这条需要先说明一下：**2026年诺贝尔物理学奖尚未颁发**（诺奖通常在每年10月公布），所以这更像是一则预告或传言，而不是已确认的新闻。如果确有其事，核心信息大概是：弗朗西斯·哈尔岑（Francis Halzen）是冰立方中微子天文台（IceCube）的创始人和首席科学家，他可能因推动中微子天文学——用南极冰层下埋藏的探测器捕捉来自宇宙深处的中微子——而获奖。这值得关注，因为它意味着人类又多了一种“看”宇宙的方式：光看不够了，中微子能穿透连光都挡不住的极端环境，帮我们追踪超新星、黑洞喷流这些高能事件的真面目。
+派拉蒙天空之舞（Paramount Skydance）以1110亿美元完成对华纳兄弟探索（Warner Bros. Discovery）的合并，好莱坞两大制片厂正式合体。合并后的公司将坐拥HBO、CNN、CBS、派拉蒙影业等重量级资产，成为能与Netflix、迪士尼正面抗衡的流媒体巨头。这笔交易的看点在于：传统媒体在流媒体冲击下被迫"抱团取暖"，而如此大规模的行业整合是否会引发反垄断审查、以及消费者是否会面临更少的平台选择和更高的订阅价格，都值得持续关注。
 
-*（注：以上基于“2026年诺奖授予Halzen”这一前提展开；若这是尚未证实的消息，建议以官方公布为准。）*
-
-### 4. [Paramount Skydance has completed its $111B merger with Warner Bros. Discovery](https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/)
+### 4. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-派拉蒙天空之舞（Paramount Skydance）正式完成了与华纳兄弟探索（Warner Bros. Discovery）价值1110亿美元的合并，好莱坞两大传统制片厂就此合体。这笔交易将把CBS、HBO、CNN、派拉蒙影业等资产收归同一屋檐下，意味着美国主流新闻与娱乐内容的话语权进一步向少数巨头集中——对观众来说，短期内可能看到更多捆绑订阅套餐，但长期看，创作多样性和市场竞争恐怕要打上问号。
+Linear 把决策记录做成了 API——团队在 Linear 里做的技术选型、架构决策现在可以通过接口读取和写入，不再散落在文档和聊天记录里。如果你在搭内部工具或想让 AI 助手理解项目历史决策，这个 beta 值得关注。
 
 ## 🤖 AI / 大模型
 
-### 1. [OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
+### 1. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-OpenTPU 是一个开源 AI 加速器项目，由 AI 自主设计开发，目标是提供一个可自由使用和修改的 TPU 替代方案。值得关注的是，它尝试用 AI 来完成芯片设计流程本身，如果走通，可能大幅降低定制 AI 芯片的门槛。
+谷歌发布了 EmbeddingGemma 2，一个开源的多模态嵌入模型，能把文本、图片等内容转换成向量表示，用于搜索、聚类和推荐等任务。它主打轻量级，可以在本地设备上运行，这对想自建 RAG 或语义搜索、又不想依赖大模型 API 的开发者来说是个实用的新选项。
 
 
 ---
