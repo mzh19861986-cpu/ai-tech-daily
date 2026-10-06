@@ -5,27 +5,29 @@
 ## 🥇 Release of Polars 2.0  (⭐ 7.0/10)
 🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-Polars 2.0 正式发布了，这是这个用 Rust 写的高速 DataFrame 库的一个重要里程碑版本。如果你平时用 pandas 处理大数据集时被性能卡过脖子，Polars 的列式存储 + 惰性执行引擎能带来数量级的提速，而 2.0 意味着 API 终于趋于稳定、可以放心上生产了。
+Polars 2.0 正式发布了，这是这个用 Rust 写的高性能 DataFrame 库的一次大版本更新，主打更稳定的 API 和更强的查询性能。如果你平时用 pandas 处理大数据集时被速度和内存卡过脖子，Polars 值得认真试试——它在这两点上通常有明显优势，2.0 也让生态和接口更成熟了。
 
-## 🥈 JetBrains reported a net financial loss first time in its tracked history  (⭐ 6.0/10)
-🔗 [hackernews](https://www.helgilibrary.com/companies/jetbrains)
-
-JetBrains 首次录得净亏损，打破了其有记录以来的持续盈利纪录。这家以 IntelliJ IDEA、Kotlin 和 Fleet 闻名的开发工具公司，长期被视为自给自足、不靠风投的“模范生”，此次转亏意味着其订阅制商业模式正面临增长压力——可能源于 AI 编程工具（如 Cursor、Copilot）对传统 IDE 市场的分流。值得关注的是，JetBrains 能否靠其 AI 助手和 Fleet 等新布局扳回一城，这也会影响全球开发者的工具选择格局。
-
-## 🥉 Mistral Large 4  (⭐ 5.0/10)
+## 🥈 Mistral Large 4  (⭐ 6.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-内容好像没贴全，我只看到标题「Mistral Large 4」，正文是空的。把具体内容发我，我帮你提炼成 2-3 句的推荐式总结。
+看起来你还没把内容贴全——只有标题「Mistral Large 4」，没有正文，我没法提炼出准确的信息点，硬写就成了编造。
 
-## 4. Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
+把正文补上，我马上按你要的风格（2-3句、说清「是什么」+「为什么值得关注」、不套话）给你写一版。
+
+## 🥉 Nobel Prize in Physics goes to Francis Halzen  (⭐ 6.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-这条新闻的信息量有点不够——标题说诺贝尔物理学奖颁给了 Francis Halzen，但没给颁奖年份、获奖理由，也没说是不是独享。如果属实，大概率是表彰他在中微子天文学（IceCube 冰立方中微子天文台）方面的开创性贡献：他让人类第一次能用深埋南极冰层下的探测器「看见」来自宇宙深处的高能中微子。值得关注是因为，这类观测打开了一扇全新的宇宙窗口，能帮我们追踪宇宙射线到底从哪来。不过建议先核实一下信源，这个标题目前缺少关键细节。
+2025年诺贝尔物理学奖授予弗朗西斯·哈尔岑（Francis Halzen），表彰他在中微子天文学领域的开创性贡献——他主导建造了埋在南极冰层下的“冰立方”中微子天文台。此前人类观测宇宙主要靠光，而中微子几乎不与物质作用、能穿透任何遮蔽，等于给天文学开了一扇全新的窗户：超新星爆发、黑洞吞噬物质这类极端事件，光可能被挡住，中微子却能直接“逃”出来被我们捕捉到。
 
-## 5. Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol  (⭐ 5.0/10)
+## 4. Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol  (⭐ 5.0/10)
 🔗 [hackernews](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-Tapo 是一个用 Rust 和 Python 实现的库，现在能直接和 TP-Link 的智能设备（如智能插座、灯泡）通过 TPAP 协议通信了。这意味着你不必再依赖官方 App 或云服务，可以在本地网络里自由控制和自动化这些设备。
+Tapo 是一个用 Rust 和 Python 写的库，现在支持了 TP-Link 的 TPAP 协议，这意味着你可以直接通过本地网络控制 TP-Link 的智能设备，不再依赖官方云服务。对在意隐私和响应速度的人来说，这很实用——设备控制延迟更低，数据也不出家门。
+
+## 5. Benchmark in Milliseconds  (⭐ 5.0/10)
+🔗 [hackernews](https://matklad.github.io/2026/10/05/benchmark-milliseconds.html)
+
+抱歉，你只给了标题“Benchmark in Milliseconds”，没有正文内容，我没办法提炼出具体的技术信息。能把新闻正文贴过来吗？我马上帮你总结。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

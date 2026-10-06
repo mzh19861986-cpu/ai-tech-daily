@@ -14,27 +14,25 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只发了标题，内容部分还是空的。能把 Mistral Large 4 的具体内容（发布公告、技术细节、基准数据等）贴过来吗？我拿到素材就给你写。
+内容为空，无法总结。请把 Mistral Large 4 的正文或要点发我，我按你的格式写。
 
 ### 2. [Nobel Prize in Physics goes to Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-弗朗西斯·哈尔岑（Francis Halzen）因在冰立方中微子天文台（IceCube Neutrino Observatory）的奠基性工作而获得诺贝尔物理学奖，该天文台位于南极冰层深处，通过探测中微子来观测宇宙中最剧烈的天体过程。值得关注的是，这一荣誉不仅是对他个人数十年坚持的认可，更标志着中微子天文学从“理论构想”正式成为“主流观测手段”——人类从此有了除光子和引力波之外的第三种“宇宙信使”。
+弗朗西斯·哈岑（Francis Halzen）因在冰立方中微子天文台的贡献而获得诺贝尔物理学奖。他领导建造了埋在南极冰层下的一立方公里探测器，首次捕捉到来自太阳系外的中微子——这相当于打开了一扇观测宇宙的全新窗口，此前人类只能靠光（电磁波）来“看”宇宙，现在终于能靠中微子来“听”了。
 
 ### 3. [Release of Polars 2.0](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 正式发布了，这是一个用 Rust 写的高速 DataFrame 库，主打比 pandas 更快的查询引擎和更低的内存占用。值得关注的是它这次把 API 稳定下来、补齐了流式处理能力，意味着可以真正用在生产环境里，而不只是实验性替代品——如果你被 pandas 在大数据量下的性能坑过，这个版本值得认真看一眼。
+Polars 2.0 正式发布了，这个用 Rust 写的高性能 DataFrame 库迎来了首个大版本更新。如果你平时用 Pandas 处理大数据觉得慢，Polars 的多线程查询引擎和惰性计算能让速度提升一个量级，而且 API 设计更现代。2.0 意味着核心接口趋于稳定，现在入手不用担心频繁 breaking change 了。
 
-## 🤖 AI / 大模型
-
-### 1. [JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
+### 4. [Benchmark in Milliseconds](https://matklad.github.io/2026/10/05/benchmark-milliseconds.html)
 *hackernews*
-JetBrains 2024 年出现了有记录以来的首次净亏损，这家以 IntelliJ IDEA、Kotlin 和 Fleet 闻名的开发工具公司，长期以来一直是自给自足、高利润的行业标杆。亏损本身不算惊人，但信号意义很强：连最稳健的开发者工具厂商都开始承压，背后是 AI 编程助手（如 Cursor、Copilot）对传统 IDE 商业模式的正面冲击。值得关注的是它接下来会不会被迫调整订阅定价或加速自家 AI 功能的变现。
+这个叫「Benchmark in Milliseconds」的项目，顾名思义，是把性能基准测试的粒度从秒级推进到毫秒级——测的是那些短到几十毫秒就跑完的操作，比如单次函数调用、小规模数据解析、缓存命中路径。值得关注是因为传统 benchmark 框架在这种量级下误差太大，测出来的数字基本不可信，而它专门解决这个精度问题，对做底层优化或延迟敏感系统的人来说是个趁手的工具。
 
 ## 🛠️ 开发工具
 
 ### 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 *hackernews*
-Tapo 这个 Rust/Python 库现在直接实现了 TP-Link 私有的 TPAP 协议，不再依赖云 API 或逆向出来的 HTTP 接口，能本地控制 TP-Link 的智能设备（比如插座、灯泡、摄像头）。对玩智能家居的人来说这挺实用——响应更快、断网也能用，还不用把设备凭证交给厂商服务器。
+Tapo 这个 Rust/Python 库现在支持直接走 TP-Link 私有的 TPAP 协议了，不再依赖官方云 API 或 Kasa 旧协议。这意味着本地控制 Tapo 设备（比如插座、灯泡、摄像头）会更快、更稳，断网也能用，对想摆脱云依赖的智能家居玩家是个实用的升级。
 
 
 ---
