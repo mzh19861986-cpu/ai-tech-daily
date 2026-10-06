@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [MLH second week challage](https://dev.to/sai2008/mlh-second-week-challage-43ni)
+## 1. [Why Your Website Is Slow Even When Your Server Is Fast](https://dev.to/ali_raza_fa80fd8371162ce6/why-your-website-is-slow-even-when-your-server-is-fast-35m3)
 
-**✨ 精华总结：** 这周MLH挑战赛里有人做了个叫Trash to Treasure的离线AI工具，用手机或电脑摄像头拍下垃圾，本地AI直接识别分类，告诉你该怎么安全处理——全程不联网也能跑。核心循环设计得很顺：出门→发现垃圾→拍照→本地分类→安全捡起→记录成果→揣兜继续走，还专门做了"最小化屏幕"模式，鼓励你少看手机多走路。有趣的点在于它把环保行为和轻量级本地推理结合，既解决了户外网络差的现实问题，又把"捡垃圾"这件事做成了有反馈的游戏循环。
+**✨ 精华总结：** 很多人以为服务器快，网站就一定快——这是个常见误区。服务器只是把第一口 HTML 吐得快，但浏览器拿到首字节后，还要下载 CSS、JS、图片、字体等一大堆资源，再解析、执行、渲染。真正让页面“感觉慢”的往往是这段前端加载和执行的过程，而不是后端响应。所以优化网站性能时，光盯着服务器是不够的，资源体积、加载顺序和渲染阻塞才是更值得关注的地方。
 
-## 2. [Meicut Engineering #1: Video Compression at Product Scale](https://dev.to/meicut/meicut-engineering-1-video-compression-at-product-scale-108k)
+## 2. [Restoring a grant is not restoring capacity](https://dev.to/janbalangue/restoring-a-grant-is-not-restoring-capacity-17ip)
 
-**✨ 精华总结：** Meicut 团队分享了在浏览器端做视频压缩的工程实践：把 `ffmpeg -i in.mp4 -c:v libx264 -crf 23 out.mp4` 这条人人都会敲的命令，变成一个真正可用的产品——解决编码在哪跑、长任务怎么管、并发怎么限、输出怎么匹配用户目标这些"文档里不写"的问题。
+**✨ 精华总结：** 这篇 MoFlux 的文章讲了一个容易被忽视的运维真相：当交互流量恢复、系统把借给批处理的容量「收回」时，「恢复授权」和「恢复可用容量」其实是三件不同的事，中间隔着不可忽略的延迟。值得关注是因为它戳破了「配额一归还、性能立刻回来」的直觉——在推理引擎前置准入控制的实际场景里,保护交互流量这件事比想象中更微妙，做容量规划的人尤其该看一眼。
 
-值得关注的是，这类"单条命令 → 产品级服务"的落差，恰恰是绝大多数 AI/媒体工具从 demo 走向可用时最容易翻车的地方，但公开讨论极少。
+## 3. [From REST to MCP: Building a Self-Hosted AI Agent Stack That Achieves Rapid Context Forking](https://dev.to/tamizuddin/from-rest-to-mcp-building-a-self-hosted-ai-agent-stack-that-achieves-rapid-context-forking-2llm)
 
-## 3. [I Built a Free Threads Video Downloader — Here's What I Learned Shipping a Single-Purpose Tool](https://dev.to/muhammad_shakir_b1085c496/i-built-a-free-threads-video-downloader-heres-what-i-learned-shipping-a-single-purpose-tool-3ki9)
+**✨ 精华总结：** MCP 正在取代 REST 成为 AI Agent 与外部系统交互的新范式——它不只是换个传输协议，而是让 Agent 能真正「理解」系统里有哪些能力、怎么组合调用，而不是逐个硬编码 API 端点。这篇文章讲的是用 MCP + 自托管方案搭建一套支持「即时上下文分叉」（context forking）的 Agent 栈，核心价值在于：Agent 可以在不重启、不污染主上下文的前提下开出并行分支去探索不同任务路径，这对多步骤、需要试错的复杂任务来说是很实用的能力。如果你正在自己搭 Agent 基础设施，这套思路值得看一眼。
 
-**✨ 精华总结：** 有人做了个免费网页工具，专治Threads没下载按钮的毛病——粘贴链接就能存视频，不用装App、不索要奇怪权限。值得关注的点在于：它验证了「单点工具」的产品逻辑依然成立，与其忍受广告满天飞的臃肿应用，不如自己花几天造个干净轮子——这种「为自己解决问题」的思路，往往比追风口更容易做出真正好用的东西。
+## 4. [# I Built Toolkit360: One Simple Place for Everyday Digital Tools](https://dev.to/akash_max_d80b991c156d8db/-i-built-toolkit360-one-simple-place-for-everyday-digital-tools-1d6k)
 
-## 4. [Where to Sell Website Templates and UI Kits: 20+ Best Platforms](https://dev.to/digitalreach/where-to-sell-website-templates-and-ui-kits-20-best-platforms-4n18)
+**✨ 精华总结：** 有人把日常零散的数字工具——图片压缩、PDF转换、二维码生成、JSON格式化、发票制作等——整合到了一个叫 Toolkit360 的站点里，省去在多个网站间来回切换的麻烦。值得关注是因为这类"小需求"虽然单价低但调用频次高，聚合式工具箱正好切中了效率痛点，对经常处理杂项任务的用户可能是个实用的书签。目前信息量有限，实际体验还得看工具质量是否稳定、是否免费无广告。
 
-**✨ 精华总结：** 做了一套网站模板或 UI Kit，接下来最实际的问题就是去哪儿卖。这篇梳理了 20 多个平台，从 ThemesMotion 这类新兴市场到传统模板商城都有覆盖——关键价值在于它按「市场型 / 自建店铺型 / 曝光导向型」做了区分，帮你根据目标挑渠道，而不是盲目铺货。
+## 5. [A software update should not be able to stop the fridge](https://dev.to/newlinebreak-studio/a-software-update-should-not-be-able-to-stop-the-fridge-47ph)
 
-## 5. [Ouroboros: A Recursive Dev Loop Where AI Improves Code — Safely](https://dev.to/danielkrydynski/ouroboros-a-recursive-dev-loop-where-ai-improves-code-safely-34jd)
-
-**✨ 精华总结：** Krydynski 做了一个叫 Ouroboros 的开发工具，让 AI 代理能自动、持续地改进代码库，同时通过"安全护栏"避免改坏东西——它跑在 Nous Research 的 Hermes 代理框架上。这个方向值得关注，因为它把 AI 编程从"一问一答"推向"递归自改进循环"，而难点恰恰在于怎么让这种循环不失控。
+**✨ 精华总结：** 三星在韩国推送了一个尚在测试阶段的固件更新，结果直接把用户家里的冰箱搞黑屏、停止制冷。问题不在“更新可能出错”——这在任何团队都可能发生——而在于：一个还没验证完的更新，为什么能一路走到用户厨房里？冰箱不是手机，它的“变砖”意味着食物腐烂，这种关键家电的更新机制本该有更严格的灰度与回滚设计。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

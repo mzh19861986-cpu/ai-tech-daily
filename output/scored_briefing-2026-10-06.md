@@ -2,30 +2,32 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Release of Polars 2.0  (⭐ 7.0/10)
+## 🥇 Release of Polars 2.0  (⭐ 6.0/10)
 🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-Polars 2.0 正式发布了。Polars 是用 Rust 写的高性能 DataFrame 库，主打比 pandas 更快、更省内存，这次 2.0 是它第一个大版本更新，意味着 API 趋于稳定，可以放心用在生产环境了。如果你平时用 Python 处理数据、又嫌 pandas 在大数据集上慢，值得花时间试试它。
+Polars 2.0 正式发布了，这个用 Rust 写的高速 DataFrame 库迎来了首个大版本更新，性能和 API 稳定性都有明显提升。如果你平时用 Pandas 处理稍大规模的数据觉得慢，Polars 2.0 值得认真试试——它原生支持多线程和懒执行，在不少基准测试里比 Pandas 快好几倍。
 
-## 🥈 Mistral Large 4  (⭐ 5.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
-
-看起来你只给了标题，没有正文内容。把 Mistral Large 4 的具体信息（发布方公告、参数、benchmark、定价等）贴过来，我帮你提炼成 2-3 句的推荐式总结。
-
-## 🥉 Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
-🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
-
-2025年诺贝尔物理学奖授予Francis Halzen，表彰他在中微子天文学领域的奠基性贡献——他主导建造了南极冰立方（IceCube）探测器，利用南极冰层作为介质捕捉来自宇宙深处的高能中微子。这项工作的意义在于：中微子几乎不与物质作用，能穿越其他辐射无法穿透的极端环境，因此成为观测黑洞、超新星等宇宙极端事件的独特"信使"，冰立方的建成让人类第一次拥有了这类观测能力。
-
-## 4. The Early History of Smalltalk (1993)  (⭐ 4.0/10)
-🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
-
-Alan Kay 在这篇回忆录里复盘了 Smalltalk 的诞生过程：从 Xerox PARC 的 Dynabook 构想出发，把「面向对象」和「图形界面」真正做成了可运行的系统。它值得关注，因为今天几乎你用的每一套 GUI、每一种 OOP 语言，都能追溯到这群人当年对「个人计算应该是什么样」的思考。
-
-## 5. AI is now capable of developing its own inference hardware  (⭐ 2.0/10)
+## 🥈 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
 🔗 [hackernews](https://github.com/FeSens/openTPU)
 
-AI现在能自己设计推理芯片了。这意味着算法可以针对特定任务自动优化硬件架构，不再完全依赖人类工程师反复试错。如果这条路走通，芯片迭代速度会从「年」缩短到「周」，对算力饥渴的行业来说是个真正的拐点。
+AI现在能自主设计推理芯片了——不是辅助优化，而是从架构到布局全程自己搞定。这意味着芯片迭代不再卡在人类工程师的产能瓶颈上，AI可以按自己的需求定制硬件、快速试错，把「算法等芯片」变成「芯片追算法」。值得关注的是，这可能让专用推理硬件的进化速度进入一个新量级。
+
+## 🥉 Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+抱歉，我这边只收到了标题「Mistral Large 4」，没有看到具体的正文内容。
+
+可以把新闻全文或要点贴过来，我马上帮你提炼成 2-3 句有信息量的总结。
+
+## 4. Nobel Prize in Physics goes to Francis Halzen  (⭐ 4.0/10)
+🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
+
+2025年诺贝尔物理学奖授予了弗朗西斯·哈尔岑（Francis Halzen），以表彰他在中微子天文学领域的开创性工作。他是冰立方中微子天文台（IceCube）的核心领导者，该设施在南极冰层深处埋设数千个探测器，首次捕捉到了来自太阳系外的超高能中微子——这相当于打开了一扇观测宇宙的全新窗口，让我们不再只依赖光（电磁波）来看星星。值得关注的是，这标志着「多信使天文学」时代真正被认可：中微子几乎不与物质反应，能穿透任何屏障，携带着宇宙最狂暴事件（如活动星系核、伽马射线暴）的核心信息，是理解宇宙高能加速器机制的关键钥匙。
+
+## 5. The Early History of Smalltalk (1993)  (⭐ 3.0/10)
+🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
+
+Alan Kay 在 1993 年写的这篇回忆录，讲述了 Smalltalk 从 1970 年代 Xerox PARC 诞生到演化的早期历史。它值得一读，因为 Smalltalk 是第一个真正把「面向对象」和「图形界面」落地的语言环境，直接启发了后来的 Mac、Windows 乃至现代 IDE 的设计思路。如果你好奇今天编程世界的一些底层观念从哪来，这篇就是源头之一。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

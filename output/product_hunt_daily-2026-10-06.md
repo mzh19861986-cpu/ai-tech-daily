@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 1. [Brnch](https://www.producthunt.com/products/brnch)
 
-**💡 是什么 + 为什么值得试：** AUDR 提供了一套统一的开放标准，让不同 LLM Agent 的运行成本（token、调用次数等）能被一致地记录和对比，省得你为每个工具单独写一套埋点。如果你在做 Agent 的成本监控或跨模型比价，值得一看。
-
----
-## 2. [Doco](https://www.producthunt.com/products/doco-4)
-
-**💡 是什么 + 为什么值得试：** Doco 能根据你的场景和心情自动匹配适合的音乐，省去手动建歌单或反复切歌的麻烦。如果你常在工作、通勤或放松时不知道听什么，它值得一试。
+**💡 是什么 + 为什么值得试：** Brnch 想解决的是「AI agent 写代码越来越快，但代码托管还停留在人手动提 PR 那套」的问题。如果你已经在用 agent 批量生成和提交代码，可以看看它怎么把评审和托管流程适配到这种新节奏上。
 
 ---
-## 3. [ruOS](https://www.producthunt.com/products/ruos)
+## 2. [GeckIt](https://www.producthunt.com/products/geckit)
 
-**💡 是什么 + 为什么值得试：** ruOS 把云桌面和 AI agent 结合起来，你在浏览器里打开一个虚拟桌面，就能让 agent 直接操作里面的应用帮你干活，不用自己配环境、装工具。如果你想让 AI 真正“动手”完成任务而不是只给建议，可以试试它。
-
----
-## 4. [Ghostifier](https://www.producthunt.com/products/ghostifier)
-
-**💡 是什么 + 为什么值得试：** Ghostifier 帮你自动向各家平台发起数据删除请求，省去你逐一填表、发邮件的麻烦。如果你在意隐私、想清理散落在各服务商手里的个人数据，它值得一试。
+**💡 是什么 + 为什么值得试：** 如果你同时开多个 Claude Code 会话，切换起来容易乱、也记不住哪个聊到哪了，GeckIt 用一个看板把这些会话摆出来，拖拽管理进度和状态。适合会话开得多、想一眼看清全局的人。
 
 ---
-## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 3. [Extrovert](https://www.producthunt.com/products/extrovert)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 让 Claude Code 和 Codex 直接在浏览器里和你并排工作，省去了在编辑器和终端之间来回切换的麻烦。如果你想让 AI 编程助手边看网页边帮你改代码、查资料或调试，这个项目值得一试。
-
----
-## 6. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
-
-**💡 是什么 + 为什么值得试：** 如果你需要在本地管理笔记，又不想把内容传到云端，NoteWorthy 把 AI 能力（比如总结、问答）直接跑在你的设备上，兼顾隐私和效率。适合注重数据安全、又想用 AI 辅助整理笔记的人试试。
+**💡 是什么 + 为什么值得试：** Extrovert 能让你的 AI Agent 直接跑 LinkedIn 外联（发私信、跟进、批量触达），省掉手动一个个点开资料页复制粘贴的重复劳动——如果你的获客或招聘流程依赖 LinkedIn，值得花十分钟接进现有工作流试试。
 
 ---
-## 7. [Incredible](https://www.producthunt.com/products/incredible)
+## 4. [Coddy](https://www.producthunt.com/products/coddy)
 
-**💡 是什么 + 为什么值得试：** Incredible 能让你用语音直接操作电脑，省去找快捷键或点菜单的麻烦。如果你经常手忙脚乱或者想试试更自然的交互方式，它值得装来玩玩。
+**💡 是什么 + 为什么值得试：** Coddy 用短小课程让你在碎片时间上手 20 多种编程语言，适合想入门或换语言但总被长教程劝退的人。轻量、有趣、不废话，试试看能不能坚持过第一课。
 
 ---
-## 8. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 5. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
 
-**💡 是什么 + 为什么值得试：** 如果你受够了每次换 AI 工具都要重新交代一遍自己的背景、偏好和项目上下文，Willow Knowledge 就是把这层"个人记忆"抽出来单独管理，让不同 AI 都能接上同一个你。适合同时用好几个 AI 助手、又不想反复自我介绍的开发者试试。
+**💡 是什么 + 为什么值得试：** Willow Knowledge 能把你在 ChatGPT 等 AI 里积累的对话和知识，同步到本地变成一个可搜索、可整理的个人知识库，解决“聊过就忘、找不到”的问题。如果你经常用 AI 处理工作或学习，又想把有价值的内容沉淀下来，值得试试。
+
+---
+## 6. [OpenBot](https://www.producthunt.com/products/openbot-3)
+
+**💡 是什么 + 为什么值得试：** OpenBot 是个免费的本地开源聊天机器人，能让你在自己的机器上跑 Grok 风格的对话，不用 API key 也不用联网。如果你想低成本折腾个能多人一起用的 AI 助手、又在意数据不出本地，值得试试。
+
+---
+## 7. [Lecta](https://www.producthunt.com/products/lecta)
+
+**💡 是什么 + 为什么值得试：** Lecta 能把你的课堂笔记自动变成和朋友的互动小游戏，让复习不再枯燥。如果你平时记了笔记却提不起劲复习，可以试试用它把知识点变成游戏来巩固记忆。
+
+---
+## 8. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
+
+**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的就是买家消息回不过来，回慢了还可能丢单——这个开源工具能自动生成专业回复，几秒搞定，不用再手忙脚乱。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
