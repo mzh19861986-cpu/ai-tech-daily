@@ -6,7 +6,7 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学智慧——具体说是儒家「中庸」和道家「无为」这类思路——引进了自动驾驶的决策框架，让大语言模型在复杂交通场景里不只看数据和规则，还参考一套哲学化的权衡逻辑来平衡安全、效率和社会礼仪。值得关注的点在于：它试图解决纯数值优化和普通 LLM 决策都容易忽略的伦理与社交维度，比如该强硬还是该礼让、什么时候「不争」反而更优——这正好是当前自动驾驶最棘手、也最难量化的部分。
+✨ 这篇论文尝试把中国哲学智慧（比如中庸、道家的顺势而为）引入自动驾驶的决策系统，用检索增强的大语言模型来平衡安全、效率和社会规范之间的冲突。值得关注的点在于：现有自动驾驶决策基本是纯数值优化或纯预测，很少认真处理伦理和价值判断，而这项工作给出了一个把哲学原则工程化的新思路。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -14,17 +14,17 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 TabPFN「先验拟合网络」的思路用到了语言学习上：模型先在合成的、非语言的数据上训练，然后在上下文里直接学会一门自然语言，无需针对该语言做梯度更新。值得关注的是，它证明了「学会学习」这件事可以从表格数据迁移到语言，为少样本、甚至零微调的语言适应开辟了一条新路子。
+✨ 这篇论文把TabPFN那套"先验拟合网络"的思路从表格数据搬到了语言学习上：模型先在合成的、非语言的数据上预训练，然后完全不微调，直接靠上下文（in-context）去学一门自然语言。值得关注的是它验证了一个大胆假设——"学会怎么学"这件事本身可以跨模态迁移，语言能力或许不必从语言数据里长出来。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
 ## 技巧 3
 
-**VIN Cloning Explained: How Stolen Cars Get Legit-Looking VINs and How to Spot Them**
+**Door Jamb Sticker vs Dash VIN: What Each Label Tells You and How to Cross-Check Them**
 
-✨ VIN克隆是一种让二手车买家几乎无法通过常规查询识破的骗局：盗车者会找一辆同款同色、合法注册的车，把它的VIN复制到赃车上，这样你查VIN报告时显示的一切都是"干净的"。值得关注的是，光靠在线VIN解码根本抓不出来——真正能识破的是线下实体检查（比如铭牌铆钉、车架刻印）和纸质文件比对。
+✨ 买车时别只看挡风玻璃里那个VIN码——车门B柱上的标签藏着更多信息（生产日期、整车重量、原厂配置），而且和仪表台VIN、发动机舱VIN交叉比对，是识别事故车、拼装车、盗抢车最便宜的防坑手段。几个位置的VIN对不上，基本可以直接走人了。
 
-📎 [阅读原文](https://dev.to/vin_lookup_8dbd4710f77e9e/vin-cloning-explained-how-stolen-cars-get-legit-looking-vins-and-how-to-spot-them-1nab)
+📎 [阅读原文](https://dev.to/vin_lookup_8dbd4710f77e9e/door-jamb-sticker-vs-dash-vin-what-each-label-tells-you-and-how-to-cross-check-them-2apa)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

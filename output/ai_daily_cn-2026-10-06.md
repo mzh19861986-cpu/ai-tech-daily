@@ -4,27 +4,27 @@
 
 ## 📌 综合
 
-### 1. [Mistral Large 4](https://docs.mistral.ai/models/mistral-large-4-0)
+### 1. [米斯特拉尔大模型4](https://docs.mistral.ai/models/mistral-large-4-0)
 *hackernews*
-The title you provided is "Mistral Large 4," but the content section is empty. I can't summarize based on actual information—otherwise I'd just be guessing, and that would amount to fabricating news.
-
-Paste the main text here, and I'll immediately write you a 2-3 sentence summary.
+There is currently no reliable release information about "Mistral Large 4," and I cannot confirm whether this model actually exists, so I will not summarize or interpret it. If you can provide a specific source (official blog, release page, etc.), I can help you quickly break down its core highlights and why it is worth paying attention to.
 
 ### 2. [Mistral Large 4：“Le Chonk”](https://mistral.ai/news/mistral-large-4/)
 *hackernews*
-Mistral发布了新一代旗舰大模型Large 4，内部代号“Le Chonk”（法语意为“胖乎乎”，暗示参数规模大幅膨胀）。这是Mistral对标GPT-4o和Claude级别的正面硬刚，也是欧洲大模型在美国主导的赛道上最值得关注的一次冲刺。
+Mistral has released its latest flagship model, Mistral Large 4, internally codenamed “Le Chonk” (French for “chubby”), continuing to focus on open-source weights and a European homegrown AI approach. What is worth noting is its performance on multilingual and code tasks, and whether it can continue to beat closed-source rivals such as GPT-4o and Claude on cost-effectiveness—for teams that want self-deployment or to avoid U.S. cloud services, this is a real new option.
 
 ### 3. [Polars 2.0 版本发布](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 is the largest version update to date for this high-performance DataFrame library, with a focus on improving the stability of the query engine and API consistency. If you typically use pandas to handle data at the million-row scale or above, Polars 2.0 is worth a serious try—its advantages in multi-core parallelism and memory efficiency become very clear on large datasets.
+Polars 2.0 has been officially released, marking a major version update for this high-performance DataFrame library written in Rust. If you usually find pandas slow or memory-hungry when handling moderately large data, Polars' multi-threaded query engine and lazy evaluation model are worth trying—it typically delivers order-of-magnitude improvements in these two areas.
 
 ### 4. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-弗朗西斯·哈尔岑因在冰立方中微子天文台的奠基性工作而荣获诺贝尔物理学奖，该天文台利用南极冰盖探测来自深空的高能中微子。值得注意的是，这标志着中微子天文学正式成为观测宇宙的常规窗口——不同于光线或引力波，中微子能携带宇宙最剧烈事件（如超新星、黑洞吞噬）内部过程的直接信息，几乎不受阻挡地穿越亿万光年抵达地球。
+弗朗西斯·哈森因在冰立方中微子天文台的奠基性工作而荣获诺贝尔物理学奖。他领导建造了埋藏于南极冰层下的一立方公里探测器，首次捕捉到来自太阳系外的高能中微子，从而开创了中微子天文学这一新领域。这一成就值得关注，因为它使我们首次能够通过超大质量黑洞等宇宙中最剧烈过程发射出的幽灵般粒子来“看见”它们。
 
-### 5. [Smalltalk的早期历史（1993年）](https://worrydream.com/EarlyHistoryOfSmalltalk/)
+## 🤖 AI / 大模型
+
+### 1. [AI现在能够开发自己的推理硬件。](https://github.com/FeSens/openTPU)
 *hackernews*
-Alan Kay在这篇经典回顾中，讲述了Smalltalk从1970年代初在施乐PARC诞生的全过程——它并非凭空设计的语言，而是为了验证“面向对象”和“个人计算”这两个激进想法而成长起来的。值得注意的是，如今几乎所有主流编程语言都受其影响，但Kay本人认为，大多数人只抄袭了语法，却丢掉了真正的核心：消息传递和“让每个孩子都能用电脑思考”的初衷。
+AI can now design inference chips on its own—not helping humans optimize parameters, but autonomously completing the entire process from architecture exploration to hardware implementation. This means the iteration speed of chip design could be compressed from "months" to "days," the barrier to customized AI hardware significantly lowered, and in the future, every company working on models may have inference chips tailored specifically for its own models.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

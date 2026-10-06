@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Coddy](https://www.producthunt.com/products/coddy)
+## 1. [Lecta](https://www.producthunt.com/products/lecta)
 
-**💡 是什么 + 为什么值得试：** Coddy 把 20 多种语言的入门知识拆成几分钟一节的短课，适合通勤或摸鱼时随手学一点，不用啃厚书就能快速判断自己是否对某门语言感兴趣。
-
----
-## 2. [ruOS](https://www.producthunt.com/products/ruos)
-
-**💡 是什么 + 为什么值得试：** ruOS 是一个云端桌面，你可以在里面直接派 AI agent 干活，不用自己搭环境、写脚本，适合想让 AI 帮忙操作浏览器和桌面任务的人试试。
+**💡 是什么 + 为什么值得试：** Lecta 能把你枯燥的课堂笔记自动变成可以和朋友一起玩的小游戏，复习时不用再干巴巴地翻课本。如果你经常学完就忘、或者想找个不那么痛苦的方式巩固知识点，值得花几分钟试试。
 
 ---
-## 3. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 2. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** AUDR 给 AI agent 的每次运行定了一套统一的成本记录格式，让你能跨框架、跨供应商地追踪每个任务到底烧了多少钱。如果你在做 agent 应用却搞不清成本花在哪、或者想换个模型又担心账单失控，值得看一眼。
-
----
-## 4. [Rill Browser](https://www.producthunt.com/products/rill-3)
-
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器，让你在写代码或调试网页时不用来回切窗口就能调用 AI 助手。如果你经常一边查资料一边让 AI 改代码，这个能省不少切屏的功夫，值得一试。
+**💡 是什么 + 为什么值得试：** 如果你在 Etsy 开店，每天被买家消息（发货时间、尺寸、退换货）缠住，这个开源项目能用 AI 帮你几秒内生成专业回复，省下大量重复沟通的时间。它专为 Etsy 场景调过措辞，比通用 AI 更贴合平台语气，值得一试。
 
 ---
-## 5. [Brnch](https://www.producthunt.com/products/brnch)
+## 3. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
 
-**💡 是什么 + 为什么值得试：** Brnch 是一个面向 AI Agent 协作场景的现代代码托管平台——当多个 agent 或人+agent 混合提交代码时，它能帮你理清每条改动的来源和分支关系，避免传统 Git 工作流在自动化提交下的混乱。如果你正在跑多 agent 并发生成代码的实验，值得拿它管一管版本。
-
----
-## 6. [Chunk](https://www.producthunt.com/products/chunk-2)
-
-**💡 是什么 + 为什么值得试：** Chunk 是一款 macOS 上的时间块（time-blocking）工具，帮你把每天的待办直接排进日历时间轴，而不是只写一张做不完的清单。如果你试过日历排程却嫌手动拖拽太麻烦，它值得一试。
+**💡 是什么 + 为什么值得试：** Ari Helper 7 是一个注重隐私的本地 AI 助手，新增了照片和胶片工作室功能，适合想在自己设备上处理图像和视频、又不想把素材上传到云端的人。如果你在意数据隐私、同时需要 AI 辅助做图片或视频创作，可以试试它。
 
 ---
-## 7. [Doco](https://www.producthunt.com/products/doco-4)
+## 4. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** Doco 是一个按“公司/场景”帮你找歌的工具——比如你想找适合写代码、喝咖啡或开夜车时听的音乐，它直接按氛围推荐，不用自己费劲建歌单。如果你常觉得“不知道听什么但又不想随便放”，它省掉的就是这个纠结时间。
+**💡 是什么 + 为什么值得试：** iphone-use 让 AI agent 直接操作真实 iPhone，连没有开放 API 的 App 也能自动化点击、输入和流程控制。如果你需要做 iOS 自动化测试、批量操作或让 Agent 接管手机，这就是目前最直接的方案，无需越狱或改应用。
 
 ---
-## 8. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+## 5. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** 如果你在找一款能本地跑 AI、不把笔记传到云端的笔记工具，NoteWorthy 就是冲着这个需求来的——AI 功能全部在设备上完成，隐私和响应速度都更可控。想试试端侧 AI 怎么真正融进日常记笔记，这个项目值得一看。
+**💡 是什么 + 为什么值得试：** 这是一个可以观察AI角色自主生活的模拟世界，适合想了解多智能体行为或找灵感的人随便看看。它不用你写代码就能直观感受AI角色如何互动，当个动态小剧场挺有意思。
+
+---
+## 6. [Incredible](https://www.producthunt.com/products/incredible)
+
+**💡 是什么 + 为什么值得试：** Incredible 让你直接用嘴操控电脑，把重复的鼠标键盘操作换成一句话搞定，省下手腕和注意力。适合想偷懒或手不方便时提效的人，值得试试看语音控制到底能多顺手。
+
+---
+## 7. [Banger](https://www.producthunt.com/products/banger-mail)
+
+**💡 是什么 + 为什么值得试：** 如果你在手动跟进客户邮件上花的时间比谈单还多，Banger 能帮你用 AI 自动跑完从触达到跟进的全流程。想省下重复劳动、又不放心把客户关系完全交给黑盒工具的话，可以拿它试试。
+
+---
+## 8. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+
+**💡 是什么 + 为什么值得试：** Willow Knowledge 帮你把 AI 对话里散落的知识点整理成结构化笔记，省去手动复制粘贴的麻烦。适合经常用 AI 查资料、做研究的人试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

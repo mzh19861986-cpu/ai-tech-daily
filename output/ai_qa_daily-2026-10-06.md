@@ -4,35 +4,35 @@
 
 ## Q1: AI is now capable of developing its own inference hardware？
 
-**A:** AI现在能自己设计推理芯片了——不是优化现有架构，而是从零生成硬件方案。这意味着AI开始参与到“让自己跑得更快”的底层硬件设计中，可能大幅缩短专用芯片的迭代周期。值得关注的是，这会让AI算力的进化速度摆脱对人类芯片工程师的依赖。
+**A:** AI现在能自己设计推理芯片了——不是辅助优化，而是从架构探索到版图生成全流程自主完成。这意味着硬件迭代的瓶颈正从人类工程师的带宽，转移到算力和算法的自我进化速度上。当AI开始为自己造芯片，算力增长的飞轮可能比我们预想的转得更快。
 
 📎 更多阅读：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
 ## Q2: JetBrains reported a net financial loss first time in its tracked history？
 
-**A:** JetBrains 首次出现净亏损，打破了其长期盈利的记录——这家开发了 IntelliJ IDEA、PyCharm、WebStorm 等主流 IDE 的公司，一直是开发者工具领域最稳健的独立厂商之一。亏损本身值得关注，因为它可能意味着 AI 编程助手（如 Copilot、Cursor）正在侵蚀传统 IDE 的商业模式，而 JetBrains 在 AI 功能上的投入尚未转化为收入。
+**A:** JetBrains 首次出现净亏损，打破了公司自成立以来持续盈利的纪录。这家以 IntelliJ IDEA、Kotlin 和 Fleet 闻名的开发工具厂商，此番转亏主要受 AI 研发投入加大和订阅增长放缓的双重挤压。值得关注的是，连长期稳健的「开发者工具印钞机」都开始承压，说明 AI 正在重写整个 IDE 赛道的成本结构和竞争规则。
 
 📎 更多阅读：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
-## Q3: Beam: Reflection's 501B open-weight model？
+## Q3: Email Self Hosters - what are you using?？
 
-**A:** Beam 是 Reflection 发布的 501B 参数开源权重模型，主打大规模推理能力。值得关注的点在于：它是一个体量接近顶级闭源模型的开放权重方案，意味着开发者和研究者可以在自己的基础设施上部署和微调，而不必依赖 API。
+**A:** 有人讨论自建邮件服务器用什么方案，楼主目前在用 maddy 管理多个域名的邮箱和 catch-all，整体能用但体验不够顺滑——最大的痛点是 iOS 原生邮件客户端连接慢到让人抓狂。
 
-📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
-
-## Q4: Email Self Hosters - what are you using?？
-
-**A:** 有人在讨论自建邮件服务器的方案，楼主目前在用 **maddy**（一个轻量级的一体化邮件服务器），但遇到了一些小毛病，最头疼的是 iOS 原生邮件客户端连接极慢。
-
-如果你也在折腾自建邮箱，这个帖子值得翻翻——maddy 胜在部署简单、单二进制搞定多域名和 catch-all，但客户端兼容性和性能调优可能是坑，看看别人用什么方案能少走弯路。
+值得关注的是这个问题并非个例：自建邮件服务器的难点往往不在收发本身，而在客户端兼容性、IMAP 连接性能这些"最后一公里"体验上。如果你也在折腾自建邮箱，maddy 是个轻量选择，但要接受它和主流客户端磨合时的粗糙感。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## Q5: kahawai - an open source, modular media system？
+## Q4: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** Kahawai 是一个开源的模块化媒体系统，你可以把它理解成一套「自己动手拼装」的媒体处理/播放框架——想用什么编解码、什么界面、什么功能，都可以按模块自由组合，而不是被某个大厂的全家桶绑死。它值得关注的地方在于，媒体工具这块长期被少数闭源方案垄断，而 kahawai 把可插拔的架构做成了开源项目，适合那些想要完全掌控自己媒体管线、又不想从零造轮子的人。
+**A:** 这篇论文提出了 ADSD 框架，让 AI 智能体能自己诊断数值求解器"跑得不好"的根本原因，并自动发现可复用的改进技巧。关键在于它跳出了"能跑就行"的代码生成逻辑，把执行反馈从"报错/没报错"升级为"哪里弱、怎么修"——这对那些需要精度和性能的数值计算场景（比如科学仿真、工程求解）是个实质性突破。
 
-📎 更多阅读：[kahawai - an open source, modular media system](https://github.com/iksteen/kahawai)
+📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+
+## Q5: Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities？
+
+**A:** 这篇论文提出了一个叫「Proxy Confidence」的审计方法，用一个小型开源代理模型（surrogate）的 token 对数概率，来间接判断黑盒 LLM agent 即将执行的动作是否可能出错。值得关注的地方在于，它瞄准了一个真实痛点：GPT-4、Claude 这类前沿 API 不返回 token 概率，agent 自己说的置信度在关键错误上几乎等于瞎猜，而重复采样也没用（因为前沿模型太确定性了），所以这个「曲线救国」的思路算是填了个实用空白。
+
+📎 更多阅读：[Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities](https://arxiv.org/abs/2610.03894)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

@@ -2,32 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Mistral Large 4: "Le Chonk"  (⭐ 6.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/)
+## 🥇 AI is now capable of developing its own inference hardware  (⭐ 8.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
 
-Mistral 发布了新一代旗舰模型 Large 4，绰号“Le Chonk”（法语“胖乎乎”），主打更大的参数规模和更强的推理能力，直接对标 GPT-4o 和 Claude 3.5 Sonnet 这一档。值得关注的是它延续了 Mistral 一贯的开源+商业双轨策略，欧洲本土大模型在性能和合规性上的竞争力又往上顶了一截。
+AI现在能自己设计推理芯片了——不是微调，是从架构层面重新生成适合特定模型的推理硬件方案。这事值得关注的地方在于：过去芯片设计是人类工程师的活儿，现在AI开始反过来给自己造“身体”，这意味着硬件迭代速度可能不再受人类设计周期的限制。
 
 ## 🥈 Release of Polars 2.0  (⭐ 6.0/10)
 🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-Polars 2.0 正式发布了，这是这个用 Rust 写的高性能 DataFrame 库的一次大版本更新。如果你平时用 pandas 处理稍大规模的数据觉得慢或者吃内存，Polars 的多线程和惰性执行能带来数量级的提速，2.0 版本意味着 API 趋于稳定，可以更放心地用在生产环境了。
+Polars 2.0 正式发布了——这个用 Rust 写的 DataFrame 库，主打的就是比 pandas 快得多，尤其在处理大数据集时性能差距明显。如果你平时用 Python 做数据分析、又嫌 pandas 慢，这次 2.0 是个不错的升级节点，值得试试。
 
 ## 🥉 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://docs.mistral.ai/models/mistral-large-4-0)
 
-Mistral 发布了新一代旗舰大模型 Mistral Large 4，在推理、代码和多语言能力上都有明显提升，继续走开源+商业授权双轨路线。值得关注的是，它把「欧洲版 GPT-4 替代方案」这个定位做得越来越扎实，对不想绑定美国云厂商的企业来说，多了一个靠谱选项。
+Mistral 发布了 Large 4，这是他们最新的旗舰大模型，主打更强的推理能力和多语言支持，同时保持一贯的高效推理速度。值得关注的是，Mistral 一直走「小而精」路线，这次升级意味着开源权重模型和闭源巨头之间的差距可能进一步缩小——对想自部署高质量模型的团队来说，是个实打实的新选项。
 
-## 4. Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
-🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
+## 4. Mistral Large 4: "Le Chonk"  (⭐ 4.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/)
 
-2025年诺贝尔物理学奖颁给了弗朗西斯·哈尔岑，表彰他在中微子天文学领域的开创性工作——他主导建造了埋在南极冰层下的「冰立方」探测器，用一立方公里的冰来捕捉来自宇宙深处的中微子。
+Mistral 发布了旗舰模型 Large 4，内部代号「Le Chonk」（法语里的“胖猫”），主打更强的推理和代码能力，同时保持了 Mistral 一贯的开放权重路线。值得关注的点在于：欧洲终于有了一个能在第一梯队掰手腕的开源级选手，对不想被 OpenAI/Google 锁死的团队来说，多了一个真正可用的选项。
 
-这事儿值得关注，是因为它打开了一扇观测宇宙的全新窗口：传统望远镜看的是光，而中微子能穿透一切、几乎不受阻挡，让人类第一次能「看见」超新星爆发、黑洞吞噬等极端事件内部到底发生了什么。
-
-## 5. The Early History of Smalltalk (1993)  (⭐ 3.0/10)
+## 5. The Early History of Smalltalk (1993)  (⭐ 4.0/10)
 🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
 
-Alan Kay 在这篇经典回顾里讲述了 Smalltalk 从 1970 年代 Xerox PARC 诞生的早期历程——它不只是一门语言，更是一整套「面向对象 + 图形界面 + 动态环境」的计算愿景。值得关注的是，今天几乎所有主流编程语言和 IDE 都能追溯到它当年提出的消息传递、对象模型和实时编程环境这些核心思想。如果你想理解「现代软件为什么会长成今天这样」，这是一篇绕不开的源头文献。
+这篇由 Alan Kay 撰写的经典文章回顾了 Smalltalk 语言的诞生过程，以及它背后那套影响深远的设计哲学。值得关注的是，Smalltalk 不仅是第一个真正的面向对象编程环境，还催生了图形界面、动态编译等现代开发习以为常的概念。如果你想理解今天编程语言和 IDE 为什么长这样，这是必读的一手史料。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
