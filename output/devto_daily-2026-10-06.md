@@ -2,27 +2,29 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Cookie and Session Authentication Basics — What Happens Behind a wp-admin Login](https://dev.to/susumun/cookie-and-session-authentication-basics-what-happens-behind-a-wp-admin-login-4ii4)
+## 1. [We Open Sourced Our Web Crawler. Here's How to Run a Node.](https://dev.to/cl0qsearch/we-open-sourced-our-web-crawler-heres-how-to-run-a-node-145)
 
-**✨ 精华总结：** 你输入一次密码，WordPress 就能在后续几十次页面加载中认得你——靠的是「Cookie + Nonce」组合：登录成功后服务器种下认证 Cookie（你是谁的凭证），而每个敏感操作再附带一个 Nonce（本次请求的临时令牌），两者配合既维持了状态又防住了 CSRF。
+**✨ 精华总结：** cl0q 把自己搜索引擎背后的爬虫开源了，任何人都能读代码、跑节点，帮它一起索引开放网络。值得关注的原因是它想做的正是大引擎不做的事——让「抓了什么、怎么排序、数据去哪了」全部透明可查。目前它已收录 3850 万个域名。
 
-值得关注的点在于它和主流的服务端 Session 模型走了不同路线：WordPress 把状态存在客户端 Cookie 里，服务端不保存会话记录，好处是无需共享 Session 存储、天然适合多机部署，代价是注销和「强制下线」的控制力更弱。做 wp-admin 相关开发或安全审计的话，理解这套机制是绕不开的基础。
+## 2. [Researchers Develop Method to Train LLMs for High-Performance Chess with Accurate Move Explanations](https://dev.to/natcher/researchers-develop-method-to-train-llms-for-high-performance-chess-with-accurate-move-explanations-3o55)
 
-## 2. [Get every new UK company in your industry each morning](https://dev.to/wballztrading1/get-every-new-uk-company-in-your-industry-each-morning-3o54)
+**✨ 精华总结：** 普林斯顿团队搞了个新训练方法，让大语言模型不仅能下出高水平国际象棋，还能把每一步的决策逻辑说清楚——不是那种事后硬编的解释，而是和棋力同步长出来的。这事的看点在于，它打破了「要么强但黑箱、要么能解释但菜」的旧取舍，说明可解释性和高性能未必互相拖后腿，对需要AI做复杂决策又要讲得出理由的场景挺有参考价值。
 
-**✨ 精华总结：** 英国公司注册处（Companies House）的数据是公开的，每家新注册公司都会在一两天内出现在上面，附带着行业代码和注册地址——这基本是免费获取B2B新客户线索最好的来源之一。问题在于官网一次只能查一家公司，没法批量拉取，所以真正的价值在于有没有工具能帮你按行业自动抓取、每天早上把新公司名单送到你面前。
+## 3. [Googlebook Is Google's Gemini-Enabled Laptop Family With Android Integration](https://dev.to/alifar/googlebook-is-googles-gemini-enabled-laptop-family-with-android-integration-24c4)
 
-## 3. [How to Govern 3 Named Image Transformations and Inline Operation Lists](https://dev.to/ethanbrooks1486/how-to-govern-3-named-image-transformations-and-inline-operation-lists-3b1d)
+**✨ 精华总结：** Google正式发布Googlebook笔记本产品线，最大特点是深度整合Android生态——不仅支持运行Android应用，还融合了Android和ChromeOS两套系统的特性，核心场景是手机和笔记本之间的无缝工作流切换。简单说，这不是又一款Chromebook换皮，而是Google认真做的一个新品类，如果你日常重度依赖Android手机，这类设备的多端协同体验可能比传统笔记本更顺手。
 
-**✨ 精华总结：** 在 B2B SaaS 产品里，与其让每张图片变体各自过审，不如把同一张源图的所有公开版本绑定到一次审核决策上：通过命名转换固定三种展示角色并做版本化管理，实验性变体则用内联操作列表保留、审核通过前一律不可发布。这个设计值得关注，因为它把治理焦点从"图片文件"收回到了"审核后的字节"——卖家替换照片时，审核结论才会真正决定哪些内容能到达买家。
+## 4. [Also I like saying i'm from Cheltenham a lot (which I should probably stop doing) and the word Beans!](https://dev.to/adpocalyptic/i-also-like-saying-beans-a-lot-and-that-im-from-cheltenham-which-i-really-need-to-stop-1iml)
 
-## 4. [Small Business SLA Dashboards Compare Cohort Uptime for Rollback-Safe Healthtech Experiments](https://dev.to/yannicksterling6563/small-business-sla-dashboards-compare-cohort-uptime-for-rollback-safe-healthtech-experiments-39kn)
+**✨ 精华总结：** 这段内容看起来是一条社交媒体动态的片段，信息非常碎片化，没有实质性的科技新闻价值。如果你是想让我基于这个标题和内容做提炼总结，我没办法从中提取出可靠的技术信息——它更像是某个人的随性发言（提到来自 Cheltenham、喜欢说 "Beans!"，以及 "Adpocalyptic" 这个词），不构成一条可报道的新闻。
 
-**✨ 精华总结：** 如果你在健康科技公司做实验发布，别只盯着整体 SLA 数字。真正的风险在于：某个租户群组（cohort）悄悄恶化，但没有独立的上报率/延迟证据，等你发现时已经没法干净回滚了。所以关键在于先定义「什么信号算证据充足」，再让 Uptime Kuma、Grafana Cloud、Datadog 或自建指标 API 各自承担明确的信号路径——它们不是四个可互换的面板，而是四条需要从埋点一路保真到管理后台的链路。
+如果你手头有真正的技术新闻链接或完整内容，发给我，我可以按你要求的方式（2-3 句、说清「是什么」和「为什么值得关注」、专业但不生硬）帮你提炼。
 
-## 5. [AI Photo Realism: Why Phone Snapshots Beat Studio Shots](https://dev.to/nadiawhitfield/ai-photo-realism-why-phone-snapshots-beat-studio-shots-4jak)
+## 5. [How to extract every image from a web page: srcset, lazy loading and tracking pixels (Python & JS)](https://dev.to/sstempresarial/how-to-extract-every-image-from-a-web-page-srcset-lazy-loading-and-tracking-pixels-python-js-2ikk)
 
-**✨ 精华总结：** 做AI人像的人迟早会撞上同一堵墙：提示词写得完美无缺，85毫米镜头、柔光箱、无缝背景，图像美得像杂志大片。一发出去就有人评论："这是AI吧？"而一张客厅顶灯下随手拍的、有点糊、背景还堆着快递盒的照片，反而没人怀疑。原因很简单：AI太擅长制造"完美"了，而真实的生活从不完美——正是那些瑕疵（噪点、偏色、杂乱的背景）在告诉人眼"这是真的"，所以想让AI图像骗过人，现在得刻意往提示词里加"不完美"。
+**✨ 精华总结：** **核心价值：** 现代网页的图片往往不在 `<img src>` 里——它们藏在 `srcset`（响应式多分辨率）、`data-src`/`data-lazy`（懒加载占位）和 `<picture>` 元素中，而 `src` 常常只是个 1x1 占位 GIF 或追踪像素。想抓全图就得逐层解析这些属性，并识别出真正的图片 URL。
+
+**为什么值得关注：** 文章直接给出可用的 Python 和 JavaScript 代码，还列出了作者踩过的坑，适合任何一个被"抓回来一堆缩略图"折磨过的人。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
