@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Coderunner: Coding Challenges – Can You Beat the Leaderboard?](https://dev.to/coderunner_speedrun_03260/coderunner-coding-challenges-can-you-beat-the-leaderboard-3fol)
+## 1. [Migrating away from wordpress using Claude.](https://dev.to/msnisha/migrating-away-from-wordpress-using-claude-5g25)
 
-**✨ 精华总结：** Coderunner把速通（speedrun）玩法搬到了编程挑战上——每个题目都有计时，成绩实时上榜，目标不是"能做出来"，而是"最快做对"。它不需要注册就能直接开玩，本质上是把LeetCode式的刷题变成了有竞争感和观赏性的竞技场。如果你享受那种"再快0.3秒就能超过榜首"的紧迫感，这个东西会很上瘾。
+**✨ 精华总结：** 有人用 Claude 把跑了多年的 WordPress 博客整个迁移走了，起因是隔三差五被黑客或漏洞插件搞出状况——虽然容器隔离和定期备份兜住了底，但长期维护的疲惫感最终还是压过了惰性。值得关注的点在于：AI 正在让「换个技术栈重写一遍」这件原本很劝退的事变得可行，个人站长面对老旧系统时的迁移成本可能比想象中低得多。
 
-## 2. [ميسترال يعود: لو تشونك يتفوق على جي بي تي-6 أسترا وكلود](https://dev.to/yusuf_khalidd/mystrl-ywd-lw-tshwnk-ytfwq-l-jy-by-ty-6-str-wklwd-20mo)
+## 2. [Letting Claude Code drive a browser you've logged into once](https://dev.to/lmcp/letting-claude-code-drive-a-browser-youve-logged-into-once-2c3b)
 
-**✨ 精华总结：** Mistral 在 2026 年 10 月 6 日发布了 1.05 万亿参数的新模型，内部代号「Le Chonk」，直接对标 GPT-6 Astra 和 Claude Opus 5.5。最抓眼球的是网络安全基准测试拿了 82%，而两个竞品几乎为零——不过这个对比的公平性还需要验证。
+**✨ 精华总结：** 很多人真正需要的数据都锁在登录墙后面——分析后台、管理面板、供应商门户，这些要么没API，要么申请流程繁琐。LMCP这个Mac上的免费MCP服务器提供了14个浏览器工具，让Claude Code能直接操作你已经登录的网站，省去绕API的麻烦。值得关注的点在于：它把「AI代理能不能用我登录的网站」这个更实际的问题变成了可落地的方案，而不是停留在「能不能浏览网页」的表面层次。
 
-## 3. [Google Zero-Click Searches Reach 68%: How Businesses Should Rethink SEO](https://dev.to/alifar/google-zero-click-searches-reach-68-how-businesses-should-rethink-seo-38kg)
+## 3. [Zero-Downtime Database Migrations: Shadow Tables, Dual-Writing, and Schema Expansion](https://dev.to/usman_khan_io/zero-downtime-database-migrations-shadow-tables-dual-writing-and-schema-expansion-9jh)
 
-**✨ 精华总结：** 谷歌搜索正在变成“答案引擎”而不是“流量入口”——2026年前四个月，美国68%的谷歌搜索在用户点开任何外部网站之前就结束了。这意味着企业再把SEO等同于“把点击量做上去”已经过时了，真正该盯的是你的品牌有没有出现在AI摘要、知识面板这些“零点击”结果里——曝光本身正在取代访问成为新的战场。
+**✨ 精华总结：** 数据库大表改结构时，直接跑 `ALTER TABLE` 会锁表，把线上请求全部卡死。这篇文章给了一套实战方案：用影子表 + 双写 + 渐进式 schema 扩展，让迁移全程不锁表、不掉线。做 B2B SaaS 或者任何不能停机的系统，这套模式基本是标配了。
 
-## 4. [Building Web ScreenShare using WebRTC](https://dev.to/kaushiknishchay/building-web-screenshare-using-webrtc-1e3g)
+## 4. [มิสทรัลกลับมาแล้ว: เลอ ชงค์ โค่น GPT-6 Astra และ Claude](https://dev.to/thanawat_wonchai/misthralklabmaaaelw-el-chngkh-okhn-gpt-6-astra-aela-claude-36j9)
 
-**✨ 精华总结：** WebRTC 现在能让浏览器直接实现屏幕共享，不需要装任何插件或客户端，纯靠网页代码就能跑。它值得关注是因为这意味着跨平台（Android/iOS/Windows/Linux/Mac）的实时协作工具可以做得更轻——打开浏览器就能共享屏幕，对做远程会议、在线教学或技术支持类产品的团队来说，是个很实用的技术选项。
+**✨ 精华总结：** Mistral在沉寂近一年后，于2026年10月6日发布了一款名为"Le Chonk"的1万亿参数新模型，一举在CyberBench基准测试中拿下82%的成绩，击败了GPT-6 Astra和Claude Opus。值得关注的是，这家法国公司此前在开源权重领域的话题度已被Kimi、DeepSeek、GLM和Qwen盖过，这次回归意味着欧洲前沿模型重新回到了顶级竞争牌桌上。
 
-## 5. [Why Your AI App Works on Localhost but Fails After Deployment](https://dev.to/aman_singh_0de8986518e630/why-your-ai-app-works-on-localhost-but-fails-after-deployment-24od)
+## 5. [Form Friction Analysis: Designing High-Converting Multi-Step Checkout Flows](https://dev.to/sameer_hassan/form-friction-analysis-designing-high-converting-multi-step-checkout-flows-4i95)
 
-**✨ 精华总结：** 你的AI应用在本地跑得好好的，一部署就502——问题往往不在模型，而在本地环境“骗”了你：localhost绕过了反向代理、超时限制、并发压力和资源隔离，这些在生产环境一个都不会少。值得关注是因为这类FastAPI/RAG/Agent应用的部署翻车极其普遍，而排查方向通常被错误地引向代码或模型本身。提前了解这些差异，能帮你在上线前就把坑填掉，而不是等用户先发现。
+**✨ 精华总结：** 这篇讲的是电商/注册表单为什么转化率低——平均只有2.4%，97%的人填到一半就跑了，核心原因是"认知摩擦"：一上来就甩给用户12个以上的输入框，视觉上像堵墙，直接劝退。
+
+值得关注的是，作者提出的解法是多步结账流程（Multi-Step Checkout），把大表单拆成小步骤来降低心理负担。如果你在做任何需要用户填信息的业务，这套拆解思路比单纯优化按钮颜色要值钱得多。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

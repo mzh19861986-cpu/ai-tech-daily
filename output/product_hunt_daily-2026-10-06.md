@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 1. [Ghostifier](https://www.producthunt.com/products/ghostifier)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器里，让你在查资料、调页面时不用来回切换窗口，AI 就能在当前页面上给你改代码、解释报错。如果你经常一边看文档一边写前端或调试网页，它省下的切屏时间会很明显。
-
----
-## 2. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
-
-**💡 是什么 + 为什么值得试：** AUDR 给 AI agent 的运行成本提供了一套统一的记录标准，让你不用自己设计埋点格式就能追踪每次调用花了多少钱。如果你的 agent 接了好几个模型或工具、账单对不上，试试它能省掉不少对账的麻烦。
+**💡 是什么 + 为什么值得试：** 如果你受够了给各家平台发数据删除邮件却石沉大海，Ghostifier 能自动帮你生成并追踪这些请求，让“被遗忘权”真正落地。适合在意隐私、又不想手动折腾的用户试试。
 
 ---
-## 3. [ruOS](https://www.producthunt.com/products/ruos)
+## 2. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
 
-**💡 是什么 + 为什么值得试：** ruOS 把 AI agent 直接塞进一个云端桌面环境里，你开个浏览器就能让它替你操作软件、跑任务，不用自己配环境或盯流程。如果你想让 agent 真正“动手干活”而不是只聊天，这个可以试试。
-
----
-## 4. [Brnch](https://www.producthunt.com/products/brnch)
-
-**💡 是什么 + 为什么值得试：** Brnch 是一个面向 AI Agent 时代的代码托管平台，让你在同一套流程里管理人类和 agent 提交的代码。如果你正在用 AI 写代码、却苦于 agent 的改动和人类协作混在一起难以追踪，它值得一试。
+**💡 是什么 + 为什么值得试：** MCP 服务器在你审批后偷偷更新了权限或行为，你很难发现——mcpgawk 就是帮你盯着这种"批后变更"的。如果你在用 MCP 生态又在意供应链安全，值得试一下。
 
 ---
-## 5. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
+## 3. [Awakado](https://www.producthunt.com/products/awakado)
 
-**💡 是什么 + 为什么值得试：** MCP 服务器在你批准后偷偷更新了代码或工具定义，mcpgawk 能帮你发现这种静默变更，避免供应链风险。如果你在用 Claude Desktop 或其他 MCP 客户端，这个工具值得加上。
-
----
-## 6. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，动动嘴就能执行操作，省去键鼠切换的麻烦。如果你经常边忙别的事边操作电脑，或者想试试更自然的交互方式，它值得一装。
+**💡 是什么 + 为什么值得试：** Awakado 能在你的 Mac 上跑 AI agent 时阻止系统自动休眠，避免任务跑到一半因为屏幕关闭或睡眠而中断。如果你经常挂着本地模型或长时间跑 agent 任务，这类小工具能省掉手动改电源设置的麻烦，值得一试。
 
 ---
-## 7. [StayCharted](https://www.producthunt.com/products/staycharted)
+## 4. [GeckIt](https://www.producthunt.com/products/geckit)
 
-**💡 是什么 + 为什么值得试：** 如果你想按自己的分类标准训练一个能同时认文字和图片的模型，又不想写代码，StayCharted 就是干这个的——上传你的类别和样本，它帮你把模型训出来。
+**💡 是什么 + 为什么值得试：** GeckIt 把你的 Claude Code 对话按看板方式管理，让你一眼看清哪些任务在做、哪些卡住了、哪些已完成，不用再翻一长串历史记录找上下文。如果你同时跑多个 Claude Code 会话，它能把散落的对话变成可追踪的工作流。
 
 ---
-## 8. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 5. [CodeCrab](https://www.producthunt.com/products/codecrab)
 
-**💡 是什么 + 为什么值得试：** 如果你受够每次开新对话都要重新交代背景，Willow Knowledge 给 AI 加了一层可复用的个人知识库，让它跨会话记住你的项目、偏好和历史决策。适合长期用 AI 干活、又懒得反复贴上下文的人试试。
+**💡 是什么 + 为什么值得试：** CodeCrab 在你的本地机器上审查 PR，代码不用上传到任何云端服务——适合对代码隐私有要求、又不想手动 review 每个 diff 的团队。如果你嫌现有 AI review 工具要传代码或依赖 API，可以试试它。
+
+---
+## 6. [Brnch](https://www.producthunt.com/products/brnch)
+
+**💡 是什么 + 为什么值得试：** Brnch 是面向 AI Agent 时代的现代代码托管平台，让你把 Agent 生成的代码、分支和变更像管理人类协作一样集中托管和追踪。如果你正在用多个 Agent 写代码却苦于没有合适的托管流程，可以试试它。
+
+---
+## 7. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 是一个云端桌面环境，让 AI Agent 直接在里面帮你操作应用、跑任务，省去自己手动点来点去的麻烦。如果你想让 AI 真正“动手干活”而不是只聊天，可以试试它。
+
+---
+## 8. [Scumble](https://www.producthunt.com/products/scumble)
+
+**💡 是什么 + 为什么值得试：** 如果你在跑 AI 修复/局部重绘（inpainting）时总要靠命令行或简陋脚本凑合，Scumble 是个开源的图形编辑器，专门为这类工作流做了界面。想省掉手写拼接和批处理胶水代码的话，值得试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
