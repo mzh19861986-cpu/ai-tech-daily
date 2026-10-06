@@ -4,31 +4,31 @@
 
 ## Q1: Beam: Reflection's 501B open-weight model？
 
-**A:** Beam 是 Reflection 推出的一个 501B 参数的开源权重模型，主打超大规模下的推理与生成能力。值得关注是因为它把“开放权重”推到了 500B 这个量级，让研究者和企业能在本地或私有环境里部署接近顶级闭源模型的能力，而不必依赖 API。
+**A:** Beam 是 Reflection 推出的一个 501B 参数的开源权重模型，主打用强化学习提升推理和工具调用能力而不是单纯堆规模。它值得关注是因为这个体量加上开放权重，意味着团队可以在自己的基础设施上跑接近闭源前沿水平的模型，对成本和数据控制敏感的场景尤其有吸引力。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## Q2: Dust: Pretraining Transformers Without Backpropagation？
 
-**A:** Dust 是一种无需反向传播就能预训练 Transformer 的新方法，它用前向-前向算法替代了传统的梯度回传。这意味着训练大模型可能不再需要存储庞大的激活值，显存占用和计算开销有望大幅降低——对算力吃紧的团队来说，这是条值得盯紧的技术路线。
+**A:** Dust 是一种不依赖反向传播就能预训练 Transformer 的方法，它用前向-前向算法（forward-forward）替代传统的梯度回传，直接在前向过程中完成权重更新。这意味着训练可以更贴近大脑的局部学习机制，也有望绕开反向传播对内存和计算图的依赖，让大模型训练在能耗和硬件适配上多一条新路。
 
 📎 更多阅读：[Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 
 ## Q3: Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates？
 
-**A:** Opus 5.5 自主智能体在无机材料数据库中筛选出两种有望在室温下工作的磁性半导体候选材料，全程由 AI 驱动、无需人工指定方向。这类材料若能落地，意味着未来芯片有可能同时用电子电荷和自旋来存储与运算信息，从而突破现有半导体在功耗和密度上的瓶颈。
+**A:** Anthropic的Opus 5.5智能体在材料科学领域取得突破，自主发现了两种室温磁性半导体候选材料——这类材料能同时利用电子的电荷和自旋属性，是开发低功耗自旋电子器件的关键，但长期以来极难在室温下稳定存在。这次发现的意义不只在材料本身，更在于证明了AI智能体可以独立完成从假设生成到筛选验证的科研流程，为加速新材料发现提供了一条可复制的新路径。
 
 📎 更多阅读：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
 
 ## Q4: An algorithmic failure beneath the secret ballot？
 
-**A:** 这篇文章讨论的是：**秘密投票制度背后存在一个算法层面的结构性失败**——即便选票本身是匿名的，投票系统的设计缺陷仍可能通过数据关联、时序分析或统计推断反向识别选民身份或操纵结果。简单说，就是「匿名」在算法面前可能只是假象。值得关注是因为它提醒我们：隐私保护不能只靠制度承诺，技术实现层面的漏洞同样能瓦解整个保密机制。
+**A:** 这篇文章讨论的是电子投票系统里一个被忽视的算法缺陷：即使投票内容加密、选票保密，系统的计票或验证环节仍可能因算法设计问题泄露或歪曲选民的真实意图。值得关注的是，它提醒我们「秘密投票」不只是加密问题，更是整个算法链条的可靠性问题——任何一环出错，民主程序的信任基础都会被动摇。
 
 📎 更多阅读：[An algorithmic failure beneath the secret ballot](https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/)
 
 ## Q5: Email Self Hosters - what are you using?？
 
-**A:** 看到有朋友在讨论自建邮件服务器，原帖主用的是 **maddy**——一个轻量的开源邮件服务端（SMTP/IMAP一体），适合给多个域名做邮箱或 catch-all 转发。但他遇到了一个很实际的痛点：**iOS 原生邮件客户端连接 maddy 特别慢**，这大概是自建邮件最劝退的体验问题之一，因为性能调优和客户端兼容性往往是自建方案的隐藏坑。
+**A:** 自己搭邮件服务器的人最近在讨论用什么方案，有人用 maddy 管多个域名的邮箱和 catch-all 转发，但遇到个挺烦的问题：iOS 原生邮件客户端连上去慢得要命。自建邮件的痛点往往不在服务端能不能跑起来，而在客户端兼容性和连接体验——这恰恰是大多数人最后放弃自建、回去用托管服务的原因。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
