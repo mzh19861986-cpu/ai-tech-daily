@@ -156,7 +156,7 @@ TEMPLATE = """<!DOCTYPE html>
         }}
     </style>
     <!-- 隐私友好流量统计 - Cloudflare Web Analytics（只有你能看到数据） -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "your-token-here"}'></script>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "your-token-here"}}'></script>
 </head>
 <body>
     <nav class="nav">
@@ -622,22 +622,7 @@ def build_about() -> str:
         欢迎通过 <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a> 联系我们。
     </p>
     """
-    <p>A: 每天自动更新，一般早上就能看到新的日报。</p>
-
-    <h3>Q: 可以订阅吗？</h3>
-    <p>A: 可以！用 RSS Feed 订阅，或者留下邮箱订阅 Newsletter。</p>
-
-    <h3>Q: 内容准确吗？</h3>
-    <p>A: 内容由 AI 生成，仅供参考。重要信息请自行核实。</p>
-
-    <div style="margin-top: 2.5rem; padding: 1.75rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 10px; text-align: center;">
-        <p style="margin: 0 0 0.5rem 0; font-weight: 600; color: #1a1a1a;">有问题或建议？</p>
-        <p style="margin: 0; color: #666;">
-            <a href="https://github.com/mzh19861986-cpu/ai-tech-daily/issues" style="color: #1a1a1a; font-weight: 500;">在 GitHub 提 Issue →</a>
-        </p>
-    </div>
-    """
-    return TEMPLATE.format(title="About", description="关于 AI Tech Daily - 一个完全由 AI Agent 自动运行的技术日报系统，每天自动抓取、分析、生成 AI 相关内容。", content=content)
+    return TEMPLATE.format(title="About", description="关于 AI Tech Daily - 专注 AI 领域的技术资讯站，每天更新最新 AI 动态、工具推荐和深度分析。", content=content)
 
 
 def build_tools_ranking() -> str:
