@@ -164,7 +164,6 @@ TEMPLATE = """<!DOCTYPE html>
         <a href="./tools.html">🛠️ Tools</a>
         <a href="./monetization.html">💰 Monetize</a>
         <a href="./about.html">ℹ️ About</a>
-        <a href="./status.html">📊 Status</a>
         <a href="./sponsor.html">💛 Sponsor</a>
         <a href="./feed.xml">📡 RSS</a>
         <input type="search" id="searchInput" placeholder="🔍 搜索文章..." style="float: right; padding: 0.3rem 0.8rem; border: 1px solid #ddd; border-radius: 20px; font-size: 0.9rem; width: 150px;">
@@ -590,38 +589,39 @@ def build_about() -> str:
 
     <h2>这是什么？</h2>
     <p>
-        <strong>AI Tech Daily</strong> 是一个完全由 AI Agent 自动运行的技术日报系统。
-        它每天自动从 7 个数据源抓取最新内容，用 DeepSeek AI 进行分析、总结、分类，
-        然后生成多份不同角度的日报，发布到这个网站。
+        <strong>AI Tech Daily</strong> 是一个专注 AI 领域的技术资讯站。
+        我们每天整理全球最重要的 AI 技术动态，覆盖大模型、开发工具、行业应用、创业案例等方向，
+        帮你用最少的时间掌握 AI 圈的最新进展。
     </p>
 
-    <h2>它是怎么工作的？</h2>
-    <p>整个系统由一个"母体" Orchestrator 管控，多个"子智能体"并行工作：</p>
+    <h2>我们提供什么？</h2>
     <ul>
-        <li>🔍 <strong>Fetcher Agent</strong>：从 Hacker News、Lobsters、GitHub Trending、Product Hunt、Dev.to 等数据源抓取内容</li>
-        <li>🧠 <strong>Processor Agent</strong>：用 DeepSeek AI 生成摘要、翻译、深度分析、打分</li>
-        <li>📝 <strong>Publisher Agent</strong>：把内容整理成不同格式的日报</li>
-        <li>🛡️ <strong>Security Agent</strong>：检查内容合规性</li>
-        <li>📊 <strong>Monitor Agent</strong>：监控运行状态</li>
+        <li>🌅 <strong>每日 AI 日报</strong>：中英文双语，快速掌握当天大事</li>
+        <li>🔬 <strong>深度分析</strong>：重要事件的来龙去脉和影响解读</li>
+        <li>🛠️ <strong>工具推荐</strong>：精选好用的 AI 工具，附真实使用体验</li>
+        <li>💡 <strong>开发者技巧</strong>：AI 编程、提示词、工作流优化</li>
+        <li>📈 <strong>行业动态</strong>：融资、发布、政策、趋势</li>
     </ul>
 
     <h2>为什么做这个？</h2>
     <p>
-        信息太多了，每天要看好几个网站才能知道 AI 圈发生了什么。
-        这个项目就是想帮大家节省时间——每天花 5 分钟看我们的日报，就能了解最重要的事。
+        AI 领域发展太快了，每天新工具、新论文、新事件层出不穷。
+        我们做这个站的目的，就是帮你过滤掉噪音，只保留真正有价值的信息——
+        每天花 5 分钟看我们的日报，就能跟上 AI 行业的节奏。
     </p>
 
-    <h2>谁在运营？</h2>
+    <h2>我们的受众</h2>
     <p>
-        一个喜欢折腾自动化的开发者，用 AI Agent 搭了这套系统，让它自己跑。
-        所有代码都在 <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a> 上，欢迎 Star 和提 Issue。
+        我们的读者主要是：AI 开发者、技术决策者、产品经理、创业者，
+        以及所有想跟上 AI 时代节奏的人。
     </p>
 
-    <h2>❓ 常见问题</h2>
-    <h3>Q: 这个网站是人工写的吗？</h3>
-    <p>A: 不是。所有内容都是 AI Agent 自动抓取、自动生成的，每天自动更新。</p>
-
-    <h3>Q: 每天什么时候更新？</h3>
+    <h2>联系我们</h2>
+    <p>
+        如果你有好的 AI 工具推荐、想投稿、或者想合作推广，
+        欢迎通过 <a href="https://github.com/mzh19861986-cpu/ai-tech-daily">GitHub</a> 联系我们。
+    </p>
+    """
     <p>A: 每天自动更新，一般早上就能看到新的日报。</p>
 
     <h3>Q: 可以订阅吗？</h3>
@@ -924,7 +924,7 @@ def main():
 
     # 生成 sitemap.xml
     base_url = "https://mzh19861986-cpu.github.io/ai-tech-daily"
-    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/status.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html", f"{base_url}/monetization.html"]
+    sitemap_urls = [f"{base_url}/", f"{base_url}/about.html", f"{base_url}/sponsor.html", f"{base_url}/tools.html", f"{base_url}/monetization.html"]
     for p in posts:
         sitemap_urls.append(f"{base_url}/{p['slug']}.html")
     sitemap_xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
