@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** OpenBot 是一个免费、本地运行的开源多用户 AI 机器人，可以替代 Grok Bot——你不需要付费 API 或把数据交给第三方，就能在自己机器上跑一个支持多人同时使用的聊天助手。如果你在意隐私、想省订阅费，或者只是想在局域网里和朋友共享一个 AI 机器人，它值得一试。
-
----
-## 2. [Coddy](https://www.producthunt.com/products/coddy)
-
-**💡 是什么 + 为什么值得试：** Coddy 把 20 多种语言的入门知识拆成短小练习，适合想利用碎片时间试水编程、又不想被长教程劝退的人。比起啃文档，它更像刷题式上手，能让你先跑起来再决定深入哪个方向。
+**💡 是什么 + 为什么值得试：** AUDR 想解决的是 AI Agent 跑一次任务到底花了多少钱说不清的问题，它用一套开源标准把每轮调用的 token、模型和成本记成统一格式，方便你跨工具对比和汇总。如果你正在用多个 Agent 或 API 做开发，又懒得自己拼一套成本追踪逻辑，可以直接拿来用。
 
 ---
-## 3. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 2. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器侧边栏，让你在看网页、调试接口或查文档时，随手就能让 AI 读当前页面、写代码，不用来回切窗口复制粘贴。如果你经常一边开着一堆标签页查资料、一边写代码，它省下的切换成本很实在，值得装来试试。
-
----
-## 4. [Chunk](https://www.producthunt.com/products/chunk-2)
-
-**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上的日历任务变成可视化时间块，让你直观看到一天的时间怎么被占满，避免计划排得太理想化。如果你总在日历里列一堆事却执行不下去，它值得试试。
+**💡 是什么 + 为什么值得试：** 用嘴代替手来操作电脑，Incredible 让你通过语音指令完成打开应用、输入文字、执行操作等任务，特别适合手不方便或想提升效率的场景。开源可自部署，值得对语音交互感兴趣的人试试。
 
 ---
-## 5. [Kishi Notch](https://www.producthunt.com/products/kishi-notch)
+## 3. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Kishi Notch 把 MacBook 屏幕顶部的刘海区域变成可交互的动态信息栏，让你一眼看到当前播放的音乐、系统状态或自定义提醒，不用再切窗口。如果你嫌刘海一直空着浪费，这个开源小工具能顺手把它用起来。
-
----
-## 6. [EasyCut](https://www.producthunt.com/products/easycut-2)
-
-**💡 是什么 + 为什么值得试：** EasyCut 是一个开源工具，专门用来剪辑 Claude 生成的动画/动效视频。如果你懒得学专业剪辑软件，又需要快速调整这类视频，它值得一试。
+**💡 是什么 + 为什么值得试：** 如果你在搭 GTM（Go-To-Market）工具链时受够了把 CRM、数据源、自动化工具一个个手动对接，Fuse AI 用一个 SDK 加一个 MCP 把这些整合成统一接口，省掉大量胶水代码。想快速搭出一套能跑通的自定义 GTM 栈，可以拿它试试。
 
 ---
-## 7. [Haptiker](https://www.producthunt.com/products/haptiker)
+## 4. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
 
-**💡 是什么 + 为什么值得试：** 把音量、亮度和键盘背光直接做到触控板边缘滑动调节，不用再摸键盘找快捷键。如果你用笔记本外接显示器、经常在暗光环境调亮度，这个能省不少事。
+**💡 是什么 + 为什么值得试：** 如果你的网站更新后客服机器人总在胡说八道、答非所问，Cosmic AI Support Agent 能自动同步站点内容，让回答始终基于最新页面。省去手动维护知识库的麻烦，适合已有客服机器人但苦于内容过时的人试试。
 
 ---
-## 8. [Patchcord](https://www.producthunt.com/products/patchcord-2)
+## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** 开会时 Mac 麦克风声音总是发闷、忽大忽小？Patchcord 用 EQ 和音频处理把你的麦克风调出录音棚质感，Zoom、Meet、Teams 里都能直接用。
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器侧边栏，让你在调试网页或查资料时能随手调用 AI 改代码、问问题，不用来回切窗口。如果你经常边看技术文档边写代码，这个能省不少切换时间。
+
+---
+## 6. [Chunk](https://www.producthunt.com/products/chunk-2)
+
+**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上散落的日程和待办收进一个时间块视图里，让你按小时规划一天而不是对着一长串清单发呆。如果你试过日历和任务工具各管一半、结果两头都不想打开，它值得花十分钟试一下。
+
+---
+## 7. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+
+**💡 是什么 + 为什么值得试：** Willow 能把你散落在各个 AI 对话里的个人背景和偏好集中存成一份可复用的知识库，省得每次换工具都要重新交代一遍“我是谁、我在做什么”。如果你的工作流里同时用多个 AI 助手，值得试试，它解决的是跨工具的记忆割裂问题。
+
+---
+## 8. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 把云桌面变成了 AI 代理的工作台，能替你自动操作浏览器和各类应用完成重复性任务，省去手动点击的麻烦。如果你经常被流程化的网页操作拖住，值得试试用它把活儿交出去。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
