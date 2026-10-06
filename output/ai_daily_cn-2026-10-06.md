@@ -6,33 +6,29 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-It looks like you only gave the title "Mistral Large 4," but the body content is empty, so I don't have enough information to write a summary right now.
+我无法对这条内容进行总结——内容是空的，所以除了标题“Mistral Large 4”之外，没有可依据的材料。
 
-You can add these key details:
-- Model parameter count and architecture (MoE? dense?)
-- Context window and multimodal capabilities
-- Release time, open source/closed source, API pricing
-- Benchmark scores or comparison targets (such as GPT-4.1, Claude, Llama)
+如果你把实际文本（公告、文章或发布说明）粘贴过来，我会将其浓缩成2–3句的简要总结，涵盖它是什么以及为什么重要。
 
-Once you send me the specific content, I'll write you a 2-3 sentence summary that is informative and sounds like a recommendation for something great.
-
-### 2. [诺贝尔物理学奖授予弗朗西斯·哈岑](https://www.nobelprize.org/prizes/physics/2026/)
+### 2. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-弗朗西斯·哈岑因在冰立方中微子天文台的奠基性工作而荣获诺贝尔物理学奖。他领导建造了埋在南极冰下的一立方公里探测器，首次捕获到来自太阳系外的高能中微子，从而开启了观测宇宙的新窗口。这值得关注，因为中微子几乎不与物质发生作用，能携带遥远天体（如活动星系核）内部的信息直达地球——这是传统望远镜永远无法看到的。
+弗朗西斯·哈岑因在冰立方中微子天文台的奠基性工作而获得诺贝尔物理学奖。该天文台位于南极冰层深处，通过探测中微子来“看见”宇宙中最剧烈的天体事件，比如超新星爆发和黑洞吞噬恒星。这项荣誉值得关注，是因为它把一种几乎无法捕捉的幽灵粒子变成了探索宇宙的全新“眼睛”，从根本上改变了我们观测深空的方式。
 
 ### 3. [Polars 2.0 发布](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 is the first major update to this high-performance DataFrame library written in Rust, focusing on a more stable API and a more powerful query engine. If you usually find Pandas slow when handling large data, Polars' multithreading and lazy execution can deliver speedups of several times or even dozens of times, making it worth checking out.
+Polars 2.0 正式发布了。Polars 是用 Rust 编写的高性能 DataFrame 库，这次 2.0 是首个大版本更新，主要变化包括更稳定的 API、性能优化，以及更完善的流式处理能力。
+
+值得关注的原因很简单：如果你平时用 pandas 处理大数据集时被速度和内存卡过脖子，Polars 基本是当下最顺手的替代方案，而 2.0 意味着它的 API 终于稳定下来，可以放心用在生产环境了。
 
 ### 4. [Smalltalk的早期历史（1993）](https://worrydream.com/EarlyHistoryOfSmalltalk/)
 *hackernews*
-Alan Kay's 1993 paper reviews the birth of Smalltalk and the entire vision of "personal computing" behind it at Xerox PARC. What makes it noteworthy is that almost all of today's object-oriented programming, graphical interfaces, and interactive development environments can trace their intellectual origins here—and Kay's thinking on "computers should serve how humans think" is clearer than much contemporary discussion.
+Alan Kay 在这篇回忆录中讲述了 Smalltalk 的诞生历程：从 Xerox PARC 的“面向对象”理念，到 Dynabook 这一“儿童笔记本电脑”的构想，再到 Smalltalk 语言及图形界面的实现。它之所以值得关注，是因为当今几乎所有现代编程语言和图形用户界面的基因——对象、消息传递、窗口、图标、鼠标交互——都能在此找到源头。简而言之，这就是“个人电脑为何演变成今日模样”的第一手解答。
 
 ## 🤖 AI / 大模型
 
-### 1. [AI现在能够开发自己的推理硬件。](https://github.com/FeSens/openTPU)
+### 1. [AI现在能够开发自己的推理硬件](https://github.com/FeSens/openTPU)
 *hackernews*
-AI can now design inference chips on its own—not just assisting with optimization, but autonomously handling everything from architecture to layout. This means hardware iteration could be compressed from "a new generation every few years" to "a new generation every few weeks," and the solution to the compute bottleneck is shifting from "stacking people" to "stacking AI." Notably, this marks the beginning of AI feeding back into its own infrastructure, forming a positive loop of "AI designs AI chips → faster AI → designs better chips."
+AI now can design inference chips on its own—this is not a metaphor, but a tangible engineering output. The key point worth noting is that chip design has always been a field with extremely high barriers to entry. If AI can participate in or even lead the development of inference hardware, it means the closed loop of AI optimizing AI is extending from the software layer to the hardware layer. In the future, the pace of model iteration may no longer be constrained by the production capacity of human engineers.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

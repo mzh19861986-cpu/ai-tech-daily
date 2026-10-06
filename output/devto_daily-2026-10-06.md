@@ -1,28 +1,24 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
 
-## 1. [Nano Banana 2.1 Lançado: Metade do Preço do Nano Banana 2 e o Texto Finalmente Funciona](https://dev.to/lucas_ferreira/nano-banana-21-lancado-metade-do-preco-do-nano-banana-2-e-o-texto-finalmente-funciona-2n9k)
+## 1. [Comparaison Nano Banana 2.1 vs Nano Banana 2 vs Nano Banana Pro : Lequel choisir ?](https://dev.to/antoine_laurentt/comparaison-nano-banana-21-vs-nano-banana-2-vs-nano-banana-pro-lequel-choisir--bk6)
 
-**✨ 精华总结：** Google在10月6日悄悄上线了Nano Banana 2.1，没有发布会也没有跑分图，只在模型选择器里默默出现，官方一句话带过说"全面超越前代"。关键变化有两个：价格直接砍到Nano Banana 2的一半，以及一直被吐槽的文字渲染终于能正常工作了——对真正掏钱调用API的人来说，这两点比任何benchmark都实在。
+**✨ 精华总结：** Google在Gemini API里塞了四款Nano Banana图像模型，最新上线的2.1版本直接把单张图片价格砍到上一代的一半，多数团队的默认选择可以换了。但别急着全量迁移——Pro版在复杂工作流上仍有不可替代性，选型得看你的具体负载类型。
 
-## 2. [How do you know the face on a video call is real? Measured numbers from a replay attack](https://dev.to/alice_cv/how-do-you-know-the-face-on-a-video-call-is-real-measured-numbers-from-a-replay-attack-19dl)
+## 2. [When the vendor's webhooks skip steps](https://dev.to/tomert16/when-the-vendors-webhooks-skip-steps-1398)
 
-**✨ 精华总结：** # 视频通话里的那张脸，真的是本人吗？有人拿实测数据给出了答案
+**✨ 精华总结：** 供应商的 webhook 回调不保证事件顺序，可能直接跳过中间状态——比如处方预授权从「已提交」直接跳到「需要处理」甚至「已关闭」，中间的审批环节凭空消失。这类问题在依赖第三方状态推送的系统里很常见，值得关注是因为：如果你的业务逻辑假设状态是按序到达的，就必须自己补上状态机校验和兜底轮询，而不能把 webhook 当作可信的事实来源。
 
-一位计算机视觉工程师在自己的刷脸考勤原型上做了回放攻击测试，并公开了真实的日志数字——不是厂商宣传，而是可复现的实测结果。核心提醒是：攻击者不需要你的密码，只需要一段你的面部录像，就能骗过不少没有防伪机制的人脸验证系统。这件事值得关注，因为它戳中了刷脸支付、远程开户、线上问诊等场景里一个被低估的风险——你防的是"人不对"，但真正的漏洞可能是"人对，但脸是假的"。
+## 3. [Nano Banana 2.1 เปิดตัว: ราคาครึ่งเดียวของ Nano Banana 2, ข้อความใช้งานได้สมบูรณ์แล้ว](https://dev.to/thanawat_wonchai/nano-banana-21-epidtaw-raakhaakhruengediiywkhng-nano-banana-2-khkhwaamaichngaanaidsmbuurnaelw-545h)
 
-## 3. [End-to-End Salesforce Automation: Lightning Components, a Dynamic DOM, and OTP MFA](https://dev.to/cloudqa/end-to-end-salesforce-automation-lightning-components-a-dynamic-dom-and-otp-mfa-4ng7)
+**✨ 精华总结：** Google 在 2026 年 10 月 6 日悄然上线了 Nano Banana 2.1，没有发博客也没有跑分对比图，只在 Google Flow 的模型列表里悄悄出现了一天又短暂消失，第二天回归时仅配了一句简短声明：「在所有维度上都超越了前代模型」。
 
-**✨ 精华总结：** Salesforce的Lightning界面因为是动态生成DOM，用传统选择器定位元素很容易失效，一旦页面结构变动，自动化脚本就会批量崩溃。更要命的是它还把OTP多因素认证绑进了登录流程，让自动化必须额外处理动态验证码，进一步提高了门槛。如果你正打算给Salesforce做自动化，这篇文章讲的正是这三个结构性难点怎么逐一破解。
+对开发者来说最值得关注的是价格直接砍半，文本处理能力也终于完整可用——换句话说，同样的预算能跑两倍的量，而且之前被吐槽的文本短板补上了。
 
-## 4. [Kubernetes 1.34 End of Life: What Actually Happens on EKS, GKE, and AKS](https://dev.to/skyhook-radar/kubernetes-134-end-of-life-what-actually-happens-on-eks-gke-and-aks-g8e)
+## 4. [Nano Banana 2.1 vs Nano Banana 2 vs Nano Banana Pro: Mana yang Sebaiknya Anda Pilih?](https://dev.to/walse/nano-banana-21-vs-nano-banana-2-vs-nano-banana-pro-mana-yang-sebaiknya-anda-pilih-3708)
 
-**✨ 精华总结：** Kubernetes 1.34 上游正式停止维护了，但如果你用的是 EKS、GKE 或 AKS，这个日期本身并不会让你的集群立刻出事——三家云厂商各有各的支持周期，到期后的处理方式也完全不同。真正值得关注的是：EKS 会在不通知你的情况下自动升级控制平面，GKE 按自己的节奏来（Extended 通道会更晚），而 AKS 在当天什么都不会做。
-
-## 5. [Random Walk: A Tiny AI Nudge to Get Outside](https://dev.to/shivam_shah_410/random-walk-a-tiny-ai-nudge-to-get-outside-4df3)
-
-**✨ 精华总结：** Random Walk 是个帮你把几分钟碎片时间变成出门理由的小应用：选 5/10/20 分钟，授权定位后它会推荐一个附近的途经点、生成 Google Maps 步行导航链接，再让 AI 给你一个"户外观察任务"（比如留意某种声音或颜色）。它解决的不是导航问题，而是"想出门但没目的地"的启动困难——用一点随机性和任务感把散步变成游戏。
+**✨ 精华总结：** Google 在 Gemini API 上架了四款 Nano Banana 图像模型，最新款 2.1 于 2026 年 10 月 6 日发布，单张图片价格只有它所取代那款的一半，因此成为多数新项目的默认首选——但并非所有场景都合适。值不值得关注取决于你的用量：价格腰斩意味着批量出图的成本结构直接变了，而 Pro 版仍为对质量或特定能力有硬要求的任务保留。选择逻辑基本是「先用 2.1，撞到能力天花板再往上加钱」。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
