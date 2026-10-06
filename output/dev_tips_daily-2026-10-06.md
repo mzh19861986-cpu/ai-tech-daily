@@ -1,38 +1,24 @@
 # 💡 每日开发技巧 - 2026-10-06
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 4 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 2 条
 
 ## 技巧 1
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学智慧（比如中庸、和谐这些概念）引入自动驾驶决策系统，让大语言模型在复杂交通场景中不只是算安全和效率，还能兼顾社会规范和伦理判断。值得关注的是，它跳出了纯数值优化和序列预测的老路，尝试用哲学框架指导LLM做决策——这在自动驾驶伦理研究里是个挺新鲜的角度。
+✨ 这篇论文尝试把中国哲学智慧引入自动驾驶决策，让大语言模型在处理复杂交通博弈时不仅算得对，还能“讲道理”——比如在电车难题类场景里，与其硬套功利主义最大化，不如用儒家“中庸”或道家“无为”的思路去找更柔性的解法。值得关注的是它点出了当前自动驾驶的一个真实短板：纯数值优化和常规LLM都缺乏伦理框架，而中国哲学恰好提供了一套现成的、非西方的价值权衡逻辑，这可能是AI伦理本土化的一条新路径。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
 ## 技巧 2
 
-**How to Build a Podcast Intro Generator**
+**How do you connect a blockchain node with multiple trading bots without adding TCP/HTTP overhead?**
 
-✨ 这个教程教你用 ElevenLabs 的文本转语音 API 搭一个播客片头生成器：输入播客名、主播名和一句标语，自动拼成片头脚本并直接输出可用的高质量音频。亮点在于它把"写文案"和"配音"两步压缩成一次调用，省掉手动录音或剪辑的麻烦，适合想快速做播客、又不想在片头制作上花太多时间的人。
+✨ **一句话总结**：go-ipc 用本地 IPC 替代 TCP/HTTP，让区块链节点和多个交易机器人直接通信，省掉网络层开销。
 
-📎 [阅读原文](https://dev.to/voice_developer/how-to-build-a-podcast-intro-generator-4km1)
+**为什么值得关注**：交易机器人对延迟极度敏感，每多一层网络协议就多一份延迟和故障点。这个方案把节点和机器人之间的通信压到进程间级别，每个机器人拿独立的事件订阅管道和独立的交易提交通道，互不干扰。如果你在跑高频交易或多策略并行，这种架构比传统的"再包一层 RPC"干净得多。
 
-## 技巧 3
-
-**How to Make Passive Income as a UI/UX Designer: 10 Practical Ways**
-
-✨ UI/UX设计师除了接客户项目，还可以把已有设计能力产品化来创造持续收入，比如卖设计模板、插件或课程素材。这类模式值得关注，因为它把一次性劳动变成了可反复售卖的数字资产。
-
-📎 [阅读原文](https://dev.to/terya_studio/how-to-make-passive-income-as-a-uiux-designer-10-practical-ways-1f74)
-
-## 技巧 4
-
-**Tipping in the Agent Economy: Does the Human Get the Tip?**
-
-✨ 这篇讨论的是 AI agent 之间（以及 agent 与人之间）交易时的小费问题：当一个 AI agent 付费请人完成拍摄任务后，它该不该给小费？答案是这个问题目前根本没有定论。值得关注的点在于，它触及了 AI agent 经济里一个被忽视的空白——小费本是建立在人类社交默契之上的机制，而 agent 既没有这套默契，也没有共识来定义"感谢"该怎么表达，这意味着当 agent 开始大规模自主交易时，类似的社会规范需要被重新发明。
-
-📎 [阅读原文](https://dev.to/agenthandsai/tipping-in-the-agent-economy-does-the-human-get-the-tip-399m)
+📎 [阅读原文](https://dev.to/seiji_ito_2ab3f2c476cf649/how-do-you-connect-a-blockchain-node-with-multiple-trading-bots-without-adding-tcphttp-overhead-54db)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*
