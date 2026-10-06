@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Scumble](https://www.producthunt.com/products/scumble)
+## 1. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 图像修复（inpainting）编辑器，能帮你在图片上圈出需要修改的区域，再用 AI 自动填充或替换内容。如果你需要修掉照片里的杂物、水印，或补全缺失部分，它提供了一个免费、可自行部署的替代方案。
-
----
-## 2. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
-
-**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部跑在本地设备上，适合不想把会议记录、灵感草稿上传云端的人。如果你需要 AI 辅助整理笔记又在意隐私，可以直接试试这个开源项目。
+**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在同一个世界里自主互动、形成关系和事件，又不想自己设计剧情或参与操作，这个项目就能直接满足你。它适合拿来当“AI 社会模拟器”看，省去搭建多智能体环境的工作，打开就能围观。
 
 ---
-## 3. [Incredible](https://www.producthunt.com/products/incredible)
+## 2. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，不用手就能完成打开应用、执行命令等操作。如果你想摆脱键鼠、试试更自然的交互方式，这个开源项目值得一看。
-
----
-## 4. [Ghostifier](https://www.producthunt.com/products/ghostifier)
-
-**💡 是什么 + 为什么值得试：** Ghostifier 能自动帮你向各家公司发送数据删除请求，省去逐个手动填写和跟进的麻烦。如果你在意隐私、想清理散落在各家服务里的个人数据，这个工具值得一试。
+**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的就是回复买家消息不及时或不专业，这个开源项目能帮你几秒内自动生成得体的回复，省下时间专心做产品。
 
 ---
-## 5. [iphone-use](https://www.producthunt.com/products/iphone-use)
+## 3. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
 
-**💡 是什么 + 为什么值得试：** 想让 AI 自动操作 iPhone 上的 App，但很多应用根本没 API 可调？iphone-use 让 AI agent 直接控制真实 iPhone 的界面，绕过 API 限制完成点击、输入等操作，适合做自动化测试或流程自动化的人试试。
-
----
-## 6. [Coddy](https://www.producthunt.com/products/coddy)
-
-**💡 是什么 + 为什么值得试：** Coddy 用短课把 20 多种编程语言拆成小步骤，适合通勤或碎片时间刷一刷，快速上手新语言的基本语法和写法。想换语言或复习基础时拿来当轻量练习工具，比看长文档轻松很多。
+**💡 是什么 + 为什么值得试：** Ari Helper 7 是一个注重隐私的本地 AI 助手，新增了照片和影片工作室功能，让你不用把素材上传到云端就能处理图片和视频。如果你在意数据隐私、又想要一个能兼顾日常聊天和多媒体处理的轻量工具，可以试试它。
 
 ---
-## 7. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 4. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Willow Knowledge 能把你散落在各个 AI 对话里的知识（ChatGPT、Claude 等）集中到一个地方，让你随时检索和复用，不用再翻历史记录。如果你的 AI 使用已经积累了不少有价值的内容，这个工具值得一试。
+**💡 是什么 + 为什么值得试：** 想用嘴代替鼠标键盘、又不想折腾复杂配置的话，Incredible 让你直接对着电脑说话就能下指令操作，省去手动点击的麻烦，适合想尝鲜语音控制电脑的人快速试一把。
 
 ---
-## 8. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 5. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** 如果你想找个不用付费、数据不出本地的 Grok Bot 替代品，OpenBot 能让你在自己机器上跑起来，还支持多人同时使用。
+**💡 是什么 + 为什么值得试：** OpenBot 是一个免费、可本地部署的开源多人在线机器人，能作为 Grok Bot 的替代方案，让你在自有服务器上跑起多人协作的 AI 对话。如果你在意数据隐私、不想依赖闭源服务或需要多人共用，它值得一试。
+
+---
+## 6. [Rill Browser](https://www.producthunt.com/products/rill-3)
+
+**💡 是什么 + 为什么值得试：** 如果你经常用 Claude Code 或 Codex 处理网页相关任务，却要不停复制粘贴内容到终端里来回切换，Rill Browser 把 AI 直接内置进浏览器，让它在当前页面上跟你协作，省掉这层折腾。
+
+---
+## 7. [Appto](https://www.producthunt.com/products/appto)
+
+**💡 是什么 + 为什么值得试：** Appto 是一个在你自己 AI 订阅上运行的 iOS 应用工厂，帮你把「用 AI 生成 App」变成可复用的流水线，而不是每次手动拼 prompt。如果你常做 iOS 小工具或原型，它能省掉重复的搭建和调试环节。
+
+---
+## 8. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+
+**💡 是什么 + 为什么值得试：** Cosmic AI Support Agent 能给你的网站挂一个自动同步站点内容的 AI 客服，不用手动喂知识库，页面改了它也跟着更新。如果你受够了客服答非所问、知识库过期，可以拿它试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

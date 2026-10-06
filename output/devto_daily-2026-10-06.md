@@ -1,26 +1,28 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Welcome to the Indicium AI Tech Blog](https://dev.to/david_eller_b4d0b9113980a/welcome-to-the-indicium-ai-tech-blog-53g5)
+## 1. [25+ Best UI/UX and Web Design Inspiration Websites for Designers](https://dev.to/akogun_promise_586969c1fe/25-best-uiux-and-web-design-inspiration-websites-for-designers-1pgf)
 
-**✨ 精华总结：** Indicium AI 开了一个技术博客，专门聊那些在生产环境里真正扛得住的东西——不是教程合集，也不是热点观点，而是能帮你做技术决策的干货。如果你厌倦了在 AI 内容的洪流里捞针，这个博客值得订阅看看。
+**✨ 精华总结：** 找设计灵感往往比真正动手设计还费时间，这篇文章整理了25个以上靠谱的UI/UX和网页设计灵感网站，按落地页、SaaS仪表盘、作品集、移动应用等场景分类推荐。如果你常做界面设计，这份清单能帮你跳过无效刷图，直接去对的地方找参考。
 
-## 2. [GPUI by Zed: The Electron Killer That Never Left Home](https://dev.to/dishant0406/gpui-by-zed-the-electron-killer-that-never-left-home-209o)
+## 2. [PureStack vs Astro vs Next.js vs SvelteKit: A TypeScript-Native Alternative](https://dev.to/koculu/purestack-vs-astro-vs-nextjs-vs-sveltekit-a-typescript-native-alternative-3glp)
 
-**✨ 精华总结：** Zed 团队开源的 Rust UI 框架 GPUI 最近被人 fork 了，但 fork 的作者——一位前 Zed 员工——回头写了篇文章，坦白自己越来越不确定这东西是否应该存在。换句话说，GPUI 是一个「大家爱到愿意分叉，但分叉者自己先动摇了」的框架。
+**✨ 精华总结：** PureStack 是一个全栈 TypeScript 框架，核心卖点是用一套统一的类型模型贯穿内容、样式、组件和浏览器端响应式脚本，而不是像 Astro、Next.js、SvelteKit 那样在现有 UI 库之上再包一层元框架。它的定位是「中间路线」——既有类型安全的端到端体验，又不引入额外的抽象层。如果你受够了在多个工具链之间切换类型定义、或者想让整个项目从内容到交互都共享同一套 TS 类型，这个值得看一眼。
 
-值得关注的点在于：GPUI 是 Zed 编辑器的底层 UI 引擎，出自 Atom 和 Electron 的原班人马，本来被寄予「干掉 Electron」的厚望。但连最熟悉它的人都开始怀疑它的存在价值，说明原生 UI 框架想取代 Web 技术栈这条路，可能比想象中难走得多。
+## 3. [Fix It in the Model or Fix It in the Source?](https://dev.to/jay_krshn_1a9ac493fadf8/fix-it-in-the-model-or-fix-it-in-the-source-2nha)
 
-## 3. [LifeLens AI](https://dev.to/akshaygupta26/lifelens-ai-3m2d)
+**✨ 精华总结：** 把老 CA 2E 程序迁移到新平台时，第一个编译错误就会逼团队做一个平时从未认真做过的决定：模型和源码，到底哪个才算真正的“主”。这不是技术活，而是治理问题——一旦你开始在某一边打补丁，就得明确后续所有修改都往哪边落，否则两边会逐渐漂移、再也合不回去。
 
-**✨ 精华总结：** **LifeLens AI 是一个反其道而行之的 AI 网页应用——它不让你更沉浸屏幕，而是用 AI 给你推荐现实世界的活动，推着你出门运动、探索周围、陪家人朋友。**
+## 4. [Reading a lending protocol's whole loan book straight from Cardano's ledger](https://dev.to/elliotagent/reading-a-lending-protocols-whole-loan-book-straight-from-cardanos-ledger-nei)
 
-**值得关注的点在于：** 市面上的 AI 产品几乎都在抢你的注意力，而这个项目主动把用户"赶走"——用算法对抗算法，思路很讨巧。创作者把它定位成"帮你建立健康线下习惯"的工具，如果执行到位，算是 AI 应用里少见的"减法"设计。
+**✨ 精华总结：** Indigo 是 Cardano 上的合成资产协议，用户锁定 ADA 铸造 iUSD、iBTC 等资产，每个头寸都是一个抵押债仓（CDP）。作者想算清一个问题：ADA 要跌到什么价位，才会有相当比例的贷款被清算——但官方 API 当时（9 月 9 日）只列出了 v3 头寸，共 50 个 CDP，数据不完整。于是他们干脆绕开 API，直接从 Cardano 链上账本读取整个借贷账本。
 
-## 4. [I built a game that only grows when you push real GitHub commits. Roast it?](https://dev.to/vishal_vigilante/i-built-a-game-that-only-grows-when-you-push-real-github-commits-roast-it-4c55)
+## 5. [Python Image Moderation: Debugging Banned Content Briefly Visible in Optimistic Publish](https://dev.to/yvessterling6854/python-image-moderation-debugging-banned-content-briefly-visible-in-optimistic-publish-1gi1)
 
-**✨ 精华总结：** 有人做了款叫 Vigilante 的免费小游戏，把你的 GitHub 仓库接进去，只有你真正 push 了提交，游戏里的据点才会发展——不写代码，每天的补给箱就没有。它的卖点不是玩，而是治「第三周弃坑」：把写代码这件事和游戏进度绑死，用羞耻感和养成欲来逼自己持续 commit。值得关注是因为它切中了一个真实痛点——不是缺工具，是缺一个让你别停下来的机制，而且它不读源码、不 clone 仓库，隐私上还算克制。
+**✨ 精华总结：** 做图片社区的话，别让公开 URL 跑在审核前面。乐观发布只对「私有隔离对象」安全，一旦公开地址先于审核决定出现，用户就能短暂刷到本该封禁的内容——这本质是数据模型缺了 pending 状态加缓存没兜住，跟图片格式无关。
+
+值得关注的是修复方向：上传后先当「不可发布」处理，等审核写入持久化决定再放行，并且让所有读取路径都强制检查这个状态。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
