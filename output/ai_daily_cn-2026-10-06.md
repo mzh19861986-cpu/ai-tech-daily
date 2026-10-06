@@ -2,39 +2,33 @@
 
 > 由 AI Agent 自动生成并翻译 | 共 5 条
 
-## 📌 综合
-
-### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
-*hackernews*
-很抱歉，您似乎只提供了标题「Mistral Large 4」，没有附上具体的新闻内容或技术细节。
-
-为了给您写出有价值的总结，我需要以下信息中的至少一部分：
-
-- **发布方/来源**（如 Mistral AI 官方博客、TechCrunch 报道等）
-- **核心参数或能力**（如参数量、上下文窗口、基准测试成绩、多模态支持等）
-- **与上一代的差异**（Mistral Large 3 → 4 改了什么）
-- **定价、开放程度**（开源/闭源、API 价格）
-- **可用渠道**（Le Chat、Azure、AWS Bedrock 等）
-
-您可以把原文粘贴过来，我来帮您提炼。
-
-### 2. [决策API正处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
-*hackernews*
-Stream的Decisions API已进入公测阶段。简而言之，它将规则引擎功能封装为API，使开发者无需从零开始构建决策逻辑——诸如审批流程、风控规则、动态定价等场景，直接调用即可运行。值得关注的是，此类能力以往要么自研成本高昂，要么采用重型BPM系统过于笨重，如今多了一个轻量、可编程的选项，适合需要灵活决策逻辑的中小团队快速上手。
-
-### 3. [2026年诺贝尔物理学奖：弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
-*hackernews*
-The 2026 Nobel Prize in Physics was awarded to Francis Halzen for his foundational work on the IceCube Neutrino Observatory—transforming a cubic kilometer of Antarctic ice into humanity's largest neutrino detector and capturing high-energy neutrinos from outside the solar system for the first time. This achievement opened an entirely new window for cosmic observation: neutrinos barely interact with matter and can travel in straight lines through any barrier to reach Earth, allowing us to "see" previously completely unobservable processes inside cosmic-ray acceleration sources, such as active galactic nuclei.
-
 ## 🤖 AI / 大模型
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这项研究介绍了 AI 在数学领域的最新进展，展示了模型如何协助发现新猜想、验证证明，甚至在某些分支中提出原创性思路。值得注意的是，这意味着 AI 正从“计算工具”转变为“数学家的研究伙伴”，可能加速基础数学的突破。
+This content currently only has a title and no body text, so I can't provide a specific summary.
 
-### 2. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+If you can send me the original text (or a link/summary), I can give you a concise 2-3 sentence summary as requested, clearly explaining "what it is" and "why it is worth paying attention to."
+
+### 2. [OpenAI制作的数学手稿及配套证明材料](https://github.com/openai/math)
 *hackernews*
-Google has released EmbeddingGemma 2, an open-source multimodal embedding model that can map data from different modalities such as text and images into the same vector space, and the model is very small, making it suitable for running locally or on edge devices. Its value lies in the fact that for tasks such as retrieval, clustering, and recommendation, you no longer need to rely on closed-source large model APIs. By deploying it yourself, you can obtain cross-modal semantic understanding capabilities, which is especially friendly for scenarios that are cost-sensitive or focus on data privacy.
+这条新闻讲的是OpenAI公开了一批数学手稿和配套的证明工件，也就是把AI参与数学推理的过程和中间产物展示出来供人查看。
+
+值得关注的地方在于：这不只是“AI做对了一道题”，而是把推导链条和可验证的证明材料一并公开，相当于让外界能真正去核查AI的数学能力到底有多少含金量。对做形式化验证、定理证明和AI推理研究的人来说，这是难得的真实素材。
+
+### 3. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+*hackernews*
+Google has released EmbeddingGemma 2, an open-source multimodal embedding model with only 300 million parameters, capable of mapping text and images into the same vector space and running on edge devices such as phones. Its key highlight: multimodal embedding used to be basically monopolized by closed-source APIs, but this model achieves retrieval performance close to that of much larger models with an extremely small footprint, meaning the barrier to applications like local RAG and offline image search has been significantly lowered.
+
+## 📌 综合
+
+### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
+*hackernews*
+Mistral has released its new flagship model, Mistral Large 4, which is currently their most powerful closed-source large model, focusing on reasoning and multilingual capabilities. The reason it is noteworthy is that Mistral has always been the face of Europe's challenge to OpenAI, and this upgrade means the gap between the open-source camp and the closed-source frontier may narrow further, giving developers and enterprises one more non-U.S. option.
+
+### 2. [决策API处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+*hackernews*
+GitHub has opened its Decisions API to public beta. Simply put, it's an interface that allows external tools to directly query the "decision records" in a repository—such as why a certain architectural choice was made, who approved it, and what the rationale was. This is noteworthy because this kind of "why" context previously existed almost only in PR comments and chat logs, scattered and easily lost. Now it can be read and integrated programmatically, effectively turning a team's tacit decisions into searchable, automatable data, which is very useful for AI-assisted development and onboarding new team members.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

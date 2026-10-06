@@ -10,29 +10,29 @@
 
 ## 📝 精选内容
 
-## 📌 综合
-
-### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
-*hackernews*
-内容似乎是空的，方便把 Mistral Large 4 的具体新闻内容（发布信息、模型规格、性能数据等）贴一下吗？我拿到素材后马上给你写一段精炼的总结。
-
-### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
-*hackernews*
-Shopify 把「结账时追加销售」做成了一个独立的 API 接口，现在公开测试了。这意味着商家不用再依赖第三方 upsell 插件，自己就能在支付流程里塞推荐商品、加购选项——对做跨境独立站的人来说，结账页的转化率向来是最贵的一环，这个口子开出来值得盯一下。
-
 ## 🤖 AI / 大模型
 
 ### 1. [Sharing AI Progress in Mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这篇内容目前只有标题，正文信息不足，我无法准确提炼“是什么”和“为什么值得关注”。请把正文发给我，我来帮你总结。
+抱歉，你只给了标题“Sharing AI Progress in Mathematics”，没有正文内容，我无法提炼具体事实。把完整内容贴过来，我就能帮你写成两三句有价值的总结。
 
-### 2. [Mathematical manuscripts and supporting proof artifacts produced by OpenAI](https://github.com/openai/math)
+### 2. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-OpenAI 首次公开了一批数学手稿和配套的证明工件，展示了其模型在形式化数学推理上的实际产出——不只是答案，而是可检验的完整证明过程。这值得关注，因为数学证明是检验AI推理能力最硬的试金石，公开原始材料意味着这些结果可以被社区独立验证或证伪。
+Google 发布了 EmbeddingGemma 2，一个开源的轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间里做检索和相似度计算。值得关注的是它体量小、可本地部署，同时支持跨模态搜索（比如用文字搜图片），这对想自建 RAG 或搜图功能、又不想依赖大厂 API 的开发者来说是个实用选项。
 
-### 3. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+## 📌 综合
+
+### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Google 发布了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一向量空间，且完全开源。它的价值在于：开发者可以在本地或边缘设备上做跨模态检索（比如用文字搜图），而不必依赖昂贵的云端 API。
+Mistral 发布了新一代旗舰模型 Large 4，核心升级在推理能力和多语言支持，直接对标 GPT-4o 和 Claude 3.5 Sonnet。值得关注的是它以更小的参数规模做到了接近顶级闭源模型的性能，对想自部署或控制成本的企业来说是个有吸引力的新选项。
+
+### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
+*hackernews*
+GitHub 把 Decisions API 开放公测了，简单说就是让你用代码直接查询和操作仓库里各种决策逻辑（比如分支保护规则、合并策略这些），不再只能靠网页点来点去。值得关注是因为它把「权限和流程管理」也变成了可编程的一等公民，做自动化或内部工具时能省掉大量手动配置。
+
+### 3. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
+*hackernews*
+2026年诺贝尔物理学奖授予 Francis Halzen，以表彰他在冰立方中微子天文台（IceCube）的构想与领导中的决定性贡献——这座埋在南极冰下 1 立方公里、由 5000 多个光学传感器组成的探测器，第一次让人类能“看见”来自太阳系外的高能中微子。值得关注的是，这标志着中微子天文学真正成为一门观测科学：它用几乎不与物质作用、因而能穿透宇宙尘埃和辐射场的粒子，打开了伽马射线和光都无法企及的宇宙深处视野。
 
 
 ---

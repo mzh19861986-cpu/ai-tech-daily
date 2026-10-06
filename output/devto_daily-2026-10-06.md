@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [I made a quantum circuit tool that doesn’t feel like a textbook](https://dev.to/decodeaditya_plus/i-made-a-quantum-circuit-tool-that-doesnt-feel-like-a-textbook-3l9p)
+## 1. [How to Make Passive Income as a UI/UX Designer: 10 Practical Ways](https://dev.to/terya_studio/how-to-make-passive-income-as-a-uiux-designer-10-practical-ways-1f74)
 
-**✨ 精华总结：** 有人做了个量子电路工具，专门解决「打开就犯困」的问题。它保留了电路模拟的核心功能，但把 IBM Quantum Composer 和 Quirk 那种灰底密集标签的教科书感换成了更清爽的界面。值得关注的点在于：量子计算的入门门槛往往不是概念难，而是工具先劝退了一批人——如果交互体验能像玩游戏一样自然，学习曲线或许能平缓不少。
+**✨ 精华总结：** UI/UX设计师除了接客户项目，还可以把自己做过的设计资产变成可重复售卖的数字产品——比如模板、组件库、Figma插件、在线课程等，实现"做一次、卖多次"的收入模式。这类"被动收入"的关键在于前期投入一次后，后续只需维护和推广，边际成本极低。对设计师来说，这比无止境地接新项目更可持续。
 
-## 2. [I built a pay-to-rank leaderboard in 7 days - here's how the points system works](https://dev.to/martinvalchev/i-built-a-pay-to-rank-leaderboard-in-7-days-heres-how-the-points-system-works-491m)
+## 2. [Your quote never got a reply. That's a queue problem, not a sales problem.](https://dev.to/maicon_tsuda_3018a92b80c5/your-quote-never-got-a-reply-thats-a-queue-problem-not-a-sales-problem-3kfi)
 
-**✨ 精华总结：** 有人做了个「付费上榜」排行榜，但把价格打到普通人玩得起——不是花1万美元买头部位置，而是通过赚积分往上爬，网站或X账号都能挂上去。它的价值在于揭示了一个被高价锁死的玩法其实可以做成低门槛的公开游戏，4天开发、1周上线，对独立开发者来说是个挺实在的案例。
+**✨ 精华总结：** 大多数服务型生意的报价不是死在价格上，而是死在「没人负责第二次跟进」。报价发出去、客户说「我再想想」之后，它就静静躺在已发送文件夹里，等到有人想起来时，客户早就在别家下单了——未必是对方更好，只是对方没让这件事掉进队列缝隙里。
 
-## 3. [Last-Write-Wins Is Not a Sync Strategy: Handling Conflicts in Offline-First Mobile Apps](https://dev.to/liaqat_ali/last-write-wins-is-not-a-sync-strategy-handling-conflicts-in-offline-first-mobile-apps-4p4d)
+## 3. [Tipping in the Agent Economy: Does the Human Get the Tip?](https://dev.to/agenthandsai/tipping-in-the-agent-economy-does-the-human-get-the-tip-399m)
 
-**✨ 精华总结：** 这篇文章的核心观点是：离线优先应用里的同步冲突不能靠"最后写入者胜出"（LWW）来糊弄——它只是把数据悄悄丢掉而已。真正靠谱的做法是按字段合并，配合混合逻辑时钟（hybrid logical clock）和软删除，这样大多数冲突都能在用户无感的情况下自动解决。
+**✨ 精华总结：** 当 AI Agent 开始雇人干活、给人类付款时，一个新问题出现了：干得漂亮要不要给小费？这背后是整套人类社交契约——小费本是人与人之间的默契，现在付款方变成了机器，它该不该学会这套潜规则？
 
-为什么值得关注：如果你正在做离线优先的移动应用，"写队列+重连回放"只是入门，冲突处理才是真正决定数据可不可信的地方。LWW 看起来简单，但它丢的是用户的真实编辑，而且丢得无声无息——等到用户发现时已经晚了。
+## 4. [Querying CSV and Parquet exports inside a SQL IDE with DuckDB](https://dev.to/cccadet/querying-csv-and-parquet-exports-inside-a-sql-ide-with-duckdb-4n7b)
 
-## 4. [Slovak Company Data via API: RPO Lookups by IČO or Name, as JSON (2026)](https://dev.to/matiasmaquieira/slovak-company-data-via-api-rpo-lookups-by-ico-or-name-as-json-2026-34c2)
+**✨ 精华总结：** 有人给你发来一份 CSV 导出文件让你查问题，你只想快速查重、分组或跟另一份文件对比，但又不想为此专门搭数据库或写脚本。这个开源 SQL IDE 内置了 DuckDB，可以直接导入 CSV 或 Parquet 用 SQL 查询，把一次性分析的门槛降到了几乎为零。值得关注的点在于：DuckDB 的列式引擎让本地文件查询快得不像话，而嵌进 IDE 意味着从"拿到文件"到"跑出结果"之间不再有环境配置这道墙。
 
-**✨ 精华总结：** 斯洛伐克的企业注册数据（RPO）虽然公开，但只提供月度全量文件和每日变更包，适合数据团队做批处理，却没法让产品团队实时查询某一家公司的信息。现在有人把它封装成了 REST API，输入公司名或 IČO 编号就能直接拿到 JSON 格式的公司详情，相当于给这份官方开放数据加了一层即查即用的接口。对做欧洲企业尽调、KYC 或跨境合规的产品来说，这省掉了自己解析和同步文件的麻烦。
+## 5. [Taxes in the Agent Economy: The 1099-K Future Nobody's Ready For](https://dev.to/agenthandsai/taxes-in-the-agent-economy-the-1099-k-future-nobodys-ready-for-l7a)
 
-## 5. [Estonian Company Data via API: e-Business Register Lookups by Registry Code, KMKR or Name (2026)](https://dev.to/matiasmaquieira/estonian-company-data-via-api-e-business-register-lookups-by-registry-code-kmkr-or-name-2026-2agi)
-
-**✨ 精华总结：** 爱沙尼亚把公司注册数据开放出来是好事，但官方只给批量文件和XML接口，想拿个JSON还得自己折腾。这篇指南教你怎么用API按公司名或8位注册码直接查爱沙尼亚企业信息——对做跨境合规、KYC或对接波罗的海市场的开发者来说，算是省掉了一层数据清洗的麻烦。
+**✨ 精华总结：** AI代理（agent）开始直接雇佣人类干活了——发任务、验收、打款全自动完成，而IRS的规则意味着这些收入很可能触发1099-K报税表。值得关注是因为整个"代理经济"的支付基础设施正在成形，但税务合规层完全没跟上：自由职业者可能收到自己都没意识到的平台的税表，而AI agent本身作为经济主体的税务身份还是一团模糊。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
