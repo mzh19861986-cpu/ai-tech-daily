@@ -4,31 +4,33 @@
 
 ## Q1: AI is now capable of developing its own inference hardware？
 
-**A:** AI现在能自己设计推理芯片了——不是辅助人类画图，而是端到端完成芯片架构探索和优化。这事值得关注是因为它把AI的触角从软件层伸进了硬件层，意味着未来AI迭代自己算力底座的闭环正在形成。
+**A:** AI现在可以自主设计推理芯片了——不是辅助优化，而是从头完成硬件架构的探索与生成。这意味着芯片设计中最耗时、最依赖专家直觉的环节，正在被AI自己接管。值得关注的点在于：一旦AI能为自己造更适配的硬件，迭代速度可能从“人类几年一版”压缩到“模型自己按月升级”，软硬件的协同进化会进入一个自我加速的循环。
 
 📎 更多阅读：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
 ## Q2: JetBrains reported a net financial loss first time in its tracked history？
 
-**A:** JetBrains 首次出现净亏损，打破了这家捷克开发工具公司长期盈利的记录。亏损主因是 AI 编程助手（如 Copilot、Cursor）的冲击——当写代码这件事本身被 AI 重新定义，卖 IDE 的商业模式正面临根本性挑战。值得关注的是，这不只是一家公司的财报问题，而是「AI 吃掉工具链」的第一个标志性信号。
+**A:** JetBrains 首次出现净亏损，这家以 IntelliJ IDEA、Kotlin 和 Fleet 闻名的开发工具公司，结束了长期稳定盈利的记录。
+
+值得关注的是，这不是小厂挣扎，而是开发者工具赛道头部玩家的财务转向，可能反映出 AI 编程助手冲击下，传统 IDE 商业模式正面临重估。
 
 📎 更多阅读：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
 ## Q3: Utah to let AI examine patients and prescribe medication without human oversight？
 
-**A:** 犹他州成为全美首个允许AI独立行医的州：AI系统可以在没有人类医生监督的情况下为患者做检查并开具处方。这不是试点项目，而是正式立法，意味着AI医疗的责任归属、误诊追责等长期争议问题被推到了台前——其他州大概率会跟进观望，医疗AI的监管拐点可能就此到来。
+**A:** 犹他州通过了一项新法律，允许AI系统独立审核患者并开具处方，无需人类医生监督。这是美国首个此类立法，意味着AI在医疗决策中的角色从辅助工具跃升为直接责任方——值得关注的是，它可能大幅降低基础医疗成本，但也把用药安全的责任推给了一个算法。
 
 📎 更多阅读：[Utah to let AI examine patients and prescribe medication without human oversight](https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html)
 
 ## Q4: Email Self Hosters - what are you using?？
 
-**A:** 自建邮件服务器是个典型的「想省心反而更费心」的坑，但确实有人乐在其中。发帖人目前用 maddy 托管多个域名的邮箱和 catch-all，功能基本够用，但遇到了一些零碎问题——iOS 原生邮件客户端连接特别慢，这是他最头疼的点。如果你也在自建邮件，这个帖子值得扫一眼，评论区通常会有 Stalwart、Mailcow、Docker Mailserver 等方案的实战对比。
+**A:** 最近有网友在讨论自建邮件服务器的方案选择，发帖人目前用 maddy 管理多个域名的邮箱和 catch-all 转发，整体够用但踩了些坑，最头疼的是 iOS 原生邮件客户端连接特别慢。如果你也在折腾自托管邮箱，这篇帖子值得扫一眼——评论区大概率有一堆 Docker Mailserver、Mailcow、Stalwart 之类的替代方案对比，正好可以避坑或换栈参考。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** 这篇论文提出了 ADSD 框架，让 AI agent 不光能写数值求解器的代码，还能自己诊断性能问题出在哪、并针对性地学出新技能来改进算法。关键区别在于：以往 agent 只能从"跑得慢"这种执行反馈里瞎猜原因，ADSD 则把诊断和改进拆成可复用的技能模块，让 agent 真正"理解"算法优化而非碰运气。对做 AI for Science 的人来说，这可能是让 agent 从"码农"变"算法工程师"的一步。
+**A:** AI智能体写科学计算代码越来越溜，但遇到数值求解器性能差时，它能告诉你「跑得慢」，却说不清「为什么慢、怎么改」。这篇论文提出的ADSD框架，让智能体能自动诊断性能瓶颈的根因，并像积累技能库一样学会针对性的修复策略——把「会写代码」推进到「会优化算法」，这对自动化科学计算和工程仿真领域是个值得关注的进展。
 
 📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 

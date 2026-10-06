@@ -2,30 +2,34 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
-🔗 [hackernews](https://github.com/FeSens/openTPU)
-
-AI现在可以自己设计推理芯片了——纽约大学团队用大语言模型自动生成芯片架构方案，在部分指标上已接近人类工程师水平。这件事真正值得关注的点在于：芯片设计一直是人类智力密度最高的工程领域之一，AI一旦跑通这个闭环，硬件迭代速度可能从「年」压缩到「周」。
-
-## 🥈 Release of Polars 2.0  (⭐ 6.0/10)
+## 🥇 Release of Polars 2.0  (⭐ 7.0/10)
 🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-Polars 2.0 正式发布了，这是这个用 Rust 写的高性能 DataFrame 库的一次大版本更新。它主打比 pandas 更快的查询速度和更低的内存占用，对处理大规模数据的人来说是个值得关注的替代方案。
+Polars 2.0 发布，这是一个用 Rust 写的 DataFrame 库，主打比 pandas 快得多的性能，尤其在大数据处理和并行计算上优势明显。
 
-## 🥉 Mistral Large 4  (⭐ 5.0/10)
-🔗 [hackernews](https://docs.mistral.ai/models/mistral-large-4-0)
+## 🥈 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
 
-看起来你只发了标题，正文内容没贴出来。把 Mistral Large 4 的具体信息发给我，我来帮你写这条总结。
+AI现在能自己设计推理芯片了——这不是人类工程师写好方案让AI优化，而是AI从架构探索到电路级实现全程自主完成。值得关注的点在于：这意味着芯片设计迭代速度可能从「月」压缩到「天」，而推理硬件的定制化门槛将被大幅拉低，未来跑大模型的成本结构可能因此被重写。
 
-## 4. The Early History of Smalltalk (1993)  (⭐ 4.0/10)
-🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
-
-Smalltalk 是最早的面向对象编程语言之一，Alan Kay 在 1993 年这篇回顾里讲述了它从 1970 年代 Xerox PARC 诞生的完整历程。值得关注的是，它不只是讲语言本身，更揭示了「面向对象」「图形界面」「个人电脑」这些今天习以为常的概念，最初是如何被一群人当作教育工具和思维媒介来设计的——读懂这段历史，你就理解了现代软件设计思想的源头。
-
-## 5. Nobel Prize in Physics goes to Francis Halzen  (⭐ 2.0/10)
+## 🥉 Nobel Prize in Physics goes to Francis Halzen  (⭐ 6.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-弗朗西斯·哈爾岑（Francis Halzen）因在冰立方中微子天文台（IceCube）的開創性工作而獲得諾貝爾物理學獎，該台位於南極冰層深處，用於探測來自宇宙的高能微中子。這項榮譽表彰了他將南極冰層轉變為巨型微中子探測器、從而開闢了天文觀測全新窗口的遠見與領導力。值得關注的是，這意味著我們終於能「看見」那些以往無法觀測的極端宇宙事件——從黑洞合併到超新星爆發——並藉此更深入理解宇宙的運作方式。
+2025年诺贝尔物理学奖颁给了弗朗西斯·哈尔岑（Francis Halzen），表彰他在中微子天文学领域的开创性贡献——他主导建造的冰立方（IceCube）探测器，在南极冰层下捕捉到了来自遥远宇宙的高能中微子。
+
+值得关注的是，这标志着天文学正式进入「多信使」时代：过去我们只能靠光（电磁波）观测宇宙，现在中微子成了一种全新的「望远镜」，能帮我们看见那些连光都无法穿透的极端宇宙事件，比如黑洞吞噬恒星、超新星爆发的最深处。
+
+## 4. Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+内容好像没贴全，只看到标题「Mistral Large 4」。
+
+把正文发我，我按你要的风格（2-3 句、说清是什么+为什么值得关注、像给朋友推荐）给你写。
+
+## 5. The Early History of Smalltalk (1993)  (⭐ 3.0/10)
+🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
+
+Smalltalk 是第一个真正意义上的面向对象编程语言，Alan Kay 在这篇 1993 年的回忆录里详细讲述了它从 1970 年代 Xerox PARC 实验室诞生的全过程——包括那些没成功的早期版本和背后的设计争论。值得一读是因为它不只是技术史，更解释了为什么「消息传递」比「对象」本身更接近 Kay 对 OOP 的原始构想，而这一点后来被大多数主流语言忽略了。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
