@@ -2,31 +2,34 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Nobel Prize in Physics goes to Francis Halzen  (⭐ 6.0/10)
-🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
-
-2025年诺贝尔物理学奖授予了Francis Halzen，表彰他在中微子天文学领域的开创性贡献——他主导建造了南极冰立方中微子天文台，首次让人类用中微子这个“幽灵粒子”来观测宇宙。这项工作之所以值得关注，是因为它打开了一扇全新的宇宙观测窗口：传统望远镜只能捕捉光，而中微子能穿透一切障碍，把遥远星系核心甚至宇宙诞生之初的信息直接送到我们面前。
-
-## 🥈 Find the flattest route between any two points in SF  (⭐ 6.0/10)
-🔗 [hackernews](https://flattensf.com/)
-
-这个工具能帮你找到旧金山任意两点间最平坦的骑行或步行路线，它会计算沿途的海拔变化，避开那些让你爬坡爬到腿软的街道。对骑车通勤或推婴儿车出门的人来说，这比单纯找最短路线实用多了。
-
-## 🥉 Dust: Pretraining Transformers Without Backpropagation  (⭐ 6.0/10)
-🔗 [hackernews](https://qlabs.sh/research/dust)
-
-一种叫 Dust 的新方法，能让 Transformer 模型在预训练阶段完全不使用反向传播——靠前向传播加局部学习规则来更新参数。这值得关注，因为反向传播一直是训练大模型最吃显存和算力的环节，如果能绕开它，训练成本和硬件门槛可能会显著下降，也让生物上更合理的训练方式离现实更近一步。
-
-## 4. Beam: Reflection's 501B open-weight model  (⭐ 5.0/10)
+## 🥇 Beam: Reflection's 501B open-weight model  (⭐ 6.0/10)
 🔗 [hackernews](https://reflection.ai/blog/introducing-beam)
 
-Beam 是 Reflection 发布的一个 501B 参数的开源权重模型，主打推理能力，权重公开可下载。  
-它值得关注是因为 500B 级别的模型通常闭源或收费，而 Beam 把大规模推理模型开放出来，让研究者和开发者能自己部署、微调，不用依赖 API。
+Reflection 刚刚放出了 Beam，一个 501B 参数的开源权重模型。值得关注的点在于：它是目前少数直接开放权重到这个量级的模型之一，而且 Reflection 此前以做「诚实 AI」和拒绝幻觉的路线出名——这次把旗舰级规模直接开源，对想自己部署大模型又不想被 API 绑死的团队来说，是个实打实的新选项。
 
-## 5. Accountability mechanisms can be joyful (2024)  (⭐ 3.0/10)
+## 🥈 Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
+🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
+
+关于这条，我得先做个说明：单看标题“诺贝尔物理学奖颁给 Francis Halzen”本身信息量不够，没法凭空编出细节。如果你是想让我根据这个标题写一段编辑风格的推荐，可以这样处理——
+
+**冰立方（IceCube）中微子天文台的灵魂人物 Francis Halzen 拿下诺贝尔物理学奖，这说明用南极冰层捕捉高能宇宙中微子这条路线，终于被最高级别的认可盖章了。值得关注的原因是，中微子几乎不与物质作用，能带着宇宙深处（比如活动星系核、伽马暴）的信息一路不被偏折地飞到地球——某种意义上，这是人类第一次真正“看见”那些用光子和引力波都看不清的极端宇宙过程。**
+
+不过要严谨的话，2024年诺贝尔物理学奖实际颁给的是 John Hopfield 和 Geoffrey Hinton。如果你手上这条是某篇具体报道或新闻，把内容贴出来，我再给你准确的 2-3 句
+
+## 🥉 Find the flattest route between any two points in SF  (⭐ 5.0/10)
+🔗 [hackernews](https://flattensf.com/)
+
+这个叫「Flattest Route」的网站能帮你找出旧金山任意两点间最平坦的骑行/步行路线，而不是最短或最快的。对骑车通勤的人来说很实用——旧金山坡多到离谱，省力比省时间更重要。
+
+## 4. Dust: Pretraining Transformers Without Backpropagation  (⭐ 5.0/10)
+🔗 [hackernews](https://qlabs.sh/research/dust)
+
+这个叫 Dust 的方法让 Transformer 在预训练阶段完全绕开反向传播——不计算梯度，而是用前向传播加局部学习规则来更新权重。如果它能在大规模模型上跑通，意味着训练不再被显存和算力死死卡住，对想自己训模型但买不起 GPU 集群的人来说是个值得盯的变量。
+
+## 5. Accountability mechanisms can be joyful (2024)  (⭐ 4.0/10)
 🔗 [hackernews](https://liquidbrain.net/blog/accountability-and-joy/)
 
-这条标题来自 2024 年的一篇探讨「问责机制」的文章，核心观点是：问责不一定非得是令人紧张、防御性的过程，设计得当的话，它反而能带来愉悦感和正向激励。值得关注的地方在于，它挑战了我们对「追责=压力」的默认设定——如果反馈、复盘、纠错这些环节本身能让人感到被支持甚至有趣，团队和个人的持续改进才更可能真正跑起来。
+这篇 2024 年的文章提出，问责机制不一定要靠惩罚和恐惧来运作，设计得当反而能带来乐趣和正向激励。它值得关注是因为大多数团队一提“问责”就想到追责和甩锅，而作者给出了让责任感和积极性共存的实操思路。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

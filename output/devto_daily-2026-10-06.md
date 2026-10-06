@@ -2,29 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [If you're hiring in this AI era, would you give Junior devs a chance?](https://dev.to/josaphatstar/if-youre-hiring-in-this-ai-era-would-you-give-junior-devs-a-chance-4kmp)
+## 1. [Scaling Agent Kernel on AWS: Decoupling Request Handling from Agent Execution](https://dev.to/agent-kernel/scaling-agent-kernel-on-aws-decoupling-request-handling-from-agent-execution-56bg)
 
-**✨ 精华总结：** AI 编程工具让「招初级开发到底值不值」成了硅谷热议话题——连 YouTube 技术大 V 都在社交平台上讨论这件事。核心矛盾是：AI 能完成大量基础编码工作，企业自然倾向于用更少的人做更多事，初级岗位的入口正在收窄。真正值得关注的是，这不只是招聘偏好问题，而是整个行业的人才培养管道可能被掐断——今天不招初级，五年后哪来的资深？
+**✨ 精华总结：** AWS 团队提出把 Agent 系统中的「请求接收」和「Agent 执行」拆成两个独立环节——前者轻量快速，后者耗时长且资源不确定，混在一起在低负载时看不出问题，高并发下就会整体卡死。这个类比的本质是：Agent 推理的耗时波动极大（取决于任务复杂度和资源竞争），必须像餐厅前台和后厨一样解耦，才能独立扩展各自的吞吐能力。如果你在 AWS 上跑多 Agent 服务且遇到过高峰期雪崩，这篇值得读。
 
-## 2. [Designing Reliable Restart Workflows: Application Recovery, State Management, and Fault Tolerance](https://dev.to/iwrites/designing-reliable-restart-workflows-application-recovery-state-management-and-fault-tolerance-fk3)
+## 2. [Anatomy of a Python SyntaxError: Why Over-Engineering Regular Expressions Killed Our Project](https://dev.to/toai/anatomy-of-a-python-syntaxerror-why-over-engineering-regular-expressions-killed-our-project-59ma)
 
-**✨ 精华总结：** 重启看起来只是界面上一个按钮，但真正的难点在于：进程重启了，不代表系统状态也回到了干净一致的状态——后台任务可能已完成却没记录结果，队列里可能还有残留消息，缓存和用户会话也可能不同步。这篇文章讲的就是怎么设计一套可靠的重启流程，把应用恢复、状态管理和容错真正串起来。值得关注是因为大多数团队都是踩了坑才意识到这件事比想象中复杂。
+**✨ 精华总结：** 一个 Python 项目因为把正则表达式写得过于复杂，最终在第三阶段被一个 SyntaxError 直接干趴下，整个开发被迫停滞。值得关注的是，这不是语法本身有多难，而是「过度设计」把简单的字符串处理变成了没人能调试的黑盒——正则一旦膨胀到这种程度，报错信息基本帮不上忙，你连错在哪都定位不到。
 
-## 3. [House Stock Watcher and Senate Stock Watcher are down: what to use instead (2026)](https://dev.to/fatihbuilds/house-stock-watcher-and-senate-stock-watcher-are-down-what-to-use-instead-2026-2h0n)
+## 3. [Show HN: Decision models remove training, not production ML Engineering](https://dev.to/clydecorreya/show-hn-decision-models-remove-training-not-production-ml-engineering-4acf)
 
-**✨ 精华总结：** **一句话总结：** 美国国会股票交易追踪的两个经典免费数据源（House/Senate Stock Watcher）已在 2026 年 10 月前后彻底失效，S3 存储桶全线返回 403，所有依赖它们的项目都得换数据源了。
+**✨ 精华总结：** 有人提出「决策模型」这个概念，主张用可复用的决策模型替代每个任务单独训练模型，能省掉训练成本、缩短上线时间。但作者点破了一个常见误区：免训练不等于免运维——训练只是ML生产链条中的一环，特征管道、监控、数据漂移处理这些「生产级工程」的活儿一样都跑不掉。值得关注是因为它戳中了「省了训练就万事大吉」这种偷懒心态，提醒团队别低估真实部署的复杂度。
 
-**为什么值得关注：** 这两个项目多年來是 STOCK Act（国会议员交易披露）数据的默认免费入口，很多爬虫、仪表盘和分析工具都直接指向它们的 AWS S3 地址——现在这些链接全部 403，意味着大量现存项目可能已经在静默失败。
+## 4. [How to make your GitHub README stand out with one URL](https://dev.to/potenfyr/how-to-make-your-github-readme-stand-out-with-one-url-23ej)
 
-**替代方案：** 官方数据源（House Clerk 和 Senate eFD 的原始披露文件）仍然可用，只是需要自己解析；此外可以关注一些社区维护的镜像或付费 API（如 Quiver Quantitative、Unusual Whales 等）提供的国会交易数据接口。如果你有项目依赖旧源，建议尽快迁移并对 S3 地址做失效监控
+**✨ 精华总结：** 一个叫 ReadmeFX 的工具，能通过一个 URL 为 GitHub README 生成 56 种实时 SVG 效果，无需设计工具或手动导出图片。它的亮点在于「实时」——统计数据变化时图形自动更新，不用反复重做。如果你在意项目的门面，这算是低成本提升质感的方式。
 
-## 4. [Dust: The Radical Idea of Training AI Without Backpropagation](https://dev.to/gabby_six/dust-the-radical-idea-of-training-ai-without-backpropagation-k1k)
+## 5. [How a Zero-Downtime Table Swap Silently Dropped Orders From Postgres Logical Replication for 91 Hours](https://dev.to/darshan_turakhia/how-a-zero-downtime-table-swap-silently-dropped-orders-from-postgres-logical-replication-for-91-4767)
 
-**✨ 精华总结：** 有人提出一种叫 Dust 的神经网络训练方法，试图彻底绕开反向传播这个深度学习几十年来的核心算法。反向传播虽然成就了今天的 LLM 和图像生成模型，但它对内存和算力的消耗一直是规模化瓶颈；如果能找到更简洁、更易扩展的替代方案，整个 AI 训练的底层逻辑可能被重写。目前这还只是个激进设想，但值得关注的是它挑战了「没有反向传播就训不出模型」这个默认前提。
+**✨ 精华总结：** 一次零停机表切换（通过VIEW重命名实现的新旧表切换）悄悄破坏了Postgres逻辑复制的发布集，导致订单数据连续91小时未能同步到下游，而生产环境一切正常——没有报警、没有红屏。
 
-## 5. [7 Best Email APIs for Developers in 2026 (Compared)](https://dev.to/kevin_menesesgonzlez/7-best-email-apis-for-developers-in-2026-compared-37jj)
-
-**✨ 精华总结：** 2026年开发者邮件API横向测评出炉，把7个主流服务的送达率、免费额度、日志保留策略摆在一起比，专治“选完就后悔”。如果你在做SaaS验证码/收据、给AI agent接邮件收发能力，或者正被某家的垃圾箱问题和短命日志折磨，这份对比能帮你一次选对。
+这就是最危险的故障类型：主库读写无恙，复制默默断裂。表切换时旧表被重命名，但逻辑复制槽仍绑定在旧表上，新表的数据完全不进复制流。这类问题的隐蔽性在于，监控看的是「服务是否可用」，而数据管道的正确性没有任何自动化检查覆盖。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
