@@ -14,25 +14,27 @@
 
 ### 1. [Nobel Prize in Physics goes to Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-这可能是一条错误消息——2024年诺贝尔物理学奖实际颁给了John Hopfield和Geoffrey Hinton，以表彰他们在机器学习与神经网络领域的奠基性工作。Francis Halzen是冰立方中微子天文台的负责人，长期从事中微子天文学研究，但他并未获得诺贝尔奖。如果你看到的是某年的旧闻或预测性内容，建议核对诺贝尔奖官网（nobelprize.org）确认。
+弗朗西斯·哈岑（Francis Halzen）因在冰立方中微子天文台（IceCube Neutrino Observatory）的奠基性工作而获得诺贝尔物理学奖。他领导建造了埋在南极冰层下的一立方公里探测器，首次捕捉到来自遥远星系的高能中微子，从而开启了一种全新的宇宙观测方式。
 
-### 2. [Find the flattest route between any two points in SF](https://flattensf.com/)
+### 2. [Gleam doesn't compile to Erlang source anymore](https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/)
 *hackernews*
-旧金山地形起伏大，骑行或步行时爬坡非常费力，这个工具能帮你在地图上找到任意两点间最平坦的路线，而不是最短路线。它通过分析高程数据规划路径，特别适合骑车通勤、推婴儿车或带行李的人——本质上是把“省力”作为路线优化的第一目标。
+Gleam 编译器不再把代码转译成 Erlang 源码，而是直接生成 Erlang 的抽象语法树（AST）字节码形式。
 
-### 3. [Friendship ended with Deno, now Node is my best friend](https://dbushell.com/2026/10/03/deno-to-node/)
+这意味着编译速度会更快、生成的代码质量更高，调试体验也更可控——对用 Gleam 写后端服务的开发者来说，是实打实的底层升级。
+
+### 3. [Find the flattest route between any two points in SF](https://flattensf.com/)
 *hackernews*
-这标题在玩梗——它套用了经典的「Friendship ended with X, now Y is my best friend」表情包句式，暗示对 Deno 的失望转投 Node.js 阵营。核心信息是：随着 Node.js 补齐了 ESM、内置测试器、原生 TypeScript 支持等能力，Deno 曾经主打的差异化优势正在被抹平。值得关注的原因是，工具选型的逻辑正在从「谁更新潮」回归到「谁的生态和稳定性更值钱」。
+这个叫「Flattest Route」的小工具能帮你找出旧金山任意两点间坡度最小的路线，专门服务骑车和跑步的人，避开那些让人崩溃的大坡。它把地形数据直接叠加到路线规划里，对住在旧金山这种「出门就是坡」城市的人来说，算是刚需型工具了。
 
 ## 🤖 AI / 大模型
 
 ### 1. [Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 *hackernews*
-Beam 是 Reflection 开源的一个 501B 参数的大模型，权重完全公开，可以直接下载使用。值得关注的点在于：501B 这个体量在开源模型里属于第一梯队，而 Reflection 此前以闭源为主，这次开放权重意味着更多人能直接拿它做推理、微调或私有化部署。
+Beam 是 Reflection 发布的 5010 亿参数开源权重模型，直接对标闭源顶级大模型的性能水平。值得关注的是，它把此前只有少数闭源巨头才敢碰的「超大参数+开放权重」路线跑通了，意味着开发者和研究者现在可以本地部署和微调一个真正接近前沿能力的模型，而不必依赖 API。
 
 ### 2. [Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 *hackernews*
-斯坦福等机构提出 Dust——一种无需反向传播的 Transformer 预训练方法：它用前向传播中的局部信号（类似赫布学习/前向-前向思想）直接更新权重，完全绕开梯度回传。值得关注是因为若规模可行，它可能大幅降低显存与算力门槛，让训练不再被"反向传播"这一环卡住，目前仍需验证在大模型上的效果能否追平标准训练。
+这个叫 Dust 的方法让 Transformer 不用反向传播也能预训练。反向传播一直是训练大模型的算力瓶颈，如果能绕开它，训练成本可能大幅下降。
 
 
 ---

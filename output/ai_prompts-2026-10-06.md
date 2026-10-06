@@ -4,39 +4,37 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章讨论的是 Beam 发布的 501B 参数开放权重模型（Reflection 相关），内容中没有涉及 Prompt 技巧或 AI 使用建议。因此无法提炼出明显的 Prompt 工程最佳实践。**
+**这篇文章内容为空，没有可提炼的 Prompt 技巧或 AI 使用建议。请提供实际的文章正文，我再帮你总结。**
 
 📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## 2. 💡 技巧 2
 
-**这篇文章没有提供具体的 Prompt 技巧，但包含一个值得关注的 AI 使用建议：**在评估新的 AI 模型或技术时，不要只看标题就下结论，要深入理解其实际含义和局限。**
-
-具体来说，这篇文章讲的是 "Dust"——一种不通过反向传播（backpropagation）来预训练 Transformer 的方法。这类研究的意义在于探索替代传统训练范式（如梯度下降 + 反向传播）的可能性，可能带来更低的内存开销、更好的并行性，或全新的学习机制。但它并不代表反向传播马上会被取代——标题容易让人**
+**这篇文章没有提供可提炼的 Prompt 技巧或 AI 使用建议——它是一篇关于机器学习预训练方法的技术研究内容（用非反向传播方式预训练 Transformer），不涉及 Prompt 工程或如何更好使用 AI。**
 
 📎 来源：[Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 
 ## 3. 💡 技巧 3
 
-**这篇文章讲的是 AI agent（Opus 5.5）自主发现两种室温磁性半导体候选材料，内容偏科研发现，没有明显的 Prompt 技巧。
+**这篇文章讲的是 AI agent（Opus 5.5）自主发现了两种室温磁性半导体候选材料，属于科研应用报道，没有明显的 Prompt 技巧内容。
 
-如果提炼其中关于"如何更好使用 AI"的建议，可以总结为：
+如果硬要提炼一条关于更好使用 AI 的建议，可以这样总结：
 
-**让 AI agent 自主完成从假设生成、文献检索、计算筛选到候选验证的完整科研闭环，而非只做单步问答——把复杂目标交给 agent 端到端探索，人在关键节点做审核。** 这体现了"给 AI 明确目标 + 充足工具 + 自主迭代空间"的使用范式。**
+**让 AI agent 承担需要跨文献检索、假设生成与验证的复杂科研任务，而不是只做单轮问答——把探索性、多步骤的工作流交给 agent，由它自主迭代筛选候选方案，人类负责设定目标和审核结果。****
 
 📎 来源：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
 
 ## 4. 💡 技巧 4
 
-**这篇文章标题为《An algorithmic failure beneath the secret ballot》（无记名投票背后的算法失灵），从标题和有限的上下文来看，内容涉及投票算法或选举系统的技术性失败分析，而非关于 AI Prompt 技巧或 AI 使用建议的讨论。
+**这篇文章标题为《An algorithmic failure beneath the secret ballot》（无记名投票背后的算法失灵），但未提供正文内容。仅从标题判断，它讨论的是选举或投票系统中算法设计缺陷的问题，属于算法公平性与治理领域，**不包含任何关于 Prompt 工程或 AI 使用技巧的内容**，因此无法从中提炼出可直接使用的 AI Prompt 技巧或最佳实践。
 
-由于提供的正文内容为空，我无法从中提炼出具体的 Prompt 工程技巧或 AI 使用建议。如果您能提供完整的文章正文，我可以帮您进一步分析并总结。**
+如果你能提供文章正文，我可以帮你进一步分析其中是否有可迁移到 AI 使用上的方法论（例如：如何识别系统的隐性偏差、如何设计更公平的决策流程等）。**
 
 📎 来源：[An algorithmic failure beneath the secret ballot](https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有明显的 Prompt 技巧，主要是关于自建邮件服务器的讨论。可以总结的 AI 使用建议是：**将 AI 用在能直接改善体验的具体环节上（例如让 AI 帮助诊断 iOS 邮件客户端连接慢、服务器配置或日志排查问题），而不是泛泛地问“该用什么工具”。****
+**这篇讨论主要是关于自托管邮件服务器的经验分享，没有涉及 Prompt 工程或 AI 使用技巧的内容，因此无法从中提炼相关的 Prompt 最佳实践。**
 
 📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
