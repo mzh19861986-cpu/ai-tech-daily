@@ -4,31 +4,31 @@
 
 ## Q1: Beam: Reflection's 501B open-weight model？
 
-**A:** Beam 是 Reflection 发布的一个 501B 参数的开权重模型，直接对标当前顶级闭源模型的规模。值得关注的点在于：它把“开放权重”推到了 500B 这个量级，意味着开发者和研究者可以在本地或私有环境里跑一个接近前沿水平的大模型，而不是只能通过 API 调用。简单说，这是开源阵营在参数规模上的一次重要推进，对需要数据隐私或深度定制的人来说是个实质性的新选项。
+**A:** Reflection 开源了 501B 参数的大模型 Beam，是目前规模最大的开放权重模型之一。它的看点在于：大厂之外的公司用开源方式把参数推到 500B 级别，意味着社区能直接拿到接近顶级闭源模型的能力做微调和部署，而不只是看 API 演示。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## Q2: Email Self Hosters - what are you using?？
 
-**A:** 最近有开发者在社区里讨论自建邮件服务器的方案，楼主目前用 **maddy** 管理多个域名的邮箱和 catch-all 转发，轻量、配置简单是它的优点，但 iOS 原生邮件客户端连接奇慢这点让人抓狂——这也暴露了自建邮件服务最现实的痛点：协议兼容性和客户端握手体验很难自己控制。如果你也在考虑自托管邮箱，这个帖子值得关注，因为回复里大概率会涌现出 Mailcow、Mail-in-a-Box、Stalwart 等替代方案的实战对比，以及如何绕开 iOS 客户端这类坑的经验。
+**A:** 自建邮件服务器圈子里，maddy 是个挺受欢迎的选择——单二进制文件、配置简单，适合管理多域名和 catch-all 邮箱。不过这位用户的槽点也很典型：iOS 原生邮件客户端连接慢得让人抓狂，这类"能用但不够顺"的体验，恰恰是自建邮件最劝退的地方。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## Q3: A sustainable web career, for when all this blows over？
 
-**A:** 这条讨论围绕一个现实问题展开：Web 开发者的职业生涯如何做到可持续，尤其是在技术浪潮退去、行业回归常态之后。值得关注的是，它跳出了“如何快速成长”的套路，转而讨论职业 longevity——比如技能选择、工作节奏、避免 burnout 这些被忽视的长期变量。如果你也在想“这行能干多久”，这类视角会比追新框架更有参考价值。
+**A:** 这篇讨论来自 Lobste.rs 社区，主题是「等这波（AI 热潮/行业动荡）过去之后，如何经营一份可持续的 Web 开发生涯」。它值得关注的点在于：当整个行业都在追逐短期风口时，作者在认真讨论怎么让技术人的职业生涯活得更久、更稳，而不是被下一轮泡沫裹挟着走。
 
 📎 更多阅读：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
 ## Q4: Pared - remove unwanted Apple Intelligence models without disabling SIP？
 
-**A:** Pared 是一款 macOS 小工具，能在不关闭系统完整性保护（SIP）的前提下，删除 Apple Intelligence 下载到本地的那些用不上的 AI 模型文件。值得关注是因为 Apple Intelligence 会悄悄占用数 GB 磁盘空间，而这些模型既不能通过常规设置卸载，过去想动手清理还得关掉 SIP——那等于把系统安全防线拆了。Pared 让你清理空间的同时不用牺牲安全性。
+**A:** Pared 是一个开源小工具，能在保持系统完整性保护（SIP）开启的前提下，删除 macOS 上不想要的 Apple Intelligence 模型文件。对担心这些模型占用数 GB 磁盘空间、又不想为了清理而关掉 SIP 冒安全风险的用户来说，它提供了一个更安全的折中方案。
 
 📎 更多阅读：[Pared - remove unwanted Apple Intelligence models without disabling SIP](https://github.com/4evy/pared)
 
 ## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** 这篇论文提出了 ADSD 框架，核心思路是让 AI 不仅能写出数值求解器的代码，还能自动诊断性能问题的根因并发现可复用的优化技能。值得关注的点在于：它试图把"执行反馈"从单纯的对错信号，升级成"哪里慢、为什么慢、怎么改"的闭环，这比让模型盲试调参要高效得多。
+**A:** AI智能体已经能写科学计算代码了，但「写出能跑的代码」和「真正改进算法」是两回事——数值求解器跑得差时，执行反馈只会告诉你「结果不行」，却不会说清问题出在哪、该怎么修。这篇论文提出的ADSD框架，核心思路是让智能体自己诊断性能瓶颈、自动发现可复用的解题技能，把「盲试」变成「有方向地进化」。值得关注的点在于：它瞄准的是AI做科研时最缺的一环——从「会写」到「会改」的闭环，如果跑通，科学计算领域的自动化迭代效率可能会有质的变化。
 
 📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 

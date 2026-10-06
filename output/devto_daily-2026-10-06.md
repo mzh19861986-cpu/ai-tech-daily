@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Linux Network Interfaces: Find the Right Device, State, and IP](https://dev.to/__3381495fd2b/linux-network-interfaces-find-the-right-device-state-and-ip-1l65)
+## 1. [Caveman vs Ponytail vs Chisle: I benchmarked the Claude Code token-saving plugins on 20 tasks](https://dev.to/jaypokale/caveman-vs-ponytail-vs-chisle-i-benchmarked-the-claude-code-token-saving-plugins-on-20-tasks-bg8)
 
-**✨ 精华总结：** 排查Linux网络故障时，第一步不是急着重启服务，而是先看内核到底认出了哪些网卡、它们处于什么状态、有没有拿到IP。`ip -br addr show` 这个命令值得记住——它用一行一个接口的紧凑格式，把设备名、up/down状态和IP地址一次性列清楚，让你几秒钟内就能区分「网卡没被识别」和「网卡只是没启用或没配地址」这两种完全不同的故障方向。
+**✨ 精华总结：** 有人拿20个真实任务、跑了几十次模型，实测了三款Claude Code省token插件：老牌的「穴居人」（让Claude说话像原始人）和「马尾」（让它少写代码），外加作者自制的第三款。值得关注的是，这类插件此前基本靠体感吹嘘，而这次是同一套任务、只改注入规则的控制变量对比——想知道到底哪款真省token不伤效果，这篇是少有的硬数据。
 
-## 2. [What I learned from building a Image Search System](https://dev.to/albres/what-i-learned-from-building-a-image-search-system-7np)
+## 2. [My GPU Training Job Ran for 20 Hours and Produced Nothing. There Was No Error Message.](https://dev.to/franciscobooth/my-gpu-training-job-ran-for-20-hours-and-produced-nothing-there-was-no-error-message-20l1)
 
-**✨ 精华总结：** 这个项目复盘讲的是作者从零搭建图文混合搜索系统（图片或文字都能查）时踩过的坑。值得关注的是，它揭示了「看起来像 Google Photos 那样简单」的背后，其实藏着大量工程细节——这类实战教训比教程更能帮你在做多模态检索时少走弯路。
+**✨ 精华总结：** 一位开发者花约1000英镑在Vast.ai上跑了数十次模型微调任务，其中多次训练耗时20小时却毫无产出，且全程没有报错。问题根源在于失败任务都不会给出任何明显异常信号——这意味着你可能在不知情的情况下持续为无效算力付费。对于任何租用GPU跑长任务的人来说，这是个值得警惕的坑：沉默的失败比报错更烧钱。
 
-## 3. [Reconstructing Edtech Outages — Node.js Express Health Checks with /ready and /live](https://dev.to/frosty45/reconstructing-edtech-outages-nodejs-express-health-checks-with-ready-and-live-46cb)
+## 3. [List recruiting Phase 3 trials from the ClinicalTrials.gov API in Python](https://dev.to/northpine-studio/list-recruiting-phase-3-trials-from-the-clinicaltrialsgov-api-in-python-1oa6)
 
-**✨ 精华总结：** 给 Express 服务加健康检查，关键是分清 `/live` 和 `/ready` 两个端点：`/live` 只回答"进程还活着吗"，`/ready` 回答"现在能正常接流量吗"。当 `/ready` 挂了但 `/live` 还在，你就知道服务没崩、只是暂时不该接请求——这比盯着"CPU 飙高"有用得多，因为它直接告诉运维：是发布功能受影响，还是所有学习者都进不来，以及该回滚到哪个版本。
+**✨ 精华总结：** ClinicalTrials.gov 有个免费的 v2 JSON API，不需要申请 key，用几行 Python 就能拉出某个适应症下正在招募的三期临床试验，附带申办方、入组人数和启动日期，直接丢进表格就能用。对做竞品分析、管线追踪或者单纯想快速摸清某个领域研究动态的人来说，这比手动翻网页高效得多。
 
-## 4. [Extending PcDevice Search: Regex Limits and Invoice Fields Integration](https://dev.to/zaerohell/extending-pcdevice-search-regex-limits-and-invoice-fields-integration-1haa)
+## 4. [Compare Hosted vs Application-Owned SMS Alerts API for SaaS — Choose Control](https://dev.to/rasmusberg6592/compare-hosted-vs-application-owned-sms-alerts-api-for-saas-choose-control-19jo)
 
-**✨ 精华总结：** 这次更新给 PcDevice 搜索加了两块实用能力：协作者编号的正则收紧到只认 3–6 位数字，避免模糊匹配误伤；同时把 invoiceNumber 和 purchaseOrder 两个字段正式纳入模型，现在可以直接被全局搜索命中，也会显示在设备详情面板里。改动横跨 Prisma schema、搜索逻辑、设备 store hook 和渲染组件，属于一次从数据层到 UI 的端到端打通——如果你之前得靠备注或外部表格找发票号和采购单号，现在系统内部就能查了。
+**✨ 精华总结：** SaaS团队选短信告警API时容易只盯着功能对比，却忽略了更根本的问题：告警链路的控制权归谁。托管服务看起来省事，但当故障出现区域割裂、队列堆积而请求量却没涨时，你根本没有足够的观测点去定位问题。更稳妥的做法是：在应用层自己维护告警文案和触发逻辑，只把发送动作抽象成一个极薄的、不绑定特定厂商的接口——这样既保留了排障所需的可见性，又不会被任何一家供应商锁死。
 
-## 5. [Which trees near me are turning this weekend? Forecasting fall color from 6,650 iNaturalist observations with TabPFN](https://dev.to/13owen/which-trees-near-me-are-turning-this-weekend-forecasting-fall-color-from-6650-inaturalist-5cpe)
+## 5. [Managed Off-Chain Services: When to Outsource Indexers and Oracles](https://dev.to/beefedai/managed-off-chain-services-when-to-outsource-indexers-and-oracles-4no0)
 
-**✨ 精华总结：** 有人用 6,650 条 iNaturalist 观鸟爱好者上传的树叶照片，训练了一个叫 TabPFN 的小样本预测模型，做成了一个能告诉你“我这周末出门散步，路边那几棵枫树红了没有”的秋叶预报工具。
-
-这东西值得关注的点在于：现有的红叶地图只能告诉你某个区域“接近最佳观赏期”，但没法精确到一条街、一棵树。TabPFN 这种基于先验的表格基础模型，恰好适合这种观测数据少、又要快速出预测的场景——本质上它把“秋天什么时候来”这个模糊问题，拆成了“你楼下这棵树现在什么状态”的个人化答案。
+**✨ 精华总结：** 这篇内容讨论的是：什么时候该把链下服务（索引器、预言机、RPC 节点）外包给第三方，而不是自己扛。判断信号很具体——流量高峰时的查询超时、清算时刻第三方 RPC 突然返 5xx、历史查询积压需要归档节点、以及专门为维护 graph-node 的 Postgres vacuum 而设的 on-call 值班。这些都指向同一个结构性问题：链下服务本质上是运维重活，自建的隐性成本往往被低估。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

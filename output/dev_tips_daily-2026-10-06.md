@@ -4,27 +4,29 @@
 
 ## 技巧 1
 
-**Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
+**Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage**
 
-✨ 这篇论文把中国哲学智慧引入自动驾驶决策，让大语言模型在复杂路况下不仅算得快，还能“讲分寸”。它的价值在于：现有方案多在安全与效率之间做数值权衡，却忽视了社会规范和伦理判断，而哲学框架恰好能补上这层“人情世故”。
+✨ 美国两党议员近期提出多项法案，拟在全国层面对Flock Safety的AI车牌追踪系统进行监管。此前404 Media的调查报道揭露，这套系统已被全美数千个执法机构接入，形成了事实上不受约束的全民车牌监控网络，而相关法律却严重滞后。值得关注的是，这是立法者首次针对具体监控技术公司推动系统性立法，而非停留在零散的隐私辩论层面——如果法案推进，可能为其他AI监控技术的监管立下先例。
 
-📎 [阅读原文](https://arxiv.org/abs/2610.03948)
+📎 [阅读原文](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
 
 ## 技巧 2
 
-**Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
+**Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把 TabPFN 那套「先验拟合网络」的思路从表格数据搬到了自然语言：模型只在合成、非语言的符号序列上预训练，却能纯靠上下文学会一门真实语言的任务，完全不更新权重。值得关注的点在于，它说明「学会如何学习」这件事可能是一种与具体语言解耦的通用能力，未来小模型通过合适的合成先验就能快速适配新语言或新任务，而不必从头预训练。
+✨ 这篇论文把中国哲学思想（比如中庸、无为而治）引入自动驾驶的决策系统。具体做法是用检索增强的大模型（RAG）来指导车辆在复杂交通场景中的判断，让决策不仅考虑安全和效率，还兼顾伦理和社会规范。值得关注的是，这是第一次系统性地把东方哲学框架和LLM自动驾驶决策结合起来，为「AI该怎么做人」这个老问题提供了一个不一样的文化视角。
 
-📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
+📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
 ## 技巧 3
 
-**What I learned from building a Image Search System**
+**Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 做图像搜索系统就像教一个从没见过图片的机器人认路——你得同时搞定特征提取、向量索引和跨模态查询（文字搜图）这三件事，任何一环掉链子，结果就是“搜不准”。作者踩坑后最大的收获是：图像搜索的瓶颈往往不是模型不够强，而是工程上如何把「图片理解」和「检索效率」捏合到一个可用的 pipeline 里。如果你在做 RAG 的图片版或者想给自己的相册加个“搜图”功能，这份踩坑记录能帮你少走两周弯路。
+✨ 这篇论文把 PFN（先验拟合网络）的思路从表格数据搬到了语言上：先让模型只看合成的「非语言」序列做预训练，之后不给任何梯度更新，它就能在上下文中直接学会一门自然语言的任务。
 
-📎 [阅读原文](https://dev.to/albres/what-i-learned-from-building-a-image-search-system-7np)
+值得关注的是，这说明「从上下文里学新东西」这种能力，可能不需要真实语言数据来培养——合成先验就够了，这对低资源语言和快速适配场景是个有意思的信号。
+
+📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*
