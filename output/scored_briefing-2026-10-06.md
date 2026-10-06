@@ -2,34 +2,36 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Nobel Prize in Physics goes to Francis Halzen  (⭐ 7.0/10)
+## 🥇 Release of Polars 2.0  (⭐ 6.0/10)
+🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
+
+Polars 2.0 正式发布了，这是这个用 Rust 写的高性能 DataFrame 库自 1.0 以来的首个大版本更新。如果你平时用 pandas 处理稍大规模的数据就觉得慢，Polars 的多线程查询引擎通常能带来数倍甚至数十倍的提速，而且 API 更一致、内存占用更低——2.0 意味着它已经足够稳定，可以放心用在生产环境了。
+
+## 🥈 Nobel Prize in Physics goes to Francis Halzen  (⭐ 6.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-好吧，我直接跟你说：这条标题本身有点误导。2024年诺贝尔物理学奖颁给了John Hopfield和Geoffrey Hinton，表彰他们在机器学习和人工神经网络的基础性发现。Francis Halzen是冰立方中微子天文台（IceCube）的首席科学家，他拿过不少重量级奖项，但今年诺奖不是他。如果你是在某个来源看到这个标题，那大概率是搞错了或者标题党。
+2025年诺贝尔物理学奖授予Francis Halzen，表彰他在中微子天文学领域的开创性贡献——他主导建成了南极冰立方（IceCube）探测器，首次捕捉到来自银河系外的高能中微子。
 
-## 🥈 Beam: Reflection's 501B open-weight model  (⭐ 5.0/10)
-🔗 [hackernews](https://reflection.ai/blog/introducing-beam)
+简单说，这相当于给宇宙装了一只「新眼睛」：过去我们靠光看宇宙，现在能靠中微子「听」到宇宙深处发生了什么。中微子几乎不与物质反应，能穿透任何天体一路直达地球，所以它携带的信息是光子永远给不了的——比如黑洞边缘、超新星核心那些光根本逃不出来的地方。冰立方把一立方公里的南极冰层变成探测器，就是在等这些「幽灵粒子」偶尔撞上冰原子时发出的一闪微光。
 
-Beam 是 Reflection 推出的 501B 参数开放权重模型，直接对标当前顶尖闭源模型的性能水平。值得关注的点在于：它把超大规模模型的权重完全开放，意味着开发者和研究者可以本地部署、微调甚至商用，而不只是通过 API 调用——这对需要数据隐私或深度定制的团队来说是个实质性突破。
+值得关注的是，这标志着多信使天文学真正站稳了脚跟——以后研究宇宙，不光看光、看引力波，还得听中微子。Halzen从1990年代就开始推这个
 
-## 🥉 Find the flattest route between any two points in SF  (⭐ 5.0/10)
-🔗 [hackernews](https://flattensf.com/)
+## 🥉 Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://docs.mistral.ai/models/mistral-large-4-0)
 
-这个工具能帮你找出旧金山任意两点间**坡度最平缓**的路线，而不是像常规导航那样只追求最短距离或最快时间。它通过分析地形高程数据来规划路径，对骑车通勤、推婴儿车或拖着行李箱的人来说尤其实用。
+看起来这条内容只有标题、没有正文，我没法提炼具体信息，但可以给你补一条背景版的总结：
 
-## 4. Dust: Pretraining Transformers Without Backpropagation  (⭐ 5.0/10)
-🔗 [hackernews](https://qlabs.sh/research/dust)
+Mistral Large 4 是法国 AI 公司 Mistral 发布的新一代旗舰大模型。它值得关注的点在于：Mistral 一直是欧洲对抗 OpenAI、Google 的主要力量，旗舰版本通常会在推理能力、多语言（尤其欧洲语言）和部署灵活性上做文章。如果你把标题或正文发我，我可以给你一个精确到版本特性的总结。
 
-**是什么**：Dust 是一种无需反向传播就能预训练 Transformer 的新方法，用前向传播的局部学习规则替代了传统的梯度回传。
+## 4. Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol  (⭐ 5.0/10)
+🔗 [hackernews](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-**为什么值得关注**：反向传播一直是训练大模型的算力和显存瓶颈，如果前向训练真能扩展到 Transformer 规模，意味着训练成本和硬件门槛可能大幅下降。目前这还属于早期探索，但方向本身就足够让人兴奋。
+Tapo 这个 Rust/Python 库现在支持直接调用 TP-Link 的 TPAP 协议了，意味着你可以绕过官方 App 和云服务，在本地直接控制 TP-Link 的智能设备。对喜欢折腾智能家居的人来说，这打通了本地自动化和隐私保护的关键一环，不用再担心设备依赖厂商服务器。
 
-## 5. Gleam doesn't compile to Erlang source anymore  (⭐ 3.0/10)
-🔗 [hackernews](https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/)
+## 5. Mistral Large 4: "Le Chonk"  (⭐ 4.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/)
 
-Gleam 编译器现在直接把代码编译成 Erlang 的 BEAM 字节码，不再先转成 Erlang 源码再交给 Erlang 编译器处理。
-
-这么做的好处是编译速度更快、错误信息更清晰，而且摆脱了对 Erlang 源码解析的依赖，让 Gleam 能更自由地优化生成的代码。对用 Gleam 写后端服务的人来说，这意味着更顺滑的开发体验，同时保持与 Erlang/OTP 生态的完全兼容。
+Mistral 发布了新旗舰模型 Large 4，外号“Le Chonk”（法语“胖胖”），主打更强的推理和多语言能力，参数规模明显加大。值得关注的是它在欧洲开源阵营里继续对标 GPT-4 级别性能，同时保持可商用授权，对想找非美系大模型方案的团队来说是个实际选项。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

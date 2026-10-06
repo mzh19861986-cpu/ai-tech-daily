@@ -1,22 +1,14 @@
 # 🆓 今日免费 AI 工具汇总 - 2026-10-06
 
-> 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 2 个
+> 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 1 个
 
-## 1. [Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
+## 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-**👥 适合谁：** 这个 AI 工具最适合**研究开源大模型、关注模型可解释性与安全对齐的 AI 研究人员和机器学习工程师**使用。
+**👥 适合谁：** Tapo（Rust/Python 库）最适合**智能家居自动化爱好者和独立开发者**用——他们想用代码绕过官方 App，直接通过 TPAP 协议控制 TP-Link 设备。
 
-**🚀 怎么开始：** Beam 的 Reflection 501B 是一个开源权重的模型，你需要把它下载并部署到自己的本地或云服务器上才能使用（无法只靠打开网页即用）。部署后通常通过 API 或推理框架调用，并可能需要相应的 GPU 资源来运行。
+**🚀 怎么开始：** Tapo 是一个 Rust/Python 库，无需本地部署，通过 Python 的 `pip install tapo`（或 Rust 的 `cargo add tapo`）即可安装，然后提供 TP-Link 账号密码就能控制设备。
 
-**📝 简介：** Beam 是 Reflection 推出的一个 501B 参数的开源权重模型，主打“反思”能力，即让模型在生成过程中自我检查和修正。它值得关注的地方在于：501B 这个体量在开源模型里属于第一梯队，而 Reflection 把“自我反思”作为核心卖点，可能意味着推理质量和可靠性会有别于单纯堆参数的路线。
-
-## 2. [Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
-
-**👥 适合谁：** 这款 AI 工具最适合**研究神经网络训练新范式的机器学习研究员和学术团队**使用。
-
-**🚀 怎么开始：** Dust 是一个开源研究项目，需要本地部署（克隆 GitHub 仓库、安装依赖），不提供在线网页版，也不需要 API key。快速开始：`git clone` 仓库后按 README 安装 PyTorch 等依赖，再运行示例脚本即可实验无需反向传播的 Transformer 预训练。
-
-**📝 简介：** 一种叫 Dust 的新方法，能在完全不使用反向传播的情况下预训练 Transformer——它用前向传播的局部学习规则替代了传统的梯度回传，让模型训练不再依赖对整个计算图求导。这件事值得关注，是因为反向传播一直是深度学习最核心也最耗资源的一环，如果能绕开它，训练成本、内存占用和硬件依赖都可能大幅改变，对边缘设备和超大规模模型尤其有想象空间。
+**📝 简介：** Tapo 这个 Rust/Python 库现在支持了 TP-Link 的 TPAP 协议，意味着你可以绕过官方 App 直接控制 Tapo 智能设备（插座、灯泡、摄像头等）。对于想把这些设备接入 Home Assistant 或自建自动化系统的人来说，这解锁了更底层的本地控制能力，不用再依赖云服务。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*
