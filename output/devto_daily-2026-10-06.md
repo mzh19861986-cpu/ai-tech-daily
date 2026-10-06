@@ -2,29 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [We Open Sourced Our Web Crawler. Here's How to Run a Node.](https://dev.to/cl0qsearch/we-open-sourced-our-web-crawler-heres-how-to-run-a-node-145)
+## 1. [I just launched LeLiveBoost](https://dev.to/carita_1f21d8bb25b1562d26/i-just-launched-leliveboost-2dg1)
 
-**✨ 精华总结：** cl0q 把自己搜索引擎背后的爬虫开源了，任何人都能读代码、跑节点，帮它一起索引开放网络。值得关注的原因是它想做的正是大引擎不做的事——让「抓了什么、怎么排序、数据去哪了」全部透明可查。目前它已收录 3850 万个域名。
+**✨ 精华总结：** **LeLiveBoost：给 Whatnot 主播的 Chrome 效率插件**
 
-## 2. [Researchers Develop Method to Train LLMs for High-Performance Chess with Accurate Move Explanations](https://dev.to/natcher/researchers-develop-method-to-train-llms-for-high-performance-chess-with-accurate-move-explanations-3o55)
+一个专门解决 Whatnot 直播卖货混乱场景的浏览器扩展，帮卖家自动追踪买家请求、管理客户信息，减少重复性手动操作。如果你做直播带货，尤其是观众一多就手忙脚乱容易漏单的阶段，这类工具能直接把「靠脑子记」变成「系统帮你盯」。
 
-**✨ 精华总结：** 普林斯顿团队搞了个新训练方法，让大语言模型不仅能下出高水平国际象棋，还能把每一步的决策逻辑说清楚——不是那种事后硬编的解释，而是和棋力同步长出来的。这事的看点在于，它打破了「要么强但黑箱、要么能解释但菜」的旧取舍，说明可解释性和高性能未必互相拖后腿，对需要AI做复杂决策又要讲得出理由的场景挺有参考价值。
+## 2. [We tried to buy one call from 100 x402 sellers. Most delivered. Almost nobody is buying.](https://dev.to/alexar76/we-tried-to-buy-one-call-from-100-x402-sellers-most-delivered-almost-nobody-is-buying-2498)
 
-## 3. [Googlebook Is Google's Gemini-Enabled Laptop Family With Android Integration](https://dev.to/alifar/googlebook-is-googles-gemini-enabled-laptop-family-with-android-integration-24c4)
+**✨ 精华总结：** 有人实测了Coinbase的x402支付协议——从100个收费API端点里各买一次调用，绝大多数卖家都能正常交付，但真正在花钱买调用的买家几乎不存在。问题在于，围绕这些端点已经长出一堆"信任评分"服务（34,768个端点、20多个扫描器在爬），可它们只检测"你能不能报出价格"，从不真的付钱，所以这些评分对卖家实际能不能收到款毫无参考价值。
 
-**✨ 精华总结：** Google正式发布Googlebook笔记本产品线，最大特点是深度整合Android生态——不仅支持运行Android应用，还融合了Android和ChromeOS两套系统的特性，核心场景是手机和笔记本之间的无缝工作流切换。简单说，这不是又一款Chromebook换皮，而是Google认真做的一个新品类，如果你日常重度依赖Android手机，这类设备的多端协同体验可能比传统笔记本更顺手。
+## 3. [Overcoming CS Imposter Syndrome: Redefining Success Beyond Exceptional Performance](https://dev.to/svetlix/overcoming-cs-imposter-syndrome-redefining-success-beyond-exceptional-performance-2102)
 
-## 4. [Also I like saying i'm from Cheltenham a lot (which I should probably stop doing) and the word Beans!](https://dev.to/adpocalyptic/i-also-like-saying-beans-a-lot-and-that-im-from-cheltenham-which-i-really-need-to-stop-1iml)
+**✨ 精华总结：** 很多CS学生觉得自己是“冒名顶替者”，根源在于行业把“只有顶尖表现才算成功”当成了默认前提——这个前提本身就是心理、社会与系统性因素互相强化的产物。它的连锁效应是：大量有能力的人因达不到虚幻的“卓越标准”而自我怀疑、流失甚至转行。值得关注的是，文章主张把成功的定义从“超常表现”中松绑，这不仅是个人心态问题，更是对行业人才筛选逻辑的一次纠偏。
 
-**✨ 精华总结：** 这段内容看起来是一条社交媒体动态的片段，信息非常碎片化，没有实质性的科技新闻价值。如果你是想让我基于这个标题和内容做提炼总结，我没办法从中提取出可靠的技术信息——它更像是某个人的随性发言（提到来自 Cheltenham、喜欢说 "Beans!"，以及 "Adpocalyptic" 这个词），不构成一条可报道的新闻。
+## 4. [Attachment downloads should check the record they belong to](https://dev.to/authbyexample1/attachment-downloads-should-check-the-record-they-belong-to-3fb0)
 
-如果你手头有真正的技术新闻链接或完整内容，发给我，我可以按你要求的方式（2-3 句、说清「是什么」和「为什么值得关注」、专业但不生硬）帮你提炼。
+**✨ 精华总结：** 一个常见的权限漏洞：下载附件的接口只验证「登录了没」，却没验证「你有没有权限看这个附件所属的记录」。结果是，拿到文件 ID 的人（比如从邮件或日志里）就能下载别人工单里的截图——而且用户被取消工单访问权限后，文件链接依然有效。修法很简单：附件下载路由必须回溯检查它挂靠的那条记录（这里是 ticket），确认调用者有权查看，而不是只查 session。
 
-## 5. [How to extract every image from a web page: srcset, lazy loading and tracking pixels (Python & JS)](https://dev.to/sstempresarial/how-to-extract-every-image-from-a-web-page-srcset-lazy-loading-and-tracking-pixels-python-js-2ikk)
+## 5. [Stop writing Excel reports cell by cell - bind data to templates instead (Kotlin/Java)](https://dev.to/jogakdal/stop-writing-excel-reports-cell-by-cell-bind-data-to-templates-instead-kotlinjava-1n3l)
 
-**✨ 精华总结：** **核心价值：** 现代网页的图片往往不在 `<img src>` 里——它们藏在 `srcset`（响应式多分辨率）、`data-src`/`data-lazy`（懒加载占位）和 `<picture>` 元素中，而 `src` 常常只是个 1x1 占位 GIF 或追踪像素。想抓全图就得逐层解析这些属性，并识别出真正的图片 URL。
-
-**为什么值得关注：** 文章直接给出可用的 Python 和 JavaScript 代码，还列出了作者踩过的坑，适合任何一个被"抓回来一堆缩略图"折磨过的人。
+**✨ 精华总结：** 如果你用 Java/Kotlin 写过 Excel 报表，一定体会过 Apache POI 逐格设置单元格的痛苦。这篇文章介绍的是**模板绑定方案**：把 Excel 当模板文件，用数据直接填充，而不是在代码里一格一格地拼。值得关注的原因是，它能把报表代码从几百行样板压缩成几行映射逻辑，维护成本大幅下降——尤其适合报表格式经常变、但数据结构相对稳定的场景。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

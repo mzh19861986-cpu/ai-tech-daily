@@ -4,43 +4,42 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有涉及 Prompt 技巧，而是关于 OpenAI 为 ChatGPT 生成的假《纽约客》漫画添加真实漫画家签名的伦理争议。因此，这里提炼不出可用的 Prompt 最佳实践。
+**这篇文章没有提供实质内容（标题后正文为空），无法提炼 Prompt 技巧或 AI 使用建议。
 
-如果你希望我根据其他 AI 使用相关内容来提炼 Prompt 技巧，可以把具体文章或讨论发给我。**
-
-📎 来源：[ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons](https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/)
-
-## 2. 💡 技巧 2
-
-**这篇文章没有提供实质内容（正文为空），仅有标题。
-
-从标题 "Beam: Reflection's 501B open-weight model" 能推断：这是一个关于 Reflection 公司发布的 501B 参数开源权重模型（名为 Beam）的公告或讨论。
-
-但**没有可提炼的 Prompt 技巧或 AI 使用建议**，因为缺少正文。
-
-如果你希望我基于这个标题生成相关内容（例如写一篇介绍、提炼该模型的用法建议，或设计相关的 Prompt 模板），请把文章正文提供给我，或告诉我你的具体需求。**
+如果你把 Beam 501B 模型的正文、介绍或讨论内容贴出来，我可以帮你从中提炼可复用的 Prompt 技巧或最佳实践。**
 
 📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
+## 2. 💡 技巧 2
+
+**这篇文章的核心是一条 AI Agent 科研实践建议：
+
+**最佳实践：** 让 AI Agent 在「提出候选 → 用计算/实验验证 → 迭代筛选」的闭环中工作，而非只让它一次性给出答案。把验证环节（如第一性原理计算）交给 Agent 自动执行并反馈结果，能显著提升候选物（如室温磁性半导体）的可靠性。**
+
+📎 来源：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
+
 ## 3. 💡 技巧 3
 
-**这篇文章讨论了 Khanmigo 在两年制学校实验中的应用。由于内容为空，无法提炼具体的 Prompt 技巧或最佳实践。如果你能提供完整的文章内容，我可以帮你总结其中的 AI 使用建议或 Prompt 技巧。**
-
-📎 来源：[AI Tutoring with Khanmigo in a Two-Year School Experiment](https://edworkingpapers.com/ai26-1551)
-
-## 4. 💡 技巧 4
-
-**这篇文章没有提供可直接使用的 Prompt 技巧或 AI 使用建议。它的内容是关于机器学习模型训练的技术研究（用非反向传播方法预训练 Transformer），属于模型架构/训练方法领域，而非提示词工程或 AI 使用实践。**
+**这篇文章没有提供可提炼的 Prompt 技巧或 AI 使用建议。它讨论的是机器学习研究（一种不依赖反向传播来预训练 Transformer 的方法），属于模型训练技术，而非如何编写或优化提示词的内容。**
 
 📎 来源：[Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 
+## 4. 💡 技巧 4
+
+**这篇文章讨论的是无记名投票（secret ballot）背后存在的算法性失灵问题，属于选举技术或算法治理领域，**没有涉及 AI Prompt 技巧或 AI 使用建议**，因此无法从中提炼相关的 Prompt 最佳实践。**
+
+📎 来源：[An algorithmic failure beneath the secret ballot](https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/)
+
 ## 5. 💡 技巧 5
 
-**这篇文章没有提供实际内容（正文为空），只有标题“Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates”。  
+**这篇文章没有关于 Prompt 工程或 AI 使用技巧的内容。它只是一个用 Go 编写的邮件服务器检查工具（检查 SPF、DKIM、TLSA 和 TLS 设置）的简短介绍，作者提到它是"100% vibecoded"（即主要通过 AI 辅助/氛围编程生成）。
 
-由于缺乏正文，无法提炼具体的 Prompt 技巧或可靠的最佳实践。若标题属实，能总结出的唯一要点是：让 AI agents 在材料科学中做候选筛选/发现时，应把任务设定为“发现并验证若干具体目标（如室温磁性半导体候选）”，而不是泛泛地“帮我研究材料”。**
+由于文中没有实质性的 Prompt 技巧或 AI 使用建议可提炼，我无法提供符合要求的总结。如果你希望，我可以：
 
-📎 来源：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
+1. 从"vibecoding"这一现象出发，给出关于如何用 AI 辅助写代码的一般性建议；
+2**
+
+📎 来源：[Golang tool to check SPF, DKIM, TLSA, and TLS settings for mailservers](https://git.sig-io.nl/Sig-IO/mailcheck/)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*

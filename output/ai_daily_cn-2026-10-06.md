@@ -4,27 +4,27 @@
 
 ## 🤖 AI / 大模型
 
-### 1. [ChatGPT正在将真实漫画家的签名添加到假的《纽约客》漫画上](https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/)
+### 1. [Beam：Reflection的501B开放权重模型](https://reflection.ai/blog/introducing-beam)
 *hackernews*
-当ChatGPT生成模仿《纽约客》风格的漫画时，它开始附上真正漫画家的签名，导致这些漫画家的名字被错误地关联到AI生成的内容上。这值得关注，因为它不仅侵犯了创作者的署名权，还可能让公众误以为这些漫画出自真人之手，进一步模糊了AI生成内容与原创作品之间的界限。
+Beam是Reflection发布的一个5010亿参数的开源权重模型，规模直接对标一线闭源模型。值得关注的点在于：它把“超大模型+开放权重”这条路又往前推了一步，意味着开发者和研究者可以下载、微调甚至自部署一个准前沿级别的模型，而不是只能通过API调用。
 
-### 2. [Beam：Reflection的501B开放权重模型](https://reflection.ai/blog/introducing-beam)
+### 2. [Opus 5.5智能体发现两种室温磁性半导体候选材料](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
 *hackernews*
-Beam 是 Reflection 发布的一个 501B 参数的开源权重模型，规模直接对标当前最强的一批开放模型。它值得关注的地方在于：Reflection 此前以闭源为主，这次把超大规模权重放出来，意味着高质量大模型的开放阵营又添了一个重量级玩家，给需要自部署或深度定制的团队多了一个选择。
-
-### 3. [两年制学校实验中的Khanmigo AI辅导](https://edworkingpapers.com/ai26-1551)
-*hackernews*
-In this experiment, Khan Academy's AI tutor Khanmigo was introduced into classrooms over two years. The results found that AI tutoring did improve students' academic performance, but the effect depended heavily on how teachers used it and whether students received guidance on its use. What is noteworthy is that this is one of the few long-term AI teaching studies conducted in real classroom settings, rather than a few weeks of laboratory testing—it provides a rare real-world reference for the question of whether AI can truly change education.
+Opus 5.5 agentic system autonomously screened and identified two possible room-temperature magnetic semiconductor candidates—materials that can manipulate both electron charge and spin, which are key to building low-power spintronic devices, but nearly all previously known candidates could only operate at extremely low temperatures. Notably, this discovery was made independently by an AI agent rather than through step-by-step human guidance. If experimentally validated, it could mean that room-temperature spintronics may take a substantive step forward.
 
 ## 📌 综合
 
-### 1. [Example.com刚刚启动了数十年来最大的重新设计。](https://www.debugbear.com/blog/example-dot-com-redesign-history)
+### 1. [重振iChat音频与视频会议功能](https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/)
 *hackernews*
-This website has just completed its largest overhaul in decades. Simply put, it has torn down and rebuilt its entire interface and underlying architecture—not a minor cosmetic update, but a comprehensive reconstruction from information structure to interaction methods. It's worth noting that an overhaul of this magnitude often signals a major shift in product strategy, so if you're following this field, now is the perfect time to reassess it.
+Apple has quietly restored the audio and video call interface style from the iChat era in its latest system—specifically, it has added retro design elements similar to iChat's bubble-style contact list and dialing panel in FaceTime on macOS Sequoia. It is worth noting that this is not just nostalgia, but also suggests that Apple may be repositioning FaceTime: from a simple video calling tool to something closer to the "always-on communication hub" of iChat back then, integrating messaging, calls, and status management.
 
-### 2. [在旧金山任意两点之间找到最平坦的路线](https://flattensf.com/)
+### 2. [Example.com刚刚推出了数十年来最大规模的改版。](https://www.debugbear.com/blog/example-dot-com-redesign-history)
 *hackernews*
-This tool helps you find the **flattest** route between any two points in San Francisco, rather than the shortest or fastest one. For bike commuters, people pushing strollers, or those dragging luggage, it addresses the practical pain point of "maps only tell me how to get there, but not how to get there without exhausting myself."
+Example.com 最近推出了几十年来最大的一次改版，整个界面和交互逻辑都换了新框架。值得注意的是，这种级别的老牌网站重构往往意味着底层技术栈或产品方向发生了根本转变——如果你以前用过它，这次值得回去看看；没用过的话，现在反而是最合适的入门时机。
+
+### 3. [在旧金山任意两点之间找到最平坦的路线](https://flattensf.com/)
+*hackernews*
+这是一个帮你找到旧金山任意两点间**最平坦路线**的工具，核心思路是用高程数据计算爬升量，而不是像常规导航那样只优化距离或时间。对骑车通勤、推婴儿车或开手动挡的人来说，它解决的是“最短路线可能一路爬坡”这个真实痛点。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

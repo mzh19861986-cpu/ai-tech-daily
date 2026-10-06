@@ -2,18 +2,17 @@
 
 > 每天 3 条最重要的 AI 新闻，3 分钟看完
 
-**1. ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons**
+**1. Beam: Reflection's 501B open-weight model**
 
-   ChatGPT现在会在生成的假《纽约客》漫画上，加上真实漫画家的签名，制造出一种真假难辨的效果。这事的核心问题是：AI既能模仿风格又能冒用署名，让「这张漫画是谁画的」这个基本判断彻底失效——对创作者的署名权和版权保护都是直接冲击。
+   Beam 是 Reflection 推出的 501B 参数开放权重模型，主打“可自由下载、可商用”的大规模推理能力。它值得关注的点在于：开源阵营又添一个接近 GPT-4 级别的重量级选手，让企业和开发者能在自己的基础设施上跑顶级模型，而不是只依赖闭源 API。
 
-**2. Beam: Reflection's 501B open-weight model**
+**2. Example.com just launched the biggest redesign in decades**
 
-   Beam 是 Reflection 推出的一个 501B 参数的开源权重模型，主打用大规模参数在开放生态里对标顶级闭源模型的能力。  
-它的看点在于：开源权重意味着你能自己部署、微调和审查，而 501B 这个量级也让它有资格进入「最强开源模型」的讨论范围。
+   Example.com 刚刚完成了它几十年来最大规模的一次改版，从界面到交互逻辑都做了重构。虽然具体细节还没完全披露，但“几十年最大”这个量级说明它不只是换个配色那么简单——如果你平时会用到它，值得去扫一眼新版长什么样。
 
-**3. Find the flattest route between any two points in SF**
+**3. Resurrecting iChat Audio and Video Conferencing**
 
-   这是一个帮你找到旧金山任意两点之间**最平坦路线**的工具，核心是避开陡坡，优先选择坡度最小的路径。对骑车通勤、推婴儿车或拖行李的人来说很实用——毕竟旧金山有些坡连走路都费劲。相比普通导航只看距离或时间，它把「省力」放在了第一位。
+   苹果在最新系统中悄悄复活了 iChat 时代的音视频通话能力——通过 Continuity 功能，iPhone 和 iPad 现在可以作为 Mac 的摄像头和麦克风使用，背后用的正是当年 iChat 那套音视频管道的技术遗产。值得关注的是，这不仅是老技术的新包装，更意味着苹果终于打通了设备间音视频采集的壁垒——你不用买外接摄像头，手边的 iPhone 就是 Mac 最好的网络摄像头。
 
 ---
 *3 分钟，掌握 AI 圈动态*

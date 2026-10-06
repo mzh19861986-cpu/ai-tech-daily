@@ -4,42 +4,42 @@
 
 ## 1. [Spira Maxima](https://www.producthunt.com/products/spira-ai)
 
-**💡 是什么 + 为什么值得试：** Spira Maxima 能把你的文字脚本自动渲染成适合短视频平台发布的视频，省掉手动剪辑、配音和排版的时间。如果你经常需要批量产出社媒内容但不想碰剪辑软件，它值得试一下。
+**💡 是什么 + 为什么值得试：** Spira Maxima 能把你写好的脚本一键转成适合短视频平台的成片，省去手动剪辑和包装的功夫。如果你在做 TikTok、Reels 或 Shorts 内容、想快速批量产出，值得拿来跑一遍看看效果。
 
 ---
-## 2. [DailyHelm](https://www.producthunt.com/products/dailyhelm)
+## 2. [Opengeni](https://www.producthunt.com/products/opengeni)
 
-**💡 是什么 + 为什么值得试：** DailyHelm 把你的网站/产品分析数据自动转成每天可执行的改进清单，省去你对着报表猜测下一步该做什么的麻烦。如果你受够了看数据却不知道从哪下手，可以试试它。
-
----
-## 3. [Invofox Self Serve](https://www.producthunt.com/products/invofox)
-
-**💡 是什么 + 为什么值得试：** Invofox Self Serve 能帮你在自己的应用里快速接入文档信息提取，号称 99% 准确率、带 SLA 保障，适合对稳定性和准确度有要求的发票、收据等结构化数据场景。如果你正被 OCR 后处理或模板维护拖累，它值得花半小时跑一下自己的样本试试。
+**💡 是什么 + 为什么值得试：** Opengeni 帮你把 AI agent 从 demo 推到线上，省掉自己搭调度、状态管理和工具调用这些基础设施的功夫。如果你正卡在“agent 本地能跑、一上线就散架”这一步，值得试试。
 
 ---
-## 4. [Chain Exchange](https://www.producthunt.com/products/chain-exchange)
+## 3. [Xtracticle](https://www.producthunt.com/products/xtracticle)
 
-**💡 是什么 + 为什么值得试：** Chain Exchange 让你在 Arc 网络上直接兑换、跨链和转移稳定币，省去多平台折腾的麻烦。如果你想低成本地在 Arc 生态里调度稳定币，值得一试。
-
----
-## 5. [Xtracticle](https://www.producthunt.com/products/xtracticle)
-
-**💡 是什么 + 为什么值得试：** Xtracticle 能把 X（推特）上的长文章和推文串一键导出为 PDF、Markdown 或 EPUB，省去手动复制排版、图片丢失的麻烦。如果你经常需要存档、离线阅读或二次整理 X 上的内容，它比截图和剪藏插件干净得多。
+**💡 是什么 + 为什么值得试：** Xtracticle 能把 X（推特）上的长文章和推文串一键导出成 PDF、Markdown 或 EPUB，方便你离线保存、归档或转发给不刷推的人。如果你常需要收藏优质长推文却厌倦截图和手动复制，它省事得多。
 
 ---
-## 6. [SpeechShield](https://www.producthunt.com/products/speechshield)
+## 4. [Jarq](https://www.producthunt.com/products/jarq)
 
-**💡 是什么 + 为什么值得试：** SpeechShield 把你的简历喂给 Mac 上的实时助手，在面试或会议中即时提示你该讲什么，省去临时组织语言的慌乱。如果你想在真实对话里更从容地调用自己的经历，它值得一试。
-
----
-## 7. [Netra](https://www.producthunt.com/products/netra)
-
-**💡 是什么 + 为什么值得试：** Netra 把 MacBook 的刘海变成一块实时状态栏，让你不用切窗口就能看到当前任务、计时和专注状态。如果你经常在写代码时被各种通知带跑偏，它提供的那一刻不离视线的轻量提醒，值得装来试试。
+**💡 是什么 + 为什么值得试：** Jarq 能让你在光标附近直接翻译、缩写、纠错或改写文字，省去反复切换窗口和复制粘贴的麻烦。如果你经常处理多语言文本或需要快速润色草稿，它值得一试。
 
 ---
-## 8. [Reviu](https://www.producthunt.com/products/reviu)
+## 5. [Dots UI](https://www.producthunt.com/products/dots-ui)
 
-**💡 是什么 + 为什么值得试：** Reviu 帮你审查 AI agent 写的代码，把那些你没空逐行检查的改动变成一个可快速过一遍的 review 流程。如果你已经在用 Cursor、Claude Code 这类工具批量生成代码，试试它能省下不少事后排雷的时间。
+**💡 是什么 + 为什么值得试：** 如果你想给 React 应用加一点有生命感的粒子动效，又不想手写 WebGL，Dots UI 提供了可变形粒子界面组件，直接调用就能做出粒子聚合、散开、变形为形状的效果。适合用在加载动画、品牌视觉或交互式首页这类需要“一眼记住”的场景。
+
+---
+## 6. [Reactive Resume v6](https://www.producthunt.com/products/reactive-resume)
+
+**💡 是什么 + 为什么值得试：** Reactive Resume v6 是一个免费开源的简历构建工具，能帮你快速做出排版干净、可导出 PDF 的在线简历，并且数据完全由自己掌控。相比多数简历网站，它没有付费墙、不强制注册，适合想省事又要隐私的人试试。
+
+---
+## 7. [crosswalk](https://www.producthunt.com/products/crosswalk)
+
+**💡 是什么 + 为什么值得试：** crosswalk 想给人和自己的 AI agent 提供一个收件箱式的共享空间，让 agent 处理的事项和你的日常消息汇总到一起，不用在多个工具间来回切换。如果你已经在用 agent 做自动化但又懒得追踪它做了什么，可以试试。
+
+---
+## 8. [Marv](https://www.producthunt.com/products/marv-3)
+
+**💡 是什么 + 为什么值得试：** Marv 是个 AI 光标助手，能在屏幕上直接标出你下一步该点哪里，适合面对陌生软件或复杂界面时少走弯路。如果你经常找不到功能入口，可以拿它试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
