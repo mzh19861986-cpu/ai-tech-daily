@@ -2,25 +2,29 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Frontend](https://dev.to/shivani_gupta_fde46c38eb3/frontend-155a)
+## 1. [The 0-Click AI Attack, Part 2: How to Break the Attack Chain Before It Becomes a Breach](https://dev.to/aiza-hextyx/the-0-click-ai-attack-part-2-how-to-break-the-attack-chain-before-it-becomes-a-breach-4nci)
 
-**✨ 精华总结：** 这篇文章讲的是前端开发的本质——它是构建用户直接看到和操作的界面层，涵盖网页布局到交互体验的方方面面。值得关注的是，它把前端定位为"艺术与科学的结合"，而不只是写代码，这提醒我们：好的前端既要工程严谨性，也要审美判断力。对于想入行或正在做前端的人来说，这是一篇帮你建立整体认知框架的科普内容。
+**✨ 精华总结：** 这篇是「零点击 AI 攻击」系列的第二部分，讲的是如何在下游拦截攻击链。核心观点很直接：攻击者根本不需要直接给你发恶意提示词——只要把恶意指令藏进 AI 本来就会读的东西里就行，比如邮件、文档、网页、工单、知识库记录、RAG 分块或工具返回结果，AI 一消费这些内容，恶意指令就会悄悄影响模型的推理过程。
 
-## 2. [Como virei blogueira sem querer (e por que você deveria fazer o mesmo)](https://dev.to/taina_costa_f/como-virei-blogueira-sem-querer-e-por-que-voce-deveria-fazer-o-mesmo-3gko)
+值得关注的点在于，这类攻击绕过了传统「用户输入」的安全假设，防御的重心必须从「过滤用户提问」转向「管控 AI 读取的所有数据源」——也就是说，你的邮箱、知识库、甚至工具 API 的返回值，都得当成潜在攻击面来对待。
 
-**✨ 精华总结：** 这篇葡萄牙语文章讲的是一个开发者无意中成为技术博主的故事：她最初只是给自己记笔记——解决过的bug、总忘记的命令、反复用到的React模式，三个月后这些笔记变成了文章，六个月后招聘方开始因为她的文章而非简历找到她。值得关注的点在于，它揭示了一个低门槛的复利逻辑：写作本身就是最好的技术记忆库，而且这些公开笔记会替你建立「被动人脉」，让机会主动找上门，而不是你去投简历。
+## 2. [Mikroslužby verzus monolitické architektúry: prečo izolované frontendové uzly víťazia pri špičkových zaťaženiach](https://dev.to/kladik/mikrosluzby-verzus-monoliticke-architektury-preco-izolovane-frontendove-uzly-vitazia-pri-5c8g)
 
-## 3. [Why multi-agent systems struggle with memory—and how I tried to fix it with Agent-Brain-Hub](https://dev.to/lng_l_95dcf5de35ba45ef/why-multi-agent-systems-struggle-with-memory-and-how-i-tried-to-fix-it-with-agent-brain-hub-20cd)
+**✨ 精华总结：** 斯洛伐克语的技术博客讨论了微服务与单体架构在高负载下的表现差异。核心观点是：当流量暴增或广告投放带来瞬时高峰时，传统的单体架构（后端逻辑、会话管理、数据库和前端渲染绑在一个代码库里）容易因某个模块过载而级联崩溃，而将前端节点隔离出来的微服务方案更能扛住峰值压力。
 
-**✨ 精华总结：** 多智能体系统常见的瓶颈不是模型能力，而是记忆管理——当多个 Agent 协作时，共享状态同步、动态上下文检索和决策编排很容易乱成一锅粥，大多数框架要么封装得太重、要么假设太理想化。作者为此做了个叫 Agent-Brain-Hub 的尝试，专门解决上下文碎片化问题。如果你正在搭多 Agent 工作流，这块的坑基本绕不开，值得看看他的思路。
+值得关注的是它对「隔离前端节点」的强调——不是泛泛谈微服务，而是指出前端作为独立可伸缩单元在流量高峰中的关键作用。做架构选型或正在被突发流量折磨的团队，可以看看这个视角。
 
-## 4. [Yield Strategy Optimization Report: ether.fi Stake](https://dev.to/dannydoes_2abdf9c/yield-strategy-optimization-report-etherfi-stake-47ji)
+## 3. [Como Rodar Ollama com Docker e Aceleração de GPU NVIDIA (Guia Prático)](https://dev.to/evandro_carvalho_ad7433b6/como-rodar-ollama-com-docker-e-aceleracao-de-gpu-nvidia-guia-pratico-4a43)
 
-**✨ 精华总结：** ether.fi Stake 是一个锁定超 51 亿美元 TVL 的多链质押服务平台，横跨以太坊主网和多个 L2。值得关注的点在于：这种规模的多链聚合质押架构，既是收益优化的机会，也意味着跨链合约风险的敞口在同步放大，安全审计的颗粒度必须比单链协议更细。
+**✨ 精华总结：** 这篇葡萄牙语教程讲的是怎么用 Docker 跑 Ollama 并挂上 NVIDIA GPU 加速，解决的是本地跑大模型（Llama、DeepSeek、Qwen、Mistral）时直接装 CUDA 驱动容易搞乱系统依赖的老问题。值得关注的点在于：它把「数据主权+零 API 成本」的本地部署门槛又压低了一层——不用再折腾驱动版本地狱，容器里直接调用显卡。对想在服务器上私有化跑模型又怕污染宿主机环境的人来说，算是省心的实操路线。
 
-## 5. [What Claude Code is, what it can do, and what it does not guarantee](https://dev.to/aicoding-guide/what-claude-code-is-what-it-can-do-and-what-it-does-not-guarantee-2gda)
+## 4. [Workflows, not skills](https://dev.to/guregodevo/workflows-not-skills-dng)
 
-**✨ 精华总结：** Claude Code 是 Anthropic 推出的终端里的 AI 编程智能体——不是补全插件，而是你丢一个任务给它，它自己读代码库、改多个文件、跑命令。跟 Copilot 那种「猜你下一行」完全不同，它更像一个能独立干活的初级工程师。但别把它当自动驾驶：官方明确说了它不保证正确性，产出仍需你审查，适合用来加速重复性改动和探索陌生代码库。
+**✨ 精华总结：** 作者做了个叫 Memdoor 的终端编程 agent：Go 写的单二进制文件，直接复用你已有的 API key。他的核心观点是，真正卡住 AI 编程效率的不是模型能力（skill），而是工作流程（workflow）——读、想、调工具、再读的循环在一行修复时很爽，但面对真正复杂的任务就撑不住了。
+
+## 5. [Open source code review: why Hono restricted outside pull requests](https://dev.to/axrisi/open-source-code-review-why-hono-restricted-outside-pull-requests-3ok7)
+
+**✨ 精华总结：** Hono 的创建者 Yusuke Wada 在 10 月 5 日关闭了主仓库的外部 PR 入口——代码依然 MIT 开源、核心成员继续开发，但外部贡献者不能再直接提交 pull request。这背后是开源评审的容量困境：维护者精力有限，与其让 PR 堆积成无人处理的僵尸队列，不如明确划出边界，把评审资源留给最关键的改动。对使用 Hono 的开发者来说功能不受影响，但如果你打算贡献代码，得先通过 issue 或其他渠道沟通——这可能是越来越多中大型开源项目的现实选择。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
