@@ -1,12 +1,12 @@
 # 💡 每日开发技巧 - 2026-10-06
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 3 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 5 条
 
 ## 技巧 1
 
 **Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage**
 
-✨ 美国两党议员近期提出多项法案，旨在限制Flock Safety这套AI车牌识别与监控系统的扩张，直接回应了404 Media此前一系列揭露其隐私滥用风险的报道。Flock原本主打“帮社区抓贼”，但调查发现其数据可被跨州共享、用于追踪移民和堕胎者等敏感场景。这值得关注，因为它是美国监控技术领域少见的、由媒体调查直接推动立法反制的案例，也标志着AI安防走向强监管的转折点。
+✨ 美国多名议员在404 Media报道后，接连提出多项针对Flock Safety（AI车牌识别监控公司）的立法提案，试图限制其大规模车牌追踪网络的扩张。这事值得关注，因为它标志着围绕AI监控设备的法律监管开始从讨论走向实际立法，而Flock正是美国警方最广泛部署的自动车牌识别系统之一。
 
 📎 [阅读原文](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
 
@@ -14,7 +14,7 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文尝试把中国哲学智慧（比如中庸、无为等思想）引入自动驾驶决策系统，让大语言模型在复杂交通场景中不只是追求安全和效率，还能兼顾伦理和社会规范。有意思的点在于：它用检索增强的方式让LLM参考哲学原则来做决策，算是给自动驾驶的"价值对齐"问题提供了一个东方视角的新思路——毕竟现在主流方案基本是纯工程或西方伦理学框架。
+✨ 这篇论文把中国哲学智慧（比如儒家的中庸、道家的无为）嵌进了自动驾驶的决策框架，让大语言模型在复杂路况下不只是算概率，还能参照一套伦理准则来权衡安全、效率和社会规范。它值得关注，是因为当前自动驾驶的决策研究几乎都在拼数学优化和预测精度，而伦理判断长期被忽略——这恰恰是机器真正上路后最难处理的那类问题。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -22,9 +22,25 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 研究人员把 TabPFN 那套「先验拟合网络」的思路搬到了语言上：先只让模型看合成数据，再用上下文学习的方式去理解真实自然语言，全程不碰真实语料训练。这项工作的价值在于，它验证了「从纯合成、非语言先验里长出语言理解能力」这条路是走得通的——意味着未来训练语言模型可能不再需要海量真实文本，合成数据就能撑起上下文学习。
+✨ 这篇论文把 TabPFN 的「先验拟合网络」思路从表格数据扩展到了自然语言：模型仅用合成数据（甚至不是真正的语言）预训练，却能在推理时通过上下文直接学会一门真实语言的任务，无需任何梯度更新。值得关注的是，它证明了「学会学习」这件事可能不需要真实语料打底——合成先验就足以支撑上下文学习，这对低资源语言和快速适配场景是个有意思的信号。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
+
+## 技巧 4
+
+**Claude Code usage limits: what counts, when they reset, and how to stop hitting them**
+
+✨ Claude Code 的用量限制跟聊天是**共用同一个额度池**的，而且消耗速度快得多——同样时间写代码可能比聊天多烧好几倍配额。重置时间还不统一，所以经常任务做到一半就撞墙。如果你在用 Pro 或 Max 订阅跑 Claude Code，值得先搞清楚哪些操作计入配额、各自的刷新周期，再调整使用节奏，否则很容易在关键节点被打断。
+
+📎 [阅读原文](https://dev.to/msadofschi/claude-code-usage-limits-what-counts-when-they-reset-and-how-to-stop-hitting-them-o5c)
+
+## 技巧 5
+
+**How to Fix Windows Update Error 0x800f081f on Windows 10 and Windows 11**
+
+✨ Windows更新报错0x800f081f，说白了就是系统找不到安装更新所需的源文件——通常在你手动装.NET Framework或某些可选功能时冒出来。这篇指南给了几种实操修法，从跑疑难解答到指定源文件路径，Win10和Win11都适用。如果你正好被这个错误卡住，值得收藏照着试一遍。
+
+📎 [阅读原文](https://dev.to/iman_7787bc2a06f7b7c2e975/how-to-fix-windows-update-error-0x800f081f-on-windows-10-and-windows-11-109p)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

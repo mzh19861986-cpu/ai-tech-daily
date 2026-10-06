@@ -1,22 +1,26 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Setting Up a SOCKS5 Proxy Server for Automation: A Deep Dive into Layer 5 OSI Advantages](https://dev.to/onlineproxy_io/setting-up-a-socks5-proxy-server-for-automation-a-deep-dive-into-layer-5-osi-advantages-7oo)
+## 1. [How to Build a Node.js Feature Flag Kill Switch (4 Safety Rules)](https://dev.to/valord33/how-to-build-a-nodejs-feature-flag-kill-switch-4-safety-rules-1fdc)
 
-**✨ 精华总结：** 搭建SOCKS5代理不只是“换个IP”那么简单——它在OSI模型的第5层（会话层）工作，能透明转发任意TCP/UDP流量，不像HTTP代理那样只能处理网页请求。这对需要管理多账号、跑大规模爬虫或复杂CI/CD流水线的自动化场景来说，意味着更低的被封风险和更强的协议兼容性。如果你还在用HTTP代理硬扛所有自动化流量，是时候重新审视这个选择了。
+**✨ 精华总结：** 这篇讲的是在 Node.js 后端里怎么正确实现功能开关的「紧急刹车」。核心观点很反直觉：别把 feature flag 本身当刹车，而是把它当作触发刹车的信号——对金融科技定价这种高风险场景，有几个关键做法：在服务端评估开关、查询出错或超时时自动回退到旧定价规则、给缓存的决策结果设一个「最长寿命」、再保留一个本地开关能立刻切断风险路径。如果你正在往生产环境灰度新逻辑，尤其是钱相关的，这套「先兜底再上新」的思路值得直接抄。
 
-## 2. [Kubernetes CI Fixtures Need a Garbage Collector](https://dev.to/jasonmills94/kubernetes-ci-fixtures-need-a-garbage-collector-584p)
+## 2. [Tagging 8,700 exam questions with an LLM, and why the Portuguese and English versions disagreed](https://dev.to/rakoski___/tagging-8700-exam-questions-with-an-llm-and-why-the-portuguese-and-english-versions-disagreed-lk8)
 
-**✨ 精华总结：** 在Kubernetes CI里，测试用的邮件fixture不该当成静态测试数据，而应该当成有生命周期的基础设施来管理——它有端点、有归属、有存活时间，也有清理义务。如果这些属性对集群不可见，一次失败的测试就可能留下一个邮箱，被后续的测试运行意外读到。作者的做法是把run级别的fixture当作短生命周期的基础设施来处理，核心价值在于：让CI测试从「谁创建谁清理」的脆弱约定，转向集群层面可观测、可自动回收的资源模型。
+**✨ 精华总结：** 一个人独立开发的云认证刷题平台 NaHero，用 LLM 给 8700 道 AWS/Azure/GCP 练习题打标签，却发现葡萄牙语版和英语版的标注结果对不上。有意思的点在于：同一个模型、同一批题目，仅仅因为语言不同就给出了不一致的判断——这对所有做多语言内容处理的人都是个值得警惕的信号。
 
-## 3. [TVL Trend Analysis & Liquidity Risk Assessment: Venus Core Pool](https://dev.to/dannydoes_2abdf9c/tvl-trend-analysis-liquidity-risk-assessment-venus-core-pool-31mb)
+## 3. [Shipping practices from five AI engineering episodes](https://dev.to/conorbronsdon/shipping-practices-from-five-ai-engineering-episodes-163e)
 
-**✨ 精华总结：** Venus Protocol 的核心资金池（Venus Core Pool）目前锁仓量约 13.4 亿美元，这份审计报告对其 TVL 走势和流动性风险做了专项评估。值得关注的是，Venus 作为 BNB Chain 上最大的借贷协议之一，其核心池的流动性健康度直接关系到整个生态的挤兑风险——尤其在极端行情下，TVL 的集中度和资产构成决定了用户能否顺利提款。
+**✨ 精华总结：** 把 demo 跑通只是起点，真正上线要能回答四个问题：你审了什么、设计了什么、量了什么、模型出错时谁负责。这五个 AI 工程播客讲的正是从「能演示」到「能交付」之间的那套实践——已经有 demo、想补上工程纪律的开发者可以直接拿来当清单用。
 
-## 4. [*The ABU Founder Behind Opnex/Xeroground: Muhammad Bashir Isah (Isah Mubash)*](https://dev.to/isahmubash/the-abu-founder-behind-opnexxeroground-muhammad-bashir-isah-isah-mubash-n1j)
+## 4. [How to Fix the "window is not defined" Error in Next.js 13](https://dev.to/sanjivsutar/how-to-fix-the-window-is-not-defined-error-in-nextjs-13-5922)
 
-**✨ 精华总结：** 尼日利亚扎里亚的创业者Muhammad Bashir Isah（Isah Mubash）创办了技术公司Xeroground，并开发了中间件支付服务Opnex——意在为非洲本地支付生态提供更灵活的底层连接层。值得注意的是他的背景：ABU Zaria（艾哈迈杜·贝洛大学）三年级解剖学辍学生，在该校设立软件工程系之前就自学转入软件工程，属于典型的"先于体制一步"的技术创业者。这类底层支付基础设施在非洲碎片化的金融环境中是刚需，值得关注它能否跑出真正的落地场景。
+**✨ 精华总结：** Next.js 13 默认在服务端渲染组件，而 `window` 只存在于浏览器环境，所以任何在组件顶层直接访问 `window` 的代码都会在服务端执行时崩掉——同样的代码在纯 React 里没事，是因为它压根不在 Node 里跑。解决办法的核心思路就一条：把依赖 `window` 的逻辑放进 `useEffect` 或加 `typeof window !== 'undefined'` 守卫，框架本身提供了几种干净的写法。
+
+## 5. [The Commit Message Awakens: Write Like a Jedi, Not a Stormtrooper](https://dev.to/timevolt/the-commit-message-awakens-write-like-a-jedi-not-a-stormtrooper-55cl)
+
+**✨ 精华总结：** 写 commit message 这件事，大多数人的水平停留在“fix stuff”和“update”之间，然后整个团队花三小时在 git blame 里考古。这篇文章用星战梗讲了一个很实在的道理：好的提交信息不是写给编译器看的，是写给三个月后快要抓狂的自己和同事看的——写清楚“改了什么、为什么改”，比写十行代码注释都值。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
