@@ -4,37 +4,33 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供具体的 Prompt 技巧或 AI 使用建议，内容是关于 JetBrains 首次出现净财务亏损的新闻。如果你希望，我可以基于这个标题帮你生成一条与「如何让 AI 更好地分析企业财报/商业新闻」相关的 Prompt 技巧。**
+**这篇文章目前只有标题，没有正文内容，因此无法提炼出具体的 Prompt 技巧或使用建议。如果你能补充文章正文，我可以帮你提取可复用的 Prompt 方法或 AI 使用最佳实践。**
 
-📎 来源：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
+📎 来源：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
 ## 2. 💡 技巧 2
 
-**这篇文章内容为空，没有可提炼的 Prompt 技巧或 AI 使用建议。如果你能提供实际的文章正文，我可以帮你总结。**
+**这篇文章内容为空，没有实质信息可供提炼。请提供完整的文章内容，我再帮你总结 Prompt 技巧或 AI 使用建议。**
 
-📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
+📎 来源：[JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有明显的 Prompt 内容，主要讨论自托管邮件服务器（如 maddy）的经验。**
+**这篇文章没有提供具体内容，因此无法提炼 Prompt 技巧或 AI 使用建议。请粘贴文章正文或讨论内容，我再帮你总结。**
 
-📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
+📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## 4. 💡 技巧 4
 
-**这篇文章没有明显的 Prompt 工程内容，无法提炼出可直接使用的 AI Prompt 技巧或最佳实践。**
+**这篇文章没有明显的 Prompt 技巧，主要是自托管邮件服务器的工具讨论。若从中提炼关于使用 AI 的建议，可以说：**在寻求 AI 推荐前，先将问题场景和已有痛点描述清楚，能得到更精准的建议。****
 
-📎 来源：[kahawai - an open source, modular media system](https://github.com/iksteen/kahawai)
+📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## 5. 💡 技巧 5
 
-****技巧提炼：**  
-在让 AI 生成代码或解决问题时，不要只给“执行反馈/结果对不对”，而要追加一步提示，让 AI **自动诊断失败原因，并总结可复用的技能/模式**，再据此改进。
+**这篇文章没有明显的 Prompt 技巧内容，主要是关于开源模块化媒体系统 kahawai 的项目介绍。**
 
-**可直接用的 Prompt 模板：**  
-“你先给出方案。然后根据运行结果做 auto-diagnosis：指出失败或性能差的根本原因；再提炼出可迁移的技能/规则；最后用这些技能重写一版并说明改进了什么。”**
-
-📎 来源：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+📎 来源：[kahawai - an open source, modular media system](https://github.com/iksteen/kahawai)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*

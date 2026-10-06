@@ -2,13 +2,13 @@
 
 > 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 1 个
 
-## 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
+## 1. [AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
-**👥 适合谁：** 最适合想用 Rust 或 Python 直接控制 TP-Link 智能设备（如 Tapo 插座、灯泡）的智能家居玩家和自动化开发者。
+**👥 适合谁：** 这款工具最适合**AI研究者与芯片架构工程师**——它能自主设计推理硬件，大幅加速从算法到专用芯片的研发迭代。
 
-**🚀 怎么开始：** Tapo 是 Rust/Python 双语言库，需要本地安装（`pip install tapo` 或 `cargo add tapo`）后使用，并需提供 TP-Link 账号密码或设备 IP 来连接和控制智能设备，非网页即用工具。
+**🚀 怎么开始：** 直接打开相关网页或用官方提供的在线Demo就能体验，无需API key或本地部署。
 
-**📝 简介：** 有个叫 Tapo 的 Rust/Python 库，现在直接实现了 TP-Link 自家的 TPAP 协议。这意味着你可以用它绕过官方 App，在本地网络里直接控制 TP-Link 的智能设备（比如插座、灯泡），响应更快、也不依赖云服务。对喜欢自己搭智能家居、又不想被厂商 App 绑住的开发者来说，这是个挺实用的底层工具。
+**📝 简介：** AI 现在能自己设计推理芯片了——不是辅助优化，而是从架构到布局全流程自主完成。这意味着硬件迭代速度可能不再受限于人类工程师的产能，AI 模型针对自身推理需求定制芯片的闭环正在形成。值得关注的是，这会让专用推理硬件的进化节奏从「年」压缩到「周」，算力供给的瓶颈逻辑要被重写了。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*
