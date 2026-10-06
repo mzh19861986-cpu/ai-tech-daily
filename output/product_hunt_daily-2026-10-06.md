@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 1. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** AUDR 想解决的是 AI Agent 跑一次任务到底花了多少钱说不清的问题，它用一套开源标准把每轮调用的 token、模型和成本记成统一格式，方便你跨工具对比和汇总。如果你正在用多个 Agent 或 API 做开发，又懒得自己拼一套成本追踪逻辑，可以直接拿来用。
-
----
-## 2. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** 用嘴代替手来操作电脑，Incredible 让你通过语音指令完成打开应用、输入文字、执行操作等任务，特别适合手不方便或想提升效率的场景。开源可自部署，值得对语音交互感兴趣的人试试。
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器里，让你在查资料、调页面时不用来回切换窗口，AI 就能在当前页面上给你改代码、解释报错。如果你经常一边看文档一边写前端或调试网页，它省下的切屏时间会很明显。
 
 ---
-## 3. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 2. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** 如果你在搭 GTM（Go-To-Market）工具链时受够了把 CRM、数据源、自动化工具一个个手动对接，Fuse AI 用一个 SDK 加一个 MCP 把这些整合成统一接口，省掉大量胶水代码。想快速搭出一套能跑通的自定义 GTM 栈，可以拿它试试。
-
----
-## 4. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
-
-**💡 是什么 + 为什么值得试：** 如果你的网站更新后客服机器人总在胡说八道、答非所问，Cosmic AI Support Agent 能自动同步站点内容，让回答始终基于最新页面。省去手动维护知识库的麻烦，适合已有客服机器人但苦于内容过时的人试试。
+**💡 是什么 + 为什么值得试：** AUDR 给 AI agent 的运行成本提供了一套统一的记录标准，让你不用自己设计埋点格式就能追踪每次调用花了多少钱。如果你的 agent 接了好几个模型或工具、账单对不上，试试它能省掉不少对账的麻烦。
 
 ---
-## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 3. [ruOS](https://www.producthunt.com/products/ruos)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器侧边栏，让你在调试网页或查资料时能随手调用 AI 改代码、问问题，不用来回切窗口。如果你经常边看技术文档边写代码，这个能省不少切换时间。
-
----
-## 6. [Chunk](https://www.producthunt.com/products/chunk-2)
-
-**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上散落的日程和待办收进一个时间块视图里，让你按小时规划一天而不是对着一长串清单发呆。如果你试过日历和任务工具各管一半、结果两头都不想打开，它值得花十分钟试一下。
+**💡 是什么 + 为什么值得试：** ruOS 把 AI agent 直接塞进一个云端桌面环境里，你开个浏览器就能让它替你操作软件、跑任务，不用自己配环境或盯流程。如果你想让 agent 真正“动手干活”而不是只聊天，这个可以试试。
 
 ---
-## 7. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 4. [Brnch](https://www.producthunt.com/products/brnch)
 
-**💡 是什么 + 为什么值得试：** Willow 能把你散落在各个 AI 对话里的个人背景和偏好集中存成一份可复用的知识库，省得每次换工具都要重新交代一遍“我是谁、我在做什么”。如果你的工作流里同时用多个 AI 助手，值得试试，它解决的是跨工具的记忆割裂问题。
+**💡 是什么 + 为什么值得试：** Brnch 是一个面向 AI Agent 时代的代码托管平台，让你在同一套流程里管理人类和 agent 提交的代码。如果你正在用 AI 写代码、却苦于 agent 的改动和人类协作混在一起难以追踪，它值得一试。
 
 ---
-## 8. [ruOS](https://www.producthunt.com/products/ruos)
+## 5. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
 
-**💡 是什么 + 为什么值得试：** ruOS 把云桌面变成了 AI 代理的工作台，能替你自动操作浏览器和各类应用完成重复性任务，省去手动点击的麻烦。如果你经常被流程化的网页操作拖住，值得试试用它把活儿交出去。
+**💡 是什么 + 为什么值得试：** MCP 服务器在你批准后偷偷更新了代码或工具定义，mcpgawk 能帮你发现这种静默变更，避免供应链风险。如果你在用 Claude Desktop 或其他 MCP 客户端，这个工具值得加上。
+
+---
+## 6. [Incredible](https://www.producthunt.com/products/incredible)
+
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，动动嘴就能执行操作，省去键鼠切换的麻烦。如果你经常边忙别的事边操作电脑，或者想试试更自然的交互方式，它值得一装。
+
+---
+## 7. [StayCharted](https://www.producthunt.com/products/staycharted)
+
+**💡 是什么 + 为什么值得试：** 如果你想按自己的分类标准训练一个能同时认文字和图片的模型，又不想写代码，StayCharted 就是干这个的——上传你的类别和样本，它帮你把模型训出来。
+
+---
+## 8. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+
+**💡 是什么 + 为什么值得试：** 如果你受够每次开新对话都要重新交代背景，Willow Knowledge 给 AI 加了一层可复用的个人知识库，让它跨会话记住你的项目、偏好和历史决策。适合长期用 AI 干活、又懒得反复贴上下文的人试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

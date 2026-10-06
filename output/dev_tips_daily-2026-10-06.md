@@ -6,7 +6,7 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学智慧引入了自动驾驶决策，让大语言模型在安全、效率之外，还能兼顾伦理和社会规范——这是现有纯数值优化和序列预测方法很少认真对待的维度。它的价值在于：当自动驾驶要真正融入人类混合交通环境时，「怎么开」不只是算得快不快的问题，更是一个需要在冲突场景中做出价值判断的问题，而中国哲学恰好提供了一套不同于西方功利主义框架的思路。
+✨ 这篇论文给自动驾驶的决策系统引入了一个有意思的视角：用中国哲学智慧来指导大语言模型的判断。具体做法是把《道德经》等传统哲学思想融入检索增强生成（RAG）框架，让自动驾驶在面对复杂交通博弈时，不只看安全和效率这两个硬指标，还能兼顾社会规范和伦理分寸。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -14,7 +14,7 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 TabPFN 那套「先验拟合网络」的思路搬到了语言学习上：模型先在合成、非语言的序列数据上预训练，之后完全靠上下文（in-context）去学一门真正的人类语言，不需要针对该语言做任何梯度更新。它值得关注的地方在于，这进一步验证了「用合成数据预训练、在真实任务上零微调泛化」这条路对自然语言也走得通——如果成立，意味着我们可能不需要海量真实语料堆预训练，也能让模型快速适应新语言。
+✨ 这篇论文把 TabPFN 那套「用合成数据预训练、靠上下文学习」的思路搬到了自然语言上：模型先在完全非语言的合成信号上训练，之后不更新任何参数，仅凭上下文就能学会一门真实语言的结构。值得关注的点在于，它说明语言学习能力可能不必来自语言数据本身——这对「预训练必须喂海量文本」的默认假设是个不小的挑战。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
