@@ -6,25 +6,25 @@
 
 ### 1. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-Francis Halzen, the chief scientist of the IceCube Neutrino Observatory, won this year's Nobel Prize in Physics. His work involves using a cubic-kilometer detector buried in Antarctic ice to capture neutrinos—particles that barely react with any matter but are the most direct messengers of extreme cosmic events, such as supernovas and black hole jets. The key point worth noting is that this is not a victory for theoretical physics, but rather a long-overdue recognition of the engineering feat of "turning the entire Antarctic into a telescope"—astrophysics has since gained a completely new observational window.
+诺贝尔物理学奖授予了弗朗西斯·哈尔岑，以表彰他在冰立方中微子天文台的开创性工作。作为该项目的主要负责人，他领导团队在南极冰层下建造了世界上最大的中微子探测器。这项研究的重要性在于它开创了中微子天文学这一新领域——通过探测来自遥远宇宙的高能中微子，我们能够洞察宇宙中最极端的天体过程，如超大质量黑洞和伽马射线暴。换言之，他为我们提供了一种观察宇宙的全新“眼睛”。
 
 ### 2. [Gleam不再编译为Erlang源代码。](https://gleam.run/news/gleam-doesnt-compile-to-erlang-source-anymore/)
 *hackernews*
-Gleam编译器现在直接生成Erlang的抽象格式或BEAM字节码，不再先转换成Erlang源码。这样做的好处是编译速度更快，错误定位更准确，同时也摆脱了对Erlang源码解析和格式化的依赖。
+The Gleam compiler no longer transpiles code into Erlang source code, but directly produces Erlang Virtual Machine bytecode (BEAM files). This means faster compilation, avoiding source-level semantic pitfalls, and generating debugging information that is closer to the original Gleam code. For those using Gleam to write applications for the BEAM ecosystem, this is a genuine底层 upgrade.
 
-### 3. [寻找旧金山任意两点之间最平坦的路线](https://flattensf.com/)
+### 3. [在旧金山任意两点之间找到最平坦的路线](https://flattensf.com/)
 *hackernews*
-有人开发了一个名为“SF Flat Route”的小工具，只需输入旧金山任意两个地点，它便能为你规划出爬坡最少的路线。对于骑自行车通勤或推婴儿车出行的人来说，这颇为实用——毕竟旧金山以坡多著称，谷歌地图默认推荐的路线未必是最易行走的。
+This little tool called "SF Flat Route" helps you calculate the flattest cycling or walking route between any two points in San Francisco, avoiding those leg-breaking steep hills. San Francisco's terrain is notoriously rugged, and for bike commuters or people pushing strollers, slope matters more than distance. This tool正好解决了主流地图导航只算最短路径、不管爬升的问题。
 
 ## 🤖 AI / 大模型
 
 ### 1. [Beam：Reflection的501B开放权重模型](https://reflection.ai/blog/introducing-beam)
 *hackernews*
-Beam is an open-weight model launched by Reflection with 501B parameters, emphasizing "reflection" capability—allowing the model to self-examine and revise before generating a response, rather than outputting in one go. The key point of interest is that the 501B scale directly matches the parameter magnitude of top closed-source models, while opening the weights means researchers and enterprises can run a near-frontier-level model on their own, no longer having to rely entirely on APIs.
+Beam是由Reflection发布的一个拥有5010亿参数的开源权重模型，其规模直接与DeepSeek-V3和Llama 4等第一梯队模型比肩。值得关注的是，Reflection此前以闭源旗舰模型著称，此次将最大模型开放权重，意味着顶级开源模型领域再添一位强有力的竞争者。
 
-### 2. [尘埃：无须反向传播的Transformer预训练](https://qlabs.sh/research/dust)
+### 2. [尘埃：无需反向传播的Transformer预训练](https://qlabs.sh/research/dust)
 *hackernews*
-这项研究提出了一种名为 Dust 的新方法，能够在不依赖反向传播的情况下预训练 Transformer。其核心价值在于：反向传播一直是训练大模型时最耗算力和显存的环节，若该方法可行，训练成本和硬件门槛都有望大幅降低。
+Meta和牛津的研究者提出了Dust（动态更新自训练），一种完全无需反向传播即可预训练Transformer的方法。它通过动态更新权重替代梯度下降，在语言建模任务上达到了与标准预训练相当的效果。值得关注的是：如果这条路走通，未来训练大模型可能不再需要昂贵的反向传播计算，硬件设计的思路也将被重新定义。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

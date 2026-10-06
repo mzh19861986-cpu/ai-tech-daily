@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 1. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个多人在线的聊天机器人，不用 API key 也不依赖云端服务。如果你想要 Grok Bot 那种体验但不想花钱或担心隐私，可以直接拿它自己搭一个。
+**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的就是买家消息回不过来、还容易说错话，这个开源项目能自动生成专业回复，几秒搞定，省下时间专心做产品。
 
 ---
-## 2. [Review](https://www.producthunt.com/products/review-2)
+## 2. [Ghostifier](https://www.producthunt.com/products/ghostifier)
 
-**💡 是什么 + 为什么值得试：** Review 让你在自己电脑上用本地 AI 模型跑代码审查，代码不出本机就能拿到逐行反馈——对介意把私有代码传到云端的人来说，这是最省事的替代方案。
+**💡 是什么 + 为什么值得试：** Ghostifier 帮你自动向各家平台发起数据删除请求，省去逐个翻隐私政策、找客服入口的麻烦。如果你在意自己的数据被谁存着、又懒得手动折腾，这个工具值得一试。
 
 ---
 ## 3. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** 如果你只想观察 AI 角色如何自主互动、形成关系和事件，又不想自己写模拟器，这个项目能直接给你一个“只能看”的现成活世界。它适合用来测试或展示多智能体行为，省去搭建环境的时间。
+**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在同一个世界里自主互动、形成关系甚至演化出意外剧情，这个项目把整套模拟跑起来让你直接围观。适合拿来做 AI 行为实验或单纯看戏。
 
 ---
-## 4. [StayCharted](https://www.producthunt.com/products/staycharted)
+## 4. [Notch Radio](https://www.producthunt.com/products/notch-radio)
 
-**💡 是什么 + 为什么值得试：** StayCharted 让你用自己的分类体系训练 AI 模型，不用迁就通用模型的固定标签。如果你手头有一堆按自己业务逻辑分好类的数据，却找不到愿意按你的类目来训练的现成工具，这个项目能直接省掉你从头搭训练流程的功夫。
-
----
-## 5. [Scumble](https://www.producthunt.com/products/scumble)
-
-**💡 是什么 + 为什么值得试：** Scumble 是一个专门做 AI 图像局部重绘（inpainting）的开源编辑器，帮你省去在代码里反复调 API 或拼工具的麻烦。如果你想快速擦除、替换或修补图片中的某个区域，又不想被商业软件绑住，它值得一试。
+**💡 是什么 + 为什么值得试：** Notch Radio 把网络电台塞进 MacBook 的刘海里，常驻显示、点开即听，不用再单独开一个播放器或网页标签页。如果你经常一边工作一边听电台又嫌窗口碍事，这个开源小工具正好省地方。
 
 ---
-## 6. [Notch Radio](https://www.producthunt.com/products/notch-radio)
+## 5. [Chunk](https://www.producthunt.com/products/chunk-2)
 
-**💡 是什么 + 为什么值得试：** Notch Radio 把网络电台塞进 MacBook 的刘海区域，让你在写代码或办公时不用切窗口就能随手切台听歌。刘海常年闲置又容易分心，这个工具算是把它从「占用空间的伤疤」变成了「顺手的播放器」。
-
----
-## 7. [Ghostifier](https://www.producthunt.com/products/ghostifier)
-
-**💡 是什么 + 为什么值得试：** Ghostifier 帮你自动向各家平台发数据删除请求，省去你挨个找隐私入口、写邮件催办的时间。如果你在意自己散落在各公司的个人数据，又懒得手动处理，值得试试这个自动化方案。
+**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上的时间规划变成拖拽几个时间块的事，让你一眼看清今天的时间都花在哪了。如果你试过日历和待办清单却总觉得对不上实际节奏，这个轻量工具值得试试。
 
 ---
-## 8. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
+## 6. [Appto](https://www.producthunt.com/products/appto)
 
-**💡 是什么 + 为什么值得试：** MCP 服务器在你授权后会偷偷更新，mcpgawk 能帮你盯住这种变更，避免已批准的权限被悄悄利用。如果你在用 MCP 工具链，值得加上这层校验。
+**💡 是什么 + 为什么值得试：** Appto 能让你用自己已有的 AI 订阅（比如 ChatGPT Plus）批量生成 iOS 应用，不用额外买 API 或搭后端。如果你一直想试试做 App 但卡在环境配置和成本上，它值得一看。
+
+---
+## 7. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
+
+**💡 是什么 + 为什么值得试：** 如果你在找一个能本地运行、不把照片和对话上传云端的私人 AI 助手，Ari Helper 7 把聊天、照片和视频处理都塞进了一个应用里，适合对隐私敏感又想省去拼装多个工具的人试试。
+
+---
+## 8. [Banger](https://www.producthunt.com/products/banger-mail)
+
+**💡 是什么 + 为什么值得试：** Banger 帮你用 AI 自动跑邮件营销流程，从拉新到留存不用手动写邮件、设触发规则。如果你在做独立产品或小团队运营、想省掉 Mailchimp 那类工具的复杂配置，可以试试它是否够用。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

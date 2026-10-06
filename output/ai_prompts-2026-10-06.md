@@ -4,39 +4,36 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章内容为空，没有可提炼的 Prompt 技巧或 AI 使用建议。请提供实际的文章正文，我再帮你总结。**
+**这篇文章没有提供实质内容（标题提到 Beam 的 501B 开放权重模型，但正文为空），因此无法提炼具体的 Prompt 技巧或 AI 使用建议。
+
+**唯一可提炼的一点：** 若你手头有关于该模型的技术文档或发布说明，可将其作为上下文粘贴给我，我再帮你从中提取可复用的 Prompt 最佳实践；空内容本身不构成有效信息源。**
 
 📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## 2. 💡 技巧 2
 
-**这篇文章没有提供可提炼的 Prompt 技巧或 AI 使用建议——它是一篇关于机器学习预训练方法的技术研究内容（用非反向传播方式预训练 Transformer），不涉及 Prompt 工程或如何更好使用 AI。**
+**这篇文章没有提供可提炼的 Prompt 技巧或 AI 使用建议，因为内容为空，仅有标题《Dust: Pretraining Transformers Without Backpropagation》。标题本身讲的是机器学习训练方法（不依赖反向传播的 Transformer 预训练），与 Prompt 工程或如何更好使用 AI 无关，因此无法总结出相关建议。**
 
 📎 来源：[Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 
 ## 3. 💡 技巧 3
 
-**这篇文章讲的是 AI agent（Opus 5.5）自主发现了两种室温磁性半导体候选材料，属于科研应用报道，没有明显的 Prompt 技巧内容。
-
-如果硬要提炼一条关于更好使用 AI 的建议，可以这样总结：
-
-**让 AI agent 承担需要跨文献检索、假设生成与验证的复杂科研任务，而不是只做单轮问答——把探索性、多步骤的工作流交给 agent，由它自主迭代筛选候选方案，人类负责设定目标和审核结果。****
+**这篇文章讲的是 AI agent（Opus 5.5）自主发现两种室温磁性半导体候选材料，属于科研应用报道，没有涉及 Prompt 技巧或 AI 使用方法。因此没有可提炼的 Prompt 实践。**
 
 📎 来源：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
 
 ## 4. 💡 技巧 4
 
-**这篇文章标题为《An algorithmic failure beneath the secret ballot》（无记名投票背后的算法失灵），但未提供正文内容。仅从标题判断，它讨论的是选举或投票系统中算法设计缺陷的问题，属于算法公平性与治理领域，**不包含任何关于 Prompt 工程或 AI 使用技巧的内容**，因此无法从中提炼出可直接使用的 AI Prompt 技巧或最佳实践。
+**许多自托管邮件用户提到，问题出在客户端连接慢上；而更普遍可用的 AI 建议是：  
+**当症状出现在“连接/加载很慢”时，不要让 AI 直接猜原因，而是给它一个明确的诊断框架，例如“请按 DNS、TLS、IMAP 认证、服务端日志、客户端配置 5 个层面列出可能原因和验证命令”。****
 
-如果你能提供文章正文，我可以帮你进一步分析其中是否有可迁移到 AI 使用上的方法论（例如：如何识别系统的隐性偏差、如何设计更公平的决策流程等）。**
-
-📎 来源：[An algorithmic failure beneath the secret ballot](https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/)
+📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## 5. 💡 技巧 5
 
-**这篇讨论主要是关于自托管邮件服务器的经验分享，没有涉及 Prompt 工程或 AI 使用技巧的内容，因此无法从中提炼相关的 Prompt 最佳实践。**
+**这篇文章没有涉及 Prompt 技巧或 AI 使用建议——它只是一个开发者分享自己用 AI"感觉编程"（vibecoded）写出的 Golang 邮件服务器检查工具的帖子。**
 
-📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
+📎 来源：[Golang tool to check SPF, DKIM, TLSA, and TLS settings for mailservers](https://git.sig-io.nl/Sig-IO/mailcheck/)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*

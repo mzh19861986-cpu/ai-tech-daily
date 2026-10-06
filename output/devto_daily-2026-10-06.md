@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [vCluster tutorial: virtual Kubernetes clusters per team](https://dev.to/coresolutions/vcluster-tutorial-virtual-kubernetes-clusters-per-team-3bnn)
+## 1. [Build a members-only video library in Python: private media, RS256 playback tokens, and tokenized thumbnails](https://dev.to/masonwritescode/build-a-members-only-video-library-in-python-private-media-rs256-playback-tokens-and-tokenized-2hjn)
 
-**✨ 精华总结：** vCluster 让每个团队在自己的命名空间里跑一个「虚拟 Kubernetes 集群」——它有独立的 API Server、CRD、webhook 和 RBAC，但底层共享同一个物理集群，成本远低于给每个团队开真集群。值得关注是因为它精准解决了多租户场景下最头疼的冲突：当两个团队需要不同版本的 CRD 或互斥的 webhook 配置时，命名空间隔离根本扛不住，而 vCluster 既保住了隔离性，又不用为每个团队烧一套控制平面。
+**✨ 精华总结：** 这个教程教你在 FastAPI 里搭一套会员制视频库的后端：上传的视频设为私有，用 RSA 私钥签发短时效 JWT，每个观众请求时拿到带 token 的播放地址和缩略图地址。亮点在于它顺手把缩略图也上了锁——多数人做付费墙只保护视频流，却忘了缩略图同样暴露内容。
 
-## 2. [ESP-NOW paso a paso: enviar órdenes entre ESP32 con confirmación](https://dev.to/stevencarvajal/esp-now-paso-a-paso-enviar-ordenes-entre-esp32-con-confirmacion-12b1)
+## 2. [Where Designers and Developers Find Modern Web Design Inspiration](https://dev.to/muneerdigital/where-designers-and-developers-find-modern-web-design-inspiration-1864)
 
-**✨ 精华总结：** ESP-NOW 是乐鑫为 ESP32 设计的点对点直连协议，不需要路由器或服务器，两台芯片就能直接通信。在这套智能家居方案里，它让整个系统只需一个联网中枢——云端指令先到中枢，再由 ESP-NOW 分发给各个控制继电器的节点，省掉了给每个节点配 Wi-Fi 的成本和复杂度。
+**✨ 精华总结：** 这个平台把散落在各处的 Webflow 模板、Framer 组件和 UI/UX 案例集中到一个地方，专门服务设计师和前端开发者找灵感。它的价值在于策展——不是堆量，而是帮你快速筛选出能直接用在落地页、SaaS 产品和个人作品集里的高质量参考。
 
-## 3. [Salesforce Flow Run Context, Explained: User vs System Context](https://dev.to/rohanmehta/salesforce-flow-run-context-explained-user-vs-system-context-2di7)
+## 3. [How to Build a Network-Aware Stablecoin Payment Integration](https://dev.to/kevins1988/how-to-build-a-network-aware-stablecoin-payment-integration-2n1a)
 
-**✨ 精华总结：** Salesforce Flow 每次执行都会「借用」某个用户的权限，这就是 run context——分用户上下文（跟着触发者的权限走）和系统上下文（用管理员级权限跑，普通用户碰不了的记录也能改）。值得关注是因为很多莫名其妙的「权限不足」报错或者「怎么悄悄改了不该改的数据」，根源都在这里选错了上下文，而不是 flow 逻辑本身有问题。
+**✨ 精华总结：** 这篇文章讲的是稳定币支付集成中一个常被忽略的坑：你以为"USDT支持以太坊、Tron、BSC"这样定义就够了，但实际上同一个币种在不同链上的合约地址、精度、确认机制都不一样，硬编码一个网络列表迟早会出问题。
 
-## 4. [Angular Signals vs RxJS: When Should You Use Each?](https://dev.to/convergesol/angular-signals-vs-rxjs-when-should-you-use-each-49bg)
+核心价值在于它提醒你——稳定币支付不是"选链→付款"这么简单，网络感知（network-aware）意味着你的集成要能识别每条链的独特属性并动态适配，否则用户选错链、金额精度错位、或者某条链拥堵时，整个结算流程就会静默失败。
 
-**✨ 精华总结：** Angular Signals 和 RxJS 不是替代关系，而是各管一摊：Signals 专注响应式状态和 UI 交互，RxJS 继续负责异步流、事件处理、取消重试和时间相关的工作流。两者在现代 Angular 应用里是互补的，选哪个取决于你要解决的是"状态同步"还是"事件流编排"的问题。
+## 4. [The Future of Web Development Isn’t No-Code, It’s AI-Augmented Code](https://dev.to/wpwebinfotech/the-future-of-web-development-isnt-no-code-its-ai-augmented-code-4k25)
 
-## 5. [How to show your Storybook in Azure DevOps without hosting it](https://dev.to/kvriel/how-to-show-your-storybook-in-azure-devops-without-hosting-it-5cl)
+**✨ 精华总结：** 与其争论"写代码还是零代码"，真正的趋势是第三条路：开发者仍然掌控代码的编写、审查和测试，但把重复性工作交给AI处理。比如你描述一个功能需求，AI就能生成初稿代码，你在此基础上修改和把关。这种"AI增强编程"模式值得关注，因为它既保留了开发者对代码的所有权和理解深度，又大幅压缩了样板代码、测试用例这类枯燥环节的时间——效率提升是实打实的，而不是把控制权交给一个黑盒工具。
 
-**✨ 精华总结：** 有人做了个工具，能把 Storybook 直接嵌进 Azure DevOps 里展示，不用单独找个地方托管它。解决的问题很实际：组件库和团队日常干活的平台是分离开的，看组件得跳出去，来回切换很烦。如果你团队用 Azure DevOps 又维护着 Storybook，这个思路值得看一眼。
+## 5. [Jalali Dates in Modern PHP: Building ParsiDate — Immutable, Zero-Dependency, with Holidays Built In](https://dev.to/mahdyaralipor/jalali-dates-in-modern-php-building-parsidate-immutable-zero-dependency-with-holidays-built-in-5fi6)
+
+**✨ 精华总结：** PHP 开发者现在有了一个专门处理波斯历（Jalali/太阳历）的现代库 ParsiDate，它采用不可变对象设计、零依赖，并内置了节假日数据，直接解决了老库依赖已废弃的 `strftime()`、可变对象在队列任务中引发"隔空改值"等痛点。如果你要为全球 8500 万波斯语用户做产品，这基本是目前最省心的选择——不用再手动维护节日表，也不用担心 PHP 8.1+ 的兼容性问题。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
