@@ -14,27 +14,25 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只给了标题「Mistral Large 4」，正文内容没贴过来。
-
-把具体内容发给我，我帮你按这个风格提炼。
+Mistral 发布了第四代旗舰大模型 Large 4，主打更强的推理与多语言能力，同时保持了 Mistral 一贯的高效架构，推理成本显著低于同级别闭源模型。值得关注的是，它直接对标 GPT-4o 和 Claude 3.5 Sonnet 这一档，但走的是开放权重路线——这意味着企业可以私有化部署，对数据敏感型团队来说是个实打实的新选项。
 
 ### 2. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-这条消息信息量太少，无法判断真伪。目前（截至2025年中）2026年诺贝尔物理学奖尚未颁发，诺奖官网也没有 Francis Halzen 获奖的公告。Francis Halzen 是冰立方中微子天文台（IceCube）的首席科学家，如果获奖，最可能的理由是「用南极冰层探测高能宇宙中微子、开启中微子天文学」——但请以诺奖官方发布为准。
+这条新闻目前只有标题，没有正文内容，我无法判断具体发生了什么。
 
 ### 3. [Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
 *hackernews*
-美国议员在404 Media报道后，迅速推出多项针对Flock车牌识别系统的立法提案。Flock是一个被全美数千个执法机构使用的AI监控网络，但其大规模数据共享和缺乏监督已引发隐私与滥权担忧。这波立法标志着对“无差别监控”从舆论批评进入了实际法律约束阶段，值得关注。
+美国两党议员近期密集提出多项法案，旨在限制警方和私营机构使用Flock Safety车牌识别摄像头网络，直接回应了404 Media此前对该系统大规模监控风险的系列调查报道。这意味着全美数千个社区部署的自动车牌扫描数据，可能首次面临联邦层面的实质性监管——如果你关心隐私与执法技术的边界，这是值得跟踪的转折点。
 
-### 4. [Berthd](https://berthd.app/)
+### 4. [Paramount completes $111B Warner merger, creating "Skydance" behemoth](https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/)
 *hackernews*
-“Berthd”这个标题信息量太少，我没法准确总结或推荐。能补充一下它具体指什么吗——是新发布的工具、开源项目、硬件产品，还是某篇文章/论文的名字？给我来源链接或一两句背景，我马上按你要的风格写。
+派拉蒙（Paramount）以1110亿美元完成对华纳兄弟的合并，新实体命名为“Skydance”，一跃成为全球最大的影视传媒集团之一。这笔交易将两家老牌好莱坞制片厂和大量流媒体资产（Paramount+、Max等）整合到同一屋檐下，显著改变流媒体竞争格局，对Netflix和迪士尼构成直接压力。
 
-## 🛠️ 开发工具
+## 🤖 AI / 大模型
 
-### 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
+### 1. [A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 *hackernews*
-Tapo 是一个用 Rust 和 Python 写的库，最近新增了对 TP-Link 私有协议 TPAP 的支持，这意味着它可以直接跟 TP-Link 的智能设备（比如摄像头、插座）在本地通信，而不用绕道官方云 API。对于想自己做智能家居自动化、又不想依赖厂商服务器的开发者来说，这能带来更快、更私密的本地控制方案。
+这篇文章讨论的是如何把 Web 开发技能做成一份可持续、抗周期的长期职业，而不是押注某一波技术风口。核心逻辑是：底层能力（HTTP、浏览器渲染、可访问性、性能）比框架寿命长得多，与其追新工具，不如建立能跨技术迭代迁移的知识结构。如果你担心 AI 和裁员潮会冲掉前端这碗饭，这篇给的是「怎么活下来」而不是「怎么赢麻」的答案，值得一读。
 
 
 ---

@@ -7,28 +7,22 @@
 ### 1. [[D] Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1wvi1j8/d_selfpromotion_thread/)
 *reddit/r/MachineLearning*
 
-这个帖子给独立开发者和创业者开了个自荐专区，可以发自己的项目、产品、博客或合作需求，但必须标明收费方式和价格。对做产品的人来说，这是一个低成本曝光的机会；对找工具或合作方的人来说，也省去了在海量帖子里翻找的麻烦。
+这是一个开发者社区的自推广汇总帖，专门用来集中展示个人项目、创业产品、合作需求和博客等内容。发帖时需注明付费和定价要求，但禁止短链、聚合站和自动订阅链接。对独立开发者来说，这类帖子是低成本曝光的好机会，也方便需求方一站式浏览筛选。
 
 ### 2. [Transformers vs RNNs vs SSMs: Where Does Memory Actually Live? [D]](https://www.reddit.com/r/MachineLearning/comments/1wz71g3/transformers_vs_rnns_vs_ssms_where_does_memory/)
 *reddit/r/MachineLearning*
 
-不同架构处理「记忆」的位置其实完全不一样：RNN 把记忆压进一个固定大小的隐藏状态，Transformers 把记忆摊平成随序列增长的 KV Cache，SSM 则用一个固定大小的状态但换了个数学结构去更新它。这篇值得看，是因为它把「记忆存在哪」当成主线，让原本零散的架构对比一下子有了统一的解释框架——你会发现很多性能差异，本质上是记忆容量和访问方式的差异。
+RNN、Transformer和SSM这三种序列架构，本质上是在用不同方式解决同一个问题：把历史信息存在哪里、存多贵。RNN把记忆压进一个固定大小的隐藏状态（便宜但容易忘），Transformer把记忆摊开成随序列增长的KV缓存（记得全但吃显存），SSM则尝试用一个可压缩的状态同时兼顾两者。值得关注的理由是：当上下文长度越来越长、推理成本越来越敏感时，"记忆放在哪"这个视角比单纯比谁准确率更高，更能解释它们在真实部署中的取舍。
 
 ### 3. [AFP-GIC: Controllable Generative Image Compression [R]](https://www.reddit.com/r/MachineLearning/comments/1wzbe6r/afpgic_controllable_generative_image_compression_r/)
 *reddit/r/MachineLearning*
 
-**中文总结：**
-
-研究人员发布了 AFP-GIC，一个可控的生成式图像压缩框架，已正式发表于 IEEE Access（2026），并同步开源了部署代码、Hugging Face 交互演示和 arXiv 论文。它解决的核心痛点是：在超低比特率下，传统学习型编解码器会出现局部失真，而生成式方法虽然画质更自然，却往往不可控——AFP-GIC 试图让生成式压缩在极低码率下既保真又可调节。
-
-**为什么值得关注：** 如果你关心「把图片压到极小还能看得过去」这件事，这个工作可能是目前把生成模型和压缩控制结合得比较完整的一个开源方案，而且有现成 playground 可以直接上手试。
+斯坦福团队在IEEE Access发了个新框架AFP-GIC，专治超低码率下传统图像压缩的两个老毛病——要么块状模糊，要么生成模型乱编细节。它把生成式压缩变得「可控」了，能在极低带宽下既保住整体结构，又按需调节细节的生成程度。真做端侧传输或带宽受限场景的话，这个值得追一下，代码和在线demo都已开源。
 
 ### 4. [Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 *reddit/r/MachineLearning*
 
-这篇论文把 TabPFN 那套"先验拟合网络"的思路搬到了语言学习上：模型只在一个**合成的、非语言的先验数据**上训练，却能纯粹靠上下文（in-context）学会一门真实自然语言，全程不需要针对该语言做任何梯度更新。
-
-值得关注的点在于，它挑战了"要学语言就得用语言数据训练"这个默认假设——如果上下文学习能力真的可以从非语言先验里迁移出来，那我们理解 LLM 泛化能力的角度可能得换一换。
+这篇论文把 TabPFN 那套「先验拟合网络」的思路搬到了语言学习上：模型只在合成数据上训练，却能在上下文里直接学会一门从未见过的语言，完全不靠梯度更新。值得关注的是，它证明了「学会如何学习」这件事可以跨模态迁移——从表格数据到自然语言，这对少样本学习和低资源语言的场景会很有想象空间。
 
 ---
 *内容来自 Reddit 公开社区，由 AI 自动摘要生成。*

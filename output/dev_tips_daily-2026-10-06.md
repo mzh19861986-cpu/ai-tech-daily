@@ -6,7 +6,7 @@
 
 **Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage**
 
-✨ 美国多名议员在404 Media报道后，接连提出多项针对Flock Safety（AI车牌识别监控公司）的立法提案，试图限制其大规模车牌追踪网络的扩张。这事值得关注，因为它标志着围绕AI监控设备的法律监管开始从讨论走向实际立法，而Flock正是美国警方最广泛部署的自动车牌识别系统之一。
+✨ 美国两党议员近期提出多项法案，旨在监管Flock等AI驱动的车牌识别与监控网络，直接回应了404 Media此前对该技术滥用的系列调查报道。这标志着立法者首次系统性尝试为这类无差别大规模监控工具划下法律红线，值得关注是因为它可能成为美国隐私立法的一个关键转折点——技术公司通过商业渠道向警方输送监控能力，而公众此前几乎无从知晓或反对。
 
 📎 [阅读原文](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
 
@@ -14,7 +14,7 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学智慧（比如儒家的中庸、道家的无为）嵌进了自动驾驶的决策框架，让大语言模型在复杂路况下不只是算概率，还能参照一套伦理准则来权衡安全、效率和社会规范。它值得关注，是因为当前自动驾驶的决策研究几乎都在拼数学优化和预测精度，而伦理判断长期被忽略——这恰恰是机器真正上路后最难处理的那类问题。
+✨ 这篇论文把中国哲学智慧引入自动驾驶决策，让大语言模型在复杂交通场景中不仅算得清，还“想得通”。值得关注的是，它试图用哲学框架弥补纯数值优化和常规LLM在伦理判断上的短板，让自动驾驶的决策更贴近人类社会规范。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -22,25 +22,25 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 TabPFN 的「先验拟合网络」思路从表格数据扩展到了自然语言：模型仅用合成数据（甚至不是真正的语言）预训练，却能在推理时通过上下文直接学会一门真实语言的任务，无需任何梯度更新。值得关注的是，它证明了「学会学习」这件事可能不需要真实语料打底——合成先验就足以支撑上下文学习，这对低资源语言和快速适配场景是个有意思的信号。
+✨ 这篇论文把「先验拟合网络」（TabPFN 背后的思路）从表格数据搬到了自然语言：模型只在一套合成的、非语言的先验数据上训练，却能靠上下文学习真正学会一门语言，无需见过任何真实语料。值得关注的是，它验证了「从合成先验中涌现出语言学习能力」这条路可行，为不依赖大规模真实文本的模型训练打开了新想象。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
 ## 技巧 4
 
-**Claude Code usage limits: what counts, when they reset, and how to stop hitting them**
+**How to Generate 500 Realistic Fake Users with PostgreSQL & MySQL Seed Scripts in Seconds**
 
-✨ Claude Code 的用量限制跟聊天是**共用同一个额度池**的，而且消耗速度快得多——同样时间写代码可能比聊天多烧好几倍配额。重置时间还不统一，所以经常任务做到一半就撞墙。如果你在用 Pro 或 Max 订阅跑 Claude Code，值得先搞清楚哪些操作计入配额、各自的刷新周期，再调整使用节奏，否则很容易在关键节点被打断。
+✨ 这个工具能帮你在几秒内往 PostgreSQL 或 MySQL 里灌入最多 500 条逼真的假用户数据，省掉手写 SQL 和一条条手动造数的功夫。值得关注的点在于：它同时解决了「量」和「质」——既支持批量生成，又绕开了传统假数据工具的单条限制和满屏广告，适合做全栈开发、电商结算流程或数据库迁移时的测试填充。
 
-📎 [阅读原文](https://dev.to/msadofschi/claude-code-usage-limits-what-counts-when-they-reset-and-how-to-stop-hitting-them-o5c)
+📎 [阅读原文](https://dev.to/chandgg529collab/how-to-generate-500-realistic-fake-users-with-postgresql-mysql-seed-scripts-in-seconds-4o38)
 
 ## 技巧 5
 
-**How to Fix Windows Update Error 0x800f081f on Windows 10 and Windows 11**
+**I Built a Free Word Counter That Runs 100% in Your Browser — Here's What I Learned About Client-Side Text Analysis**
 
-✨ Windows更新报错0x800f081f，说白了就是系统找不到安装更新所需的源文件——通常在你手动装.NET Framework或某些可选功能时冒出来。这篇指南给了几种实操修法，从跑疑难解答到指定源文件路径，Win10和Win11都适用。如果你正好被这个错误卡住，值得收藏照着试一遍。
+✨ 做文本分析工具时最容易忽略的是：**统计“单词数”本身没有唯一标准**。连字符词算一个还是两个？中英混排怎么切？URL、代码、markdown 标记要不要算进去？作者原本以为一个下午能搞定，结果花了几周——因为不同场景（写论文、写小说、做 SEO）对“词”的定义根本不一样。他最终把 15+ 个工具全部放在浏览器里跑，不上传、不联网，对处理敏感文本的人来说，这比功能多更重要。
 
-📎 [阅读原文](https://dev.to/iman_7787bc2a06f7b7c2e975/how-to-fix-windows-update-error-0x800f081f-on-windows-10-and-windows-11-109p)
+📎 [阅读原文](https://dev.to/alamzebkhan/i-built-a-free-word-counter-that-runs-100-in-your-browser-heres-what-i-learned-about-399n)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

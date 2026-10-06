@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [iphone-use](https://www.producthunt.com/products/iphone-use)
+## 1. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** `iphone-use` 让你用 AI agent 直接操作一台真实 iPhone，包括那些没有开放 API 的 App，适合做自动化测试、批量操作或无障碍辅助。如果你正为某个只有手机端、又无法用脚本控制的流程头疼，这个项目能省掉你手点几百次的麻烦。
-
----
-## 2. [Coddy](https://www.producthunt.com/products/coddy)
-
-**💡 是什么 + 为什么值得试：** Coddy 用碎片化短课帮你快速上手 20 多种编程语言，适合想先低成本试错、找到适合自己方向再深入的人。
+**💡 是什么 + 为什么值得试：** AUDR 让你按会话或任务追踪 AI agent 每次运行的实际成本，弥补了 token 用量和账单之间的空白。如果你跑多个 agent 却说不清钱花在哪一步，它提供了一套统一的记录格式，值得试试。
 
 ---
-## 3. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 2. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
 
-**💡 是什么 + 为什么值得试：** Fuse AI 让你用一套 SDK 和 MCP 协议快速搭出定制化的 GTM（市场进入）工具链，不用再为每个数据源和工具单独写对接代码。如果你的销售或增长团队需要把 CRM、数据源和自动化流程串起来，这个项目能省掉大量胶水开发。
+**💡 是什么 + 为什么值得试：** Willow Knowledge 让你的 AI 工具（比如 ChatGPT）也能访问你本地的笔记、文档和知识库，不用再把内容手动复制粘贴进对话。如果你受够了每次都靠“喂资料”才能让 AI 回答你的私人问题，这个项目值得一试。
+
+---
+## 3. [OpenBot](https://www.producthunt.com/products/openbot-3)
+
+**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个自己的 Grok 风格机器人，数据不出本机，还支持多人同时使用——如果你在意隐私或不想为 API 付费，值得一试。
 
 ---
 ## 4. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你直接用语音操控电脑，省去鼠标键盘的来回切换，适合想解放双手或多任务操作时快速执行命令。开源且主打“氛围计算”，如果你一直想试试语音控制桌面又不想被商业软件绑定，这个项目值得把玩一下。
+**💡 是什么 + 为什么值得试：** 不想伸手碰键鼠的时候，Incredible 让你直接用语音操控电脑，适合解放双手或需要快速执行简单操作的场景，开源可自部署，值得一试。
 
 ---
-## 5. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 5. [Banger](https://www.producthunt.com/products/banger-mail)
 
-**💡 是什么 + 为什么值得试：** 如果你的 AI Agent 跑起来后，你根本算不清每次运行到底花了多少钱，AUDR 就是来统一记录这些费用的开源标准。它值得试试，因为它把「Agent 成本追踪」这件事从各家自定义变成可互通的格式，省得你自己造轮子。
-
----
-## 6. [Rill Browser](https://www.producthunt.com/products/rill-3)
-
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器侧边栏，让 AI 能在你浏览的页面上实时读取内容、执行操作，省去手动复制粘贴上下文的来回折腾。如果你经常一边查资料一边用 AI 写代码或做分析，它能明显减少切换窗口的摩擦。
+**💡 是什么 + 为什么值得试：** Banger 让你的 AI 代理直接接管邮件自动化流程，从欢迎序列到挽回流失用户，不用再手动配规则或盯数据。如果你在做订阅制产品又懒得搭复杂营销工具，它值得一试。
 
 ---
-## 7. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 6. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个多人在线的机器人，不用碰 Grok 的 API 或订阅费，适合想自己掌控数据、又需要多人同时用的场景。
+**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在一个共享世界里自主互动、自己只做旁观者，这个项目正好省去了你搭建多智能体环境的功夫；它把“活着的 AI 世界”直接摆在眼前，适合用来观察涌现行为，或者单纯当个有趣的实验来看。
 
 ---
-## 8. [Banger](https://www.producthunt.com/products/banger-mail)
+## 7. [Doco](https://www.producthunt.com/products/doco-4)
 
-**💡 是什么 + 为什么值得试：** Banger 把冷邮件跟进、客户培育这类重复的邮件序列交给 AI 自动跑，省得你手动设置每一步的触发和文案。如果你做销售或独立产品，想让邮件营销真正跑起来而不是躺在草稿箱里，可以试试它。
+**💡 是什么 + 为什么值得试：** Doco 能根据你的场景和心情自动匹配音乐，省去手动搜歌、切歌的麻烦，适合想要“打开就有对味背景音”的人。
+
+---
+## 8. [Floani](https://www.producthunt.com/products/floani)
+
+**💡 是什么 + 为什么值得试：** Floani 让你用 AI 生成图表后直接在浏览器里做动画演示，省去在多个工具间来回切换的麻烦。如果你经常需要做流程图、架构图又想让展示更直观，它值得一试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

@@ -2,13 +2,13 @@
 
 > 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 1 个
 
-## 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
+## 1. [A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
-**👥 适合谁：** 最适合想用 Rust 或 Python 直接控制 TP-Link 智能设备（如智能插座、灯泡）、爱折腾智能家居的开发者。
+**👥 适合谁：** 这款 AI 工具最适合**担心 AI 泡沫破裂、想提前给自己铺好可持续职业退路的开发者和内容创作者**。
 
-**🚀 怎么开始：** Tapo 是 Rust/Python 库，需要本地部署（`pip install tapo` 或 `cargo add tapo`），并填入你 TP-Link 设备的局域网 IP 和账号密码即可控制设备。
+**🚀 怎么开始：** 直接打开网页就能读，无需安装或 API key，访问该页面即可免费阅读这篇关于可持续网页职业的文章并收藏备用。
 
-**📝 简介：** Tapo 这个 Rust/Python 库现在能直接跟 TP-Link 设备讲 TPAP 协议了——也就是官方 App 用的那套私有通信方式，不用再走云中转或抓包逆向。对玩智能家居的人来说，这意味着可以在本地网络里更底层地控制 Tapo 设备，响应更快、隐私更好，也给自建自动化留出了空间。
+**📝 简介：** 这篇文章讨论的是一个很少被提及但很现实的问题：Web 开发者如何构建一份能持续二三十年的职业生涯，而不是追逐每两年就换一轮的技术热点。核心观点是，与其把所有精力押在某个框架或工具上，不如投资那些迁移性强的底层能力——比如理解 HTTP、浏览器渲染原理、可访问性、性能优化和安全基础——这些知识不会因为下一个框架的兴起而贬值。值得关注的原因是，它提供了一种对抗技术焦虑的思路：可持续的职业生涯靠的不是学得更快，而是学得更“抗过时”。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*
