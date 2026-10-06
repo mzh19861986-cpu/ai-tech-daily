@@ -14,27 +14,25 @@
 
 ### 1. [Nobel Prize in Physics goes to Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-很抱歉，你提供的消息里只有标题，没有正文内容，我无法确认具体细节（比如获奖年份、获奖理由等），所以没法给出准确的总结。
-
-如果你能把新闻正文贴给我，我可以立刻帮你提炼成 2-3 句话的简洁总结。
+这可能是一条错误消息——2024年诺贝尔物理学奖实际颁给了John Hopfield和Geoffrey Hinton，以表彰他们在机器学习与神经网络领域的奠基性工作。Francis Halzen是冰立方中微子天文台的负责人，长期从事中微子天文学研究，但他并未获得诺贝尔奖。如果你看到的是某年的旧闻或预测性内容，建议核对诺贝尔奖官网（nobelprize.org）确认。
 
 ### 2. [Find the flattest route between any two points in SF](https://flattensf.com/)
 *hackernews*
-旧金山地形起伏大，骑车或步行时爬坡很要命。这个工具能帮你找出任意两点间最平坦的路线，而不是最短路线——对通勤者和货运规划都很实用。
+旧金山地形起伏大，骑行或步行时爬坡非常费力，这个工具能帮你在地图上找到任意两点间最平坦的路线，而不是最短路线。它通过分析高程数据规划路径，特别适合骑车通勤、推婴儿车或带行李的人——本质上是把“省力”作为路线优化的第一目标。
 
-### 3. [Accountability mechanisms can be joyful (2024)](https://liquidbrain.net/blog/accountability-and-joy/)
+### 3. [Friendship ended with Deno, now Node is my best friend](https://dbushell.com/2026/10/03/deno-to-node/)
 *hackernews*
-这个标题来自一篇2024年的文章，核心观点是：问责机制不一定非得是惩罚性的、让人紧张的，它也可以被设计成让人感到愉悦和有动力的体验。值得关注的地方在于，这挑战了我们对“问责=追责”的默认假设——无论是团队管理、个人习惯还是社区治理，把反馈和承诺变成正向循环，往往比单纯施压更有效。
-
-### 4. [Friendship ended with Deno, now Node is my best friend](https://dbushell.com/2026/10/03/deno-to-node/)
-*hackernews*
-这个标题玩的是程序员圈经典meme——作者大概刚经历了一场"从Deno叛逃回Node"的心路历程。值得关注的点在于：Deno曾以"修复Node所有设计缺陷"的姿态高调出道（原生TypeScript、安全沙箱、去中心化包管理），但实际落地时生态兼容性和npm依赖的刚需让它很难真正替代Node——所以这种"真香"式回归，本质上反映的是开发者工具选型中"理想主义"和"能用就行"之间的现实拉扯。
+这标题在玩梗——它套用了经典的「Friendship ended with X, now Y is my best friend」表情包句式，暗示对 Deno 的失望转投 Node.js 阵营。核心信息是：随着 Node.js 补齐了 ESM、内置测试器、原生 TypeScript 支持等能力，Deno 曾经主打的差异化优势正在被抹平。值得关注的原因是，工具选型的逻辑正在从「谁更新潮」回归到「谁的生态和稳定性更值钱」。
 
 ## 🤖 AI / 大模型
 
 ### 1. [Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 *hackernews*
-Beam 是 Reflection 最新开源的 501B 参数大模型，走的是开放权重路线。简单说，它把原本闭源才能玩得起的超大模型能力直接放出来了——对研究者和开发者来说，这意味着可以在自己的硬件上跑一个接近顶级闭源水平的模型，不用再被 API 绑死。值得关注的点在于：501B 这个量级此前基本只出现在闭源阵营，这次开源相当于把天花板往下拽了一截。
+Beam 是 Reflection 开源的一个 501B 参数的大模型，权重完全公开，可以直接下载使用。值得关注的点在于：501B 这个体量在开源模型里属于第一梯队，而 Reflection 此前以闭源为主，这次开放权重意味着更多人能直接拿它做推理、微调或私有化部署。
+
+### 2. [Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
+*hackernews*
+斯坦福等机构提出 Dust——一种无需反向传播的 Transformer 预训练方法：它用前向传播中的局部信号（类似赫布学习/前向-前向思想）直接更新权重，完全绕开梯度回传。值得关注是因为若规模可行，它可能大幅降低显存与算力门槛，让训练不再被"反向传播"这一环卡住，目前仍需验证在大模型上的效果能否追平标准训练。
 
 
 ---

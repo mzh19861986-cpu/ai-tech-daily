@@ -1,22 +1,28 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Sport fit](https://dev.to/shivam-sharma2009/sport-fit-7e9)
+## 1. [A Keyless Free Remote Jobs API: 340+ Live Listings, No Sign-Up, No Rate Limits](https://dev.to/earnnovadev/a-keyless-free-remote-jobs-api-340-live-listings-no-sign-up-no-rate-limits-310d)
 
-**✨ 精华总结：** 这条内容其实是一条 Liquid 模板语法报错，意思是 `{% %}` 标签没有被正确闭合。值得关注的点在于：如果你的网站或文档系统用了 Jekyll、Shopify 这类 Liquid 引擎，这类错误会直接导致页面渲染失败或内容显示异常，而不是给出友好提示——排查时优先检查标签里有没有漏掉 `%}` 或混入了非法字符。
+**✨ 精华总结：** 做远程职位板或求职工具，最烦的就是爬多个网站、写数据清洗、还要应对每周都在变的页面结构。RJA 这个公开 REST API 直接帮你做完了这些脏活，聚合 5 个主流来源的远程职位，统一输出成规范 JSON，340+ 条实时列表，不用注册、没有速率限制、完全免费。
 
-## 2. [How to Make AI Write High-Quality Code in .NET](https://dev.to/antonmartyniuk/how-to-make-ai-write-high-quality-code-in-net-2d4l)
+## 2. [The Best HTML Architecture Starts by Deciding What JavaScript Should Never Touch](https://dev.to/ortizfranklindev/the-best-html-architecture-starts-by-deciding-what-javascript-should-never-touch-51ng)
 
-**✨ 精华总结：** 想让 AI 写出高质量的 .NET 代码，关键不在于模型本身，而在于你能否把多年积累的代码品味"教"给它——比如可读性、可维护性这些人类工程师的判断标准。这篇文章讲的正是如何把资深开发者的编码原则转化成 AI agent 能执行的规则，让它不再产出"看着漂亮、一审就崩"的代码。对正在把 AI 引入 .NET 开发流程的团队来说，值得一读。
+**✨ 精华总结：** 好的，这篇内容的核心观点是：**最优秀的 HTML 架构，起点是先搞清楚哪些东西 JavaScript 永远不该碰。**
 
-## 3. [Scheduled Tasks in Agent Kernel: Work That Runs Without Anyone Asking](https://dev.to/agent-kernel/scheduled-tasks-in-agent-kernel-work-that-runs-without-anyone-asking-4j09)
+具体来说，作者用一个真实的 bug 案例说明——FAQ 页面的问题和布局都渲染正常，但点击没有任何反应。问题不在于代码报错，而在于交互逻辑本身就被错误地交给了 JavaScript 处理。**值得关注的是**：这不是性能优化技巧，而是架构决策——先划定 JavaScript 的"禁区"，用原生 HTML 承担结构性职责，反而能让页面更健壮、更少出 bug。
 
-**✨ 精华总结：** Agent Kernel 上线了 Scheduled Tasks，让 AI agent 能按计划自动执行任务，不再依赖用户每次手动触发。这补上了 agent 能力里一直缺失的那一半——不只是「你问我答」，而是到点自己干活，比如定时提醒、周期性检查、延迟执行等。对做自动化工作流的人来说，这意味着一批过去必须靠外部 cron 或人工盯着的场景可以直接交给 agent 了。
+## 3. [CF7 to Custom REST API Returning 415 Unsupported Media Type: A Complete Troubleshooting Guide](https://dev.to/rahul_sharma_15bd129bc69e/cf7-to-custom-rest-api-returning-415-unsupported-media-type-a-complete-troubleshooting-guide-267n)
 
-## 4. [How to Calculate Physical Display Dimensions & Screen Sizes Accurately](https://dev.to/screensizecalc/how-to-calculate-physical-display-dimensions-screen-sizes-accurately-57ga)
+**✨ 精华总结：** WordPress 的 Contact Form 7 通过连接插件往自定义 REST API 发数据时，常见的 415 报错本质上是「Content-Type 请求头不匹配」这一个问题——服务器期待 JSON，表单却按默认方式提交了。这篇指南把根因和修法讲清楚了，如果你正好在用 CF7 对接自建接口，值得花两分钟看完再动手。
 
-**✨ 精华总结：** 买电视或显示器时只看对角线尺寸（比如27寸、55寸）其实不够——你真正需要知道的是屏幕的实际宽高，否则很可能买回来发现桌子放不下、电视柜塞不进、挂架对不上孔位。这篇文章讲的就是怎么用对角线和宽高比反推出屏幕的真实物理尺寸，核心在于：同样是对角线长度，21:9 和 16:9 的屏幕实际面积和长宽差别很大，买之前算一下能省很多麻烦。
+## 4. [Non-deterministic agents in deterministic workflows: the state-machine pattern that makes multi-agent systems traceable](https://dev.to/alex_aslam/non-deterministic-agents-in-deterministic-workflows-the-state-machine-pattern-that-makes-53go)
+
+**✨ 精华总结：** 多智能体系统里最让人头疼的问题，是「LLM 调用顺序不确定」——同一个 bug 能复现四次你都不知道从哪下手，因为 agent 之间的调用链路压根没被显式定义。这篇文章提出的「确定性状态机」模式，本质是把 agent 当成状态机里的节点，用确定性的转移规则去约束非确定性的 LLM 行为，让每一步调用都变得可追踪、可复现。值得关注的点在于：它不是靠更强的日志工具，而是从架构层面把「谁该调用谁」这件事从模型手里收回来——对正在被多 agent 调试折磨的团队来说，这可能比换更强的模型更解决问题。
+
+## 5. [Kubernetes OOMKilled (Exit Code 137): Causes and Fixes](https://dev.to/amareswer/kubernetes-oomkilled-exit-code-137-causes-and-fixes-4fc)
+
+**✨ 精华总结：** Kubernetes 里容器突然挂了、退出码 137，基本就是被内核 OOM Killer 干掉了——要么是它自己超了 memory limit，要么是整个节点内存告急、它被随机选中。这两种情况表面看一模一样，但排查方向完全不同，所以第一件事是先分清到底是谁的内存不够了，再决定是调 limit 还是查节点资源。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

@@ -1,12 +1,12 @@
 # 💡 每日开发技巧 - 2026-10-06
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 5 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 4 条
 
 ## 技巧 1
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文尝试把中国哲学智慧引入自动驾驶决策——不是简单套用伦理原则，而是用「中庸」「审时度势」这类思维来指导 LLM 在复杂路况下平衡安全、效率和社会规范。值得关注的点在于：它代表了一种新趋势，即不再把哲学伦理当成事后道德审查，而是直接嵌入实时驾驶决策的推理逻辑中。
+✨ 这篇论文把中国哲学智慧（比如中庸、无为等思想）引入自动驾驶决策，让大语言模型在安全、效率和社会规范之间找到更平衡的取舍。相比纯数值优化或西方伦理框架，这种思路更贴近复杂交通场景中的"人情味"，算是给自动驾驶伦理研究开了个有意思的新方向。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -14,33 +14,29 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 TabPFN 的思路搬到了语言学习上：先让模型只接触合成数据，再让它纯靠上下文（in-context learning）去学一门真实语言，全程不更新权重。值得关注的是，它证明"从零合成预训练"这条路可能不依赖海量真实语料，就能让模型具备学习新语言的能力——对低资源语言和可解释性研究都是一个有意思的信号。
+✨ 研究团队把 TabPFN 那套「先验拟合网络」的思路用到了语言上——先让模型只在合成的非语言数据上训练，结果它竟然能在推理时直接从上下文中学会一门自然语言，不用任何微调。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 
 ## 技巧 3
 
-**How to Make AI Write High-Quality Code in .NET**
+**Building AI-Powered Learning Systems: Why Context, Evaluation, and Human Oversight Matter More Than the Model**
 
-✨ AI 写 .NET 代码速度飞快，但“看起来能用”和“经得起 review”往往是两码事——这是很多团队实际踩过的坑。这篇内容分享的是一套让 AI 智能体写出高质量 .NET 代码的方法，作者把自己多年打磨可读、可维护代码的经验，转化成了对 AI 的指令。如果你正在用 AI 辅助 .NET 开发却总在代码审查环节返工，值得一看。
+✨ 这篇文章的核心观点很简单：做AI教育产品，模型选得好不好其实是最不重要的一环，真正决定成败的是三件事——上下文管理（理解学生当前的知识水平和学习目标）、评估机制（怎么判断AI的回答真的帮到了学习），以及人类监督（老师或专家的介入兜底）。
 
-📎 [阅读原文](https://dev.to/antonmartyniuk/how-to-make-ai-write-high-quality-code-in-net-2d4l)
+为什么值得关注？因为很多团队做AI学习工具时，第一反应是"接个大模型加个聊天框就完事了"，但教育场景有它独特的工程复杂度——一个技术上漂亮的回答，放在学习场景里可能反而有害（比如直接给答案而不是引导思考）。这篇文章提醒开发者：别把教育AI当普通聊天机器人做。
+
+📎 [阅读原文](https://dev.to/naseem-education/building-ai-powered-learning-systems-why-context-evaluation-and-human-oversight-matter-more-than-g62)
 
 ## 技巧 4
 
-**How to Calculate Physical Display Dimensions & Screen Sizes Accurately**
+**CF7 to Custom REST API Returning 415 Unsupported Media Type: A Complete Troubleshooting Guide**
 
-✨ 买显示器或电视时只看对角线尺寸（比如27寸、55寸）很容易踩坑——同样的对角线，16:9和21:9的实际宽高差别巨大，桌面放不下或者挂架装不上都是这么来的。这篇指南会讲清屏幕尺寸的计算逻辑，以及宽高比如何直接影响实际显示面积，帮你在下单前算准物理尺寸。
+✨ CF7 对接自定义 REST API 时最常见的报错就是 **415 Unsupported Media Type**，几乎每次都栽在同一个坑上：请求头里的 `Content-Type` 和实际发出去的数据格式对不上。问题通常出在连接器插件默认按 `application/x-www-form-urlencoded` 发送，而你的 API 只认 `application/json`。
 
-📎 [阅读原文](https://dev.to/screensizecalc/how-to-calculate-physical-display-dimensions-screen-sizes-accurately-57ga)
+值得关注是因为它的排查方向被夸大了——不是权限、不是路由、也不是 CORS，改对 Content-Type 就能通。如果你正在调这类集成，先去看插件的请求头设置，别急着翻防火墙日志。
 
-## 技巧 5
-
-**How to Fix Shopify Liquid Errors: A Practical Troubleshooting Guide**
-
-✨ Shopify 的 Liquid 模板报 `Unknown tag 'endif'`，通常是因为 `{% endif %}` 前面缺少配对的 `{% if %}`，或者 if 标签被写在了另一个逻辑块里导致嵌套错位。这类错误值得关注，因为 Liquid 是 Shopify 主题渲染的核心，一个标签错位就可能让整个页面白屏——排查时按 if/endif、for/endfor、case/endcase 成对检查标签闭合即可快速定位。
-
-📎 [阅读原文](https://dev.to/amaanmirzaa/how-to-fix-shopify-liquid-errors-a-practical-troubleshooting-guide-44o0)
+📎 [阅读原文](https://dev.to/rahul_sharma_15bd129bc69e/cf7-to-custom-rest-api-returning-415-unsupported-media-type-a-complete-troubleshooting-guide-267n)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

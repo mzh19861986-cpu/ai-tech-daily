@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Incredible](https://www.producthunt.com/products/incredible)
+## 1. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，省去记快捷键和点菜单的麻烦。如果你经常双手被占用（比如做饭、修东西时看教程），或者单纯想试试更自然的交互方式，值得装上玩一玩。
-
----
-## 2. [Doco](https://www.producthunt.com/products/doco-4)
-
-**💡 是什么 + 为什么值得试：** Doco 帮你根据当前场景或心情自动匹配 Spotify 歌单，省去手动找歌的麻烦。如果你受够了“听什么”的选择困难，它值得装一个试试。
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器里，让你在查看网页或调试前端时随手就能调用 AI 帮你改代码、查问题，不用再来回切换终端和编辑器。如果你经常边看页面边写代码，它值得试试。
 
 ---
-## 3. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+## 2. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Ghostifier 能自动向各家公司发起数据删除请求，帮你把散落在各家服务里的个人数据要回来。如果你在意隐私又懒得逐家写邮件，这个开源工具值得一试。
-
----
-## 4. [Kishi Notch](https://www.producthunt.com/products/kishi-notch)
-
-**💡 是什么 + 为什么值得试：** Kishi Notch 能把 MacBook 的刘海区域变成实用信息栏，实时显示音乐播放、日历、电池等状态，不用切换窗口就能瞥一眼。如果你常嫌刘海占地方又没用途，这个开源项目能让它真正派上用场。
+**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 加一个 MCP，帮你把散落的 GTM（go-to-market）工具统一起来，省掉逐个对接和维护的麻烦。如果你正在搭销售、营销或增长的技术栈，值得看一眼它能不能替你砍掉那些重复的集成工作。
 
 ---
-## 5. [Chunk](https://www.producthunt.com/products/chunk-2)
+## 3. [Coddy](https://www.producthunt.com/products/coddy)
 
-**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上的任务按时间段排进日程，让你一眼看清今天每个小时该干什么，专治"计划列了一堆却不知道从哪开始"。如果你试过日历和待办清单但总觉得对不上，它值得花十分钟试试。
-
----
-## 6. [EasyCut](https://www.producthunt.com/products/easycut-2)
-
-**💡 是什么 + 为什么值得试：** EasyCut 能帮你快速剪辑用 Claude 生成的动画视频，省去手动逐帧调整的麻烦。如果你常做 AI 视频内容，它能让后期流程明显变轻松，值得一试。
+**💡 是什么 + 为什么值得试：** Coddy 用碎片化的短课帮你快速上手 20 多种编程语言，适合想利用零散时间试水新语言、又不想啃厚教程的人。
 
 ---
-## 7. [Review](https://www.producthunt.com/products/review-2)
+## 4. [ruOS](https://www.producthunt.com/products/ruos)
 
-**💡 是什么 + 为什么值得试：** Review 让你在本机用自己配置的 AI 做代码审查，代码不用上传到第三方服务；如果你在意隐私或想把审查流程跑在本地，值得试一下。
+**💡 是什么 + 为什么值得试：** ruOS 把"云桌面"和"AI agent"结合起来，让你在浏览器里开一台机器，直接派 agent 帮你跑任务，省去自己搭环境、连工具链的麻烦。如果你想找个能上手就用的 agent 执行环境、又不想被单一厂商绑死，这个开源项目值得看一眼。
 
 ---
-## 8. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+## 5. [Scumble](https://www.producthunt.com/products/scumble)
 
-**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 能力直接塞进笔记应用，不用联网就能做摘要、问答和整理，适合那些既想要智能辅助、又不想把笔记内容上传到云端的用户。如果你的笔记里有敏感信息或经常离线工作，它算是个值得试的本地化方案。
+**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 局部重绘（inpainting）编辑器，让你能直接在画布上圈选区域、用 AI 填补或修改图像内容，无需依赖付费的闭源工具。如果你需要反复做抠图替换、去水印或修图这类活儿，又想把流程和数据握在自己手里，它值得一试。
+
+---
+## 6. [Notch Radio](https://www.producthunt.com/products/notch-radio)
+
+**💡 是什么 + 为什么值得试：** 如果你觉得 MacBook 的刘海白白浪费了一块屏幕，Notch Radio 能把它变成一个常驻的电台播放器，让你不切窗口就能听网络电台。对爱听广播又想保持桌面整洁的人，这个思路值得一试。
+
+---
+## 7. [Appto](https://www.producthunt.com/products/appto)
+
+**💡 是什么 + 为什么值得试：** Appto 是一个 iOS 应用工厂，让你用自己的 AI 订阅批量生成 iOS 应用。如果你想低成本快速试水 App 开发、又不想从零写代码，它值得试试。
+
+---
+## 8. [GeckIt](https://www.producthunt.com/products/geckit)
+
+**💡 是什么 + 为什么值得试：** Claude Code 的对话记录散落在终端里，想找回之前某个任务的上下文只能靠翻历史，GeckIt 用看板把这些对话组织起来，让你按任务状态管理 AI 编程会话，不再丢线索。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
