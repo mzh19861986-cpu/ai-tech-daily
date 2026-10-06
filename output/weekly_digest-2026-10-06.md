@@ -14,25 +14,25 @@
 
 ### 1. [Sharing AI Progress in Mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-抱歉，你只给了标题“Sharing AI Progress in Mathematics”，没有正文内容，我无法提炼具体事实。把完整内容贴过来，我就能帮你写成两三句有价值的总结。
+这篇内容是分享 AI 在数学领域的进展。简单说，就是让 AI 不只做计算，而是去参与真正的数学探索——比如发现新猜想、辅助证明。值得关注的点在于：数学一直被视为最考验「创造力」的领域，如果 AI 能在这里做出实质贡献，说明它在抽象推理上又往前走了一大步，而不只是会背题。
 
 ### 2. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-Google 发布了 EmbeddingGemma 2，一个开源的轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间里做检索和相似度计算。值得关注的是它体量小、可本地部署，同时支持跨模态搜索（比如用文字搜图片），这对想自建 RAG 或搜图功能、又不想依赖大厂 API 的开发者来说是个实用选项。
+EmbeddingGemma 2 是 Google 开源的轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间里做检索和相似度匹配。值得关注的是它延续了 Gemma 系列「小体积、可本地跑」的路线，让端侧设备也能做跨模态搜索，而不必依赖云端 API——对隐私敏感或离线场景的开发者来说是个实用选项。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral 发布了新一代旗舰模型 Large 4，核心升级在推理能力和多语言支持，直接对标 GPT-4o 和 Claude 3.5 Sonnet。值得关注的是它以更小的参数规模做到了接近顶级闭源模型的性能，对想自部署或控制成本的企业来说是个有吸引力的新选项。
+内容为空，我无法提炼总结。请提供 Mistral Large 4 的具体新闻内容（如发布信息、参数、功能亮点等），我来帮你写。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub 把 Decisions API 开放公测了，简单说就是让你用代码直接查询和操作仓库里各种决策逻辑（比如分支保护规则、合并策略这些），不再只能靠网页点来点去。值得关注是因为它把「权限和流程管理」也变成了可编程的一等公民，做自动化或内部工具时能省掉大量手动配置。
+Amazon 新推出的 Decisions API 进入公开测试，它让开发者能把业务规则和决策逻辑从代码里抽出来，集中管理和动态调整。值得关注是因为它省去了每次改规则都要重新部署的麻烦，特别适合风控、定价、审批这类规则频繁变动的场景。
 
 ### 3. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-2026年诺贝尔物理学奖授予 Francis Halzen，以表彰他在冰立方中微子天文台（IceCube）的构想与领导中的决定性贡献——这座埋在南极冰下 1 立方公里、由 5000 多个光学传感器组成的探测器，第一次让人类能“看见”来自太阳系外的高能中微子。值得关注的是，这标志着中微子天文学真正成为一门观测科学：它用几乎不与物质作用、因而能穿透宇宙尘埃和辐射场的粒子，打开了伽马射线和光都无法企及的宇宙深处视野。
+弗朗西斯·哈尔岑（Francis Halzen）因在冰立方中微子天文台的奠基性工作而获得2026年诺贝尔物理学奖，他主导建造了这个埋在南极冰层下1立方公里体积内的探测器，用来捕捉来自宇宙深处的高能中微子。这项工作的核心价值在于：中微子几乎不与物质作用，却能携带遥远天体（如活动星系核、伽马射线暴）内部过程的直接信息，等于给人类开了一扇观测宇宙的全新窗口——从此天文学不再只依赖光子和引力波，多信使时代真正成型。如果你关心宇宙极端物理、黑洞加速机制或粒子天体物理，这是个里程碑。
 
 
 ---

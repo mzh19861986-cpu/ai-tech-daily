@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [How to Make Passive Income as a UI/UX Designer: 10 Practical Ways](https://dev.to/terya_studio/how-to-make-passive-income-as-a-uiux-designer-10-practical-ways-1f74)
+## 1. [Running a 180B-Parameter MoE Model on a Gaming Laptop: VIDRAFT's POCKET-Darwin-180B-GGUF](https://dev.to/ai_openfree_b23025ef075cf/running-a-180b-parameter-moe-model-on-a-gaming-laptop-vidrafts-pocket-darwin-180b-gguf-241)
 
-**✨ 精华总结：** UI/UX设计师除了接客户项目，还可以把自己做过的设计资产变成可重复售卖的数字产品——比如模板、组件库、Figma插件、在线课程等，实现"做一次、卖多次"的收入模式。这类"被动收入"的关键在于前期投入一次后，后续只需维护和推广，边际成本极低。对设计师来说，这比无止境地接新项目更可持续。
+**✨ 精华总结：** VIDRAFT 把自家 180B 参数的大模型压缩成 4-bit GGUF 格式，靠 MoE 稀疏激活（每次只调用约 3B 参数）加 llama.cpp 的 SSD 流式加载，让它在 8GB 显存 + 32GB 内存的游戏本上也能跑起来。值得关注的是，这基本打破了「大模型必须上服务器」的默认前提——虽然速度肯定快不了，但探索了消费级硬件跑超大规模模型的可行路径。
 
-## 2. [Your quote never got a reply. That's a queue problem, not a sales problem.](https://dev.to/maicon_tsuda_3018a92b80c5/your-quote-never-got-a-reply-thats-a-queue-problem-not-a-sales-problem-3kfi)
+## 2. [Using SCP on a Custom Port (and Avoiding the -p vs -P Mix-Up)](https://dev.to/__3381495fd2b/using-scp-on-a-custom-port-and-avoiding-the-p-vs-p-mix-up-58hn)
 
-**✨ 精华总结：** 大多数服务型生意的报价不是死在价格上，而是死在「没人负责第二次跟进」。报价发出去、客户说「我再想想」之后，它就静静躺在已发送文件夹里，等到有人想起来时，客户早就在别家下单了——未必是对方更好，只是对方没让这件事掉进队列缝隙里。
+**✨ 精华总结：** 用 scp 传文件时，如果服务器 SSH 跑在非标准端口（比如 2222），你得用**大写 -P** 指定端口——注意不是小写 -p，后者在 scp 里是"保留文件时间戳"，而且敲错了它不会报错，只会悄悄连默认的 22 端口然后失败。这是个老手也容易踩的坑，因为 ssh 命令自己用的是小写 -p，凭肌肉记忆切到 scp 就翻车。
 
-## 3. [Tipping in the Agent Economy: Does the Human Get the Tip?](https://dev.to/agenthandsai/tipping-in-the-agent-economy-does-the-human-get-the-tip-399m)
+## 3. [Contract-First Engineering in Distributed Core Banking](https://dev.to/mountek/contract-first-engineering-in-distributed-core-banking-jk)
 
-**✨ 精华总结：** 当 AI Agent 开始雇人干活、给人类付款时，一个新问题出现了：干得漂亮要不要给小费？这背后是整套人类社交契约——小费本是人与人之间的默契，现在付款方变成了机器，它该不该学会这套潜规则？
+**✨ 精华总结：** 核心银行系统做微服务拆分时，最大的坑不是技术选型，而是**语义漂移**——中心域模型里定义成 ISO4217 货币字符串的字段，到了某个产品团队手里可能就变成了另一种实现，几十个团队各自为政，规范和落地悄悄对不上。
 
-## 4. [Querying CSV and Parquet exports inside a SQL IDE with DuckDB](https://dev.to/cccadet/querying-csv-and-parquet-exports-inside-a-sql-ide-with-duckdb-4n7b)
+**Contract-First（契约先行）** 就是解法：先把接口契约定死、当作唯一事实来源，再让各团队并行开发。值得关注是因为它把"架构规范"和"实际代码"之间的缝隙从**事后救火**变成了**事前约束**——在分布式核心银行这种动辄几十个团队协作的场景里，这类治理失效往往比性能瓶颈更致命。
 
-**✨ 精华总结：** 有人给你发来一份 CSV 导出文件让你查问题，你只想快速查重、分组或跟另一份文件对比，但又不想为此专门搭数据库或写脚本。这个开源 SQL IDE 内置了 DuckDB，可以直接导入 CSV 或 Parquet 用 SQL 查询，把一次性分析的门槛降到了几乎为零。值得关注的点在于：DuckDB 的列式引擎让本地文件查询快得不像话，而嵌进 IDE 意味着从"拿到文件"到"跑出结果"之间不再有环境配置这道墙。
+## 4. [How to Build a Podcast Intro Generator](https://dev.to/voice_developer/how-to-build-a-podcast-intro-generator-4km1)
 
-## 5. [Taxes in the Agent Economy: The 1099-K Future Nobody's Ready For](https://dev.to/agenthandsai/taxes-in-the-agent-economy-the-1099-k-future-nobodys-ready-for-l7a)
+**✨ 精华总结：** 这个教程教你搭一个播客片头生成器：输入节目名、主持人和一句简介，它会自动拼出一段开场白，再通过 ElevenLabs 的语音合成直接输出可用的成品音频。亮点在于把一个原本需要手动写稿、录音、剪辑的环节压缩成一条自动化流水线，特别适合想快速产出、又不想每次都手动折腾的播客制作者。
 
-**✨ 精华总结：** AI代理（agent）开始直接雇佣人类干活了——发任务、验收、打款全自动完成，而IRS的规则意味着这些收入很可能触发1099-K报税表。值得关注是因为整个"代理经济"的支付基础设施正在成形，但税务合规层完全没跟上：自由职业者可能收到自己都没意识到的平台的税表，而AI agent本身作为经济主体的税务身份还是一团模糊。
+## 5. [Create AI Voice Responses for Slack Bots](https://dev.to/voice_developer/create-ai-voice-responses-for-slack-bots-4el1)
+
+**✨ 精华总结：** 给 Slack 机器人加上语音回复，让原本枯燥的文字交互变得更有意思，也更方便无障碍使用。这篇文章手把手教你用 ElevenLabs 的 TTS 和语音克隆技术，搭建一个能"开口说话"的 Slack bot，适合做状态播报、告警提醒这类场景。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

@@ -4,35 +4,36 @@
 
 ## Q1: Sharing AI Progress in Mathematics？
 
-**A:** OpenAI 分享了 AI 在数学领域的进展，重点展示模型在形式化证明和数学推理上的能力突破。这值得关注，因为数学是检验 AI 深度推理的硬标准——能做好数学，意味着 AI 在逻辑严谨性上迈了一大步，而不只是会聊天。
+**A:** 标题：分享数学领域的AI进展  
+内容：暂无具体内容。  
+
+如果你手头有正文或摘要，我可以立刻提炼成 2-3 句「是什么 + 为什么值得关注」的简洁总结。
 
 📎 更多阅读：[Sharing AI Progress in Mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## Q2: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
 
-**A:** 谷歌开源了 EmbeddingGemma 2，一个约 3 亿参数的多模态嵌入模型，能把文本和图像映射到同一向量空间，直接在自己的设备上跑。值得关注的是它把多模态检索的门槛压到了消费级硬件，开发者做本地搜索、RAG 或跨模态匹配时不必再依赖云端 API。
+**A:** Google 发布了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本、图片等内容映射到同一向量空间，且完全开源可商用。
+
+值得关注的是它体积小、能本地跑，同时支持跨模态检索（比如用文字搜图），让中小团队不用依赖大厂 API 也能搭建自己的多模态搜索和推荐系统，这在此前基本是大模型专属能力。
 
 📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## Q3: OpenTPU – An open-source AI accelerator, developed by AI？
 
-**A:** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自动生成设计代码，目标是在 FPGA 上实现可复现、可修改的 TPU 类硬件。它值得关注的地方在于：把 AI 芯片设计流程本身交给 AI 来做，同时全部开源，让个人开发者也能研究和定制专用推理加速器，而不只是停留在论文层面。
+**A:** OpenTPU 是一个完全开源、由 AI 自主开发的 AI 加速器项目。它的价值在于打破了 TPU 这类专用芯片被大厂闭源垄断的局面——你可以直接看到甚至参与一颗 AI 芯片从 RTL 到工具链的全部设计细节。对硬件爱好者和想研究 AI 芯片底层的人来说，这是目前少有的「全栈透明」参考实现。
 
 📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
 ## Q4: Claude Code’s suggested message feature: I think the real customer is the model？
 
-**A:** Claude Code 新增了一个「建议消息」功能，会在你输入时主动提示下一句可以说什么——表面上是帮你写 prompt，实际上是在用你的反馈数据训练模型更懂怎么跟人协作。值得关注的点在于：这标志着 AI 编程工具从「被动响应」转向「主动引导」，产品设计的真正目标用户可能不是人，而是模型本身。
+**A:** Claude Code 现在会在你输入时主动建议下一条消息，表面上是帮你省打字，实际上是在给模型喂更规范的指令上下文——你的随手输入被实时引导成模型更容易处理的结构化表达。值得关注的是这个视角转换：功能名义上服务人类，但真正的受益者可能是模型本身，它借此拿到更干净的输入、更少的歧义，从而输出更稳的结果。如果这类"面向模型的UX"成为常态，未来评判一个 AI 工具好不好用，标准可能不再只是人类顺不顺手，而是模型吃得好不好。
 
 📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
 
 ## Q5: Email Self Hosters - what are you using?？
 
-**A:** 一、总结
-有人在技术社区发帖讨论自建邮件服务器的方案，楼主目前用的是 maddy 这个开源邮件服务，管理多个域名下的邮箱和 catch-all 收信，但遇到了 iOS 原生邮件客户端连接极慢的恼人问题。
-
-二、为什么值得关注
-自建邮件服务器一直是"技术自由"和"运维噩梦"之间的拉扯。maddy 这类轻量方案降低了门槛，但邮件协议本身的复杂性意味着客户端兼容性、连接速度这类坑很难完全绕开。如果你也在考虑摆脱 Gmail/Outlook 自建邮箱，这条讨论里的实战经验——尤其是踩过的坑——会比官方文档更有参考价值。
+**A:** 看到有人在讨论自建邮件服务器的方案，这哥们儿现在用的是 maddy，管着一堆域名的邮箱和 catch-all 转发，整体能用但小毛病不断——最烦的是 iOS 原生邮件客户端连上去要等半天。说白了自建邮件服务就是这样，搭起来不难，难的是跟各种客户端和反垃圾机制的兼容性磨人，maddy 算是轻量好上手的选项，但如果你对稳定性和客户端体验要求高，可能得考虑 Postfix+Dovecot 这类更成熟的组合，或者干脆用 Mailcow、Mailu 这种全家桶省心。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 

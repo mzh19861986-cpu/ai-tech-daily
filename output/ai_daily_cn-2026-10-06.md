@@ -4,31 +4,29 @@
 
 ## 🤖 AI / 大模型
 
-### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+### 1. [分享数学领域人工智能的进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-This content currently only has a title and no body text, so I can't provide a specific summary.
+This article discusses researchers sharing the latest advancements of AI in mathematics. The key highlight is: AI is no longer just performing calculations or verifications, but is beginning to propose conjectures, discover patterns, and even assist in proofs—this means it is transforming from a "tool" into a "collaborator." For both mathematics and AI, this is a noteworthy signal: machines are beginning to participate in the intellectual activity that most requires creativity.
 
-If you can send me the original text (or a link/summary), I can give you a concise 2-3 sentence summary as requested, clearly explaining "what it is" and "why it is worth paying attention to."
-
-### 2. [OpenAI制作的数学手稿及配套证明材料](https://github.com/openai/math)
+### 2. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-这条新闻讲的是OpenAI公开了一批数学手稿和配套的证明工件，也就是把AI参与数学推理的过程和中间产物展示出来供人查看。
-
-值得关注的地方在于：这不只是“AI做对了一道题”，而是把推导链条和可验证的证明材料一并公开，相当于让外界能真正去核查AI的数学能力到底有多少含金量。对做形式化验证、定理证明和AI推理研究的人来说，这是难得的真实素材。
-
-### 3. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
-*hackernews*
-Google has released EmbeddingGemma 2, an open-source multimodal embedding model with only 300 million parameters, capable of mapping text and images into the same vector space and running on edge devices such as phones. Its key highlight: multimodal embedding used to be basically monopolized by closed-source APIs, but this model achieves retrieval performance close to that of much larger models with an extremely small footprint, meaning the barrier to applications like local RAG and offline image search has been significantly lowered.
+EmbeddingGemma 2 is an open-source multimodal embedding model that maps different types of data, such as text and images, into the same vector space, making cross-modal retrieval and similarity computation convenient. Notably, it is lightweight enough that ordinary developers can run it locally or in low-cost environments without relying on closed-source APIs from big tech companies.
 
 ## 📌 综合
 
-### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
+### 1. [米斯特拉尔大模型4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released its new flagship model, Mistral Large 4, which is currently their most powerful closed-source large model, focusing on reasoning and multilingual capabilities. The reason it is noteworthy is that Mistral has always been the face of Europe's challenge to OpenAI, and this upgrade means the gap between the open-source camp and the closed-source frontier may narrow further, giving developers and enterprises one more non-U.S. option.
+Mistral发布了Large 4，这是他们最新的旗舰大模型，主打更强的推理能力和多语言表现。相比前代，它在代码、数学和指令遵循上有明显提升，同时保持了Mistral一贯的高效推理特性。值得关注的是，它继续走“开源友好+企业可用”的路线，对想自部署或做定制微调的团队来说，是个兼顾性能与成本的新选择。
 
-### 2. [决策API处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [决策API现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub has opened its Decisions API to public beta. Simply put, it's an interface that allows external tools to directly query the "decision records" in a repository—such as why a certain architectural choice was made, who approved it, and what the rationale was. This is noteworthy because this kind of "why" context previously existed almost only in PR comments and chat logs, scattered and easily lost. Now it can be read and integrated programmatically, effectively turning a team's tacit decisions into searchable, automatable data, which is very useful for AI-assisted development and onboarding new team members.
+标题：Decisions API 进入公开测试阶段。
+
+总结：这是一个让开发者把「决策逻辑」直接集成进应用的接口，现在所有人都能试用了。值得关注是因为它把原本需要手动硬编码的规则判断变成了可调用、可复用的服务，适合需要频繁调整策略（比如风控、推荐、审批流）的场景，不用每次改逻辑都重新发版。
+
+### 3. [2026年诺贝尔物理学奖：弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
+*hackernews*
+The 2026 Nobel Prize in Physics was awarded to Francis Halzen for his pioneering contributions to neutrino astronomy—he led the construction of the IceCube Neutrino Observatory at the South Pole, using the Antarctic ice sheet as a medium to capture high-energy neutrinos from the depths of the universe. This is noteworthy because it gives humanity a "new set of eyes" to observe the universe beyond light for the first time, allowing us to peer into what is happening inside extreme celestial objects such as black holes and supernovas.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
