@@ -2,27 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Poverty Inspired Me to Fix a 'Wine Can't Do This' Timeout](https://dev.to/bluetheenigma/poverty-inspired-me-to-fix-a-wine-cant-do-this-timeout-2p45)
+## 1. [154 of 529 top homepages have no canonical tag. 15 point to a URL that redirects straight back.](https://dev.to/mahirhir/154-of-529-top-homepages-have-no-canonical-tag-15-point-to-a-url-that-redirects-straight-back-3p28)
 
-**✨ 精华总结：** 一位尼日利亚开发者想跑量化交易机器人，但当地供电不稳，于是用非常规手段解决了"Wine 跑不了这个"的超时问题。核心看点在于：这是一个把基础设施短板（电力）逼出来的工程创造力案例，对同样面对不可靠环境、却需要 7×24 小时跑服务的开发者有借鉴意义——真正的约束往往不是代码，而是运行环境。
+**✨ 精华总结：** 有人把 Tranco 前 1000 网站的主页抓了一遍，只看两件事：canonical 标签怎么写的、hreflang 备选指向哪里。真正能返回页面的 529 个里，154 个压根没写 canonical；写了的那 375 个中，317 个指向自己、58 个指向别处——而追查这 58 个目标时，20 个会跳转，其中 15 个又跳回原页面。
 
-## 2. [React Native OTA Is a Release Pipeline, Not a Download Feature](https://dev.to/gfean/react-native-ota-is-a-release-pipeline-not-a-download-feature-3bo8)
+值得关注的是最后这组数字：15 个站点的 canonical 明确告诉搜索引擎「正版在这里」，结果这个「正版」自己一个重定向甩回原点，等于制造了一个爬虫死循环。对做 SEO 的人来说，这是典型的自伤配置——明明想收敛权重，反而让抓取和索引判断陷入混乱。
 
-**✨ 精华总结：** React Native 的 OTA 更新常被简单理解为「下载新 JS bundle 并运行」，但这只是传输层，真正的难点在于它本质上是一套发布系统：需要处理与已安装原生二进制的兼容性、不可变制品管理、设备分级发布、下载校验、激活控制、采纳率观测，以及更新失败后的回滚恢复。
+## 2. [trilha: identifying birds by ear on the trail, with no signal](https://dev.to/wellington_filipe_fccda4c/trilha-identifying-birds-by-ear-on-the-trail-with-no-signal-30k7)
 
-值得关注的是，这些环节彼此独立又必须协同，任何一环缺失都可能让「热更新」在生产环境中变成事故源——把它当成发布管线来设计，而不是一个下载功能。
+**✨ 精华总结：** 有人做了个叫 trilha 的离线鸟类识别工具，专治一个很具体的痛点：在没信号的野外听到鸟叫，想识别却连不上网。它让你在徒步途中直接靠耳朵识别鸟类，不需要等到回家翻录音。值得关注是因为它反着来——大多数识别 App 都假设你有网络，而真正值得观鸟的地方恰恰没信号，这个缺口一直被忽略了。
 
-## 3. [Native Quantization: Let OpenSearch Service Compress Your Vectors](https://dev.to/jon_handler_9bb3e6b4a2fd0/native-quantization-let-opensearch-service-compress-your-vectors-50e7)
+## 3. [Cursor MCP setup for agent skills](https://dev.to/skillgild/cursor-mcp-setup-for-agent-skills-4kpk)
 
-**✨ 精华总结：** OpenSearch Service 现在支持原生向量量化：你照常发送 FP32 向量，引擎在底层自动压缩，压缩比 2x 到 32x，索引管道完全不用改。相比之前"自己转成低精度再写入"的做法，这省掉了额外维护一套转换流程的成本，向量存储和内存开支也能直接降下来。
+**✨ 精华总结：** SkillGild 现在能接入 Cursor 了，装好 CLI 登录后，把它的可执行文件绝对路径写进 Cursor 的 mcp.json 里注册成 stdio server 就行。值得关注的是它支持项目级和个人级两种配置，你还能在 skills 目录里加个包装让 agent 自动判断什么时候该调用托管工作流——相当于给 Cursor 装了个能按需触发的外部技能库。
 
-## 4. [🌲 TrailBird AI — Zero-Signal Open-Source Bird Identifier for Wilderness Trails](https://dev.to/satanic47/trailbird-ai-zero-signal-open-source-bird-identifier-for-wilderness-trails-3if4)
+## 4. [Create research plots with Claude Code and Academic Plotting](https://dev.to/skillgild/create-research-plots-with-claude-code-and-academic-plotting-34h6)
 
-**✨ 精华总结：** TrailBird AI 是一个完全离线的开源鸟类鸣叫识别系统，专为没有手机信号的深山步道设计——所有推理都在本地完成，不需要联网调用云端 API。它解决了一个很实际的痛点：传统 AI 识鸟应用依赖网络，一到峡谷、密林就彻底失效。对户外爱好者和野生动物观察者来说，这意味着在真正的荒野里也能实时识别鸟叫，而且开源意味着可以自己改、自己部署。
+**✨ 精华总结：** 这个教程演示了如何用 Claude Code 配合 matplotlib，把一张结果表格自动转成规范、经过检查的科研图表——你提供数据和一份明确的检查清单，它来生成图，并逐项核对样式、标签、数值范围等细节。值得关注的是它把「画图」这件事从手工调参变成了可复现、可验证的流程，特别适合论文投稿前反复改图的场景；不过要注意，它画的是你给它的结果，不会替你做实验，也不会替你写论文。
 
-## 5. [How AI Search Engines Choose Sources: A 2026 Guide for Bloggers](https://dev.to/rashid_1371911653467f5ff2/how-ai-search-engines-choose-sources-a-2026-guide-for-bloggers-1o1l)
+## 5. [A rival's price was nested two dicts deep — and the obvious min() read 20 competitors as free](https://dev.to/fetchsmith/a-rivals-price-was-nested-two-dicts-deep-and-the-obvious-min-read-20-competitors-as-free-1jnl)
 
-**✨ 精华总结：** AI搜索正在改变内容创作者的流量逻辑——读者不再需要点击链接就能获得答案，这意味着博客作者面临的不只是"如何排名"，而是"如何被AI引用为信源"。这篇文章针对2026年的新现实，试图拆解AI搜索引擎挑选引用来源的机制。对任何依赖搜索流量的人来说，值得一读，因为游戏规则已经从"抢排名"变成了"抢被引用的资格"。
+**✨ 精华总结：** 这段代码在收集竞品价格时，把 `eventTieredPricingUsd` 嵌套字典里的所有值直接摊平进候选数组——但那个字典里可能还嵌着别的键值对，结果 `Math.min()` 把20个竞品的"0"当成了真实价格。问题不在 min() 本身，而在于数据结构的形状没被校验就直接展平，一个缺失的层级就能让整个比价系统误判对手在免费送。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
