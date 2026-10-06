@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Apache NiFi at 6,093 observed hosts: a data flow controller and the credentials it holds](https://dev.to/onaeiuspkz/apache-nifi-at-6093-observed-hosts-a-data-flow-controller-and-the-credentials-it-holds-1o39)
+## 1. [Frontend](https://dev.to/shivani_gupta_fde46c38eb3/frontend-155a)
 
-**✨ 精华总结：** ZoomEye 在 2026 年 10 月扫到 6,093 台暴露在公网的 Apache NiFi 实例。NiFi 是管数据流动的控制器，往往握着数据库、Kafka、云存储等一堆下游系统的凭证，所以这个数字不大，但单台被攻破的代价远高于普通观测类工具。
+**✨ 精华总结：** 这篇文章讲的是前端开发的本质——它是构建用户直接看到和操作的界面层，涵盖网页布局到交互体验的方方面面。值得关注的是，它把前端定位为"艺术与科学的结合"，而不只是写代码，这提醒我们：好的前端既要工程严谨性，也要审美判断力。对于想入行或正在做前端的人来说，这是一篇帮你建立整体认知框架的科普内容。
 
-## 2. [Retrying Failed Jobs in Small Apps — Node.js Queues, DLQs, and 3 Practical Trade-offs](https://dev.to/leopoldholm3736/retrying-failed-jobs-in-small-apps-nodejs-queues-dlqs-and-3-practical-trade-offs-4lio)
+## 2. [Como virei blogueira sem querer (e por que você deveria fazer o mesmo)](https://dev.to/taina_costa_f/como-virei-blogueira-sem-querer-e-por-que-voce-deveria-fazer-o-mesmo-3gko)
 
-**✨ 精华总结：** 小应用跑后台任务时，失败任务该扔进队列还是存数据库轮询？这篇文章的结论是：如果任务必须扛住失败（比如物业管理的清理任务），用带死信队列（DLQ）和重投递的队列更靠谱，因为重试、确认、毒消息隔离这些机制在队列里有清晰的形态；而数据库轮询只适合那种单进程、单表、量极小的玩具级应用。值得关注的点是它把两种方案拆成三个实际权衡来讲，不是无脑推荐队列，而是给了「什么时候可以不折腾」的判断线——小项目不必为了架构正确感提前上重型基础设施。
+**✨ 精华总结：** 这篇葡萄牙语文章讲的是一个开发者无意中成为技术博主的故事：她最初只是给自己记笔记——解决过的bug、总忘记的命令、反复用到的React模式，三个月后这些笔记变成了文章，六个月后招聘方开始因为她的文章而非简历找到她。值得关注的点在于，它揭示了一个低门槛的复利逻辑：写作本身就是最好的技术记忆库，而且这些公开笔记会替你建立「被动人脉」，让机会主动找上门，而不是你去投简历。
 
-## 3. [DGX Spark at 64GB: What $4,999 of Local Compute Buys a Small Team](https://dev.to/neticslabs/dgx-spark-at-64gb-what-4999-of-local-compute-buys-a-small-team-1cg5)
+## 3. [Why multi-agent systems struggle with memory—and how I tried to fix it with Agent-Brain-Hub](https://dev.to/lng_l_95dcf5de35ba45ef/why-multi-agent-systems-struggle-with-memory-and-how-i-tried-to-fix-it-with-agent-brain-hub-20cd)
 
-**✨ 精华总结：** NVIDIA 把 DGX Spark 的 64GB 版本交给 Acer、华硕、戴尔、技嘉、惠普和微星六家厂商，10 月 23 日起以 4999 美元开卖，芯片、DGX OS 和 AI 软件栈与 128GB 版完全一致。
+**✨ 精华总结：** 多智能体系统常见的瓶颈不是模型能力，而是记忆管理——当多个 Agent 协作时，共享状态同步、动态上下文检索和决策编排很容易乱成一锅粥，大多数框架要么封装得太重、要么假设太理想化。作者为此做了个叫 Agent-Brain-Hub 的尝试，专门解决上下文碎片化问题。如果你正在搭多 Agent 工作流，这块的坑基本绕不开，值得看看他的思路。
 
-它的意义在于：单台能本地跑 1000 亿参数以内的模型，两台用 QSFP 线互联后还能把内存池化成 128GB——对不想把数据送云端、又买不起大集群的小团队来说，这大概是目前最省事的一档"桌面级私有算力"。
+## 4. [Yield Strategy Optimization Report: ether.fi Stake](https://dev.to/dannydoes_2abdf9c/yield-strategy-optimization-report-etherfi-stake-47ji)
 
-## 4. [How TokenCap Folds Repetitive Imports Without Breaking Code Syntax](https://dev.to/vansharora21/how-tokencap-folds-repetitive-imports-without-breaking-code-syntax-1gpa)
+**✨ 精华总结：** ether.fi Stake 是一个锁定超 51 亿美元 TVL 的多链质押服务平台，横跨以太坊主网和多个 L2。值得关注的点在于：这种规模的多链聚合质押架构，既是收益优化的机会，也意味着跨链合约风险的敞口在同步放大，安全审计的颗粒度必须比单链协议更细。
 
-**✨ 精华总结：** TokenCap 推出了一种格式感知的上下文折叠方案，专门解决把整个代码库喂给 AI 编程助手时 token 预算被大量样板代码浪费的问题。它的折叠逻辑（src/pack/fold.js）会根据语言语法识别外部的 import 列表、许可证头和重复的 utility 声明，而不是简单粗暴地删空白——后者会让 Python、YAML 和格式化字符串直接报错。对于需要控制上下文成本的 AI 编程工具来说，这是一个既安全又实用的优化思路。
+## 5. [What Claude Code is, what it can do, and what it does not guarantee](https://dev.to/aicoding-guide/what-claude-code-is-what-it-can-do-and-what-it-does-not-guarantee-2gda)
 
-## 5. [Speech-to-Text API Timeouts: How to Bound Large Audio Uploads in Node.js](https://dev.to/valerianblack3895/speech-to-text-api-timeouts-how-to-bound-large-audio-uploads-in-nodejs-3hi4)
-
-**✨ 精华总结：** 处理长音频转写时，别把它当成一个简单的 API 调用，而要拆成上传、传输、推理三个阶段分别设限：连接前先拒绝超大文件，每次网络请求加短超时，只对临时性错误重试，失败时给用户明确的降级方案。这个思路的价值在于，它能防止一次失败的音频上传悄悄变成一个卡死的后台任务，尤其对发票提取这类业务流程，静默失败比报错更危险。
+**✨ 精华总结：** Claude Code 是 Anthropic 推出的终端里的 AI 编程智能体——不是补全插件，而是你丢一个任务给它，它自己读代码库、改多个文件、跑命令。跟 Copilot 那种「猜你下一行」完全不同，它更像一个能独立干活的初级工程师。但别把它当自动驾驶：官方明确说了它不保证正确性，产出仍需你审查，适合用来加速重复性改动和探索陌生代码库。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

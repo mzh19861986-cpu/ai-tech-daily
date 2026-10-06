@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 1. [Scumble](https://www.producthunt.com/products/scumble)
 
-**💡 是什么 + 为什么值得试：** OpenBot 是一个免费、本地运行、支持多人协作的开源 Grok Bot 替代方案，适合想自己掌控数据和成本的团队。如果你需要一个不依赖第三方 API、能自己部署的聊天机器人，可以直接拿它试。
-
----
-## 2. [Brnch](https://www.producthunt.com/products/brnch)
-
-**💡 是什么 + 为什么值得试：** Brnch 是一个面向 AI Agent 时代的现代代码托管平台，让 Agent 生成的代码能像人类开发者一样被清晰管理、审查和协作，而不是把一堆自动化改动直接丢进主分支。如果你正在用 Agent 写代码却苦于追踪和审核这些改动，值得试试它。
+**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 局部重绘（inpainting）编辑器，让你在浏览器里直接涂掉不想要的物体或瑕疵，再用 AI 补出自然的背景。如果你经常需要修图去水印、去路人，又不想装 Photoshop 或付费工具，它值得一试。
 
 ---
-## 3. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 2. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器里，让你在浏览网页时随手就能让 AI 帮你写代码、改脚本或调试页面，不用再切窗口来回折腾。如果你经常一边查文档一边写代码，这个工具能省掉大量切换成本，值得一试。
-
----
-## 4. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑——说句话就能完成打开应用、执行操作等任务，省去手动点击的麻烦。如果你经常手忙脚乱或想试试更自然的交互方式，它提供了一个开源、可折腾的语音控制方案。
+**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 统一对接销售和营销工具，帮你把散落的 GTM 数据源整合成一套可编程的自动化流程，不用再为每个工具单独写适配代码。如果你正在搭销售或增长的技术栈、又嫌集成太碎，它值得花半小时试试。
 
 ---
-## 5. [Appto](https://www.producthunt.com/products/appto)
+## 3. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** Appto 让你用自己已有的 AI 订阅（比如 ChatGPT Plus）批量生成 iOS 应用代码，省去额外 API 费用和配置。如果你需要快速产出多个 App 原型或练手项目，它比从头写省事很多。
-
----
-## 6. [Haptiker](https://www.producthunt.com/products/haptiker)
-
-**💡 是什么 + 为什么值得试：** Haptiker 让你在触控板边缘滑动手指就能调节音量、屏幕亮度和键盘背光，省去频繁去按功能键或点菜单栏的麻烦。如果你用的是 MacBook 且习惯盲操作，这个小工具能明显减少调节时的注意力打断。
+**💡 是什么 + 为什么值得试：** OpenBot 是一个免费的本地开源多人机器人方案，可替代 Grok Bot，让你在自己的环境里跑 bot 而不用依赖云端服务。如果你在意数据隐私、想省订阅费，或需要多人协作场景，值得试试。
 
 ---
-## 7. [ruOS](https://www.producthunt.com/products/ruos)
+## 4. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** ruOS 把云桌面和 AI Agent 结合起来，让 Agent 直接在虚拟桌面里替你操作软件、跑任务，省去自己手动点来点去的麻烦。如果你在找“让 AI 真正动手干活”而不是只聊天的方案，值得试试。
+**💡 是什么 + 为什么值得试：** 想让 AI Agent 操作真实 iPhone、却卡在目标 App 没有 API 的，iphone-use 直接用视觉+点击的方式驱动整台手机，绕开接口限制。如果你的自动化流程总被"这个 App 不开放接口"卡住，它值得一试。
 
 ---
-## 8. [Patchcord](https://www.producthunt.com/products/patchcord-2)
+## 5. [Pheebs](https://www.producthunt.com/products/pheebs)
 
-**💡 是什么 + 为什么值得试：** 开会时 Mac 麦克风声音发闷或忽大忽小，Patchcord 能给系统麦克风加上 EQ 调音，让 Zoom、Meet 等任意会议软件里听起来都像录音棚效果。
+**💡 是什么 + 为什么值得试：** Pheebs 能帮你量化团队和个人实际是怎么用 AI 写代码的——比如哪些环节真正提效、哪些在浪费时间，而不是只靠感觉判断。如果你想知道 AI 工具到底给工程效率带来了多少真实改变，它提供了一个可测量的答案。
+
+---
+## 6. [Extrovert](https://www.producthunt.com/products/extrovert)
+
+**💡 是什么 + 为什么值得试：** Extrovert 让 AI Agent 直接接管 LinkedIn 的私信外联，自动完成批量发消息和跟进，省去你手动点开每个联系人资料的重复劳动。如果你想做规模化的人脉拓展又不想被平台操作累死，可以拿它试试。
+
+---
+## 7. [Chunk](https://www.producthunt.com/products/chunk-2)
+
+**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上零散的时间安排变成可视化时间块，让你一眼看清一天怎么用、哪些事被挤掉了。如果你试过日历却总觉得排不出节奏，它值得拿来试着规划一天。
+
+---
+## 8. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服机器人却总是答错或过时，这个项目能让 AI 客服自动跟随站点内容同步，省去手动喂文档的麻烦。适合已经用 AI 客服但被“知识滞后”困扰的团队试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
