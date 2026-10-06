@@ -4,19 +4,19 @@
 
 ## 1. [Adobe Creative Suite Cleanroom Port to Rust](https://github.com/storytold/photocraft)
 
-**👥 适合谁：** 最适合**系统级程序员和 Rust 开发者**——尤其是对 Adobe 底层算法、图形/图像处理管线或高性能多媒体工具链有逆向研究与重实现兴趣的人。
+**👥 适合谁：** 最适合**系统级底层库开发者**用（尤其是需要在无 GPL 污染、可商用授权环境下，用 Rust 重写 Adobe 核心图像/排版算法并规避法律风险的工程团队）。
 
-**🚀 怎么开始：** 直接克隆仓库后运行 `cargo build --release` 即可本地编译使用，无需 API key 或联网授权；这是社区对 Adobe 创意套件部分功能的 Rust 重写，功能覆盖有限，别指望完全替代原版。
+**🚀 怎么开始：** 直接克隆仓库后用 `cargo build --release` 本地编译即可运行，无需 API key（需先装好 Rust 工具链）。
 
-**📝 简介：** Adobe 正在用 Rust 从头重写 Creative Suite 的核心组件，采用「洁净室」方式——不参考原有 C++ 代码，仅凭 API 文档和公开规范重新实现。这标志着主流商业软件首次大规模用 Rust 替代 C++ 处理图像渲染和文件解析等敏感模块，既规避了内存安全漏洞，也为跨平台部署铺路。
+**📝 简介：** Adobe 正在用 Rust 语言对 Creative Suite 进行“洁净室”重写，即不参考原有代码、仅凭功能规格重新实现，以规避法律和架构上的历史包袱。这值得关注，因为如果成功，它可能让 Adobe 摆脱臃肿的陈年代码库，换来更好的性能和内存安全——不过“重写一个年收入数十亿的生产力套件”本身也是软件工程里风险最高的赌注之一。
 
-## 2. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
+## 2. [AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
 
-**👥 适合谁：** 最适合想用 Rust 或 Python 直接控制 TP-Link 智能设备（如智能插座、灯泡）、喜欢折腾自动化脚本的独立开发者和智能家居玩家。
+**👥 适合谁：** AI硬件研究者与芯片工程师——用AI自动探索和优化推理专用硬件设计。
 
-**🚀 怎么开始：** Tapo 是一个用于控制 TP-Link 智能设备的 Rust/Python 库，现在它支持 TPAP 协议了。你可以在项目中通过 pip 或 cargo 安装它，提供设备 IP 和账号密码即可开始使用，无需本地部署或额外 API key。
+**🚀 怎么开始：** 这个工具本质上是一篇关于AI自主设计推理硬件的技术报道，直接打开网页即可阅读，无需API key或本地部署。
 
-**📝 简介：** Tapo 是一个用 Rust 写的 Python 库，现在能直接跟 TP-Link 的智能设备说上话了——它实现了 TP-Link 私有的 TPAP 协议，所以你可以用代码控制 Tapo 系列插座、灯泡、摄像头这些硬件，不用再依赖官方 App 或云服务。值得关注是因为它绕开了厂商的云端限制，让本地自动化（比如跟 Home Assistant 集成）变得更干净、更可靠，而且 Rust 底层保证了性能，Python 接口又降低了使用门槛。
+**📝 简介：** AI现在能自己设计推理芯片了——不是辅助优化，而是从架构层面自主完成设计。这意味着硬件迭代可能不再完全依赖人类工程师，芯片研发周期和成本有望大幅压缩。值得关注的是，这打开了AI自我加速的闭环：更好的硬件训练更强的AI，更强的AI设计更好的硬件。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*

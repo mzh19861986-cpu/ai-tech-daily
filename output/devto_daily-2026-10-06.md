@@ -2,25 +2,29 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [The MCP Redirect URI Edge Cases Dynamic Client Registration Doesn't Save You From](https://dev.to/quietdesk_studio_83466628/the-mcp-redirect-uri-edge-cases-dynamic-client-registration-doesnt-save-you-from-1gh1)
+## 1. [Multi-Currency Invoice PDF Localisation Explained: Right-to-Left Layout Before Signing](https://dev.to/starspiregavren48/multi-currency-invoice-pdf-localisation-explained-right-to-left-layout-before-signing-44i7)
 
-**✨ 精华总结：** 这篇博文讨论的是实现了 MCP 动态客户端注册（DCR）之后仍然会踩的 redirect URI 和会话管理的坑——也就是说，DCR 解决了"客户端怎么注册"的问题，但解决不了"回调地址在真实场景下怎么匹配、会话怎么保持"的问题。如果你正在给 MCP 客户端做 OAuth 集成，并且觉得搞完 DCR 就万事大吉了，这篇值得一读，因为它覆盖的正是那些"以为已经处理好了"的边界情况。
+**✨ 精华总结：** 多币种发票的PDF本地化，关键不是翻译文案，而是保证阿拉伯语、希伯来语这类从右往左阅读的语言在版面上真正正确——数字、货币符号和字段顺序都要符合当地阅读习惯，而且必须在电子签名之前校验完，签完再发现排版错了就麻烦了。
 
-## 2. [Exporting DynamoDB Data Safely to CSV with Tables](https://dev.to/arya_hegiste_8528edf8cd29/exporting-dynamodb-data-safely-to-csv-with-tables-ddj)
+值得关注的是它给出的实践路径：从结构化数据（金额+币种代码，而不是格式化字符串）生成PDF，用一次异步任务加不可变输入清单来减少接口复杂度，同时把签名后的成品和扫描件的OCR文本一起留存。对做出海业务的团队来说，这是个容易被忽略但踩坑成本很高的环节。
 
-**✨ 精华总结：** 把 DynamoDB 数据导出成 CSV 看似简单，但一旦遇到 `=2+3` 这类公式字符串、Unicode、逗号、引号、换行符，甚至嵌套值和二进制数据，表格软件就会按自己的理解去解析，导致数据被篡改或显示错误。这篇教程用 Serverless Creed 的 Tables 工具演示了如何安全处理这些边界情况——如果你经常需要把 DynamoDB 数据交给运营或分析同事用 Excel 打开，这套方法能帮你避开那些隐蔽的坑。
+## 2. [Google Nano Banana 2.1 Brings GA Image Generation and Editing to Gemini](https://dev.to/alifar/google-nano-banana-21-brings-ga-image-generation-and-editing-to-gemini-2gl1)
 
-## 3. [Flash Loan Attack Vector Analysis: Gate](https://dev.to/dannydoes_2abdf9c/flash-loan-attack-vector-analysis-gate-4hj9)
+**✨ 精华总结：** Google 把 Nano Banana 2.1 正式开放（GA）给 Gemini 做图像生成和编辑了——不再只是预览版，团队可以直接拿它干活。它的卖点是价格和性能平衡、支持图文混合工作流、内容凭证，输出最高 4K。对做营销素材、产品图或批量内容变体的团队来说，意义在于 Google 又多了一个正式可用的图像模型选项，而且走的是性价比路线。
 
-**✨ 精华总结：** 有人对 Gate 协议做了一份闪电贷攻击向量分析——这个协议锁定资产规模约 76.9 亿美元，横跨以太坊主网和多个 L2，属于高价值借贷平台。值得关注的点在于，这类审计针对的是「一笔无抵押贷款瞬间抽干流动性」的攻击路径，TVL 越高的协议越容易被盯上，报告本身也说明 Gate 的跨链架构正在被安全研究者当作重点目标拆解。
+## 3. [TouchGrass API: outdoor missions from local Gemma 3 and the weather](https://dev.to/ghalmeidadev/touchgrass-api-outdoor-missions-from-local-gemma-3-and-the-weather-575d)
 
-## 4. [ButtonPost: Write once. Publish everywhere.](https://dev.to/mililin_f4f9ec3965934d912/buttonpost-write-once-publish-everywhere-2po6)
+**✨ 精华总结：** 一个叫 TouchGrass API 的小后端解决了一个很具体的问题：你只有20分钟空闲，外面该干点什么？输入城市和可用时间，它会查实时天气，交给本地跑的 Gemma 3 模型，返回一条贴合天气和时长的户外活动建议。
 
-**✨ 精华总结：** ButtonPost 是一个一键多平台发布工具，目前支持 X、Dev Community 和小红书，后续计划接入抖音等平台。它的核心价值在于省去逐个 App 手动搬运内容的重复劳动——对需要跨平台运营的创作者来说，这类工具能明显降低日常发布的摩擦成本。
+值得关注的点在于它的架构选择——用本地开源模型（Gemma 3）而非调用云端 API，配合天气数据做实时推理。对想跑本地模型又需要接入外部实时数据的开发者来说，这是一个轻量、可直接参考的实现范式。
 
-## 5. [JavaScript SEO: What Google and AI Crawlers Actually See on Your Site](https://dev.to/member_c9e424a8/javascript-seo-what-google-and-ai-crawlers-actually-see-on-your-site-450k)
+## 4. [Axios in React](https://dev.to/abishek_m_82/axios-in-react-1b4e)
 
-**✨ 精华总结：** Google 会执行 JavaScript 来抓取内容，但通常要等到第二轮才处理；而主流 AI 爬虫（如 GPTBot、ClaudeBot）根本不执行 JS，所以纯靠 JavaScript 渲染出来的文字，对它们来说约等于空白页。解决办法很简单：把文字直接放进 HTML——用服务端渲染（SSR）或预渲染，让内容在页面加载时就存在。
+**✨ 精华总结：** Axios 是一个基于 Promise 的 HTTP 客户端库，用来在 React 应用里跟后端 API 打交道——拉数据、提交表单、增删改查都靠它。相比原生的 fetch，它自动处理 JSON 转换、请求/响应拦截器和错误状态码，省掉不少样板代码，所以成了 React 生态里最常用的请求方案之一。
+
+## 5. [ButtonPost: Write once. Publish everywhere.](https://dev.to/mililin_f4f9ec3965934d912/buttonpost-write-once-publish-everywhere-17d6)
+
+**✨ 精华总结：** ButtonPost 是一个一键多平台分发工具，目前支持 X、Dev Community 和小红书，后续计划接入抖音等更多平台。它的价值很直接：把「同一内容复制粘贴到 N 个 App」这件烦人的事压缩成一次点击，适合同时在多个平台运营内容的创作者。作者自己就是因为受不了手动发帖才做的，动机很真实。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

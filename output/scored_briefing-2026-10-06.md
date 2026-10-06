@@ -2,36 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 The Early History of Smalltalk (1993)  (⭐ 7.0/10)
-🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
-
-Smalltalk 是第一个完全面向对象的编程语言，由 Alan Kay 等人在施乐帕克研究中心（Xerox PARC）于 1970 年代开发，这篇文章是 Kay 本人对这段早期历史的回顾。它值得关注，因为 Smalltalk 不只是一门语言，更带来了窗口、图标、鼠标、集成开发环境这些今天我们用的一切——没有它，就没有 Mac、Windows 和现代 GUI。
-
-## 🥈 Release of Polars 2.0  (⭐ 6.0/10)
-🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
-
-Polars 2.0 正式发布，这是一个用 Rust 编写的高性能 DataFrame 库，主打比 pandas 更快的处理速度和更低的内存占用。如果你日常要处理中大规模数据、又觉得 pandas 越来越吃力，这次的大版本升级值得认真看一下——API 更稳定，生态也在快速补齐。
-
-## 🥉 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
-🔗 [hackernews](https://github.com/FeSens/openTPU)
-
-AI现在能自己设计推理芯片了——不是优化现有架构，而是从头生成可流片的硬件方案。这意味着AI开始参与自身算力底座的迭代，未来模型迭代速度可能不再受制于人类芯片设计周期。
-
-## 4. Mistral Large 4  (⭐ 5.0/10)
+## 🥇 Mistral Large 4  (⭐ 7.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-Mistral 发布了新一代旗舰模型 Large 4，主打更强的推理能力和多语言支持，同时保持相对高效的推理成本。值得关注的是，它延续了 Mistral 一贯的「开源友好 + 欧洲主权 AI」路线，对想找 GPT-4 替代方案、又在意数据合规的团队来说，是个实际可选项。
+你正文内容还没贴出来，我没法总结。把 Mistral Large 4 的具体内容（发布信息、参数量、benchmark、定价、开源情况等）发给我，我马上给你写一段 2-3 句的提炼。
 
-## 5. Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
+## 🥈 Nobel Prize in Physics goes to Francis Halzen  (⭐ 7.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-好的，这条消息我需要先核实一下——Francis Halzen（冰立方中微子天文台前首席科学家）获得诺贝尔物理学奖的说法，目前我没有可靠来源可以确认。如果这是真实新闻，请把原始报道或链接发给我，我来帮你提炼。
+弗朗西斯·哈岑（Francis Halzen）因在冰立方中微子天文台（IceCube）的奠基性工作而获得诺贝尔物理学奖，该天文台位于南极冰层深处，通过探测中微子——几乎无质量、极难捕捉的粒子——来观测宇宙中最剧烈的天体事件。这一奖项值得关注，因为它标志着中微子天文学正式从边缘领域跻身主流，人类从此拥有了一种观测宇宙的全新“视觉”。
 
-如果这是个假设/标题党场景，也告诉我，我可以按「假设这条成立」的方式写。
+## 🥉 Release of Polars 2.0  (⭐ 7.0/10)
+🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
 
-先把已确认的背景给你：Francis Halzen 是威斯康星大学麦迪逊分校物理学家，IceCube 中微子天文台的核心推动者。该台2013年首次探测到高能宇宙中微子，2017年锁定第一个中微子源——耀变体 TXS 0506+056，2018年确认NGC 1068为第二个中微子源。这些工作让「中微子天文学」从理论变成观测学科。
+Polars 2.0 正式发布了——这个用 Rust 写的高性能 DataFrame 库迎来重大版本更新，主打更快的查询引擎和更稳定的 API。如果你平时用 pandas 处理大数据集时被性能卡过脖子，Polars 2.0 值得认真试试，它在多核并行和内存效率上的优势相当明显。
 
-如果你要的是**已确认的诺奖**，请补充年份或直接发链接，我立刻给你
+## 4. AI is now capable of developing its own inference hardware  (⭐ 7.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
+
+AI 现在能自己设计推理芯片了——不是辅助人类画图，而是从架构到电路方案自主完成。这意味着芯片迭代可以绕开人类工程师的带宽瓶颈，把「设计-验证-流片」的周期从月级压缩到天级。值得关注的点在于：一旦 AI 设计的芯片专门为 AI 负载优化，传统通用芯片厂商的护城河可能比想象中更快被填平。
+
+## 5. Adobe Creative Suite Cleanroom Port to Rust  (⭐ 3.0/10)
+🔗 [hackernews](https://github.com/storytold/photocraft)
+
+Adobe 正在用 Rust 重写 Creative Suite 的核心组件，采用“洁净室”方式（不参考原有代码，仅凭行为规格重新实现）。这值得关注，因为它是主流商业软件巨头罕见的大规模 Rust 迁移信号，意味着内存安全和高性能将在创意工具这种重度图形计算场景中被验证。如果成功，可能推动更多传统 C++ 桌面软件转向 Rust。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

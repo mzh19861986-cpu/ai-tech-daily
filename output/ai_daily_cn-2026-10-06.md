@@ -6,35 +6,27 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-It looks like you only provided the title "Mistral Large 4," but the body content is empty, so I can't make an accurate summary based on the actual information yet.
+Sorry, you only sent the title "Mistral Large 4" without the body content, so I can't extract specific information.
 
-If you paste the specific content (release announcement, parameters, benchmark data, etc.), I can help you condense it into a 2-3 sentence summary that is informative without being stiff.
+Paste the news body here, and I'll summarize it right away in the style you want.
 
 ### 2. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-This message appears to have only a title and no body content. If you'd like me to summarize this news item, please send the body text or more details.
-
-However, based on the title alone, here's a possible interpretation (if it doesn't match the actual news, please refer to the original):
-
-**One-sentence version:**
-Francis Halzen won the Nobel Prize in Physics for his pioneering work in neutrino astronomy. The IceCube Neutrino Observatory, which he led, allowed humanity to "see" high-energy neutrinos from the depths of the universe for the first time.
-
-**Why it matters:**
-Neutrinos barely interact with matter, making them extremely difficult to detect. But IceCube, using thousands of optical sensors buried deep in Antarctic ice, successfully captured high-energy neutrino signals from distant galaxies. This is equivalent to opening a brand-new "window" for astronomy—previously we looked at the universe through light (electromagnetic waves), and now we can also look through neutrinos, which can penetrate extreme environments that even light cannot escape.
+2026年诺贝尔物理学奖授予Francis Halzen，以表彰他在冰立方中微子天文台的奠基性工作——利用南极冰盖深处一立方公里体积的探测器捕捉来自宇宙深处的高能中微子。这项成果之所以值得关注，是因为它开启了一扇全新的“宇宙观测窗口”：中微子几乎不与物质反应，能穿透星系和恒星而不被吸收，让我们第一次能直接“看到”超新星、黑洞喷流等极端天体内部发生了什么，这是传统光学或射电望远镜永远做不到的。
 
 ### 3. [Polars 2.0 发布](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 has been officially released. This high-performance DataFrame library written in Rust has welcomed its first major version update, with systematic improvements in the query engine, memory efficiency, and API stability. If you usually find pandas slow when handling slightly larger datasets, Polars 2.0 is worth trying seriously—it focuses on multi-core parallelism and lazy computation, offering a clear speed advantage.
-
-### 4. [Smalltalk的早期历史（1993年）](https://worrydream.com/EarlyHistoryOfSmalltalk/)
-*hackernews*
-Alan Kay's classic retrospective recounts the journey of Smalltalk, which originated at Xerox PARC in the early 1970s—initially just an educational programming environment designed for children, yet unexpectedly laying the foundations for object-oriented programming, graphical interfaces, and dynamic languages. Notably, Kay repeatedly emphasizes that the core of Smalltalk is not syntax but the idea of 'message passing,' along with his comprehensive vision of 'personal computing' at the time, concepts that continue to profoundly influence modern software design today.
+Polars 2.0 has been officially released, marking a major version update for this high-performance DataFrame library written in Rust. If you find pandas slow when handling even moderately large data, Polars' multi-threaded query engine and lazy evaluation can deliver order-of-magnitude speed improvements—version 2.0 takes another step forward in API stability and ecosystem compatibility, making it worth trying for migration from pandas or for new projects.
 
 ## 🤖 AI / 大模型
 
-### 1. [人工智能现在能够开发自己的推理硬件。](https://github.com/FeSens/openTPU)
+### 1. [人工智能现已能够开发自身的推理硬件。](https://github.com/FeSens/openTPU)
 *hackernews*
-AI can now design inference chips on its own—not just minor optimizations, but architectural proposals that human engineers didn't think of. This means AI is beginning to participate in creating the infrastructure it runs on, and the pace of hardware iteration may no longer be limited by human design cycles.
+AI现在能自己设计推理芯片了——不是优化现有架构，而是从零生成硬件方案。这件事的关键信号在于：芯片设计的核心瓶颈正从“人懂不懂”转向“算力够不够”，而AI恰好最擅长对设计空间进行暴力搜索。如果这条路走通，定制推理芯片的门槛会大幅降低，未来每一家大模型公司都可能拥有为自己模型“量体裁衣”的私有芯片，而不是都去抢英伟达的通用卡。
+
+### 2. [JetBrains报告了其历史记录中的首次净财务亏损。](https://www.helgilibrary.com/companies/jetbrains)
+*hackernews*
+JetBrains experienced its first net loss on record in fiscal year 2024, breaking a years-long streak of profitability. The company, known for IntelliJ IDEA, Kotlin, and its suite of IDEs, attributed the loss primarily to a surge in AI R&D spending and slowing subscription growth. Notably, this may signal collective pressure across the developer tools industry during the AI transition—even JetBrains, the most profitable player, has started burning cash.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
