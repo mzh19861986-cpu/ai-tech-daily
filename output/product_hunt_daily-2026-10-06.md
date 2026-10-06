@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [ruOS](https://www.producthunt.com/products/ruos)
+## 1. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** ruOS 把云桌面和 AI Agent 结合起来，让你在浏览器里就能指挥 AI 自动完成打开应用、操作文件、跑流程这类重复性工作。如果你想让 AI 真正“动手”而不只是聊天，可以拿它当个可自托管的实验平台试试。
-
----
-## 2. [iphone-use](https://www.producthunt.com/products/iphone-use)
-
-**💡 是什么 + 为什么值得试：** iPhone-use 让 AI agent 直接操作一台真实 iPhone，包括那些没有开放 API 的 App，省去你为每个应用单独写自动化脚本的功夫。如果你正被无法用接口控制的 iOS 应用卡住，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** OpenBot 是一个免费、本地运行、支持多人协作的开源 Grok Bot 替代方案，适合想自己掌控数据和成本的团队。如果你需要一个不依赖第三方 API、能自己部署的聊天机器人，可以直接拿它试。
 
 ---
-## 3. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+## 2. [Brnch](https://www.producthunt.com/products/brnch)
 
-**💡 是什么 + 为什么值得试：** 这个开源项目能帮你快速给网站加一个 AI 客服，它会自动同步你的站点内容，所以回答基于最新信息而不是过期知识库。如果你不想手动维护 FAQ 或客服话术，值得试试。
-
----
-## 4. [Fuse AI](https://www.producthunt.com/products/fuseai)
-
-**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 和一个 MCP 接口帮你搭出定制化的 GTM 工具链，省掉在多个销售/营销工具之间来回对接 API 的麻烦。如果你正被各种 GTM 系统割裂的数据和集成成本拖累，值得花十分钟试试它的统一接口能不能替你把这块理顺。
+**💡 是什么 + 为什么值得试：** Brnch 是一个面向 AI Agent 时代的现代代码托管平台，让 Agent 生成的代码能像人类开发者一样被清晰管理、审查和协作，而不是把一堆自动化改动直接丢进主分支。如果你正在用 Agent 写代码却苦于追踪和审核这些改动，值得试试它。
 
 ---
-## 5. [GeckIt](https://www.producthunt.com/products/geckit)
+## 3. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** Claude Code 的对话记录散在终端里，翻找历史任务基本靠记忆，GeckIt 用一个看板界面把这些会话按状态管理起来，让你一眼看清哪些任务在做、哪些已完成。如果你经常同时跑好几个 Claude Code 任务、又总找不到之前那次对话，值得试试。
-
----
-## 6. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
-
-**💡 是什么 + 为什么值得试：** 如果你用 MCP 服务器接入了 Claude 或其他 AI 工具，批准过一次后就默认它永远可信——mcpgawk 就盯这个：服务器在你批准之后偷改配置或行为，它会告警。
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器里，让你在浏览网页时随手就能让 AI 帮你写代码、改脚本或调试页面，不用再切窗口来回折腾。如果你经常一边查文档一边写代码，这个工具能省掉大量切换成本，值得一试。
 
 ---
-## 7. [Doco](https://www.producthunt.com/products/doco-4)
+## 4. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Doco 是一个按“公司/团队氛围”来筛选背景音乐的开源小工具，帮你省去在歌单里反复切歌的麻烦，直接找到适合当前工作场景的曲子。适合想快速进入状态、又不想花时间挑歌的人试试。
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑——说句话就能完成打开应用、执行操作等任务，省去手动点击的麻烦。如果你经常手忙脚乱或想试试更自然的交互方式，它提供了一个开源、可折腾的语音控制方案。
 
 ---
-## 8. [Ranktune](https://www.producthunt.com/products/ranktune)
+## 5. [Appto](https://www.producthunt.com/products/appto)
 
-**💡 是什么 + 为什么值得试：** Ranktune 帮你追踪品牌在 AI 回答里的曝光和引用情况，以及由此带来的推荐流量，让你不用再靠猜来判断 AI 搜索有没有带来实际效果。如果你的流量或内容策略开始受 AI 搜索影响，这个工具值得拿来跑一遍数据看看。
+**💡 是什么 + 为什么值得试：** Appto 让你用自己已有的 AI 订阅（比如 ChatGPT Plus）批量生成 iOS 应用代码，省去额外 API 费用和配置。如果你需要快速产出多个 App 原型或练手项目，它比从头写省事很多。
+
+---
+## 6. [Haptiker](https://www.producthunt.com/products/haptiker)
+
+**💡 是什么 + 为什么值得试：** Haptiker 让你在触控板边缘滑动手指就能调节音量、屏幕亮度和键盘背光，省去频繁去按功能键或点菜单栏的麻烦。如果你用的是 MacBook 且习惯盲操作，这个小工具能明显减少调节时的注意力打断。
+
+---
+## 7. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 把云桌面和 AI Agent 结合起来，让 Agent 直接在虚拟桌面里替你操作软件、跑任务，省去自己手动点来点去的麻烦。如果你在找“让 AI 真正动手干活”而不是只聊天的方案，值得试试。
+
+---
+## 8. [Patchcord](https://www.producthunt.com/products/patchcord-2)
+
+**💡 是什么 + 为什么值得试：** 开会时 Mac 麦克风声音发闷或忽大忽小，Patchcord 能给系统麦克风加上 EQ 调音，让 Zoom、Meet 等任意会议软件里听起来都像录音棚效果。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*
