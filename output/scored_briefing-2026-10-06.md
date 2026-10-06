@@ -2,34 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Nobel Prize in Physics 2026: Francis Halzen  (⭐ 6.0/10)
+## 🥇 Mistral Large 4  (⭐ 6.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+Mistral 发布了新一代旗舰模型 Large 4，在推理和代码能力上大幅提升，同时保持了较高的推理效率。值得关注的是，它延续了 Mistral 一贯的开放策略，这可能让更多开发者和企业以更低成本获得接近顶级闭源模型的能力。
+
+## 🥈 Nobel Prize in Physics 2026: Francis Halzen  (⭐ 5.0/10)
 🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
 
-2026年诺贝尔物理学奖授予了Francis Halzen，表彰他在中微子天文学领域的开创性贡献——他主导建成了埋在南极冰层下的“冰立方”中微子天文台，让人类第一次能用中微子这一几乎无阻碍的粒子来“看”宇宙。
-
-这件事值得关注，是因为它打开了一扇全新的宇宙观测窗口：以往天文学靠光、射电、引力波，而中微子能穿透连光都无法逃离的极端环境，让我们得以窥探超新星爆发、黑洞吞噬等过程的核心秘密。Halzen用几十年把一块南极冰原变成了顶级探测器，这种“把自然本身当仪器”的思路，本身就足够酷。
-
-## 🥈 OpenTPU – An open-source AI accelerator, developed by AI  (⭐ 5.0/10)
-🔗 [hackernews](https://github.com/FeSens/openTPU)
-
-OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自身参与开发完成——从架构设计到 RTL 代码生成，AI 承担了核心工程工作。值得关注的点不在于性能参数，而在于它验证了一条新路径：AI 可以独立完成专用芯片的设计流程，这意味着硬件开发的门槛和周期可能被大幅压缩。
+2026年诺贝尔物理学奖授予Francis Halzen，表彰他在冰立方中微子天文台（IceCube）的奠基性工作——在南极冰层下埋设探测器，捕获来自宇宙深处的超高能中微子。这项成果之所以重要，是因为中微子几乎不与物质反应，能穿越任何障碍直达地球，从而成为人类窥探黑洞、超新星等极端宇宙事件的“信使”，而Halzen把整个南极冰盖变成了人类最大的粒子探测器。
 
 ## 🥉 EmbeddingGemma 2  (⭐ 4.0/10)
 🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
-目前没有关于「EmbeddingGemma 2」的公开信息。Google 曾在 2024 年底发布过 EmbeddingGemma（基于 Gemma 2 的嵌入模型），但并没有名为「EmbeddingGemma 2」的后续版本。
+我目前没有看到 EmbeddingGemma 2 的具体发布信息或技术细节。你能否补充一下相关链接、发布方或关键特性？这样我可以帮你准确总结。
 
-如果你是指某个具体的新发布或传闻，可以把相关链接或更多细节发给我，我帮你确认和解读。
+## 4. OpenTPU – An open-source AI accelerator, developed by AI  (⭐ 3.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
 
-## 4. OpenSSH 10.6  (⭐ 4.0/10)
-🔗 [hackernews](https://www.openssh.org/releasenotes.html#10.6)
+OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自身参与开发——它不是又一张 GPU 替代品的路线图，而是把加速器从 RTL 到软件栈的全套设计都开放出来。真正值得关注的是「AI 设计 AI 芯片」这一信号：如果模型能实质性参与硬件架构探索，芯片迭代的节奏和门槛都可能被重写。
 
-OpenSSH 10.6 发布了，这个版本默认启用了后量子密钥交换算法（ML-KEM），并强化了 sshd 的权限分离机制——这是它在安全加固上的持续迭代。值得关注的是，后量子加密从「可选」变成「默认」，意味着你升级后不需要额外配置就能抵御未来量子计算机对密钥交换的威胁，对运维和开发来说是个省心且必要的升级。
+## 5. Paramount Skydance has completed its $111B merger with Warner Bros. Discovery  (⭐ 2.0/10)
+🔗 [hackernews](https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/)
 
-## 5. Mistral Large 4  (⭐ 3.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
-
-Mistral 发布了新一代旗舰模型 Large 4，主打推理能力和多语言表现的提升，同时保持了 Mistral 一贯的高效架构风格。值得关注的是它在开源阵营里的定位——性能逼近头部闭源模型，但部署成本更低，对想自建 AI 能力又不想被大厂绑定的团队来说，是个值得试的选项。
+派拉蒙天空之舞以1110亿美元完成对华纳兄弟探索的收购，好莱坞传统制片厂从五大家缩减为四家。这意味着一家同时拥有CBS、MTV、HBO、CNN和DC影业的超级媒体集团正式诞生，其内容库规模和IP储备足以直接叫板Netflix和迪士尼。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

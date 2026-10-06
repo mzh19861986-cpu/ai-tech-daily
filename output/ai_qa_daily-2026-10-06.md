@@ -4,35 +4,31 @@
 
 ## Q1: OpenTPU – An open-source AI accelerator, developed by AI？
 
-**A:** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自主设计开发——从架构到 RTL 代码全部开放，你可以直接拿来流片或做研究。值得关注的点在于：它探索了「AI 设计硬件」这条路是否可行，如果跑通，芯片迭代速度可能从年缩短到周，对硬件创业和学术圈都是低成本试错的新选项。
+**A:** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自动生成硬件设计代码，目标是让任何人都能定制和流片自己的 TPU 级芯片。它的核心价值在于把 AI 芯片设计的门槛从「数百人团队+千万美元」拉到「一个人+一套开源工具链」，对边缘计算和硬件创业者来说，这可能是个转折点。
 
 📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
-## Q2: The smartest Claude Code feature is not for its users？
+## Q2: Claude Code’s suggested message feature: I think the real customer is the model？
 
-**A:** Anthropic给Claude Code加了个新功能，但它的目标用户其实不是写代码的人——而是让Claude自己用。简单说，这是在让AI学会用工具给自己搭梯子，而不是等人来喂提示词。值得关注的地方在于：当AI开始为自己优化工作流，工具的设计逻辑就从「方便人操作」转向了「方便AI自主执行」，这可能是agent进化的一条分水岭。
+**A:** Claude Code 在用户输入前会主动推荐下一步该发什么消息，作者认为这个功能表面上是在帮人类省打字，实际上真正服务的对象是模型本身——它在通过预设对话路径来引导模型进入更擅长处理的任务结构，从而提升输出质量。值得关注的是，这暗示了一种新的产品逻辑：AI 编程工具开始反向塑造人类的交互方式，而不是单纯被动响应。
 
-📎 更多阅读：[The smartest Claude Code feature is not for its users](https://www.zohaib.cc/blog/smartest-claude-code-feature)
+📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
 
 ## Q3: Email Self Hosters - what are you using?？
 
-**A:** 最近有人在讨论自建邮件服务器用什么方案，楼主自己用的是 maddy，跑多个域名的邮箱和 catch-all 收信。目前遇到的小毛病一半是自己配置问题、一半不明来源，最头疼的是 iOS 原生邮件客户端连接慢得让人抓狂。
-
-说白了就是：如果你也想摆脱大厂邮箱、自己托管邮件，maddy 是个轻量选择，但移动端体验可能会劝退——这类自建方案的通病，值不值得折腾得看你有多在意数据主权。
+**A:** Reddit 上有人发帖问自建邮件服务器大家都在用什么方案，楼主自己用的是 maddy，同时托管多个域名的邮箱和 catch-all 地址。他的主要痛点是 iOS 原生邮件客户端连接 maddy 慢到令人抓狂——这其实点出了自建邮件的一个经典难题：服务端好搭，但和主流客户端的兼容性、IMAP 性能往往才是真正劝退的地方。如果你也在考虑自建邮箱，这类真实使用反馈比官方文档更有参考价值。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## Q4: A sustainable web career, for when all this blows over？
 
-**A:** 科技行业裁员潮和AI冲击之下，有人开始讨论“可持续的Web职业”这条路该怎么走——核心思路是降低对单一雇主的依赖，靠个人品牌、独立产品和社区积累来构建更抗风险的职业模式。值得关注是因为它聊的不是“怎么卷赢”，而是“怎么不被淘汰出局”，对当下焦虑的技术人来说是个务实的方向参考。
+**A:** 这期 lobste.rs 讨论串聊的是「可持续的 Web 职业」——大意是别把全部精力押在当下这波 AI/框架风口上，而是积累那些十年后依然值钱的底层能力（HTTP、数据库、系统设计、写作沟通）。值得关注是因为它给出了一种反焦虑的视角：技术潮流会过去，但扎实的工程基础和解决问题的能力不会贬值——适合现在有点迷茫的前端或全栈开发者看看。
 
 📎 更多阅读：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
 ## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** 这篇论文提出了一个叫 ADSD（自动诊断与技能发现）的框架，专门解决一个尴尬现状：AI 能写科学计算代码，但写出来的数值求解器性能差，它能告诉你「跑得不好」，却说不清「为什么差」和「怎么改」。ADSD 的价值在于把「执行反馈」升级成了「可归因的诊断 + 可复用的技能积累」，让 AI 从「会写代码」往「会改进算法」迈了一步。
-
-如果你关注 AI for Science 或自动化科研，这篇值得留意——它触到的是当前 agent 能力的一个真实天花板：能执行，但不真懂优化。
+**A:** AI智能体现在能写出科学计算代码，但写代码和真正改进算法是两回事——数值求解器跑得差，执行反馈只会告诉你"结果不对"，却不会说清哪里出了问题、该怎么修。ADSD框架试图补上这一环：让智能体自动诊断性能瓶颈的根因，并从中提炼出可复用的"技能"来针对性提升。如果这类自我诊断能力成立，AI智能体就不只是代码生成器，而开始具备数值算法层面的自主调优能力。
 
 📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 

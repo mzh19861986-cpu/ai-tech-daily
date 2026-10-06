@@ -14,25 +14,31 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-目前没有可靠信息确认“Mistral Large 4”已发布。如果你看到的是传闻或泄露消息，建议先核实来源——Mistral 官方发布节奏一向是先更新博客和模型卡，再开放 API。若是真的，值得关注的点在于它是否继续走开源权重路线，以及能否在推理和长上下文上追平一线闭源模型。
+看起来你只发了标题，内容部分是空的。能把 Mistral Large 4 的具体信息（官方发布说明、技术博客或新闻稿）贴出来吗？我拿到素材后立刻给你写一段 2-3 句的总结。
 
 ### 2. [EmbeddingGemma 2](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-这次发布的 EmbeddingGemma 2 是一个专门用来做文本嵌入（把文字转成向量）的开源模型，基于 Gemma 架构打造。它最大的价值在于：你可以在自己的设备上本地跑，不用调 API、不依赖云端，适合对隐私敏感或者想省推理成本的场景。
+抱歉，我看到的标题是「EmbeddingGemma 2」，但正文内容为空——没有可提炼的实质信息。
+
+能否补充一下具体内容？比如：这是 Google 发布的嵌入模型吗？相比初代 EmbeddingGemma 有哪些升级（维度、多语言、性能、开源协议等）？拿到这些我就能给你一段干净利落的 2-3 句总结。
+
+如果这确实是一条只有标题的新闻，也告诉我一声，我可以基于公开信息帮你做一版简要解读——但会明确标注哪些是背景补充，避免编造细节。
 
 ### 3. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-2026年诺贝尔物理学奖授予Francis Halzen，表彰他在冰立方中微子天文台（IceCube）中的核心贡献——他在南极冰层下1.5公里处部署了超过5000个光学传感器，首次捕捉到来自银河系外的高能中微子。这项发现之所以关键，是因为中微子几乎不与物质反应，能穿越宇宙尘埃和磁场直线传播，为人类打开了一扇用“幽灵粒子”观测遥远宇宙的全新窗口。
+这条内容只有标题没有正文，没法提炼具体信息。标题提到的是2026年诺贝尔物理学奖授予Francis Halzen，但诺奖通常在10月才公布，2026年的结果现在不可能已知，所以这大概率是误传、占位标题或假消息。
 
-### 4. [OpenSSH 10.6](https://www.openssh.org/releasenotes.html#10.6)
+如果确实有这样一条新闻，核心信息应该是「谁获奖、因什么成果获奖、这个成果解决了什么问题」——但正文缺失，这些都无法确认。建议你把具体内容发给我，我再帮你总结。
+
+### 4. [Paramount Skydance has completed its $111B merger with Warner Bros. Discovery](https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/)
 *hackernews*
-OpenSSH 10.6 发布，新增实验性后量子混合密钥交换算法，并默认禁用 DSA 签名验证。值得关注的是，它开始为「先存后解」的量子攻击威胁做准备——现在抓包、以后用量子计算机破译的路径正在被堵上。
+派拉蒙天空之舞（Paramount Skydance）已完成对华纳兄弟探索（Warner Bros. Discovery）价值1110亿美元的合并，好莱坞两大老牌制片厂就此合体。这桩交易将把CBS、HBO、CNN、派拉蒙影业等资产收归同一屋檐下，意味着美国传统媒体在流媒体冲击下加速整合，行业格局和内容话语权都将被重新洗牌。
 
 ## 🤖 AI / 大模型
 
 ### 1. [OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 *hackernews*
-OpenTPU 是一个完全开源、由 AI 自主设计的 AI 加速器项目，从硬件架构到 RTL 代码全部公开。它的价值在于：这是第一次让 AI 独立完成芯片级设计决策，绕开了传统芯片设计的人力瓶颈，同时给研究者和初创公司提供了一个可直接流片参考的加速器方案。
+OpenTPU 是一个开源 AI 加速器项目，由 AI 自主开发完成，目标是提供可自由使用和修改的 TPU 类硬件方案。它值得关注的地方在于：AI 参与设计芯片这件事本身，正在从概念走向可复现的开源工程实践。
 
 
 ---
