@@ -4,41 +4,39 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章主要讲 Opus 5.5 agents 发现了两种室温磁性半导体候选材料。
-
-其中可提炼的 AI Prompt 技巧/最佳实践是：
-
-**让 AI Agent 自主执行“发现—验证”闭环任务，而非只做单次问答。** 即给 AI 一个明确的高价值目标（如“寻找室温磁性半导体候选”），并允许它自主调用工具、检索文献、生成假设、交叉验证，你只负责设定目标和评估标准。
-
-一句话总结：**把 AI 当“自主研究员”用——设定目标 + 开放工具权限**
-
-📎 来源：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
-
-## 2. 💡 技巧 2
-
-**这篇文章没有提供足够的内容来提炼 Prompt 技巧或 AI 使用建议。标题只提到“Beam: Reflection's 501B open-weight model”，但正文为空，因此无法总结出具体的 Prompt 工程实践或最佳实践。**
+**这篇文章没有提供具体内容，因此无法提炼 Prompt 技巧或 AI 使用建议。如果你能补充文章正文或讨论内容，我可以帮你总结。**
 
 📎 来源：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
-## 3. 💡 技巧 3
+## 2. 💡 技巧 2
 
-**这篇文章没有明显的 Prompt 工程内容。它讨论的是自托管邮件服务器（maddy）的使用体验，属于技术运维话题。因此，按你的要求总结文中关于如何更好使用 AI 的建议——**本文并不涉及 AI 使用相关建议**。
+**这篇文章主要是关于自托管邮件服务器的讨论，没有涉及 AI Prompt 相关内容。因此，我可以总结其中关于自托管邮件服务的经验：
 
-如果你希望我改为从这篇文章中提炼「自托管邮件服务选择」的要点作为参考，我也可以帮你整理。**
+**自托管邮件服务建议：** 使用 Maddy 等工具可管理多域名邮箱和 catch-all 地址，但要注意 iOS 原生邮件客户端连接可能较慢的问题。**
 
 📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## 4. 💡 技巧 4
+## 3. 💡 技巧 3
 
-**这篇文章主要讨论如何在 Web 行业建立可持续的职业发展，而非聚焦于 AI Prompt 技巧。其中隐含的可用于 AI 的建议是：**把 AI 当作长期的协作伙伴而非一次性工具，持续投入时间学习如何与它配合工作，才能在技术浪潮起伏中保持职业的可持续性。** 换句话说，与其追逐每个新 AI 热点，不如扎实建立可迁移的协作方法。**
+**这篇文章没有提供具体的 Prompt 技巧，但可以从其对“可持续 Web 职业”的讨论中提炼出使用 AI 的建议：
+
+**建议**：不要只追逐短期热点，把 AI 当作长期能力来建设——持续学习基础原理、保持技术判断力，并用 AI 提升效率而非替代思考，这样才能在行业波动中保持可持续的竞争力。**
 
 📎 来源：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
-## 5. 💡 技巧 5
+## 4. 💡 技巧 4
 
-**这篇文章没有提供明显的 Prompt 工程技巧，不过它包含一条关于更好使用 AI 的相关建议：如果你不想使用 Apple Intelligence，可以通过 Pared 这类工具移除不需要的 Apple Intelligence 模型，而不必禁用 SIP；也就是说，你可以直接清理或关闭操作系统里的本地 AI 功能，而不必为了这项目的牺牲系统安全设置。**
+**这篇文章没有提供明显的 Prompt 技巧，但可以从“Pared - remove unwanted Apple Intelligence models without disabling SIP”这个主题中提炼一个与 AI 使用相关的实践建议：
+
+**技巧/建议：** 定期审查并清理本地 AI 模型缓存（如 Apple Intelligence 下载的模型），在不需要时移除它们以节省磁盘空间和减少后台资源占用——可以直接删除模型文件而无需关闭系统完整性保护（SIP），保持系统安全性与清理灵活性兼得。**
 
 📎 来源：[Pared - remove unwanted Apple Intelligence models without disabling SIP](https://github.com/4evy/pared)
+
+## 5. 💡 技巧 5
+
+**这篇论文的核心 Prompt 思路：**不要只让 AI「生成代码」，而要让它先「诊断失败原因」，再「提炼可复用的技能」**。即执行反馈不仅能告诉模型结果好不好，还能促使它解释根因并总结成可迁移的解题策略——所以在设计 Prompt 时，可以要求 AI 在执行失败后先做诊断、再提炼一条通用技能，而不是直接重试。**
+
+📎 来源：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*
