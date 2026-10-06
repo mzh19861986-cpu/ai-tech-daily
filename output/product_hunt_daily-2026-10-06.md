@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
+## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在同一个世界里自主互动、形成关系和事件，又不想自己设计剧情或参与操作，这个项目就能直接满足你。它适合拿来当“AI 社会模拟器”看，省去搭建多智能体环境的工作，打开就能围观。
+**💡 是什么 + 为什么值得试：** 如果你的 GTM 工具链今天连这个 API、明天换那个平台，数据和流程总在打补丁，Fuse AI 用一个 SDK 加一个 MCP 把这些整合到一起，省得每次换工具都重写一遍集成代码。想搭自己的销售/营销技术栈、又不想被单一厂商绑死的团队值得看一眼。
 
 ---
 ## 2. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的就是回复买家消息不及时或不专业，这个开源项目能帮你几秒内自动生成得体的回复，省下时间专心做产品。
+**💡 是什么 + 为什么值得试：** 这是一个专为 Etsy 卖家打造的开源客服工具，能自动用专业语气快速回复买家消息，帮你省下每天手动处理咨询的时间。如果你在 Etsy 上订单多、消息回不过来，又不想显得敷衍，可以试试它。
 
 ---
-## 3. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
+## 3. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** Ari Helper 7 是一个注重隐私的本地 AI 助手，新增了照片和影片工作室功能，让你不用把素材上传到云端就能处理图片和视频。如果你在意数据隐私、又想要一个能兼顾日常聊天和多媒体处理的轻量工具，可以试试它。
-
----
-## 4. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** 想用嘴代替鼠标键盘、又不想折腾复杂配置的话，Incredible 让你直接对着电脑说话就能下指令操作，省去手动点击的麻烦，适合想尝鲜语音控制电脑的人快速试一把。
+**💡 是什么 + 为什么值得试：** 如果你想看一群 AI 角色自己过日子、互相打交道，又懒得自己写逻辑，《The Sentient World》直接给了你一个现成的“观察窗口”——你只负责看，不用管。
 
 ---
-## 5. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 4. [Lecta](https://www.producthunt.com/products/lecta)
 
-**💡 是什么 + 为什么值得试：** OpenBot 是一个免费、可本地部署的开源多人在线机器人，能作为 Grok Bot 的替代方案，让你在自有服务器上跑起多人协作的 AI 对话。如果你在意数据隐私、不想依赖闭源服务或需要多人共用，它值得一试。
-
----
-## 6. [Rill Browser](https://www.producthunt.com/products/rill-3)
-
-**💡 是什么 + 为什么值得试：** 如果你经常用 Claude Code 或 Codex 处理网页相关任务，却要不停复制粘贴内容到终端里来回切换，Rill Browser 把 AI 直接内置进浏览器，让它在当前页面上跟你协作，省掉这层折腾。
+**💡 是什么 + 为什么值得试：** Lecta 能把你的课堂笔记自动变成可玩的游戏，方便你和朋友一起边玩边复习。如果你觉得传统背诵太枯燥，可以试试用它把笔记变成互动小游戏，提升记忆效率。
 
 ---
-## 7. [Appto](https://www.producthunt.com/products/appto)
+## 5. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
 
-**💡 是什么 + 为什么值得试：** Appto 是一个在你自己 AI 订阅上运行的 iOS 应用工厂，帮你把「用 AI 生成 App」变成可复用的流水线，而不是每次手动拼 prompt。如果你常做 iOS 小工具或原型，它能省掉重复的搭建和调试环节。
+**💡 是什么 + 为什么值得试：** Ari Helper 7 是个本地运行的私人 AI 助手，新增了照片和影片工作室功能，能让你在不把数据传到云端的前提下处理图片和视频。如果你在意隐私又想要一个能干活的 AI 工具，它值得花十分钟装来试试。
 
 ---
-## 8. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+## 6. [Patchcord](https://www.producthunt.com/products/patchcord-2)
 
-**💡 是什么 + 为什么值得试：** Cosmic AI Support Agent 能给你的网站挂一个自动同步站点内容的 AI 客服，不用手动喂知识库，页面改了它也跟着更新。如果你受够了客服答非所问、知识库过期，可以拿它试试。
+**💡 是什么 + 为什么值得试：** 开会时总觉得自己的麦克风声音闷、发虚，但又懒得折腾专业音频软件？Patchcord 给 Mac 上任意会议应用加了一层 EQ 音效处理，几步设置就能让声音听起来像录音棚出来的，值得一装。
+
+---
+## 7. [Banger](https://www.producthunt.com/products/banger-mail)
+
+**💡 是什么 + 为什么值得试：** Banger 帮你把邮件营销的撰写和发送交给 AI 自动化，不用再手动写文案、排计划地追客户。如果你的团队靠邮件做获客或留存，又不想在这上面耗太多人力，值得试一下。
+
+---
+## 8. [Floani](https://www.producthunt.com/products/floani)
+
+**💡 是什么 + 为什么值得试：** Floani 让你用 AI 快速生成流程图、架构图这类图表，并直接加动画和分享链接，省去手动拖拽排版的时间。适合需要频繁画图讲解或做演示的技术人试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

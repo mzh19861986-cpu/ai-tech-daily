@@ -1,28 +1,24 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-06
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 4 篇
 
-## 1. [25+ Best UI/UX and Web Design Inspiration Websites for Designers](https://dev.to/akogun_promise_586969c1fe/25-best-uiux-and-web-design-inspiration-websites-for-designers-1pgf)
+## 1. [Model Calls Are Metered. Most AI Features Are Built Like They Are Free.](https://dev.to/nabeelbaghoor/model-calls-are-metered-most-ai-features-are-built-like-they-are-free-1e4)
 
-**✨ 精华总结：** 找设计灵感往往比真正动手设计还费时间，这篇文章整理了25个以上靠谱的UI/UX和网页设计灵感网站，按落地页、SaaS仪表盘、作品集、移动应用等场景分类推荐。如果你常做界面设计，这份清单能帮你跳过无效刷图，直接去对的地方找参考。
+**✨ 精华总结：** 大多数团队在构建 AI 功能时，默认沿用了传统软件的思维——基础设施成本固定，多一次点击几乎不花钱。但大模型调用是按量计费的，每一次用户交互都对应真实开销，这个「单次点击有价格」的特性在 demo 阶段被完全掩盖，直到上线后第一张完整账单到来才暴露。
 
-## 2. [PureStack vs Astro vs Next.js vs SvelteKit: A TypeScript-Native Alternative](https://dev.to/koculu/purestack-vs-astro-vs-nextjs-vs-sveltekit-a-typescript-native-alternative-3glp)
+值得关注的是：这不是成本优化问题，而是架构设计问题。如果产品从第一天起就没有把「每次调用都有成本」当作核心约束来对待，后续要么被迫在体验上打折（限流、缓存、降级），要么在账单上失控。真正做 AI 产品的团队，需要把计量、预算和成本感知当作和功能开发同等级的事情来做。
 
-**✨ 精华总结：** PureStack 是一个全栈 TypeScript 框架，核心卖点是用一套统一的类型模型贯穿内容、样式、组件和浏览器端响应式脚本，而不是像 Astro、Next.js、SvelteKit 那样在现有 UI 库之上再包一层元框架。它的定位是「中间路线」——既有类型安全的端到端体验，又不引入额外的抽象层。如果你受够了在多个工具链之间切换类型定义、或者想让整个项目从内容到交互都共享同一套 TS 类型，这个值得看一眼。
+## 2. [About Me: Building, Breaking and Learning Through Software](https://dev.to/marceli/about-me-building-breaking-and-learning-through-software-3el5)
 
-## 3. [Fix It in the Model or Fix It in the Source?](https://dev.to/jay_krshn_1a9ac493fadf8/fix-it-in-the-model-or-fix-it-in-the-source-2nha)
+**✨ 精华总结：** 这是一个苏格兰学生 Marceli Pawliński 的个人简介页面，他通过「造东西、弄坏、修好、再推翻重来」的循环自学计算机科学、网络安全、AI 和软件工程。值得关注的点在于他这段话本身就是对技术成长路径的精准概括——真正的工程能力往往来自反复的实践和试错，而不是课堂上的按部就班。
 
-**✨ 精华总结：** 把老 CA 2E 程序迁移到新平台时，第一个编译错误就会逼团队做一个平时从未认真做过的决定：模型和源码，到底哪个才算真正的“主”。这不是技术活，而是治理问题——一旦你开始在某一边打补丁，就得明确后续所有修改都往哪边落，否则两边会逐渐漂移、再也合不回去。
+## 3. [Node.js Feature Flag Kill Switch During Import Outages (with Health Monitoring)](https://dev.to/rivenpulse5812/nodejs-feature-flag-kill-switch-during-import-outages-with-health-monitoring-pk5)
 
-## 4. [Reading a lending protocol's whole loan book straight from Cardano's ledger](https://dev.to/elliotagent/reading-a-lending-protocols-whole-loan-book-straight-from-cardanos-ledger-nei)
+**✨ 精华总结：** Node.js 应用可以在导入服务大面积故障时，通过功能开关（feature flag）实时切断出问题的导入路径，再配合外部心跳监控、健康指标和错误事件来快速止血。关键点在于：所有信号必须携带同一个 run identifier，且开关变更要记录在你自己的系统里——否则你只能控制损失，没法复盘事故原因。
 
-**✨ 精华总结：** Indigo 是 Cardano 上的合成资产协议，用户锁定 ADA 铸造 iUSD、iBTC 等资产，每个头寸都是一个抵押债仓（CDP）。作者想算清一个问题：ADA 要跌到什么价位，才会有相当比例的贷款被清算——但官方 API 当时（9 月 9 日）只列出了 v3 头寸，共 50 个 CDP，数据不完整。于是他们干脆绕开 API，直接从 Cardano 链上账本读取整个借贷账本。
+## 4. [TouchGrass AI: I built an outdoor quest app with Ollama and local-first storage](https://dev.to/shashank_chakraborty_6362/touchgrass-ai-i-built-an-outdoor-quest-app-with-ollama-and-local-first-storage-2c4i)
 
-## 5. [Python Image Moderation: Debugging Banned Content Briefly Visible in Optimistic Publish](https://dev.to/yvessterling6854/python-image-moderation-debugging-banned-content-briefly-visible-in-optimistic-publish-1gi1)
-
-**✨ 精华总结：** 做图片社区的话，别让公开 URL 跑在审核前面。乐观发布只对「私有隔离对象」安全，一旦公开地址先于审核决定出现，用户就能短暂刷到本该封禁的内容——这本质是数据模型缺了 pending 状态加缓存没兜住，跟图片格式无关。
-
-值得关注的是修复方向：上传后先当「不可发布」处理，等审核写入持久化决定再放行，并且让所有读取路径都强制检查这个状态。
+**✨ 精华总结：** 有人做了个叫 TouchGrass AI 的户外任务小工具，思路挺反常识：用 AI 给你生成一个「出门理由」，然后应用立刻退场，让你把手机收起来。它跑在本地 Ollama 上，数据也是本地优先存储，你只需选时长、户外类型和强度，它就吐一个简短任务，剩下的交给你自己去做。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

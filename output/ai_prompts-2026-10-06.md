@@ -4,44 +4,45 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章标题提到 **Erdosproblems.com 被 AI “攻陷”**，核心的 Prompt / 使用 AI 的启示是：
+**这篇文章没有涉及 Prompt 工程内容。它是一篇关于自建邮件服务器的讨论，作者分享了自己使用 maddy 管理多个域名邮箱的经验，并提到最大的困扰是 iOS 原生邮件客户端连接速度极慢。
 
-**把 AI 当作“大规模并行解题者”来用**——不要只让它解一道题，而是给它一个清晰的、可机械验证的题目列表（如开放数学问题集），让它批量尝试、自动筛选，人类只负责设定标准并验证结果。
-
-一句话最佳实践：**定义好可自动验证的目标和评判规则，然后让 AI 大批量生成候选答案，你只做筛选和验证**，而不是逐个**
-
-📎 来源：[Erdosproblems.com Succumbs to the AI Onslaught](https://www.erdosproblems.com/forum/thread/blog:9)
-
-## 2. 💡 技巧 2
-
-**这篇文章主要是关于自建邮件服务器的讨论，没有涉及 Prompt 工程或 AI 使用技巧，因此无法提炼出可用的 AI Prompt 技巧或最佳实践。**
+如果你需要，我可以帮你把这类「用户求助帖」提炼成一个可复用的提问 Prompt 模板，例如在向 AI 咨询自建邮件方案时，附上使用场景、已用工具、遇到的具体问题等结构，这样更容易获得针对性建议。需要的话我可以直接写出来。**
 
 📎 来源：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## 3. 💡 技巧 3
+## 2. 💡 技巧 2
 
-**这篇文章没有具体的 Prompt 技巧，但可以提炼出一条与 AI 使用相关的职业可持续性建议：
-
-**不要只追逐当下的 AI 热点技术，而是把精力投入到能长期复用的底层能力和工作方式上**——这样即使某波 AI 浪潮退去，你的技能和职业路径依然站得住脚。**
+**这篇文章来自 Lobste.rs 的讨论，标题为《A sustainable web career, for when all this blows over》（当这一切平息后，一份可持续的 Web 职业）。由于提供的正文内容仅为指向讨论区的链接，没有实际的讨论文字，无法从中提炼具体的 Prompt 技巧或 AI 使用建议。**
 
 📎 来源：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
+## 3. 💡 技巧 3
+
+****技巧提炼：** 让 AI 先诊断"为什么不行"，再让它总结"该怎么改"。
+
+具体做法：当 AI 产出效果不佳时，不要只反馈"结果差"，而是要求它分两步输出——(1) 诊断导致失败的根本原因，(2) 从中提炼出一条可复用的通用技能/原则。这样能把一次性的执行反馈升级为可迁移的能力，避免反复修同一个坑。**
+
+📎 来源：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+
 ## 4. 💡 技巧 4
 
-**这篇文章本身不是 Prompt 工程内容，而是关于用 Pared 工具移除不想要的 Apple Intelligence 模型的讨论。
+****技巧提炼：**  
+用“代理置信度”审计黑盒 LLM 智能体：让一个可访问对数概率的替代模型（surrogate）对同一输入生成工具调用/代码，比较其低概率 token 与主模型实际动作是否吻合，从而在动作执行前发现潜在错误，而非依赖主模型自报的置信度。  
 
-如果从“如何更好使用 AI”角度提炼，可总结为：
+**一句话最佳实践：**  
+如果无法获取目标模型的 token 概率，就用一个开放/可读 log-prob 的替代模型“复现”同一任务；当替代模型在其输出上出现**
 
-**在使用本地 AI 功能时，应关注模型是否被系统强制占用或常驻，并通过合适工具清理不需要的 Apple Intelligence 模型，从而节省资源、提升设备控制权。****
-
-📎 来源：[Pared - remove unwanted Apple Intelligence models without disabling SIP](https://github.com/4evy/pared)
+📎 来源：[Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities](https://arxiv.org/abs/2610.03894)
 
 ## 5. 💡 技巧 5
 
 ****技巧提炼：**  
-在让 AI 生成或优化代码/算法时，不要只给“执行失败/效果不好”这类结果反馈，而应提示它先做 **“自动诊断原因 → 发现/复用可迁移技能”** 两步：先解释性能不佳的根本原因，再总结可复用的解题策略或技能，最后据此改进方案。**
+在构建或评估使用工具的 AI Agent 时，除了测试工具调用能力，还要专门加入“拒绝有害请求”的安全测试用例，并明确要求模型在调用工具前先做安全判断。  
 
-📎 来源：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
+**一句话总结：**  
+用工具增强 AI 能力的同时，别忘在 Prompt 或评测中加入“先判断是否应拒绝、再决定是否调用工具”的安全约束，否则模型可能因工具使用而降低对有害请求的拒绝率。**
+
+📎 来源：[MLLMs Fail to Refuse when Using Tools Agentically](https://arxiv.org/abs/2610.03938)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*
