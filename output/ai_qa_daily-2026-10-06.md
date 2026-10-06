@@ -4,33 +4,33 @@
 
 ## Q1: Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates？
 
-**A:** Opus 5.5的AI智能体独立筛选出两种候选材料，有望在室温下同时具备磁性和半导体特性——这是此前只在极低温或极端条件下才能实现的组合。这类材料一旦验证成功，意味着自旋电子学器件（比传统芯片更快、更省电）不用再依赖昂贵笨重的冷却系统，离实用化近了一大步。
+**A:** Anthropic 的 Opus 5.5 agent 在材料筛选任务中独立发现两种室温磁性半导体候选材料——这类材料能同时利用电子电荷与自旋属性，是下一代低功耗自旋电子器件的关键，但长期以来室温下稳定的候选极其稀缺。值得关注的是，这次不是“AI 辅助计算”，而是 agent 自己提出假设、筛选、验证的完整流程，意味着 AI 在真实科研发现环节开始具备独立产出能力。
 
 📎 更多阅读：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
 
 ## Q2: Beam: Reflection's 501B open-weight model？
 
-**A:** Beam 是 Reflection 发布的一个 501B 参数的开源权重模型，主打用强化学习替代传统监督微调来训练推理能力。值得关注的原因在于：它是目前少数把「反思式推理」做到这个规模且直接开放权重的模型，意味着你可以在自己机器上跑一个接近闭源前沿水平的推理引擎，而不用依赖 API。
+**A:** Reflection 发布了 Beam，一个 501B 参数的开源权重模型。它的看点在于：这是目前开源社区里参数规模最大的模型之一，而且来自一家主打"AI 反思/自我改进"方向的公司，意味着开源大模型的能力上限可能又被往上推了一截。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
-## Q3: AI is now capable of developing its own inference hardware？
+## Q3: Email Self Hosters - what are you using?？
 
-**A:** AI 现在能自己设计推理芯片了——不是帮忙优化，而是从架构到布局全程自主完成。这意味着硬件迭代可能不再受人类工程师速度的限制，芯片设计和 AI 模型进化有望形成闭环加速。
-
-📎 更多阅读：[AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
-
-## Q4: Email Self Hosters - what are you using?？
-
-**A:** 最近在自建邮件服务器的圈子里，maddy 是个挺热门的选择——它把 SMTP、IMAP 和 Webmail 打包成一个轻量级二进制文件，配置简单，适合想 manage 多个域名邮箱或 catch-all 地址的人。不过这篇帖子吐槽了一个很典型的痛点：iOS 原生邮件客户端连接这类自建服务器时慢得让人抓狂，这通常和 IMAP 实现细节、TLS 握手或 DNS 解析有关。如果你也在自建邮件，值得关注这个讨论里有没有人给出可落地的优化方案，或者干脆换更成熟的 Postfix + Dovecot 组合来避开这类兼容性问题。
+**A:** 自己搭邮件服务器的人最近在讨论用啥方案，发帖的老哥用的是 maddy，能管多个域名和 catch-all 邮箱，但吐槽了不少小毛病，最烦的是 iOS 原生邮件客户端连它慢得要命。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
-## Q5: A sustainable web career, for when all this blows over？
+## Q4: A sustainable web career, for when all this blows over？
 
-**A:** 这篇文章讨论的是如何构建一份可持续的Web开发职业生涯——不追风口、不靠过度加班，而是通过选择稳定技术栈、控制工作节奏来长期留在行业里。它值得关注的地方在于，当AI和裁员潮让很多人焦虑时，这种「反内卷」的职业策略反而可能更抗风险。
+**A:** 这其实是一篇关于「Web 开发者如何长期可持续地做下去」的讨论帖，核心观点是：别把职业赌在某一波技术风口上，而要积累那些十年后依然值钱的底层能力（比如理解 HTTP、数据库、系统设计），这样无论框架怎么换你都能活下来。值得关注是因为现在 AI 和前端框架迭代快到让人焦虑，这种「反脆弱」的职业思路反而比追新更实用。
 
 📎 更多阅读：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
+
+## Q5: Pared - remove unwanted Apple Intelligence models without disabling SIP？
+
+**A:** 苹果智能功能会在本地下载一些AI模型文件，但系统没有提供卸载选项——Pared这个工具能帮你删掉不想要的模型，而且不需要关闭系统完整性保护（SIP）。对Mac存储空间紧张、又不想为了清理文件牺牲系统安全的人来说，这是个干净利落的解决方案。
+
+📎 更多阅读：[Pared - remove unwanted Apple Intelligence models without disabling SIP](https://github.com/4evy/pared)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

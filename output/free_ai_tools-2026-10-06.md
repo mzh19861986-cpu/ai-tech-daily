@@ -4,11 +4,11 @@
 
 ## 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-**👥 适合谁：** 最适合需要在自己 Rust 或 Python 项目中直接控制 TP-Link 智能设备（如智能插座、灯泡）的开发者，尤其是追求底层协议控制、不想依赖官方云服务的独立开发者和智能家居爱好者。
+**👥 适合谁：** 最适合**想用代码自动化控制 TP-Link 智能家居设备的独立开发者和极客玩家**。
 
-**🚀 怎么开始：** Tapo 是一个 Rust/Python 库，用于控制 TP-Link Tapo 智能设备，现已支持 TPAP 协议，无需本地部署，安装即可使用。
+**🚀 怎么开始：** Tapo 是一个 Rust/Python 库，用于控制 TP-Link Tapo 设备，现已支持 TP-Link 的 TPAP 协议。直接 pip install / cargo add 安装后，用你的 TP-Link 账号或设备本地凭据即可快速连接并控制设备，无需本地部署服务器。
 
-**📝 简介：** Tapo 是一个用 Rust 写的库（带 Python 绑定），现在支持了 TP-Link 自己的 TPAP 协议，不再依赖官方 App 或云服务就能本地控制 Tapo 智能设备。这意味着你可以直接通过代码开关灯泡、读取插座功耗，延迟更低也更保护隐私。如果你玩智能家居自动化，这是个值得关注的替代方案。
+**📝 简介：** 有个叫 Tapo 的 Rust/Python 库最近搞定了 TP-Link 的 TPAP 协议，现在可以直接用代码控制 TP-Link 的智能设备了。它最有意思的地方是绕开了官方 App 和云服务，走本地网络直接跟设备对话，响应更快也更私密。如果你玩智能家居又喜欢折腾，这东西比等官方开放 API 靠谱多了。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*
