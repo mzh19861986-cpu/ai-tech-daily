@@ -4,17 +4,15 @@
 
 **1. Mistral Large 4**
 
-   Mistral 发布了 Large 4，这是他们新一代的旗舰大模型。值得关注的点在于，它继续走开源路线，同时在推理和代码能力上对标 GPT-4 级别，给不想被闭源 API 绑死的团队提供了一个更硬的选择。
+   Mistral 发布了 Large 4，这是他们新一代的旗舰大模型，主打更强的推理和多语言能力。值得关注的是，Mistral 一直走开源+商业双轨路线，这次升级意味着欧洲本土模型在跟 GPT、Claude 正面竞争时又多了一张牌。
 
-**2. Nobel Prize in Physics 2026: Francis Halzen**
+**2. EmbeddingGemma 2**
 
-   2026年诺贝尔物理学奖授予 Francis Halzen，表彰他在中微子天文学领域的开创性工作——他主导建成了南极冰立方（IceCube）探测器，利用南极冰层作为介质捕捉来自宇宙深处的高能中微子。这个奖值得关注，因为它标志着天文学正式进入「中微子观测」时代：从此我们不再只靠光来看宇宙，而是能借助这种几乎不与物质作用的幽灵粒子，窥探超新星、黑洞喷流等极端天体内部的信息。
+   EmbeddingGemma 2 是 Google 发布的第二代开源文本嵌入模型，基于 Gemma 3 架构打造，专为检索、聚类、分类等下游任务生成高质量语义向量。它的看点在于用更小的模型尺寸做到了接近甚至超越更大嵌入模型的检索性能，同时延续开放权重策略，意味着开发者可以低成本私有化部署，不必依赖闭源 API 做 RAG 或语义搜索。
 
-**3. EmbeddingGemma 2**
+**3. Paramount Skydance has completed its $111B merger with Warner Bros. Discovery**
 
-   目前没有关于「EmbeddingGemma 2」的公开信息。Google 曾在 2025 年 9 月发布过 EmbeddingGemma（基于 Gemma 3 的 3 亿参数嵌入模型），但截至我的知识截止日期，没有 EmbeddingGemma 2 的发布记录。
-
-如果你手头有具体的发布公告或技术文档，可以把内容贴过来，我帮你提炼。
+   派拉蒙天空之舞（Paramount Skydance）以1110亿美元完成对华纳兄弟探索（Warner Bros. Discovery）的合并，好莱坞两大制片厂正式合体。这意味着传统媒体巨头在流媒体冲击下进一步抱团，合并后的公司手握CBS、CNN、HBO、华纳兄弟影业等大量IP和新闻资产，可能重塑内容制作和发行的竞争格局。
 
 ---
 *3 分钟，掌握 AI 圈动态*

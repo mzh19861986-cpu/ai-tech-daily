@@ -1,38 +1,24 @@
 # 💡 每日开发技巧 - 2026-10-06
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 4 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 2 条
 
 ## 技巧 1
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这个工作把中国哲学里的「中庸」「无为」等思想引入自动驾驶决策，让大模型在处理复杂路况时不只是追求安全和效率的数值最优，还考虑社会规范和伦理平衡。值得关注的点在于：它尝试用哲学框架而非单纯规则约束来指导 LLM 决策，为自动驾驶的「人性化」提供了一条新思路，不过目前还停留在 arXiv 论文阶段，实际路测效果有待验证。
+✨ **是什么：** 这篇论文提出了一个叫 Ch 的自动驾驶决策框架，把中国哲学智慧（比如中庸、和谐这类思想）注入基于检索增强的大语言模型决策流程中，让自动驾驶系统在安全、效率之外，还能兼顾社会规范和伦理判断。
+
+**为什么值得关注：** 现有自动驾驶决策要么纯做数值优化，要么直接用 LLM 预测，几乎没人系统性地把哲学伦理框架嵌进去——而"该不该抢道""如何与行人博弈"这类问题本质上是伦理问题，不是算力问题。这项工作试图给自动驾驶补上"价值判断"这一层，跨学科方向挺有意思，但实际落地效果还有待验证。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
 ## 技巧 2
 
-**About Me: Building, Breaking and Learning Through Software**
+**How IceCube's Sensor Stream Drops Events and How to Recover Them**
 
-✨ 来自苏格兰的学生Marceli Pawliński分享了自己的技术成长路径：靠不断动手做项目、把东西搞坏、再修好，然后在复盘中发现更好的做法。这不是教程也不是产品发布，而是一个开发者用「造—坏—修—重构」的循环来学习的真实样本，对同样靠自学入门的人来说，这种路径比按部就班的课程更有参考价值。
+✨ 南极冰立方中微子天文台每秒产生数百万个光电倍增管波形，一次短暂的网络抖动就可能丢掉整个事件，在数据中留下空洞——这些空洞会偏置通量测量，甚至伪装成新物理信号。这篇文章给出了检测数据丢失并恢复缺失事件的方法，不用重新设计探测器就能补上这些洞。
 
-📎 [阅读原文](https://dev.to/marceli/about-me-building-breaking-and-learning-through-software-3el5)
-
-## 技巧 3
-
-**Google Brings Gemini Guided Vision to Android 9+ for Voice-Led Visual Assistance**
-
-✨ Google把Gemini Live的「引导式视觉」功能下放到Android 9及以上设备，覆盖Gemini Live已支持的地区和语言。简单说，你可以在和Gemini实时语音对话时直接共享摄像头画面，让它“看着”你眼前的东西并用语音告诉你那是什么、该怎么办。值得关注的点在于：这类多模态实时助手不再只是新款旗舰的专属，老设备也能用上，视觉+语音的交互正在从演示变成日常工具。
-
-📎 [阅读原文](https://dev.to/alifar/google-brings-gemini-guided-vision-to-android-9-for-voice-led-visual-assistance-321m)
-
-## 技巧 4
-
-**Building Zenith: What I’ve Learned From Turning Side Projects Into Real Software**
-
-✨ 这篇文章是一位开发者的经验分享：他把自己的副业项目 Zenith（一个检查工具类项目）逐步打磨成了正式可用的软件，复盘了从"玩票"到"认真做产品"的转变过程。值得关注的是，它讲的不是技术细节，而是"side project 怎么才能不死在demo阶段"这个几乎所有独立开发者都会踩的坎——如果你手里正躺着几个半成品项目，这篇会很有共鸣。
-
-📎 [阅读原文](https://dev.to/marceli/building-zenith-what-ive-learned-from-turning-side-projects-into-real-software-30h5)
+📎 [阅读原文](https://dev.to/robust_true_try/how-icecubes-sensor-stream-drops-events-and-how-to-recover-them-3688)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*
