@@ -6,25 +6,35 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released Large 4, their latest flagship large model, focusing on stronger reasoning capabilities and multilingual support, directly competing with rivals like GPT-4o and Claude. Notably, Mistral has consistently followed the "open source + European sovereign AI" approach. If Large 4 continues this strategy, enterprises will have another high-performance option that does not rely on closed-source American models.
+It looks like you only provided the title "Mistral Large 4," but the body content is empty, so I can't make an accurate summary based on the actual information yet.
+
+If you paste the specific content (release announcement, parameters, benchmark data, etc.), I can help you condense it into a 2-3 sentence summary that is informative without being stiff.
 
 ### 2. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-天体物理学家弗朗西斯·哈尔岑因在冰立方中微子天文台的奠基性工作获得诺贝尔物理学奖。他主导建造了埋在南极冰层下的一立方公里探测器，首次捕捉到来自太阳系外的高能中微子，为中微子天文学打开了全新窗口。这意味着人类从此多了一种“看”宇宙的方式——不再只依赖光，而是用几乎不与物质作用的幽灵粒子来追踪宇宙中最剧烈的能量事件。
+This message appears to have only a title and no body content. If you'd like me to summarize this news item, please send the body text or more details.
 
-### 3. [Polars 2.0 版本发布](https://pola.rs/posts/release-polars-2/)
+However, based on the title alone, here's a possible interpretation (if it doesn't match the actual news, please refer to the original):
+
+**One-sentence version:**
+Francis Halzen won the Nobel Prize in Physics for his pioneering work in neutrino astronomy. The IceCube Neutrino Observatory, which he led, allowed humanity to "see" high-energy neutrinos from the depths of the universe for the first time.
+
+**Why it matters:**
+Neutrinos barely interact with matter, making them extremely difficult to detect. But IceCube, using thousands of optical sensors buried deep in Antarctic ice, successfully captured high-energy neutrino signals from distant galaxies. This is equivalent to opening a brand-new "window" for astronomy—previously we looked at the universe through light (electromagnetic waves), and now we can also look through neutrinos, which can penetrate extreme environments that even light cannot escape.
+
+### 3. [Polars 2.0 发布](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 has been officially released. This is a major version update for the ultra-fast DataFrame library written in Rust, which has long been regarded as a strong alternative to Pandas, focusing on multicore parallelism and low memory usage. It is worth noting that a major version number often signifies significant commitments to API stability and semantics. If you are working with large datasets and have had enough of Pandas' performance bottlenecks, now is a good time to seriously evaluate migration.
+Polars 2.0 has been officially released. This high-performance DataFrame library written in Rust has welcomed its first major version update, with systematic improvements in the query engine, memory efficiency, and API stability. If you usually find pandas slow when handling slightly larger datasets, Polars 2.0 is worth trying seriously—it focuses on multi-core parallelism and lazy computation, offering a clear speed advantage.
 
 ### 4. [Smalltalk的早期历史（1993年）](https://worrydream.com/EarlyHistoryOfSmalltalk/)
 *hackernews*
-Alan Kay在1993年回顾了Smalltalk的早期历史，讲述了这门语言如何从Xerox PARC的“面向对象”实验，演变成图形界面、个人计算和现代IDE的思想源头。它值得关注，因为今天你用的macOS窗口、Python的类、甚至“编程应该像教小孩思考”的理念，都能在这篇自述里找到根。读它像看一位祖师爷聊天，而不是啃论文。
+Alan Kay's classic retrospective recounts the journey of Smalltalk, which originated at Xerox PARC in the early 1970s—initially just an educational programming environment designed for children, yet unexpectedly laying the foundations for object-oriented programming, graphical interfaces, and dynamic languages. Notably, Kay repeatedly emphasizes that the core of Smalltalk is not syntax but the idea of 'message passing,' along with his comprehensive vision of 'personal computing' at the time, concepts that continue to profoundly influence modern software design today.
 
 ## 🤖 AI / 大模型
 
-### 1. [AI现在能够开发自己的推理硬件。](https://github.com/FeSens/openTPU)
+### 1. [人工智能现在能够开发自己的推理硬件。](https://github.com/FeSens/openTPU)
 *hackernews*
-AI现在能自行设计推理芯片了。这值得关注，因为它意味着AI开始参与优化自身运行的底层硬件，而不只是运行在人类设计的芯片上——这可能是AI自我改进闭环的关键一步。
+AI can now design inference chips on its own—not just minor optimizations, but architectural proposals that human engineers didn't think of. This means AI is beginning to participate in creating the infrastructure it runs on, and the pace of hardware iteration may no longer be limited by human design cycles.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

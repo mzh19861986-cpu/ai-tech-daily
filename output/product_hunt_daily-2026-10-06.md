@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Brnch](https://www.producthunt.com/products/brnch)
+## 1. [ruOS](https://www.producthunt.com/products/ruos)
 
-**💡 是什么 + 为什么值得试：** Brnch 想解决的是「AI agent 写代码越来越快，但代码托管还停留在人手动提 PR 那套」的问题。如果你已经在用 agent 批量生成和提交代码，可以看看它怎么把评审和托管流程适配到这种新节奏上。
-
----
-## 2. [GeckIt](https://www.producthunt.com/products/geckit)
-
-**💡 是什么 + 为什么值得试：** 如果你同时开多个 Claude Code 会话，切换起来容易乱、也记不住哪个聊到哪了，GeckIt 用一个看板把这些会话摆出来，拖拽管理进度和状态。适合会话开得多、想一眼看清全局的人。
+**💡 是什么 + 为什么值得试：** ruOS 把「云端桌面 + AI Agent」打包成一个开源项目，让你不用自己搭环境、写编排，直接让 AI 在浏览器里的虚拟桌面上替你点鼠标、开应用、跑流程。如果你正想试自动化但不想碰 RPA 那套重工具，它值得拿来跑个 demo 看看。
 
 ---
-## 3. [Extrovert](https://www.producthunt.com/products/extrovert)
+## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
 
-**💡 是什么 + 为什么值得试：** Extrovert 能让你的 AI Agent 直接跑 LinkedIn 外联（发私信、跟进、批量触达），省掉手动一个个点开资料页复制粘贴的重复劳动——如果你的获客或招聘流程依赖 LinkedIn，值得花十分钟接进现有工作流试试。
-
----
-## 4. [Coddy](https://www.producthunt.com/products/coddy)
-
-**💡 是什么 + 为什么值得试：** Coddy 用短小课程让你在碎片时间上手 20 多种编程语言，适合想入门或换语言但总被长教程劝退的人。轻量、有趣、不废话，试试看能不能坚持过第一课。
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服/支持机器人却总是答非所问，这个项目能让 AI 支持助手自动同步站点内容，保持回答准确。想让客服自动化又不想手动维护知识库的话，值得一试。
 
 ---
-## 5. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
+## 3. [Scumble](https://www.producthunt.com/products/scumble)
 
-**💡 是什么 + 为什么值得试：** Willow Knowledge 能把你在 ChatGPT 等 AI 里积累的对话和知识，同步到本地变成一个可搜索、可整理的个人知识库，解决“聊过就忘、找不到”的问题。如果你经常用 AI 处理工作或学习，又想把有价值的内容沉淀下来，值得试试。
-
----
-## 6. [OpenBot](https://www.producthunt.com/products/openbot-3)
-
-**💡 是什么 + 为什么值得试：** OpenBot 是个免费的本地开源聊天机器人，能让你在自己的机器上跑 Grok 风格的对话，不用 API key 也不用联网。如果你想低成本折腾个能多人一起用的 AI 助手、又在意数据不出本地，值得试试。
+**💡 是什么 + 为什么值得试：** 如果你想给图片做局部重绘（去水印、换物体、修瑕疵），又不想依赖商业软件，Scumble 是个开源、专注 inpainting 的编辑器，能直接把 AI 补全流程放进你的操作里。
 
 ---
-## 7. [Lecta](https://www.producthunt.com/products/lecta)
+## 4. [Pheebs](https://www.producthunt.com/products/pheebs)
 
-**💡 是什么 + 为什么值得试：** Lecta 能把你的课堂笔记自动变成和朋友的互动小游戏，让复习不再枯燥。如果你平时记了笔记却提不起劲复习，可以试试用它把知识点变成游戏来巩固记忆。
+**💡 是什么 + 为什么值得试：** Pheebs 帮你量化团队和个人实际怎么用 AI 写代码，而不是靠感觉猜——比如谁在哪些任务上依赖 AI、效率有没有真提升。如果你想知道 AI 工具到底值不值这个投入，它提供的是可追踪的数据支撑。
 
 ---
-## 8. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
+## 5. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
 
-**💡 是什么 + 为什么值得试：** Etsy 卖家最头疼的就是买家消息回不过来，回慢了还可能丢单——这个开源工具能自动生成专业回复，几秒搞定，不用再手忙脚乱。
+**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部跑在本地设备上，让你在不需要联网、不上传任何内容的前提下对笔记做智能处理。如果你在意隐私又想要 AI 辅助记笔记，值得试试。
+
+---
+## 6. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+
+**💡 是什么 + 为什么值得试：** Ghostifier 帮你向那些攥着你个人数据的公司批量发送数据删除请求，省去你逐个翻隐私政策、找客服邮箱的麻烦。如果你在意自己的数据被谁存着、想行使"被遗忘权"又懒得手动折腾，这个工具值得一试。
+
+---
+## 7. [iphone-use](https://www.producthunt.com/products/iphone-use)
+
+**💡 是什么 + 为什么值得试：** `iphone-use` 让 AI agent 直接操作真实 iPhone 的界面，包括那些没有开放 API 的 App，你不用再为自动化折腾越狱或私有接口。如果你想让 AI 帮你跑通手机上的重复操作流程，这个项目值得一试。
+
+---
+## 8. [Chunk](https://www.producthunt.com/products/chunk-2)
+
+**💡 是什么 + 为什么值得试：** Chunk 是一款 macOS 上的时间块管理工具，帮你在日历上把待办事项变成具体的时间段，而不是永远躺在清单里。如果你总是计划得很满却执行不下去，它用可视化时间块让你直面一天到底能塞多少事。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

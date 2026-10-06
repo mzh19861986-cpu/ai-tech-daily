@@ -2,32 +2,36 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Release of Polars 2.0  (⭐ 6.0/10)
-🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
-
-Polars 2.0 正式发布了，这个用 Rust 写的高速 DataFrame 库迎来了首个大版本更新，性能和 API 稳定性都有明显提升。如果你平时用 Pandas 处理稍大规模的数据觉得慢，Polars 2.0 值得认真试试——它原生支持多线程和懒执行，在不少基准测试里比 Pandas 快好几倍。
-
-## 🥈 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
-🔗 [hackernews](https://github.com/FeSens/openTPU)
-
-AI现在能自主设计推理芯片了——不是辅助优化，而是从架构到布局全程自己搞定。这意味着芯片迭代不再卡在人类工程师的产能瓶颈上，AI可以按自己的需求定制硬件、快速试错，把「算法等芯片」变成「芯片追算法」。值得关注的是，这可能让专用推理硬件的进化速度进入一个新量级。
-
-## 🥉 Mistral Large 4  (⭐ 5.0/10)
-🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
-
-抱歉，我这边只收到了标题「Mistral Large 4」，没有看到具体的正文内容。
-
-可以把新闻全文或要点贴过来，我马上帮你提炼成 2-3 句有信息量的总结。
-
-## 4. Nobel Prize in Physics goes to Francis Halzen  (⭐ 4.0/10)
-🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
-
-2025年诺贝尔物理学奖授予了弗朗西斯·哈尔岑（Francis Halzen），以表彰他在中微子天文学领域的开创性工作。他是冰立方中微子天文台（IceCube）的核心领导者，该设施在南极冰层深处埋设数千个探测器，首次捕捉到了来自太阳系外的超高能中微子——这相当于打开了一扇观测宇宙的全新窗口，让我们不再只依赖光（电磁波）来看星星。值得关注的是，这标志着「多信使天文学」时代真正被认可：中微子几乎不与物质反应，能穿透任何屏障，携带着宇宙最狂暴事件（如活动星系核、伽马射线暴）的核心信息，是理解宇宙高能加速器机制的关键钥匙。
-
-## 5. The Early History of Smalltalk (1993)  (⭐ 3.0/10)
+## 🥇 The Early History of Smalltalk (1993)  (⭐ 7.0/10)
 🔗 [hackernews](https://worrydream.com/EarlyHistoryOfSmalltalk/)
 
-Alan Kay 在 1993 年写的这篇回忆录，讲述了 Smalltalk 从 1970 年代 Xerox PARC 诞生到演化的早期历史。它值得一读，因为 Smalltalk 是第一个真正把「面向对象」和「图形界面」落地的语言环境，直接启发了后来的 Mac、Windows 乃至现代 IDE 的设计思路。如果你好奇今天编程世界的一些底层观念从哪来，这篇就是源头之一。
+Smalltalk 是第一个完全面向对象的编程语言，由 Alan Kay 等人在施乐帕克研究中心（Xerox PARC）于 1970 年代开发，这篇文章是 Kay 本人对这段早期历史的回顾。它值得关注，因为 Smalltalk 不只是一门语言，更带来了窗口、图标、鼠标、集成开发环境这些今天我们用的一切——没有它，就没有 Mac、Windows 和现代 GUI。
+
+## 🥈 Release of Polars 2.0  (⭐ 6.0/10)
+🔗 [hackernews](https://pola.rs/posts/release-polars-2/)
+
+Polars 2.0 正式发布，这是一个用 Rust 编写的高性能 DataFrame 库，主打比 pandas 更快的处理速度和更低的内存占用。如果你日常要处理中大规模数据、又觉得 pandas 越来越吃力，这次的大版本升级值得认真看一下——API 更稳定，生态也在快速补齐。
+
+## 🥉 AI is now capable of developing its own inference hardware  (⭐ 6.0/10)
+🔗 [hackernews](https://github.com/FeSens/openTPU)
+
+AI现在能自己设计推理芯片了——不是优化现有架构，而是从头生成可流片的硬件方案。这意味着AI开始参与自身算力底座的迭代，未来模型迭代速度可能不再受制于人类芯片设计周期。
+
+## 4. Mistral Large 4  (⭐ 5.0/10)
+🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
+
+Mistral 发布了新一代旗舰模型 Large 4，主打更强的推理能力和多语言支持，同时保持相对高效的推理成本。值得关注的是，它延续了 Mistral 一贯的「开源友好 + 欧洲主权 AI」路线，对想找 GPT-4 替代方案、又在意数据合规的团队来说，是个实际可选项。
+
+## 5. Nobel Prize in Physics goes to Francis Halzen  (⭐ 5.0/10)
+🔗 [hackernews](https://www.nobelprize.org/prizes/physics/2026/)
+
+好的，这条消息我需要先核实一下——Francis Halzen（冰立方中微子天文台前首席科学家）获得诺贝尔物理学奖的说法，目前我没有可靠来源可以确认。如果这是真实新闻，请把原始报道或链接发给我，我来帮你提炼。
+
+如果这是个假设/标题党场景，也告诉我，我可以按「假设这条成立」的方式写。
+
+先把已确认的背景给你：Francis Halzen 是威斯康星大学麦迪逊分校物理学家，IceCube 中微子天文台的核心推动者。该台2013年首次探测到高能宇宙中微子，2017年锁定第一个中微子源——耀变体 TXS 0506+056，2018年确认NGC 1068为第二个中微子源。这些工作让「中微子天文学」从理论变成观测学科。
+
+如果你要的是**已确认的诺奖**，请补充年份或直接发链接，我立刻给你
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
