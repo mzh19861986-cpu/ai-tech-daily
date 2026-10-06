@@ -14,29 +14,27 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral 发布了第四代旗舰大模型 Mistral Large 4，在推理、多语言和代码能力上全面升级，同时保持了相对轻量的部署成本。值得关注的是，它延续了 Mistral 一贯的「高性能+可商用+欧洲数据合规」路线，对想找 GPT-4 替代方案又不想被美国云绑定的团队来说，是个务实的新选项。
+看起来你只发了标题，内容部分还是空的。能把 Mistral Large 4 的具体内容（发布公告、技术细节、基准数据等）贴过来吗？我拿到素材就给你写。
 
 ### 2. [Nobel Prize in Physics goes to Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-这个标题有点误导——2025年诺贝尔物理学奖并非单独颁给Francis Halzen，而是授予了John Clarke、Michel Devoret和John Martinis，表彰他们在宏观量子隧穿和电路量子电动力学方面的实验发现。
-
-如果你看到的是Halzen相关的消息，那更可能是他获得了其他荣誉（比如基础物理学突破奖），因为他是冰立方中微子天文台（IceCube）的首席科学家，用南极冰层探测来自宇宙深处的中微子。这是完全不同的领域，值得留意别混淆了。
+弗朗西斯·哈尔岑（Francis Halzen）因在冰立方中微子天文台（IceCube Neutrino Observatory）的奠基性工作而获得诺贝尔物理学奖，该天文台位于南极冰层深处，通过探测中微子来观测宇宙中最剧烈的天体过程。值得关注的是，这一荣誉不仅是对他个人数十年坚持的认可，更标志着中微子天文学从“理论构想”正式成为“主流观测手段”——人类从此有了除光子和引力波之外的第三种“宇宙信使”。
 
 ### 3. [Release of Polars 2.0](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 正式发布，这个用 Rust 写的数据处理库在性能和内存效率上继续碾压 pandas，尤其适合处理大规模数据集。值得关注的是，2.0 版本意味着 API 趋于稳定，生产环境可以更放心地迁移了。
-
-## 🛠️ 开发工具
-
-### 1. [Adobe Creative Suite Cleanroom Port to Rust](https://github.com/storytold/photocraft)
-*hackernews*
-Adobe 用 Rust 语言从零重写了一套 Creative Suite 的核心组件，采用“洁净室”方式——不直接复用原有 C++ 代码，仅依据行为规范重新实现。这意味着老牌创意软件开始向内存安全、现代工具链迁移，长期困扰的崩溃和安全漏洞问题有望从语言层面根治。
+Polars 2.0 正式发布了，这是一个用 Rust 写的高速 DataFrame 库，主打比 pandas 更快的查询引擎和更低的内存占用。值得关注的是它这次把 API 稳定下来、补齐了流式处理能力，意味着可以真正用在生产环境里，而不只是实验性替代品——如果你被 pandas 在大数据量下的性能坑过，这个版本值得认真看一眼。
 
 ## 🤖 AI / 大模型
 
-### 1. [AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
+### 1. [JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 *hackernews*
-AI 现在能自己设计推理芯片了——不是辅助优化，而是端到端完成硬件架构的探索与生成。这意味着芯片迭代有机会跳出人类工程师的直觉惯性，去尝试那些我们没想到的设计空间。值得关注的点在于：如果 AI 设计的硬件反过来又加速 AI 训练，这个自我强化的循环会让算力进步的速度彻底脱离传统节奏。
+JetBrains 2024 年出现了有记录以来的首次净亏损，这家以 IntelliJ IDEA、Kotlin 和 Fleet 闻名的开发工具公司，长期以来一直是自给自足、高利润的行业标杆。亏损本身不算惊人，但信号意义很强：连最稳健的开发者工具厂商都开始承压，背后是 AI 编程助手（如 Cursor、Copilot）对传统 IDE 商业模式的正面冲击。值得关注的是它接下来会不会被迫调整订阅定价或加速自家 AI 功能的变现。
+
+## 🛠️ 开发工具
+
+### 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
+*hackernews*
+Tapo 这个 Rust/Python 库现在直接实现了 TP-Link 私有的 TPAP 协议，不再依赖云 API 或逆向出来的 HTTP 接口，能本地控制 TP-Link 的智能设备（比如插座、灯泡、摄像头）。对玩智能家居的人来说这挺实用——响应更快、断网也能用，还不用把设备凭证交给厂商服务器。
 
 
 ---

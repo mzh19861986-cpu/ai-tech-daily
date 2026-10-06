@@ -2,21 +2,21 @@
 
 > 精选免费好用的 AI 工具 | AI 帮你筛过，只留真正有用的 | 共 2 个
 
-## 1. [Adobe Creative Suite Cleanroom Port to Rust](https://github.com/storytold/photocraft)
+## 1. [JetBrains reported a net financial loss first time in its tracked history](https://www.helgilibrary.com/companies/jetbrains)
 
-**👥 适合谁：** 最适合**系统级底层库开发者**用（尤其是需要在无 GPL 污染、可商用授权环境下，用 Rust 重写 Adobe 核心图像/排版算法并规避法律风险的工程团队）。
+**👥 适合谁：** 这款工具最适合**关注科技公司财务与行业趋势的独立开发者**——它用一句话告诉你：连 JetBrains 都首次亏损了，靠 IDE 订阅吃饭的时代可能正在变天。
 
-**🚀 怎么开始：** 直接克隆仓库后用 `cargo build --release` 本地编译即可运行，无需 API key（需先装好 Rust 工具链）。
+**🚀 怎么开始：** 直接打开相关新闻网页或 JetBrains 官方公告即可阅读，无需 API key 或本地部署；想核实数据的话，去 JetBrains 官网的财务/年度报告页面查看即可。
 
-**📝 简介：** Adobe 正在用 Rust 语言对 Creative Suite 进行“洁净室”重写，即不参考原有代码、仅凭功能规格重新实现，以规避法律和架构上的历史包袱。这值得关注，因为如果成功，它可能让 Adobe 摆脱臃肿的陈年代码库，换来更好的性能和内存安全——不过“重写一个年收入数十亿的生产力套件”本身也是软件工程里风险最高的赌注之一。
+**📝 简介：** JetBrains 首次出现净亏损，打破了其有记录以来的持续盈利历史。这家靠 IntelliJ IDEA、Kotlin 和全家桶 IDE 吃饭的公司，一直是开发者工具圈子里“闷声赚钱”的标杆，这次转亏意味着连最稳的订阅制工具厂商也开始扛不住研发投入和 AI 转型的成本压力。值得关注的是，它是否会被迫调整产品定价或订阅策略，进而影响全球开发者的日常工具链选择。
 
-## 2. [AI is now capable of developing its own inference hardware](https://github.com/FeSens/openTPU)
+## 2. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 
-**👥 适合谁：** AI硬件研究者与芯片工程师——用AI自动探索和优化推理专用硬件设计。
+**👥 适合谁：** 最适合需要自动化和控制 TP-Link Tapo 智能设备的 Rust 或 Python 开发者使用。
 
-**🚀 怎么开始：** 这个工具本质上是一篇关于AI自主设计推理硬件的技术报道，直接打开网页即可阅读，无需API key或本地部署。
+**🚀 怎么开始：** Tapo 是一个 Rust/Python 库，用于通过 TP-Link 的 TPAP 协议与 Tapo 设备通信。你可以直接从 GitHub 或 PyPI 安装该库，然后在代码中导入并连接你的 Tapo 设备。
 
-**📝 简介：** AI现在能自己设计推理芯片了——不是辅助优化，而是从架构层面自主完成设计。这意味着硬件迭代可能不再完全依赖人类工程师，芯片研发周期和成本有望大幅压缩。值得关注的是，这打开了AI自我加速的闭环：更好的硬件训练更强的AI，更强的AI设计更好的硬件。
+**📝 简介：** Tapo 这个 Rust/Python 库现在支持了 TP-Link 的 TPAP 协议，意味着你可以直接用代码控制 TP-Link 的智能设备（比如插座、灯泡、摄像头），不用再依赖官方 App 或云端。对玩智能家居自动化的人来说，这相当于打开了本地控制的大门——响应更快、隐私更好、也不怕厂商服务器抽风。
 
 ---
 *收藏起来，慢慢试！觉得有用记得分享给朋友~*

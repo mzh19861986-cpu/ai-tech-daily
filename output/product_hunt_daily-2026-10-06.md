@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Extrovert](https://www.producthunt.com/products/extrovert)
+## 1. [Doco](https://www.producthunt.com/products/doco-4)
 
-**💡 是什么 + 为什么值得试：** Extrovert 让你的 AI agent 直接跑 LinkedIn 外联，自动发私信、跟进回复，不用手动一个个点。如果你在做销售或找人合作，想把 LinkedIn 开发流程自动化，可以试试。
-
----
-## 2. [iphone-use](https://www.producthunt.com/products/iphone-use)
-
-**💡 是什么 + 为什么值得试：** 想让 AI 自动操作 iPhone，但很多 App 根本没开放 API——iphone-use 就是让 AI 直接像人一样点真实屏幕，绕开接口限制，适合做自动化测试或流程模拟的可以试试。
+**💡 是什么 + 为什么值得试：** Doco 是个帮你根据场景和氛围发现合适音乐的开源项目，省去在歌单里翻来覆去挑歌的麻烦。如果你想要"打开就有对的音乐在放"的体验，值得试试。
 
 ---
-## 3. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
 
-**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力直接跑在你本机，断网也能用，不用担心笔记内容被上传到云端。如果你需要一个私密、离线、又能用 AI 整理和检索笔记的工具，值得试试。
-
----
-## 4. [GeckIt](https://www.producthunt.com/products/geckit)
-
-**💡 是什么 + 为什么值得试：** 如果你同时开好几个 Claude Code 会话，切来切去经常搞混进度和上下文，GeckIt 用看板把每个聊天当成一张卡片来管理，让多任务开发一眼看清状态。专注做终端用户的多会话管理，值得在重度使用 Claude Code 时试一下。
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服机器人却还在用旧知识回答用户，Cosmic AI Support Agent 能让它自动跟随站点内容同步，省去手动维护知识库的麻烦。适合内容频繁变动、又不想反复训练机器人的团队试试。
 
 ---
-## 5. [Incredible](https://www.producthunt.com/products/incredible)
+## 3. [Chunk](https://www.producthunt.com/products/chunk-2)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操作电脑，省去记快捷键或翻菜单的麻烦，适合想边做别的事边控制机器的场景。如果你对语音交互或自动化桌面操作感兴趣，它是个轻量、值得一试的开源方案。
-
----
-## 6. [Fuse AI](https://www.producthunt.com/products/fuseai)
-
-**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 和一个 MCP 把分散的 GTM 工具整合成统一的技术栈，省去你在多个数据源和 API 之间反复对接的麻烦。如果你在搭销售或增长工具链时被集成工作拖慢，这个项目值得花十分钟看看。
+**💡 是什么 + 为什么值得试：** 如果你总在待办清单里迷失重点，Chunk 让你在 macOS 上按时间块规划日程，把任务直接钉到具体时段里。它是原生轻量工具，适合想用时间盒法逼自己专注的人，不用再拿日历硬凑。
 
 ---
-## 7. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 4. [ruOS](https://www.producthunt.com/products/ruos)
 
-**💡 是什么 + 为什么值得试：** OpenBot 让你在本地跑一个免费、开源的多人在线 AI 机器人，不用依赖 Grok 或任何付费 API，适合想自己掌控数据、又想和朋友一起玩的人。如果你在找一个可定制、无使用限制的聊天机器人方案，它值得一试。
+**💡 是什么 + 为什么值得试：** ruOS 把浏览器变成一个云桌面，你可以在上面直接跑 AI agent 替你完成操作类任务，省去本地配环境和写脚本的麻烦。如果你经常需要自动化网页操作或想试试 agent 实际能干多少活，它上手门槛低，值得一看。
 
 ---
-## 8. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 5. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
 
-**💡 是什么 + 为什么值得试：** AUDR 提供了一套统一的标准来记录 AI Agent 每次运行的成本，让你不再靠猜或自己拼凑日志来算账。如果你同时在跑多个 Agent 或模型，想把开销拆清楚、做对比，这个标准能直接省掉你自建成本追踪体系的时间。
+**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部放在本地运行，你不用把会议记录、灵感草稿上传到任何云端就能做总结、问答和整理。如果你在意隐私又想要 AI 辅助记笔记，它值得一试。
+
+---
+## 6. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+
+**💡 是什么 + 为什么值得试：** Ghostifier 帮你批量向各家平台发送数据删除请求，省去一个个手动翻隐私政策、找客服入口的麻烦。如果你在意自己的数据被哪些公司留着，用它跑一遍能省下不少时间和扯皮。
+
+---
+## 7. [iphone-use](https://www.producthunt.com/products/iphone-use)
+
+**💡 是什么 + 为什么值得试：** `iphone-use` 让 AI agent 直接操控真实 iPhone 上的任意 app，包括那些没有开放 API 的——不用再为了自动化去逆向接口或写脆弱的 UI 脚本。如果你的任务需要跨 app 操作（比如自动回复、批量处理、流程测试），而官方又没给接口，这个可以直接上手试试。
+
+---
+## 8. [Rill Browser](https://www.producthunt.com/products/rill-3)
+
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器里跟你同步干活，省得你在编辑器和终端之间来回切换。如果你常让 AI 写前端或调试网页，能边看效果边对话会比纯命令行顺手不少，值得试一下。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

@@ -6,27 +6,27 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Sorry, you only sent the title "Mistral Large 4" without the body content, so I can't extract specific information.
-
-Paste the news body here, and I'll summarize it right away in the style you want.
+Mistral发布了Large 4，这是他们最新的旗舰大模型，主打更强的推理能力和多语言支持。如果你在关注开源模型能否追上闭源第一梯队，这个版本值得一看。
 
 ### 2. [诺贝尔物理学奖授予弗朗西斯·哈尔岑](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-2026年诺贝尔物理学奖授予Francis Halzen，以表彰他在冰立方中微子天文台的奠基性工作——利用南极冰盖深处一立方公里体积的探测器捕捉来自宇宙深处的高能中微子。这项成果之所以值得关注，是因为它开启了一扇全新的“宇宙观测窗口”：中微子几乎不与物质反应，能穿透星系和恒星而不被吸收，让我们第一次能直接“看到”超新星、黑洞喷流等极端天体内部发生了什么，这是传统光学或射电望远镜永远做不到的。
+弗朗西斯·哈爾岑（Francis Halzen）因在冰立方中微子天文台（IceCube Neutrino Observatory）的开创性工作而获得诺贝尔物理学奖。他主导建造了埋在南极冰层下的一立方公里探测器，首次捕捉到来自银河系外的中微子，打开了观察宇宙的全新窗口。这意味着天文学不再只依赖光和电磁波，中微子天文学正式成为一门实证科学。
 
 ### 3. [Polars 2.0 发布](https://pola.rs/posts/release-polars-2/)
 *hackernews*
-Polars 2.0 has been officially released, marking a major version update for this high-performance DataFrame library written in Rust. If you find pandas slow when handling even moderately large data, Polars' multi-threaded query engine and lazy evaluation can deliver order-of-magnitude speed improvements—version 2.0 takes another step forward in API stability and ecosystem compatibility, making it worth trying for migration from pandas or for new projects.
+Polars 2.0 has been officially released. This is an ultra-fast DataFrame library written in Rust, featuring a query engine that is faster than pandas and lower memory usage. Notably, its API is now more stable and its ecosystem more mature. If your data processing workflow is often bottlenecked by pandas' performance, this is a good time to seriously consider migrating.
 
 ## 🤖 AI / 大模型
 
-### 1. [人工智能现已能够开发自身的推理硬件。](https://github.com/FeSens/openTPU)
+### 1. [JetBrains报告其历史记录中首次出现财务净亏损](https://www.helgilibrary.com/companies/jetbrains)
 *hackernews*
-AI现在能自己设计推理芯片了——不是优化现有架构，而是从零生成硬件方案。这件事的关键信号在于：芯片设计的核心瓶颈正从“人懂不懂”转向“算力够不够”，而AI恰好最擅长对设计空间进行暴力搜索。如果这条路走通，定制推理芯片的门槛会大幅降低，未来每一家大模型公司都可能拥有为自己模型“量体裁衣”的私有芯片，而不是都去抢英伟达的通用卡。
+JetBrains experienced its first net loss in 2024, breaking the company's recorded history of continuous profitability. The loss was mainly due to the impact of AI programming tools (such as Cursor and GitHub Copilot), which put pressure on its core IDE subscription revenue, while the company also invested heavily in developing its own AI features. For developers, this means JetBrains may be forced to accelerate product transformation or adjust pricing strategies—the tools you commonly use are likely to undergo significant changes next.
 
-### 2. [JetBrains报告了其历史记录中的首次净财务亏损。](https://www.helgilibrary.com/companies/jetbrains)
+## 🛠️ 开发工具
+
+### 1. [Tapo（Rust/Python库）现在支持TP-Link的TPAP协议](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 *hackernews*
-JetBrains experienced its first net loss on record in fiscal year 2024, breaking a years-long streak of profitability. The company, known for IntelliJ IDEA, Kotlin, and its suite of IDEs, attributed the loss primarily to a surge in AI R&D spending and slowing subscription growth. Notably, this may signal collective pressure across the developer tools industry during the AI transition—even JetBrains, the most profitable player, has started burning cash.
+Tapo 是一个用 Rust 和 Python 编写的库，现已支持直接与 TP-Link 设备通过 TPAP 协议通信——这是 TP-Link 设备间使用的底层通信协议。这意味着你可以通过代码绕过官方 App，直接控制家中的 TP-Link 智能插座、灯泡等设备，对于希望实现本地自动化或觉得云服务响应慢的用户来说非常实用。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

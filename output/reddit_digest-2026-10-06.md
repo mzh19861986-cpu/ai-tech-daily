@@ -7,22 +7,24 @@
 ### 1. [[D] Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1wvi1j8/d_selfpromotion_thread/)
 *reddit/r/MachineLearning*
 
-这看起来像是一个社区论坛上的「自我推广专帖」——允许成员发布个人项目、创业公司、产品、合作需求或博客，但要求标明定价和付款方式，同时禁止短链接、聚合站和自动订阅链接。值得关注的是，这类帖子本质上是社区在「内容治理」和「创作者曝光」之间找平衡：既给成员一个集中的推广出口，又用明确规则（禁滥用、违者封号）防止刷屏和信任透支。如果你在运营社群，这种「集中放行 + 硬性约束」的做法挺值得借鉴。
+这是一个面向开发者和创作者的「自荐专区」——你可以在这里发布个人项目、创业产品、博客或协作需求，同时必须注明付费方式和定价。它的价值在于把零散的推广信息集中到一个可信渠道，避免社区被链接缩短器和自动订阅链接刷屏，滥用则会直接封禁。
 
 ### 2. [Transformers vs RNNs vs SSMs: Where Does Memory Actually Live? [D]](https://www.reddit.com/r/MachineLearning/comments/1wz71g3/transformers_vs_rnns_vs_ssms_where_does_memory/)
 *reddit/r/MachineLearning*
 
-把 RNN、Transformer、SSM 放在「工作记忆存在哪」这一个视角下对比，作者发现很多原本零散的性能差异一下子变得好理解了——Transformer 把记忆摊在随序列增长的 KV cache 里，RNN 把它压进固定大小的隐藏状态，SSM 则介于两者之间、用状态空间做压缩但保留并行训练。值得关注是因为「记忆放哪」直接决定了长上下文的成本曲线、推理速度和能力上限，这比单纯比 benchmark 更能解释为什么不同架构在不同任务上各有胜负。
+RNN、Transformer和SSM的核心差异，可以从「工作记忆存在哪里」这个角度一刀切开：RNN把记忆压进一个固定大小的隐状态，Transformer靠注意力让每个token直接回看全部历史（记忆存在KV对里），而SSM用可学习的递归动态做有选择的压缩。这个视角之所以值得关注，是因为它把「长上下文为什么贵」「SSM为什么在某些序列任务上更省」这类工程问题，还原成了记忆容量与访问方式的设计取舍，而不只是架构口味之争。
 
 ### 3. [Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 *reddit/r/MachineLearning*
 
-这篇论文把 TabPFN 的「先验拟合网络」思路搬到了语言上：模型先在一套合成的、非语言的数据上预训练，然后不用任何梯度更新，仅靠上下文就能学会一门自然语言。值得关注的是，它证明了「学会学习」这件事可以不依赖真实语言数据，合成先验就够——这对低资源语言和快速适配场景可能是个新方向。
+这篇论文把 TabPFN 那套「先验拟合网络」的思路搬到了自然语言上：模型只在一个合成的、非语言的先验数据上训练，却能纯靠上下文（in-context）学会一门真实语言，无需针对该语言的梯度更新。
+
+值得关注的是它证明了「学习如何学习」这件事可以不依赖真实语料预训练——上下文学习能力本身可以是通用的、被先验数据"教"出来的。
 
 ### 4. [Embedding Every Font with Neural Networks makes some Nice Structures (including a flower) [P]](https://www.reddit.com/r/MachineLearning/comments/1wypbnf/embedding_every_font_with_neural_networks_makes/)
 *reddit/r/MachineLearning*
 
-作者花一年做字体搜索工具，核心思路是用神经网络为每款字体生成 embedding 向量。有意思的是，副产品比正主还吸睛——预训练模型在对字体做嵌入时，自发形成了漂亮的结构，甚至冒出一朵「花」。这值得关注，因为它说明神经网络在无监督状态下也能从字体这种高维视觉数据里学出有组织的表示，算是意外的美学证据。
+有人用神经网络给每种字体生成**向量嵌入**，本意是做字体搜索工具，结果在预训练阶段意外发现：这些嵌入空间里自发涌现出漂亮的结构——包括一朵"花"的形状。值得关注的点在于，这说明神经网络不只是黑箱工具，它学到的表征本身就藏着可被可视化的几何秩序；对做字体检索、相似字体推荐的人来说，这种结构化嵌入可能直接提升匹配效果，而不需要额外的后训练。
 
 ---
 *内容来自 Reddit 公开社区，由 AI 自动摘要生成。*
