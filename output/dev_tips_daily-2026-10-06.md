@@ -6,7 +6,7 @@
 
 **Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage**
 
-✨ 美国两党议员近期提出多项法案，拟在全国层面对Flock Safety的AI车牌追踪系统进行监管。此前404 Media的调查报道揭露，这套系统已被全美数千个执法机构接入，形成了事实上不受约束的全民车牌监控网络，而相关法律却严重滞后。值得关注的是，这是立法者首次针对具体监控技术公司推动系统性立法，而非停留在零散的隐私辩论层面——如果法案推进，可能为其他AI监控技术的监管立下先例。
+✨ 美国两党议员近期提出多项法案，旨在限制Flock Safety这套AI车牌识别与监控系统的扩张，直接回应了404 Media此前一系列揭露其隐私滥用风险的报道。Flock原本主打“帮社区抓贼”，但调查发现其数据可被跨州共享、用于追踪移民和堕胎者等敏感场景。这值得关注，因为它是美国监控技术领域少见的、由媒体调查直接推动立法反制的案例，也标志着AI安防走向强监管的转折点。
 
 📎 [阅读原文](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
 
@@ -14,7 +14,7 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学思想（比如中庸、无为而治）引入自动驾驶的决策系统。具体做法是用检索增强的大模型（RAG）来指导车辆在复杂交通场景中的判断，让决策不仅考虑安全和效率，还兼顾伦理和社会规范。值得关注的是，这是第一次系统性地把东方哲学框架和LLM自动驾驶决策结合起来，为「AI该怎么做人」这个老问题提供了一个不一样的文化视角。
+✨ 这篇论文尝试把中国哲学智慧（比如中庸、无为等思想）引入自动驾驶决策系统，让大语言模型在复杂交通场景中不只是追求安全和效率，还能兼顾伦理和社会规范。有意思的点在于：它用检索增强的方式让LLM参考哲学原则来做决策，算是给自动驾驶的"价值对齐"问题提供了一个东方视角的新思路——毕竟现在主流方案基本是纯工程或西方伦理学框架。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
@@ -22,9 +22,7 @@
 
 **Learning to Learn a Language: in-context learning of natural language from a synthetic non-linguistic prior [R]**
 
-✨ 这篇论文把 PFN（先验拟合网络）的思路从表格数据搬到了语言上：先让模型只看合成的「非语言」序列做预训练，之后不给任何梯度更新，它就能在上下文中直接学会一门自然语言的任务。
-
-值得关注的是，这说明「从上下文里学新东西」这种能力，可能不需要真实语言数据来培养——合成先验就够了，这对低资源语言和快速适配场景是个有意思的信号。
+✨ 研究人员把 TabPFN 那套「先验拟合网络」的思路搬到了语言上：先只让模型看合成数据，再用上下文学习的方式去理解真实自然语言，全程不碰真实语料训练。这项工作的价值在于，它验证了「从纯合成、非语言先验里长出语言理解能力」这条路是走得通的——意味着未来训练语言模型可能不再需要海量真实文本，合成数据就能撑起上下文学习。
 
 📎 [阅读原文](https://www.reddit.com/r/MachineLearning/comments/1wyzhdw/learning_to_learn_a_language_incontext_learning/)
 

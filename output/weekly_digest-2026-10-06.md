@@ -14,29 +14,27 @@
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只发了标题「Mistral Large 4」，没有附上正文内容，所以我暂时没法做具体的总结。
+好的，我需要先看到具体内容才能写总结。你只给了标题「Mistral Large 4」，没有提供新闻正文。把内容贴过来，我马上帮你提炼。
 
-不过先给你个快速背景：Mistral Large 是法国 AI 公司 Mistral 的旗舰大模型系列，主打强推理 + 多语言能力，通常是闭源商用。如果真出到第 4 代，值得关注的点一般是：推理性能对标 GPT/Claude 顶级模型到什么程度、是否继续保持对欧洲语言和代码的强项、以及定价和 API 可用性。
-
-把正文贴过来，我就能给你提炼成 2-3 句带信息量的总结。
-
-### 2. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
+### 2. [Berthd](https://berthd.app/)
 *hackernews*
-这条新闻目前只有标题，没有正文内容，无法确认 2026 年诺贝尔物理学奖是否真的授予了 Francis Halzen（他长期主导 IceCube 中微子天文台，若获奖大概率与此相关）。如果该消息属实，值得关注的点是：中微子天文学可能首次拿到诺奖级别的认可，这意味着人类用“看不见的粒子”观测宇宙的方式，正式从边缘走向主流。
+目前没有关于「Berthd」的可靠技术信息——它不像是一个已知的产品、项目或技术概念，可能是拼写有误（比如 Berth、Berthed、Berthold？），也可能是一个尚未公开发布或极小众的东西。
 
-### 3. [Berthd](https://berthd.app/)
-*hackernews*
-抱歉，我这边只拿到了标题「Berthd」，没有看到具体内容，暂时无法总结。方便把正文或链接发过来吗？我马上帮你提炼。
+如果你能补充一点背景（比如在哪儿看到的、是软件/硬件/公司名？），我可以马上给你一个有信息量的总结。
 
-### 4. [Benchmark in Milliseconds](https://matklad.github.io/2026/10/05/benchmark-milliseconds.html)
+### 3. [Nobel Prize in Physics 2026: Francis Halzen](https://www.nobelprize.org/prizes/physics/2026/)
 *hackernews*
-Benchmark in Milliseconds 是一个把性能基准测试的颗粒度精确到毫秒级的工具/方法，能让你看清那些被秒级计时掩盖的微小性能波动。它值得关注是因为，现代系统的优化空间往往就藏在这些毫秒级差异里，早一步发现抖动或退化，就能避免线上事故。
+这条新闻目前只有一个标题，正文内容缺失，我无法确认2026年诺贝尔物理学奖是否真的颁给了Francis Halzen，也没法核实具体获奖理由。如果这是你看到的真实新闻，建议补充正文或来源链接，我再帮你提炼「是什么」和「为什么值得关注」。
+
+### 4. [Lawmakers Introduce Multiple Laws to Curb Flock After 404 Media Coverage](https://www.404media.co/lawmakers-introduce-multiple-laws-to-curb-flock-after-404-media-coverage/)
+*hackernews*
+美国两党议员近日提出多项法案，旨在限制警方和私人机构使用Flock Safety的AI车牌识别摄像头网络。此前404 Media的调查报道揭露，该系统已被用于追踪移民、监控堕胎诊所，甚至出现警员滥用查询前女友等严重隐私侵犯行为。值得关注的是，这是立法者首次针对单一监控技术公司发起系统性立法行动，标志着围绕AI大规模监控的隐私博弈从舆论批评进入了实质性立法阶段。
 
 ## 🛠️ 开发工具
 
 ### 1. [Tapo (Rust/Python library) now speaks TP-Link's TPAP protocol](https://mihai.dinculescu.dev/posts/tapo-speaks-tpap/)
 *hackernews*
-Tapo 是一个用 Rust 和 Python 写的库，现在开始支持 TP-Link 的 TPAP 协议，能直接跟 TP-Link 的新款智能设备（比如摄像头、门铃）通信了。这意味着你可以用这个开源库绕开官方 App 的封闭生态，在本地或自己的脚本里控制设备，对玩智能家居自动化的人来说是个实用的升级。
+Tapo 是一个用 Rust 和 Python 写的库，现在它能直接说 TP-Link 私有协议 TPAP 了。这意味着你可以绕过官方 App 和云服务，在本地直接控制 TP-Link 的智能设备（插座、灯泡、摄像头等），响应更快、隐私也更有保障。对喜欢自建智能家居、走本地化路线（比如 Home Assistant）的人来说，这是个很实用的进展。
 
 
 ---

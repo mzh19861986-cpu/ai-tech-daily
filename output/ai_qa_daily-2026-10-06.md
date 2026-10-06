@@ -4,31 +4,31 @@
 
 ## Q1: Beam: Reflection's 501B open-weight model？
 
-**A:** Reflection 开源了 501B 参数的大模型 Beam，是目前规模最大的开放权重模型之一。它的看点在于：大厂之外的公司用开源方式把参数推到 500B 级别，意味着社区能直接拿到接近顶级闭源模型的能力做微调和部署，而不只是看 API 演示。
+**A:** Beam 是 Reflection 推出的一个 501B 参数的开源权重模型，主打推理能力，参数规模在开源阵营里属于第一梯队。值得关注的点在于：它把此前闭源级别的推理性能下放到了可自部署的权重里，对想自己掌控模型、又不想在能力上妥协的团队来说，是个新的选项。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
 ## Q2: Email Self Hosters - what are you using?？
 
-**A:** 自建邮件服务器圈子里，maddy 是个挺受欢迎的选择——单二进制文件、配置简单，适合管理多域名和 catch-all 邮箱。不过这位用户的槽点也很典型：iOS 原生邮件客户端连接慢得让人抓狂，这类"能用但不够顺"的体验，恰恰是自建邮件最劝退的地方。
+**A:** 自己搭邮件服务器的人越来越多了，目前社区里讨论比较多的方案是 **maddy**——一个用 Go 写的轻量级邮件服务，支持多域名和 catch-all 邮箱。值得关注是因为它比 Postfix+Dovecot 那套传统组合简单得多，但作者提到 iOS 原生邮件客户端连接它时慢得让人抓狂，这也是自建邮件目前最现实的痛点之一。
 
 📎 更多阅读：[Email Self Hosters - what are you using?](https://lobste.rs/s/rwloew/email_self_hosters_what_are_you_using)
 
 ## Q3: A sustainable web career, for when all this blows over？
 
-**A:** 这篇讨论来自 Lobste.rs 社区，主题是「等这波（AI 热潮/行业动荡）过去之后，如何经营一份可持续的 Web 开发生涯」。它值得关注的点在于：当整个行业都在追逐短期风口时，作者在认真讨论怎么让技术人的职业生涯活得更久、更稳，而不是被下一轮泡沫裹挟着走。
+**A:** 这篇文章讨论的是如何构建一份可持续的Web开发生涯——不是追逐热点框架和短期红利，而是建立能长期积累、抗周期波动的技能与心态。值得关注的点在于：当AI和行业震荡让很多人焦虑「这行还能干多久」时，它提供了一种把职业当耐力赛而非冲刺跑的务实视角。
 
 📎 更多阅读：[A sustainable web career, for when all this blows over](https://dbushell.com/2026/10/07/sustainable-web-career/)
 
 ## Q4: Pared - remove unwanted Apple Intelligence models without disabling SIP？
 
-**A:** Pared 是一个开源小工具，能在保持系统完整性保护（SIP）开启的前提下，删除 macOS 上不想要的 Apple Intelligence 模型文件。对担心这些模型占用数 GB 磁盘空间、又不想为了清理而关掉 SIP 冒安全风险的用户来说，它提供了一个更安全的折中方案。
+**A:** 苹果在 macOS 中预装了不少 Apple Intelligence 模型，占空间又不好删，Pared 这个小工具能帮你把不需要的模型清掉，而且不用关闭 SIP（系统完整性保护）。它解决的是「想瘦身又不想破坏系统安全」这个矛盾，适合那些磁盘紧张或者用不上全部 AI 功能的 Mac 用户。
 
 📎 更多阅读：[Pared - remove unwanted Apple Intelligence models without disabling SIP](https://github.com/4evy/pared)
 
 ## Q5: Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery？
 
-**A:** AI智能体已经能写科学计算代码了，但「写出能跑的代码」和「真正改进算法」是两回事——数值求解器跑得差时，执行反馈只会告诉你「结果不行」，却不会说清问题出在哪、该怎么修。这篇论文提出的ADSD框架，核心思路是让智能体自己诊断性能瓶颈、自动发现可复用的解题技能，把「盲试」变成「有方向地进化」。值得关注的点在于：它瞄准的是AI做科研时最缺的一环——从「会写」到「会改」的闭环，如果跑通，科学计算领域的自动化迭代效率可能会有质的变化。
+**A:** AI代理现在能写出科学计算代码了，但写出来能跑不等于算法真的变快了。这个叫ADSD的框架让代理不光看“跑得慢”的结果，还能自己诊断出慢在哪、该补什么技能，从而真正改进数值求解器本身，而不只是复制粘贴代码。
 
 📎 更多阅读：[Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery](https://arxiv.org/abs/2610.03872)
 
