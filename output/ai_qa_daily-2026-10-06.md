@@ -4,35 +4,33 @@
 
 ## Q1: Beam: Reflection's 501B open-weight model？
 
-**A:** Beam 是一个参数量高达 501B 的开源权重模型，基于 Reflection 技术构建，主打大规模推理能力。它的意义在于：这是目前开源社区中体量最大的模型之一，意味着顶级性能不再只掌握在闭源厂商手里，开发者和研究者可以真正下载、微调并部署在自己的基础设施上。
+**A:** Beam 是 Reflection 发布的一个 501B 参数的开源权重模型，主打用强化学习在真实环境中自我改进，而不是靠人工标注数据堆能力。它的看点在于：开源模型第一次把「自我进化」这条路跑通到接近闭源顶尖水平，意味着你不用顶级预算也能拿到前沿级别的推理能力。
 
 📎 更多阅读：[Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 
-## Q2: Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates？
+## Q2: Dust: Pretraining Transformers Without Backpropagation？
 
-**A:** Opus 5.5 的 AI agent 在材料筛选任务中自主发现了两种室温磁性半导体候选材料，相关结果已通过初步计算验证。室温磁性半导体一直是自旋电子学的圣杯——它能同时操控电荷和自旋，但此前已知材料极少且大多需在极低温工作。这次值得关注的不只是候选材料本身，更是 agent 独立完成「假设—筛选—验证」闭环的能力，意味着 AI 驱动材料发现正从辅助工具变成真正的研究主体。
-
-📎 更多阅读：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
-
-## Q3: Dust: Pretraining Transformers Without Backpropagation？
-
-**A:** Dust 提出了一种不用反向传播就能预训练 Transformer 的方法。反向传播一直是训练深度网络的核心，但它对显存和计算的开销也一直是瓶颈——如果能绕开它，意味着训练成本可能大幅下降。
+**A:** 斯坦福等机构的研究者提出了一种叫 Dust 的预训练方法，能让 Transformer 在不使用反向传播的情况下完成训练。它用前向传播中的局部信号替代梯度回传，在语言模型预训练任务上跑通了，这意味着训练大模型有可能绕开反向传播对显存和计算图的依赖，对降低训练成本、探索非梯度学习路线都有意义。
 
 📎 更多阅读：[Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 
+## Q3: Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates？
+
+**A:** Opus 5.5 智能体在材料科学领域自主发现两种室温磁性半导体候选材料，将原本需要数年的人工试错压缩到可计算搜索的规模。关键在于它把「磁性」和「半导体」这两个通常互斥的属性放到室温条件下同时满足——这意味着自旋电子学器件（比传统芯片更省电、更快）终于有了可落地的材料起点。
+
+📎 更多阅读：[Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
+
 ## Q4: An algorithmic failure beneath the secret ballot？
 
-**A:** 这篇标题指向的是：**选举中看似中立的“秘密投票”机制，其底层算法或技术实现可能存在系统性缺陷**——比如选票分配、计票或验证环节的代码逻辑并非真正匿名或公平，而是内嵌了可被利用的偏差。
-
-值得关注的原因在于：它提醒我们，**技术中立是一种幻觉**。当民主程序被简化为代码运行时，任何隐藏的算法偏好都可能悄悄扭曲选举结果，而外部观察者却因为“保密”而无法审计。把投票交给算法之前，先得问清楚：谁写的规则，谁在验证。
+**A:** 这项研究揭示了一个被忽视的问题：在秘密投票的数字系统中，算法设计本身可能泄露选民隐私。简单说，即使投票内容加密了，系统的运行方式（比如时间、顺序、机器行为）仍可能被用来推断谁投了什么。值得关注的是，这提醒我们隐私保护不能只盯数据加密，还要审视算法层面的结构性漏洞。
 
 📎 更多阅读：[An algorithmic failure beneath the secret ballot](https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/)
 
-## Q5: Golang tool to check SPF, DKIM, TLSA, and TLS settings for mailservers？
+## Q5: ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons？
 
-**A:** 有人用 Go 写了个小工具，一条命令就能检查邮件服务器的 SPF、DKIM、TLSA 和 TLS 配置是否正常。作者坦白这玩意儿是纯「vibe coding」产物，但恰好填了个实用空白——排查邮件送达问题时，这几项检查通常得来回换好几个在线工具。
+**A:** OpenAI 让 ChatGPT 生成《纽约客》风格漫画时，会在图中嵌入真实漫画家的签名水印，而非随机假名。这其实是版权溯源机制：一旦 AI 漫画被误认或滥用，签名能反向指向生成来源，也让「这不是我画的」有了技术依据。对创作者来说，这是把署名权从被动维权变成主动声明的一次尝试。
 
-📎 更多阅读：[Golang tool to check SPF, DKIM, TLSA, and TLS settings for mailservers](https://git.sig-io.nl/Sig-IO/mailcheck/)
+📎 更多阅读：[ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons](https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

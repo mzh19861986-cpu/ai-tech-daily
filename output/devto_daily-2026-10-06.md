@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [I just launched LeLiveBoost](https://dev.to/carita_1f21d8bb25b1562d26/i-just-launched-leliveboost-2dg1)
+## 1. [I built a video editor that renders sharp 1080p MP4s entirely in the browser](https://dev.to/madalitsonyemba/i-built-a-video-editor-that-renders-sharp-1080p-mp4s-entirely-in-the-browser-5ebl)
 
-**✨ 精华总结：** **LeLiveBoost：给 Whatnot 主播的 Chrome 效率插件**
+**✨ 精华总结：** 有人用纯浏览器端代码做了个视频编辑器，能直接导出清晰的1080p MP4，不用上传服务器、不装任何软件。起因很实在——他做了个满意的网站想发TikTok展示，但录屏太扁平、样机工具只支持静态图、传统剪辑软件剪20秒要调一小时关键帧，干脆自己写了一个。值得关注的点在于：视频渲染这种重计算任务正在被Web技术吃掉，对需要快速产出演示视频的开发者和小团队来说，这类工具可能比专业剪辑软件更实用。
 
-一个专门解决 Whatnot 直播卖货混乱场景的浏览器扩展，帮卖家自动追踪买家请求、管理客户信息，减少重复性手动操作。如果你做直播带货，尤其是观众一多就手忙脚乱容易漏单的阶段，这类工具能直接把「靠脑子记」变成「系统帮你盯」。
+## 2. [The Nine-Month Mark: Three Eras, One Question That Never Got Answered](https://dev.to/ndegwaduncan/the-nine-month-mark-three-eras-one-question-that-never-got-answered-11m)
 
-## 2. [We tried to buy one call from 100 x402 sellers. Most delivered. Almost nobody is buying.](https://dev.to/alexar76/we-tried-to-buy-one-call-from-100-x402-sellers-most-delivered-almost-nobody-is-buying-2498)
+**✨ 精华总结：** 过去九个月的安全数据揭示了一个关键转变：攻击者正从「窃取凭证」转向「滥用凭证」，而最危险的情况其实是「凭证从未被盗」——意味着系统内部的身份验证机制本身就存在设计缺陷。GitGuardian 记录的 2864 万个公开暴露密钥、GreyNoise 追踪的 395 家受害组织，这些数字指向同一个被忽视的问题：我们一直在防「偷钥匙的人」，却没意识到门根本没锁。
 
-**✨ 精华总结：** 有人实测了Coinbase的x402支付协议——从100个收费API端点里各买一次调用，绝大多数卖家都能正常交付，但真正在花钱买调用的买家几乎不存在。问题在于，围绕这些端点已经长出一堆"信任评分"服务（34,768个端点、20多个扫描器在爬），可它们只检测"你能不能报出价格"，从不真的付钱，所以这些评分对卖家实际能不能收到款毫无参考价值。
+## 3. [Step-by-Step Namecheap Private Email DNS Setup Guide](https://dev.to/shahibur_rahman_6670cd024/step-by-step-namecheap-private-email-dns-setup-guide-2o37)
 
-## 3. [Overcoming CS Imposter Syndrome: Redefining Success Beyond Exceptional Performance](https://dev.to/svetlix/overcoming-cs-imposter-syndrome-redefining-success-beyond-exceptional-performance-2102)
+**✨ 精华总结：** 给域名配 Namecheap 私人邮箱，关键是把邮件服务器地址和 SPF、DKIM 这些认证记录准确写进 DNS 里——写对了，收信不延迟、发信不进垃圾箱；写之前记得先清掉旧的邮件记录（比如 cPanel 留下的），否则会打架。
 
-**✨ 精华总结：** 很多CS学生觉得自己是“冒名顶替者”，根源在于行业把“只有顶尖表现才算成功”当成了默认前提——这个前提本身就是心理、社会与系统性因素互相强化的产物。它的连锁效应是：大量有能力的人因达不到虚幻的“卓越标准”而自我怀疑、流失甚至转行。值得关注的是，文章主张把成功的定义从“超常表现”中松绑，这不仅是个人心态问题，更是对行业人才筛选逻辑的一次纠偏。
+## 4. [Google keyword volumes are full of spikes. Here's how I clean them in Python](https://dev.to/keywordlab/google-keyword-volumes-are-full-of-spikes-heres-how-i-clean-them-in-python-73o)
 
-## 4. [Attachment downloads should check the record they belong to](https://dev.to/authbyexample1/attachment-downloads-should-check-the-record-they-belong-to-3fb0)
+**✨ 精华总结：** Google的搜索量数据经常会出现"尖刺"——比如"how to start a blog"这个关键词平时月均12,000次搜索，却在2025年7月突然飙到150万，下个月又跌回几千。这些尖峰大多不是真实需求变化，而是数据采样或聚合的噪声，会让你基于趋势做的关键词判断完全失真。作者分享了用Python清洗这类异常值的方法，正在做关键词工具或SEO分析的人值得看看。
 
-**✨ 精华总结：** 一个常见的权限漏洞：下载附件的接口只验证「登录了没」，却没验证「你有没有权限看这个附件所属的记录」。结果是，拿到文件 ID 的人（比如从邮件或日志里）就能下载别人工单里的截图——而且用户被取消工单访问权限后，文件链接依然有效。修法很简单：附件下载路由必须回溯检查它挂靠的那条记录（这里是 ticket），确认调用者有权查看，而不是只查 session。
+## 5. [I Built a Calculator So I'd Stop Guessing at Certification ROI](https://dev.to/usman_sherdil_582e626a7db/i-built-a-calculator-so-id-stop-guessing-at-certification-roi-2o1e)
 
-## 5. [Stop writing Excel reports cell by cell - bind data to templates instead (Kotlin/Java)](https://dev.to/jogakdal/stop-writing-excel-reports-cell-by-cell-bind-data-to-templates-instead-kotlinjava-1n3l)
-
-**✨ 精华总结：** 如果你用 Java/Kotlin 写过 Excel 报表，一定体会过 Apache POI 逐格设置单元格的痛苦。这篇文章介绍的是**模板绑定方案**：把 Excel 当模板文件，用数据直接填充，而不是在代码里一格一格地拼。值得关注的原因是，它能把报表代码从几百行样板压缩成几行映射逻辑，维护成本大幅下降——尤其适合报表格式经常变、但数据结构相对稳定的场景。
+**✨ 精华总结：** 有人做了个小工具，把认证考试的真实回报算清楚：不只是考试费，还把重考概率和备考时间成本都纳入模型。值得关注是因为大多数“考这个证值不值”的讨论其实都是拍脑袋，它逼你把关键变量摆上台面，再做判断。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

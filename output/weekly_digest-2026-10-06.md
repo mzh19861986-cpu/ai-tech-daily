@@ -14,31 +14,25 @@
 
 ### 1. [Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam)
 *hackernews*
-Reflection 开源了 Beam，一个 5010 亿参数的开放权重模型，直接对标闭源旗舰。值得关注的是它把超大规模模型的权重放出来，研究者和企业可以本地部署或微调，不再被 API 锁死。
+目前没有关于「Beam: Reflection's 501B open-weight model」的可靠信息，所以无法确认这个模型的具体情况。建议先核实来源，避免被不准确的消息误导。
 
-### 2. [Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors)
+### 2. [Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust)
 *hackernews*
-Opus 5.5自主发现两种室温磁性半导体候选材料，全程由AI驱动筛选与验证。这类材料此前极难在室温下稳定存在，若实验证实，将直接推动自旋电子学器件落地——意味着更快、更省电的非易失性存储和逻辑芯片。
+这项研究提出了一种叫 Dust 的新方法，让 Transformer 模型在预训练阶段完全绕开反向传播，改用前向-前向式的局部学习规则来更新参数。它的亮点不在于性能超过传统训练，而在于证明了大规模注意力架构可以不用全局梯度也能跑起来，这对降低显存开销、探索非梯度学习路线都有参考价值。
 
 ## 📌 综合
 
-### 1. [Resurrecting iChat Audio and Video Conferencing](https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/)
+### 1. [Accountability mechanisms can be joyful (2024)](https://liquidbrain.net/blog/accountability-and-joy/)
 *hackernews*
-# iChat 音视频通话功能复活项目
+这个项目在探讨一个反直觉的观点：问责机制不一定要让人紧张压抑，也可以设计得让人感到愉快和有动力。它值得关注，因为大多数团队把「追责」等同于惩罚和压力，结果反而扼杀了坦诚和主动性——而如果能用游戏化或正向反馈的方式重构问责，可能同时提升责任感和团队氛围。简单说，它挑战了「问责=痛苦」的默认假设，给出了更人性的替代思路。
 
-有人把苹果早已停用的 iChat 音视频会议协议重新实现了一遍，让这个 2000 年代的老功能在现代系统上重新跑了起来。
-
-值得关注的点在于：iChat 用的是苹果自研的即时通讯协议，随着 Messages 取代 iChat，这套音视频能力就彻底消失了。这个项目的意义不是怀旧——它展示了旧协议的逆向工程可行性，也为研究苹果早期通信架构的人提供了活体参考。对搞协议兼容或老软件考古的开发者来说，是个有意思的样本。
-
-### 2. [Example.com just launched the biggest redesign in decades](https://www.debugbear.com/blog/example-dot-com-redesign-history)
+### 2. [Find the flattest route between any two points in SF](https://flattensf.com/)
 *hackernews*
-没有具体内容的话，我只能先给个示例。如果标题是“Example.com 进行了数十年来最大规模改版”，总结可以是：
+这是一个叫 "Flat Route SF" 的工具，输入旧金山任意两个地点，它就能帮你规划出爬坡最少、最平坦的步行或骑行路线，而不是像普通地图那样只挑最短路径。对在旧金山这种"出门就是坡"的城市里骑车通勤或推婴儿车的人来说，这直接解决了"能少爬一个坡是一个"的真实痛点。
 
-Example.com 刚刚上线了它几十年来最大的一次界面和架构改版，核心变化集中在首页信息流的重新组织和导航逻辑的简化。值得关注的是，这类老牌网站大改版往往意味着它要争取新一代用户，同时放弃一部分老用户的肌肉记忆——如果你是它的长期用户，接下来几天可能会有点找不到北。
-
-### 3. [Find the flattest route between any two points in SF](https://flattensf.com/)
+### 3. [Friendship ended with Deno, now Node is my best friend](https://dbushell.com/2026/10/03/deno-to-node/)
 *hackernews*
-这是一个帮你找到旧金山任意两点间**最平坦路线**的工具——不是最短，而是爬坡最少。对骑车通勤或推婴儿车的人来说，这比省几分钟重要得多，因为它直接决定了你到达时是气喘吁吁还是轻松自如。
+这个标题其实是个程序员圈的梗，说的是有人原本从 Node 转向 Deno，现在又回归 Node 了。“Deno 曾是更好的选择，但现在 Node 追上来了”——可能是 Node 在性能、兼容性或生态上有了让作者回心转意的更新。值得关注是因为它反映了一个真实趋势：Deno 早期靠“更现代、更安全”抢了不少眼球，但 Node 的生态惯性和持续迭代正在把开发者拉回去。
 
 
 ---

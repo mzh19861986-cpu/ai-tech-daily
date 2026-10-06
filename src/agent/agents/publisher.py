@@ -358,7 +358,12 @@ class PublisherAgent(BaseAgent):
         for i, item in enumerate(items, 1):
             lines.append(f"**{i}. {item.get('title', '')}**")
             lines.append("")
-            lines.append(f"   {item.get('summary', '')[:150]}...")
+            summary = item.get('summary', '')
+            # 3分钟快讯：每条摘要给 300 字符，足够讲清楚但不冗长
+            if len(summary) > 300:
+                lines.append(f"   {summary[:300]}...")
+            else:
+                lines.append(f"   {summary}")
             lines.append("")
         lines.append("---")
         lines.append("*3 分钟，掌握 AI 圈动态*")
