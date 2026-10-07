@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Incredible](https://www.producthunt.com/products/incredible)
+## 1. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** 想用嘴代替键盘鼠标、又不想折腾复杂语音助手配置的话，Incredible 让你直接用语音操控电脑，适合解放双手或多任务场景，省去手动操作的步骤。
-
----
-## 2. [Scumble](https://www.producthunt.com/products/scumble)
-
-**💡 是什么 + 为什么值得试：** Scumble 是一个专注 AI 局部重绘（inpainting）的开源编辑器，让你不用来回切换工具就能直接在图上圈选区域、反复修改直到满意。如果你经常要修图里的瑕疵或替换局部内容，它比通用图像编辑器更顺手，值得一试。
+**💡 是什么 + 为什么值得试：** 让 AI agent 直接操作真实 iPhone，连没有 API 的 App 也能自动化，省去为每个应用单独写接口的麻烦。如果你想让 AI 替你点手机，这个项目值得一试。
 
 ---
-## 3. [Lecta](https://www.producthunt.com/products/lecta)
+## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
 
-**💡 是什么 + 为什么值得试：** Lecta 把你的复习资料变成类似短视频和游戏的形式，让你用刷抖音的方式过一遍知识点。如果你总是静不下心啃书本，可以用它把碎片时间利用起来。
-
----
-## 4. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
-
-**💡 是什么 + 为什么值得试：** 如果你想观察一群 AI 角色在无人干预下自行生活、互动和演化，The Sentient World 提供了一个纯观赏式的沙盒，省去你自己搭建多智能体环境的麻烦。适合对 AI 行为模拟感兴趣、想看看“涌现”会不会真的发生的人。
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新、客服/帮助中心却总是滞后，这个项目能让 AI 支持助手自动跟着站点内容同步，省去手动维护知识库的麻烦。适合想低成本搭一个“不掉队”的站内问答助手的团队试试。
 
 ---
-## 5. [Aster by AsterWise](https://www.producthunt.com/products/aster-by-asterwise)
+## 3. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Aster 帮你在代码、Agent 和工作流场景里自动路由到最合适的模型，省去手动切换和调参的麻烦。如果你正被多模型选择和调用成本困扰，值得试试。
-
----
-## 6. [OpenBot](https://www.producthunt.com/products/openbot-3)
-
-**💡 是什么 + 为什么值得试：** 想在本地免费跑一个多人在线的 AI 机器人，又不想依赖 Grok 的付费接口，OpenBot 可以直接替代，部署在自己机器上就能用。
+**💡 是什么 + 为什么值得试：** Incredible 让你直接用嘴操控电脑，省去记快捷键和点菜单的麻烦。想试试语音干活、又不想被大厂助手绑死的话，这个开源项目值得装一个。
 
 ---
-## 7. [Review](https://www.producthunt.com/products/review-2)
+## 4. [Lecta](https://www.producthunt.com/products/lecta)
 
-**💡 是什么 + 为什么值得试：** Review 让你在自己的机器上用本地 AI 模型做代码审查，代码不出本机、不依赖外部服务，适合对隐私敏感或想离线用的开发者。
+**💡 是什么 + 为什么值得试：** Lecta 把你枯燥的复习资料变成短视频和游戏，让刷手机的时间也能用来背知识点。如果你总在碎片时间里忍不住 doomscroll，又想把学习塞进去，可以试试它。
 
 ---
-## 8. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
+## 5. [EasyCut](https://www.producthunt.com/products/easycut-2)
 
-**💡 是什么 + 为什么值得试：** 如果你在 Etsy 上卖东西，被买家消息的回复速度拖累评分和响应率，这个开源项目能帮你自动生成秒回、语气专业的答复。
+**💡 是什么 + 为什么值得试：** 如果你用 Claude 生成过动态视频，却懒得手动剪掉那些无意义的片段和空白，EasyCut 能帮你自动完成粗剪，省下反复拖时间轴的时间。
+
+---
+## 6. [Brnch](https://www.producthunt.com/products/brnch)
+
+**💡 是什么 + 为什么值得试：** Brnch 把代码托管做成了 AI agent 能直接读写的一等公民，让你不用写胶水代码就能让 agent 参与分支管理和协作流程。如果你在做 agent 驱动的开发工作流，它值得看一眼。
+
+---
+## 7. [Rill Browser](https://www.producthunt.com/products/rill-3)
+
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接内嵌进浏览器，让你在浏览网页的同时随手调用 AI 助手，不用在编辑器和浏览器之间反复切换。如果你经常边查资料边写代码，它值得一试。
+
+---
+## 8. [Review](https://www.producthunt.com/products/review-2)
+
+**💡 是什么 + 为什么值得试：** Review 让你在自己的机器上用本地 AI 做代码审查，代码不用上传到任何云端服务。如果你在意代码隐私又想要 AI 辅助 review，这个项目值得一试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

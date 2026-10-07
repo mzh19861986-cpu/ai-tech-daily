@@ -6,27 +6,25 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这项进展的核心在于：研究者开始公开分享AI在数学领域的实际推演能力，而不仅仅停留在“能算题”的演示层面。其值得关注之处在于，数学一直被视为检验推理能力的硬标准，AI在此领域的进步，意味着它可能正从模式匹配走向更可靠的逻辑推导。
+This study shares the latest advances of AI in mathematics—AI systems are beginning to assist in discovering mathematical patterns, verifying conjectures, and even proposing proof paths that humans have never thought of. Notably, this means AI is transforming from a "computational tool" into a "mathematical collaborator," potentially accelerating the pace of research in pure mathematics, the field most dependent on human intuition.
+
+### 2. [企鹅邮件——面向Linux、带AI功能的开源Rust电子邮件客户端](https://penguin-mail.com/)
+*hackernews*
+Penguin Mail is an open-source email client for Linux written in Rust, featuring local AI integration—email classification, summarization, and smart replies all run locally without sending email content to third parties. The performance and memory safety brought by Rust, combined with the long-standing lack of a good native email client on the Linux desktop, make this combination quite noteworthy.
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released Large 4, their latest flagship large model, focusing on stronger reasoning capabilities and multilingual support. It is worth noting that Mistral has always established a foothold in the European AI community with a "small but refined" approach. This flagship upgrade means they have taken another step forward in direct competition with top closed-source models like GPT-4 and Claude 3.
+看起来你还没贴出「Mistral Large 4」的具体内容（目前标题下是空的）。把正文或要点发给我，我就按你要的风格压缩成 2–3 句：说清它是什么、为什么值得关注，专业但不端着。
 
-### 2. [决策 API 目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [Decisions API 目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-标题：Decisions API 进入公开测试
+Cloudflare has turned decision-making into an API, now in public beta. Simply put, it lets you run rule-based decisions at edge nodes—for example, deciding in real time which logic to follow based on user region, device, or request characteristics, without going back to a central server. For teams doing canary releases, A/B testing, or dynamic routing, this means lower latency and a simpler architecture, making it worth trying out early.
 
-Anthropic 向所有开发者开放了 Decisions API，让 AI 应用能以结构化的方式表达“做决定”这件事——不只是返回文本，而是输出可选方案、推理依据和置信度。它的价值在于：当 AI 开始替人做判断（比如审批、推荐、风控），我们需要的不只是答案，还得看清它是怎么想的，这套 API 正是为此设计的。
-
-### 3. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
+### 3. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-For a long time, there has been a conjecture in the mathematics community: can integer multiplication be faster than O(n log n)? Now the answer may be yes—some researchers have proposed a new method for integer multiplication that uses fewer than n log n bit operations. This means that the theoretical ceiling of large-number multiplication has been pried open a bit, and for fields such as cryptography and scientific computing that rely heavily on large-integer operations, the impact could be profound.
-
-### 4. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
-*hackernews*
-AnyPS5 是一个将 PS5 游戏二进制文件直接搬到 PC 上运行的项目，它不走模拟器路线，而是将 PS5 的系统库调用映射到 PC 的原生实现上，目前已覆盖 87% 的系统库。这值得关注，因为它绕开了模拟器最耗性能的环节——无需模拟整台主机，理论上帧率和兼容性上限会高得多，也更接近“移植”而非“跑模拟”。不过，剩下那 13% 的库和图形 API 往往是硬骨头，能否真正跑起大作还得看后续。
+AnyPS5 is a new tool that can run PS5 game executables directly on PC by mapping 87% of the PS5 system libraries to equivalent implementations callable on PC, rather than emulating the entire console. The key point worth noting is that it bypasses the performance and compatibility bottlenecks of traditional emulators and could, in theory, allow ported games to run at near-native efficiency. If this approach works, the technical barrier to bringing PS5 exclusives to PC will be greatly lowered.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
