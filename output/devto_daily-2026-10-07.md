@@ -2,25 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Trie Data Structure: Efficient Prefix Matching and Autocomplete Implementation](https://dev.to/devanshu_patil/trie-data-structure-efficient-prefix-matching-and-autocomplete-implementation-2aa7)
+## 1. [I Made Spider-Man Swing Without Animating a Single Frame](https://dev.to/gu_cci_f94bedb90083e6aab4/i-made-spider-man-swing-without-animating-a-single-frame-5g78)
 
-**✨ 精华总结：** Trie（前缀树）是一种专门为前缀匹配设计的树形数据结构，能在 O(m) 时间内完成查找（m 为字符串长度），而哈希表做前缀查询得遍历所有键。搜索框自动补全、拼写检查、IP 路由表这类场景用它最合适——本质是把公共前缀合并存储，用空间换查询效率。
+**✨ 精华总结：** 有人在浏览器里做出了蜘蛛侠荡秋千的效果，关键在于**没有用任何逐帧动画**——不预渲染视频、不用精灵图，而是让一个小型 AI Agent 循环实时生成运动参数。这意味着动画可以即时响应、灵活变化，而不是播放一段固定的素材。对做交互和游戏的人来说，这是把「AI 实时驱动动作」落到可运行代码上的一个具体范例，附带的 Python 代码可以直接拿来改。
 
-## 2. [Node.js Security Best Practices: Build Safer and More Resilient APIs](https://dev.to/ansh_sheladiya/nodejs-security-best-practices-build-safer-and-more-resilient-apis-5eh1)
+## 2. [Why Every SaaS Wants Your Phone Number (and How to Decide When to Give It)](https://dev.to/ghostsms/why-every-saas-wants-your-phone-number-and-how-to-decide-when-to-give-it-4pn0)
 
-**✨ 精华总结：** Node.js 让 API 开发变得飞快，但快不代表安全——认证令牌、用户输入、数据库查询这些环节一旦失守，后果很严重。文章主张用「纵深防御」的思路分层加固：输入校验、安全响应头、限流、依赖管理等每一层都别偷懒。如果你正在把 Node 服务推向生产环境，这套清单值得对照检查一遍。
+**✨ 精华总结：** SaaS 产品要你手机号，本质是把它当成比邮箱更强的身份锚点：能做二次验证、防多开小号、也方便推送召回。真正值得警惕的不是「要不要给」，而是给完之后它会被存进哪、会不会被拿去匹配广告或卖给第三方。建议按敏感度分级——银行、支付类随便给，工具类先用邮箱或虚拟号试探，社交类想清楚隐私代价再决定。
 
-## 3. [Cloning a staging MongoDB and MySQL to your laptop without installing a single database client](https://dev.to/phuthuycoding/cloning-a-staging-mongodb-and-mysql-to-your-laptop-without-installing-a-single-database-client-12dm)
+## 3. [Your API's Newest Users Are Agents: Designing for Non-Human Clients](https://dev.to/gu_cci_f94bedb90083e6aab4/your-apis-newest-users-are-agents-designing-for-non-human-clients-5b02)
 
-**✨ 精华总结：** 这篇内容介绍了一个用 Go 写的小型命令行工具，能把 staging 环境下的 MongoDB 和 MySQL 数据直接拉到本地笔记本，全程不需要安装任何数据库客户端。它解决的是一个很实际的团队痛点——过去要靠 wiki 文档教每个人手动装 mongodump、MySQL client，再跑几条命令，还在 3GB 数据传输中途断 SSH 的风险里提心吊胆。如果你所在团队也在反复分发 staging 数据，这个思路值得关注：把「文档驱动的手工流程」变成一条命令。
+**✨ 精华总结：** API 正在迎来一批不读文档、不看仪表盘、不提工单的新用户——AI Agent。它们直接解析 OpenAPI 规范、循环调用接口，只认确定性、机器可读的响应。如果你现有的 API 是为人类点按钮设计的，那它在这一类客户端面前已经不合格了。
 
-## 4. [I Analyzed 2,849 Crawler Requests. Here's What Search Bots Actually Do on New Sites.](https://dev.to/mou1z/i-analyzed-2849-crawler-requests-heres-what-search-bots-actually-do-on-new-sites-31i)
+## 4. [How to Build a Rotation-Safe Webhook Receiver: Verify Raw Signatures for Property Billing](https://dev.to/quentinbarrett5281/how-to-build-a-rotation-safe-webhook-receiver-verify-raw-signatures-for-property-billing-51kf)
 
-**✨ 精华总结：** 有人用一天时间记录了2849条爬虫请求，其中321条来自12种不同的搜索引擎机器人，想搞清楚新站点上线后这些爬虫到底会干什么。结论对做新站SEO的人有参考价值——不是理论推测，是真实流量日志。如果你正在折腾新网站或者好奇各大搜索引擎对新内容的抓取策略，这份数据比大多数SEO教程实在。
+**✨ 精华总结：** 处理 Webhook 签名验证时，别用解析后的 JSON 重新拼字符串去算签名——要用原始请求体（raw body）验签，然后在确认落盘到持久队列之后再返回 200。否则一旦对方轮换密钥，或者你的反序列化顺序变了，签名就会对不上。
 
-## 5. [Taming the Exchange API: Handling -4509 Errors and the F-065 Retry Mechanism in Quant Systems](https://dev.to/kestrelquant/taming-the-exchange-api-handling-4509-errors-and-the-f-065-retry-mechanism-in-quant-systems-1ahh)
+这套做法对物业计费这类场景尤其关键：凌晨三点收到 `webhook_auth_failures_high` 告警时，API 还在正常服务住户，但几个楼栋的缴费和报修事件已经全被拒了。解法是把验签通过的密钥和房源账户绑定，把验证证据入队持久化，最后才 ACK——这样即使密钥轮换或服务重启，事件也不会丢。
 
-**✨ 精华总结：** 量化交易系统对接交易所API时，-4509错误码经常让人头疼——它本质上是交易所端的状态不一致，你的本地记录和交易所实际状态对不上。这篇讲的是用F-065重试机制来兜底：不是简单粗暴地重试，而是根据错误语义判断哪些可以安全重发、哪些必须先对账再操作。对跑实盘的人来说，这类容错逻辑才是真正决定系统能不能活过今晚的东西。
+## 5. [AI Recommendation Share: The Missing Market Metric in the Age of Generative AI!](https://dev.to/alirezaai/ai-recommendation-share-the-missing-market-metric-in-the-age-of-generative-ai-5gag)
+
+**✨ 精华总结：** AI推荐正在取代搜索排名，成为品牌在生成式AI时代的新竞争维度——当用户问AI「谁是最好的伊朗沥青出口商」时，传统SEO的「你排第几」变成了「AI会不会提到你」。这个转变值得关注，因为它意味着品牌曝光从可精确追踪的排名位置，变成了AI回答中「被提及与否」的二元结果，而大多数企业还没有对应的衡量工具和优化策略。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

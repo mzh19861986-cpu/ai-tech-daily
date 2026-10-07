@@ -4,33 +4,35 @@
 
 ## Q1: Sharing AI progress in mathematics？
 
-**A:** 这项进展的核心，是让AI不只是“算得快”，而是能参与数学发现本身——比如提出猜想、寻找反例、甚至辅助证明。它值得关注，因为数学一直被视为人类推理最纯粹的试金石，如果AI能在这块领域留下真正有价值的成果，就意味着它在严谨推理上迈出了实质一步，而不只是模式匹配。
+**A:** 这条新闻的信息量太少了，只有标题没有正文，我没办法给你一个准确的总结。
+
+如果你能把具体内容贴过来，我可以马上帮你提炼成2-3句话的精华版，说清楚它是什么、为什么值得关注。等你补充内容。
 
 📎 更多阅读：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-## Q2: Penguin Mail – open-source Rust email client for Linux with AI？
+## Q2: Strands Decider 2B: a small, open-source, decision model？
 
-**A:** Penguin Mail 是一款用 Rust 从零写的开源 Linux 桌面邮件客户端，内置 AI 能力（比如帮你总结长邮件、起草回复）。它的看点是原生性能加上本地 AI 集成，对受够了 Electron 套壳邮件应用、又想要 Linux 原生体验的人来说，值得关注。
-
-📎 更多阅读：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
-
-## Q3: Strands Decider 2B: a small, open-source, decision model？
-
-**A:** Strands Decider 2B 是一个只有 20 亿参数的开源决策模型，专门用来让 AI 在复杂任务中做出更靠谱的选择，而不是靠大模型硬猜。它值得关注的地方在于：小到能在本地跑，却把「决策」这个环节单独拎出来优化，对做 agent 和自动化流程的人来说是个实用又省钱的工具。
+**A:** Strands Decider 2B 是一个只有 20 亿参数的开源决策模型，专门用来做 Agent 场景下的“下一步该干什么”这类判断，比如选工具、决定是否继续推理。它值得关注的点在于：决策这件事其实不需要动用大模型，小模型跑得更快、更省成本，还能本地部署，对搭 Agent 的开发者来说是个实用的轻量零件。
 
 📎 更多阅读：[Strands Decider 2B: a small, open-source, decision model](https://strandsagents.com/blog/introducing-strands-decider/)
 
+## Q3: Penguin Mail – open-source Rust email client for Linux with AI？
+
+**A:** Penguin Mail 是一个用 Rust 写的开源 Linux 桌面邮件客户端，最大亮点是内置了 AI 辅助功能（比如智能回复、邮件摘要之类）。对 Linux 用户来说值得一提，因为桌面端好用的邮件客户端本来就少，Rust 意味着性能和内存占用会比 Electron 系（如 Thunderbird 之外的多数新客户端）更友好。
+
+📎 更多阅读：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
+
 ## Q4: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
 
-**A:** 谷歌发布了 EmbeddingGemma 2，一个开源的轻量级多模态嵌入模型，能把文本、图片等不同格式的数据映射到同一个向量空间里。它的看点在于：模型体积小到可以在手机或笔记本上直接跑，但嵌入质量据称能对标更大的闭源模型——这意味着本地做语义搜索、跨模态检索这类应用的门槛一下子降下来了。
+**A:** EmbeddingGemma 2 是 Google 推出的开源轻量级多模态嵌入模型，能把文本和图像映射到同一向量空间，让检索、聚类、分类等任务用一套模型同时处理多种模态。值得关注的是它体积小、可本地部署，且以开放权重发布——这意味着开发者不必依赖闭源 API，就能在自己的设备或私有环境里搭建多模态语义搜索系统。
 
 📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
-## Q5: Contamos – a shared multi-currency ledger your AI assistant can read and write？
+## Q5: OpenTPU – An open-source AI accelerator, developed by AI？
 
-**A:** Contamos 是一个共享的多币种记账工具，最大特点是你的 AI 助手可以直接读写账本——你不只是手动记账，而是让 AI 帮你查余额、记流水、管多币种账目。对经常跨国消费或团队分账的人来说，这解决了「账本数据锁在 App 里、AI 用不上」的痛点，让自动化理财真正落地。
+**A:** OpenTPU 是一个开源 AI 加速器项目，目标是把 TPU 类专用芯片的设计完整开放出来，让研究者和开发者能自己研究、修改甚至流片。它值得关注是因为 AI 加速器长期被 Google、NVIDIA 等大厂垄断，开源方案能显著降低硬件创新门槛，尤其在边缘推理和定制化场景里可能催生新玩法。
 
-📎 更多阅读：[Contamos – a shared multi-currency ledger your AI assistant can read and write](https://contamos.xyz/en)
+📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

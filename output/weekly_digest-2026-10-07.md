@@ -14,25 +14,27 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这篇文章介绍了一个分享AI在数学领域进展的项目或平台。简单说，它把AI用来做数学研究（比如找规律、证定理、猜公式）的最新成果集中展示出来，让数学家和AI研究者能互相看到对方在干什么。值得关注的原因是，数学一直被视为人类智力的高地，AI在这里的每一步突破，都可能预示着它在其他需要严谨推理的领域也能走得更远。
+OpenAI 发布了一份关于 AI 在数学领域进展的分享，核心是展示其模型在数学推理和问题求解上的能力提升。
 
-### 2. [Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
-*hackernews*
-Penguin Mail 是一款用 Rust 写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能（比如智能撰写、摘要或分类）。对 Linux 用户来说，长期缺一个既现代又不像 Electron 那样臃肿的原生邮件工具，而 Rust 带来的性能和内存安全正好补上这块，加上 AI 集成，算是把「日常刚需」和「新玩法」凑齐了。
+值得关注的点在于：数学一直被当作检验 AI 推理能力的硬标尺，因为数学题有客观标准答案，没法靠语言流畅度糊弄过去。如果 AI 真能在数学上持续突破，说明它的逻辑推理能力在实质性进步，这对科研、工程等需要严谨推导的场景意义很大。
 
-### 3. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+### 2. [Strands Decider 2B: a small, open-source, decision model](https://strandsagents.com/blog/introducing-strands-decider/)
 *hackernews*
-Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间里做检索和相似度匹配。它的看点在于体量小、可本地部署，同时保持多模态能力，意味着开发者不用依赖大厂 API 就能搭建图搜图、文搜图这类应用，对隐私敏感或成本受限的场景尤其友好。
+Strands Decider 2B 是一个仅 20 亿参数的开源决策模型，专门用来做智能体（agent）里的任务分解、工具调用和路径选择这类「下一步该干什么」的判断。它值得关注的地方在于，这类决策能力过去基本靠大模型硬扛，而它证明了小模型也能在特定环节顶上，意味着你可以把一部分推理成本从昂贵的大模型卸载到本地或边缘设备上跑。
+
+### 3. [Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
+*hackernews*
+Penguin Mail 是一款用 Rust 编写的开源 Linux 邮件客户端，内置了 AI 功能，主打本地原生体验。Rust 带来的性能和内存安全性让它在 Linux 桌面上比 Electron 套壳的同类工具更轻快，而 AI 集成意味着它可以帮你摘要长邮件、起草回复。如果你受够了 Thunderbird 的笨重或网页版 Gmail 的隐私顾虑，这个项目值得关注。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-内容似乎不完整——只给了标题“Mistral Large 4”，没有正文或具体信息。能补充一下发布内容吗？比如：是模型发布公告、性能数据，还是其他？这样我才能准确提炼。
+Mistral 发布了 Large 4，这是他们最新一代的旗舰大模型，主打更强的推理能力和多语言表现。如果你在选开源可商用的模型来替代 GPT-4 级别的闭源方案，这个值得放进候选名单里看一眼。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Decisions API 进入公开测试阶段，开发者现在可以正式接入一套用于在应用中嵌入决策逻辑的接口。它值得关注的地方在于，把原本需要自己搭建的规则引擎或判断流程标准化成了 API，省去重复造轮子的功夫，适合需要动态决策能力的团队尽早试用。
+Decisions API 进入公开测试阶段，开发者现在可以通过统一的接口触发和查询业务决策流程，而不用再手动拼接多个服务。值得关注的是，它把「决策逻辑」从代码里抽出来变成可复用的 API 调用，让规则变更不用重新部署应用，对需要频繁调整策略的团队来说能省不少事。
 
 
 ---
