@@ -2,25 +2,31 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [GeminiTTS: Gemini 3.8 TTS Online for Single-Voice and Two-Speaker Dialogue](https://dev.to/leony/geminitts-gemini-38-tts-online-for-single-voice-and-two-speaker-dialogue-3a9a)
+## 1. [Claude Code Router v3: What Changed and How I Set It Up Now](https://dev.to/zaramenon/claude-code-router-v3-what-changed-and-how-i-set-it-up-now-mj7)
 
-**✨ 精华总结：** GeminiTTS 是一个基于 Gemini 3.8 TTS 模型的在线语音合成工具，主打单人配音和双人对话播客场景，无需录音或请配音演员，打开网页就能生成。它的卖点在于声音比传统 TTS 更自然、更有表现力，适合做 demo 旁白、播客片头和语言学习素材这类对语感有要求的内容。
+**✨ 精华总结：** Claude Code Router 从一个小型代理升级成了完整的本地模型网关和控制平面，现在推荐通过桌面应用安装。如果你之前用过它，旧的使用笔记大概率已经失效——它的定位和安装方式都变了。
 
-## 2. [Choose Cron Healthchecks over App Metrics — Safer Missed Cohort Rollbacks](https://dev.to/aidensterling3417/choose-cron-healthchecks-over-app-metrics-safer-missed-cohort-rollbacks-3hg0)
+## 2. [Copilot CLI in Late 2026: The Flags I Actually Use in Scripts](https://dev.to/selinorlov/copilot-cli-in-late-2026-the-flags-i-actually-use-in-scripts-4b0g)
 
-**✨ 精华总结：** 做多租户队列实验时，回滚触发该看“定时任务是否按时跑完”，而不是应用指标——用一个带截止时间的健康心跳（deadline heartbeat）来判断任务有没有漏跑，应用指标只留作排查问题的诊断层。原因很实在：指标往往只能告诉你“数据变了”，而心跳缺失是唯一能干净、无歧义地证明“计划任务没完成”的信号；只有当调度器本身能可靠上报“缺失”，且告警查询还保留了租户维度时，才值得单独用指标。
+**✨ 精华总结：** # Copilot CLI 脚本化实战：真正有用的那几个 flag
 
-## 3. [Kyverno Policy as Code no Kubernetes](https://dev.to/ikauedev/kyverno-policy-as-code-no-kubernetes-12l8)
+大多数 Copilot CLI 教程都在教你「怎么问它」，但真正难的是「怎么让它在脚本里安全地跑」。这篇文章聚焦底层：哪些 flag 能让 GitHub Copilot CLI 在自动化中可靠运行、近几个月版本更新了什么、以及哪里有坑。
 
-**✨ 精华总结：** Kyverno 是一个 CNCF 旗下的 Kubernetes 原生策略引擎，让你直接用 YAML 就能校验、修改和生成集群资源，不需要再学一门新的策略语言。它解决的是共享集群里的典型乱象——任何有 kubectl apply 权限的人都能不经意间创建特权 Pod、无 tag 镜像或意外暴露的 Service，而人工审查根本管不过来。对多团队共用集群的场景来说，这相当于把安全规范变成可自动执行的代码。
+**为什么值得关注**：把 AI CLI 从「手动聊天」变成「脚本里可调用的确定性组件」，是它真正能进 CI/CD 的前置条件。如果你打算在 pipeline 里用它，这篇讲的是没人愿意写的脏活层。
 
-## 4. [Push notifications on iOS without Firebase: talking to APNs directly from Laravel](https://dev.to/guppylab/push-notifications-on-ios-without-firebase-talking-to-apns-directly-from-laravel-35nk)
+## 3. [Open Generative AI GitHub Repo: A Self-Hosting Teardown (2026)](https://dev.to/larssaleh/open-generative-ai-github-repo-a-self-hosting-teardown-2026-ajg)
 
-**✨ 精华总结：** 想给 iOS 发推送，别默认就得塞 Firebase SDK——它本质只是帮你转发消息到苹果，代价是往 App 里塞了 Google 的库、还得额外维护一套服务。其实 Laravel 后端可以直接对接苹果的 APNs：一个 .p8 密钥、一个短期 JWT、一次 HTTP/2 请求就搞定，省掉中间商。
+**✨ 精华总结：** 这个叫 Open-Generative-AI 的仓库（MIT 协议，约 29.7k 星）是一个用 Next.js + Electron 搭的生成式 AI 工作室，能跑图像、视频和口型同步，界面开源且可以自己部署。
 
-## 5. [Beyond Kafka and Redis, Part 2: An AI Chat Backend on NATS 2.15](https://dev.to/thedonmon/beyond-kafka-and-redis-part-2-an-ai-chat-backend-on-nats-215-461c)
+但要注意一个关键落差：开源的是 UI 和外壳，不是模型本身——真正的云端生成要调用 Muapi.ai 的 API，还得用你自己的 key。所以它更像是「开源前端 + 商业后端」的组合，适合想自己掌控界面、又不想从零造轮子的人，但别指望完全免费或完全离线。
 
-**✨ 精华总结：** NATS 2.15 现在真能扛起 AI 聊天后端的全套活儿了——GPU 任务队列、token 流式推送到浏览器、对话历史、按租户用量计费、超时控制，一个中间件全包。如果你正在用 Kafka + Redis + 一堆胶水代码拼后端，这篇实战拆解值得看一眼它到底怎么替掉这些组件的。
+## 4. [Blader Humanizer in 2026: What v3.1 Changed and How I Use It](https://dev.to/farahellison/blader-humanizer-in-2026-what-v31-changed-and-how-i-use-it-5h6b)
+
+**✨ 精华总结：** Blader Humanizer v3.1 是 GitHub 上的一个开源 agent 技能，专门用来把 AI 腔调的初稿改写成更像真人写的内容，作者自己每篇稿子发布前都会跑一遍。值得关注是因为它直击一个越来越普遍的需求：当大量文稿都从 chat 窗口里生出来之后，怎么让最终成品听起来不像机器写的。
+
+## 5. [Virlo in 2026: What It Is, What the API Costs, and a Python Starter](https://dev.to/gretaholt/virlo-in-2026-what-it-is-what-the-api-costs-and-a-python-starter-9pd)
+
+**✨ 精华总结：** Virlo 是个帮创作者做数据分析的工具，但它的产品迭代快到连教程里提到的 Comet、Orbit 两个模块都已经废弃了——这说明自从今年 1 月以来它的架构几乎换了一轮。如果你打算用它做数据对接，重点不是学具体功能，而是盯紧它的 API 和文档变动，因为按这个节奏，今天的教程下个月可能就失效了。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

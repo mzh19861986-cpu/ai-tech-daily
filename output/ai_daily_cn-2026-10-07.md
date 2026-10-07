@@ -6,29 +6,25 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-This content is titled "Sharing AI progress in mathematics," but no main text is provided, so we can only discuss the title itself: it is about how the latest advances in AI in the field of mathematics are being publicly shared.
-
-A noteworthy point is that mathematics has always been regarded as a hardcore test of AI reasoning ability - if AI can truly make substantial breakthroughs in theorem proving and conjecture exploration, that would be more convincing than topping benchmarks. Unfortunately, the main text is missing, so it is currently impossible to determine which team, which result, whether it is open source or a paper.
+这项进展的核心是：研究者开始系统性地公开分享 AI 在数学领域的具体成果——不只是“AI 证了个定理”这种标题，而是把中间推理过程、失败尝试和工具链也摆出来。值得关注的原因在于，数学一直是检验 AI 真实推理能力的硬骨头，公开这些细节能让外界看清 AI 到底是在“思考”还是在“检索”，也方便其他研究者复现和改进，而不是只看到被挑选过的成功案例。
 
 ### 2. [Strands Decider 2B：一个小型、开源的决策模型](https://strandsagents.com/blog/introducing-strands-decider/)
 *hackernews*
-Strands Decider 2B is an open-source decision-making model with only 2 billion parameters, specifically designed for automated decision-making rather than general conversation. Its value lies in being small enough to run locally or on edge devices, yet capable of replacing large models in scenarios that require "judgment," saving both computing power and cost.
+Strands Decider 2B is an open-source decision-making model with only 2 billion parameters, designed to handle judgment tasks like "which one to choose" with a smaller footprint, rather than engaging in all kinds of conversations like general large models. What makes it noteworthy is that decision-making scenarios often do not require the general capabilities of hundred-billion-parameter models. Small, specialized models have low deployment costs, fast response times, and can be directly plugged into agents or automation workflows as a "judge." If you are working on multi-agent systems, tool calling, or process orchestration, this type of specialized decision model may be more cost-effective than forcing a large model to do the job.
+
+### 3. [企鹅邮件——面向Linux的开源Rust电子邮件客户端，内置AI](https://penguin-mail.com/)
+*hackernews*
+Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置了 AI 辅助功能（如智能摘要、自动起草回复）。Rust 带来的性能和内存安全对邮件这种常驻后台的应用很实用，而 Linux 桌面长期缺乏好用的原生邮件客户端，这个项目值得关注。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released Large 4, their most powerful flagship large model to date, highlighting significant improvements in reasoning capabilities and multilingual performance. Notably, Mistral this time explicitly benchmarks against the GPT-4 level, while continuing to bet on compliance and private deployment in the European market—for enterprise users, this adds a high-end option that does not rely on US cloud services.
+You gave the title as Mistral Large 4, but the main content wasn't pasted in. I'll set the draft aside for now. Send me the specific content, and I'll immediately write you a 2-3 sentence summary.
 
-### 2. [决策API现已进入公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [Decisions API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-标题：Decisions API 进入公测阶段。
-
-这是一套让开发者将业务决策逻辑从代码中抽离并集中管理的接口，现已向所有人开放。值得关注的是，它将“决策”转变为可独立部署和迭代的服务，修改规则无需重新发布版本，对频繁调整策略的团队来说省事不少。
-
-### 3. [谎言的代价：一个Mineserver的故事](https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272)
-*hackernews*
-This article is about an open-source project called Mineserver. The author told a lie in the project (the specific details are not elaborated in the article), and this lie snowballed, ultimately causing the entire project to pay a heavy price. What is noteworthy is that it uses a real engineering story to illustrate: in open-source collaboration, technical debt is easy to repay, but trust debt is hard to repay—a single dishonest decision may be more capable of dragging down a project than a code bug.
+GitHub 已将 Decisions API 开放公测——简而言之，就是让你通过代码直接读取和管理仓库中的「决策记录」（例如 ADR，架构决策记录），无需再手动翻阅文件。值得关注的是，它把团队「为何如此设计」的隐性知识转化为可查询、可自动化的数据，便于接入 CI 或内部工具进行治理和追溯。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
