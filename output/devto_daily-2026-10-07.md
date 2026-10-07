@@ -2,31 +2,27 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Claude Code Router v3: What Changed and How I Set It Up Now](https://dev.to/zaramenon/claude-code-router-v3-what-changed-and-how-i-set-it-up-now-mj7)
+## 1. [Get Google Trends data in Python without pytrends 429 errors](https://dev.to/zahidthani/get-google-trends-data-in-python-without-pytrends-429-errors-3k6b)
 
-**✨ 精华总结：** Claude Code Router 从一个小型代理升级成了完整的本地模型网关和控制平面，现在推荐通过桌面应用安装。如果你之前用过它，旧的使用笔记大概率已经失效——它的定位和安装方式都变了。
+**✨ 精华总结：** pytrends 频繁返回 429 是因为 Google 对非官方接口的限流越来越严，项目维护滞后导致请求头指纹很容易被识别。这篇文章的前半部分给出了不依赖付费工具的绕行方案（调整请求间隔、轮换代理、直接用官方接口签名），后半部分则介绍了一个作者自己开发的 Apify Actor 作为托管替代。值得关注的是它把「为什么被封」和「怎么解」讲透了，而不是一上来就推销自己的服务。
 
-## 2. [Copilot CLI in Late 2026: The Flags I Actually Use in Scripts](https://dev.to/selinorlov/copilot-cli-in-late-2026-the-flags-i-actually-use-in-scripts-4b0g)
+## 2. [The "DB_PASSWORD" variable is not set. Defaulting to a blank string: fixing unset ${VAR} in Docker Compose](https://dev.to/jaytank/the-dbpassword-variable-is-not-set-defaulting-to-a-blank-string-fixing-unset-var-in-docker-2j1j)
 
-**✨ 精华总结：** # Copilot CLI 脚本化实战：真正有用的那几个 flag
+**✨ 精华总结：** Docker Compose 有个经典坑：`env_file` 加载的变量**不会**参与 `${VAR}` 插值，因为插值发生在 Compose 解析 YAML 的阶段，早于容器启动和环境文件加载。所以 `DB_PASSWORD` 明明写在 `app.env` 里，Compose 仍然只认 shell 环境和 `.env` 文件，插值失败就静默填空白字符串，再照常把栈拉起来。
 
-大多数 Copilot CLI 教程都在教你「怎么问它」，但真正难的是「怎么让它在脚本里安全地跑」。这篇文章聚焦底层：哪些 flag 能让 GitHub Copilot CLI 在自动化中可靠运行、近几个月版本更新了什么、以及哪里有坑。
+值得关注的点在于：这个警告只出现在滚动日志的顶部，容器要么起不来要么用空密码连上了库，排查时极易被忽略。修复方式是把需要插值的变量放进 `.env`（或改用 `env_file` 直接传给容器、不走插值语法），别指望两者能互通。
 
-**为什么值得关注**：把 AI CLI 从「手动聊天」变成「脚本里可调用的确定性组件」，是它真正能进 CI/CD 的前置条件。如果你打算在 pipeline 里用它，这篇讲的是没人愿意写的脏活层。
+## 3. [On-Device Computer Vision in React Native: Auto-Aligning Progress Photos with MediaPipe and Expo](https://dev.to/ishannaik/on-device-computer-vision-in-react-native-auto-aligning-progress-photos-with-mediapipe-and-expo-o3j)
 
-## 3. [Open Generative AI GitHub Repo: A Self-Hosting Teardown (2026)](https://dev.to/larssaleh/open-generative-ai-github-repo-a-self-hosting-teardown-2026-ajg)
+**✨ 精华总结：** 有人在 React Native 里用 MediaPipe + Expo 实现了端上人脸对齐，专门解决健身、护肤、发型记录这类进度照片的「同一个脸、不同构图」问题。核心价值在于：对齐完全跑在设备本地，不传云端，用户随手拍的照片能自动统一到同一位置，拼成延时视频时才真的看得出变化而不是满屏晃动。对做健康/美容类 App 的团队来说，这是一个可以直接抄的落地思路。
 
-**✨ 精华总结：** 这个叫 Open-Generative-AI 的仓库（MIT 协议，约 29.7k 星）是一个用 Next.js + Electron 搭的生成式 AI 工作室，能跑图像、视频和口型同步，界面开源且可以自己部署。
+## 4. [From Dev.to Comment to Production in 24h: Building an Inspectable Math Verification Contract in Pythos (and Fixing the Pearson Trap)](https://dev.to/jonscott79/from-devto-comment-to-production-in-24h-building-an-inspectable-math-verification-contract-in-2lma)
 
-但要注意一个关键落差：开源的是 UI 和外壳，不是模型本身——真正的云端生成要调用 Muapi.ai 的 API，还得用你自己的 key。所以它更像是「开源前端 + 商业后端」的组合，适合想自己掌控界面、又不想从零造轮子的人，但别指望完全免费或完全离线。
+**✨ 精华总结：** 一位企业AI工程师在Dev.to的评论直接催生了一个生产级功能：Pythos团队用24小时把「让LLM只做对话界面、不做数学真相来源」的理念落地成了一个可检查的数学验证合约——每个验证步骤都变成数据结构的一部分，而非黑箱输出。值得关注的是他们顺带修复了「Pearson陷阱」（相关系数计算中常见的数值稳定性坑），这意味着AI做数学时的每一步现在都能被审计和复现，对企业级可信AI来说是个实打实的进步。
 
-## 4. [Blader Humanizer in 2026: What v3.1 Changed and How I Use It](https://dev.to/farahellison/blader-humanizer-in-2026-what-v31-changed-and-how-i-use-it-5h6b)
+## 5. [The First Architecture Draft](https://dev.to/joungpark/the-first-architecture-draft-2ek9)
 
-**✨ 精华总结：** Blader Humanizer v3.1 是 GitHub 上的一个开源 agent 技能，专门用来把 AI 腔调的初稿改写成更像真人写的内容，作者自己每篇稿子发布前都会跑一遍。值得关注是因为它直击一个越来越普遍的需求：当大量文稿都从 chat 窗口里生出来之后，怎么让最终成品听起来不像机器写的。
-
-## 5. [Virlo in 2026: What It Is, What the API Costs, and a Python Starter](https://dev.to/gretaholt/virlo-in-2026-what-it-is-what-the-api-costs-and-a-python-starter-9pd)
-
-**✨ 精华总结：** Virlo 是个帮创作者做数据分析的工具，但它的产品迭代快到连教程里提到的 Comet、Orbit 两个模块都已经废弃了——这说明自从今年 1 月以来它的架构几乎换了一轮。如果你打算用它做数据对接，重点不是学具体功能，而是盯紧它的 API 和文档变动，因为按这个节奏，今天的教程下个月可能就失效了。
+**✨ 精华总结：** 作者开始给 Second-Memory 画第一版架构图了：客户端（Web + 移动端）统一走 API Gateway/BFF，再分发到 Auth、Memory、Ask 三个服务，Memory Service 后面挂数据库和向量库。值得关注的是这个「网关 + 按职责拆服务」的骨架，基本决定了后续所有功能迭代的边界和成本。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

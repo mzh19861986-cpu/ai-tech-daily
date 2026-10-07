@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Incredible](https://www.producthunt.com/products/incredible)
+## 1. [Ghostifier](https://www.producthunt.com/products/ghostifier)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，省去记快捷键或切换窗口的麻烦，适合想解放双手或追求更自然交互的人。它把语音控制做得轻量开源，值得想尝鲜“vibe computing”的开发者试一把。
-
----
-## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
-
-**💡 是什么 + 为什么值得试：** 如果你的网站有客服或帮助文档，Cosmic AI Support Agent 能自动同步站点内容来回答用户问题，省去手动维护知识库的麻烦。值得一试的是它把"内容更新"和"AI 回答"打通的思路，不用每次都重新训练或手动喂数据。
+**💡 是什么 + 为什么值得试：** **Ghostifier 能自动帮你向那些收集了你数据的公司发送删除请求，省去你逐个翻隐私政策、找客服邮箱的麻烦。** 如果你在意自己的数据被随意留存，又不想手动写几十封邮件，这个开源工具值得一试。
 
 ---
-## 3. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
+## 2. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
 
-**💡 是什么 + 为什么值得试：** Etsy卖家最头疼的就是半夜或忙起来回不了买家消息，这个工具能自动生成专业回复，几秒内搞定。如果你订单多又不想因为回复慢丢单，值得试试。
-
----
-## 4. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
-
-**💡 是什么 + 为什么值得试：** 如果你想要一个完全本地运行、不把对话数据传给第三方的 AI 助手，而且还能顺便处理照片和视频素材，Ari Helper 7 就是干这个的。它在隐私敏感场景下省掉了“能不能信任云端”的顾虑，值得一试。
+**💡 是什么 + 为什么值得试：** AUDR 给 AI agent 的每次运行打上统一的成本追踪标记，让你能按调用、按任务算出到底花了多少钱，而不是月底看账单干瞪眼。如果你在跑多个 agent 或模型、想搞清楚钱烧在哪，它提供了一套现成的开放标准，省得自己造轮子。
 
 ---
-## 5. [Patchcord](https://www.producthunt.com/products/patchcord-2)
+## 3. [Appto](https://www.producthunt.com/products/appto)
 
-**💡 是什么 + 为什么值得试：** 开会时麦克风声音发闷、有底噪？Patchcord 给 Mac 上的麦克风加上专业级 EQ 和音效处理，让你的声音在 Zoom、Teams 里听起来像在录音棚录的。
-
----
-## 6. [Lecta](https://www.producthunt.com/products/lecta)
-
-**💡 是什么 + 为什么值得试：** Lecta 把你要背的知识点做成短视频和游戏，让你像刷抖音一样“刷”学习内容，把无意识刷手机的时间直接转化成复习。如果你总在碎片时间忍不住刷视频、又觉得正经学习启动成本太高，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** Appto 能把你已有的 AI 订阅（比如 ChatGPT Plus）直接变成一条 iOS 应用流水线，不用额外买 API 或搭后端就能批量生成 App。如果你有做小工具类 App 的想法但懒得从零写代码，值得拿它跑一遍试试。
 
 ---
-## 7. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
+## 4. [EasyCut](https://www.producthunt.com/products/easycut-2)
 
-**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在共享世界里自主交互、形成关系和事件，而不是自己操控，这个项目正好提供了一个“只能围观”的持续运行沙盒，适合用来测试 agent 行为或做叙事实验。
+**💡 是什么 + 为什么值得试：** EasyCut 是一个专门处理 Claude 生成视频的开源剪辑工具，能帮你快速裁剪、拼接和调整这些素材，省去用专业软件逐帧折腾的麻烦。如果你经常用 Claude 做视频内容，可以直接拿它来简化后期流程。
 
 ---
-## 8. [Aster by AsterWise](https://www.producthunt.com/products/aster-by-asterwise)
+## 5. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Aster 做的是一件事：根据任务类型自动帮你选最合适的模型，省去在代码、Agent 和工作流之间手动切换模型的麻烦。如果你手头同时跑多种任务、又不想为每个场景单独配模型，它值得试一下。
+**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 数据源（CRM、营销、客服等）统一到一个 SDK 和 MCP 接口上，省掉你为每个工具单独写集成代码的麻烦。如果你在搭销售/增长自动化流程，值得试它来减少对接成本。
+
+---
+## 6. [Incredible](https://www.producthunt.com/products/incredible)
+
+**💡 是什么 + 为什么值得试：** 想让电脑听懂你的话、动嘴不动手？Incredible 用语音帮你操作电脑，适合懒得摸键鼠或想尝试语音交互的场景。
+
+---
+## 7. [Doco](https://www.producthunt.com/products/doco-4)
+
+**💡 是什么 + 为什么值得试：** Doco 会根据你的听歌习惯和场景自动匹配歌单，省去手动挑歌的麻烦。如果你受够了千篇一律的推荐算法，可以试试它更“懂你”的选曲方式。
+
+---
+## 8. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 把云端桌面和 AI agent 结合起来，让 agent 直接在图形界面里替你操作软件、跑流程，省去自己写脚本或手动点鼠标的功夫。如果你在找能真正“动手干活”而不只是聊天的 AI 工具，这个项目值得跑起来试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

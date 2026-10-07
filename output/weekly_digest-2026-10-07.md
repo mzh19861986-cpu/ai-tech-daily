@@ -14,27 +14,27 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这篇内容讲的是数学界开始公开分享 AI 在数学研究中的实际进展，而不只是停留在“AI 能不能做数学”的争论上。值得关注的是，它展示了一种新趋势：数学家正把 AI 当作协作工具，用来探索猜想、验证证明和发现结构，这可能会改变未来数学研究的工作方式。
+这项进展的核心，是研究者开始系统性地公开AI在数学领域的阶段性成果——不只是最终答案，还包括中间推理、失败尝试和未解问题。值得关注的点在于：数学一直是检验AI“真推理”还是“模式匹配”的试金石，把这些过程摊开，能让外界更清楚AI到底是真的在思考，还是看起来像在思考。
 
 ### 2. [Strands Decider 2B: a small, open-source, decision model](https://strandsagents.com/blog/introducing-strands-decider/)
 *hackernews*
-Strands Decider 2B 是一个仅 20 亿参数的开源决策模型，专门用来做任务编排和工具调用——说白了就是让 AI Agent 在“下一步该干什么”这件事上做得更准。它的价值在于够小够开放：你可以在本地或边缘设备上跑，不用依赖大厂 API，同时还能按自己的业务逻辑微调。
-
-### 3. [Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
-*hackernews*
-Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能（如智能撰写、摘要等）。它的看点是原生性能与隐私友好的组合：Rust 带来的低资源占用，加上开源可审计、本地运行 AI 的可能性，正好切中 Linux 用户长期缺少好用现代邮件客户端的痛点。
+Strands Decider 2B 是一个仅 20 亿参数的开源决策模型，专门用来做任务规划、工具调用路径选择这类「下一步该干嘛」的判断。它的价值在于：小到能在本地或边缘设备跑，却把决策能力从大模型里单独抽了出来，让 Agent 编排不必每次都为一次选择调用几百 B 的通用大模型，成本和延迟都能降一个量级。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只给了标题「Mistral Large 4」，但没有附上正文内容，我暂时没法提炼具体信息。
+标题给的是「Mistral Large 4」，但正文内容为空，我无法确认具体发布了什么、参数和特性是什么。能否补充一下正文？否则总结就成了凭空编造。
 
-方便的话把新闻正文贴出来，我马上帮你总结。
+如果你是想让我基于「Mistral Large 4 发布」这个事实来写，可以先告诉我几个关键信息：发布方、上下文长度、主要能力提升点（比如推理、代码、多语言）、开源还是闭源、以及和上一代或竞品的对比数据。给我这些，我就能写出你要的那种有信息量、不套话的总结。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub 把「Decisions API」开放公测了，你可以用接口直接读取仓库里决策记录（比如谁在什么时候批准了什么变更），而不是靠翻 PR 评论去猜。对做合规审计或想追踪「这个改动当初为什么通过」的团队来说，这是个挺实用的官方数据源。
+GitHub 把 Decisions API 开放公测了，简单说就是让开发者能用代码去查询和订阅代码仓库里的决策记录（比如谁批准了哪个变更、为什么）。值得关注是因为它把原本散落在 Issue、PR 和讨论里的决策依据变成了可编程的结构化数据，团队做审计、合规追踪或自动化治理会省事很多。
+
+### 3. [The cost of lies: A Mineserver story](https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272)
+*hackernews*
+这条新闻讲的是一个叫 Mineserver 的开源项目因为维护者长期「画大饼」——承诺的功能迟迟不落地、issue 积压不处理——最终导致社区信任崩塌、贡献者流失的故事。它值得关注的地方在于，这不是单纯的代码问题，而是开源协作里一个典型困境：当维护者的承诺和实际投入长期脱节，社区会用脚投票，而修复信任的成本远高于当初如实说「我做不到」。
 
 
 ---

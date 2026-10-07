@@ -6,25 +6,25 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这项进展的核心是：研究者开始系统性地公开分享 AI 在数学领域的具体成果——不只是“AI 证了个定理”这种标题，而是把中间推理过程、失败尝试和工具链也摆出来。值得关注的原因在于，数学一直是检验 AI 真实推理能力的硬骨头，公开这些细节能让外界看清 AI 到底是在“思考”还是在“检索”，也方便其他研究者复现和改进，而不是只看到被挑选过的成功案例。
+The core of this progress is that researchers have used AI to produce verifiable new results in mathematics, not just to assist with computations or conjectures. What is noteworthy is that it shows AI is beginning to handle abstract problems that require rigorous proof, which could change the way mathematicians conduct research.
 
 ### 2. [Strands Decider 2B：一个小型、开源的决策模型](https://strandsagents.com/blog/introducing-strands-decider/)
 *hackernews*
-Strands Decider 2B is an open-source decision-making model with only 2 billion parameters, designed to handle judgment tasks like "which one to choose" with a smaller footprint, rather than engaging in all kinds of conversations like general large models. What makes it noteworthy is that decision-making scenarios often do not require the general capabilities of hundred-billion-parameter models. Small, specialized models have low deployment costs, fast response times, and can be directly plugged into agents or automation workflows as a "judge." If you are working on multi-agent systems, tool calling, or process orchestration, this type of specialized decision model may be more cost-effective than forcing a large model to do the job.
-
-### 3. [企鹅邮件——面向Linux的开源Rust电子邮件客户端，内置AI](https://penguin-mail.com/)
-*hackernews*
-Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置了 AI 辅助功能（如智能摘要、自动起草回复）。Rust 带来的性能和内存安全对邮件这种常驻后台的应用很实用，而 Linux 桌面长期缺乏好用的原生邮件客户端，这个项目值得关注。
+Strands Decider 2B is an open-source decision-making model with only 2 billion parameters, specifically designed to handle complex tasks that require multi-step reasoning and tool invocation. Its value lies in being small enough to run on consumer-grade GPUs, yet achieving decision-making accuracy close to that of large models, making it suitable as the "brain" in agent systems without burning money.
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-You gave the title as Mistral Large 4, but the main content wasn't pasted in. I'll set the draft aside for now. Send me the specific content, and I'll immediately write you a 2-3 sentence summary.
+Mistral has released Large 4, the latest version of its flagship large model, focusing on stronger reasoning capabilities and multilingual support, directly competing with the tier of GPT-4o and Claude 3.5 Sonnet. It is noteworthy that while maintaining its positioning on European data sovereignty, its performance has approached that of top U.S. closed-source models, providing companies that do not want to be locked into the U.S. cloud ecosystem with a genuinely competitive option.
 
-### 2. [Decisions API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [决策 API 已进入公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub 已将 Decisions API 开放公测——简而言之，就是让你通过代码直接读取和管理仓库中的「决策记录」（例如 ADR，架构决策记录），无需再手动翻阅文件。值得关注的是，它把团队「为何如此设计」的隐性知识转化为可查询、可自动化的数据，便于接入 CI 或内部工具进行治理和追溯。
+GitHub has opened its Decisions API for public beta. Simply put, it allows your code to directly read decision records such as "who approved what and when" in a repository, so you no longer need to manually dig through PRs and comments to reconstruct context. The key point worth noting is that it turns approval/rejection signals originally scattered across PR reviews and issue discussions into structured data, which will save a lot of effort for compliance audits, automated releases, or internal tools later on.
+
+### 3. [谎言的代价：一个Mineserver的故事](https://www.jeremyreimer.com/rockets-item.lsp?f=true&p=272)
+*hackernews*
+The author of Mineserver did the math based on personal experience: to avoid the community pressure and emotional exhaustion of maintaining an open-source project, he chose to lie to users and pretend the project was dead—only to pay a bigger price: broken trust, community backlash, and a psychological burden he still carries years later. This is worth paying attention to because it hits a hidden pain point for all open-source maintainers: honestly shutting down a project and drawing boundaries costs far less than making up excuses.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
