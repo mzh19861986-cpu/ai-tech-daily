@@ -4,42 +4,42 @@
 
 ## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Fuse AI 让你用一个 SDK 加一个 MCP 协议，就把分散的 GTM 工具（CRM、数据源、自动化流程）串成自己的一套技术栈，不用再为每个工具写一遍集成代码。如果你正被 GTM 工具之间的数据割裂和重复对接困扰，值得试一下。
+**💡 是什么 + 为什么值得试：** Fuse AI 让你用一个 SDK 和一套 MCP 协议，把自己散落在各处的 GTM（go-to-market）工具串成一个统一的自定义栈，不用再为每个数据源单独写胶水代码。如果你正被销售、营销、客户数据之间的对接折腾得头疼，它值得花十分钟跑个 demo 看看。
 
 ---
-## 2. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 2. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** AUDR 让你用一套统一的标准记录 AI agent 每次运行的 token 消耗和成本，不用自己定义字段、拼日志，跨工具的成本数据也能直接对比。如果你正在跑多个 agent 却算不清账，它值得一试。
-
----
-## 3. [ruOS](https://www.producthunt.com/products/ruos)
-
-**💡 是什么 + 为什么值得试：** ruOS 把云端桌面和 AI agent 结合起来，让 agent 直接在桌面环境里操作应用、执行任务，省去你手动点击的功夫。如果你想让 AI 帮你跑通完整工作流而不是只会在聊天框里答话，可以试试它。
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，省去记快捷键和在菜单里翻找的麻烦。如果你经常一边忙手头的事一边想操作电脑，它值得试试。
 
 ---
-## 4. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 3. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
 
-**💡 是什么 + 为什么值得试：** 如果你一边用 Claude Code 或 Codex 写代码，一边还要在浏览器里手动搬运页面内容、复制粘贴调试信息，Rill Browser 把这些操作直接放进 AI 的工作上下文里，省掉来回切换。适合想让 AI 编程助手真正"看到"网页、直接参与前端调试的人试试。
-
----
-## 5. [Pheebs](https://www.producthunt.com/products/pheebs)
-
-**💡 是什么 + 为什么值得试：** Pheebs 能帮你量化团队和个人使用 AI 编码工具的真实情况，比如谁在什么环节用、效果如何，而不是只靠感觉猜。如果你的团队正在用 Copilot、Cursor 这类工具但说不清到底值不值，它值得试试。
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服机器人却总在回答过时信息，这个项目能让 AI 客服自动同步站点内容，省去手动维护知识库的麻烦。
 
 ---
-## 6. [Incredible](https://www.producthunt.com/products/incredible)
+## 4. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑，适合懒得动手或想边做别的事边操作电脑的场景。如果你对语音交互或自动化感兴趣，这个开源项目值得试试。
-
----
-## 7. [Aster by AsterWise](https://www.producthunt.com/products/aster-by-asterwise)
-
-**💡 是什么 + 为什么值得试：** Aster 帮你根据任务类型自动把请求路由到最合适的模型，省去手动切换和反复试错的麻烦，适合同时用多个模型跑代码、Agent 或工作流的场景。
+**💡 是什么 + 为什么值得试：** Ari Helper 7 是个能本地运行的私人 AI 助手，新增的照片和影棚功能可以帮你直接在对话里处理图像和视频素材。如果你在意隐私、不想把内容传给第三方服务，同时又要个能干活的 AI 助手，它值得试一下。
 
 ---
-## 8. [Lecta](https://www.producthunt.com/products/lecta)
+## 5. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
 
-**💡 是什么 + 为什么值得试：** Lecta 把教材内容切成短视频和小游戏，让你像刷抖音一样刷知识点，解决复习时坐不住、看不进书的问题。如果你试过用短视频的方式背单词或记概念确实更上瘾，这个项目值得拿来跑一下。
+**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 能力全部跑在本地设备上，让你在记笔记时直接调用总结、改写等功能，不用把内容上传到云端。如果你在意隐私、又想在笔记应用里用上 AI，它值得试试。
+
+---
+## 6. [Patchcord](https://www.producthunt.com/products/patchcord-2)
+
+**💡 是什么 + 为什么值得试：** 开会时Mac麦克风声音总是发闷或忽大忽小？Patchcord用均衡器（EQ）实时美化麦克风音质，让你在Zoom、腾讯会议等任何Mac会议里都听起来像在录音棚。
+
+---
+## 7. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+
+**💡 是什么 + 为什么值得试：** Ghostifier 帮你向那些收集了你数据的公司自动发送数据删除请求，省去你逐个翻隐私政策、找客服邮箱、手动写邮件的麻烦。如果你在意自己的数据被谁存着、想批量清理又不想花时间折腾，这个开源工具值得试试。
+
+---
+## 8. [iphone-use](https://www.producthunt.com/products/iphone-use)
+
+**💡 是什么 + 为什么值得试：** `iphone-use` 让 AI agent 直接操作真实 iPhone 上的任意 App，哪怕对方根本没开放 API——适合需要自动化 iOS 流程又绕不开封闭生态的场景。相比模拟器或越狱方案，它跑在真机上，兼容性和可信度都更接近实际使用。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

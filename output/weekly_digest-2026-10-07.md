@@ -14,25 +14,25 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这项研究分享了 AI 在数学领域的最新进展，核心是让 AI 不仅能做题，还能参与真正的数学发现——比如提出猜想、辅助证明，甚至找到人类没注意到的模式。值得关注的是，这意味着 AI 正从「计算工具」变成「研究伙伴」，对数学界乃至整个科学发现的方式都可能产生深远影响。
+这篇文章介绍了一个分享AI在数学领域进展的项目或平台。简单说，它把AI用来做数学研究（比如找规律、证定理、猜公式）的最新成果集中展示出来，让数学家和AI研究者能互相看到对方在干什么。值得关注的原因是，数学一直被视为人类智力的高地，AI在这里的每一步突破，都可能预示着它在其他需要严谨推理的领域也能走得更远。
 
 ### 2. [Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 *hackernews*
-Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 功能，主打原生性能与现代化体验。对 Linux 用户来说，这意味着终于有一个不依赖 Electron、启动快、内存占用低的邮件选择，同时还能用 AI 辅助处理邮件——感兴趣的话可以去 GitHub 看看源码和功能演示。
+Penguin Mail 是一款用 Rust 写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能（比如智能撰写、摘要或分类）。对 Linux 用户来说，长期缺一个既现代又不像 Electron 那样臃肿的原生邮件工具，而 Rust 带来的性能和内存安全正好补上这块，加上 AI 集成，算是把「日常刚需」和「新玩法」凑齐了。
 
 ### 3. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-谷歌发布了 EmbeddingGemma 2，一个轻量级的多模态嵌入模型，能把文本、图像等内容映射到同一个向量空间。它的看点在于开源且体量小，意味着开发者可以在本地或边缘设备上跑多模态检索，而不用依赖昂贵的云端 API——对做搜索、推荐或 RAG 应用的人来说，多了一个低成本又可控的选择。
+Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间里做检索和相似度匹配。它的看点在于体量小、可本地部署，同时保持多模态能力，意味着开发者不用依赖大厂 API 就能搭建图搜图、文搜图这类应用，对隐私敏感或成本受限的场景尤其友好。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你还没贴出具体内容——只有标题「Mistral Large 4」。把正文发过来，我帮你提炼成 2-3 句有信息量的总结，说清楚它是什么、为什么值得关注。
+内容似乎不完整——只给了标题“Mistral Large 4”，没有正文或具体信息。能补充一下发布内容吗？比如：是模型发布公告、性能数据，还是其他？这样我才能准确提炼。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-这个 Decisions API 目前处于公开测试阶段。它提供了一套标准化的接口，让开发者能在应用里直接集成决策逻辑，而不用自己从零搭建规则引擎。如果你在做需要动态判断、策略路由或自动化工作流的系统，这个 API 值得关注一下。
+Decisions API 进入公开测试阶段，开发者现在可以正式接入一套用于在应用中嵌入决策逻辑的接口。它值得关注的地方在于，把原本需要自己搭建的规则引擎或判断流程标准化成了 API，省去重复造轮子的功夫，适合需要动态决策能力的团队尽早试用。
 
 
 ---

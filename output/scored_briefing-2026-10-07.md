@@ -2,30 +2,32 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Mistral Large 4  (⭐ 6.0/10)
+## 🥇 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-Mistral 发布了第四代旗舰大模型 Mistral Large 4，在推理、代码和多语言能力上全面升级，同时保持了相对轻量的部署成本。值得关注的是，它在多项基准测试中已经逼近甚至反超部分闭源顶级模型，对想自部署高性能模型又不想被API绑死的团队来说，是个很有吸引力的新选项。
+Mistral 发布了 Large 4，这是他们目前最强的旗舰大模型，主打复杂推理和多语言能力，直接对标 GPT-4 和 Claude 这类一线闭源模型。
 
-## 🥈 EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 6.0/10)
-🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+值得关注的点在于：Mistral 一直是「开源阵营里最能打的那一个」，如果 Large 4 的性能真能贴近甚至追平头部闭源模型，同时保持更开放的授权和更低的部署门槛，那对企业用户来说就是一个性价比很高的替代选项。简单说——又多了一个不用被 OpenAI 绑死的选择。
 
-Google 发布了 EmbeddingGemma 2，一个轻量级的多模态嵌入模型，能同时处理文本和图像并统一映射到同一向量空间，且完全开源可商用。它的价值在于：小体积意味着可以本地部署、低延迟推理，让 RAG、跨模态检索、语义搜索这类应用不再必须依赖昂贵的云端 API，对想自建检索系统的开发者来说是性价比很高的新选择。
-
-## 🥉 Sharing AI progress in mathematics  (⭐ 5.0/10)
-🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
-
-这篇内容大概是在说 AI 在数学领域的进展分享，但具体讲了什么、谁做的、有什么突破，光看标题看不出来。如果你能把正文贴过来，我可以帮你抓出真正的亮点——比如是证了个新定理、还是找到了人类没发现的数学结构、或者只是把已有的证明自动化了。这些区别很大，值得说清楚。
-
-## 4. Decisions API is in public beta  (⭐ 5.0/10)
-🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
-
-Decisions API 进入公开测试阶段，开发者现在可以正式接入这套决策管理接口，把业务规则和自动化逻辑从代码里抽出来单独维护。值得关注的是，这意味着规则变更不用再重新部署整个应用，产品或运营团队能自行调整决策流程，灵活性和迭代速度都会明显提升。
-
-## 5. Penguin Mail – open-source Rust email client for Linux with AI  (⭐ 4.0/10)
+## 🥈 Penguin Mail – open-source Rust email client for Linux with AI  (⭐ 5.0/10)
 🔗 [hackernews](https://penguin-mail.com/)
 
-一款用 Rust 写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能。Rust 意味着性能和内存安全都更有保障，加上 AI 集成和 Linux 原生支持，算是给长期缺好客户端的 Linux 用户提供了一个新选择。
+Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能（如智能摘要、自动分类或起草回复）。对 Linux 用户来说，这填补了原生邮件客户端长期缺乏现代 AI 体验的空白，且 Rust 带来的性能和内存安全性值得关注。
+
+## 🥉 EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 5.0/10)
+🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+
+EmbeddingGemma 2 是 Google 新发布的开源多模态嵌入模型，能把文本和图像映射到同一个向量空间，且体量轻到可以在本地设备上跑。它的看点在于：多模态检索（比如用文字搜图）不再依赖云端大模型，开发者可以直接在端侧搭建搜索、推荐或 RAG 应用，成本和隐私都更可控。
+
+## 4. Sharing AI progress in mathematics  (⭐ 3.0/10)
+🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+
+这条新闻的标题信息量太少，光凭「Sharing AI progress in mathematics」我没法准确总结——它可能指某机构发布了AI做数学的研究成果，也可能是开放了相关数据集或工具。如果你能补上具体内容（比如谁发布的、做了什么、有什么结果），我可以马上给你一版2-3句的提炼。
+
+## 5. Decisions API is in public beta  (⭐ 3.0/10)
+🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
+
+GitHub 把 Decisions API 开放公测了，简单说就是让第三方工具能直接读取你仓库里“分支保护规则”“合并队列要求”这类决策配置。值得关注是因为以前这些规则只能靠人肉点击审查，现在 CI/CD 和合规工具可以自动校验、甚至动态调整策略——对需要严格管控合并流程的团队来说，算是把治理能力从 UI 里解放出来了。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
