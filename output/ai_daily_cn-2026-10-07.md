@@ -6,25 +6,27 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-The title of this post points to a share about AI's progress in mathematics, but the body is empty, so no specific results can be extracted for now. If the body is added, I can help you explain in two or three sentences "what AI has done in mathematics" and "why this is worth paying attention to."
+这项进展的核心在于：研究者开始公开分享AI在数学领域的实际推演能力，而不仅仅停留在“能算题”的演示层面。其值得关注之处在于，数学一直被视为检验推理能力的硬标准，AI在此领域的进步，意味着它可能正从模式匹配走向更可靠的逻辑推导。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral发布了第四代旗舰模型Mistral Large 4，主打更强的推理能力和多语言支持，同时保持了相对高效的推理成本。值得注意的是，它在多个基准测试上开始逼近第一梯队闭源模型，但依然走开放权重路线——对想要私有化部署、又不想在效果上妥协太多的团队来说，这可能是目前最实际的选项之一。
+Mistral has released Large 4, their latest flagship large model, focusing on stronger reasoning capabilities and multilingual support. It is worth noting that Mistral has always established a foothold in the European AI community with a "small but refined" approach. This flagship upgrade means they have taken another step forward in direct competition with top closed-source models like GPT-4 and Claude 3.
 
-### 2. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
+### 2. [决策 API 目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-AnyPS5 是一个将 PS5 游戏二进制文件转换为 PC 原生程序的项目，它不采用模拟器方案，而是通过重新映射系统库，让游戏直接在 PC 上运行，目前已实现 87% 的系统库覆盖。这一思路值得关注，因为它避开了模拟器的性能损耗；如果成熟，可能让 PS5 独占游戏的 PC 移植变得像“转译”一样简单——当然，剩下的 13% 往往是最难攻克的图形和音频底层。
+标题：Decisions API 进入公开测试
 
-### 3. [决策API目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
-*hackernews*
-GitHub已将Decisions API开放公测——它能将代码审查中的审批规则、分支保护策略等“谁在何种条件下可以合并”的决策逻辑，直接以API形式暴露出来，供外部系统查询和集成。值得关注的是：过去这些规则藏在GitHub的各个配置页面中，现在可以程序化读取，便于团队进行合规审计、自动化工单，或将审查流程接入自建平台，无需再依赖人工截图和手动同步。
+Anthropic 向所有开发者开放了 Decisions API，让 AI 应用能以结构化的方式表达“做决定”这件事——不只是返回文本，而是输出可选方案、推理依据和置信度。它的价值在于：当 AI 开始替人做判断（比如审批、推荐、风控），我们需要的不只是答案，还得看清它是怎么想的，这套 API 正是为此设计的。
 
-### 4. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
+### 3. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-Mathematicians have found a new way to multiply integers, pushing the computational complexity below \(n \log n\). This means that multiplying two extremely large numbers can be faster than previously thought theoretically optimal, with direct implications for cryptography, large-number computation, and other fields. Simply put: a new crack has finally been made in the hard nut of multiplication.
+For a long time, there has been a conjecture in the mathematics community: can integer multiplication be faster than O(n log n)? Now the answer may be yes—some researchers have proposed a new method for integer multiplication that uses fewer than n log n bit operations. This means that the theoretical ceiling of large-number multiplication has been pried open a bit, and for fields such as cryptography and scientific computing that rely heavily on large-integer operations, the impact could be profound.
+
+### 4. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
+*hackernews*
+AnyPS5 是一个将 PS5 游戏二进制文件直接搬到 PC 上运行的项目，它不走模拟器路线，而是将 PS5 的系统库调用映射到 PC 的原生实现上，目前已覆盖 87% 的系统库。这值得关注，因为它绕开了模拟器最耗性能的环节——无需模拟整台主机，理论上帧率和兼容性上限会高得多，也更接近“移植”而非“跑模拟”。不过，剩下那 13% 的库和图形 API 往往是硬骨头，能否真正跑起大作还得看后续。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

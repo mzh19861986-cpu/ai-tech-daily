@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 1. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 加一个 MCP 把 GTM 工具链统一起来，省得你在 CRM、营销、数据平台之间来回写胶水代码。如果你正在搭 GTM 栈又不想被单一厂商绑死，值得试一下。
-
----
-## 2. [Appto](https://www.producthunt.com/products/appto)
-
-**💡 是什么 + 为什么值得试：** Appto 让你用自己已有的 AI 订阅批量生成 iOS 应用，省去从零搭建脚手架和模板代码的重复劳动。如果你经常要做多个结构相似的 App，能省下不少起步时间。
+**💡 是什么 + 为什么值得试：** 想用嘴代替键盘鼠标、又不想折腾复杂语音助手配置的话，Incredible 让你直接用语音操控电脑，适合解放双手或多任务场景，省去手动操作的步骤。
 
 ---
-## 3. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 2. [Scumble](https://www.producthunt.com/products/scumble)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接嵌进浏览器侧边栏，让你在浏览网页或调试页面时不用切窗口就能随时调用 AI 改代码、问问题。如果你经常一边查文档一边写代码，这个省掉的来回切换会明显提升节奏。
-
----
-## 4. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
-
-**💡 是什么 + 为什么值得试：** MCP 服务器的工具定义可能在首次批准后偷偷变更，mcpgawk 能检测出这种改动，防止你在不知情的情况下继续信任已被篡改的服务。如果你的 Agent 依赖第三方 MCP 工具，加一层这样的校验值得。
+**💡 是什么 + 为什么值得试：** Scumble 是一个专注 AI 局部重绘（inpainting）的开源编辑器，让你不用来回切换工具就能直接在图上圈选区域、反复修改直到满意。如果你经常要修图里的瑕疵或替换局部内容，它比通用图像编辑器更顺手，值得一试。
 
 ---
-## 5. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
+## 3. [Lecta](https://www.producthunt.com/products/lecta)
 
-**💡 是什么 + 为什么值得试：** AUDR 是一个用来统一记录 AI Agent 每次运行成本的开放标准，让你不再靠零散日志手动算 token 和费用。如果你在跑多个 Agent 或对比不同模型的开销，它能帮你把成本数据标准化，方便追踪和汇总。
-
----
-## 6. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** 如果你的手正忙或者懒得碰键盘，Incredible 让你直接用语音操控电脑，省去翻菜单找按钮的麻烦——开源免费，适合想尝鲜语音交互又不想被商业方案绑住的用户。
+**💡 是什么 + 为什么值得试：** Lecta 把你的复习资料变成类似短视频和游戏的形式，让你用刷抖音的方式过一遍知识点。如果你总是静不下心啃书本，可以用它把碎片时间利用起来。
 
 ---
-## 7. [Brnch](https://www.producthunt.com/products/brnch)
+## 4. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
 
-**💡 是什么 + 为什么值得试：** Brnch 是给 AI Agent 时代重新设计的代码托管平台——当你让 Claude、Cursor 这类工具自动提交代码、开 PR 时，它能更自然地处理这些机器生成的分支和变更，而不是硬套传统 Git 工作流。如果你的 Agent 经常因为标准 GitHub 流程卡壳，值得试试它。
+**💡 是什么 + 为什么值得试：** 如果你想观察一群 AI 角色在无人干预下自行生活、互动和演化，The Sentient World 提供了一个纯观赏式的沙盒，省去你自己搭建多智能体环境的麻烦。适合对 AI 行为模拟感兴趣、想看看“涌现”会不会真的发生的人。
 
 ---
-## 8. [Awakado](https://www.producthunt.com/products/awakado)
+## 5. [Aster by AsterWise](https://www.producthunt.com/products/aster-by-asterwise)
 
-**💡 是什么 + 为什么值得试：** Awakado 让你的 Mac 在 AI agent 跑长任务时不会因为休眠而中断，省得你守在电脑前或反复改电源设置。如果你经常挂着 Claude Code、Cursor 之类的工具跑批处理，它正好解决这个具体痛点。
+**💡 是什么 + 为什么值得试：** Aster 帮你在代码、Agent 和工作流场景里自动路由到最合适的模型，省去手动切换和调参的麻烦。如果你正被多模型选择和调用成本困扰，值得试试。
+
+---
+## 6. [OpenBot](https://www.producthunt.com/products/openbot-3)
+
+**💡 是什么 + 为什么值得试：** 想在本地免费跑一个多人在线的 AI 机器人，又不想依赖 Grok 的付费接口，OpenBot 可以直接替代，部署在自己机器上就能用。
+
+---
+## 7. [Review](https://www.producthunt.com/products/review-2)
+
+**💡 是什么 + 为什么值得试：** Review 让你在自己的机器上用本地 AI 模型做代码审查，代码不出本机、不依赖外部服务，适合对隐私敏感或想离线用的开发者。
+
+---
+## 8. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
+
+**💡 是什么 + 为什么值得试：** 如果你在 Etsy 上卖东西，被买家消息的回复速度拖累评分和响应率，这个开源项目能帮你自动生成秒回、语气专业的答复。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

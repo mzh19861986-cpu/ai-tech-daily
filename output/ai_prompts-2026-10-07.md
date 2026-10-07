@@ -4,37 +4,37 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章没有提供具体内容（正文为空），因此无法从中提炼 Prompt 技巧或 AI 使用建议。
-
-如果你把文章正文贴出来，我可以帮你提炼成一条可直接使用的 Prompt 技巧或最佳实践。**
+**这篇文章/讨论目前没有提供正文内容，因此无法提炼具体的 Prompt 技巧或使用 AI 的建议。请把文章正文或讨论内容发来，我可以帮你总结成可直接用的一条 Prompt 最佳实践。**
 
 📎 来源：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## 2. 💡 技巧 2
 
-**这篇文章介绍的是一个开源 Rust 邮件客户端（Penguin Mail），本身并未包含可提炼的 Prompt 技巧或 AI 使用建议。若需从 AI 使用角度总结，可参考：将 AI 能力集成到工具中时，应优先设计本地/隐私友好的工作流（如开源、可自托管），让 AI 作为增强功能而非强制依赖，从而兼顾实用性与用户信任。**
+**这篇文章没有提供具体内容，因此我无法提炼 Prompt 技巧或 AI 使用建议。请把正文/讨论贴上来，我可以帮你提炼成 1-2 句可复用的 Prompt 最佳实践。**
 
 📎 来源：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有提供具体的 Prompt 技巧或 AI 使用建议，只是一条关于 EmbeddingGemma 2 模型发布/介绍的信息（且正文内容为空），无法提炼可用的 Prompt 方法或最佳实践。**
+**这篇文章没有提供具体内容，因此无法提炼 Prompt 技巧或总结 AI 使用建议。请补充正文内容，我再为你提炼。**
 
 📎 来源：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## 4. 💡 技巧 4
 
-**这篇文章内容为空，没有可供提炼的正文信息。建议你提供完整文章或讨论内容，我才能从中提炼可用的 AI Prompt 技巧或最佳实践。**
+**这篇文章主要讲 OpenTPU 这个开源 AI 加速器项目，几乎没有涉及 Prompt 技巧或如何使用 AI 的建议，因此无法提炼出可直接使用的 Prompt 最佳实践。**
 
 📎 来源：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
 ## 5. 💡 技巧 5
 
-**这篇文章没有提供可提炼的 Prompt 技巧或 AI 使用建议。它讲的是 UniEvo-VL 这个多模态模型的**自蒸馏训练方法**，属于模型训练/架构层面的研究，而非提示词工程或面向用户的 AI 使用实践。
+**这篇文章的核心建议可以提炼为一个 Prompt 技巧：
 
-如果你需要，我可以基于文章标题和主题，帮你**推断/撰写**一条适用于多模态模型的提示词最佳实践（例如“让模型先自我复述图像要点再作答”这类自蒸馏式提示），但需要说明这属于延伸创作，并非原文内容。**
+**在向 AI 提问或布置任务时，主动在提示词里"替模型写好下一步的预期回复或选项"，让模型只需在其中挑选/确认，而不是从零生成。**
 
-📎 来源：[UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement](https://arxiv.org/abs/2609.38721)
+换句话说，把"向模型要答案"变成"给模型一份它容易消化和回应的草稿（suggested message）"，这既降低了模型的生成难度、提高准确率，也让你更容易控制输出方向。**
+
+📎 来源：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*

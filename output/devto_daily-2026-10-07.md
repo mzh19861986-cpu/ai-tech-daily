@@ -2,28 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Node.js Report Security — SMS OTP 2FA Suppression for Blocked Numbers](https://dev.to/orlandojohansson7621/nodejs-report-security-sms-otp-2fa-suppression-for-blocked-numbers-1kd3)
+## 1. [People Won't Go Outside so I made this](https://dev.to/0shuvo0/people-wont-go-outside-so-i-made-this-20j4)
 
-**✨ 精华总结：** Node.js 搞了个安全报告，讲的是短信验证码 2FA 的一个坑：被拦截（blocked）的手机号不能被当成普通的发送失败来处理，否则会泄露号码状态，还可能让攻击者绕过验证。核心建议是把短信 2FA 建模成一个事务状态机——先建 challenge、查拦截名单、发码、服务端验证，**验证通过后才创建会话**。
+**✨ 精华总结：** 有人做了个叫 GoSeek 的 App，把「出去走走」变成了一场解谜寻宝游戏——它不给你导航指令，而是丢给你一道谜语，比如「一种小型毛茸茸的顶级掠食者，自我驯化，爱在午后……」，你得猜出答案然后出门去找。它抓住的点很聪明：人讨厌被命令，但抵抗不了谜题，用好奇心替代说教，可能比任何健身打卡 App 都更容易让人真的站起来出门。
 
-值得关注的点在于，这类拦截场景很容易被开发者忽略，但它既涉及安全（会话必须在验证后才存在），又涉及隐私（不能因为号码被拦截就返回一个和普通失败一样的模糊错误）。如果你在做 B2B SaaS 的登录流程，这篇值得过一眼。
+## 2. [Burn Tensor Library Enhances API Stability, Performance, and Developer Experience for 1.0 Release](https://dev.to/serbyte/burn-tensor-library-enhances-api-stability-performance-and-developer-experience-for-10-release-569o)
 
-## 2. [A voice notebook that can not phone home: on-device Whisper on Android](https://dev.to/theascended/a-voice-notebook-that-can-not-phone-home-on-device-whisper-on-android-4608)
+**✨ 精华总结：** Burn 这个 Rust 深度学习框架发布 0.22.0，核心动作是砍掉泛型 API、精简代码库，为 1.0 稳定版铺路。值得关注的是它同时覆盖训练和推理，这次专门解决开发者长期抱怨的 API 臃肿问题——如果你在 Rust 生态里找 PyTorch 替代品，这个版本是认真要往生产可用方向走了。
 
-**✨ 精华总结：** 有人做了个安卓语音笔记 App，把 Whisper 模型完全跑在本地，并且从根上杜绝联网——它的 AndroidManifest 里压根没申请 INTERNET 权限，所以不是"我们承诺不上传"，而是物理上做不到。它跟普通录音 App 的区别在于：录完不是丢给你一个再也不会点开的音频文件，而是自动转写成文字，每次会话一个文件，打开就能读。这事值得关注的点在于，它证明了端侧大模型已经能撑起"安静记笔记"这种日常场景，同时给隐私敏感型工具提供了一个思路——比起写隐私政策，不如直接删掉那个权限。
+## 3. [Aurora Odds: should you go outside and look up right now?](https://dev.to/kaichen_dev/aurora-odds-should-you-go-outside-and-look-up-right-now-jjf)
 
-## 3. [Customer Support Duplicate Alerts: Idempotency Keys Across Polling Errors and Retries](https://dev.to/abernathycross6857/customer-support-duplicate-alerts-idempotency-keys-across-polling-errors-and-retries-4jm0)
+**✨ 精华总结：** 有人做了个极光预测工具 Aurora Odds，不讲 Kp 指数那套黑话，直接告诉你「此刻你头顶能不能看到」。它瞄准的是 2024 年 5 月那场极光风暴暴露的问题——数百万人在事后才知道自己错过了，因为手机警报只说「G5」「Kp 9」，没人翻译成「你家窗外」。极光预报的最后一公里不是数据不够，而是没人把它换算成你的坐标和时间。
 
-**✨ 精华总结：** 客服 AI 告警重复轰炸，八成不是真有六次故障，而是轮询反复捞到同一条错误、加上发送端重试叠加出来的。解法是在查询和发送器之间加一层幂等状态机：用错误分组的稳定键去重，再配一个冷却窗口，让 webhook、邮件、短信只发一次。
+## 4. [HTTP 200 is not enough: checking MCP discovery without executing tools](https://dev.to/naifgravity/http-200-is-not-enough-checking-mcp-discovery-without-executing-tools-2c94)
 
-## 4. [Build a Multi-Voice Dialogue Generator](https://dev.to/voice_developer/build-a-multi-voice-dialogue-generator-4e4)
+**✨ 精华总结：** MCP 集成常犯一个隐蔽错误：端点返回 HTTP 200，但实际根本没法用——响应可能对不上 JSON-RPC 请求、初始化时没协商出版本、后续请求又丢了 session header。NAIF Gravity MCP Diagnostics 是个纯标准库的 Python 探针，专门回答一个更细的问题：客户端到底能不能完整走通这套协议。值得关注是因为大多数健康检查只看状态码，而真正让集成挂掉的往往正是这之后的事。
 
-**✨ 精华总结：** 用 TTS 服务加一段拼接代码，就能让同一个对话里出现旁白、逗趣搭档和严厉讲师等不同声音，像广播剧一样自然切换。  
-值得关注的是，这不再是预录音频的专利——实时生成、多角色混音，意味着做播客、有声书或游戏 NPC 对白的门槛被拉低到几行胶水代码的级别。
+## 5. [We fired 40 payments at our own agent at the same instant. 28 got through, 12 didn't.](https://dev.to/quinn_854b15f517d8632ed4f/we-fired-40-payments-at-our-own-agent-at-the-same-instant-28-got-through-12-didnt-75m)
 
-## 5. [Cheap Hosted Metrics for Node.js SaaS: A Dashboard API Decision Record](https://dev.to/xenoncross2718/cheap-hosted-metrics-for-nodejs-saas-a-dashboard-api-decision-record-48ap)
-
-**✨ 精华总结：** 给 Node.js SaaS 选监控面板 API，核心就一条：别比价格表，先跑一轮「像生产环境一样」的试用，验证四件事——基数可控、数据可查、面板可复现、告警真能用。PostHog、Grafana Cloud、Datadog 和托管 Prometheus 的差别不在便宜多少，而是四种截然不同的运维模型，选错一样贵。
+**✨ 精华总结：** 有人拿自家支付 Agent 做了个压力测试：同一瞬间并发打 40 笔付款，结果 28 笔成功、12 笔被拦——因为日限额是 200 美元，而超额部分本该被拦下来「本该」这两个字才是重点。这测试的意义在于，它暴露的不是「限额有没有生效」，而是**并发场景下的额度扣减存在竞态条件**：多笔请求同时读取余额、同时判定通过、再依次执行，就会击穿限额。作者顺手把可复现脚本也放出来了，做支付或任何带配额的系统都值得拿它照照自己的代码。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
