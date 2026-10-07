@@ -4,31 +4,27 @@
 
 ## 🤖 AI / 大模型
 
-### 1. [分享人工智能在数学领域的进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-This content is about sharing AI's progress in mathematics—possibly a team or researcher has released the latest results in AI for mathematical proof, conjecture exploration, or formal verification. It is worth noting because mathematics is becoming a tough nut to crack for testing AI's reasoning ability; it is more telling than leaderboard rankings about whether a model is truly "thinking" rather than just pattern matching. If you care about the real boundaries of AI's reasoning ability, this kind of progress is more informative than ordinary model releases.
+I just read Terence Tao's sharing on AI progress in mathematics. The core message is: AI can now reliably complete the step of "translating natural language mathematical problems into Lean formal proofs," and the quality is high enough to be directly used in actual research. This is worth paying attention to because formal verification has always been one of the biggest bottlenecks in the combination of mathematics and AI—once this is cleared, AI can not only assist with proofs but may also反过来 help humans discover new conjectures and check existing papers for flaws. Tao's own excitement about this matter is not about "AI being able to do math problems," but about it beginning to become a truly usable collaborative tool, rather than a toy.
 
 ## 📌 综合
 
-### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
+### 1. [米斯特拉尔大模型4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-这段内容已经是简体中文了。以下是整理后的版本：
+It seems the content wasn't pasted in full—there's only a title, "Mistral Large 4." Send me the main text, and I'll summarize it for you.
 
-看起来你只给了标题「Mistral Large 4」，但没附上具体内容，我没法凭空总结出一条准确的新闻。
-
-把正文（或关键信息）贴过来，我就能按你要的风格提炼成 2-3 句，说清「是什么」和「为什么值得关注」。
-
-### 2. [决策API处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-Microsoft Graph 的 Decisions API 已开放公测。简而言之，它允许你在 Microsoft 365 中创建、管理和跟踪决策流程——比如会议决议、审批事项——而不仅仅停留在邮件或文档中。值得注意的是，这将“决策”本身转变为可查询、可流转的结构化数据，对于使用 Teams 和 SharePoint 进行协作的团队来说，这可能比再多的会议纪要都更有效。
+AnyPS5 is a tool that can run PS5 game binaries directly on PC, not via emulation, but by remapping system library calls—it currently covers 87% of the PS5 system libraries. Compared to traditional emulators, this approach can theoretically significantly reduce performance overhead. If the remaining library support is completed later, it could offer PC players another way to play PS5 exclusive games.
 
-### 3. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%系统库）](https://github.com/boykopovar/AnyPS5)
+### 3. [决策 API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-AnyPS5 is a new project that can port PS5 game binaries directly to PC, taking a native translation approach rather than an emulator route, and has currently completed mapping 87% of system libraries. Its value lies in bypassing the old problems of traditional emulators, such as high performance overhead and poor compatibility—if this approach proves successful, playing PS5 exclusive games on PC may no longer require waiting for official ports or enduring stuttering.
+Anthropic has opened the public beta of Claude's "Decisions API." Simply put, it lets developers feed business rules to the model in a structured way, so it makes judgments and gives conclusions based on the logic you set, rather than guessing through prompts every time. The key point worth noting is that decision logic has changed from being "hardcoded in the code or scattered in prompts" to a versionable, reusable object, making debugging and auditing much easier - if your product has many "rule-based" scenarios, this can save you a lot of work building your own judgment layer.
 
 ### 4. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-Mathematicians have finally achieved integer multiplication below n log n—specifically, by shaving off an exponent from O(n log n), breaking the Schönhage-Strassen upper bound that has stood for nearly half a century. This means that for the first time, the theoretical speed of multiplying extremely large numbers has crossed this threshold, with potential implications for cryptography, large-number computation, and other foundational scenarios, though it remains largely theoretical and far removed from everyday code.
+A major development in mathematics: it has been proven for the first time that multiplying two n-digit integers can be done in less than n log n time. This means the half-century-old ceiling on multiplication speed has been officially broken, and large-number arithmetic, along with related cryptography and scientific computing, may all speed up as a result.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

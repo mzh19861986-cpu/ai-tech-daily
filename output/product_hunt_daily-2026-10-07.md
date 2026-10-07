@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Appto](https://www.producthunt.com/products/appto)
+## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Appto 能让你用自己的 AI 订阅（比如 ChatGPT Plus）自动批量生成 iOS 应用代码，省去从头搭建 Xcode 项目的重复劳动。如果你经常需要快速做原型或上架小工具类 App，它值得一试，因为成本只花在你已有的 AI 订阅上，不额外收费。
-
----
-## 2. [EasyCut](https://www.producthunt.com/products/easycut-2)
-
-**💡 是什么 + 为什么值得试：** EasyCut 能帮你直接剪辑 Claude 生成的运动视频，省去导入专业软件再手动对齐的麻烦。如果你经常用 Claude 做动态内容、又不想为简单剪辑折腾，它值得一试。
+**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 和一个 MCP 就能搭起整套 GTM（市场推广）工具链，省去在多个 API 和数据源之间反复拼接适配的麻烦。如果你的团队正在自己攒增长相关的工具，又不想被单一平台绑定，这个项目值得花半小时跑一遍看看。
 
 ---
-## 3. [Floani](https://www.producthunt.com/products/floani)
+## 2. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** Floani 让你用 AI 生成流程图、架构图这类示意图，再直接加动画和分享链接，省去在绘图工具里手动拖拽和对齐的麻烦。如果你经常要向别人解释系统或流程，想快速做出一张能动的图，可以试试它。
-
----
-## 4. [Fuse AI](https://www.producthunt.com/products/fuseai)
-
-**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 工具链（数据源、自动化、CRM 等）统一到一个 SDK 和一个 MCP 接口里，省去你在多个 API 之间来回拼胶水代码的麻烦。如果你的团队正在自己搭 GTM 流程又不想被单一厂商绑定，它值得花半小时试跑一下。
+**💡 是什么 + 为什么值得试：** 让 AI 代理直接操作真实 iPhone 上的任意 App，包括那些没有开放 API 的——相当于给自动化脚本配了一双真手。如果你受够了为每个 App 单独写接口适配，这个能省下大量折腾。
 
 ---
-## 5. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 3. [Pheebs](https://www.producthunt.com/products/pheebs)
 
-**💡 是什么 + 为什么值得试：** OpenBot 是一个本地运行、免费开源的多人聊天机器人方案，适合想自己掌控数据、又不想依赖 Grok 等云端服务的场景。它支持多人同时使用，部署在自己机器上就能跑，隐私和成本都更可控。
-
----
-## 6. [Banger](https://www.producthunt.com/products/banger-mail)
-
-**💡 是什么 + 为什么值得试：** Banger 帮你把邮件营销里的自动化流程（欢迎信、召回、跟进等）交给 AI 来写和跑，省去手动搭流程和憋文案的功夫。如果你想低成本试试 AI 驱动的邮件自动化，又不想被复杂工具绑住，可以拿它跑个小活动看看效果。
+**💡 是什么 + 为什么值得试：** Pheebs 帮你量化团队里每个人实际是怎么用 AI 编码的——谁在哪些任务上用了、效果如何，而不是靠感觉猜。如果你想知道 AI 工具到底有没有提升团队产出、该不该继续投入，它能给你数据而不是印象。
 
 ---
-## 7. [StayCharted](https://www.producthunt.com/products/staycharted)
+## 4. [Customer Service AI for Etsy](https://www.producthunt.com/products/customer-service-ai-for-etsy)
 
-**💡 是什么 + 为什么值得试：** 如果你手头有一堆文本或图片想按自己的分类标准自动打标签，又不想写代码，StayCharted 让你直接训一个专属的分类模型，文本和图片都支持。适合快速验证想法或处理小批量数据，省去搭模型的功夫。
+**💡 是什么 + 为什么值得试：** 如果你在 Etsy 上卖东西，这个开源项目能帮你自动回复买家的消息，省下每天手动处理重复问询的时间。它值得一试，因为回复专业且响应快，能避免因回复不及时而丢单或影响店铺评分。
 
 ---
-## 8. [OrgComputers](https://www.producthunt.com/products/orgcomputers)
+## 5. [Ari Helper 7](https://www.producthunt.com/products/ari-helper)
 
-**💡 是什么 + 为什么值得试：** OrgComputers 给你提供一个统一的工作区来管理和编排多个 AI Agent，解决它们之间任务分派、状态同步和上下文共享的混乱问题。如果你正在同时跑几个 Agent 又不想手动传话，值得试试。
+**💡 是什么 + 为什么值得试：** Ari Helper 7 是个本地运行的私密 AI 助手，新增了照片和影片工作室功能，适合想在不上传数据的前提下处理图像和视频的人。如果你的工作流涉及敏感素材、又不想依赖云端服务，值得试一下。
+
+---
+## 6. [Lecta](https://www.producthunt.com/products/lecta)
+
+**💡 是什么 + 为什么值得试：** Lecta 把你的学习材料变成短视频和游戏，让你用刷短视频的方式过一遍知识点，适合想利用碎片时间复习又管不住手去刷社交媒体的人。如果你正好有一堆看不进去的笔记或课本，可以拿它试试换个方式"刷"知识。
+
+---
+## 7. [The Sentient World](https://www.producthunt.com/products/the-sentient-world)
+
+**💡 是什么 + 为什么值得试：** 如果你想观察多个 AI 角色在一个共享世界里长期互动、自行演化关系，而不用自己写代码或参与操作，The Sentient World 提供了一个纯旁观式的沙盒；适合拿它当灵感来源或观察多智能体行为的小实验。
+
+---
+## 8. [Aster by AsterWise](https://www.producthunt.com/products/aster-by-asterwise)
+
+**💡 是什么 + 为什么值得试：** Aster 帮你根据任务类型自动把请求路由到最合适的模型，省去手动切换和试错的麻烦，适合同时用多个模型写代码或跑 agent 工作流的场景。想省调用成本又不想牺牲效果的话，可以试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

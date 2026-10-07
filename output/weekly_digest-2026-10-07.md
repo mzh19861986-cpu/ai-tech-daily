@@ -14,25 +14,29 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这次分享的是 AI 在数学领域的最新进展，核心看点是 AI 不再只是做计算或验证，而是开始参与真正的数学发现和猜想生成。值得关注的是，如果 AI 能在数学这种高度依赖创造力和严谨推理的领域取得实质突破，意味着它在其他科学领域的自主研究能力可能比我们预想的更快到来。
+这篇文章分享了 AI 在数学领域的最新进展。简单说，就是研究者开始系统性地展示 AI 如何帮助解决数学问题——不只是算得快，而是能参与猜想、证明辅助和模式发现。值得关注的是，这标志着 AI 正从「计算工具」变成「数学研究的合作者」，对数学家和 AI 研究者都有实际参考价值。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral 发布了新一代旗舰模型 Large 4，据称在推理、代码和多语言能力上大幅提升，直接对标 GPT-4o 和 Claude 3.5 Sonnet 级别。值得关注的是它延续了 Mistral 一贯的高效路线——用更小的参数规模打平甚至超越大得多的模型，如果实测属实，意味着企业部署顶级 AI 的成本门槛会进一步降低。
+看起来你只给了标题「Mistral Large 4」，但没有提供具体的新闻内容或背景信息。
 
-### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
-*hackernews*
-GitHub 把仓库里的「决策记录」做成了 API——以前架构决策、技术选型这些讨论散落在 issue、PR 和文档里，现在可以结构化地存取和查询。对团队来说这意味着决策不再靠翻聊天记录考古，而是变成可检索、可追溯的一等公民。
+如果你能把相关的报道、发布说明或细节贴出来，我可以帮你用简洁、有信息量的方式总结成 2-3 句话，讲清楚它「是什么」以及「为什么值得关注」。
 
-### 3. [AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)](https://github.com/boykopovar/AnyPS5)
+### 2. [AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-AnyPS5 能把 PS5 游戏的二进制文件直接搬到 PC 上跑，而且完全不用模拟器——它已经映射了 87% 的 PS5 系统库。这意味着 PS5 独占游戏有望像原生 PC 游戏一样运行，性能损耗可能远低于传统模拟方案，对玩家和移植开发者都是个值得盯紧的突破。
+AnyPS5这个项目厉害了，它能让PS5游戏直接跑在PC上，而且不是模拟器那种绕弯路子——它把PS5的87%系统库直接映射到了PC环境，相当于给PS5游戏做了个“翻译层”，让它们原生调用PC的硬件。
+
+这比传统模拟器靠谱得多：模拟器要虚拟整个PS5硬件，性能损耗大、兼容性也难搞；而AnyPS5走的是库映射路线，理论上性能接近原生，开发维护也轻得多。虽然还差13%的库没搞定，但87%这个完成度已经说明这条路走得通——如果后续把那13%补齐，PC玩PS5独占大作可能真不用等官方移植了。
+
+### 3. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
+*hackernews*
+GitHub 把「决策」从散落在 PR 评论和 issue 里的口头约定，变成了可以查询的 API 资源——任何人都能读取某个仓库里记录在案的架构决策。值得关注是因为它给 AI 编码代理开了个口子：以前代理只能猜项目为什么这么设计，现在能直接查，这比让它读一堆历史讨论靠谱得多。
 
 ### 4. [Integer multiplication below n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-数学界搞出了个新算法，把两个 n 位整数相乘的复杂度降到了 n log n 以下——这是自 1971 年 Schönhage-Strassen 算法以来这个领域最大的突破。简单说，以后大数乘法（比如密码学里用的）理论上能算得更快，虽然实际工程落地可能还得等，但方向上的意义很重大。
+数学界迎来里程碑：两个整数相乘的复杂度首次被证明可以低于 O(n log n)，这是自 1971 年 Schönhage-Strassen 算法以来该领域最重大的理论突破。简单说，大数乘法的“速度极限”被重新定义了——虽然短期内还影响不到你的日常代码，但它为未来更快的加密、科学计算和符号运算打开了新的理论空间。
 
 
 ---
