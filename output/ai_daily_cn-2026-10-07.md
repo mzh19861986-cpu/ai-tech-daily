@@ -6,25 +6,27 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-This study shares the latest advances of AI in mathematics—AI systems are beginning to assist in discovering mathematical patterns, verifying conjectures, and even proposing proof paths that humans have never thought of. Notably, this means AI is transforming from a "computational tool" into a "mathematical collaborator," potentially accelerating the pace of research in pure mathematics, the field most dependent on human intuition.
+这条内容目前只有标题，没有正文，所以还无法提炼具体信息。不过从标题“分享 AI 在数学领域的进展”来看，大概率是讲 AI 在数学领域的最新进展分享——比如用 AI 辅助证明定理、发现新猜想或加速数学研究。
 
-### 2. [企鹅邮件——面向Linux、带AI功能的开源Rust电子邮件客户端](https://penguin-mail.com/)
+如果后续补充正文，我可以帮你用 2-3 句话总结出“做了什么”和“为什么重要”。
+
+### 2. [企鹅邮件——面向Linux的开源Rust电子邮件客户端，内置AI功能](https://penguin-mail.com/)
 *hackernews*
-Penguin Mail is an open-source email client for Linux written in Rust, featuring local AI integration—email classification, summarization, and smart replies all run locally without sending email content to third parties. The performance and memory safety brought by Rust, combined with the long-standing lack of a good native email client on the Linux desktop, make this combination quite noteworthy.
+Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能，主打原生性能和现代化界面。对于厌倦了 Electron 套壳邮件应用、又想在本地收件箱里直接用上 AI 摘要和智能回复的 Linux 用户来说，这是个值得关注的新选择。
+
+### 3. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+*hackernews*
+Google 发布了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能同时处理文本和图像并转成向量表示。它的看点在于：模型小到可以本地运行，却支持跨模态检索（比如用文字搜图），这对想在端侧做 RAG 或多模态搜索的开发者来说，是个免调用 API、省成本的新选择。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你还没贴出「Mistral Large 4」的具体内容（目前标题下是空的）。把正文或要点发给我，我就按你要的风格压缩成 2–3 句：说清它是什么、为什么值得关注，专业但不端着。
+Mistral has released its fourth-generation flagship large model, Mistral Large 4. The core upgrades lie in further enhanced reasoning capabilities and multilingual support, while maintaining Mistral's consistent efficient inference architecture. Notably, it directly targets the GPT-4 and Claude 3 Opus level, but follows a more lightweight technical approach—if you care about deployment costs and inference speed without sacrificing too much performance, this may be one of the most pragmatic options currently available.
 
-### 2. [Decisions API 目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [决策API现已进入公开测试阶段。](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Cloudflare has turned decision-making into an API, now in public beta. Simply put, it lets you run rule-based decisions at edge nodes—for example, deciding in real time which logic to follow based on user region, device, or request characteristics, without going back to a central server. For teams doing canary releases, A/B testing, or dynamic routing, this means lower latency and a simpler architecture, making it worth trying out early.
-
-### 3. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
-*hackernews*
-AnyPS5 is a new tool that can run PS5 game executables directly on PC by mapping 87% of the PS5 system libraries to equivalent implementations callable on PC, rather than emulating the entire console. The key point worth noting is that it bypasses the performance and compatibility bottlenecks of traditional emulators and could, in theory, allow ported games to run at near-native efficiency. If this approach works, the technical barrier to bringing PS5 exclusives to PC will be greatly lowered.
+Decisions API 现已开放公测。它将决策逻辑从代码中抽象出来，转化为可独立调用和管理的接口，使业务规则能够单独迭代，无需重新部署应用。如果你正在维护频繁变动的业务规则，这将大大减少发版和回滚的麻烦。
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

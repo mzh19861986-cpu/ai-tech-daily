@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [iphone-use](https://www.producthunt.com/products/iphone-use)
+## 1. [Extrovert](https://www.producthunt.com/products/extrovert)
 
-**💡 是什么 + 为什么值得试：** 让 AI agent 直接操作真实 iPhone，连没有 API 的 App 也能自动化，省去为每个应用单独写接口的麻烦。如果你想让 AI 替你点手机，这个项目值得一试。
-
----
-## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
-
-**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新、客服/帮助中心却总是滞后，这个项目能让 AI 支持助手自动跟着站点内容同步，省去手动维护知识库的麻烦。适合想低成本搭一个“不掉队”的站内问答助手的团队试试。
+**💡 是什么 + 为什么值得试：** Extrovert 让你在 AI agent 里直接跑 LinkedIn 外联，把「找线索→发私信→跟进」这套手动活儿自动化，适合需要批量触达但不想切来切去的人。开源可自托管，比闭源工具更可控，值得试试。
 
 ---
-## 3. [Incredible](https://www.producthunt.com/products/incredible)
+## 2. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Incredible 让你直接用嘴操控电脑，省去记快捷键和点菜单的麻烦。想试试语音干活、又不想被大厂助手绑死的话，这个开源项目值得装一个。
-
----
-## 4. [Lecta](https://www.producthunt.com/products/lecta)
-
-**💡 是什么 + 为什么值得试：** Lecta 把你枯燥的复习资料变成短视频和游戏，让刷手机的时间也能用来背知识点。如果你总在碎片时间里忍不住 doomscroll，又想把学习塞进去，可以试试它。
+**💡 是什么 + 为什么值得试：** Fuse AI 用一个 SDK 加一个 MCP，让你把销售和营销环节的各种工具串成自己的 GTM 技术栈，不用再为每个工具单独写对接代码。如果你正在搭销售自动化流程又嫌集成太碎，可以花半小时试试它能不能省掉这层胶水工作。
 
 ---
-## 5. [EasyCut](https://www.producthunt.com/products/easycut-2)
+## 3. [Banger](https://www.producthunt.com/products/banger-mail)
 
-**💡 是什么 + 为什么值得试：** 如果你用 Claude 生成过动态视频，却懒得手动剪掉那些无意义的片段和空白，EasyCut 能帮你自动完成粗剪，省下反复拖时间轴的时间。
-
----
-## 6. [Brnch](https://www.producthunt.com/products/brnch)
-
-**💡 是什么 + 为什么值得试：** Brnch 把代码托管做成了 AI agent 能直接读写的一等公民，让你不用写胶水代码就能让 agent 参与分支管理和协作流程。如果你在做 agent 驱动的开发工作流，它值得看一眼。
+**💡 是什么 + 为什么值得试：** Banger 帮你用 AI 自动跑邮件营销流程（欢迎、召回、跟进），不用手动搭复杂自动化，适合想低成本留住客户的小团队。如果你的邮件营销还靠人肉定时发送，值得试试它能不能省下这块精力。
 
 ---
-## 7. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 4. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接内嵌进浏览器，让你在浏览网页的同时随手调用 AI 助手，不用在编辑器和浏览器之间反复切换。如果你经常边查资料边写代码，它值得一试。
+**💡 是什么 + 为什么值得试：** 如果你在用 Claude Code 或 Codex 写代码，Rill Browser 能让这些 AI 助手直接在浏览器里和你并排协作，省去在终端和浏览器之间来回切换的麻烦，值得试试。
 
 ---
-## 8. [Review](https://www.producthunt.com/products/review-2)
+## 5. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** Review 让你在自己的机器上用本地 AI 做代码审查，代码不用上传到任何云端服务。如果你在意代码隐私又想要 AI 辅助 review，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接控制电脑操作，省去手动点击和打字的麻烦——适合想尝试语音交互、或者手不方便离开键盘鼠标的场景。它是开源的，值得试试看语音控制到底能不能真正融入你的日常工作流。
+
+---
+## 6. [Scumble](https://www.producthunt.com/products/scumble)
+
+**💡 是什么 + 为什么值得试：** Scumble 是一个开源的 AI 图像修复编辑器，让你能直接在画布上涂抹需要修改的区域，再用 AI 补全内容，省去手动抠图和合成。如果你常需要去除照片里的杂物或替换局部细节，它比传统修图工具快得多，值得一试。
+
+---
+## 7. [Appto](https://www.producthunt.com/products/appto)
+
+**💡 是什么 + 为什么值得试：** Appto 能让你把自己的 AI 订阅变成一个 iOS 应用生成器，省去从零写界面和逻辑的麻烦。如果你有想做的 App 但不想手写完整代码，可以直接拿它试跑一遍。
+
+---
+## 8. [Pheebs](https://www.producthunt.com/products/pheebs)
+
+**💡 是什么 + 为什么值得试：** Pheebs 能帮你量化团队在 AI 辅助编程上的真实使用情况 —— 比如谁在用、用在哪、效果如何 —— 而不是只靠感觉猜。如果你想知道 AI 工具到底给工程效率带来了什么变化，它提供了一个可落地的度量起点。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

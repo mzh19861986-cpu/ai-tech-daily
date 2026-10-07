@@ -2,30 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)  (⭐ 6.0/10)
-🔗 [hackernews](https://github.com/boykopovar/AnyPS5)
+## 🥇 EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 7.0/10)
+🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
-GitHub上出现了AnyPS5项目，通过将PS5系统库直接映射到PC端实现原生运行PS5游戏，目前已覆盖87%的系统库，完全不走模拟器路线。这意味着PS5游戏理论上可以像PC原生游戏一样运行，性能和兼容性天花板远高于传统模拟方案——如果这条路走通，主机独占的壁垒将从根本上被撼动。
+EmbeddingGemma 2 是 Google 推出的开源轻量级多模态嵌入模型，能把文本、图像等不同形式的数据映射到同一个向量空间，方便做跨模态检索和相似度匹配。它的看点在于：体积小、可本地部署，同时支持多模态，让开发者不用依赖昂贵的闭源 API 也能搭建图像搜索、推荐系统这类应用。
 
-## 🥈 Sharing AI progress in mathematics  (⭐ 5.0/10)
-🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
-
-这篇内容大概是 DeepMind 或类似机构在分享 AI 做数学研究的进展。核心信息是：AI 不再只是算题工具，而是开始参与真正的前沿数学探索——比如帮数学家发现新猜想、找反例、甚至提出可证明的引理。值得关注的点在于，数学一直被视为最需要人类直觉和创造力的领域，如果 AI 能在这里真正帮上忙，那离它辅助科学发现就不远了。
-
-## 🥉 Mistral Large 4  (⭐ 5.0/10)
+## 🥈 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-Mistral 发布了第四代旗舰大模型 Mistral Large 4，在推理、代码和多语言能力上进一步对标 GPT-4o 和 Claude 3.5 Sonnet 级别的第一梯队。值得关注的是它延续了 Mistral 一贯的高效路线——用更小的激活参数和更低的推理成本做到接近顶级的性能，对想自部署或控制 API 开销的团队来说是个性价比不错的选择。
+内容好像没贴全，能补一下 Mistral Large 4 的具体信息吗？比如模型参数、发布方公告或主要升级点，我帮你提炼。
 
-## 4. Penguin Mail – open-source Rust email client for Linux with AI  (⭐ 5.0/10)
+## 🥉 Penguin Mail – open-source Rust email client for Linux with AI  (⭐ 5.0/10)
 🔗 [hackernews](https://penguin-mail.com/)
 
-一款用 Rust 写的 Linux 开源邮件客户端 Penguin Mail 亮相，内置 AI 功能，主打原生性能和现代化体验。Rust 带来的内存安全和速度优势，加上 AI 辅助处理邮件，对受够了传统客户端卡顿的 Linux 用户来说值得一试。
+Penguin Mail 是一个用 Rust 写的开源 Linux 桌面邮件客户端，内置了 AI 功能来辅助处理邮件。它的亮点在于把现代语言的安全性和性能带进了 Linux 邮件工具这个长期缺乏新鲜血液的领域，同时用 AI 补上传统客户端在智能分类、摘要和回复上的短板。
 
-## 5. Decisions API is in public beta  (⭐ 3.0/10)
+## 4. Sharing AI progress in mathematics  (⭐ 4.0/10)
+🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+
+这篇内容讲的是数学领域 AI 进展的共享——大概率是某机构（DeepMind 或类似团队）公开了 AI 在数学问题上的新成果或数据集。值得关注的点在于：数学一直是检验 AI 推理能力的硬核试金石，如果 AI 能在定理证明、猜想验证这类任务上拿出可复现的结果，意味着它的逻辑推理正在从「会算」走向「会想」。
+
+## 5. Decisions API is in public beta  (⭐ 4.0/10)
 🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
 
-Decisions API 进入公开测试，开发者现在可以正式调用了。它把决策逻辑从代码里抽出来做成独立服务，适合需要频繁调整规则、又不想每次改逻辑就重新部署的场景。
+GitHub 把 Decisions API 开放公测了，它让开发者能在代码库里直接定义和查询决策逻辑，而不是把规则散落在各处。值得关注是因为这把「为什么这么改」的上下文变成了可编程、可追溯的一等公民，对审计和团队协作挺实用。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

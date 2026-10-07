@@ -4,45 +4,43 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章内容为空，我无法从中提炼 Prompt 技巧或 AI 使用建议。
-
-如果你能提供文章正文或讨论内容，我可以帮你提炼成可直接复用的 Prompt 技巧或最佳实践。**
+**这篇文章/讨论没有提供具体内容，因此无法提炼出明确的 Prompt 技巧或 AI 使用建议。若你能补充正文，我可以帮你总结成 1-2 句话的可用实践。**
 
 📎 来源：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## 2. 💡 技巧 2
 
-**这篇文章目前只有标题，没有正文内容，因此无法提炼出具体的 Prompt 技巧或使用建议。
+**这篇文章主要介绍了一个开源 Rust 邮件客户端的功能特性，没有明显的 Prompt 技巧内容。不过它隐含了一个关于使用 AI 的实用建议：
 
-不过，仅从标题 "Penguin Mail – open-source Rust email client for Linux with AI" 可以推测，这是一款带 AI 功能的开源邮件客户端，属于 AI 与具体应用结合的工具介绍，**不涉及 Prompt 工程技巧**。
+**最佳实践：** 将 AI 能力深度集成到具体工作流工具中（如邮件客户端内置 AI 辅助），而非在独立聊天窗口里手动搬运内容——让 AI 在你实际工作的场景中就地提供帮助，能显著提升效率。
 
-**建议：** 请补充文章正文或讨论内容，我才能从中提炼出可用的 AI Prompt 技巧或最佳实践。**
+（注：原文内容为空，以上基于标题中"with AI"的集成式设计理念提炼。）**
 
 📎 来源：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有提供实质内容（只有标题，没有正文），因此无法从中提炼具体的 Prompt 技巧或用 AI 建议。
+**这篇文章没有提供具体内容，因此无法从中提炼 Prompt 技巧或 AI 使用建议。
 
-不过，仅从标题 **“EmbeddingGemma 2: An open, lightweight multimodal embedding model”** 可以推断出它讲的是一个**开源、轻量级的多模态 embedding 模型**，属于模型/技术发布类内容，而非 Prompt 工程或 AI 使用技巧类的讨论。
-
-如果你能提供这篇文章的正文内容，我可以帮你从中提炼出可直接使用的 Prompt 技巧或最佳实践。**
+如果你把文章正文贴出来，我可以帮你提炼成一条可直接使用的 Prompt 技巧或最佳实践。**
 
 📎 来源：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## 4. 💡 技巧 4
 
-**这篇文章更像是在介绍 OpenTPU 这个开源 AI 加速器项目，并没有明显的 Prompt 工程技巧或 AI 使用建议。若强行提炼，唯一相关点是：作者强调这套加速器是“由 AI 开发”的，这提示我们可把 AI 当作工程协作工具，用清晰的开发目标与迭代反馈来辅助硬件/代码设计，而不只是用于问答。**
+**这篇文章主要描述 OpenTPU 项目本身，没有明显的 Prompt 技巧或使用 AI 的建议。唯一可提炼的相关点是：该项目由 AI 参与开发，说明可以用 AI 辅助硬件设计/代码生成类任务，但这不是一个可操作的 Prompt 技巧。建议提供更多正文内容后再提炼。**
 
 📎 来源：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
 ## 5. 💡 技巧 5
 
-**这篇文章的核心观点是：Claude Code 的“建议消息”功能，真正的客户不是人类用户，而是模型本身。因此提炼出的最佳实践是：
+**这篇文章的核心观点是：Claude Code 的"建议消息"功能，表面上是给用户看的，但它真正的"客户"其实是模型本身。
 
-**在编写 Prompt 或设计 AI 交互时，不要只考虑“人读起来是否清楚”，而要考虑“模型是否能据此更好地推理和决策”——把模型当作你的第一受众来优化输入。**
+**提炼的 Prompt 技巧/最佳实践：**
 
-一句话总结：**Prompt 的优化目标应从“对人友好”转向“对模型友好”，因为最终执行任务的是模型，而非人。****
+> 让 AI 主动生成"下一步建议消息"，作为它自己后续推理的上下文输入。也就是说，不要只把 AI 的输出当作给你看的答案，而是把它转成结构化的下一轮提示，回喂给模型，形成自我引导的连续推理链。
+
+**为什么有效：** 模型生成的建议消息实际上是在替它自己规划下一步该做什么，相当于**
 
 📎 来源：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
 
