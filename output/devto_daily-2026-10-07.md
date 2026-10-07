@@ -2,27 +2,29 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [Get Google Trends data in Python without pytrends 429 errors](https://dev.to/zahidthani/get-google-trends-data-in-python-without-pytrends-429-errors-3k6b)
+## 1. [How UI/UX Designers Can Build Scalable Income With Design Products](https://dev.to/onujaj/how-uiux-designers-can-build-scalable-income-with-design-products-4m6a)
 
-**✨ 精华总结：** pytrends 频繁返回 429 是因为 Google 对非官方接口的限流越来越严，项目维护滞后导致请求头指纹很容易被识别。这篇文章的前半部分给出了不依赖付费工具的绕行方案（调整请求间隔、轮换代理、直接用官方接口签名），后半部分则介绍了一个作者自己开发的 Apify Actor 作为托管替代。值得关注的是它把「为什么被封」和「怎么解」讲透了，而不是一上来就推销自己的服务。
+**✨ 精华总结：** UI/UX设计师的收入通常和接单量直接挂钩——做完一个项目拿一笔钱，然后继续找下一个客户，本质上是拿时间换钱。把设计能力沉淀成可复用的设计产品（比如模板、组件库、UI工具包），就有机会摆脱这种线性收入模式，实现一次制作、多次售卖。这思路值得关注，因为它把设计师从「服务提供者」变成了「产品创造者」。
 
-## 2. [The "DB_PASSWORD" variable is not set. Defaulting to a blank string: fixing unset ${VAR} in Docker Compose](https://dev.to/jaytank/the-dbpassword-variable-is-not-set-defaulting-to-a-blank-string-fixing-unset-var-in-docker-2j1j)
+## 2. [Brunch Gem: Isolated Development Environments for Git Branches and Worktrees](https://dev.to/ciembor/brunch-gem-isolated-development-environments-for-git-branches-and-worktrees-4n38)
 
-**✨ 精华总结：** Docker Compose 有个经典坑：`env_file` 加载的变量**不会**参与 `${VAR}` 插值，因为插值发生在 Compose 解析 YAML 的阶段，早于容器启动和环境文件加载。所以 `DB_PASSWORD` 明明写在 `app.env` 里，Compose 仍然只认 shell 环境和 `.env` 文件，插值失败就静默填空白字符串，再照常把栈拉起来。
+**✨ 精华总结：** **Brunch** 是一个帮你为每个 Git 分支/工作树自动创建隔离开发环境的工具。它解决的核心痛点是：`git checkout` 只切换代码，但数据库 schema、种子数据、后台服务这些环境状态并不跟着走，导致分支来回切换后环境「串味」，出现各种莫名其妙的 bug。如果你经常在多个功能分支间跳转，这能省掉大量手动重置环境的时间。
 
-值得关注的点在于：这个警告只出现在滚动日志的顶部，容器要么起不来要么用空密码连上了库，排查时极易被忽略。修复方式是把需要插值的变量放进 `.env`（或改用 `env_file` 直接传给容器、不走插值语法），别指望两者能互通。
+## 3. [Advanced System Architecture: Designing Multi-Tenant Event-Driven Queues with Fair-Share Scheduling](https://dev.to/usman_khan_io/advanced-system-architecture-designing-multi-tenant-event-driven-queues-with-fair-share-scheduling-1hjn)
 
-## 3. [On-Device Computer Vision in React Native: Auto-Aligning Progress Photos with MediaPipe and Expo](https://dev.to/ishannaik/on-device-computer-vision-in-react-native-auto-aligning-progress-photos-with-mediapipe-and-expo-o3j)
+**✨ 精华总结：** 多租户SaaS里用标准FIFO队列是埋雷——一个企业租户扔进10万个异步任务，就能把worker池占满，其他上千租户的交互式任务全被饿死。这篇文章给出的工程方案是「公平份额调度」加动态并发隔离：按租户分配队列配额，而不是先到先得，从架构层面杜绝单租户霸占资源。
 
-**✨ 精华总结：** 有人在 React Native 里用 MediaPipe + Expo 实现了端上人脸对齐，专门解决健身、护肤、发型记录这类进度照片的「同一个脸、不同构图」问题。核心价值在于：对齐完全跑在设备本地，不传云端，用户随手拍的照片能自动统一到同一位置，拼成延时视频时才真的看得出变化而不是满屏晃动。对做健康/美容类 App 的团队来说，这是一个可以直接抄的落地思路。
+如果你在做SaaS后端，这个问题迟早会撞上，而且往往是在大客户突然放量的时候。
 
-## 4. [From Dev.to Comment to Production in 24h: Building an Inspectable Math Verification Contract in Pythos (and Fixing the Pearson Trap)](https://dev.to/jonscott79/from-devto-comment-to-production-in-24h-building-an-inspectable-math-verification-contract-in-2lma)
+## 4. [Your plan says (known after apply). OpenTofu 1.13 lets you talk back](https://dev.to/kashif_manzer/your-plan-says-known-after-apply-opentofu-113-lets-you-talk-back-17hf)
 
-**✨ 精华总结：** 一位企业AI工程师在Dev.to的评论直接催生了一个生产级功能：Pythos团队用24小时把「让LLM只做对话界面、不做数学真相来源」的理念落地成了一个可检查的数学验证合约——每个验证步骤都变成数据结构的一部分，而非黑箱输出。值得关注的是他们顺带修复了「Pearson陷阱」（相关系数计算中常见的数值稳定性坑），这意味着AI做数学时的每一步现在都能被审计和复现，对企业级可信AI来说是个实打实的进步。
+**✨ 精华总结：** OpenTofu 1.13 引入了交互式计划确认功能，让你在 `tofu plan` 阶段就能对 `(known after apply)` 这类未知值直接提问、获得解释，而不是靠经验盲猜后硬着头皮 apply。这解决的是 IaC 工作流里一个长期痛点：计划输出中大量关键值在应用前不可见，用户实际上是在对一个「半盲」的计划做审批决策。
 
-## 5. [The First Architecture Draft](https://dev.to/joungpark/the-first-architecture-draft-2ek9)
+## 5. [React Native Blur: Real Frosted Glass & Video Blur on Android (Demo & Logic)](https://dev.to/nguyn_ngcduy_266304752/how-to-blur-playing-videos-on-android-in-react-native-without-skia-or-workarounds-40d8)
 
-**✨ 精华总结：** 作者开始给 Second-Memory 画第一版架构图了：客户端（Web + 移动端）统一走 API Gateway/BFF，再分发到 Auth、Memory、Ask 三个服务，Memory Service 后面挂数据库和向量库。值得关注的是这个「网关 + 按职责拆服务」的骨架，基本决定了后续所有功能迭代的边界和成本。
+**✨ 精华总结：** React Native Blur 解决了 Android 上一个长期痛点：视频播放时无法被模糊。iOS 靠系统级合成器（UIVisualEffectView）天然支持，而 Android 上视频走独立渲染层，常规模糊方案会直接"穿"过去。
+
+这个库的价值在于——毛玻璃按钮浮在正在播放的视频上、毛玻璃弹窗盖在地图上、毛玻璃吸顶 header 跟着列表滚动，这些场景现在在 Android 上也能实现了。做混合开发、又在意视觉细节的团队可以关注。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

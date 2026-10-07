@@ -7,24 +7,22 @@
 ### 1. [[D] Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1wvi1j8/d_selfpromotion_thread/)
 *reddit/r/MachineLearning*
 
-这是一个开发者社区的自我推广帖，允许大家发布个人项目、创业产品、合作需求或博客等内容，但明确禁止短链接、聚合网站和自动订阅链接，违规会被封禁。核心价值在于它为创作者提供了一个集中的曝光渠道，同时要求标明付费和定价信息，方便有需求的人直接对接。
+这个帖子是技术社区里常见的「自荐专区」，让开发者集中发布自己的项目、创业产品、博客或合作需求，并明确要求标注付费和定价方式。值得关注的是，这类聚合帖把分散的个人作品收拢到一处，既避免了灌水刷屏，也让有需求的人能一站式发现新东西——如果你手里有副业项目或想找人合作，这种帖子是低成本曝光的实用渠道。
 
-### 2. [ML PHD without A* Publications [D]](https://www.reddit.com/r/MachineLearning/comments/1wzeszo/ml_phd_without_a_publications_d/)
+### 2. [Saw this on Rednote, WTF [D]](https://www.reddit.com/r/MachineLearning/comments/1wzpzh3/saw_this_on_rednote_wtf_d/)
 *reddit/r/MachineLearning*
 
-**一句话总结：** 一位在美Top 15读硕、独立主导ML研究的学生，因为没有顶会一作论文，正在纠结要不要放弃申博、直接找工作。
+小红书（Rednote）上有人发现了一个包含「谄媚话术」和「AI生成内容检测」的数据集。值得关注是因为它同时覆盖了AI讨好用户的话术模式和识别AI痕迹的特征——对做内容审核、模型对齐或AI检测工具的人来说，这可能是个现成的训练/评测资源。
 
-**为什么值得关注：** 这几乎是当下ML博士申请最典型的困境——顶会一作（NeurIPS/ICML/ICLR）越来越像硬通货，很多有实力但还没"中稿"的人会被这道隐形门槛劝退。但值得注意的是，一作论文只是评价维度之一，推荐信、研究品味和PI是否有名额往往同样关键；同时工业界ML岗位对有硕士背景+实操经验的人并不冷淡，两条路未必互斥。真正的决策点不在于"够不够格"，而在于你更想要哪种研究节奏和职业路径。
-
-### 3. [Transformers vs RNNs vs SSMs: Where Does Memory Actually Live? [D]](https://www.reddit.com/r/MachineLearning/comments/1wz71g3/transformers_vs_rnns_vs_ssms_where_does_memory/)
+### 3. [ML PHD without A* Publications [D]](https://www.reddit.com/r/MachineLearning/comments/1wzeszo/ml_phd_without_a_publications_d/)
 *reddit/r/MachineLearning*
 
-这篇内容从「工作记忆」的角度重新审视了 RNN、Transformer 和 SSM 三种架构，试图回答一个很本质的问题：记忆到底存在哪里。它的价值在于，与其把它们当成互不相干的流派，不如看成一个连续的取舍光谱——记忆存在紧凑的循环状态里（RNN/SSM），还是摊开在随序列长度增长的注意力矩阵里（Transformer）。想搞清楚这些架构为什么各有长短，这个视角比单纯背对比表要清晰得多。
+做ML PhD申请，顶会一作不是唯一门票。这位同学在Top 15美硕、独立主导一作项目、NeurIPS在投——这本身就是研究能力的信号，只是还没等到接收。与其纠结"没A*要不要申"，不如把在投工作当成申请材料的一部分，同时并行准备工业界岗位，两条腿走路比孤注一掷更稳。
 
-### 4. [AFP-GIC: Controllable Generative Image Compression [R]](https://www.reddit.com/r/MachineLearning/comments/1wzbe6r/afpgic_controllable_generative_image_compression_r/)
+### 4. [How much of AutoResearch is research, and how much is search?[D]](https://www.reddit.com/r/MachineLearning/comments/1wzxqze/how_much_of_autoresearch_is_research_and_how_much/)
 *reddit/r/MachineLearning*
 
-斯坦福团队在IEEE Access发表AFP-GIC框架，用生成模型做图像压缩，能在超低码率下避免传统方案的局部失真问题。关键是它支持可控生成——你可以调节压缩率和生成质量之间的权衡，而不是被算法锁死在一个固定档位。代码和在线试玩空间都已开源，对做端侧传输或带宽受限场景的人来说值得看看。
+这个项目本质上是在追问：当人类已经从顶会论文里挑好问题、定好评估标准后，AI agent 的"自动研究"到底还剩多少研究成分，又有多少只是在既定框架内做搜索优化。值得关注是因为它戳中了 AutoResearch 的核心争议——我们评测的究竟是 AI 的科研能力，还是它在一个被人类精心裁剪过的搜索空间里的爬山能力。如果是后者，那"自动研究"这个词可能被高估了。
 
 ---
 *内容来自 Reddit 公开社区，由 AI 自动摘要生成。*

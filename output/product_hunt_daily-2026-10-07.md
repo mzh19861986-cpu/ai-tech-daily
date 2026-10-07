@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+## 1. [Databench by Alkera](https://www.producthunt.com/products/alkera)
 
-**💡 是什么 + 为什么值得试：** **Ghostifier 能自动帮你向那些收集了你数据的公司发送删除请求，省去你逐个翻隐私政策、找客服邮箱的麻烦。** 如果你在意自己的数据被随意留存，又不想手动写几十封邮件，这个开源工具值得一试。
-
----
-## 2. [AUDR by Chargebee](https://www.producthunt.com/products/chargebee)
-
-**💡 是什么 + 为什么值得试：** AUDR 给 AI agent 的每次运行打上统一的成本追踪标记，让你能按调用、按任务算出到底花了多少钱，而不是月底看账单干瞪眼。如果你在跑多个 agent 或模型、想搞清楚钱烧在哪，它提供了一套现成的开放标准，省得自己造轮子。
+**💡 是什么 + 为什么值得试：** Databench 给数据团队一个共享的 AI Agent 工作台，把查数、写 SQL、跑分析这些事放在同一个协作空间里，不用每个人各自搭一套脚本。如果你团队正在为数据需求响应慢、工具散落各处而头疼，可以拿它试试。
 
 ---
-## 3. [Appto](https://www.producthunt.com/products/appto)
+## 2. [Rool](https://www.producthunt.com/products/rool)
 
-**💡 是什么 + 为什么值得试：** Appto 能把你已有的 AI 订阅（比如 ChatGPT Plus）直接变成一条 iOS 应用流水线，不用额外买 API 或搭后端就能批量生成 App。如果你有做小工具类 App 的想法但懒得从零写代码，值得拿它跑一遍试试。
-
----
-## 4. [EasyCut](https://www.producthunt.com/products/easycut-2)
-
-**💡 是什么 + 为什么值得试：** EasyCut 是一个专门处理 Claude 生成视频的开源剪辑工具，能帮你快速裁剪、拼接和调整这些素材，省去用专业软件逐帧折腾的麻烦。如果你经常用 Claude 做视频内容，可以直接拿它来简化后期流程。
+**💡 是什么 + 为什么值得试：** Rool 把你的文件、笔记和 AI 对话放进同一个私有工作区，不用在多个应用间来回切换复制粘贴。如果你在意数据留在本地、又想随手调用 AI 处理手头资料，值得装来试试。
 
 ---
-## 5. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 3. [Velozity](https://www.producthunt.com/products/velozity-2)
 
-**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 数据源（CRM、营销、客服等）统一到一个 SDK 和 MCP 接口上，省掉你为每个工具单独写集成代码的麻烦。如果你在搭销售/增长自动化流程，值得试它来减少对接成本。
-
----
-## 6. [Incredible](https://www.producthunt.com/products/incredible)
-
-**💡 是什么 + 为什么值得试：** 想让电脑听懂你的话、动嘴不动手？Incredible 用语音帮你操作电脑，适合懒得摸键鼠或想尝试语音交互的场景。
+**💡 是什么 + 为什么值得试：** Velozity 把团队协作和 AI agent 放在同一个工作区里，省得你在多个工具间来回切换、手动搬上下文。如果你的团队已经在用 AI 帮忙干活，但总觉得它跟人的协作是两张皮，可以试试这个。
 
 ---
-## 7. [Doco](https://www.producthunt.com/products/doco-4)
+## 4. [GenPage 3.0](https://www.producthunt.com/products/genpage)
 
-**💡 是什么 + 为什么值得试：** Doco 会根据你的听歌习惯和场景自动匹配歌单，省去手动挑歌的麻烦。如果你受够了千篇一律的推荐算法，可以试试它更“懂你”的选曲方式。
+**💡 是什么 + 为什么值得试：** GenPage 3.0 能帮你用 AI 快速生成、个性化并优化落地页，省去从零搭页面和反复改文案的功夫。如果你在投广告或做增长实验，想快速测试不同版本的转化效果，它值得一试。
 
 ---
-## 8. [ruOS](https://www.producthunt.com/products/ruos)
+## 5. [ImageFlow](https://www.producthunt.com/products/imageflow-6)
 
-**💡 是什么 + 为什么值得试：** ruOS 把云端桌面和 AI agent 结合起来，让 agent 直接在图形界面里替你操作软件、跑流程，省去自己写脚本或手动点鼠标的功夫。如果你在找能真正“动手干活”而不只是聊天的 AI 工具，这个项目值得跑起来试试。
+**💡 是什么 + 为什么值得试：** ImageFlow 是一个免费开源的图像编辑器，把抠图、修复、超分等 AI 能力直接做进了 UI，不用再为修一张图在 PS 和网页工具之间来回倒腾。想省掉订阅费又不想牺牲专业功能的话，值得装来试试。
+
+---
+## 6. [DailyHub](https://www.producthunt.com/products/dailyhub-a-quiet-workspace-for-your-day)
+
+**💡 是什么 + 为什么值得试：** DailyHub 把项目、任务和习惯集中到一个面板里管理，适合那些在多个 App 之间来回切换、结果哪边都没跟完的人。如果厌倦了为三件相关的事维护三套工具，可以试试它。
+
+---
+## 7. [Reika](https://www.producthunt.com/products/reika)
+
+**💡 是什么 + 为什么值得试：** 如果你想在本地用 7B 级别的小模型跑代码 agent，又不想费劲调 prompt，Reika 就是冲着这个场景设计的命令行工具。装完就能直接让它读写文件、跑命令，省去自己搭框架的功夫。
+
+---
+## 8. [Albie](https://www.producthunt.com/products/albie)
+
+**💡 是什么 + 为什么值得试：** 想让孩子或自己学东西时不再对着聊天框干瞪眼？Albie 用 AI 在白板上一步步手写讲解，像真人老师一样边画边讲，概念看得见、跟得上。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

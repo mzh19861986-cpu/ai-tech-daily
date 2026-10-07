@@ -2,35 +2,37 @@
 
 > 关于 AI 你可能想问的问题 | 每天一个问题，搞懂一个概念
 
-## Q1: Sharing AI progress in mathematics？
+## Q1: Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai？
 
-**A:** 这项研究展示了一个能自动生成数学猜想的AI系统，它从大量数学文献中学习模式，提出了多个此前未被记录的新猜想，其中一个还被数学家验证为有意义。这意味着AI开始从「解题工具」变成「提问伙伴」——它能帮人类看到直觉容易忽略的方向，对数学这种极度依赖猜想驱动的领域来说，价值可能比单纯证明定理更大。
+**A:** 这条消息需要先澄清一下：**2026年诺贝尔化学奖尚未颁发**，目前没有任何官方公告。如果你看到的是某条流传内容，很可能是假消息或提前猜测——诺奖通常在每年10月才揭晓。
 
-📎 更多阅读：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+不过，Henri B. Kagan 和 Kenso Soai 这两位确实是**不对称催化**领域的重要人物，如果他们真获奖，理由大概率会围绕**手性催化**：Kagan 开发了第一个实用的手性膦配体（C₂对称双膦），Soai 则发现了著名的**Soai反应**——一种能自我放大手性的有机锌反应，被认为是理解生命同手性起源的关键线索之一。
 
-## Q2: Strands Decider 2B: a small, open-source, decision model？
+📎 更多阅读：[Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai](https://www.nobelprize.org/prizes/chemistry/2026/press-release/)
 
-**A:** Strands Decider 2B 是一个只有 20 亿参数的开源决策模型，专门用来在任务流程中做「下一步该干嘛」的判断。它的价值在于：用极小的体量跑出接近大模型的决策准确率，意味着你可以在本地或边缘设备上低成本地给 Agent 加上一个靠谱的「决策大脑」，不用每次都调用昂贵的云端 API。
+## Q2: AI-assisted proof of optimal packing for 11 squares？
 
-📎 更多阅读：[Strands Decider 2B: a small, open-source, decision model](https://strandsagents.com/blog/introducing-strands-decider/)
+**A:** 数学家借助 AI 证明了「11 个全等正方形装入最小正方形」的最优解，即找到了能容纳 11 个单位正方形的最小外框边长。这类装箱问题看似简单，却因组合爆炸长期无解，AI 的作用是在人类难以穷举的海量构型中高效搜索并辅助验证。它的价值在于展示了一种新范式：AI 不是替代数学证明，而是充当「搜索加速器」，帮人类攻下原本算不动的组合难题。
 
-## Q3: Penguin Mail – open-source Rust email client for Linux with AI？
+📎 更多阅读：[AI-assisted proof of optimal packing for 11 squares](https://github.com/Queuingtheorydotcom/11SquaresFormalized)
 
-**A:** Penguin Mail 是一款用 Rust 写的 Linux 开源邮件客户端，把 AI 能力直接嵌进了收件箱。Rust 保证了性能和内存安全，AI 则用来帮你处理邮件摘要、智能回复这类日常操作。对受够臃肿邮件客户端、又想尝鲜本地 AI 辅助的 Linux 用户来说，值得蹲一下。
+## Q3: Write Like It's 1866: LLMs Relearn Telegraphese？
 
-📎 更多阅读：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
+**A:** 斯坦福和剑桥的研究者发现，只要给大语言模型投喂19世纪的电报文本，它们就能重新学会"电报体"——那种省略虚词、极度压缩的写作风格，甚至连当时报务员自创的缩写都能复现。这提醒我们，LLM的能力边界很大程度上取决于训练语料覆盖了哪些语域，而不是模型本身有多"聪明"。
 
-## Q4: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
+📎 更多阅读：[Write Like It's 1866: LLMs Relearn Telegraphese](https://fiveminutesforward.com/post/2026-10-04-telegraph-test/)
 
-**A:** Google 又更新了 EmbeddingGemma，这次是 2 代，依然开源、依然轻量，但多了一个关键能力：多模态——它能同时把文字和图片映射到同一个向量空间里。这意味着你可以用它做跨模态检索，比如用一句话搜图，或者拿一张图去找相似的文本，而且模型小到能跑在本地设备上。
+## Q4: Thank You Indonesia for the Clean Air？
 
-📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+**A:** 这条新闻说的是印尼在清洁空气方面取得了值得肯定的进展。虽然标题带有感谢意味，但实质是在认可印尼近期在空气质量改善上的努力——可能是政策推动、排放管控或跨境雾霾治理有了实际成效。对于关注东南亚环境和跨境空气污染的人来说，这是个积极信号，说明区域协作和本地治理正在产生效果。
 
-## Q5: Claude Code’s suggested message feature: I think the real customer is the model？
+📎 更多阅读：[Thank You Indonesia for the Clean Air](https://thankyouindoforthecleanair.web.app/)
 
-**A:** Claude Code 新增了一个"建议消息"功能，会在你等待模型响应时自动生成一条推荐回复，让你直接点选而非手动输入。这个功能表面上是帮用户省事，但作者认为真正的受益者其实是模型本身——它通过引导对话走向来获得更结构化的输入，从而降低推理成本、提高输出质量。值得关注的是，这反映了一个趋势：AI 产品的交互设计正在从"服务用户"悄悄转向"优化模型表现"。
+## Q5: Reasons to dislike AI coding？
 
-📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
+**A:** 一篇讨论「为什么有人反感 AI 编程」的文章在 Lobste.rs 上引发热议。它梳理了开发者对 AI 编码工具的真实不满——不是单纯的怀旧或抵触，而是涉及代码质量、可维护性、学习曲线被跳过等具体问题。如果你正在团队里推 AI 编码工具，或者自己用着总觉得哪里不对劲，这篇值得一读，它帮你把那种模糊的不适感说清楚了。
+
+📎 更多阅读：[Reasons to dislike AI coding](https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*
