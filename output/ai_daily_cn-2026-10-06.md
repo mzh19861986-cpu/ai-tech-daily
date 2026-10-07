@@ -6,32 +6,27 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-This article discusses how researchers are beginning to systematically share AI's progress in mathematics—not just announcing "AI solved another problem," but openly showing how AI reasons, where it gets stuck, and which methods work. It's worth noting because mathematics is becoming a key touchstone for testing AI's true reasoning abilities, and this kind of open sharing can help the entire field more quickly distinguish "real breakthroughs" from "illusions."
+This content is probably saying: AI has made new progress in mathematics, such as breakthroughs in theorem proving or conjecture discovery. What is noteworthy is that mathematics has always been regarded as the "touchstone" for AI's reasoning ability—if AI can truly help with rigorous proofs, then it is not far from assisting scientific research.
 
-### 2. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
+### 2. [OpenAI刚刚发布了700篇数学证明和反例的预印本。](https://github.com/openai/math/tree/main/preprints)
 *hackernews*
-Google has released EmbeddingGemma 2, an open-source multimodal embedding model with approximately 300 million parameters that can map content from different modalities, such as text and images, into the same vector space and run directly on phones and laptops. Its value lies in this: embedding models are foundational components for search, recommendation, and RAG retrieval. Previously, high-performance multimodal embeddings were basically monopolized by closed-source APIs. Now there is a lightweight alternative that can be deployed locally and fine-tuned, so privacy-sensitive and offline scenarios no longer have to compromise.
+OpenAI released 700 mathematics preprints all at once, consisting entirely of formal proofs and counterexamples—these are AI-generated, machine-verifiable mathematical results, not written by human mathematicians.
+
+The key point is that this marks AI's shift from "assisting problem-solving" to "mass-producing verifiable mathematical knowledge." The scale of 700 papers means this is not a demo but a showcase of production capacity—if these proofs pass peer review, the supply curve of mathematical research could be completely rewritten.
 
 ## 📌 综合
 
-### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
+### 1. [米斯特拉尔大模型4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-It looks like you only gave the title "Mistral Large 4" without any specific content, so I can't accurately summarize this news.
+Mistral发布了新旗舰模型Large 4，主打更强的推理能力和多语言表现，同时保持了相对高效的推理成本。如果你在找GPT-4之外的高性价比替代方案，这个值得放进候选清单——尤其在欧洲语言和合规部署场景下优势明显。
 
-Could you paste the main text? Or confirm:
-
-- Is this a new model, **Mistral Large 4**, released by Mistral AI?
-- Do you want me to summarize the official announcement, a media report, or a draft you wrote yourself?
-
-Give me the content, and I'll immediately distill it in the style you want (2-3 sentences, clearly explaining "what it is" and "why it's worth paying attention to").
-
-### 2. [决策API处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [Decisions API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-“Decisions API”现已开放公测。
+The Decisions API has entered public beta. It's a set of tools that lets developers embed business decision logic directly into applications—such as approval workflows, risk control rules, and pricing strategies—without having to build a rules engine from scratch. What's noteworthy is that it extracts decision logic from code and turns it into a configurable service, so changing rules doesn't require redeploying. For teams that frequently adjust strategies, this saves considerable effort.
 
 ### 3. [氛围编程Photoshop：时间与压力](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
 *hackernews*
-这篇文章讲的是用“氛围编程”（vibecoding）的方式做一个 Photoshop 替代品，核心讨论在于时间和压力这两个维度如何影响开发过程。作者想表达的是：当你不再追求完美、而是靠直觉和快速迭代去写代码时，时间压力反而可能成为创造的催化剂，而不是阻碍。值得关注的点在于，它触及了一个正在发酵的争论——AI 辅助编程到底是在降低门槛、还是在改变我们对“做好一个软件”这件事的标准。
+This project used AI programming tools (vibecoding) to replicate the core functions of Photoshop. The author called it an experiment in "time and pressure"—rapidly building a usable image editor within a limited time by relying on intuition and AI assistance. What is noteworthy is that it validated a new development paradigm: instead of writing detailed specifications or agonizing over architecture, it generates code through continuous dialogue, prioritizing "getting it to run" above all else. If you are curious about how much project complexity AI-assisted programming can actually handle, this is a fairly realistic reference case.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

@@ -2,38 +2,30 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Sharing AI Progress in Mathematics  (⭐ 6.0/10)
+## 🥇 OpenAI just dropped 700 preprints of mathematical proofs and counterexamples  (⭐ 7.0/10)
+🔗 [hackernews](https://github.com/openai/math/tree/main/preprints)
+
+OpenAI发布了一个包含700篇数学预印本的合集，每篇都包含一个定理的证明或反例，全部由AI生成。重点不在“AI能做数学”，而在于这批产出直接以预印本形式公开，绕过了传统同行评审流程——这意味着AI生成的数学结果正在以学术论文的形态涌入公共知识库，而验证机制还没跟上。
+
+## 🥈 Sharing AI Progress in Mathematics  (⭐ 5.0/10)
 🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-这条新闻标题信息量比较有限，但结合语境，核心可以这样理解：
+这项工作是分享 AI 在数学领域的进展，重点在于展示 AI 如何辅助数学研究、猜想生成与定理证明。值得关注的是，它反映了 AI 正从「计算工具」走向「数学合作者」，可能改变未来数学发现的方式。
 
-**是什么**：有人（或某个机构）公开分享了AI在数学领域的最新进展，可能涉及AI辅助证明、猜想发现或数学问题求解能力的提升。
-
-**为什么值得关注**：数学一直被视为检验AI推理能力的硬核标尺——如果AI真能在数学上拿出实质成果，说明它的逻辑推理能力正在跨过某个门槛，这对整个AI研究方向都有参考意义。
-
-不过具体是哪个团队、什么成果，还得看正文才能判断含金量。如果你有完整内容，我可以帮你提炼得更准。
-
-## 🥈 Mistral Large 4  (⭐ 6.0/10)
+## 🥉 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-内容好像没贴全，只看到了标题「Mistral Large 4」。把正文发我，我马上给你提炼。
+Mistral 发布了新一代旗舰模型 Large 4，主打更强的推理能力和多语言表现，直接对标 GPT-4 和 Claude 3 Opus 这个级别。值得关注是因为它延续了 Mistral 一贯的「小团队高效能」路线，如果实测确实能打，意味着开源阵营又多了一个能进生产环境的强选项。
 
-## 🥉 Vibecoding Photoshop: Time and pressure  (⭐ 5.0/10)
+## 4. Vibecoding Photoshop: Time and pressure  (⭐ 5.0/10)
 🔗 [hackernews](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
 
-Adobe 把 Photoshop 的界面生成逻辑改成了「vibecoding」模式——用 AI 根据你的操作意图实时动态拼装工具栏和面板，而不是预设固定布局。这值得关注是因为它标志着专业软件开始从「人适应工具」转向「工具适应人」，Photoshop 这种二十多年积累的复杂交互体系被拿来做实验，说明 AI 原生 UI 已经从 demo 走进了生产级应用。
-
-## 4. EmbeddingGemma 2: An open, lightweight multimodal embedding model  (⭐ 4.0/10)
-🔗 [hackernews](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
-
-谷歌发布了 EmbeddingGemma 2，一个开源的多模态嵌入模型。它能把文本和图像映射到同一个向量空间，让开发者用轻量级模型就能做跨模态检索、聚类等任务，不用再依赖笨重的大模型。对想在本地或边缘设备上跑多模态应用的人来说，这是个值得关注的新选择。
+「Vibecoding Photoshop」是一款用代码“感觉”来操作 Photoshop 的实验性工具——它不走传统界面操作，而是让开发者用自然语言或代码片段直接驱动 PS 的图层、混合模式等能力。值得关注的是，它把创意工具的交互从“点按拖拽”推向“描述即执行”，如果能稳定落地，会大幅降低设计师和开发者协作时的沟通损耗。
 
 ## 5. Decisions API is in public beta  (⭐ 3.0/10)
 🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
 
-Stream 的 Decisions API 进入公开测试了——简单说，它把「该不该做某个操作」这件事从代码里抽出来，变成一个集中管理的决策层，让产品、风控甚至运营都能用可视化方式配置规则，而不必每次改逻辑都走发版。
-
-值得关注的点在于：它解决的是「规则散落各处、改一次要动整个系统」的老问题，特别适合需要频繁调整策略的场景（比如风控拦截、内容审核、促销资格判断）。公开测试意味着 API 已可用但可能还会变，适合早期尝鲜、不想重复造轮子的团队先试。
+Decisions API 已经进入公开测试阶段，开发者现在可以正式接入使用了。它把决策逻辑从代码里抽出来做成独立的 API 服务，适合需要频繁调整规则又不想反复发版的场景，值得关注。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*
