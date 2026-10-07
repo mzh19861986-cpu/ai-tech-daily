@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Review](https://www.producthunt.com/products/review-2)
+## 1. [iphone-use](https://www.producthunt.com/products/iphone-use)
 
-**💡 是什么 + 为什么值得试：** Review 让你在自己机器上用本地 AI 做代码审查，代码和模型都不出本地，兼顾隐私和速度。不想把源码传给云端服务、又想要自动 review 的话，值得试试。
-
----
-## 2. [Floani](https://www.producthunt.com/products/floani)
-
-**💡 是什么 + 为什么值得试：** Floani 让你用 AI 生成图表后直接在浏览器里动画播放，省去从静态图到动效的重复手工活。适合做产品讲解或技术演示时，把流程图、架构图做成会动的版本，分享也只要一个链接。
+**💡 是什么 + 为什么值得试：** iPhone 上很多 App 没有 API，自动化脚本根本碰不到，而 iphone-use 让 AI agent 直接操作真机界面，绕过这个限制。如果你正被“想自动跑但没有接口”的 iPhone 任务卡住，值得上手试试。
 
 ---
-## 3. [Banger](https://www.producthunt.com/products/banger-mail)
+## 2. [Pheebs](https://www.producthunt.com/products/pheebs)
 
-**💡 是什么 + 为什么值得试：** Banger 把邮件自动化的执行权交给 AI，让你不用手写复杂的触发规则和文案，就能跑起欢迎、挽回、跟进等序列。如果你在独立做产品或早期运营、想省掉手动发邮件的精力，它能直接帮你留住客户而不增加人力。
-
----
-## 4. [Notch Radio](https://www.producthunt.com/products/notch-radio)
-
-**💡 是什么 + 为什么值得试：** 用 MacBook 刘海那点被浪费的空间当收音机入口，点一下就能听网络电台，不占桌面、不切窗口。适合想随手听点东西又不想被复杂播放器打扰的人。
+**💡 是什么 + 为什么值得试：** Pheebs 能帮你量化团队里每个人实际怎么用 AI 写代码——不是猜测，而是拿到真实的使用数据。如果你想搞清楚 AI 工具到底提效了没有、谁在用、怎么用，这个值得试。
 
 ---
-## 5. [Appto](https://www.producthunt.com/products/appto)
+## 3. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** Appto 让你把自己已有的 AI 订阅（比如 ChatGPT Plus）变成一台 iOS 应用生成流水线，不用再单独买 API 额度或搭建后端，就能批量产出 App。如果你手头有 AI 订阅、又想低成本试水独立开发，它值得跑一遍看看。
-
----
-## 6. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
-
-**💡 是什么 + 为什么值得试：** MCP 服务器的工具定义可能在你批准后悄悄变化，mcpgawk 就是用来抓这种“审批后篡改”的。如果你在跑 MCP 代理、又不想每次手动核对工具列表，它能帮你把变化揪出来。
+**💡 是什么 + 为什么值得试：** Fuse AI 提供统一的 SDK 和 MCP 接口，让你不用分别对接多个 GTM 工具，就能快速搭出一套自定义的上市栈。如果你正为数据源和工具的碎片化集成头疼，它值得一试。
 
 ---
-## 7. [EasyCut](https://www.producthunt.com/products/easycut-2)
+## 4. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** EasyCut 是个开源工具，用来剪辑 Claude 生成的动效视频（motion videos），省去你手动一帧帧处理的麻烦。如果你正好在做 AI 动效类内容、需要快速剪出成品，值得试一下——不过目前功能比较聚焦，先看它能不能对上你的工作流。
+**💡 是什么 + 为什么值得试：** 如果你一边用 Claude Code 或 Codex 写代码，一边还要在浏览器里手动查文档、复制报错、切标签页，Rill Browser 把这些操作搬进了同一个界面——AI 能直接看到你正在浏览的页面。适合想让编码助手少"隔空喊话"、多接触真实上下文的开发者试试。
 
 ---
-## 8. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+## 5. [Incredible](https://www.producthunt.com/products/incredible)
 
-**💡 是什么 + 为什么值得试：** 每次网站更新后，客服机器人的回答就变得文不对题、得手动重训？这个项目让 AI 客服自动跟随你的站点内容同步，省去反复维护知识库的麻烦，适合内容经常变动的站点试试。
+**💡 是什么 + 为什么值得试：** Incredible 让你用语音直接操控电脑操作，省去记快捷键或写脚本的麻烦，适合想解放双手或探索语音交互工作流的开发者试试。
+
+---
+## 6. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+
+**💡 是什么 + 为什么值得试：** Ghostifier 能帮你自动向那些收集了你个人数据的公司发起删除请求，省去你逐个翻隐私政策、找客服邮箱、写邮件跟进的手动功夫。如果你在意数据隐私又不想花时间扯皮，它值得一试。
+
+---
+## 7. [ruOS](https://www.producthunt.com/products/ruos)
+
+**💡 是什么 + 为什么值得试：** ruOS 提供一个云端桌面环境，让你直接指挥 AI agent 帮你完成具体的电脑操作任务，而不是只给建议。如果你想把重复性的桌面工作（比如批量处理文件、跨应用操作）交给 AI 自动跑，可以试试它。
+
+---
+## 8. [Chunk](https://www.producthunt.com/products/chunk-2)
+
+**💡 是什么 + 为什么值得试：** Chunk 把 macOS 上的时间块规划做成了一个轻量工具，帮你在一天里直接划出专注时段，而不是在待办清单里越堆越多。想认真试时间块方法、又不想被复杂项目管理软件拖累的话，它挺合适。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

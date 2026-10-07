@@ -2,27 +2,25 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [I Made Spider-Man Swing Without Animating a Single Frame](https://dev.to/gu_cci_f94bedb90083e6aab4/i-made-spider-man-swing-without-animating-a-single-frame-5g78)
+## 1. [GeminiTTS: Gemini 3.8 TTS Online for Single-Voice and Two-Speaker Dialogue](https://dev.to/leony/geminitts-gemini-38-tts-online-for-single-voice-and-two-speaker-dialogue-3a9a)
 
-**✨ 精华总结：** 有人在浏览器里做出了蜘蛛侠荡秋千的效果，关键在于**没有用任何逐帧动画**——不预渲染视频、不用精灵图，而是让一个小型 AI Agent 循环实时生成运动参数。这意味着动画可以即时响应、灵活变化，而不是播放一段固定的素材。对做交互和游戏的人来说，这是把「AI 实时驱动动作」落到可运行代码上的一个具体范例，附带的 Python 代码可以直接拿来改。
+**✨ 精华总结：** GeminiTTS 是一个基于 Gemini 3.8 TTS 模型的在线语音合成工具，主打单人配音和双人对话播客场景，无需录音或请配音演员，打开网页就能生成。它的卖点在于声音比传统 TTS 更自然、更有表现力，适合做 demo 旁白、播客片头和语言学习素材这类对语感有要求的内容。
 
-## 2. [Why Every SaaS Wants Your Phone Number (and How to Decide When to Give It)](https://dev.to/ghostsms/why-every-saas-wants-your-phone-number-and-how-to-decide-when-to-give-it-4pn0)
+## 2. [Choose Cron Healthchecks over App Metrics — Safer Missed Cohort Rollbacks](https://dev.to/aidensterling3417/choose-cron-healthchecks-over-app-metrics-safer-missed-cohort-rollbacks-3hg0)
 
-**✨ 精华总结：** SaaS 产品要你手机号，本质是把它当成比邮箱更强的身份锚点：能做二次验证、防多开小号、也方便推送召回。真正值得警惕的不是「要不要给」，而是给完之后它会被存进哪、会不会被拿去匹配广告或卖给第三方。建议按敏感度分级——银行、支付类随便给，工具类先用邮箱或虚拟号试探，社交类想清楚隐私代价再决定。
+**✨ 精华总结：** 做多租户队列实验时，回滚触发该看“定时任务是否按时跑完”，而不是应用指标——用一个带截止时间的健康心跳（deadline heartbeat）来判断任务有没有漏跑，应用指标只留作排查问题的诊断层。原因很实在：指标往往只能告诉你“数据变了”，而心跳缺失是唯一能干净、无歧义地证明“计划任务没完成”的信号；只有当调度器本身能可靠上报“缺失”，且告警查询还保留了租户维度时，才值得单独用指标。
 
-## 3. [Your API's Newest Users Are Agents: Designing for Non-Human Clients](https://dev.to/gu_cci_f94bedb90083e6aab4/your-apis-newest-users-are-agents-designing-for-non-human-clients-5b02)
+## 3. [Kyverno Policy as Code no Kubernetes](https://dev.to/ikauedev/kyverno-policy-as-code-no-kubernetes-12l8)
 
-**✨ 精华总结：** API 正在迎来一批不读文档、不看仪表盘、不提工单的新用户——AI Agent。它们直接解析 OpenAPI 规范、循环调用接口，只认确定性、机器可读的响应。如果你现有的 API 是为人类点按钮设计的，那它在这一类客户端面前已经不合格了。
+**✨ 精华总结：** Kyverno 是一个 CNCF 旗下的 Kubernetes 原生策略引擎，让你直接用 YAML 就能校验、修改和生成集群资源，不需要再学一门新的策略语言。它解决的是共享集群里的典型乱象——任何有 kubectl apply 权限的人都能不经意间创建特权 Pod、无 tag 镜像或意外暴露的 Service，而人工审查根本管不过来。对多团队共用集群的场景来说，这相当于把安全规范变成可自动执行的代码。
 
-## 4. [How to Build a Rotation-Safe Webhook Receiver: Verify Raw Signatures for Property Billing](https://dev.to/quentinbarrett5281/how-to-build-a-rotation-safe-webhook-receiver-verify-raw-signatures-for-property-billing-51kf)
+## 4. [Push notifications on iOS without Firebase: talking to APNs directly from Laravel](https://dev.to/guppylab/push-notifications-on-ios-without-firebase-talking-to-apns-directly-from-laravel-35nk)
 
-**✨ 精华总结：** 处理 Webhook 签名验证时，别用解析后的 JSON 重新拼字符串去算签名——要用原始请求体（raw body）验签，然后在确认落盘到持久队列之后再返回 200。否则一旦对方轮换密钥，或者你的反序列化顺序变了，签名就会对不上。
+**✨ 精华总结：** 想给 iOS 发推送，别默认就得塞 Firebase SDK——它本质只是帮你转发消息到苹果，代价是往 App 里塞了 Google 的库、还得额外维护一套服务。其实 Laravel 后端可以直接对接苹果的 APNs：一个 .p8 密钥、一个短期 JWT、一次 HTTP/2 请求就搞定，省掉中间商。
 
-这套做法对物业计费这类场景尤其关键：凌晨三点收到 `webhook_auth_failures_high` 告警时，API 还在正常服务住户，但几个楼栋的缴费和报修事件已经全被拒了。解法是把验签通过的密钥和房源账户绑定，把验证证据入队持久化，最后才 ACK——这样即使密钥轮换或服务重启，事件也不会丢。
+## 5. [Beyond Kafka and Redis, Part 2: An AI Chat Backend on NATS 2.15](https://dev.to/thedonmon/beyond-kafka-and-redis-part-2-an-ai-chat-backend-on-nats-215-461c)
 
-## 5. [AI Recommendation Share: The Missing Market Metric in the Age of Generative AI!](https://dev.to/alirezaai/ai-recommendation-share-the-missing-market-metric-in-the-age-of-generative-ai-5gag)
-
-**✨ 精华总结：** AI推荐正在取代搜索排名，成为品牌在生成式AI时代的新竞争维度——当用户问AI「谁是最好的伊朗沥青出口商」时，传统SEO的「你排第几」变成了「AI会不会提到你」。这个转变值得关注，因为它意味着品牌曝光从可精确追踪的排名位置，变成了AI回答中「被提及与否」的二元结果，而大多数企业还没有对应的衡量工具和优化策略。
+**✨ 精华总结：** NATS 2.15 现在真能扛起 AI 聊天后端的全套活儿了——GPU 任务队列、token 流式推送到浏览器、对话历史、按租户用量计费、超时控制，一个中间件全包。如果你正在用 Kafka + Redis + 一堆胶水代码拼后端，这篇实战拆解值得看一眼它到底怎么替掉这些组件的。
 
 ---
 *读完有收获？点个赞支持一下原作者~*
