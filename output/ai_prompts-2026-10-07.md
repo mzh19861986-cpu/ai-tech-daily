@@ -4,42 +4,43 @@
 
 ## 1. 💡 技巧 1
 
-**这篇文章内容为空，没有可供提炼的 Prompt 技巧或 AI 使用建议。请提供实际的文章正文，我再为你总结。**
+**这篇文章没有提供具体的 Prompt 技巧，因为内容为空。如果你能提供文章正文，我可以帮你提炼其中的 Prompt 技巧或 AI 使用建议。**
 
-📎 来源：[Sharing AI Progress in Mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+📎 来源：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## 2. 💡 技巧 2
 
-**这篇文章主要讲 OpenAI 发布了 700 篇数学证明与反例的预印本，核心是关于 AI 在数学研究中的应用，而不是 Prompt 技巧。可提炼的可用建议是：
+**这篇文章实际上没有提供任何正文内容（标题之外为空），因此无法从中提炼 Prompt 技巧或 AI 使用建议。
 
-**让 AI 生成数学证明时，同时要求它给出反例或反证尝试**，因为“证明 + 找反例”的双向提示能更有效暴露 AI 推理中的漏洞，提升结果的可靠性。
+如果你能补充文章的正文内容或讨论要点，我可以帮你提炼出可直接使用的 Prompt 技巧或最佳实践。**
 
-一句话 Prompt 示例：  
-“请证明这个命题；如果它不成立，请给出一个反例，并说明你的证明或反例为何可信**
-
-📎 来源：[OpenAI just dropped 700 preprints of mathematical proofs and counterexamples](https://github.com/openai/math/tree/main/preprints)
+📎 来源：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 
 ## 3. 💡 技巧 3
 
-**这篇文章没有提供可提炼的 Prompt 技巧，因为标题和正文内容（“内容”为空）仅涉及一个名为 EmbeddingGemma 2 的开源轻量级多模态嵌入模型，并未包含任何关于 Prompt 工程、AI 使用建议或相关讨论的实际文本。若你能提供该文章的完整正文或具体讨论内容，我可以继续帮你提炼可用的 AI Prompt 技巧或最佳实践。**
+**这篇文章没有提供实质内容（正文为空）。请把文章或讨论的具体内容贴出来，我来帮你提炼可用的 Prompt 技巧或 AI 使用建议。**
 
 📎 来源：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## 4. 💡 技巧 4
 
-**这篇文章没有提供具体内容，因此无法提炼 Prompt 技巧或 AI 使用建议。请补充正文或讨论细节。**
+**这篇文章内容很少（标题+一句描述），没有具体的 Prompt 技巧。只能提炼一个关于「如何更好使用 AI」的实践角度：
 
-📎 来源：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
+**让 AI 深度参与具体工程任务，而不只是回答问题。** OpenTPU 作为一个完整的开源 AI 加速器项目，是由 AI 开发完成的——这提示我们，可以把 AI 当作能承担端到端实现任务的协作伙伴（如写 RTL、架构设计、代码生成），而不仅是问答工具。
+
+> 注：由于原文信息不足，这只是基于标题的推断性总结；如需提炼具体的 Prompt 技巧**
+
+📎 来源：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
 ## 5. 💡 技巧 5
 
-**这篇文章讲的是用 AI 开发开源 AI 加速器（OpenTPU）的实践，核心可提炼为一条 Prompt 最佳实践：
+**这篇文章标题提到 LLM 可能缓解了作者的 RSI（重复性劳损），推测内容是关于用 AI 减少重复性打字/操作。由于正文为空，无法提炼具体技巧。若按标题推测，可总结为：
 
-**让 AI 承担完整模块级开发任务，而非零散代码片段——明确给定目标、约束和验收标准，让 AI 自主迭代出可运行的整体实现。**
+**用 AI 代劳重复性输入任务**：把高频、机械的写作或编码片段交给 LLM 生成，减少手动敲键盘的次数，从而缓解 RSI 这类重复劳损。
 
-一句话总结：把 AI 当作能独立完成工程模块的开发者，用清晰的目标+约束（如"开源、可综合、支持某指令集"）驱动它端到端产出，比逐行索要代码更高效。**
+（注：因原文正文缺失，以上为基于标题的合理推断，建议补充正文以便给出更准确的 Prompt 技巧。）**
 
-📎 来源：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
+📎 来源：[LLMs may have helped my RSI](https://vaughanhilts.me/2026/10/05/llms-immensely-helped-my-rsi.html)
 
 ---
 *试试这些技巧，你的 AI 输出质量会肉眼可见地提升！*
