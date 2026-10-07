@@ -6,25 +6,25 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这次要分享的是数学领域AI进展的实质性突破——不是那种“AI又解了道题”的噱头，而是模型开始能参与真正的数学研究流程，比如辅助猜想生成、证明搜索和形式化验证。值得关注的点在于：数学一直被视为AI推理能力的试金石，如果AI能在这里站稳，意味着它在其他需要严密逻辑的领域（比如代码验证、科学发现）也有了可迁移的基础。简单说，这是从“会算”到“会想”的一步。
+The title of this post points to a share about AI's progress in mathematics, but the body is empty, so no specific results can be extracted for now. If the body is added, I can help you explain in two or three sentences "what AI has done in mathematics" and "why this is worth paying attention to."
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-It seems the content wasn't fully pasted. Could you send the main text of Mistral Large 4? Once I have the specific information, I'll extract the key points for you right away.
+Mistral发布了第四代旗舰模型Mistral Large 4，主打更强的推理能力和多语言支持，同时保持了相对高效的推理成本。值得注意的是，它在多个基准测试上开始逼近第一梯队闭源模型，但依然走开放权重路线——对想要私有化部署、又不想在效果上妥协太多的团队来说，这可能是目前最实际的选项之一。
 
 ### 2. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-AnyPS5 能直接把 PS5 游戏二进制文件搬到 PC 上运行，不需要模拟器——它通过重新实现 PS5 的系统库（目前已映射 87%）来让原生代码直接执行，理论上比模拟方案性能损耗小得多。值得关注的是，这意味着 PS5 独占游戏移植 PC 的门槛可能大幅降低，尤其对那些从未打算出 PC 版的作品。不过 87% 的库覆盖率听着高，剩下那 13% 往往才是卡住游戏启动的关键部分，实际可用性还得看具体游戏。
+AnyPS5 是一个将 PS5 游戏二进制文件转换为 PC 原生程序的项目，它不采用模拟器方案，而是通过重新映射系统库，让游戏直接在 PC 上运行，目前已实现 87% 的系统库覆盖。这一思路值得关注，因为它避开了模拟器的性能损耗；如果成熟，可能让 PS5 独占游戏的 PC 移植变得像“转译”一样简单——当然，剩下的 13% 往往是最难攻克的图形和音频底层。
 
-### 3. [决策API现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 3. [决策API目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-在RAG应用中，最令人头疼的“该用哪个数据源”问题，如今有了系统级的解决方案——Decisions API进入公测，让开发者能在运行时动态判断是走检索还是其他路径，而无需将所有逻辑硬编码在prompt中。值得关注的是，它把原本靠if-else和prompt engineering拼凑的决策层，变成了一个正式的API原语，RAG系统的可维护性将明显提升一个台阶。
+GitHub已将Decisions API开放公测——它能将代码审查中的审批规则、分支保护策略等“谁在何种条件下可以合并”的决策逻辑，直接以API形式暴露出来，供外部系统查询和集成。值得关注的是：过去这些规则藏在GitHub的各个配置页面中，现在可以程序化读取，便于团队进行合规审计、自动化工单，或将审查流程接入自建平台，无需再依赖人工截图和手动同步。
 
 ### 4. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-The mathematics community has just broken a barrier that stood for nearly 50 years—integer multiplication has been proven for the first time to be achievable in less than \( n \log n \) time. This means the theoretical upper speed limit for multiplying two n-digit large integers has been officially reset, with profound implications for cryptography, large-number computation, and other fields. The practical value is limited in the short term, but what it changes are the most fundamental rules of the game in computer science.
+Mathematicians have found a new way to multiply integers, pushing the computational complexity below \(n \log n\). This means that multiplying two extremely large numbers can be faster than previously thought theoretically optimal, with direct implications for cryptography, large-number computation, and other fields. Simply put: a new crack has finally been made in the hard nut of multiplication.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

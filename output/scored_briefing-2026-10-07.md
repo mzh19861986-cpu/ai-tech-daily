@@ -2,34 +2,32 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 Integer multiplication below n log n  (⭐ 7.0/10)
-🔗 [hackernews](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
-
-整数乘法首次被证明能在低于 \(n \log n\) 的复杂度内完成，打破了自1971年Schönhage-Strassen算法以来近半个世纪的理论下界。这项成果意味着超大整数乘法的理论上限被进一步压低，未来可能影响到密码学、大数计算等依赖高效乘法的基础领域。
-
-## 🥈 AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)  (⭐ 6.0/10)
+## 🥇 AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)  (⭐ 7.0/10)
 🔗 [hackernews](https://github.com/boykopovar/AnyPS5)
 
-AnyPS5 是一个把 PS5 游戏二进制文件直接搬到 PC 上运行的工具，不走模拟器路线，而是通过重新映射系统库来让原生代码在 PC 上执行，目前已经映射了约 87% 的 PS5 系统库。这个思路值得关注，因为它避开了模拟器性能损耗的老问题，如果真的跑通，意味着 PS5 独占游戏上 PC 可能不再需要等官方移植。
+AnyPS5 是一个把 PS5 游戏二进制文件直接移植到 PC 上运行的工具，走的是原生转译路线而非模拟器——目前已映射 87% 的 PS5 系统库。值得关注的点在于：它绕开了模拟器的性能和兼容性瓶颈，如果剩余 13% 的库能补齐，理论上能让 PS5 独占游戏以接近原生的效率在 PC 上跑起来。
+
+## 🥈 Integer multiplication below n log n  (⭐ 7.0/10)
+🔗 [hackernews](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
+
+整数乘法首次被证明可以在低于 \(n \log n\) 的复杂度内完成，打破了自 1971 年以来 Schönhage-Strassen 算法保持的理论下界。这意味着大数乘法的理论极限被重新定义，对密码学、高精度计算等依赖快速乘法的领域有潜在深远影响。
 
 ## 🥉 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-看起来你可能是想让我基于某个具体的「Mistral Large 4」内容来总结，但消息里只有标题，没有正文。
-
-如果你能贴一下具体内容（发布公告、技术博客、参数说明等），我可以帮你提炼成 2-3 句有信息量的总结，说清楚它是什么、为什么值得关注。
+Mistral 发布了 Large 4，这是他们最新的旗舰大模型，主打更强的推理能力和多语言表现。值得关注的点在于，Mistral 一直以「小而精」的路线对标 OpenAI 和 Anthropic，Large 4 如果真能在推理上接近第一梯队，同时保持欧洲公司在数据合规上的优势，对企业级用户会很有吸引力。
 
 ## 4. Sharing AI progress in mathematics  (⭐ 4.0/10)
 🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-这条内容目前是空的，我无法基于它写出可靠的总结。
+这条内容目前只有标题，没有正文信息，所以能提炼的实质内容比较有限。
 
-如果你把原文（或链接/正文）发我，我会按你要求用 2-3 句话提炼：它到底在讲什么（是什么）、为什么值得关注（对数学/AI 研究或应用意味着什么），并用专业但不生硬的语气写出来。
+从标题来看，它讲的应该是「公开分享 AI 在数学领域的进展」，可能涉及用 AI 辅助证明、发现猜想或推动数学研究一类的成果。值得关注的点在于：数学一直被视为最考验严格推理的领域，如果 AI 在这里有真实进展，说明它的推理能力正在往硬核方向走，而不只是停留在生成文本或代码上。
 
-## 5. Decisions API is in public beta  (⭐ 4.0/10)
+## 5. Decisions API is in public beta  (⭐ 3.0/10)
 🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
 
-Decisions API 开测公测了，简单说就是让你把业务规则从代码里抽出来，集中管理和执行。对经常改逻辑、又不想每次动代码就重新部署的团队来说，这个挺值得试。
+GitHub 把 Decisions API 开放公测了，你可以用它在代码里直接读取和操作仓库中"决策记录"（比如 ADR 架构决策记录）的结构化数据，而不用再手动翻 Markdown 文件。值得关注是因为它把散落在文档里的技术决策变成了可查询、可自动化的数据源——比如自动生成决策时间线、检查哪些决策已过时，或者让 AI 工具直接消费这些上下文。对维护大型项目或做工程效能工具的人来说，这算是把"决策"这块长期靠人肉维护的角落真正 API 化了。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

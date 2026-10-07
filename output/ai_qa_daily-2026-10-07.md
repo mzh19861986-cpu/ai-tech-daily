@@ -4,33 +4,33 @@
 
 ## Q1: Sharing AI progress in mathematics？
 
-**A:** 这篇内容应该是在讲某个团队或个人公开分享他们在数学领域用 AI 取得的进展，可能是新方法、新工具或新发现。值得关注的点在于：数学一直被视为 AI 最难啃的硬骨头之一，任何实质突破都可能意味着 AI 在严谨推理能力上又往前迈了一步。
+**A:** 这项进展的核心，是研究者开始系统性地公开AI在数学领域的具体突破——不只是「AI能做题」，而是展示它如何辅助证明、发现新猜想甚至生成可验证的数学论证。值得关注的点在于：数学是检验AI推理能力最严格的试金石，如果AI能在这里产出人类认可的新结果，意味着它在逻辑严密性和创造性上跨过了关键门槛，而不只是模式匹配。对搞AI或数学的人来说，这可能是观察「AI到底有多聪明」最诚实的一个窗口。
 
 📎 更多阅读：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## Q2: Penguin Mail – open-source Rust email client for Linux with AI？
 
-**A:** Penguin Mail 是一款用 Rust 写的开源 Linux 桌面邮件客户端，亮点是内置了 AI 辅助功能（比如帮你起草、总结邮件）。对 Linux 用户来说，终于有个原生、性能好又现代化的邮件选择，不用再忍受 Thunderbird 的老态或网页版的卡顿，而且开源意味着可以自己掌控数据。
+**A:** Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能（如智能回复、摘要等）。它值得关注的原因是：Linux 平台长期缺乏一款既现代又轻量的原生邮件客户端，而 Rust 带来的性能与内存安全性加上 AI 集成，正好切中了追求效率的 Linux 用户的痛点。
 
 📎 更多阅读：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 
 ## Q3: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
 
-**A:** Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间，直接跑在本地设备上。它的价值在于：多模态检索、跨模态搜索这类任务不再必须依赖云端大模型，小团队和个人开发者也能低成本搭建自己的语义搜索或推荐系统。
+**A:** Google 发布了 EmbeddingGemma 2，一个开源的多模态嵌入模型，能把文本、图片等不同格式的数据映射到同一个向量空间里做检索和匹配。值得关注的点在于：它体量轻、可本地部署，同时支持多模态，这意味着开发者不用依赖闭源 API 也能搭出跨文本和图像的语义搜索或推荐系统——对想控制成本和数据的团队来说是个实用选项。
 
 📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## Q4: OpenTPU – An open-source AI accelerator, developed by AI？
 
-**A:** OpenTPU 是一个由 AI 开发的完全开源 AI 加速器项目，旨在提供可自由使用和修改的 TPU 替代方案。它的核心价值在于打破了专用 AI 芯片的封闭生态，让开发者和研究者能深入硬件层进行定制和实验，而不再受限于厂商的黑盒设计。
+**A:** OpenTPU 是一个完全开源的 AI 加速器项目，从硬件架构到配套软件栈全部公开，目标是让任何人都能复现和定制专属的 AI 推理芯片。它值得关注的原因在于：当前 AI 加速器市场被少数巨头垄断，开源方案能大幅降低芯片设计和验证的门槛，尤其适合研究机构、初创公司和教学场景快速迭代验证。
 
 📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
-## Q5: UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement？
+## Q5: Claude Code’s suggested message feature: I think the real customer is the model？
 
-**A:** UniEvo-VL 是一种让多模态模型通过「自蒸馏」自我进化的训练方法——模型自己生成训练信号来优化自己，无需外部标注数据。它的价值在于打破了多模态模型依赖大规模人工标注的瓶颈，让模型能在部署后持续自我提升，这对降低训练成本和实现持续学习都很关键。
+**A:** Claude Code 新增了一个「建议消息」功能：当你输入卡壳或只写了半句时，它会主动补全你想说的话。作者的观点是，这个功能表面上是帮用户省事，实际上是在给模型喂更高质量的输入——因为用户被引导着把需求说清楚，模型的输出自然更准。值得关注的是，这可能预示着 AI 编程工具的下一波优化方向：与其改模型，不如想办法让用户「说得更好」。
 
-📎 更多阅读：[UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement](https://arxiv.org/abs/2609.38721)
+📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

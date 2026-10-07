@@ -2,25 +2,28 @@
 
 > 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
 
-## 1. [2026 Error Tracking vs Uptime Monitoring: Cron Heartbeat Evidence for Storefronts](https://dev.to/paswkeria/2026-error-tracking-vs-uptime-monitoring-cron-heartbeat-evidence-for-storefronts-j3f)
+## 1. [Node.js Report Security — SMS OTP 2FA Suppression for Blocked Numbers](https://dev.to/orlandojohansson7621/nodejs-report-security-sms-otp-2fa-suppression-for-blocked-numbers-1kd3)
 
-**✨ 精华总结：** 错误追踪能记录代码崩溃和抛出的异常，但它证明不了一个定时任务到底有没有跑完——这是两回事。对电商系统来说，得把三种信号分开看：错误事件说明执行中的代码挂了，存活检查说明接口能访问，而完成心跳说明该干的活在下班前干完了。三者配对使用，再围绕订单等关键流程关联出最小可用的证据链，才能避免「监控全绿但订单没处理」这种坑。
+**✨ 精华总结：** Node.js 搞了个安全报告，讲的是短信验证码 2FA 的一个坑：被拦截（blocked）的手机号不能被当成普通的发送失败来处理，否则会泄露号码状态，还可能让攻击者绕过验证。核心建议是把短信 2FA 建模成一个事务状态机——先建 challenge、查拦截名单、发码、服务端验证，**验证通过后才创建会话**。
 
-## 2. [The Data Layer: What You Don't Own Can Testify Against You](https://dev.to/goodpa/the-data-layer-what-you-dont-own-can-testify-against-you-34en)
+值得关注的点在于，这类拦截场景很容易被开发者忽略，但它既涉及安全（会话必须在验证后才存在），又涉及隐私（不能因为号码被拦截就返回一个和普通失败一样的模糊错误）。如果你在做 B2B SaaS 的登录流程，这篇值得过一眼。
 
-**✨ 精华总结：** 一位女性在第三方AI应用里写的私人日记，被该应用公司主动上报给了警方，她因此面临重罪指控。这再次证明：你数据所在的「数据层」从来不属于你，而平台有动机、有能力、也有法律义务去读取并交出它。用AI工具记录任何敏感内容前，先想清楚——你不是在写日记，你是在给一家公司提交可被传唤的证据。
+## 2. [A voice notebook that can not phone home: on-device Whisper on Android](https://dev.to/theascended/a-voice-notebook-that-can-not-phone-home-on-device-whisper-on-android-4608)
 
-## 3. [Getting Started with Seedance MCP in Cursor](https://dev.to/germey/getting-started-with-seedance-mcp-in-cursor-25c1)
+**✨ 精华总结：** 有人做了个安卓语音笔记 App，把 Whisper 模型完全跑在本地，并且从根上杜绝联网——它的 AndroidManifest 里压根没申请 INTERNET 权限，所以不是"我们承诺不上传"，而是物理上做不到。它跟普通录音 App 的区别在于：录完不是丢给你一个再也不会点开的音频文件，而是自动转写成文字，每次会话一个文件，打开就能读。这事值得关注的点在于，它证明了端侧大模型已经能撑起"安静记笔记"这种日常场景，同时给隐私敏感型工具提供了一个思路——比起写隐私政策，不如直接删掉那个权限。
 
-**✨ 精华总结：** Seedance 推出了 MCP 服务器，让你可以在 Cursor 编辑器里直接调用 AI 生成短视频——文本转视频、图片转视频都行，不用再切到别的工具上传素材、下载结果再导回项目。如果你经常需要做 demo 视频或原型演示，这个集成能省掉大量来回切换的碎片时间，值得花几分钟配一下。
+## 3. [Customer Support Duplicate Alerts: Idempotency Keys Across Polling Errors and Retries](https://dev.to/abernathycross6857/customer-support-duplicate-alerts-idempotency-keys-across-polling-errors-and-retries-4jm0)
 
-## 4. [Sovereign Runtime: The Model You Can Actually Run Is the Model You Own](https://dev.to/goodpa/sovereign-runtime-the-model-you-can-actually-run-is-the-model-you-own-2n1i)
+**✨ 精华总结：** 客服 AI 告警重复轰炸，八成不是真有六次故障，而是轮询反复捞到同一条错误、加上发送端重试叠加出来的。解法是在查询和发送器之间加一层幂等状态机：用错误分组的稳定键去重，再配一个冷却窗口，让 webhook、邮件、短信只发一次。
 
-**✨ 精华总结：** 这篇文章主张一个尖锐的观点：在你真正拥有运行环境之前，所谓“拥有模型”都是空话——你写提示词、管密钥、选服务商，但底层运行时始终捏在别人手里。作者提出“主权运行时”（Sovereign Runtime）的概念，核心就是让模型跑在你自己可控的环境里，而不是租用别人的算力。值得关注的原因是：当Agent依赖链的每一层（分发、模型、身份、访问、框架、计费）都能被卡脖子时，只有真正自己能跑起来的模型，才谈得上所有权。
+## 4. [Build a Multi-Voice Dialogue Generator](https://dev.to/voice_developer/build-a-multi-voice-dialogue-generator-4e4)
 
-## 5. [Claude Code vs Codex CLI vs Cursor: An Honest Field Guide for Working Developers](https://dev.to/ezrazhao/claude-code-vs-codex-cli-vs-cursor-an-honest-field-guide-for-working-developers-pm3)
+**✨ 精华总结：** 用 TTS 服务加一段拼接代码，就能让同一个对话里出现旁白、逗趣搭档和严厉讲师等不同声音，像广播剧一样自然切换。  
+值得关注的是，这不再是预录音频的专利——实时生成、多角色混音，意味着做播客、有声书或游戏 NPC 对白的门槛被拉低到几行胶水代码的级别。
 
-**✨ 精华总结：** 这三款AI编程工具的逻辑差异比想象中大：Claude Code像一个能理解整个代码库的结对程序员，适合多文件重构和复杂任务；Codex CLI轻量直接，擅长快速生成和单文件操作；Cursor则是编辑器内嵌的流畅体验，适合边写边改的日常开发。作者把三者都实际用了一遍，整理成了一份逐行验证过的命令与配置速查表，核心价值在于告诉你什么任务该用哪个工具，而不是笼统地说“都很好”。如果你每天写代码，这份指南能帮你省下不少试错时间。
+## 5. [Cheap Hosted Metrics for Node.js SaaS: A Dashboard API Decision Record](https://dev.to/xenoncross2718/cheap-hosted-metrics-for-nodejs-saas-a-dashboard-api-decision-record-48ap)
+
+**✨ 精华总结：** 给 Node.js SaaS 选监控面板 API，核心就一条：别比价格表，先跑一轮「像生产环境一样」的试用，验证四件事——基数可控、数据可查、面板可复现、告警真能用。PostHog、Grafana Cloud、Datadog 和托管 Prometheus 的差别不在便宜多少，而是四种截然不同的运维模型，选错一样贵。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

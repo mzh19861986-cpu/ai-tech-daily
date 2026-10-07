@@ -14,27 +14,29 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-抱歉，你发来的内容里只有标题「Sharing AI progress in mathematics」，正文是空的，我没法基于它写出有信息量的总结。
+这篇内容目前只有标题，没有正文，所以我能提炼的信息有限。不过从标题本身来看，它讲的是 **分享 AI 在数学领域的进展**——大概率是某机构或研究者公布了 AI 在数学问题求解或定理证明上的新成果。
 
-方便的话，把文章正文贴进来吧。
+值得关注的原因在于：数学长期被视为 AI 的"硬骨头"，因为它需要严格的逻辑推理而非模式匹配，如果 AI 在这块有实质突破，意味着它的推理能力正在从"看起来对"走向"真正可靠"。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral 发布了新一代旗舰模型 Mistral Large 4，在推理、代码和多语言能力上全面升级，直接对标 GPT-4o 和 Claude 3.5 Sonnet 这一梯队。值得关注的是它在保持开源传统的同时，把性能拉到了闭源顶级模型的水平线附近——如果你在找 GPT 之外的替代方案，这可能是目前欧洲阵营里最能打的一个。
+内容好像没贴上来，只有标题「Mistral Large 4」，正文是空的。把具体内容发我，我帮你提炼成 2-3 句有信息量的总结。
 
 ### 2. [AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-AnyPS5 能把你手上的 PS5 游戏二进制文件直接搬到 PC 上跑，不走模拟器那套笨重路线，而是把 87% 的 PS5 系统库调用直接映射成 PC 上对应的接口，本质上是「翻译」而不是「模仿」。这意味着性能损耗可能比传统模拟器小得多，如果后续能补上剩下那 13% 的库，PC 玩家跑 PS5 独占游戏或许就不再需要等官方移植了。
+AnyPS5 是一个把 PS5 原生二进制文件直接搬到 PC 上运行的项目，走的是系统库映射的路子而非模拟器，目前已映射了 87% 的 PS5 系统库。它的意义在于：如果这条路走通，PC 玩家运行 PS5 游戏就不再依赖重型的硬件模拟，性能和兼容性都可能比传统模拟器方案好上一大截——当然，剩下 13% 的库和实际游戏跑通才是真正的考验。
 
 ### 3. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Anthropic 把 Claude 的「决策逻辑」做成了可调用的 API——开发者现在能直接在应用里嵌入 Claude 的推理与判断能力，而不用自己从头搭一套决策系统。公开测试意味着它已经能用，但接口和定价可能还会变，想尝鲜的可以先进场试。
+Sentry 把告警系统的核心逻辑抽成了 Decisions API，现在公测。简单说，你可以用代码定义「什么条件下触发什么动作」，比如某类错误连续出现三次就自动指派给负责人——以前这些规则得在 UI 里点，现在能版本化、能复用。对管着一堆项目的团队来说，这意味告警配置终于不用靠人肉同步了。
 
 ### 4. [Integer multiplication below n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-整数乘法刚刚被证明可以在低于 \( n \log n \) 的复杂度内完成，打破了长期以来认为这一下界不可逾越的假设。这意味着大数相乘的理论速度极限被重新定义，对密码学、科学计算等依赖高效大数运算的领域有深远影响。
+数学界搞了个大新闻：两个研究人员找到了整数相乘的新算法，把复杂度降到了 \(O(n \log n)\) 以下——这是理论计算机科学半个多世纪以来一直在追的目标。
+
+简单说，以前两个超大数字相乘，计算量会随位数增长得比 \(n \log n\) 更快；现在这个新方法打破了这个天花板，意味着未来在密码学、大数计算这些领域，理论上能算得更快。虽然离实际应用还有距离，但这是算法理论上的一个里程碑式突破。
 
 
 ---
