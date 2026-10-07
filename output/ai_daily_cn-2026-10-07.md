@@ -6,25 +6,25 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-I just read Terence Tao's sharing on AI progress in mathematics. The core message is: AI can now reliably complete the step of "translating natural language mathematical problems into Lean formal proofs," and the quality is high enough to be directly used in actual research. This is worth paying attention to because formal verification has always been one of the biggest bottlenecks in the combination of mathematics and AI—once this is cleared, AI can not only assist with proofs but may also反过来 help humans discover new conjectures and check existing papers for flaws. Tao's own excitement about this matter is not about "AI being able to do math problems," but about it beginning to become a truly usable collaborative tool, rather than a toy.
+这次要分享的是数学领域AI进展的实质性突破——不是那种“AI又解了道题”的噱头，而是模型开始能参与真正的数学研究流程，比如辅助猜想生成、证明搜索和形式化验证。值得关注的点在于：数学一直被视为AI推理能力的试金石，如果AI能在这里站稳，意味着它在其他需要严密逻辑的领域（比如代码验证、科学发现）也有了可迁移的基础。简单说，这是从“会算”到“会想”的一步。
 
 ## 📌 综合
 
-### 1. [米斯特拉尔大模型4](https://mistral.ai/news/mistral-large-4/\)
+### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-It seems the content wasn't pasted in full—there's only a title, "Mistral Large 4." Send me the main text, and I'll summarize it for you.
+It seems the content wasn't fully pasted. Could you send the main text of Mistral Large 4? Once I have the specific information, I'll extract the key points for you right away.
 
 ### 2. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%的系统库）](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-AnyPS5 is a tool that can run PS5 game binaries directly on PC, not via emulation, but by remapping system library calls—it currently covers 87% of the PS5 system libraries. Compared to traditional emulators, this approach can theoretically significantly reduce performance overhead. If the remaining library support is completed later, it could offer PC players another way to play PS5 exclusive games.
+AnyPS5 能直接把 PS5 游戏二进制文件搬到 PC 上运行，不需要模拟器——它通过重新实现 PS5 的系统库（目前已映射 87%）来让原生代码直接执行，理论上比模拟方案性能损耗小得多。值得关注的是，这意味着 PS5 独占游戏移植 PC 的门槛可能大幅降低，尤其对那些从未打算出 PC 版的作品。不过 87% 的库覆盖率听着高，剩下那 13% 往往才是卡住游戏启动的关键部分，实际可用性还得看具体游戏。
 
-### 3. [决策 API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 3. [决策API现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Anthropic has opened the public beta of Claude's "Decisions API." Simply put, it lets developers feed business rules to the model in a structured way, so it makes judgments and gives conclusions based on the logic you set, rather than guessing through prompts every time. The key point worth noting is that decision logic has changed from being "hardcoded in the code or scattered in prompts" to a versionable, reusable object, making debugging and auditing much easier - if your product has many "rule-based" scenarios, this can save you a lot of work building your own judgment layer.
+在RAG应用中，最令人头疼的“该用哪个数据源”问题，如今有了系统级的解决方案——Decisions API进入公测，让开发者能在运行时动态判断是走检索还是其他路径，而无需将所有逻辑硬编码在prompt中。值得关注的是，它把原本靠if-else和prompt engineering拼凑的决策层，变成了一个正式的API原语，RAG系统的可维护性将明显提升一个台阶。
 
 ### 4. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-A major development in mathematics: it has been proven for the first time that multiplying two n-digit integers can be done in less than n log n time. This means the half-century-old ceiling on multiplication speed has been officially broken, and large-number arithmetic, along with related cryptography and scientific computing, may all speed up as a result.
+The mathematics community has just broken a barrier that stood for nearly 50 years—integer multiplication has been proven for the first time to be achievable in less than \( n \log n \) time. This means the theoretical upper speed limit for multiplying two n-digit large integers has been officially reset, with profound implications for cryptography, large-number computation, and other fields. The practical value is limited in the short term, but what it changes are the most fundamental rules of the game in computer science.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

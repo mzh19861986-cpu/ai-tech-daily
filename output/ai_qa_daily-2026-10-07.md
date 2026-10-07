@@ -4,33 +4,33 @@
 
 ## Q1: Sharing AI progress in mathematics？
 
-**A:** 缺少正文内容——你只给了标题“Sharing AI progress in mathematics”。把文章正文贴上来，我直接给你 2-3 句的提炼总结。
+**A:** 这篇内容应该是在讲某个团队或个人公开分享他们在数学领域用 AI 取得的进展，可能是新方法、新工具或新发现。值得关注的点在于：数学一直被视为 AI 最难啃的硬骨头之一，任何实质突破都可能意味着 AI 在严谨推理能力上又往前迈了一步。
 
 📎 更多阅读：[Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
 ## Q2: Penguin Mail – open-source Rust email client for Linux with AI？
 
-**A:** Penguin Mail 是一款用 Rust 写成的开源 Linux 邮件客户端，内置了 AI 辅助功能。值得关注的点在于：Linux 桌面长期缺一个好用的原生邮件客户端，而 Rust 带来的性能和内存安全，加上 AI 能力（比如智能分类、回复建议），正好补上了这块短板。
+**A:** Penguin Mail 是一款用 Rust 写的开源 Linux 桌面邮件客户端，亮点是内置了 AI 辅助功能（比如帮你起草、总结邮件）。对 Linux 用户来说，终于有个原生、性能好又现代化的邮件选择，不用再忍受 Thunderbird 的老态或网页版的卡顿，而且开源意味着可以自己掌控数据。
 
 📎 更多阅读：[Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 
 ## Q3: EmbeddingGemma 2: An open, lightweight multimodal embedding model？
 
-**A:** Google 发布了 EmbeddingGemma 2，一个能在手机和笔记本上直接跑的多模态嵌入模型——它能把文字、图片映射到同一个向量空间，让设备本地完成搜索、聚类、推荐这类任务，不再需要把数据传到云端。值得关注的是它延续了 Gemma 系列的开源路线，体积小到能塞进端侧，却支持跨模态检索，这对在意隐私、延迟或离线可用的应用来说是个实用选项。
+**A:** Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一个向量空间，直接跑在本地设备上。它的价值在于：多模态检索、跨模态搜索这类任务不再必须依赖云端大模型，小团队和个人开发者也能低成本搭建自己的语义搜索或推荐系统。
 
 📎 更多阅读：[EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 
 ## Q4: OpenTPU – An open-source AI accelerator, developed by AI？
 
-**A:** OpenTPU 是一个完全开源的 AI 加速器项目，由 AI 自主开发完成——从架构设计到 RTL 代码，人类只负责提供方向。它值得关注，因为这可能是第一个能跑真实模型、且全栈开源的 TPU 级加速器，意味着你不再需要依赖 NVIDIA 或 Google 的闭源硬件，就能在自己的芯片上跑推理。
+**A:** OpenTPU 是一个由 AI 开发的完全开源 AI 加速器项目，旨在提供可自由使用和修改的 TPU 替代方案。它的核心价值在于打破了专用 AI 芯片的封闭生态，让开发者和研究者能深入硬件层进行定制和实验，而不再受限于厂商的黑盒设计。
 
 📎 更多阅读：[OpenTPU – An open-source AI accelerator, developed by AI](https://github.com/FeSens/openTPU)
 
-## Q5: Claude Code’s suggested message feature: I think the real customer is the model？
+## Q5: UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement？
 
-**A:** Claude Code 新增了“建议消息”功能，会主动猜测你下一步想输入什么指令。有意思的是，这个功能的真正受益者可能不是用户，而是模型本身——通过观察你接受或拒绝哪些建议，它能更精准地学习你的意图和上下文偏好。换句话说，这既是个输入提效工具，也是 Anthropic 收集真实交互数据、优化模型对齐的巧妙手段。
+**A:** UniEvo-VL 是一种让多模态模型通过「自蒸馏」自我进化的训练方法——模型自己生成训练信号来优化自己，无需外部标注数据。它的价值在于打破了多模态模型依赖大规模人工标注的瓶颈，让模型能在部署后持续自我提升，这对降低训练成本和实现持续学习都很关键。
 
-📎 更多阅读：[Claude Code’s suggested message feature: I think the real customer is the model](https://www.zohaib.cc/blog/smartest-claude-code-feature)
+📎 更多阅读：[UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement](https://arxiv.org/abs/2609.38721)
 
 ---
 *有问题想问？欢迎在 GitHub 提 Issue~*

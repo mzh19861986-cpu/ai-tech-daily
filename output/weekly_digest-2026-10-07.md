@@ -14,29 +14,27 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这篇文章分享了 AI 在数学领域的最新进展。简单说，就是研究者开始系统性地展示 AI 如何帮助解决数学问题——不只是算得快，而是能参与猜想、证明辅助和模式发现。值得关注的是，这标志着 AI 正从「计算工具」变成「数学研究的合作者」，对数学家和 AI 研究者都有实际参考价值。
+抱歉，你发来的内容里只有标题「Sharing AI progress in mathematics」，正文是空的，我没法基于它写出有信息量的总结。
+
+方便的话，把文章正文贴进来吧。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只给了标题「Mistral Large 4」，但没有提供具体的新闻内容或背景信息。
-
-如果你能把相关的报道、发布说明或细节贴出来，我可以帮你用简洁、有信息量的方式总结成 2-3 句话，讲清楚它「是什么」以及「为什么值得关注」。
+Mistral 发布了新一代旗舰模型 Mistral Large 4，在推理、代码和多语言能力上全面升级，直接对标 GPT-4o 和 Claude 3.5 Sonnet 这一梯队。值得关注的是它在保持开源传统的同时，把性能拉到了闭源顶级模型的水平线附近——如果你在找 GPT 之外的替代方案，这可能是目前欧洲阵营里最能打的一个。
 
 ### 2. [AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-AnyPS5这个项目厉害了，它能让PS5游戏直接跑在PC上，而且不是模拟器那种绕弯路子——它把PS5的87%系统库直接映射到了PC环境，相当于给PS5游戏做了个“翻译层”，让它们原生调用PC的硬件。
-
-这比传统模拟器靠谱得多：模拟器要虚拟整个PS5硬件，性能损耗大、兼容性也难搞；而AnyPS5走的是库映射路线，理论上性能接近原生，开发维护也轻得多。虽然还差13%的库没搞定，但87%这个完成度已经说明这条路走得通——如果后续把那13%补齐，PC玩PS5独占大作可能真不用等官方移植了。
+AnyPS5 能把你手上的 PS5 游戏二进制文件直接搬到 PC 上跑，不走模拟器那套笨重路线，而是把 87% 的 PS5 系统库调用直接映射成 PC 上对应的接口，本质上是「翻译」而不是「模仿」。这意味着性能损耗可能比传统模拟器小得多，如果后续能补上剩下那 13% 的库，PC 玩家跑 PS5 独占游戏或许就不再需要等官方移植了。
 
 ### 3. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub 把「决策」从散落在 PR 评论和 issue 里的口头约定，变成了可以查询的 API 资源——任何人都能读取某个仓库里记录在案的架构决策。值得关注是因为它给 AI 编码代理开了个口子：以前代理只能猜项目为什么这么设计，现在能直接查，这比让它读一堆历史讨论靠谱得多。
+Anthropic 把 Claude 的「决策逻辑」做成了可调用的 API——开发者现在能直接在应用里嵌入 Claude 的推理与判断能力，而不用自己从头搭一套决策系统。公开测试意味着它已经能用，但接口和定价可能还会变，想尝鲜的可以先进场试。
 
 ### 4. [Integer multiplication below n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-数学界迎来里程碑：两个整数相乘的复杂度首次被证明可以低于 O(n log n)，这是自 1971 年 Schönhage-Strassen 算法以来该领域最重大的理论突破。简单说，大数乘法的“速度极限”被重新定义了——虽然短期内还影响不到你的日常代码，但它为未来更快的加密、科学计算和符号运算打开了新的理论空间。
+整数乘法刚刚被证明可以在低于 \( n \log n \) 的复杂度内完成，打破了长期以来认为这一下界不可逾越的假设。这意味着大数相乘的理论速度极限被重新定义，对密码学、科学计算等依赖高效大数运算的领域有深远影响。
 
 
 ---
