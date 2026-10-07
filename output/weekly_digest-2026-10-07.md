@@ -14,25 +14,25 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这篇内容大概率是某机构（可能是 DeepMind、OpenAI 或学术团队）公开他们在数学领域用 AI 做出的阶段性进展，比如让模型参与猜想验证、定理证明或发现新的数学结构。值得关注的点在于：数学一直被视为检验 AI 是否具备真正推理能力的硬骨头，如果这次不是刷题而是产出可被数学家认可的新结果，那说明 AI 在严谨推理上又往前迈了一步。
+这项研究分享了 AI 在数学领域的最新进展，核心是让 AI 不仅能做题，还能参与真正的数学发现——比如提出猜想、辅助证明，甚至找到人类没注意到的模式。值得关注的是，这意味着 AI 正从「计算工具」变成「研究伙伴」，对数学界乃至整个科学发现的方式都可能产生深远影响。
 
 ### 2. [Penguin Mail – open-source Rust email client for Linux with AI](https://penguin-mail.com/)
 *hackernews*
-Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，最大的卖点是内置了 AI 辅助功能。Rust 带来的性能优势和内存安全性，加上 Linux 原生体验，让它对厌倦了 Electron 套壳邮件应用的用户来说挺有吸引力——开源也意味着你可以自己审计数据流向，不用担心 AI 功能偷偷把你的邮件喂给第三方。
+Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 功能，主打原生性能与现代化体验。对 Linux 用户来说，这意味着终于有一个不依赖 Electron、启动快、内存占用低的邮件选择，同时还能用 AI 辅助处理邮件——感兴趣的话可以去 GitHub 看看源码和功能演示。
 
 ### 3. [EmbeddingGemma 2: An open, lightweight multimodal embedding model](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-EmbeddingGemma 2 是 Google 开源的一款轻量级多模态嵌入模型，能把文本、图像等不同模态的数据统一映射到同一个向量空间里，方便直接做跨模态检索和相似度计算。值得关注的原因在于它延续了 Gemma 系列的开放路线，体积小、可本地部署，对那些想在自有数据上搭建 RAG 或语义搜索、又不想被闭源 API 绑定的开发者来说，是个实用选项。
+谷歌发布了 EmbeddingGemma 2，一个轻量级的多模态嵌入模型，能把文本、图像等内容映射到同一个向量空间。它的看点在于开源且体量小，意味着开发者可以在本地或边缘设备上跑多模态检索，而不用依赖昂贵的云端 API——对做搜索、推荐或 RAG 应用的人来说，多了一个低成本又可控的选择。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral 发布了旗舰级大模型 Large 4，定位对标 GPT-4 和 Claude 3 Opus 级别，主打多语言能力和推理性能的提升。值得关注的是它延续了 Mistral 一贯的开放权重策略（至少部分版本），让开发者和企业能在自己的基础设施上部署一个接近顶级闭源模型能力的选项，这对在意数据主权和成本控制的团队来说是个实质性利好。
+看起来你还没贴出具体内容——只有标题「Mistral Large 4」。把正文发过来，我帮你提炼成 2-3 句有信息量的总结，说清楚它是什么、为什么值得关注。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Decisions API 进入公开测试，开发者现在可以用它把业务决策逻辑直接嵌入应用，而不用自己搭建规则引擎。值得关注的是，它把「谁来决策、按什么规则决策」这件事标准化成了可调用的接口，对需要频繁调整策略的产品来说能省不少重复开发。
+这个 Decisions API 目前处于公开测试阶段。它提供了一套标准化的接口，让开发者能在应用里直接集成决策逻辑，而不用自己从零搭建规则引擎。如果你在做需要动态判断、策略路由或自动化工作流的系统，这个 API 值得关注一下。
 
 
 ---

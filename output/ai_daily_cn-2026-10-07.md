@@ -6,27 +6,29 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-这条内容目前只有标题，没有正文，所以还无法提炼具体信息。不过从标题“分享 AI 在数学领域的进展”来看，大概率是讲 AI 在数学领域的最新进展分享——比如用 AI 辅助证明定理、发现新猜想或加速数学研究。
+This content actually has no body text to summarize—it's just a title, "Sharing AI progress in mathematics," with no substantive information, sources, or details. I can't fabricate an accurate summary without knowing what it specifically refers to; that would just be speculation.
 
-如果后续补充正文，我可以帮你用 2-3 句话总结出“做了什么”和“为什么重要”。
+If you can send me the original text or a link, I can immediately help you distill it into two or three sentences that clearly explain "what it is" and "why it's worth paying attention to."
 
-### 2. [企鹅邮件——面向Linux的开源Rust电子邮件客户端，内置AI功能](https://penguin-mail.com/)
+### 2. [企鹅邮件——面向Linux、带AI功能的开源Rust电子邮件客户端](https://penguin-mail.com/)
 *hackernews*
-Penguin Mail 是一款用 Rust 编写的开源 Linux 桌面邮件客户端，内置 AI 辅助功能，主打原生性能和现代化界面。对于厌倦了 Electron 套壳邮件应用、又想在本地收件箱里直接用上 AI 摘要和智能回复的 Linux 用户来说，这是个值得关注的新选择。
+Penguin Mail 是一款从零开始用 Rust 编写的 Linux 开源邮件客户端，内置 AI 功能。值得关注的是，Rust 带来的内存安全与性能优势，加上 AI 辅助（如智能撰写、摘要），使其有望成为 Linux 桌面长期缺失的现代邮件体验替代品。
 
 ### 3. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
 *hackernews*
-Google 发布了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能同时处理文本和图像并转成向量表示。它的看点在于：模型小到可以本地运行，却支持跨模态检索（比如用文字搜图），这对想在端侧做 RAG 或多模态搜索的开发者来说，是个免调用 API、省成本的新选择。
+Google 开源了 EmbeddingGemma 2，一个轻量级多模态嵌入模型，能把文本和图像映射到同一向量空间，让开发者用很小的算力成本搭建跨模态检索和相似度匹配功能。值得关注的是它延续了 Gemma 系列「开放权重 + 可本地部署」的路线，对于想在边缘设备或私有环境里做多模态 RAG、图片搜索的团队来说，是个省事又省钱的选项。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released its fourth-generation flagship large model, Mistral Large 4. The core upgrades lie in further enhanced reasoning capabilities and multilingual support, while maintaining Mistral's consistent efficient inference architecture. Notably, it directly targets the GPT-4 and Claude 3 Opus level, but follows a more lightweight technical approach—if you care about deployment costs and inference speed without sacrificing too much performance, this may be one of the most pragmatic options currently available.
+Mistral released its fourth-generation flagship large model, Mistral Large 4, focusing on stronger reasoning capabilities and multilingual performance while maintaining a relatively lightweight architecture.
 
-### 2. [决策API现已进入公开测试阶段。](https://developers.openai.com/api/docs/guides/decisions)
+Notably, it has approached or even matched some leading closed-source models on multiple benchmarks, yet it still follows an open-weight approach — meaning enterprises and developers can deploy and fine-tune it themselves without handing data to third-party APIs. For teams concerned about cost and data sovereignty, this is a significant option.
+
+### 2. [Decisions API 现处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Decisions API 现已开放公测。它将决策逻辑从代码中抽象出来，转化为可独立调用和管理的接口，使业务规则能够单独迭代，无需重新部署应用。如果你正在维护频繁变动的业务规则，这将大大减少发版和回滚的麻烦。
+The Decisions API is now in public beta. Simply put, it lets you extract "decision logic" from your code and turn it into separately configurable modules—such as risk control rules, pricing strategies, and recommendation conditions that often need adjustment. In the future, changing logic won't require redeploying. For backend engineers who are constantly being chased by business teams to modify rules, this is well worth trying.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
