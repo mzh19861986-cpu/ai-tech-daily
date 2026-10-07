@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [CodeCrab](https://www.producthunt.com/products/codecrab)
+## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** CodeCrab 是一个完全本地运行的 AI PR 审查工具，代码不出你的机器就能自动拿到逐行 review 意见，适合对数据隐私敏感或不想为 AI 审查额外付费的团队。如果你受够了等人工 review 或担心把公司代码传给云端模型，可以直接在本地跑起来试试。
-
----
-## 2. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
-
-**💡 是什么 + 为什么值得试：** 这是一个能自动同步你网站内容的 AI 客服代理，省去手动更新知识库的麻烦——网站一改，它就跟着变。如果你受够了客服机器人答非所问，值得一试。
+**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 常要对接的一堆工具收进一个 SDK 和一个 MCP，省得你为每个数据源单独写适配代码。如果你在搭销售或增长自动化流程、又不想被某家工具绑死，可以拿它试试。
 
 ---
-## 3. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 2. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接集成进浏览器，让你在浏览网页的同时让 AI 助手实时读取页面内容、协助编码或操作，省去手动复制粘贴上下文的麻烦。如果你经常边查资料边写代码，它能明显减少窗口切换的开销。
-
----
-## 4. [Extrovert](https://www.producthunt.com/products/extrovert)
-
-**💡 是什么 + 为什么值得试：** Extrovert 让你的 AI agent 直接跑 LinkedIn 外联，自动发消息、跟进潜在客户，省去手动一个个点开资料的功夫。如果你已经在用 agent 做销售或招聘，这个开源项目能把它接到 LinkedIn 上，值得一试。
+**💡 是什么 + 为什么值得试：** Willow Knowledge 帮你把散落在各处的个人笔记、文档和资料统一索引起来，让 AI 助手能直接检索到你自己的知识库，而不是只靠通用训练数据回答。如果你受够了每次都要手动复制粘贴背景信息给 AI，这个项目值得一试。
 
 ---
-## 5. [iphone-use](https://www.producthunt.com/products/iphone-use)
+## 3. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** `iphone-use` 让 AI agent 直接操作真实的 iPhone，连没有开放 API 的 App 也能自动化，比如截图、点击、输入这些动作。如果你想让 AI 帮你跑通那些只能手动点、又没接口的 iOS 流程，这个项目值得试试。
-
----
-## 6. [Fuse AI](https://www.producthunt.com/products/fuseai)
-
-**💡 是什么 + 为什么值得试：** Fuse AI 让你用一个 SDK 加一个 MCP，把原本东拼西凑的 GTM 工具栈统一起来，省去挨个对接各家 API 的麻烦。如果你的团队正被散落的数据源和重复集成拖慢节奏，值得花半小时试一下。
+**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个 Grok Bot 风格的多人大模型机器人，不用 API Key、不用联网、数据也不出本机。如果在意隐私或想省 token 成本，直接 clone 下来就能用。
 
 ---
-## 7. [Ghostifier](https://www.producthunt.com/products/ghostifier)
+## 4. [Coddy](https://www.producthunt.com/products/coddy)
 
-**💡 是什么 + 为什么值得试：** Ghostifier 能帮你自动向各家平台发数据删除请求，省去你逐个找隐私政策、填表单的麻烦。如果你在意自己的数据被哪些公司存着又懒得手动处理，可以试试这个。
+**💡 是什么 + 为什么值得试：** 如果你想利用碎片时间入门编程，但又觉得啃教程太枯燥，Coddy 用短小的课程帮你在 20 多种语言里快速上手。
 
 ---
-## 8. [mcpgawk](https://www.producthunt.com/products/mcpgawk)
+## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
 
-**💡 是什么 + 为什么值得试：** MCP 服务器一旦被你批准后偷偷改了工具定义或行为，mcpgawk 能帮你抓出来，避免已经信任的连接在背后搞小动作。如果你在用 MCP 协议接第三方工具或服务，值得加一层这个检查。
+**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器侧边栏，让你在浏览网页、查文档、看报错时不用切窗口就能让 AI 读当前页面并动手改代码。如果你经常在查资料和写代码之间反复横跳，它能把这条路径缩短到几乎为零。
+
+---
+## 6. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
+
+**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服机器人却总答错或过时，这个项目能让 AI 客服自动跟随站点内容同步，省去手动维护知识库的麻烦。适合文档、SaaS 或电商站点快速接入一个不会"答非所问"的支持助手。
+
+---
+## 7. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+
+**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部跑在本地设备上，写笔记、总结、问答都不用把内容传到云端。如果你在意隐私、又想要 AI 辅助记笔记，它值得一试。
+
+---
+## 8. [Doco](https://www.producthunt.com/products/doco-4)
+
+**💡 是什么 + 为什么值得试：** Doco 能根据你正在做的事自动匹配适合的音乐，省去手动切歌和挑歌单的麻烦。如果你经常在工作或写代码时被选歌打断，它值得试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

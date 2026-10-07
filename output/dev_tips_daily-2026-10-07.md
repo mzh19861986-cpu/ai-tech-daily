@@ -6,7 +6,7 @@
 
 **Integer multiplication below n log n**
 
-✨ 一位研究者宣布找到了整数乘法低于 \(n\log n\) 的算法，打破了长期以来的理论下界。如果结果经得起验证，这将是乘法复杂度领域几十年来的重大突破，可能影响从密码学到高性能计算等一系列依赖大数乘法的应用。
+✨ 整数乘法首次被优化到低于 \(n \log n\) 的复杂度。这不只是一个理论上的小改进，它意味着大数乘法这一计算机底层基础操作，终于突破了沿用数十年的算法天花板。
 
 📎 [阅读原文](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 
@@ -14,17 +14,17 @@
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文把中国哲学智慧（比如中庸、无为）引入自动驾驶决策，让大语言模型在复杂路况下不只会算最优解，还能兼顾安全、效率和社会规范的平衡。值得关注的是，它跳出了纯数值优化和规则驱动的思路，尝试用哲学框架给自动驾驶的伦理决策提供新维度——这对解决“电车难题”类场景可能是个有意思的方向。
+✨ 这篇论文把中国哲学智慧引入了自动驾驶决策系统，试图让大语言模型在处理复杂交通博弈时不只是算数字，还能兼顾伦理和社会规范。值得关注的点在于：它跳出了纯数值优化和纯预测的老路子，开始认真对待「车该怎么开才既安全又得体」这个被长期忽视的伦理维度。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
 ## 技巧 3
 
-**How to Find and Fix Slow MySQL Queries in Laravel**
+**Self-Hosting an AI Assistant on CasaOS: A Step-by-Step OpenMuse Install Guide (Pitfalls Included)**
 
-✨ Laravel应用从开发到上线突然变慢，通常不是代码改了，而是数据量增长暴露了缺失的索引，或者某个不起眼的循环在每次请求里悄悄触发了数百次查询。好消息是，MySQL慢查询属于最容易修复的性能问题之一——找到它们、加上索引、干掉N+1查询，往往就能让响应时间从三秒回到两百毫秒。
+✨ 想在自家 CasaOS 服务器上跑一个既能聊天、又能直接管理你服务器的 AI 助手？这篇指南手把手教你用 SSH 和 Docker Compose 部署 OpenMuse，而且每个步骤都标注了踩坑点——因为作者是先把事情做错了一遍才总结出来的。
 
-📎 [阅读原文](https://dev.to/aqib_javaid/how-to-find-and-fix-slow-mysql-queries-in-laravel-3806)
+📎 [阅读原文](https://dev.to/muratmed/self-hosting-an-ai-assistant-on-casaos-a-step-by-step-openmuse-install-guide-pitfalls-included-228b)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

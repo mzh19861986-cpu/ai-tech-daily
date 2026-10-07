@@ -6,27 +6,29 @@
 
 ### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-The core of this progress is that researchers have begun to systematically publicize AI's specific breakthroughs in mathematics—no longer making broad claims that "AI can do math," but providing verifiable cases of theorem proving, conjecture generation, and counterexample discovery. Notably, this means AI is transforming from a "computational tool" into a "mathematical collaborator," and the mathematics community's acceptance of AI is shifting from skepticism to practical adoption.
+AI progress in mathematics has been relatively low-key, but there have been several noteworthy developments recently.
 
-### 2. [EmbeddingGemma 2：一个开放、轻量级的多模态嵌入模型](https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/)
-*hackernews*
-Google has released EmbeddingGemma 2, an open-source multimodal embedding model that maps text and images into the same vector space for retrieval and similarity computation. Its selling point is being lightweight—the parameter count is small enough to run on consumer-grade hardware or even on-device, while maintaining decent retrieval quality. The noteworthy aspect is that models combining open-source + multimodal + lightweight are still rare, so developers working on RAG, cross-modal search, or local deployment can try it out at low cost.
+Simply put, AI's role in mathematical research is shifting from "computing quickly" to "helping to think" — not just performing calculations and verifications, but beginning to participate in conjecture generation and proof search, tasks that genuinely require creativity.
+
+The reason this is worth watching is straightforward: mathematics is a touchstone for AI reasoning ability. If AI can offer proof paths in mathematics that humans have not thought of, then it is one step closer to general reasoning, rather than just being a language game.
 
 ## 📌 综合
 
-### 1. [米斯特拉尔大模型4](https://mistral.ai/news/mistral-large-4/\)
+### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral发布了Large 4，这是他们目前最强的旗舰大模型，主打推理能力和多语言表现，直接对标GPT-4o和Claude这一梯队。
+Mistral has released its new generation flagship model, Mistral Large 4, though specific details have not yet been fully disclosed. As Europe's most significant large model player, this update is worth watching, as it is likely to continue its differentiation strategy in open-source weights, multilingual capabilities, and inference efficiency, directly competing with GPT-4o and the Claude series.
 
-值得关注的点在于：Mistral一直走“开源+欧洲自主”路线，Large 4如果延续部分开放策略，意味着企业又多了一个不依赖美国闭源API的高性能选项——尤其在数据主权敏感的欧洲市场，这个卡位很关键。
-
-### 2. [Decisions API 现已进入公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
+### 2. [决策API目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-Decisions API 已进入公开测试阶段，开发者现在可以直接调用这套决策引擎，将原本需要自行搭建的规则判断逻辑交由它处理。如果你正在开发的产品涉及审批流、风控或个性化推荐，它能省去不少重复造轮子的功夫，值得花半小时阅读其文档并尝试。
+GitHub has turned repository decision logic—such as who can merge code and under what conditions automatic deployment occurs—into directly callable APIs, now in public beta. This means you no longer need to hardcode rules in CI scripts or third-party tools; when rules change, you modify them in one place and all integrations sync automatically, saving considerable effort for platform teams and those writing automation.
 
-### 3. [氛围编程 Photoshop：时间与压力](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
+### 3. [整数乘法低于n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-“Vibecoding Photoshop”是一个用自然语言驱动 Photoshop 完成设计操作的工具——你描述想要的效果，它替你在 PS 里执行。值得关注的点在于：它把“写代码”这件事压缩成了“说出意图”，你再也不需要学脚本或动作，只要有审美判断就行。本质上，它把时间压力从“怎么操作”转移到了“想清楚要什么”，这恰恰是 AI 时代创作者最该练的能力。
+数学家们已将整数乘法的复杂度降低到 \(O(n \log n)\) 以下——这是自 1971 年 Schönhage-Strassen 算法以来该领域的最大突破。新算法利用模算术和快速傅里叶变换的变体，在理论上比现有方法更快地完成大数相乘。值得关注是因为整数乘法是密码学、大数计算等无数底层任务的核心，更快的乘法意味着这些领域可能迎来连锁提速。
+
+### 4. [氛围编程Photoshop：时间与压力](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
+*hackernews*
+“Vibecoding Photoshop: Time and pressure” refers to developers using the vibecoding approach—not writing traditional code, but iterating repeatedly with natural language and AI—to “replicate” Photoshop’s core functions, and the key that drives it to run is actually the simulation of “time and pressure.” What is noteworthy is that it proves AI-assisted improvised development can already approach the experience of professional-grade image software, while also suggesting that the threshold for building such tools in the future will be greatly lowered, and what truly becomes scarce is aesthetic sense and interaction intuition, rather than implementation capability.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*
