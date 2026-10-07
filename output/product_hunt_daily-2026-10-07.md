@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Fuse AI](https://www.producthunt.com/products/fuseai)
+## 1. [Appto](https://www.producthunt.com/products/appto)
 
-**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 常要对接的一堆工具收进一个 SDK 和一个 MCP，省得你为每个数据源单独写适配代码。如果你在搭销售或增长自动化流程、又不想被某家工具绑死，可以拿它试试。
-
----
-## 2. [Willow Knowledge](https://www.producthunt.com/products/willow-voice)
-
-**💡 是什么 + 为什么值得试：** Willow Knowledge 帮你把散落在各处的个人笔记、文档和资料统一索引起来，让 AI 助手能直接检索到你自己的知识库，而不是只靠通用训练数据回答。如果你受够了每次都要手动复制粘贴背景信息给 AI，这个项目值得一试。
+**💡 是什么 + 为什么值得试：** Appto 能让你用自己的 AI 订阅（比如 ChatGPT Plus）自动批量生成 iOS 应用代码，省去从头搭建 Xcode 项目的重复劳动。如果你经常需要快速做原型或上架小工具类 App，它值得一试，因为成本只花在你已有的 AI 订阅上，不额外收费。
 
 ---
-## 3. [OpenBot](https://www.producthunt.com/products/openbot-3)
+## 2. [EasyCut](https://www.producthunt.com/products/easycut-2)
 
-**💡 是什么 + 为什么值得试：** OpenBot 让你在本地免费跑一个 Grok Bot 风格的多人大模型机器人，不用 API Key、不用联网、数据也不出本机。如果在意隐私或想省 token 成本，直接 clone 下来就能用。
-
----
-## 4. [Coddy](https://www.producthunt.com/products/coddy)
-
-**💡 是什么 + 为什么值得试：** 如果你想利用碎片时间入门编程，但又觉得啃教程太枯燥，Coddy 用短小的课程帮你在 20 多种语言里快速上手。
+**💡 是什么 + 为什么值得试：** EasyCut 能帮你直接剪辑 Claude 生成的运动视频，省去导入专业软件再手动对齐的麻烦。如果你经常用 Claude 做动态内容、又不想为简单剪辑折腾，它值得一试。
 
 ---
-## 5. [Rill Browser](https://www.producthunt.com/products/rill-3)
+## 3. [Floani](https://www.producthunt.com/products/floani)
 
-**💡 是什么 + 为什么值得试：** Rill Browser 把 Claude Code 和 Codex 直接放进浏览器侧边栏，让你在浏览网页、查文档、看报错时不用切窗口就能让 AI 读当前页面并动手改代码。如果你经常在查资料和写代码之间反复横跳，它能把这条路径缩短到几乎为零。
-
----
-## 6. [Cosmic AI Support Agent](https://www.producthunt.com/products/cosmic)
-
-**💡 是什么 + 为什么值得试：** 如果你的网站内容经常更新，客服机器人却总答错或过时，这个项目能让 AI 客服自动跟随站点内容同步，省去手动维护知识库的麻烦。适合文档、SaaS 或电商站点快速接入一个不会"答非所问"的支持助手。
+**💡 是什么 + 为什么值得试：** Floani 让你用 AI 生成流程图、架构图这类示意图，再直接加动画和分享链接，省去在绘图工具里手动拖拽和对齐的麻烦。如果你经常要向别人解释系统或流程，想快速做出一张能动的图，可以试试它。
 
 ---
-## 7. [NoteWorthy](https://www.producthunt.com/products/noteworthy)
+## 4. [Fuse AI](https://www.producthunt.com/products/fuseai)
 
-**💡 是什么 + 为什么值得试：** NoteWorthy 把 AI 笔记能力全部跑在本地设备上，写笔记、总结、问答都不用把内容传到云端。如果你在意隐私、又想要 AI 辅助记笔记，它值得一试。
+**💡 是什么 + 为什么值得试：** Fuse AI 把 GTM 工具链（数据源、自动化、CRM 等）统一到一个 SDK 和一个 MCP 接口里，省去你在多个 API 之间来回拼胶水代码的麻烦。如果你的团队正在自己搭 GTM 流程又不想被单一厂商绑定，它值得花半小时试跑一下。
 
 ---
-## 8. [Doco](https://www.producthunt.com/products/doco-4)
+## 5. [OpenBot](https://www.producthunt.com/products/openbot-3)
 
-**💡 是什么 + 为什么值得试：** Doco 能根据你正在做的事自动匹配适合的音乐，省去手动切歌和挑歌单的麻烦。如果你经常在工作或写代码时被选歌打断，它值得试试。
+**💡 是什么 + 为什么值得试：** OpenBot 是一个本地运行、免费开源的多人聊天机器人方案，适合想自己掌控数据、又不想依赖 Grok 等云端服务的场景。它支持多人同时使用，部署在自己机器上就能跑，隐私和成本都更可控。
+
+---
+## 6. [Banger](https://www.producthunt.com/products/banger-mail)
+
+**💡 是什么 + 为什么值得试：** Banger 帮你把邮件营销里的自动化流程（欢迎信、召回、跟进等）交给 AI 来写和跑，省去手动搭流程和憋文案的功夫。如果你想低成本试试 AI 驱动的邮件自动化，又不想被复杂工具绑住，可以拿它跑个小活动看看效果。
+
+---
+## 7. [StayCharted](https://www.producthunt.com/products/staycharted)
+
+**💡 是什么 + 为什么值得试：** 如果你手头有一堆文本或图片想按自己的分类标准自动打标签，又不想写代码，StayCharted 让你直接训一个专属的分类模型，文本和图片都支持。适合快速验证想法或处理小批量数据，省去搭模型的功夫。
+
+---
+## 8. [OrgComputers](https://www.producthunt.com/products/orgcomputers)
+
+**💡 是什么 + 为什么值得试：** OrgComputers 给你提供一个统一的工作区来管理和编排多个 AI Agent，解决它们之间任务分派、状态同步和上下文共享的混乱问题。如果你正在同时跑几个 Agent 又不想手动传话，值得试试。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

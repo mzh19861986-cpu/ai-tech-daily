@@ -1,26 +1,18 @@
 # 📚 Dev.to 热门技术文章 - 2026-10-07
 
-> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 5 篇
+> 从 Dev.to 社区精选的高质量技术文章 | AI 帮你提炼精华 | 共 3 篇
 
-## 1. [Hello from a beginner 👋](https://dev.to/compressdog/hello-from-a-beginner-9bn)
+## 1. [Cline in Production: BYO-Key Costs, MCP Limits, and Terminal-Bench Results](https://dev.to/jangwook_kim_e31e7291ad98/cline-in-production-byo-key-costs-mcp-limits-and-terminal-bench-results-3cod)
 
-**✨ 精华总结：** 一位编程新手因为找不到满意的图片压缩工具——要求简单、本地处理、不上传文件——干脆自己动手做了一个，结果被朋友要走变成了线上小工具。值得关注的是：这再次说明「开发者工具」的门槛已经低到普通人能靠一个真实需求入门编程，而且隐私优先的本地处理正在成为很多人的刚需。
+**✨ 精华总结：** Cline 在生产环境的关键测试结果显示：搭配 Kimi K3 模型在 Terminal-Bench 2.1 上把通过率从 77.5% 提到 88.8%，同时成本还降了。这篇评估的真正价值在于戳破了一个痛点——按座位固定收费的 AI IDE 很难算清成本归属，而封闭的 agent 运行时又让换模型、换工具变得昂贵，Cline 的 BYO-Key 模式正好绕开了这两个坑。如果你在意 agent 的可迁移性和成本透明度，这份实测数据值得一看。
 
-## 2. [Dá praia amanhã? One line the night before, picked by code and explained by Gemma 4 on my laptop](https://dev.to/vinimabreu/da-praia-amanha-one-line-the-night-before-picked-by-code-and-explained-by-gemma-4-on-my-laptop-3fnf)
+## 2. [Atlassian CVE-2026-21589: Unauthenticated Access to Files in Web Root Across Multiple Data Center Products](https://dev.to/anoymask/atlassian-cve-2026-21589-unauthenticated-access-to-files-in-web-root-across-multiple-data-center-2ljf)
 
-**✨ 精华总结：** 有人用本地跑的语言模型搭了个小工具，头天晚上自动判断"明天能不能去海边"——它读取开发者在终端里的操作记录（某天半天就跑了 548 条命令），结合天气给出结论。这个叫"Touch Grass"的小项目之所以有意思，是因为它把 AI 智能体的日常数据反向用在了生活本身，用一个很轻的切口提醒天天泡在代码里的人：该出门了。
+**✨ 精华总结：** Atlassian 多个 Data Center 产品被曝出一个无需登录即可读取 Web 根目录文件的漏洞（CVE-2026-21589），影响面覆盖旗下多条产品线。这类未授权文件访问如果被利用，可能直接暴露配置文件、密钥等敏感信息，跑自建 Data Center 的团队建议尽快对照官方公告确认版本并打补丁。
 
-## 3. [Where Muse Spark Code is going: bring your own models, agent teams and every editor](https://dev.to/randynorthrup/where-muse-spark-code-is-going-bring-your-own-models-agent-teams-and-every-editor-529d)
+## 3. [The token refresh bug that kept logging our users out, and took me 3+ weeks to solve](https://dev.to/hassannaeem/the-token-refresh-bug-that-kept-logging-our-users-out-and-took-me-3-weeks-to-solve-gm)
 
-**✨ 精华总结：** Muse Spark Code 是 Meta Muse Spark 的开源免费编码 agent，目前已能作为 ACP agent 跑在 Zed、JetBrains、Neovim 和 Emacs 里，一套逻辑覆盖所有主流编辑器——这对被单一 IDE 绑死的开发者来说是个实在的解放。作者刚公开了路线图：下一步支持自带模型（bring your own models）和 agent 团队协作，意味着你可以用自己的模型密钥，并让多个 agent 分工干活。
-
-## 4. [Self-Hosting an AI Assistant on CasaOS: A Step-by-Step OpenMuse Install Guide (Pitfalls Included)](https://dev.to/muratmed/self-hosting-an-ai-assistant-on-casaos-a-step-by-step-openmuse-install-guide-pitfalls-included-228b)
-
-**✨ 精华总结：** OpenMuse 是一个可以跑在 CasaOS 上的自托管 AI 助手，除了聊天，它还能直接管理你的服务器——查应用、读日志这些事都能对话完成。这篇指南用 SSH + Docker Compose 一步步带你部署 v0.4.9，亮点是作者把踩过的坑都写进去了，省得你再错一遍。如果你有闲置的家庭服务器，想让 AI 真正接管点运维活，这个值得一试。
-
-## 5. [OpenBot 0.1.3: we put the agent in a box](https://dev.to/leonid_gorkin_9ce5bebbf44/openbot-013-we-put-the-agent-in-a-box-1h38)
-
-**✨ 精华总结：** OpenBot 0.1.3 把 agent 的 shell 执行环境整个塞进了 Docker 容器，并用独立用户运行命令，不再以你的身份直接操作宿主机——这解决的是「一个错误的工具调用就可能删掉你的文件、泄露密钥或搞坏 SSH 配置」这个要命的安全默认值。同时新增了单次运行成本追踪（防止长任务悄悄烧钱）和可按排行榜排名/新旧排序的模型选择器，算是把 agent 从「裸奔」往「有围栏」方向推了一步。
+**✨ 精华总结：** 一个看似不可能的 bug：用户的 refresh token 明明还有 7 小时有效期，却还是被踢回登录页，没有崩溃、没有报错，用户就是莫名其妙被登出。作者花了 3 周多反复排查前后端代码才找到根因——这类「token 有效但会话失效」的问题在移动端很常见，隐蔽性强，值得后端和客户端开发者引以为戒。
 
 ---
 *读完有收获？点个赞支持一下原作者~*

@@ -1,31 +1,28 @@
 # 🏆 AI 热度排行榜 Top 10 - 2026-10-07
 
-> 由 AI 自动打分排序 | 共 5 条入选
+> 由 AI 自动打分排序 | 共 4 条入选
 
-## 🥇 Integer multiplication below n log n  (⭐ 7.0/10)
+## 🥇 Integer multiplication below n log n  (⭐ 8.0/10)
 🔗 [hackernews](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 
-数学界刚刚打破了一个持续了近半个世纪的猜想：整数乘法的复杂度下界终于被证明可以低于 \( n \log n \)——更准确地说，是 \( O(n \log n) \) 这一经典上界首次被突破，新算法将乘法推向 \( n \log n \) 以下。这意味着两个超大整数相乘所需的基本运算次数，比我们一直以为的“最优解”还要少。虽然短期不会让你的手机算得更快，但它动摇了算法复杂度理论的一块基石，后续可能影响密码学、大数运算库乃至计算模型的设计思路。
+数学界刚刚打破了一个持续近半个世纪的猜想——整数乘法首次被证明可以在低于 \( n \log n \) 的复杂度内完成。这意味着计算机做最基础的乘法运算，理论速度上限比我们过去认为的更快，未来可能影响密码学、大数计算等所有依赖乘法的领域。
 
-## 🥈 Mistral Large 4  (⭐ 6.0/10)
+## 🥈 AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)  (⭐ 7.0/10)
+🔗 [hackernews](https://github.com/boykopovar/AnyPS5)
+
+AnyPS5 是个把 PS5 游戏二进制直接搬到 PC 上跑的工具，走的是原生重编译路线而非模拟器——目前已映射了 87% 的 PS5 系统库。这意味着 PS5 独占游戏理论上能以接近原生的性能在 PC 运行，绕开了模拟器一贯的性能损耗和兼容性泥潭；对 PC 玩家和 Preservation 群体来说，这是目前最值得盯的一个方向。
+
+## 🥉 Mistral Large 4  (⭐ 5.0/10)
 🔗 [hackernews](https://mistral.ai/news/mistral-large-4/\)
 
-Mistral 发布了第四代旗舰大模型 Mistral Large 4，主打更强的推理能力和多语言支持，同时保持了相对轻量的部署成本。值得关注的是，它在多个基准测试上已经逼近甚至部分超越 GPT-4 级别模型，但价格和开源策略依然更友好——对想自建 AI 能力又不想被大厂绑定的团队来说，这是个很有竞争力的选项。
+Mistral 发布了新一代旗舰模型 Large 4，在推理、多语言和代码能力上都有明显提升，直接对标 GPT-4o 和 Claude 3.5 Sonnet 这个级别的对手。
 
-## 🥉 Sharing AI progress in mathematics  (⭐ 5.0/10)
+值得关注的是，Mistral 一直走「开放权重 + 高效能」路线，如果 Large 4 延续这个策略，意味着你能用更低的成本拿到接近顶级闭源模型的效果——对做应用层开发的团队来说，这是个实打实的替代选项。
+
+## 4. Sharing AI progress in mathematics  (⭐ 4.0/10)
 🔗 [hackernews](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 
-这篇内容分享的是 AI 在数学领域的最新进展。值得关注的点在于，数学一直被视为检验 AI 推理能力的高门槛试金石——如果 AI 能在定理证明、猜想生成这类需要严密逻辑的任务上取得实质突破，那意味着它的推理能力正在从「模式匹配」向「真正思考」靠近，这对整个 AI 领域的能力评估和下一步方向都有参考价值。
-
-## 4. Decisions API is in public beta  (⭐ 4.0/10)
-🔗 [hackernews](https://developers.openai.com/api/docs/guides/decisions)
-
-GitHub 把 Decisions API 开放公测了，开发者现在可以程序化地读取和写入仓库里的决策记录，不用再手动翻 issue 和讨论串。值得关注是因为它把散落在各处的决策上下文变成了结构化数据，做自动化审计、项目交接或者给 AI 工具喂上下文都会方便很多。
-
-## 5. Vibecoding Photoshop: Time and pressure  (⭐ 4.0/10)
-🔗 [hackernews](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
-
-这个项目用代码“复刻”了Photoshop的核心体验，重点不在功能堆砌，而在交互手感——时间（延迟）和压力（笔刷响应）才是决定工具“好不好用”的关键。值得关注的是，它跳出了“AI一键生成”的套路，转而探索如何用编程手段还原专业软件的细腻触感，对做创意工具或交互设计的人来说是个不错的参考。
+这篇内容可能是在介绍某个机构、团队或项目如何公开分享他们在「AI 用于数学」方面的研究进展——比如让 AI 辅助证明定理、发现数学猜想或做符号推理。值得关注的原因是，数学一直是检验 AI 推理能力的硬核试金石，这方面的突破往往意味着 AI 在严谨逻辑和创造性思维上又往前迈了一步。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

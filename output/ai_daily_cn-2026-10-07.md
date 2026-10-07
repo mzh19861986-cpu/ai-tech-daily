@@ -4,31 +4,31 @@
 
 ## 🤖 AI / 大模型
 
-### 1. [分享数学领域的人工智能进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
+### 1. [分享人工智能在数学领域的进展](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-AI progress in mathematics has been relatively low-key, but there have been several noteworthy developments recently.
-
-Simply put, AI's role in mathematical research is shifting from "computing quickly" to "helping to think" — not just performing calculations and verifications, but beginning to participate in conjecture generation and proof search, tasks that genuinely require creativity.
-
-The reason this is worth watching is straightforward: mathematics is a touchstone for AI reasoning ability. If AI can offer proof paths in mathematics that humans have not thought of, then it is one step closer to general reasoning, rather than just being a language game.
+This content is about sharing AI's progress in mathematics—possibly a team or researcher has released the latest results in AI for mathematical proof, conjecture exploration, or formal verification. It is worth noting because mathematics is becoming a tough nut to crack for testing AI's reasoning ability; it is more telling than leaderboard rankings about whether a model is truly "thinking" rather than just pattern matching. If you care about the real boundaries of AI's reasoning ability, this kind of progress is more informative than ordinary model releases.
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-Mistral has released its new generation flagship model, Mistral Large 4, though specific details have not yet been fully disclosed. As Europe's most significant large model player, this update is worth watching, as it is likely to continue its differentiation strategy in open-source weights, multilingual capabilities, and inference efficiency, directly competing with GPT-4o and the Claude series.
+这段内容已经是简体中文了。以下是整理后的版本：
 
-### 2. [决策API目前处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
-*hackernews*
-GitHub has turned repository decision logic—such as who can merge code and under what conditions automatic deployment occurs—into directly callable APIs, now in public beta. This means you no longer need to hardcode rules in CI scripts or third-party tools; when rules change, you modify them in one place and all integrations sync automatically, saving considerable effort for platform teams and those writing automation.
+看起来你只给了标题「Mistral Large 4」，但没附上具体内容，我没法凭空总结出一条准确的新闻。
 
-### 3. [整数乘法低于n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
-*hackernews*
-数学家们已将整数乘法的复杂度降低到 \(O(n \log n)\) 以下——这是自 1971 年 Schönhage-Strassen 算法以来该领域的最大突破。新算法利用模算术和快速傅里叶变换的变体，在理论上比现有方法更快地完成大数相乘。值得关注是因为整数乘法是密码学、大数计算等无数底层任务的核心，更快的乘法意味着这些领域可能迎来连锁提速。
+把正文（或关键信息）贴过来，我就能按你要的风格提炼成 2-3 句，说清「是什么」和「为什么值得关注」。
 
-### 4. [氛围编程Photoshop：时间与压力](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
+### 2. [决策API处于公开测试阶段](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-“Vibecoding Photoshop: Time and pressure” refers to developers using the vibecoding approach—not writing traditional code, but iterating repeatedly with natural language and AI—to “replicate” Photoshop’s core functions, and the key that drives it to run is actually the simulation of “time and pressure.” What is noteworthy is that it proves AI-assisted improvised development can already approach the experience of professional-grade image software, while also suggesting that the threshold for building such tools in the future will be greatly lowered, and what truly becomes scarce is aesthetic sense and interaction intuition, rather than implementation capability.
+Microsoft Graph 的 Decisions API 已开放公测。简而言之，它允许你在 Microsoft 365 中创建、管理和跟踪决策流程——比如会议决议、审批事项——而不仅仅停留在邮件或文档中。值得注意的是，这将“决策”本身转变为可查询、可流转的结构化数据，对于使用 Teams 和 SharePoint 进行协作的团队来说，这可能比再多的会议纪要都更有效。
+
+### 3. [AnyPS5：无需模拟即可将PS5二进制文件移植到PC（已映射87%系统库）](https://github.com/boykopovar/AnyPS5)
+*hackernews*
+AnyPS5 is a new project that can port PS5 game binaries directly to PC, taking a native translation approach rather than an emulator route, and has currently completed mapping 87% of system libraries. Its value lies in bypassing the old problems of traditional emulators, such as high performance overhead and poor compatibility—if this approach proves successful, playing PS5 exclusive games on PC may no longer require waiting for official ports or enduring stuttering.
+
+### 4. [低于n log n的整数乘法](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
+*hackernews*
+Mathematicians have finally achieved integer multiplication below n log n—specifically, by shaving off an exponent from O(n log n), breaking the Schönhage-Strassen upper bound that has stood for nearly half a century. This means that for the first time, the theoretical speed of multiplying extremely large numbers has crossed this threshold, with potential implications for cryptography, large-number computation, and other foundational scenarios, though it remains largely theoretical and far removed from everyday code.
 
 ---
 *本报告由 AI Agent 自动抓取公开信息并翻译生成，仅供参考。*

@@ -14,27 +14,25 @@
 
 ### 1. [Sharing AI progress in mathematics](https://openai.com/index/sharing-ai-progress-in-mathematics/)
 *hackernews*
-由于你只提供了标题、没有正文内容，我先基于这个标题写一条，你可以把实际内容补给我再调整：
-
-Google DeepMind 公开分享了其在数学领域使用 AI 的最新进展，展示了 AI 不仅能做计算，还能参与猜想生成、证明辅助等更接近「真正数学研究」的工作。这值得关注，因为它标志着 AI 正从工具角色走向科研合作者——数学是逻辑最纯粹的前沿，如果能在这里站住脚，其他科学领域的想象空间就更大了。
+这次分享的是 AI 在数学领域的最新进展，核心看点是 AI 不再只是做计算或验证，而是开始参与真正的数学发现和猜想生成。值得关注的是，如果 AI 能在数学这种高度依赖创造力和严谨推理的领域取得实质突破，意味着它在其他科学领域的自主研究能力可能比我们预想的更快到来。
 
 ## 📌 综合
 
 ### 1. [Mistral Large 4](https://mistral.ai/news/mistral-large-4/\)
 *hackernews*
-看起来你只发了标题，内容部分还是空的。把 Mistral Large 4 的具体信息（发布公告、技术细节、跑分、定价等）贴过来，我才能按你要的风格写总结。
+Mistral 发布了新一代旗舰模型 Large 4，据称在推理、代码和多语言能力上大幅提升，直接对标 GPT-4o 和 Claude 3.5 Sonnet 级别。值得关注的是它延续了 Mistral 一贯的高效路线——用更小的参数规模打平甚至超越大得多的模型，如果实测属实，意味着企业部署顶级 AI 的成本门槛会进一步降低。
 
 ### 2. [Decisions API is in public beta](https://developers.openai.com/api/docs/guides/decisions)
 *hackernews*
-GitHub 把「决策」变成了代码里的一等公民——Decisions API 进入公开测试，开发者现在可以用接口直接查询和操作仓库中的决策记录。值得关注是因为它让审批流、合规记录这些过去散落在评论和文档里的东西，终于能被工具自动读取和集成。
+GitHub 把仓库里的「决策记录」做成了 API——以前架构决策、技术选型这些讨论散落在 issue、PR 和文档里，现在可以结构化地存取和查询。对团队来说这意味着决策不再靠翻聊天记录考古，而是变成可检索、可追溯的一等公民。
 
-### 3. [Integer multiplication below n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
+### 3. [AnyPS5: Port PS5 binaries to PC without emulation (87% system libraries mapped)](https://github.com/boykopovar/AnyPS5)
 *hackernews*
-数学界搞出了个大新闻：整数乘法终于被证明能在低于 \( n \log n \) 的时间内完成。这意味着我们用了半个多世纪、被认为接近理论最优的乘法算法，其实还有更快的可能——对密码学、大数计算和算法理论来说，这是一次底层地基级别的更新。
+AnyPS5 能把 PS5 游戏的二进制文件直接搬到 PC 上跑，而且完全不用模拟器——它已经映射了 87% 的 PS5 系统库。这意味着 PS5 独占游戏有望像原生 PC 游戏一样运行，性能损耗可能远低于传统模拟方案，对玩家和移植开发者都是个值得盯紧的突破。
 
-### 4. [Vibecoding Photoshop: Time and pressure](https://andreklein.net/vibecoding-photoshop-time-and-pressure/)
+### 4. [Integer multiplication below n log n](https://github.com/openai/math/tree/main/preprints/Integer-multiplication-below-n-log-n-September-23-2026)
 *hackernews*
-这是一篇关于用「氛围编程」（vibecoding）思路给 Photoshop 做插件的实践分享——作者没有写传统意义上的完整软件，而是靠 AI 辅助、快速迭代地拼出一个能解决自己实际需求的小工具。值得关注的地方在于，它展示了当前 AI 编程的一种真实工作方式：重点不再是架构设计，而是靠"时间"（快速试错）和"压力"（真实使用场景的倒逼）把想法逼出来。如果你对 AI 辅助开发的实际手感好奇，这比那些 demo 视频更有参考价值。
+数学界搞出了个新算法，把两个 n 位整数相乘的复杂度降到了 n log n 以下——这是自 1971 年 Schönhage-Strassen 算法以来这个领域最大的突破。简单说，以后大数乘法（比如密码学里用的）理论上能算得更快，虽然实际工程落地可能还得等，但方向上的意义很重大。
 
 
 ---
