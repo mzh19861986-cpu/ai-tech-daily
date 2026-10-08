@@ -5,7 +5,7 @@
 import requests
 import os
 
-DEEPSEEK_KEY = "sk-f82f237566274d0785cb2e266b603cc0"
+DEEPSEEK_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 
 def call_deepseek(prompt):
     resp = requests.post(

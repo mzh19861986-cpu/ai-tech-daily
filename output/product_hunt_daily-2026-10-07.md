@@ -2,44 +2,44 @@
 
 > 精选今天上线的新产品 | AI 帮你筛过，只留有意思的 | 共 8 个
 
-## 1. [Databench by Alkera](https://www.producthunt.com/products/alkera)
+## 1. [ImageFlow](https://www.producthunt.com/products/imageflow-6)
 
-**💡 是什么 + 为什么值得试：** Databench 给数据团队一个共享的 AI Agent 工作台，把查数、写 SQL、跑分析这些事放在同一个协作空间里，不用每个人各自搭一套脚本。如果你团队正在为数据需求响应慢、工具散落各处而头疼，可以拿它试试。
-
----
-## 2. [Rool](https://www.producthunt.com/products/rool)
-
-**💡 是什么 + 为什么值得试：** Rool 把你的文件、笔记和 AI 对话放进同一个私有工作区，不用在多个应用间来回切换复制粘贴。如果你在意数据留在本地、又想随手调用 AI 处理手头资料，值得装来试试。
+**💡 是什么 + 为什么值得试：** ImageFlow 是个免费的浏览器端图像编辑器，能直接做抠图、修图、AI 扩图这些平时得开 Photoshop 的活儿，省了装软件和订阅的钱。如果你偶尔需要处理图片又不想为 PS 付费，值得试一下。
 
 ---
-## 3. [Velozity](https://www.producthunt.com/products/velozity-2)
+## 2. [Databench by Alkera](https://www.producthunt.com/products/alkera)
 
-**💡 是什么 + 为什么值得试：** Velozity 把团队协作和 AI agent 放在同一个工作区里，省得你在多个工具间来回切换、手动搬上下文。如果你的团队已经在用 AI 帮忙干活，但总觉得它跟人的协作是两张皮，可以试试这个。
-
----
-## 4. [GenPage 3.0](https://www.producthunt.com/products/genpage)
-
-**💡 是什么 + 为什么值得试：** GenPage 3.0 能帮你用 AI 快速生成、个性化并优化落地页，省去从零搭页面和反复改文案的功夫。如果你在投广告或做增长实验，想快速测试不同版本的转化效果，它值得一试。
+**💡 是什么 + 为什么值得试：** Databench 让数据团队把 SQL 查询、数据分析和 AI Agent 协作放在同一个工作区里，不用再在多个工具间来回切换。如果你的团队经常一起排查数据问题或共享分析过程，它值得试试。
 
 ---
-## 5. [ImageFlow](https://www.producthunt.com/products/imageflow-6)
+## 3. [GenPage 3.0](https://www.producthunt.com/products/genpage)
 
-**💡 是什么 + 为什么值得试：** ImageFlow 是一个免费开源的图像编辑器，把抠图、修复、超分等 AI 能力直接做进了 UI，不用再为修一张图在 PS 和网页工具之间来回倒腾。想省掉订阅费又不想牺牲专业功能的话，值得装来试试。
-
----
-## 6. [DailyHub](https://www.producthunt.com/products/dailyhub-a-quiet-workspace-for-your-day)
-
-**💡 是什么 + 为什么值得试：** DailyHub 把项目、任务和习惯集中到一个面板里管理，适合那些在多个 App 之间来回切换、结果哪边都没跟完的人。如果厌倦了为三件相关的事维护三套工具，可以试试它。
+**💡 是什么 + 为什么值得试：** GenPage 3.0 能让你用 AI 快速生成、个性化并优化落地页，省去手动写代码和反复调优的麻烦。如果你需要频繁测试不同营销页面又不想依赖设计师和开发，它值得一试。
 
 ---
-## 7. [Reika](https://www.producthunt.com/products/reika)
+## 4. [Nano Banana 2.1](https://www.producthunt.com/products/google)
 
-**💡 是什么 + 为什么值得试：** 如果你想在本地用 7B 级别的小模型跑代码 agent，又不想费劲调 prompt，Reika 就是冲着这个场景设计的命令行工具。装完就能直接让它读写文件、跑命令，省去自己搭框架的功夫。
+**💡 是什么 + 为什么值得试：** Nano Banana 2.1 能让你用 Google 的图像模型做设计图精修，新增的遮罩编辑可以只改指定区域、不用整张重画。如果你经常需要局部调整生成的图，这个版本比之前顺手不少，值得试一下。
 
 ---
-## 8. [Albie](https://www.producthunt.com/products/albie)
+## 5. [Unprompt](https://www.producthunt.com/products/unprompt-2)
 
-**💡 是什么 + 为什么值得试：** 想让孩子或自己学东西时不再对着聊天框干瞪眼？Albie 用 AI 在白板上一步步手写讲解，像真人老师一样边画边讲，概念看得见、跟得上。
+**💡 是什么 + 为什么值得试：** Unprompt 能把你每次调用 AI 换算成实打实的美元花销和耗水量，让你清楚看到自己的使用成本和对环境的影响。如果你常好奇"我这一天到底用了多少 AI、值多少钱"，装上它就有个数了。
+
+---
+## 6. [Plugins Radar](https://www.producthunt.com/products/plugins-radar)
+
+**💡 是什么 + 为什么值得试：** Plugins Radar 帮你追踪 ChatGPT 插件商店里的搜索排名变化，并在竞品排名上升或超越你时发出提醒。如果你想做插件 SEO、又不想每天手动翻商店，它可以省下这个功夫。
+
+---
+## 7. [IrisGo for Solopreneurs](https://www.producthunt.com/products/irisgo-public-beta)
+
+**💡 是什么 + 为什么值得试：** 如果你常被重复性的电脑操作（比如整理文件、填表、发邮件）耗掉时间，IrisGo 能让你演示一次操作，它就自动重复执行，省去写脚本的麻烦。适合没有编程背景、想快速把手动流程变成自动化的独立开发者或小团队试试。
+
+---
+## 8. [Mistral Large 4](https://www.producthunt.com/products/mistral-7b)
+
+**💡 是什么 + 为什么值得试：** 如果你需要在本地或私有环境跑一个接近闭源前沿水平的开源大模型，Mistral Large 4 给了你 1T 参数的开源权重，省去申请 API 和数据的顾虑。想验证它在推理、代码等任务上是否替代你的付费模型，直接拉权重试跑是最直接的判断方式。
 
 ---
 *想发现更多新奇产品，记得每天来看看~*

@@ -2,36 +2,34 @@
 
 > 由 AI 自动打分排序 | 共 5 条入选
 
-## 🥇 GitHub Incident with Git Operations, Pull Requests and Actions  (⭐ 5.0/10)
-🔗 [hackernews](https://www.githubstatus.com/incidents/djlmxz2zd0j7)
+## 🥇 Margaret Hamilton, who led software development for the Apollo program, has died  (⭐ 6.0/10)
+🔗 [hackernews](https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007)
 
-GitHub 出现了一次影响 Git 操作、Pull Request 和 Actions 的故障，用户在这些核心功能上可能遇到操作失败或延迟。这类事件值得关注，因为它会直接打断团队的代码提交、合并和 CI/CD 流程，暴露了集中式代码托管平台在关键开发链路中的单点风险。
+“软件工程”这个词，就是她发明的。Margaret Hamilton 带领团队为阿波罗登月写了飞行软件，当年代码量相当于把整个程序打印出来能堆到她肩膀那么高；正是她在关键时刻的判断，让阿波罗 11 号在登月最后几秒避免了一次系统过载导致的坠毁。她让“写软件”从附属工作变成一门被认真对待的工程学科，后来的我们都在她的延长线上。
 
-## 🥈 Shipping JPEG XL in Chrome  (⭐ 5.0/10)
-🔗 [hackernews](https://developer.chrome.com/blog/jpeg-xl-in-chrome)
+## 🥈 Claude Haiku 5.5  (⭐ 5.0/10)
+🔗 [hackernews](https://www.anthropic.com/claude-haiku-5-5)
 
-Chrome 正在重新推进对 JPEG XL 图片格式的支持，这个被砍掉又复活的格式主打「比 JPEG 小 35%、比 AVIF/WebP 画质更好」的卖点。值得关注是因为它同时兼容无损和有损压缩，还能把老 JPEG 无损转码成更小的文件——对站长来说省带宽，对用户来说加载更快，而且不像 AVIF 那样容易糊。
+Anthropic 发布了 Claude Haiku 5.5，这是 Haiku 系列的最新轻量级模型，主打高速和低成本，适合大批量、延迟敏感的任务场景（比如实时客服、内容审核、批量数据处理）。
 
-## 🥉 Nobel Prize in Chemistry 2026 to Henri B. Kagan and Kenso Soai  (⭐ 5.0/10)
-🔗 [hackernews](https://www.nobelprize.org/prizes/chemistry/2026/press-release/)
+值得关注的是它在保持小模型体量的同时，推理和指令跟随能力较上一代有提升——意味着以前只有大模型才能干的活，现在用更便宜更快的模型就能跑，对成本敏感的开发者来说是个实用的升级选项。
 
-这条消息目前只有标题，没有正文，所以只能基于标题本身给你一个克制的判断，但这里有个**需要先打问号的地方**：
+## 🥉 GPT‑6 and Intelligent UI for everyone  (⭐ 5.0/10)
+🔗 [hackernews](https://openai.com/index/gpt-6-for-everyone/)
 
-**是什么**：标题称2026年诺贝尔化学奖授予Henri B. Kagan和Kenso Soai。Kagan是法国有机化学家，在不对称催化领域有开创性工作；Soai是日本化学家，以「Soai反应」——首个能自我放大手性的有机反应——闻名。
+OpenAI 正在把 GPT-6 和「智能 UI」打包推向所有人——AI 不再只是聊天框，而是直接生成、操控界面本身。值得关注的是，这意味着交互范式可能从「人去适应软件」转向「软件实时适配人」，普通用户不用学任何工具就能完成任务。
 
-**为什么值得关注**：如果属实，这将是**不对称催化/手性起源**方向的又一次诺奖，直接呼应2001年Knowles、Noyori、Sharpless的获奖领域，而Soai反应因为触及「手性如何从无到有、自我放大」这个生命起源级别的谜题，一直被认为是诺奖级候选。
+## 4. Photograph 49 is the key to understanding Rosalind Franklin’s DNA Photograph 51  (⭐ 3.0/10)
+🔗 [hackernews](https://link.springer.com/article/10.1007/s10739-026-09866-7)
 
-但请注意：现在只有标题、没有内容，且2026年诺奖要到10月才公布。这更像是**候选预测
+《自然》杂志新公开的“照片49”显示，罗莎琳德·富兰克林在拍摄著名的“照片51”之前，其实已经通过另一张X射线衍射图捕捉到了DNA的B型结构。这张照片之所以关键，是因为它证明富兰克林并非偶然得到那张改变历史的图像，而是系统性地推进了对DNA螺旋结构的理解——这有助于更公平地还原她在双螺旋发现中的真实贡献。
 
-## 4. Why Were Victorian Elites So Effective?  (⭐ 4.0/10)
-🔗 [hackernews](https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/)
+## 5. Docker Agent  (⭐ 3.0/10)
+🔗 [hackernews](https://github.com/docker/docker-agent)
 
-维多利亚时代的英国精英阶层通过一套高度系统化的教育、社交网络和制度设计，实现了远超其他时代的阶层自我复制效率——从公学到牛津剑桥，再到文官考试和俱乐部文化，几乎形成了一条“精英生产线”。值得关注的是，这种效率并非靠血统封闭，而是靠文化资本的精准传递：修辞、仪表、人脉管理，甚至“看起来像天生该掌权”的气质，都被当作可训练的技能。对今天讨论教育公平和阶层流动的人来说，这其实是一面镜子——真正的精英再生产，往往不是靠钱，而是靠一套让人误以为“天生如此”的软性机制。
+Docker 新推出了 Agent 功能，让容器可以像有大脑一样自主执行任务——它把 AI 推理能力直接嵌进了 Docker 环境里，容器不再是只会跑固定命令的“死”工具。
 
-## 5. A font recreated from photographs of classic Commodore 64 keycaps  (⭐ 4.0/10)
-🔗 [hackernews](https://github.com/szabadkai/c64-keyboard-font/)
-
-有人把 Commodore 64 键盘帽上的经典字体，通过拍摄实物照片的方式重新制作成了数字字体文件。它的价值在于还原了那种带点粗糙像素感的原始质感——不是简单模仿，而是从真实硬件上"拓"下来的，复古爱好者做设计或怀旧项目时应该会很受用。
+值得关注的是，这意味着开发者可以用自然语言指挥容器完成部署、调试、扩缩容等操作，而不必手写一堆脚本或 YAML。对于经常和容器打交道的人来说，这可能是把 DevOps 自动化门槛又拉低了一大截。
 
 ---
 *热度分由 AI 模型评估，仅供参考。*

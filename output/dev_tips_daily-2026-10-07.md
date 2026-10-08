@@ -1,38 +1,32 @@
 # 💡 每日开发技巧 - 2026-10-07
 
-> 每天学一个实用技巧，效率慢慢提上来 | 共 4 条
+> 每天学一个实用技巧，效率慢慢提上来 | 共 3 条
 
 ## 技巧 1
 
-**Write Like It's 1866: LLMs Relearn Telegraphese**
+**How machines learned precision**
 
-✨ 斯坦福和牛津的研究者发现，GPT-4等大模型在模仿1866年电报文体时表现惊人——这种文体通过省略冠词、压缩句式来节省昂贵的电报费，而模型不仅能复现规则，还能自发学会「the」省略后语法如何保持通顺。这值得关注是因为，它说明大模型不只是记忆表面模式，而是能重建一套已消亡的语用逻辑，这对理解模型的泛化能力是个漂亮的小切口。
+✨ 这篇内容讲的是机器如何从「差不多就行」进化到「分毫不差」——核心在于闭环控制、传感器反馈和高精度制造这三件事的协同突破。值得关注的是，这种精度跃迁不只是实验室里的数字游戏，它直接决定了你的手机芯片、汽车零件甚至胰岛素泵能不能被造出来。
 
-📎 [阅读原文](https://fiveminutesforward.com/post/2026-10-04-telegraph-test/)
+📎 [阅读原文](https://glinscott.github.io/how-machines-learned-precision/)
 
 ## 技巧 2
 
 **Retrieval-Augmented Large Language Model Decision-Making for Autonomous Driving Guided by Chinese Philosophical Wisdom**
 
-✨ 这篇论文提出用中国哲学智慧来引导大语言模型的自动驾驶决策——核心思路是把「中庸」「无为」这类辩证思维作为LLM决策的约束框架，让它在安全、效率、社会规范之间做出更平衡的判断。有意思的地方在于：当前自动驾驶的伦理讨论基本被西方功利主义框架主导，而这项工作尝试用非西方哲学视角来补上「价值对齐」这块短板，思路本身比结果更值得关注。
+✨ 这篇论文提出用中国哲学智慧来指导自动驾驶中的检索增强大模型决策，试图解决现有系统只关注安全和效率、忽视伦理与社会规范的短板。它的新意在于把哲学框架引入 LLM 决策流程，让自动驾驶在复杂交通交互中不只看“怎么走最快”，而是开始考虑“怎么走更合乎人情与道理”。
 
 📎 [阅读原文](https://arxiv.org/abs/2610.03948)
 
 ## 技巧 3
 
-**How to create a virtual machines in azure : A Step-by-Step Guide**
+**How to Host an AI Podcast Platform on Bluehost**
 
-✨ Azure 虚拟机就是在微软云里租一台"软件电脑"，操作系统、内存、硬盘、网络都跟真机一样配，但底层资源其实跑在微软的数据中心里。值得关注的是它把开机器这件事从"买硬件、等物流、装系统"变成了几分钟点几下就能搞定，适合需要快速扩容或临时跑测试环境的场景。
+✨ 这篇教程教你怎么在Bluehost上搭一个AI语音播客平台——用ElevenLabs把文字脚本直接转成逼真的旁白，再自动拼接片头片尾、广告和背景音乐，几分钟就能出一集完整节目。
 
-📎 [阅读原文](https://dev.to/oserieme/how-to-create-a-virtual-machines-in-azure-a-step-by-step-guide-2d1c)
+值得关注的点在于：它把播客制作从「录音+剪辑」的重活变成了「写稿+生成」的流水线，而且托管在Bluehost这种普通虚拟主机上就能跑，门槛比想象中低得多。对想批量做内容、又不想碰麦克风的人来说，这是条能立刻上手的路子。
 
-## 技巧 4
-
-**What I learned building an AI that turns one URL into a week of social videos**
-
-✨ 一个工具，输入你的网站链接，它就能自动生成一周的社交媒体内容——短视频、轮播图、播客全包，还直接帮你发布到 Instagram、TikTok、YouTube 等七个平台。这东西叫 V2，明天在 Product Hunt 上线。作者花了两年打磨，核心难点不在生成，而在“规划”——怎么让 AI 理解你的品牌调性并拆解成一周的内容节奏，这件事比看起来难得多。如果你做内容营销或社媒运营，值得关注它怎么解决“批量生产不烂”的问题。
-
-📎 [阅读原文](https://dev.to/samuel_bezerra_96eccf65d3/what-i-learned-building-an-ai-that-turns-one-url-into-a-week-of-social-videos-no4)
+📎 [阅读原文](https://dev.to/voice_developer/how-to-host-an-ai-podcast-platform-on-bluehost-48ha)
 
 ---
 *每天一个小技巧，一年就是 365 个进步~*

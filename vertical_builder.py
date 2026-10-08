@@ -7,12 +7,8 @@ import os
 import requests
 import json
 
-# 加载DeepSeek key
-DEEPSEEK_KEYS = [
-    "sk-f82f237566274d0785cb2e266b603cc0",
-    "sk-cfdf784f87c744419e05e8fcb3a3544f",
-    "sk-20ab9dee395542c699306adbc351484f",
-]
+# 加载DeepSeek keys，从环境变量读
+DEEPSEEK_KEYS = os.getenv("DEEPSEEK_API_KEYS", "").split(",")
 
 def call_deepseek(prompt):
     """调用DeepSeek生成内容"""

@@ -7,22 +7,22 @@
 ### 1. [[D] Self-Promotion Thread](https://www.reddit.com/r/MachineLearning/comments/1wvi1j8/d_selfpromotion_thread/)
 *reddit/r/MachineLearning*
 
-这个帖子是技术社区里常见的「自荐专区」，让开发者集中发布自己的项目、创业产品、博客或合作需求，并明确要求标注付费和定价方式。值得关注的是，这类聚合帖把分散的个人作品收拢到一处，既避免了灌水刷屏，也让有需求的人能一站式发现新东西——如果你手里有副业项目或想找人合作，这种帖子是低成本曝光的实用渠道。
+这是一个开发者社区的自荐帖，允许大家推广自己的项目、创业产品、博客或合作需求，但必须标明付费方式和定价，禁止短链、聚合站和自动订阅链接。它的价值在于给创作者一个集中的曝光渠道，同时用透明规则防止垃圾信息和信任滥用，适合想找早期用户或合作者的独立开发者关注。
 
-### 2. [Saw this on Rednote, WTF [D]](https://www.reddit.com/r/MachineLearning/comments/1wzpzh3/saw_this_on_rednote_wtf_d/)
+### 2. [Uploaded 5.6 billion TikTok videos metadata on Hugging Face, spanning from 2014 to October 2026 [P]](https://www.reddit.com/r/MachineLearning/comments/1x04235/uploaded_56_billion_tiktok_videos_metadata_on/)
 *reddit/r/MachineLearning*
 
-小红书（Rednote）上有人发现了一个包含「谄媚话术」和「AI生成内容检测」的数据集。值得关注是因为它同时覆盖了AI讨好用户的话术模式和识别AI痕迹的特征——对做内容审核、模型对齐或AI检测工具的人来说，这可能是个现成的训练/评测资源。
+有人把 TikTok 从 2014 年到 2026 年 10 月的 56 亿条视频元数据传上了 Hugging Face，外加 45 亿条创作者和 6.33 亿条音频记录，还开放了 ClickHouse 数据库供直接查询——不用下载几百 GB 的原始数据。这种量级的社交平台全量快照在公开渠道极其罕见，对研究传播规律、内容趋势和平台生态的人来说几乎是白捡的宝库，不过数据库是作者自托管，别跑重查询把人家服务器搞崩。
 
-### 3. [ML PHD without A* Publications [D]](https://www.reddit.com/r/MachineLearning/comments/1wzeszo/ml_phd_without_a_publications_d/)
+### 3. [Saw this on Rednote, WTF [D]](https://www.reddit.com/r/MachineLearning/comments/1wzpzh3/saw_this_on_rednote_wtf_d/)
 *reddit/r/MachineLearning*
 
-做ML PhD申请，顶会一作不是唯一门票。这位同学在Top 15美硕、独立主导一作项目、NeurIPS在投——这本身就是研究能力的信号，只是还没等到接收。与其纠结"没A*要不要申"，不如把在投工作当成申请材料的一部分，同时并行准备工业界岗位，两条腿走路比孤注一掷更稳。
+Rednote（小红书）上有人发现了一个专门用于「AI谄媚检测」和「AI生成内容识别」的数据集。这意味着研究者已经开始系统性地量化AI模型拍马屁的行为模式，同时为识别AI代写内容提供了训练素材。对做AI安全、内容审核或模型评估的人来说，这个数据集值得关注——它把两个当下最实际的问题（模型讨好用户、平台辨别AI内容）落到了可操作的数据层面。
 
-### 4. [How much of AutoResearch is research, and how much is search?[D]](https://www.reddit.com/r/MachineLearning/comments/1wzxqze/how_much_of_autoresearch_is_research_and_how_much/)
+### 4. [Split the Differences, Pool the Rest: Provably Efficient Multi-Objective Imitation [R]](https://www.reddit.com/r/MachineLearning/comments/1x0854j/split_the_differences_pool_the_rest_provably/)
 *reddit/r/MachineLearning*
 
-这个项目本质上是在追问：当人类已经从顶会论文里挑好问题、定好评估标准后，AI agent 的"自动研究"到底还剩多少研究成分，又有多少只是在既定框架内做搜索优化。值得关注是因为它戳中了 AutoResearch 的核心争议——我们评测的究竟是 AI 的科研能力，还是它在一个被人类精心裁剪过的搜索空间里的爬山能力。如果是后者，那"自动研究"这个词可能被高估了。
+多目标模仿学习遇到一个两难：把多个不同偏好专家的示范数据混在一起训练，会丢掉各自的取舍权衡；但每个专家单独学，又浪费了数据间的共享价值。这篇论文提出的 MA-BC 方法只汇聚「专家行为不冲突」的那部分示范，并给出了样本复杂度的上下界——也就是说，它既有理论保证，又在数据利用上比两种极端做法都更聪明。对于做模仿学习或需要从异构专家中学习的研究者，这个「该合的地方合、该分的地方分」的思路值得一看。
 
 ---
 *内容来自 Reddit 公开社区，由 AI 自动摘要生成。*
